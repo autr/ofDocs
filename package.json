@@ -10,7 +10,7 @@
     "dev": "yarn run createManifest && nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "yarn run createManifest && cd nuxt.js && yarn run nuxt generate ../ && cd ../",
+    "generate": "yarn run createManifest && cd nuxt.js && yarn run nuxt generate ../ && cd ../ && node ./scripts/copyAssets.js",
     "serve": "node scripts/server/index.js",
     "now-dev": "nuxt"
   },

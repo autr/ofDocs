@@ -110,7 +110,6 @@ module.exports = {
 
         return Promise.all( promises ).then( res => {
           console.log('✅  [sitemap.js]', 'created:', routes.length, 'json payloads...');
-          // console.log(routes);
           return routes;
         });
 
