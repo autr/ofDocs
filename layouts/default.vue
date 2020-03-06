@@ -65,11 +65,10 @@ export default {
 			return {
 				navigation: [ 
 					['documentation', 4], 
-					['guides', 2], 
 					['examples', 3], 
 					['openFrameworks', 3], 
 					['addons', 3], 
-					['guides', 3]
+					['guides', 2]
 				],
 				selected: [],
 				search: {
