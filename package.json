@@ -5,6 +5,7 @@
   "author": "Gilbert Sinnott",
   "homepage": "https://autr.github.io/ofDocs/",
   "private": false,
+  "main": "main.js",
   "scripts": {
     "createManifest": "node scripts/createManifest.js",
     "test": "node -r esm scripts/test.js",

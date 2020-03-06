@@ -42,7 +42,6 @@ const getEntryExtType = ( _ext ) => {
 
 
 const createProtoEntry = ( _url, _strDirKey, _baseUrl ) => {
-
     const dir = path.dirname( _url );
     const filename = path.basename( _url );
     const absolute = path.resolve( _url );
@@ -86,10 +85,10 @@ const createProtoEntry = ( _url, _strDirKey, _baseUrl ) => {
     return {
         filename: filename,
         absolute: absolute,
-        dir: dir,
-        name: name_,
         path: path_,
         route: route_,
+        dir: dir,
+        name: name_,
         ext: ext_,
         type: type_
     }

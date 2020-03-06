@@ -1,6 +1,10 @@
 # ofDocs
 
-ofDocs mirrors a list of files and folders into a website using Nuxt and Vue. Currently it is set up to serve documentation from ofSite, READMEs and code from the OpenFrameworks repository, and optionally user-installed addons. When running locally, an API middleware reads files and folders into structured JSON, which are server-side rendered by Nuxt.
+[View ofDocs](https://ofdocs.autr.tv)
+
+ofDocs mirrors a list of files and folders into a website using Nuxt and Vue. Currently it is set up to serve documentation from ofSite, READMEs and code from the OpenFrameworks repository, and optionally user-installed addons. 
+
+When running locally, an API middleware reads files and folders into structured JSON, which are server-side rendered by Nuxt.
 
 ### Running locally
 
@@ -15,3 +19,5 @@ ofDocs is currently dependent on a future release of Nuxt.js [[feat/target-2](ht
 ```
 yarn run generate
 ```
+
+By default GH Pages resolves to a /ofDocs domain, which will break the Nuxt SSR implementation. This can be cicumvented by giving the GH Page a domain name, ie. ofdocs.autr.tv

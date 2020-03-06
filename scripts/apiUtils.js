@@ -226,8 +226,6 @@ module.exports = ( rawUrl ) => {
         let url = rawUrl.split("?")[0].split("#")[0];
         const params = queryString.parse(rawUrl.split("?")[1]);
 
-
-
         return new Promise( (resolve, reject) => {
 
 
@@ -257,6 +255,7 @@ module.exports = ( rawUrl ) => {
 
             let entry = findEntryFromKey('path', url);
             if (!entry) entry = findEntryFromKey('path', url.substring(0,url.length-1));
+            if (!entry) entry = findEntryFromKey('path', url+'/');
             let og = null;
             if (!entry) { 
                 console.error('🚨 [apiUtils.js] cannot find entry', url);

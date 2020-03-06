@@ -1,5 +1,5 @@
 <template lang="pug">
-#renderer
+#renderer(v-if="page")
   page-header( v-if="page.entry.name !== 'home'" v-bind="page.entry" )
   home-page( v-if="page.entry.name === 'home'" v-bind="page" )
   doc-page(  v-else-if="page.type === 'page' && page.methods" v-bind="page" )
@@ -35,20 +35,21 @@ export default {
   },
   async asyncData ( { $axios, app, store, route, params, query, env, isDev, isHMR, redirect, error, payload } ) {
 
-
     if (payload) {
       console.log('🚜  [Page.vue] payload:', payload.entry.name );
       return {page: payload};
     } else {
-
+      console.log(route);
       let p = route.path.toLowerCase();
-      const base = (process.client) ? window.location.origin : env.baseUrl;
-      const full = base + '.json';
+      // if (p.indexOf('/ofDocs' === -1)) p = '/ofDocs' + p;
       const path = p + '?as=json';
       console.log('🚜  [Page.vue] api:', path);
-      return {page: await $axios.$get( path )};
+      try {
+        return { page: await $axios.$get( path ) };
+      } catch(err) {
+        console.error('❌  [Page.vue] api:', err.response.statusText, path);
+      }
     }
-live
   },
   mounted() {
     const w = window.location.pathname;

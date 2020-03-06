@@ -1,12 +1,5 @@
 const data = require('./docs.manifest.json').data;
 const sitemap = require('./scripts/sitemap');
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/<repository-name>/'
-  }
-} : {}
-
-
 export default {
   debug: true,
   vue: {
@@ -21,7 +14,6 @@ export default {
   router: {
     trailingSlash: true,
     extendRoutes (routes, resolve) {
-
       routes.push({
         path: '/',
         name: 'Home',
@@ -77,6 +69,5 @@ export default {
   loading: { color: 'deeppink' },
   css: [
     '@/assets/css/main.sass'
-  ],
-  ...routerBase
+  ]
 }
