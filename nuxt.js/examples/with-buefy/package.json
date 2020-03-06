@@ -1,0 +1,16 @@
+{
+  "name": "example-with-buefy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "post-update": "yarn upgrade --latest"
+  },
+  "dependencies": {
+    "nuxt": "latest",
+    "nuxt-buefy": "latest"
+  }
+}

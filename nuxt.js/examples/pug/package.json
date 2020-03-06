@@ -1,0 +1,14 @@
+{
+  "name": "example-pug",
+  "dependencies": {
+    "nuxt": "latest",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "post-update": "yarn upgrade --latest"
+  }
+}

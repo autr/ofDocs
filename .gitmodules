@@ -1,0 +1,7 @@
+[submodule "nuxt.js"]
+	path = nuxt.js
+	url = https://github.com/nuxt/nuxt.js.git
+	branch = feat/target-2
+[submodule "components/vue-components"]
+	path = components/vue-components
+	url = https://github.com/Autr/vue-components

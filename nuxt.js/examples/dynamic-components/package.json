@@ -1,0 +1,15 @@
+{
+  "name": "example-dynamic-components",
+  "dependencies": {
+    "chart.js": "^2.7.3",
+    "nuxt": "latest",
+    "vue-chartjs": "^3.4.2"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "post-update": "yarn upgrade --latest"
+  }
+}

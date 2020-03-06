@@ -1,0 +1,15 @@
+{
+  "name": "nuxt-with-vuikit",
+  "dependencies": {
+    "@vuikit/icons": "latest",
+    "@vuikit/theme": "latest",
+    "nuxt": "latest",
+    "vuikit": "latest"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "post-update": "yarn upgrade --latest"
+  }
+}

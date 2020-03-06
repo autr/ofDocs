@@ -1,0 +1,15 @@
+{
+  "name": "docker-build",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt-start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt-start": "latest"
+  },
+  "devDependencies": {
+    "nuxt": "latest"
+  }
+}

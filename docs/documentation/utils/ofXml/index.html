@@ -1,0 +1,915 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" data-hid="description" name="description" content=""><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><link rel="preload" href="/_nuxt/76844c096ee4b2a8e8b3.js" as="script"><link rel="preload" href="/_nuxt/561e36663ec83bdcd2ac.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/26c5a70906ce7aaac460.js" as="script"><link rel="preload" href="/_nuxt/75259d9b56378e7dbe47.css" as="style"><link rel="preload" href="/_nuxt/426713a49089294b64e8.js" as="script"><link rel="preload" href="/_nuxt/74971516fa343f955f83.css" as="style"><link rel="preload" href="/_nuxt/0128aba013e56fe5f14b.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/75259d9b56378e7dbe47.css"><link rel="stylesheet" href="/_nuxt/74971516fa343f955f83.css">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app" class="unknown"><div id="menu"><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><div class="txt"><span class="docs f7 questrial">ofDocs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" x="0px" y="0px" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343						c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88						c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593						c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789						C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><div id="results" class="mt1"></div></div><div id="lists" class="menu-inner mt1"><div class="inner"><div class="item"><a href="/documentation/" title="/documentation/" class="nuxt-link-active"><!----><span>documentation</span></a><div class="list"><div class="item"><a href="/documentation/3d/" title="/documentation/3d/"><!----><span>3d</span></a><!----></div><div class="item"><a href="/documentation/addons/" title="/documentation/addons/"><!----><span>addons</span></a><!----></div><div class="item"><a href="/documentation/application/" title="/documentation/application/"><!----><span>application</span></a><!----></div><div class="item"><a href="/documentation/communication/" title="/documentation/communication/"><!----><span>communication</span></a><!----></div><div class="item"><a href="/documentation/events/" title="/documentation/events/"><!----><span>events</span></a><!----></div><div class="item"><a href="/documentation/gl/" title="/documentation/gl/"><!----><span>gl</span></a><!----></div><div class="item"><a href="/documentation/glm/" title="/documentation/glm/"><!----><span>glm</span></a><!----></div><div class="item"><a href="/documentation/graphics/" title="/documentation/graphics/"><!----><span>graphics</span></a><!----></div><div class="item"><a href="/documentation/math/" title="/documentation/math/"><!----><span>math</span></a><!----></div><div class="item"><a href="/documentation/sound/" title="/documentation/sound/"><!----><span>sound</span></a><!----></div><div class="item"><a href="/documentation/types/" title="/documentation/types/"><!----><span>types</span></a><!----></div><div class="item"><a href="/documentation/utils/" title="/documentation/utils/" class="nuxt-link-active"><!----><span>utils</span></a><div class="list"><div class="item"><a href="/documentation/utils/ExtensionComparator" title="/documentation/utils/ExtensionComparator.markdown"><!----><span>ExtensionComparator</span></a><!----></div><div class="item"><a href="/documentation/utils/ofBuffer::Line" title="/documentation/utils/ofBuffer::Line.markdown"><!----><span>ofBuffer::Line</span></a><!----></div><div class="item"><a href="/documentation/utils/ofBuffer::Lines" title="/documentation/utils/ofBuffer::Lines.markdown"><!----><span>ofBuffer::Lines</span></a><!----></div><div class="item"><a href="/documentation/utils/ofBuffer::RLine" title="/documentation/utils/ofBuffer::RLine.markdown"><!----><span>ofBuffer::RLine</span></a><!----></div><div class="item"><a href="/documentation/utils/ofBuffer::RLines" title="/documentation/utils/ofBuffer::RLines.markdown"><!----><span>ofBuffer::RLines</span></a><!----></div><div class="item"><a href="/documentation/utils/ofBuffer" title="/documentation/utils/ofBuffer.markdown"><!----><span>ofBuffer</span></a><!----></div><div class="item"><a href="/documentation/utils/ofConsoleLoggerChannel" title="/documentation/utils/ofConsoleLoggerChannel.markdown"><!----><span>ofConsoleLoggerChannel</span></a><!----></div><div class="item"><a href="/documentation/utils/ofDirectory" title="/documentation/utils/ofDirectory.markdown"><!----><span>ofDirectory</span></a><!----></div><div class="item"><a href="/documentation/utils/ofFile" title="/documentation/utils/ofFile.markdown"><!----><span>ofFile</span></a><!----></div><div class="item"><a href="/documentation/utils/ofFileDialogResult" title="/documentation/utils/ofFileDialogResult.markdown"><!----><span>ofFileDialogResult</span></a><!----></div><div class="item"><a href="/documentation/utils/ofFileLoggerChannel" title="/documentation/utils/ofFileLoggerChannel.markdown"><!----><span>ofFileLoggerChannel</span></a><!----></div><div class="item"><a href="/documentation/utils/ofFilePath" title="/documentation/utils/ofFilePath.markdown"><!----><span>ofFilePath</span></a><!----></div><div class="item"><a href="/documentation/utils/ofFileUtils_functions" title="/documentation/utils/ofFileUtils_functions.markdown"><!----><span>ofFileUtils_functions</span></a><!----></div><div class="item"><a href="/documentation/utils/ofFpsCounter" title="/documentation/utils/ofFpsCounter.markdown"><!----><span>ofFpsCounter</span></a><!----></div><div class="item"><a href="/documentation/utils/ofHttpRequest" title="/documentation/utils/ofHttpRequest.markdown"><!----><span>ofHttpRequest</span></a><!----></div><div class="item"><a href="/documentation/utils/ofHttpResponse" title="/documentation/utils/ofHttpResponse.markdown"><!----><span>ofHttpResponse</span></a><!----></div><div class="item"><a href="/documentation/utils/ofLog_functions" title="/documentation/utils/ofLog_functions.markdown"><!----><span>ofLog_functions</span></a><!----></div><div class="item"><a href="/documentation/utils/ofLog" title="/documentation/utils/ofLog.markdown"><!----><span>ofLog</span></a><!----></div><div class="item"><a href="/documentation/utils/ofLogError" title="/documentation/utils/ofLogError.markdown"><!----><span>ofLogError</span></a><!----></div><div class="item"><a href="/documentation/utils/ofLogFatalError" title="/documentation/utils/ofLogFatalError.markdown"><!----><span>ofLogFatalError</span></a><!----></div><div class="item"><a href="/documentation/utils/ofLogNotice" title="/documentation/utils/ofLogNotice.markdown"><!----><span>ofLogNotice</span></a><!----></div><div class="item"><a href="/documentation/utils/ofLogVerbose" title="/documentation/utils/ofLogVerbose.markdown"><!----><span>ofLogVerbose</span></a><!----></div><div class="item"><a href="/documentation/utils/ofLogWarning" title="/documentation/utils/ofLogWarning.markdown"><!----><span>ofLogWarning</span></a><!----></div><div class="item"><a href="/documentation/utils/ofMatrixStack" title="/documentation/utils/ofMatrixStack.markdown"><!----><span>ofMatrixStack</span></a><!----></div><div class="item"><a href="/documentation/utils/ofSystemUtils_functions" title="/documentation/utils/ofSystemUtils_functions.markdown"><!----><span>ofSystemUtils_functions</span></a><!----></div><div class="item"><a href="/documentation/utils/ofThread" title="/documentation/utils/ofThread.markdown"><!----><span>ofThread</span></a><!----></div><div class="item"><a href="/documentation/utils/ofThreadChannel" title="/documentation/utils/ofThreadChannel.markdown"><!----><span>ofThreadChannel</span></a><!----></div><div class="item"><a href="/documentation/utils/ofTime" title="/documentation/utils/ofTime.markdown"><!----><span>ofTime</span></a><!----></div><div class="item"><a href="/documentation/utils/ofTimer" title="/documentation/utils/ofTimer.markdown"><!----><span>ofTimer</span></a><!----></div><div class="item"><a href="/documentation/utils/ofURLFileLoader_functions" title="/documentation/utils/ofURLFileLoader_functions.markdown"><!----><span>ofURLFileLoader_functions</span></a><!----></div><div class="item"><a href="/documentation/utils/ofURLFileLoader" title="/documentation/utils/ofURLFileLoader.markdown"><!----><span>ofURLFileLoader</span></a><!----></div><div class="item"><a href="/documentation/utils/ofUTF8Iterator" title="/documentation/utils/ofUTF8Iterator.markdown"><!----><span>ofUTF8Iterator</span></a><!----></div><div class="item"><a href="/documentation/utils/ofUtils_functions" title="/documentation/utils/ofUtils_functions.markdown"><!----><span>ofUtils_functions</span></a><!----></div><div class="item"><a href="/documentation/utils/ofXml_functions" title="/documentation/utils/ofXml_functions.markdown"><!----><span>ofXml_functions</span></a><div class="list"></div></div><div class="item"><a href="/documentation/utils/ofXml::Attribute" title="/documentation/utils/ofXml::Attribute.markdown"><!----><span>ofXml::Attribute</span></a><div class="list"></div></div><div class="item"><a href="/documentation/utils/ofXml::Range" title="/documentation/utils/ofXml::Range.markdown"><!----><span>ofXml::Range</span></a><div class="list"></div></div><div class="item"><a href="/documentation/utils/ofXml::Search" title="/documentation/utils/ofXml::Search.markdown"><!----><span>ofXml::Search</span></a><div class="list"></div></div><div class="item"><a href="/documentation/utils/ofXml" title="/documentation/utils/ofXml.markdown" class="nuxt-link-exact-active nuxt-link-active"><!----><span>ofXml</span></a><div class="list"></div></div><div class="item"><a href="/documentation/utils/ofXmlIterator" title="/documentation/utils/ofXmlIterator.markdown"><!----><span>ofXmlIterator</span></a><div class="list"></div></div><div class="item"><a href="/documentation/utils/ofXmlSearchIterator" title="/documentation/utils/ofXmlSearchIterator.markdown"><!----><span>ofXmlSearchIterator</span></a><div class="list"></div></div></div></div><div class="item"><a href="/documentation/video/" title="/documentation/video/"><!----><span>video</span></a><!----></div></div></div><div class="item"><a href="/guides/" title="/guides/"><!----><span>guides</span></a><!----></div><div class="item"><a href="/examples/" title="/examples/"><!----><span>examples</span></a><!----></div><div class="item"><a href="/openframeworks/" title="/openframeworks/"><!----><span>openFrameworks</span></a><!----></div><div class="item"><a href="/addons/" title="/addons/"><!----><span>addons</span></a><!----></div><div class="item"><a href="/guides/" title="/guides/"><!----><span>guides</span></a><!----></div></div></div></div><div id="document"><div id="renderer" class="main"><div absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/utils/ofXml.markdown" route="/documentation/utils/ofXml.markdown" dir="../ofSite/documentation/utils" ext="markdown" type="page" id="2234" parent="2195" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><div class="mt2 mb2"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/" class="pink nuxt-link-active">documentation </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/utils/" class="pink nuxt-link-active">utils </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link">ofXml </span><!----></span></span></div></div></div></div><div id="documentation-page" document="<p>#class ofXml</p>
+<p>&amp;lt;!--
+<em>visible: True</em>
+<em>advanced: False</em>
+<em>istemplated: False</em>
+_extends: _
+--&amp;gt;</p>
+<p>##InlineDescription</p>
+<p>##Description</p>
+<p>##Methods</p>
+<p>###ofXml::Attribute appendAttribute(&amp;amp;name)</p>
+<p>&amp;lt;!--
+<em>syntax: appendAttribute(&amp;amp;name)</em>
+<em>name: appendAttribute</em>
+<em>returns: ofXml::Attribute</em>
+_returns_description: _
+<em>parameters: const string &amp;amp;name</em>
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###ofXml appendChild(&amp;amp;&amp;amp;xml)</p>
+<p>&amp;lt;!--
+<em>syntax: appendChild(&amp;amp;&amp;amp;xml)</em>
+<em>name: appendChild</em>
+<em>returns: ofXml</em>
+_returns_description: _
+<em>parameters: ofXml &amp;amp;&amp;amp;xml</em>
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###ofXml appendChild(&amp;amp;name)</p>
+<p>&amp;lt;!--
+<em>syntax: appendChild(&amp;amp;name)</em>
+<em>name: appendChild</em>
+<em>returns: ofXml</em>
+_returns_description: _
+<em>parameters: const string &amp;amp;name</em>
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###ofXml appendChild(&amp;amp;xml)</p>
+<p>&amp;lt;!--
+<em>syntax: appendChild(&amp;amp;xml)</em>
+<em>name: appendChild</em>
+<em>returns: ofXml</em>
+_returns_description: _
+<em>parameters: const ofXml &amp;amp;xml</em>
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###ofXml::Search find(&amp;amp;path)</p>
+<p>&amp;lt;!--
+<em>syntax: find(&amp;amp;path)</em>
+<em>name: find</em>
+<em>returns: ofXml::Search</em>
+_returns_description: _
+<em>parameters: const string &amp;amp;path</em>
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###ofXml findFirst(&amp;amp;path)</p>
+<p>&amp;lt;!--
+<em>syntax: findFirst(&amp;amp;path)</em>
+<em>name: findFirst</em>
+<em>returns: ofXml</em>
+_returns_description: _
+<em>parameters: const string &amp;amp;path</em>
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###ofXml::Attribute getAttribute(&amp;amp;name)</p>
+<p>&amp;lt;!--
+<em>syntax: getAttribute(&amp;amp;name)</em>
+<em>name: getAttribute</em>
+<em>returns: ofXml::Attribute</em>
+_returns_description: _
+<em>parameters: const string &amp;amp;name</em>
+<em>access: public</em>
+<em>version_started: 0073</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>Returns the value of an attribute or an empty string if it doesn't exist.</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###Range&amp;lt;ofXmlIterator&amp;lt; pugi::xml_attribute_iterator&amp;gt;  &amp;gt; getAttributes()</p>
+<p>&amp;lt;!--
+<em>syntax: getAttributes()</em>
+<em>name: getAttributes</em>
+<em>returns: Range&amp;lt;ofXmlIterator&amp;lt; pugi::xml_attribute_iterator&amp;gt;  &amp;gt;</em>
+_returns_description: _
+_parameters: _
+<em>access: public</em>
+<em>version_started: 0073</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>Returns a map of all the attributes of the current node.</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###bool getBoolValue()</p>
+<p>&amp;lt;!--
+<em>syntax: getBoolValue()</em>
+<em>name: getBoolValue</em>
+<em>returns: bool</em>
+_returns_description: _
+_parameters: _
+<em>access: public</em>
+<em>version_started: 0073</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###ofXml getChild(&amp;amp;name)</p>
+<p>&amp;lt;!--
+<em>syntax: getChild(&amp;amp;name)</em>
+<em>name: getChild</em>
+<em>returns: ofXml</em>
+_returns_description: _
+<em>parameters: const string &amp;amp;name</em>
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###Range&amp;lt;ofXmlIterator&amp;lt; pugi::xml_named_node_iterator&amp;gt;  &amp;gt; getChildren(&amp;amp;name)</p>
+<p>&amp;lt;!--
+<em>syntax: getChildren(&amp;amp;name)</em>
+<em>name: getChildren</em>
+<em>returns: Range&amp;lt;ofXmlIterator&amp;lt; pugi::xml_named_node_iterator&amp;gt;  &amp;gt;</em>
+_returns_description: _
+<em>parameters: const string &amp;amp;name</em>
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###Range&amp;lt;ofXmlIterator&amp;lt; pugi::xml_node_iterator&amp;gt;  &amp;gt; getChildren()</p>
+<p>&amp;lt;!--
+<em>syntax: getChildren()</em>
+<em>name: getChildren</em>
+<em>returns: Range&amp;lt;ofXmlIterator&amp;lt; pugi::xml_node_iterator&amp;gt;  &amp;gt;</em>
+_returns_description: _
+_parameters: _
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###double getDoubleValue()</p>
+<p>&amp;lt;!--
+<em>syntax: getDoubleValue()</em>
+<em>name: getDoubleValue</em>
+<em>returns: double</em>
+_returns_description: _
+_parameters: _
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###ofXml::Attribute getFirstAttribute()</p>
+<p>&amp;lt;!--
+<em>syntax: getFirstAttribute()</em>
+<em>name: getFirstAttribute</em>
+<em>returns: ofXml::Attribute</em>
+_returns_description: _
+_parameters: _
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###ofXml getFirstChild()</p>
+<p>&amp;lt;!--
+<em>syntax: getFirstChild()</em>
+<em>name: getFirstChild</em>
+<em>returns: ofXml</em>
+_returns_description: _
+_parameters: _
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###float getFloatValue()</p>
+<p>&amp;lt;!--
+<em>syntax: getFloatValue()</em>
+<em>name: getFloatValue</em>
+<em>returns: float</em>
+_returns_description: _
+_parameters: _
+<em>access: public</em>
+<em>version_started: 0073</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###int getIntValue()</p>
+<p>&amp;lt;!--
+<em>syntax: getIntValue()</em>
+<em>name: getIntValue</em>
+<em>returns: int</em>
+_returns_description: _
+_parameters: _
+<em>access: public</em>
+<em>version_started: 0073</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###ofXml::Attribute getLastAttribute()</p>
+<p>&amp;lt;!--
+<em>syntax: getLastAttribute()</em>
+<em>name: getLastAttribute</em>
+<em>returns: ofXml::Attribute</em>
+_returns_description: _
+_parameters: _
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###ofXml getLastChild()</p>
+<p>&amp;lt;!--
+<em>syntax: getLastChild()</em>
+<em>name: getLastChild</em>
+<em>returns: ofXml</em>
+_returns_description: _
+_parameters: _
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###string getName()</p>
+<p>&amp;lt;!--
+<em>syntax: getName()</em>
+<em>name: getName</em>
+<em>returns: string</em>
+_returns_description: _
+_parameters: _
+<em>access: public</em>
+<em>version_started: 0073</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###ofXml getNextSibling(&amp;amp;name)</p>
+<p>&amp;lt;!--
+<em>syntax: getNextSibling(&amp;amp;name)</em>
+<em>name: getNextSibling</em>
+<em>returns: ofXml</em>
+_returns_description: _
+<em>parameters: const string &amp;amp;name</em>
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###ofXml getNextSibling()</p>
+<p>&amp;lt;!--
+<em>syntax: getNextSibling()</em>
+<em>name: getNextSibling</em>
+<em>returns: ofXml</em>
+_returns_description: _
+_parameters: _
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###ofXml getPreviousSibling(&amp;amp;name)</p>
+<p>&amp;lt;!--
+<em>syntax: getPreviousSibling(&amp;amp;name)</em>
+<em>name: getPreviousSibling</em>
+<em>returns: ofXml</em>
+_returns_description: _
+<em>parameters: const string &amp;amp;name</em>
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###ofXml getPreviousSibling()</p>
+<p>&amp;lt;!--
+<em>syntax: getPreviousSibling()</em>
+<em>name: getPreviousSibling</em>
+<em>returns: ofXml</em>
+_returns_description: _
+_parameters: _
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###unsigned int getUintValue()</p>
+<p>&amp;lt;!--
+<em>syntax: getUintValue()</em>
+<em>name: getUintValue</em>
+<em>returns: unsigned int</em>
+_returns_description: _
+_parameters: _
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###T getValue()</p>
+<p>&amp;lt;!--
+<em>syntax: getValue()</em>
+<em>name: getValue</em>
+<em>returns: T</em>
+_returns_description: _
+_parameters: _
+<em>access: public</em>
+<em>version_started: 0073</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###string getValue()</p>
+<p>&amp;lt;!--
+<em>syntax: getValue()</em>
+<em>name: getValue</em>
+<em>returns: string</em>
+_returns_description: _
+_parameters: _
+<em>access: public</em>
+<em>version_started: 0073</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###ofXml insertChildAfter(&amp;amp;name, &amp;amp;after)</p>
+<p>&amp;lt;!--
+<em>syntax: insertChildAfter(&amp;amp;name, &amp;amp;after)</em>
+<em>name: insertChildAfter</em>
+<em>returns: ofXml</em>
+_returns_description: _
+<em>parameters: const string &amp;amp;name, const ofXml &amp;amp;after</em>
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###ofXml insertChildBefore(&amp;amp;name, &amp;amp;after)</p>
+<p>&amp;lt;!--
+<em>syntax: insertChildBefore(&amp;amp;name, &amp;amp;after)</em>
+<em>name: insertChildBefore</em>
+<em>returns: ofXml</em>
+_returns_description: _
+<em>parameters: const string &amp;amp;name, const ofXml &amp;amp;after</em>
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###bool load(&amp;amp;buffer)</p>
+<p>&amp;lt;!--
+<em>syntax: load(&amp;amp;buffer)</em>
+<em>name: load</em>
+<em>returns: bool</em>
+_returns_description: _
+<em>parameters: const ofBuffer &amp;amp;buffer</em>
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###bool load(&amp;amp;file)</p>
+<p>&amp;lt;!--
+<em>syntax: load(&amp;amp;file)</em>
+<em>name: load</em>
+<em>returns: bool</em>
+_returns_description: _
+<em>parameters: const filesystem::path &amp;amp;file</em>
+<em>access: public</em>
+<em>version_started: 0073</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<h3>ofXml()</h3>
+<p>&amp;lt;!--
+<em>syntax: ofXml()</em>
+<em>name: ofXml</em>
+_returns: _
+_returns_description: _
+_parameters: _
+<em>access: public</em>
+<em>version_started: 0073</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<h3>ofXml(doc, &amp;amp;xml)</h3>
+<p>&amp;lt;!--
+<em>syntax: ofXml(doc, &amp;amp;xml)</em>
+<em>name: ofXml</em>
+_returns: _
+_returns_description: _
+<em>parameters: shared_ptr&amp;lt; pugi::xml_document &amp;gt; doc, const pugi::xml_node &amp;amp;xml</em>
+<em>access: private</em>
+<em>version_started: 0.8.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###bool parse(&amp;amp;xmlStr)</p>
+<p>&amp;lt;!--
+<em>syntax: parse(&amp;amp;xmlStr)</em>
+<em>name: parse</em>
+<em>returns: bool</em>
+_returns_description: _
+<em>parameters: const string &amp;amp;xmlStr</em>
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###ofXml::Attribute prependAttribute(&amp;amp;name)</p>
+<p>&amp;lt;!--
+<em>syntax: prependAttribute(&amp;amp;name)</em>
+<em>name: prependAttribute</em>
+<em>returns: ofXml::Attribute</em>
+_returns_description: _
+<em>parameters: const string &amp;amp;name</em>
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###ofXml prependChild(&amp;amp;&amp;amp;xml)</p>
+<p>&amp;lt;!--
+<em>syntax: prependChild(&amp;amp;&amp;amp;xml)</em>
+<em>name: prependChild</em>
+<em>returns: ofXml</em>
+_returns_description: _
+<em>parameters: ofXml &amp;amp;&amp;amp;xml</em>
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###ofXml prependChild(&amp;amp;name)</p>
+<p>&amp;lt;!--
+<em>syntax: prependChild(&amp;amp;name)</em>
+<em>name: prependChild</em>
+<em>returns: ofXml</em>
+_returns_description: _
+<em>parameters: const string &amp;amp;name</em>
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###ofXml prependChild(&amp;amp;xml)</p>
+<p>&amp;lt;!--
+<em>syntax: prependChild(&amp;amp;xml)</em>
+<em>name: prependChild</em>
+<em>returns: ofXml</em>
+_returns_description: _
+<em>parameters: const ofXml &amp;amp;xml</em>
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###bool removeChild(&amp;amp;name)</p>
+<p>&amp;lt;!--
+<em>syntax: removeChild(&amp;amp;name)</em>
+<em>name: removeChild</em>
+<em>returns: bool</em>
+_returns_description: _
+<em>parameters: const string &amp;amp;name</em>
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###bool save(&amp;amp;file)</p>
+<p>&amp;lt;!--
+<em>syntax: save(&amp;amp;file)</em>
+<em>name: save</em>
+<em>returns: bool</em>
+_returns_description: _
+<em>parameters: const filesystem::path &amp;amp;file</em>
+<em>access: public</em>
+<em>version_started: 0073</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>Save the XML object to a file.</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###void set(&amp;amp;value)</p>
+<p>&amp;lt;!--
+<em>syntax: set(&amp;amp;value)</em>
+<em>name: set</em>
+<em>returns: void</em>
+_returns_description: _
+<em>parameters: const T &amp;amp;value</em>
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###void set(&amp;amp;value)</p>
+<p>&amp;lt;!--
+<em>syntax: set(&amp;amp;value)</em>
+<em>name: set</em>
+<em>returns: void</em>
+_returns_description: _
+<em>parameters: const unsigned char &amp;amp;value</em>
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###ofXml::Attribute setAttribute(&amp;amp;name, &amp;amp;value)</p>
+<p>&amp;lt;!--
+<em>syntax: setAttribute(&amp;amp;name, &amp;amp;value)</em>
+<em>name: setAttribute</em>
+<em>returns: ofXml::Attribute</em>
+_returns_description: _
+<em>parameters: const string &amp;amp;name, const T &amp;amp;value</em>
+<em>access: public</em>
+<em>version_started: 0073</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>Sets attribute at the path indicated. If the attribute doesn't already exist, it's created.</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###void setName(&amp;amp;name)</p>
+<p>&amp;lt;!--
+<em>syntax: setName(&amp;amp;name)</em>
+<em>name: setName</em>
+<em>returns: void</em>
+_returns_description: _
+<em>parameters: const string &amp;amp;name</em>
+<em>access: public</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###string toString(&amp;amp;indent)</p>
+<p>&amp;lt;!--
+<em>syntax: toString(&amp;amp;indent)</em>
+<em>name: toString</em>
+<em>returns: string</em>
+_returns_description: _
+<em>parameters: const string &amp;amp;indent</em>
+<em>access: public</em>
+<em>version_started: 0073</em>
+_version_deprecated: _
+_summary: _
+<em>constant: False</em>
+<em>static: False</em>
+<em>visible: True</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>Creates a string from the XML document. Useful for when you want to send or save the document.</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>##Variables</p>
+<p>###shared_ptr&amp;lt; pugi::xml_document &amp;gt; doc</p>
+<p>&amp;lt;!--
+<em>name: doc</em>
+<em>type: shared_ptr&amp;lt; pugi::xml_document &amp;gt;</em>
+<em>access: private</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>visible: True</em>
+<em>constant: False</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+<p>###pugi::xml_node xml</p>
+<p>&amp;lt;!--
+<em>name: xml</em>
+<em>type: pugi::xml_node</em>
+<em>access: private</em>
+<em>version_started: 0.10.0</em>
+_version_deprecated: _
+_summary: _
+<em>visible: True</em>
+<em>constant: False</em>
+<em>advanced: False</em>
+--&amp;gt;</p>
+<p>_inlined_description: _</p>
+<p>_description: _</p>
+<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
+"><div id="side-menu" class="markdown"><div id="params"><h4>Variables</h4><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">pugi::xml_node </span><span>xml</span><span class="token comment"></span></div><div class="desc"></div></div></code><hr></div><div id="methods-list"><h4>Methods</h4><div class="anchor"><code><a href="#appendAttribute">appendAttribute</a></code></div><div class="anchor"><code><a href="#appendChild">appendChild</a></code></div><div class="anchor"><code><a href="#appendChild">appendChild</a></code></div><div class="anchor"><code><a href="#appendChild">appendChild</a></code></div><div class="anchor"><code><a href="#find">find</a></code></div><div class="anchor"><code><a href="#findFirst">findFirst</a></code></div><div class="anchor"><code><a href="#getAttribute" class="pink">getAttribute</a></code></div><div class="anchor"><code><a href="#getBoolValue">getBoolValue</a></code></div><div class="anchor"><code><a href="#getChild">getChild</a></code></div><div class="anchor"><code><a href="#getDoubleValue">getDoubleValue</a></code></div><div class="anchor"><code><a href="#getFirstAttribute">getFirstAttribute</a></code></div><div class="anchor"><code><a href="#getFirstChild">getFirstChild</a></code></div><div class="anchor"><code><a href="#getFloatValue">getFloatValue</a></code></div><div class="anchor"><code><a href="#getIntValue">getIntValue</a></code></div><div class="anchor"><code><a href="#getLastAttribute">getLastAttribute</a></code></div><div class="anchor"><code><a href="#getLastChild">getLastChild</a></code></div><div class="anchor"><code><a href="#getName">getName</a></code></div><div class="anchor"><code><a href="#getNextSibling">getNextSibling</a></code></div><div class="anchor"><code><a href="#getNextSibling">getNextSibling</a></code></div><div class="anchor"><code><a href="#getPreviousSibling">getPreviousSibling</a></code></div><div class="anchor"><code><a href="#getPreviousSibling">getPreviousSibling</a></code></div><div class="anchor"><code><a href="#getUintValue">getUintValue</a></code></div><div class="anchor"><code><a href="#getValue">getValue</a></code></div><div class="anchor"><code><a href="#getValue">getValue</a></code></div><div class="anchor"><code><a href="#insertChildAfter">insertChildAfter</a></code></div><div class="anchor"><code><a href="#insertChildBefore">insertChildBefore</a></code></div><div class="anchor"><code><a href="#load">load</a></code></div><div class="anchor"><code><a href="#load">load</a></code></div><div class="anchor"><code><a href="#ofXml">ofXml</a></code></div><div class="anchor"><code><a href="#parse">parse</a></code></div><div class="anchor"><code><a href="#prependAttribute">prependAttribute</a></code></div><div class="anchor"><code><a href="#prependChild">prependChild</a></code></div><div class="anchor"><code><a href="#prependChild">prependChild</a></code></div><div class="anchor"><code><a href="#prependChild">prependChild</a></code></div><div class="anchor"><code><a href="#removeChild">removeChild</a></code></div><div class="anchor"><code><a href="#save" class="pink">save</a></code></div><div class="anchor"><code><a href="#set">set</a></code></div><div class="anchor"><code><a href="#set">set</a></code></div><div class="anchor"><code><a href="#setAttribute" class="pink">setAttribute</a></code></div><div class="anchor"><code><a href="#setName">setName</a></code></div><div class="anchor"><code><a href="#toString" class="pink">toString</a></code></div></div><div id="see-also" filename="ofXml.markdown" absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/utils/ofXml.markdown" route="/documentation/utils/ofXml.markdown" dir="../ofSite/documentation/utils" ext="markdown" type="page" parent="2195" breadcrumbs="2195,1718" siblings="" translations="[object Object]" class="see-also"><h4>See also</h4><div class="also"><a href="/documentation/utils/ofXmlSearchIterator"><span class="origin">documentation</span><span class="name">ofXmlSearchIterator</span></a></div><div class="also"><a href="/documentation/utils/ofXmlIterator"><span class="origin">documentation</span><span class="name">ofXmlIterator</span></a></div><div class="also"><a href="/documentation/utils/ofXml::Search"><span class="origin">documentation</span><span class="name">ofXml::Search</span></a></div><div class="also"><a href="/documentation/utils/ofXml::Range"><span class="origin">documentation</span><span class="name">ofXml::Range</span></a></div><div class="also"><a href="/documentation/utils/ofXml::Attribute"><span class="origin">documentation</span><span class="name">ofXml::Attribute</span></a></div><div class="also"><a href="/documentation/utils/ofXml_functions"><span class="origin">documentation</span><span class="name">ofXml_functions</span></a></div><div class="also"><a href="/openframeworks/utils/ofXml_h"><span class="origin">openframeworks</span><span class="name">ofXml.h</span></a></div><div class="also"><a href="/openframeworks/utils/ofXml_cpp"><span class="origin">openframeworks</span><span class="name">ofXml.cpp</span></a></div></div></div><div id="offset-page"><div id="doc-header" class="inner"><div id="doctitles"><h1 class="page-title mb1 questrial"><span class="f7">ofXml</span><span class="langs f5"></span></h1><!----></div><div id="actions"><button class="button">Edit</button><!----></div></div><div id="doc-body" class="markdown"><!----><div class="inner"><div class="renderer"><div id="description"><div class="full-description"><div class="html"><h1></h1>
+</div></div></div><div id="methods"><hr><section name="appendAttribute" id="appendAttribute" class="mb2"><div class="method mb2"><h3 class="f3 title">appendAttribute(<code class="pink">…</code>)</h3><code><span class="token keyword">ofXml::Attribute  </span><span class="token function">appendAttribute</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="appendChild" id="appendChild" class="mb2"><div class="method mb2"><h3 class="f3 title">appendChild(<code class="pink">…</code>)</h3><code><span class="token keyword">ofXml  </span><span class="token function">appendChild</span><span class="token punctuation">(</span><code class="token boolean">ofXml <span class="token operator">&&</span>xml</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="appendChild" id="appendChild" class="mb2"><div class="method mb2"><h3 class="f3 title">appendChild(<code class="pink">…</code>)</h3><code><span class="token keyword">ofXml  </span><span class="token function">appendChild</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="appendChild" id="appendChild" class="mb2"><div class="method mb2"><h3 class="f3 title">appendChild(<code class="pink">…</code>)</h3><code><span class="token keyword">ofXml  </span><span class="token function">appendChild</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofXml <span class="token operator">&</span>xml</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="find" id="find" class="mb2"><div class="method mb2"><h3 class="f3 title">find(<code class="pink">…</code>)</h3><code><span class="token keyword">ofXml::Search  </span><span class="token function">find</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>path</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="findFirst" id="findFirst" class="mb2"><div class="method mb2"><h3 class="f3 title">findFirst(<code class="pink">…</code>)</h3><code><span class="token keyword">ofXml  </span><span class="token function">findFirst</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>path</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getAttribute" id="getAttribute" class="mb2"><div class="method mb2"><h3 class="f3 title">getAttribute(<code class="pink">…</code>)</h3><code><span class="token keyword">ofXml::Attribute  </span><span class="token function">getAttribute</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Returns the value of an attribute or an empty string if it doesn't exist.</p>
+</div></div><hr></section><section name="getBoolValue" id="getBoolValue" class="mb2"><div class="method mb2"><h3 class="f3 title">getBoolValue(<!---->)</h3><code><span class="token keyword">bool  </span><span class="token function">getBoolValue</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getChild" id="getChild" class="mb2"><div class="method mb2"><h3 class="f3 title">getChild(<code class="pink">…</code>)</h3><code><span class="token keyword">ofXml  </span><span class="token function">getChild</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getDoubleValue" id="getDoubleValue" class="mb2"><div class="method mb2"><h3 class="f3 title">getDoubleValue(<!---->)</h3><code><span class="token keyword">double  </span><span class="token function">getDoubleValue</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getFirstAttribute" id="getFirstAttribute" class="mb2"><div class="method mb2"><h3 class="f3 title">getFirstAttribute(<!---->)</h3><code><span class="token keyword">ofXml::Attribute  </span><span class="token function">getFirstAttribute</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getFirstChild" id="getFirstChild" class="mb2"><div class="method mb2"><h3 class="f3 title">getFirstChild(<!---->)</h3><code><span class="token keyword">ofXml  </span><span class="token function">getFirstChild</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getFloatValue" id="getFloatValue" class="mb2"><div class="method mb2"><h3 class="f3 title">getFloatValue(<!---->)</h3><code><span class="token keyword">float  </span><span class="token function">getFloatValue</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getIntValue" id="getIntValue" class="mb2"><div class="method mb2"><h3 class="f3 title">getIntValue(<!---->)</h3><code><span class="token keyword">int  </span><span class="token function">getIntValue</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getLastAttribute" id="getLastAttribute" class="mb2"><div class="method mb2"><h3 class="f3 title">getLastAttribute(<!---->)</h3><code><span class="token keyword">ofXml::Attribute  </span><span class="token function">getLastAttribute</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getLastChild" id="getLastChild" class="mb2"><div class="method mb2"><h3 class="f3 title">getLastChild(<!---->)</h3><code><span class="token keyword">ofXml  </span><span class="token function">getLastChild</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getName" id="getName" class="mb2"><div class="method mb2"><h3 class="f3 title">getName(<!---->)</h3><code><span class="token keyword">string  </span><span class="token function">getName</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getNextSibling" id="getNextSibling" class="mb2"><div class="method mb2"><h3 class="f3 title">getNextSibling(<code class="pink">…</code>)</h3><code><span class="token keyword">ofXml  </span><span class="token function">getNextSibling</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getNextSibling" id="getNextSibling" class="mb2"><div class="method mb2"><h3 class="f3 title">getNextSibling(<!---->)</h3><code><span class="token keyword">ofXml  </span><span class="token function">getNextSibling</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getPreviousSibling" id="getPreviousSibling" class="mb2"><div class="method mb2"><h3 class="f3 title">getPreviousSibling(<code class="pink">…</code>)</h3><code><span class="token keyword">ofXml  </span><span class="token function">getPreviousSibling</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getPreviousSibling" id="getPreviousSibling" class="mb2"><div class="method mb2"><h3 class="f3 title">getPreviousSibling(<!---->)</h3><code><span class="token keyword">ofXml  </span><span class="token function">getPreviousSibling</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getUintValue" id="getUintValue" class="mb2"><div class="method mb2"><h3 class="f3 title">getUintValue(<!---->)</h3><code><span class="token keyword">unsigned int  </span><span class="token function">getUintValue</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getValue" id="getValue" class="mb2"><div class="method mb2"><h3 class="f3 title">getValue(<!---->)</h3><code><span class="token keyword">T  </span><span class="token function">getValue</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getValue" id="getValue" class="mb2"><div class="method mb2"><h3 class="f3 title">getValue(<!---->)</h3><code><span class="token keyword">string  </span><span class="token function">getValue</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="insertChildAfter" id="insertChildAfter" class="mb2"><div class="method mb2"><h3 class="f3 title">insertChildAfter(<code class="pink">…</code>)</h3><code><span class="token keyword">ofXml  </span><span class="token function">insertChildAfter</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">const</span> ofXml <span class="token operator">&</span>after</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="insertChildBefore" id="insertChildBefore" class="mb2"><div class="method mb2"><h3 class="f3 title">insertChildBefore(<code class="pink">…</code>)</h3><code><span class="token keyword">ofXml  </span><span class="token function">insertChildBefore</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">const</span> ofXml <span class="token operator">&</span>after</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="load" id="load" class="mb2"><div class="method mb2"><h3 class="f3 title">load(<code class="pink">…</code>)</h3><code><span class="token keyword">bool  </span><span class="token function">load</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofBuffer <span class="token operator">&</span>buffer</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="load" id="load" class="mb2"><div class="method mb2"><h3 class="f3 title">load(<code class="pink">…</code>)</h3><code><span class="token keyword">bool  </span><span class="token function">load</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> filesystem<span class="token operator">::</span>path <span class="token operator">&</span>file</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofXml" id="ofXml" class="mb2"><div class="method mb2"><h3 class="f3 title">ofXml(<!---->)</h3><code><!----><span class="token function">ofXml</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="parse" id="parse" class="mb2"><div class="method mb2"><h3 class="f3 title">parse(<code class="pink">…</code>)</h3><code><span class="token keyword">bool  </span><span class="token function">parse</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>xmlStr</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="prependAttribute" id="prependAttribute" class="mb2"><div class="method mb2"><h3 class="f3 title">prependAttribute(<code class="pink">…</code>)</h3><code><span class="token keyword">ofXml::Attribute  </span><span class="token function">prependAttribute</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="prependChild" id="prependChild" class="mb2"><div class="method mb2"><h3 class="f3 title">prependChild(<code class="pink">…</code>)</h3><code><span class="token keyword">ofXml  </span><span class="token function">prependChild</span><span class="token punctuation">(</span><code class="token boolean">ofXml <span class="token operator">&&</span>xml</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="prependChild" id="prependChild" class="mb2"><div class="method mb2"><h3 class="f3 title">prependChild(<code class="pink">…</code>)</h3><code><span class="token keyword">ofXml  </span><span class="token function">prependChild</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="prependChild" id="prependChild" class="mb2"><div class="method mb2"><h3 class="f3 title">prependChild(<code class="pink">…</code>)</h3><code><span class="token keyword">ofXml  </span><span class="token function">prependChild</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofXml <span class="token operator">&</span>xml</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="removeChild" id="removeChild" class="mb2"><div class="method mb2"><h3 class="f3 title">removeChild(<code class="pink">…</code>)</h3><code><span class="token keyword">bool  </span><span class="token function">removeChild</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="save" id="save" class="mb2"><div class="method mb2"><h3 class="f3 title">save(<code class="pink">…</code>)</h3><code><span class="token keyword">bool  </span><span class="token function">save</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> filesystem<span class="token operator">::</span>path <span class="token operator">&</span>file</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Save the XML object to a file.</p>
+</div></div><hr></section><section name="set" id="set" class="mb2"><div class="method mb2"><h3 class="f3 title">set(<code class="pink">…</code>)</h3><code><span class="token keyword">void  </span><span class="token function">set</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> T <span class="token operator">&</span>value</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="set" id="set" class="mb2"><div class="method mb2"><h3 class="f3 title">set(<code class="pink">…</code>)</h3><code><span class="token keyword">void  </span><span class="token function">set</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> <span class="token keyword">unsigned</span> <span class="token keyword">char</span> <span class="token operator">&</span>value</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setAttribute" id="setAttribute" class="mb2"><div class="method mb2"><h3 class="f3 title">setAttribute(<code class="pink">…</code>)</h3><code><span class="token keyword">ofXml::Attribute  </span><span class="token function">setAttribute</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">const</span> T <span class="token operator">&</span>value</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Sets attribute at the path indicated. If the attribute doesn't already exist, it's created.</p>
+</div></div><hr></section><section name="setName" id="setName" class="mb2"><div class="method mb2"><h3 class="f3 title">setName(<code class="pink">…</code>)</h3><code><span class="token keyword">void  </span><span class="token function">setName</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="toString" id="toString" class="mb2"><div class="method mb2"><h3 class="f3 title">toString(<code class="pink">…</code>)</h3><code><span class="token keyword">string  </span><span class="token function">toString</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>indent</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Creates a string from the XML document. Useful for when you want to send or save the document.</p>
+</div></div><hr></section></div></div></div></div></div></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1583508725549/documentation/utils/ofXml/payload.js"></script><script src="/_nuxt/76844c096ee4b2a8e8b3.js" defer></script><script src="/_nuxt/0128aba013e56fe5f14b.js" defer></script><script src="/_nuxt/561e36663ec83bdcd2ac.js" defer></script><script src="/_nuxt/26c5a70906ce7aaac460.js" defer></script><script src="/_nuxt/426713a49089294b64e8.js" defer></script>
+  </body>
+</html>

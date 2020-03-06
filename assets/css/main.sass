@@ -1,0 +1,292 @@
+
+@import '~/assets/css/_reset'
+@import '~/assets/css/_utils'
+@import '~/assets/css/_grid'
+@import './theme'
+
+
+body
+	@include generateFontSizes( 13px )
+	@include generateTags( gray, mono(10), mono(10) )
+	width: 100vw
+	padding: 0
+	margin: 0
+	overflow-x: hidden
+	color: $black
+
+h1, h2, h3, h4, h5, h6 
+	font-weight: bold
+
+@import 'burgers'
+
+.ico
+	font-family: 'Material Icons'
+	font-weight: normal
+	font-style: normal
+	font-size: 1.5em
+	top: 0.2em
+	margin-right: 0.5em
+	position: relative
+	display: inline-block
+	line-height: 1
+	text-transform: none
+	letter-spacing: normal
+	word-wrap: normal
+	white-space: nowrap
+	direction: ltr
+	-webkit-font-smoothing: antialiased
+	text-rendering: optimizeLegibility
+	-moz-osx-font-smoothing: grayscale
+	font-feature-settings: 'liga'
+
+
+#app
+
+	font-family: Helvetica, Arial, sans-serif
+	.chevron::before 
+		border-style: solid
+		border-width: 1px 1px 0 0
+		content: ''
+		display: inline-block
+		height: 0.5em
+		left: 0em
+		position: relative
+		top: 0.5em
+		transform: rotate(-45deg)
+		vertical-align: top
+		width: 0.5em
+	
+
+	.chevron.right:before 
+		left: 0
+		transform: rotate(45deg)
+	
+
+	.chevron.bottom:before 
+		top: 0
+		transform: rotate(135deg)
+	
+
+	.chevron.left:before 
+		left: 0.25em
+		transform: rotate(-135deg)
+	
+
+
+	$dot: 4px
+	.dot
+		width: $dot
+		height: $dot
+		border-radius: $dot
+		background: #eee
+		display: inline-block
+		margin: 0.25em 5px
+		// border: 1px solid $pink
+		&.active
+			background: $pink
+
+	$mw: 320px
+	#side-menu
+		position: fixed
+		right: 0px
+		top: 0
+		height: 100vh
+		overflow: auto
+		width: $mw
+		background: white
+		padding: 30px
+		border-left: 1px solid #eee
+	#offset-page
+		margin-right: $mw
+
+
+
+
+
+
+
+
+
+
+			
+
+
+	.map-wrapper, .GMap, .map, .gm-style, .GMap__Wrapper, .GMap__Wrapper > *
+		@include fill()
+		overflow: hidden
+	.GMap
+		height: calc( 100% + 24px )
+
+	@media only screen and (max-width: 48em)
+		.map-wrapper
+			&:before
+				content: ""
+				@include fill()
+				z-index: 2
+			
+	.button
+		padding: 10px 20px
+		display: inline-block
+		border: 1px solid mono(85)
+		outline: 0
+		background: transparent
+		border-radius: 2px
+		font-size: $baseText
+		&:disabled
+			opacity: 0.5
+
+	$logoSize: 60px
+	$footerHeight: 200px
+
+	#header
+		// position: fixed
+		// z-index: 999
+		width: 100vw
+		background: white//linear-gradient( white 50%, transparent)
+		.col
+			padding-bottom: 0
+		.header-link a
+			padding: 2em 0em
+			display: block
+			&.nuxt-link-active
+				color: $black
+				// font-weight: bold
+		.logo
+			position: absolute
+			left: 50%
+			top: 15px
+			transform: translate(-50%, 0%)
+			width: $logoSize
+			height: $logoSize
+			span
+				opacity: 0
+				position: absolute
+				font-size: 8px
+			svg
+				width: 100%
+				height: 100%
+		@media only screen and (max-width: 48em)
+			min-height: 70px
+			transition: border-bottom-color 0.2s ease
+			.wrapper
+				height: 0px
+			.row
+				margin-top: 70px
+				padding-top: 1em
+				height: 100vh
+				display: block
+				position: relative
+				background: white
+				left: -9999px
+				opacity: 0
+				transition: opacity 0.4s ease, transform 0.4s ease
+				transform: translate(0px, 40px)
+			&.is-active
+				border-bottom-color: white
+				.row
+					left: 0px
+					opacity: 1
+					transform: translate(0px, 0px)
+			.logo
+				width: 50px
+				height: 50px
+				top: 10px
+			.hamburger
+				position: absolute
+				left: 10px
+				top: 5px
+				outline: none
+				transform: scale(0.8)
+				*, *:after, *:before
+					border-radius: 0px !important
+					background: mono(80)
+				.hamburger-box
+					background: transparent
+			.col
+				padding-bottom: 0
+				text-align: center
+			.header-link a
+				// font-size: 1.5em
+				// padding: 0
+
+
+
+	#header + * 
+		padding-top: $logoSize!important
+		min-height: 100vh
+		@media only screen and (min-width: 48em)
+			padding-bottom: $footerHeight
+	#footer
+		min-height: $footerHeight
+		background: white
+		@media only screen and (min-width: 48em)
+			position: absolute
+			bottom: 0
+		width: 100%
+
+	a, a:hover, a:active
+		color: mono(40)
+		text-decoration: none
+
+	body 
+		font-family: 'Montserrat', sans-serif
+
+
+	.header-push
+		height: 100px
+
+
+
+	.text-wrapper
+		border: 1px solid mono(90)
+		> *
+			border: none
+			background: transparent
+			width: 100%
+			font-size: $baseText
+			padding: 1em 1em
+
+	.row
+		margin-left: -$colPadding
+		margin-right: -$colPadding
+	.col
+		padding: 0em $colPadding
+		padding-bottom: $colPadding
+	.app-wrapper
+		position: relative
+	.full-wrapper, .wrapper
+		padding-left: $pagePadding
+		padding-right: $pagePadding
+		margin: 0 auto
+		box-sizing: border-box
+	.wrapper
+		max-width: $maxWidth
+
+	.bb
+		border-bottom: 1px solid rgb(230,230,230)
+
+	.html
+		p
+			margin: 0
+			padding-bottom: 1em
+			padding-top: 0em
+		strong
+			font-weight: bold
+
+	.brackets
+		padding: 0 0.5em
+		position: relative
+		&:before, &:after
+			content: ""
+			width: 0.3em
+			height: 100%
+			border: 0.05em solid $black
+			position: absolute
+			top: 0
+		&:before
+			left: 0
+			border-right: none
+		&:after
+			right: 0
+			border-left: none
+

@@ -1,0 +1,35 @@
+{
+  "name": "example-storybook",
+  "version": "1.0.0",
+  "description": "sample storybook setup for nuxt",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "precommit": "yarn run lint",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "storybookoutput": "build-storybook -c .storybook -o .out",
+    "post-update": "yarn upgrade --latest"
+  },
+  "dependencies": {
+    "chart.js": "^2.7.1",
+    "nuxt": "latest",
+    "vue-chartjs": "^3.1.1",
+    "vuetify": "1.2.6"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^4.0.0-alpha.24",
+    "@storybook/addon-centered": "^4.0.0-alpha.24",
+    "@storybook/addon-knobs": "^4.0.0-alpha.24",
+    "@storybook/addon-links": "^4.0.0-alpha.24",
+    "@storybook/addon-notes": "^4.0.0-alpha.24",
+    "@storybook/addon-storyshots": "^4.0.0-alpha.24",
+    "@storybook/addon-viewport": "^4.0.0-alpha.24",
+    "@storybook/addons": "^4.0.0-alpha.24",
+    "@storybook/vue": "^4.0.0-alpha.24",
+    "babel-preset-vue": "^2.0.2",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1"
+  }
+}

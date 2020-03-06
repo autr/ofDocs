@@ -1,0 +1,16 @@
+{
+  "name": "example-vue-apollo",
+  "dependencies": {
+    "@nuxtjs/apollo": "^4.0.0-rc.4",
+    "core-js": "^2.6.5",
+    "node-fetch": "^2.3.0",
+    "nuxt": "latest"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "post-update": "yarn upgrade --latest"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "name": "ofDocs",
+  "version": "1.0.0",
+  "description": "openFrameworks documentation & examples browser",
+  "author": "Gilbert Sinnott",
+  "private": true,
+  "scripts": {
+    "createManifest": "node scripts/createManifest.js",
+    "test": "node -r esm scripts/test.js",
+    "dev": "yarn run createManifest && nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "yarn run createManifest && cd nuxt.js && yarn run nuxt generate ../ && cd ../",
+    "serve": "node scripts/server/index.js",
+    "now-dev": "nuxt"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.9.5",
+    "@nuxtjs/svg": "^0.1.6",
+    "fs": "^0.0.1-security",
+    "glob": "^7.1.6",
+    "global": "^4.4.0",
+    "markdown-it": "^10.0.0",
+    "markdown-it-highlightjs": "^3.0.0",
+    "mime-types": "^2.1.26",
+    "node-prismjs": "^0.1.2",
+    "node-sass": "^4.13.0",
+    "nuxt": "^2.11.0",
+    "nuxt-material-design-icons-iconfont": "^1.0.2",
+    "nuxt-validate": "^1.0.1",
+    "prismjs": "^1.19.0",
+    "pug": "^2.0.4",
+    "pug-plain-loader": "^1.0.0",
+    "raw-loader": "^4.0.0",
+    "sass-loader": "^8.0.0",
+    "svg-inline-loader": "^0.8.0",
+    "vue": "2.6.11",
+    "vue-debounce": "^2.3.0",
+    "vue-masonry": "^0.11.8",
+    "vue-underscore": "^0.1.4"
+  },
+  "devDependencies": {
+    "@nuxtjs/moment": "^1.4.0"
+  },
+  "engines": {
+    "node": "12.x"
+  }
+}

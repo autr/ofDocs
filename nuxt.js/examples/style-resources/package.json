@@ -1,0 +1,18 @@
+{
+  "name": "example-style-resources",
+  "dependencies": {
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "nuxt": "latest"
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "post-update": "yarn upgrade --latest"
+  },
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6"
+  }
+}

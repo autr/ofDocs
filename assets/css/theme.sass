@@ -1,0 +1,71 @@
+$maxWidth: 1400px
+$minWidth: 420px
+$pagePadding: 30px
+$colPadding: 30px
+
+$pink: #EE3987
+/*-- font sizes --*/
+
+$baseText: 13px
+$smallText: $baseText - 2px
+$largeText: $baseText + 2px
+
+$bgColor: lightgray
+
+// body text
+$bodyText: mono(10)
+
+// lighter body text
+$lightText: mono(60)
+
+// quotation text
+$quoteText: $bodyText
+
+// main header links
+$headerLink: $bodyText
+
+
+$blueA: #0009FF
+$blueB: #4C42FB
+$blueC: #0A2CD6
+$blueD: lighten($blueA, 30)
+$purple: #C051FF
+$purpleB: hsl(278, 100%, 50%)
+$purpleC: lighten($purple, 20)
+$black: mono(30)
+$gray: mono(60)
+
+
+
+
+@mixin createColorStyle($name, $bgColor, $uiColor, $uiHighlight)
+
+	.#{$name}, .#{$name} #view, .#{$name} #network, .#{$name} #projects, .#{$name} #footer, .#{$name}#footer
+		background: $bgColor
+		color: $uiColor
+		blockquote
+			color: $uiColor
+		input[type=text], textarea
+			color: $uiColor
+			&:focus
+				box-shadow-color: $uiColor
+			&::placeholder, &:disabled::placeholder
+				color: $uiColor
+		.button, button, input[type=submit]
+			color: $bgColor
+			background: $uiColor
+			&:active, .active
+				background: $uiHighlight
+			&.outline
+				color: $uiColor
+				border: 1px solid $uiColor
+				background: transparent
+				&:active, .active
+					color: $uiHighlight
+					background: transparent
+		.header, .title
+			color: $uiColor
+			.bordered
+				border-color: $uiColor
+		a, a:visited
+			color: $uiColor
