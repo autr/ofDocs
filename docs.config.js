@@ -1,8 +1,5 @@
-
 const ofCoreAddons = '{ofxAccelerometer,ofxAndroid,ofxAssimpModelLoader,ofxEmscripten,ofxGPS,ofxGui,ofxKinect,ofxNetwork,ofxOpenCv,ofxOsc,ofxPoco,ofxSvg,ofxThreadedImageLoader,ofxUnitTests,ofxVectorGraphics,ofxXmlSettings,ofxiOS}';
 const allAddons = '*';
-
-
 
 module.exports = {
 	directories: {
@@ -46,6 +43,7 @@ module.exports = {
 	},
 	icons: {
 		"application": "web",
+		"app": "web",
 		"addons": "extension",
 		"communication": "language",
 		"events": "question_answer",

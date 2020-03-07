@@ -1,0 +1,922 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" data-hid="description" name="description" content=""><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><link rel="preload" href="/_nuxt/cede893bee7aedd34019.js" as="script"><link rel="preload" href="/_nuxt/561e36663ec83bdcd2ac.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/26c5a70906ce7aaac460.js" as="script"><link rel="preload" href="/_nuxt/75259d9b56378e7dbe47.css" as="style"><link rel="preload" href="/_nuxt/2c5d9034468f7212e81b.js" as="script"><link rel="preload" href="/_nuxt/74971516fa343f955f83.css" as="style"><link rel="preload" href="/_nuxt/3517dc6c150c1f5be417.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/75259d9b56378e7dbe47.css"><link rel="stylesheet" href="/_nuxt/74971516fa343f955f83.css">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app" class="unknown"><div id="menu"><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><div class="txt"><span class="docs f7 questrial">ofDocs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" x="0px" y="0px" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343						c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88						c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593						c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789						C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><div id="results" class="mt1"></div></div><div id="lists" class="menu-inner mt1"><div class="inner"><div class="item"><a href="/documentation/" title="/documentation/"><!----><span>documentation</span></a><!----></div><div class="item"><a href="/examples/" title="/examples/"><!----><span>examples</span></a><!----></div><div class="item"><a href="/openframeworks/" title="/openframeworks/" class="nuxt-link-active"><!----><span>openFrameworks</span></a><div class="list"><div class="item"><a href="/openframeworks/3d/" title="/openframeworks/3d/"><!----><span>3d</span></a><!----></div><div class="item"><a href="/openframeworks/app/" title="/openframeworks/app/" class="nuxt-link-active"><!----><span>app</span></a><div class="list"><div class="item"><a href="/openframeworks/app/ofAppBaseWindow_h" title="/openframeworks/app/ofAppBaseWindow.h"><!----><span>ofAppBaseWindow.h</span></a><!----></div><div class="item"><a href="/openframeworks/app/ofAppEGLWindow_cpp" title="/openframeworks/app/ofAppEGLWindow.cpp"><!----><span>ofAppEGLWindow.cpp</span></a><!----></div><div class="item"><a href="/openframeworks/app/ofAppEGLWindow_h" title="/openframeworks/app/ofAppEGLWindow.h"><!----><span>ofAppEGLWindow.h</span></a><!----></div><div class="item"><a href="/openframeworks/app/ofAppGLFWWindow_cpp" title="/openframeworks/app/ofAppGLFWWindow.cpp"><!----><span>ofAppGLFWWindow.cpp</span></a><!----></div><div class="item"><a href="/openframeworks/app/ofAppGLFWWindow_h" title="/openframeworks/app/ofAppGLFWWindow.h"><!----><span>ofAppGLFWWindow.h</span></a><!----></div><div class="item"><a href="/openframeworks/app/ofAppGlutWindow_cpp" title="/openframeworks/app/ofAppGlutWindow.cpp" class="nuxt-link-exact-active nuxt-link-active"><!----><span>ofAppGlutWindow.cpp</span></a><div class="list"></div></div><div class="item"><a href="/openframeworks/app/ofAppGlutWindow_h" title="/openframeworks/app/ofAppGlutWindow.h"><!----><span>ofAppGlutWindow.h</span></a><!----></div><div class="item"><a href="/openframeworks/app/ofAppNoWindow_cpp" title="/openframeworks/app/ofAppNoWindow.cpp"><!----><span>ofAppNoWindow.cpp</span></a><!----></div><div class="item"><a href="/openframeworks/app/ofAppNoWindow_h" title="/openframeworks/app/ofAppNoWindow.h"><!----><span>ofAppNoWindow.h</span></a><!----></div><div class="item"><a href="/openframeworks/app/ofAppRunner_cpp" title="/openframeworks/app/ofAppRunner.cpp"><!----><span>ofAppRunner.cpp</span></a><!----></div><div class="item"><a href="/openframeworks/app/ofAppRunner_h" title="/openframeworks/app/ofAppRunner.h"><!----><span>ofAppRunner.h</span></a><!----></div><div class="item"><a href="/openframeworks/app/ofBaseApp_cpp" title="/openframeworks/app/ofBaseApp.cpp"><!----><span>ofBaseApp.cpp</span></a><!----></div><div class="item"><a href="/openframeworks/app/ofBaseApp_h" title="/openframeworks/app/ofBaseApp.h"><!----><span>ofBaseApp.h</span></a><!----></div><div class="item"><a href="/openframeworks/app/ofIcon_h" title="/openframeworks/app/ofIcon.h"><!----><span>ofIcon.h</span></a><!----></div><div class="item"><a href="/openframeworks/app/ofMainLoop_cpp" title="/openframeworks/app/ofMainLoop.cpp"><!----><span>ofMainLoop.cpp</span></a><!----></div><div class="item"><a href="/openframeworks/app/ofMainLoop_h" title="/openframeworks/app/ofMainLoop.h"><!----><span>ofMainLoop.h</span></a><!----></div><div class="item"><a href="/openframeworks/app/ofWindowSettings_h" title="/openframeworks/app/ofWindowSettings.h"><!----><span>ofWindowSettings.h</span></a><!----></div></div></div><div class="item"><a href="/openframeworks/communication/" title="/openframeworks/communication/"><!----><span>communication</span></a><!----></div><div class="item"><a href="/openframeworks/events/" title="/openframeworks/events/"><!----><span>events</span></a><!----></div><div class="item"><a href="/openframeworks/gl/" title="/openframeworks/gl/"><!----><span>gl</span></a><!----></div><div class="item"><a href="/openframeworks/graphics/" title="/openframeworks/graphics/"><!----><span>graphics</span></a><!----></div><div class="item"><a href="/openframeworks/math/" title="/openframeworks/math/"><!----><span>math</span></a><!----></div><div class="item"><a href="/openframeworks/sound/" title="/openframeworks/sound/"><!----><span>sound</span></a><!----></div><div class="item"><a href="/openframeworks/types/" title="/openframeworks/types/"><!----><span>types</span></a><!----></div><div class="item"><a href="/openframeworks/utils/" title="/openframeworks/utils/"><!----><span>utils</span></a><!----></div><div class="item"><a href="/openframeworks/video/" title="/openframeworks/video/"><!----><span>video</span></a><!----></div></div></div><div class="item"><a href="/addons/" title="/addons/"><!----><span>addons</span></a><!----></div><div class="item"><a href="/guides/" title="/guides/"><!----><span>guides</span></a><!----></div></div></div></div><div id="document"><div id="renderer" class="main"><div absolute="/Users/gilbertsinnott/Code/openFrameworks/libs/openFrameworks/app/ofAppGlutWindow.cpp" route="/openframeworks/app/ofAppGlutWindow.cpp" dir="../libs/openFrameworks/app" ext="cpp" type="source" id="213" parent="207" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><div class="mt2 mb2"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/openframeworks/" class="pink nuxt-link-active">openframeworks </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/openframeworks/app/" class="pink nuxt-link-active">app </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link">ofAppGlutWindow.cpp </span><!----></span></span></div></div></div></div><div id="code-page" class="markdown"><div id="side-menu"><!----><div id="see-also" filename="app" absolute="/Users/gilbertsinnott/Code/openFrameworks/libs/openFrameworks/app" dir="../libs/openFrameworks" route="/openframeworks/app/" ext="" type="folder" children="208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224" icon="web" parent="195" breadcrumbs="195" class="see-also"><h4>See also</h4><div class="also"><a href="/documentation/application/"><span class="origin">documentation</span><span class="name">application</span></a></div></div></div><div id="code-render" id="code-inner"><div class="inner"><pre><code><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"ofAppGlutWindow.h"</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"ofBaseApp.h"</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"ofConstants.h"</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"ofPixels.h"</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"ofGLRenderer.h"</span></span>
+
+<span class="token macro property">#<span class="token directive keyword">ifdef</span> TARGET_WIN32</span>
+	<span class="token macro property">#<span class="token directive keyword">if</span> (_MSC_VER)</span>
+		<span class="token macro property">#<span class="token directive keyword">define</span> GLUT_BUILDING_LIB</span>
+		<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"glut.h"</span></span>
+	<span class="token macro property">#<span class="token directive keyword">else</span></span>
+		<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;GL/glut.h></span></span>
+		<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;GL/freeglut_ext.h></span></span>
+	<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+	<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;Shellapi.h></span></span>
+<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+<span class="token macro property">#<span class="token directive keyword">ifdef</span> TARGET_OSX</span>
+    <span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;OpenGL/OpenGL.h></span></span>
+	<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"../../../libs/glut/lib/osx/GLUT.framework/Versions/A/Headers/glut.h"</span></span>
+    <span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;Cocoa/Cocoa.h></span></span>
+<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+<span class="token macro property">#<span class="token directive keyword">ifdef</span> TARGET_LINUX</span>
+	<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;GL/glut.h></span></span>
+	<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"ofIcon.h"</span></span>
+	<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"ofImage.h"</span></span>
+	<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;X11/Xatom.h></span></span>
+	<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;GL/freeglut_ext.h></span></span>
+	<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;GL/glx.h></span></span>
+<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// glut works with static callbacks UGH, so we need static variables here:</span>
+
+<span class="token keyword">static</span> ofWindowMode windowMode<span class="token punctuation">;</span>
+<span class="token keyword">static</span> <span class="token keyword">bool</span>			bNewScreenMode<span class="token punctuation">;</span>
+<span class="token keyword">static</span> <span class="token keyword">int</span>			buttonInUse<span class="token punctuation">;</span>
+<span class="token keyword">static</span> <span class="token keyword">bool</span>			bEnableSetupScreen<span class="token punctuation">;</span>
+<span class="token keyword">static</span> <span class="token keyword">bool</span>			bDoubleBuffered<span class="token punctuation">;</span>
+
+<span class="token keyword">static</span> <span class="token keyword">int</span>			requestedWidth<span class="token punctuation">;</span>
+<span class="token keyword">static</span> <span class="token keyword">int</span>			requestedHeight<span class="token punctuation">;</span>
+<span class="token keyword">static</span> <span class="token keyword">int</span> 			nonFullScreenX<span class="token punctuation">;</span>
+<span class="token keyword">static</span> <span class="token keyword">int</span> 			nonFullScreenY<span class="token punctuation">;</span>
+<span class="token keyword">static</span> <span class="token keyword">int</span>			windowW<span class="token punctuation">;</span>
+<span class="token keyword">static</span> <span class="token keyword">int</span>			windowH<span class="token punctuation">;</span>
+<span class="token keyword">static</span> <span class="token keyword">int</span>          nFramesSinceWindowResized<span class="token punctuation">;</span>
+<span class="token keyword">static</span> ofOrientation	orientation<span class="token punctuation">;</span>
+<span class="token keyword">static</span> ofAppGlutWindow <span class="token operator">*</span> instance<span class="token punctuation">;</span>
+
+<span class="token macro property">#<span class="token directive keyword">ifdef</span> TARGET_WIN32</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------</span>
+
+<span class="token comment" spellcheck="true">// this is to fix a bug with glut that doesn't properly close the app</span>
+<span class="token comment" spellcheck="true">// with window closing.  we grab the window procedure, store it, and parse windows messages,</span>
+<span class="token comment" spellcheck="true">// using the close and destroy messages and passing on the others...</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------</span>
+
+<span class="token keyword">static</span> WNDPROC currentWndProc<span class="token punctuation">;</span>
+<span class="token keyword">static</span> HWND handle  <span class="token operator">=</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">// This function takes in a wParam from the WM_DROPFILES message and</span>
+<span class="token comment" spellcheck="true">// prints all the files to a message box.</span>
+
+<span class="token keyword">void</span> <span class="token function">HandleFiles</span><span class="token punctuation">(</span>WPARAM wParam<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// DragQueryFile() takes a LPWSTR for the name so we need a TCHAR string</span>
+    TCHAR szName<span class="token punctuation">[</span>MAX_PATH<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">// Here we cast the wParam as a HDROP handle to pass into the next functions</span>
+    HDROP hDrop <span class="token operator">=</span> <span class="token punctuation">(</span>HDROP<span class="token punctuation">)</span>wParam<span class="token punctuation">;</span>
+
+	POINT pt<span class="token punctuation">;</span>
+	<span class="token function">DragQueryPoint</span><span class="token punctuation">(</span>hDrop<span class="token punctuation">,</span> <span class="token operator">&</span>pt<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token comment" spellcheck="true">//ofLogNotice("ofAppGlutWindow") &lt;&lt; "drag point: " &lt;&lt; pt.x &lt;&lt; pt.y;</span>
+
+	ofDragInfo info<span class="token punctuation">;</span>
+	info<span class="token punctuation">.</span>position<span class="token punctuation">.</span>x <span class="token operator">=</span> pt<span class="token punctuation">.</span>x<span class="token punctuation">;</span>
+	info<span class="token punctuation">.</span>position<span class="token punctuation">.</span>y <span class="token operator">=</span> pt<span class="token punctuation">.</span>y<span class="token punctuation">;</span>
+
+
+    <span class="token comment" spellcheck="true">// This functions has a couple functionalities.  If you pass in 0xFFFFFFFF in</span>
+    <span class="token comment" spellcheck="true">// the second parameter then it returns the count of how many filers were drag</span>
+    <span class="token comment" spellcheck="true">// and dropped.  Otherwise, the function fills in the szName string array with</span>
+    <span class="token comment" spellcheck="true">// the current file being queried.</span>
+    <span class="token keyword">int</span> count <span class="token operator">=</span> <span class="token function">DragQueryFile</span><span class="token punctuation">(</span>hDrop<span class="token punctuation">,</span> <span class="token number">0xFFFFFFFF</span><span class="token punctuation">,</span> szName<span class="token punctuation">,</span> MAX_PATH<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">// Here we go through all the files that were drag and dropped then display them</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> count<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">// Grab the name of the file associated with index "i" in the list of files dropped.</span>
+        <span class="token comment" spellcheck="true">// Be sure you know that the name is attached to the FULL path of the file.</span>
+        <span class="token function">DragQueryFile</span><span class="token punctuation">(</span>hDrop<span class="token punctuation">,</span> i<span class="token punctuation">,</span> szName<span class="token punctuation">,</span> MAX_PATH<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+		<span class="token keyword">wchar_t</span> <span class="token operator">*</span> s <span class="token operator">=</span>  <span class="token punctuation">(</span><span class="token keyword">wchar_t</span><span class="token operator">*</span><span class="token punctuation">)</span>szName<span class="token punctuation">;</span>
+		<span class="token keyword">char</span> dfault <span class="token operator">=</span> <span class="token string">'?'</span><span class="token punctuation">;</span>
+        <span class="token keyword">const</span> std<span class="token operator">::</span>locale<span class="token operator">&</span> loc <span class="token operator">=</span> std<span class="token operator">::</span><span class="token function">locale</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		std<span class="token operator">::</span>ostringstream stm<span class="token punctuation">;</span>
+		<span class="token keyword">while</span><span class="token punctuation">(</span> <span class="token operator">*</span>s <span class="token operator">!=</span> L<span class="token string">'\0'</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			stm <span class="token operator">&lt;&lt;</span> std<span class="token operator">::</span>use_facet<span class="token operator">&lt;</span> std<span class="token operator">::</span>ctype<span class="token operator">&lt;</span><span class="token keyword">wchar_t</span><span class="token operator">></span> <span class="token operator">></span><span class="token punctuation">(</span> loc <span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">narrow</span><span class="token punctuation">(</span> <span class="token operator">*</span>s<span class="token operator">++</span><span class="token punctuation">,</span> dfault <span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		info<span class="token punctuation">.</span>files<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span><span class="token function">string</span><span class="token punctuation">(</span>stm<span class="token punctuation">.</span><span class="token function">str</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+			<span class="token comment" spellcheck="true">//toUTF8(udispName, dispName);</span>
+
+        <span class="token comment" spellcheck="true">// Bring up a message box that displays the current file being processed</span>
+        <span class="token comment" spellcheck="true">//MessageBox(GetForegroundWindow(), szName, L"Current file received", MB_OK);</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment" spellcheck="true">// Finally, we destroy the HDROP handle so the extra memory</span>
+    <span class="token comment" spellcheck="true">// allocated by the application is released.</span>
+    <span class="token function">DragFinish</span><span class="token punctuation">(</span>hDrop<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">notifyDragEvent</span><span class="token punctuation">(</span>info<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+
+<span class="token keyword">static</span> LRESULT CALLBACK <span class="token function">winProc</span><span class="token punctuation">(</span>HWND hwnd<span class="token punctuation">,</span> UINT Msg<span class="token punctuation">,</span> WPARAM wParam<span class="token punctuation">,</span> LPARAM lParam<span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+   <span class="token comment" spellcheck="true">//we catch close and destroy messages</span>
+   <span class="token comment" spellcheck="true">//and send them to OF</span>
+
+   <span class="token keyword">switch</span><span class="token punctuation">(</span>Msg<span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+      <span class="token keyword">case</span> WM_CLOSE<span class="token operator">:</span>
+         <span class="token function">OF_EXIT_APP</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+      <span class="token keyword">case</span> WM_DESTROY<span class="token operator">:</span>
+         <span class="token function">OF_EXIT_APP</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token keyword">break</span><span class="token punctuation">;</span>
+	  <span class="token keyword">case</span> WM_DROPFILES<span class="token operator">:</span>
+
+            <span class="token comment" spellcheck="true">// Call our function we created to display all the files.</span>
+            <span class="token comment" spellcheck="true">// We pass the wParam because it's the HDROP handle.</span>
+            <span class="token function">HandleFiles</span><span class="token punctuation">(</span>wParam<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+      <span class="token keyword">default</span><span class="token operator">:</span>
+         <span class="token keyword">return</span> <span class="token function">CallWindowProc</span><span class="token punctuation">(</span>currentWndProc<span class="token punctuation">,</span> handle<span class="token punctuation">,</span> Msg<span class="token punctuation">,</span> wParam<span class="token punctuation">,</span> lParam<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//--------------------------------------</span>
+<span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">fixCloseWindowOnWin32</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+	<span class="token comment" spellcheck="true">//get the HWND</span>
+	handle <span class="token operator">=</span> <span class="token function">WindowFromDC</span><span class="token punctuation">(</span><span class="token function">wglGetCurrentDC</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token comment" spellcheck="true">// enable drag and drop of files.</span>
+	<span class="token function">DragAcceptFiles</span> <span class="token punctuation">(</span>handle<span class="token punctuation">,</span> TRUE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token comment" spellcheck="true">//store the current message event handler for the window</span>
+	currentWndProc <span class="token operator">=</span> <span class="token punctuation">(</span>WNDPROC<span class="token punctuation">)</span><span class="token function">GetWindowLongPtr</span><span class="token punctuation">(</span>handle<span class="token punctuation">,</span> GWLP_WNDPROC<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token comment" spellcheck="true">//tell the window to now use our event handler!</span>
+	<span class="token function">SetWindowLongPtr</span><span class="token punctuation">(</span>handle<span class="token punctuation">,</span> GWLP_WNDPROC<span class="token punctuation">,</span> <span class="token punctuation">(</span>LONG_PTR<span class="token punctuation">)</span>winProc<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+
+
+
+
+<span class="token comment" spellcheck="true">//----------------------------------------------------------</span>
+ofAppGlutWindow<span class="token operator">::</span><span class="token function">ofAppGlutWindow</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	windowMode			<span class="token operator">=</span> OF_WINDOW<span class="token punctuation">;</span>
+	bNewScreenMode		<span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+	nFramesSinceWindowResized <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	buttonInUse			<span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	bEnableSetupScreen	<span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+	requestedWidth		<span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	requestedHeight		<span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	nonFullScreenX		<span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+	nonFullScreenY		<span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+	displayString		<span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span>
+	orientation			<span class="token operator">=</span> OF_ORIENTATION_DEFAULT<span class="token punctuation">;</span>
+	bDoubleBuffered <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// LIA</span>
+	iconSet <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+	instance <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+	windowId <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//lets you enable alpha blending using a display string like:</span>
+<span class="token comment" spellcheck="true">// "rgba double samples>=4 depth" ( mac )</span>
+<span class="token comment" spellcheck="true">// "rgb double depth alpha samples>=4" ( some pcs )</span>
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+ <span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">setGlutDisplayString</span><span class="token punctuation">(</span>string displayStr<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	displayString <span class="token operator">=</span> displayStr<span class="token punctuation">;</span>
+ <span class="token punctuation">}</span>
+
+ <span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">setDoubleBuffering</span><span class="token punctuation">(</span><span class="token keyword">bool</span> _bDoubleBuffered<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	bDoubleBuffered <span class="token operator">=</span> _bDoubleBuffered<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">setup</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofGLWindowSettings <span class="token operator">&</span> settings<span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+	<span class="token keyword">int</span> argc <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+	<span class="token keyword">char</span> <span class="token operator">*</span>argv <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">char</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token string">"openframeworks"</span><span class="token punctuation">;</span>
+	<span class="token keyword">char</span> <span class="token operator">*</span><span class="token operator">*</span>vptr <span class="token operator">=</span> <span class="token operator">&</span>argv<span class="token punctuation">;</span>
+	<span class="token function">glutInit</span><span class="token punctuation">(</span><span class="token operator">&</span>argc<span class="token punctuation">,</span> vptr<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">if</span><span class="token punctuation">(</span> displayString <span class="token operator">!=</span> <span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token function">glutInitDisplayString</span><span class="token punctuation">(</span> displayString<span class="token punctuation">.</span><span class="token function">c_str</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+		<span class="token keyword">if</span><span class="token punctuation">(</span>bDoubleBuffered<span class="token punctuation">)</span><span class="token punctuation">{</span>
+			<span class="token function">glutInitDisplayMode</span><span class="token punctuation">(</span>GLUT_RGB <span class="token operator">|</span> GLUT_DOUBLE <span class="token operator">|</span> GLUT_DEPTH <span class="token operator">|</span> GLUT_ALPHA <span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+			<span class="token function">glutInitDisplayMode</span><span class="token punctuation">(</span>GLUT_RGB <span class="token operator">|</span> GLUT_SINGLE <span class="token operator">|</span> GLUT_DEPTH <span class="token operator">|</span> GLUT_ALPHA <span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+
+	windowMode <span class="token operator">=</span> settings<span class="token punctuation">.</span>windowMode<span class="token punctuation">;</span>
+	bNewScreenMode <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>windowMode <span class="token operator">==</span> OF_FULLSCREEN<span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token function">glutInitWindowSize</span><span class="token punctuation">(</span><span class="token function">glutGet</span><span class="token punctuation">(</span>GLUT_SCREEN_WIDTH<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">glutGet</span><span class="token punctuation">(</span>GLUT_SCREEN_HEIGHT<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		windowId <span class="token operator">=</span> <span class="token function">glutCreateWindow</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+		requestedWidth  <span class="token operator">=</span> settings<span class="token punctuation">.</span><span class="token function">getWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		requestedHeight <span class="token operator">=</span> settings<span class="token punctuation">.</span><span class="token function">getHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>windowMode <span class="token operator">!=</span> OF_GAME_MODE<span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token function">glutInitWindowSize</span><span class="token punctuation">(</span>settings<span class="token punctuation">.</span><span class="token function">getWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> settings<span class="token punctuation">.</span><span class="token function">getHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token function">glutCreateWindow</span><span class="token punctuation">(</span><span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+		<span class="token comment" spellcheck="true">/*
+		ofBackground(200,200,200);		// default bg color
+		ofSetColor(0xFFFFFF); 			// default draw color
+		// used to be black, but
+		// black + texture = black
+		// so maybe grey bg
+		// and "white" fg color
+		// as default works the best...
+		*/</span>
+
+		requestedWidth  <span class="token operator">=</span> <span class="token function">glutGet</span><span class="token punctuation">(</span>GLUT_WINDOW_WIDTH<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		requestedHeight <span class="token operator">=</span> <span class="token function">glutGet</span><span class="token punctuation">(</span>GLUT_WINDOW_HEIGHT<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+		<span class="token keyword">if</span><span class="token punctuation">(</span> displayString <span class="token operator">!=</span> <span class="token string">""</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+			<span class="token function">glutInitDisplayString</span><span class="token punctuation">(</span> displayString<span class="token punctuation">.</span><span class="token function">c_str</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+			<span class="token function">glutInitDisplayMode</span><span class="token punctuation">(</span>GLUT_RGB <span class="token operator">|</span> GLUT_DOUBLE <span class="token operator">|</span> GLUT_DEPTH <span class="token operator">|</span> GLUT_ALPHA <span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+
+    	<span class="token comment" spellcheck="true">// w x h, 32bit pixel depth, 60Hz refresh rate</span>
+		<span class="token keyword">char</span> gameStr<span class="token punctuation">[</span><span class="token number">64</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+		<span class="token function">sprintf</span><span class="token punctuation">(</span> gameStr<span class="token punctuation">,</span> <span class="token string">"%dx%d:%d@%d"</span><span class="token punctuation">,</span> settings<span class="token punctuation">.</span><span class="token function">getWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> settings<span class="token punctuation">.</span><span class="token function">getHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token number">32</span><span class="token punctuation">,</span> <span class="token number">60</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    	<span class="token function">glutGameModeString</span><span class="token punctuation">(</span>gameStr<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    	<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">glutGameModeGet</span><span class="token punctuation">(</span>GLUT_GAME_MODE_POSSIBLE<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    		<span class="token function">ofLogError</span><span class="token punctuation">(</span><span class="token string">"ofAppGlutWindow"</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token string">"setupOpenGL(): selected game mode format "</span> <span class="token operator">&lt;&lt;</span> gameStr <span class="token operator">&lt;&lt;</span> <span class="token string">" not available"</span><span class="token punctuation">;</span>
+    	<span class="token punctuation">}</span>
+    	<span class="token comment" spellcheck="true">// start fullscreen game mode</span>
+    	<span class="token function">glutEnterGameMode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	windowW <span class="token operator">=</span> <span class="token function">glutGet</span><span class="token punctuation">(</span>GLUT_WINDOW_WIDTH<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	windowH <span class="token operator">=</span> <span class="token function">glutGet</span><span class="token punctuation">(</span>GLUT_WINDOW_HEIGHT<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	currentRenderer <span class="token operator">=</span> shared_ptr<span class="token operator">&lt;</span>ofBaseRenderer<span class="token operator">></span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token function">ofGLRenderer</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token macro property">#<span class="token directive keyword">ifndef</span> TARGET_OPENGLES</span>
+	glewExperimental <span class="token operator">=</span> GL_TRUE<span class="token punctuation">;</span>
+	GLenum err <span class="token operator">=</span> <span class="token function">glewInit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>GLEW_OK <span class="token operator">!=</span> err<span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+		<span class="token comment" spellcheck="true">/* Problem: glewInit failed, something is seriously wrong. */</span>
+		<span class="token function">ofLogError</span><span class="token punctuation">(</span><span class="token string">"ofAppRunner"</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token string">"couldn't init GLEW: "</span> <span class="token operator">&lt;&lt;</span> <span class="token function">glewGetErrorString</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">return</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+	<span class="token keyword">static_cast</span><span class="token operator">&lt;</span>ofGLRenderer<span class="token operator">*</span><span class="token operator">></span><span class="token punctuation">(</span>currentRenderer<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">></span><span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">setVerticalSync</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+    <span class="token comment" spellcheck="true">//----------------------</span>
+    <span class="token comment" spellcheck="true">// setup the callbacks</span>
+
+    <span class="token function">glutMouseFunc</span><span class="token punctuation">(</span>mouse_cb<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">glutMotionFunc</span><span class="token punctuation">(</span>motion_cb<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">glutPassiveMotionFunc</span><span class="token punctuation">(</span>passive_motion_cb<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">glutIdleFunc</span><span class="token punctuation">(</span>idle_cb<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">glutDisplayFunc</span><span class="token punctuation">(</span>display<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token function">glutKeyboardFunc</span><span class="token punctuation">(</span>keyboard_cb<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">glutKeyboardUpFunc</span><span class="token punctuation">(</span>keyboard_up_cb<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">glutSpecialFunc</span><span class="token punctuation">(</span>special_key_cb<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">glutSpecialUpFunc</span><span class="token punctuation">(</span>special_key_up_cb<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token function">glutReshapeFunc</span><span class="token punctuation">(</span>resize_cb<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">glutEntryFunc</span><span class="token punctuation">(</span>entry_cb<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token macro property">#<span class="token directive keyword">ifdef</span> TARGET_LINUX</span>
+	<span class="token function">glutCloseFunc</span><span class="token punctuation">(</span>exit_cb<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+
+<span class="token macro property">#<span class="token directive keyword">ifdef</span> TARGET_OSX</span>
+	<span class="token function">glutDragEventFunc</span><span class="token punctuation">(</span>dragEvent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+
+    nFramesSinceWindowResized <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+    <span class="token macro property">#<span class="token directive keyword">ifdef</span> TARGET_WIN32</span>
+        <span class="token comment" spellcheck="true">//----------------------</span>
+        <span class="token comment" spellcheck="true">// this is specific to windows (respond properly to close / destroy)</span>
+        <span class="token function">fixCloseWindowOnWin32</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token macro property">#<span class="token directive keyword">endif</span></span>
+
+<span class="token macro property">#<span class="token directive keyword">ifdef</span> TARGET_LINUX</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>iconSet<span class="token punctuation">)</span><span class="token punctuation">{</span>
+		ofPixels iconPixels<span class="token punctuation">;</span>
+		<span class="token macro property">#<span class="token directive keyword">ifdef</span> DEBUG</span>
+			iconPixels<span class="token punctuation">.</span><span class="token function">allocate</span><span class="token punctuation">(</span>ofIconDebug<span class="token punctuation">.</span>width<span class="token punctuation">,</span>ofIconDebug<span class="token punctuation">.</span>height<span class="token punctuation">,</span>ofIconDebug<span class="token punctuation">.</span>bytes_per_pixel<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token function">GIMP_IMAGE_RUN_LENGTH_DECODE</span><span class="token punctuation">(</span>iconPixels<span class="token punctuation">.</span><span class="token function">getData</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>ofIconDebug<span class="token punctuation">.</span>rle_pixel_data<span class="token punctuation">,</span>iconPixels<span class="token punctuation">.</span><span class="token function">getWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">*</span>iconPixels<span class="token punctuation">.</span><span class="token function">getHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>ofIconDebug<span class="token punctuation">.</span>bytes_per_pixel<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token macro property">#<span class="token directive keyword">else</span></span>
+			iconPixels<span class="token punctuation">.</span><span class="token function">allocate</span><span class="token punctuation">(</span>ofIcon<span class="token punctuation">.</span>width<span class="token punctuation">,</span>ofIcon<span class="token punctuation">.</span>height<span class="token punctuation">,</span>ofIcon<span class="token punctuation">.</span>bytes_per_pixel<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token function">GIMP_IMAGE_RUN_LENGTH_DECODE</span><span class="token punctuation">(</span>iconPixels<span class="token punctuation">.</span><span class="token function">getData</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>ofIcon<span class="token punctuation">.</span>rle_pixel_data<span class="token punctuation">,</span>iconPixels<span class="token punctuation">.</span><span class="token function">getWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">*</span>iconPixels<span class="token punctuation">.</span><span class="token function">getHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>ofIcon<span class="token punctuation">.</span>bytes_per_pixel<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+		<span class="token function">setWindowIcon</span><span class="token punctuation">(</span>iconPixels<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>settings<span class="token punctuation">.</span><span class="token function">isPositionSet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token function">setWindowPosition</span><span class="token punctuation">(</span>settings<span class="token punctuation">.</span><span class="token function">getPosition</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>x<span class="token punctuation">,</span>settings<span class="token punctuation">.</span><span class="token function">getPosition</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+<span class="token macro property">#<span class="token directive keyword">ifdef</span> TARGET_OSX</span>
+	<span class="token comment" spellcheck="true">// The osx implementation of glut changes the cwd, this restores it</span>
+	<span class="token comment" spellcheck="true">// to wherever it was when the app was started</span>
+	<span class="token function">ofRestoreWorkingDirectoryToDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+<span class="token punctuation">}</span>
+
+<span class="token macro property">#<span class="token directive keyword">ifdef</span> TARGET_LINUX</span>
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">setWindowIcon</span><span class="token punctuation">(</span><span class="token keyword">const</span> string <span class="token operator">&</span> path<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    ofPixels iconPixels<span class="token punctuation">;</span>
+	<span class="token function">ofLoadImage</span><span class="token punctuation">(</span>iconPixels<span class="token punctuation">,</span>path<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">setWindowIcon</span><span class="token punctuation">(</span>iconPixels<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">setWindowIcon</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofPixels <span class="token operator">&</span> iconPixels<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	iconSet <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+	Display <span class="token operator">*</span>m_display <span class="token operator">=</span> <span class="token function">glXGetCurrentDisplay</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	GLXDrawable m_window <span class="token operator">=</span> <span class="token function">glXGetCurrentDrawable</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	iconSet <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+	<span class="token keyword">int</span> length <span class="token operator">=</span> <span class="token number">2</span><span class="token operator">+</span>iconPixels<span class="token punctuation">.</span><span class="token function">getWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">*</span>iconPixels<span class="token punctuation">.</span><span class="token function">getHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">unsigned</span> <span class="token keyword">long</span> <span class="token operator">*</span> buffer <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">unsigned</span> <span class="token keyword">long</span><span class="token punctuation">[</span>length<span class="token punctuation">]</span><span class="token punctuation">;</span>
+	buffer<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">=</span>iconPixels<span class="token punctuation">.</span><span class="token function">getWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	buffer<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">=</span>iconPixels<span class="token punctuation">.</span><span class="token function">getHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">for</span><span class="token punctuation">(</span>size_t i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>iconPixels<span class="token punctuation">.</span><span class="token function">getWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">*</span>iconPixels<span class="token punctuation">.</span><span class="token function">getHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		buffer<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> iconPixels<span class="token punctuation">[</span>i<span class="token operator">*</span><span class="token number">4</span><span class="token operator">+</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token operator">&lt;&lt;</span><span class="token number">24</span><span class="token punctuation">;</span>
+		buffer<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">+</span><span class="token operator">=</span> iconPixels<span class="token punctuation">[</span>i<span class="token operator">*</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token operator">&lt;&lt;</span><span class="token number">16</span><span class="token punctuation">;</span>
+		buffer<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">+</span><span class="token operator">=</span> iconPixels<span class="token punctuation">[</span>i<span class="token operator">*</span><span class="token number">4</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">&lt;&lt;</span><span class="token number">8</span><span class="token punctuation">;</span>
+		buffer<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">+</span><span class="token operator">=</span> iconPixels<span class="token punctuation">[</span>i<span class="token operator">*</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token function">XChangeProperty</span><span class="token punctuation">(</span>m_display<span class="token punctuation">,</span> m_window<span class="token punctuation">,</span> <span class="token function">XInternAtom</span><span class="token punctuation">(</span>m_display<span class="token punctuation">,</span> <span class="token string">"_NET_WM_ICON"</span><span class="token punctuation">,</span> False<span class="token punctuation">)</span><span class="token punctuation">,</span> XA_CARDINAL<span class="token punctuation">,</span> <span class="token number">32</span><span class="token punctuation">,</span>
+						 PropModeReplace<span class="token punctuation">,</span>  <span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">unsigned</span> <span class="token keyword">char</span><span class="token operator">*</span><span class="token punctuation">)</span>buffer<span class="token punctuation">,</span>  length<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">delete</span><span class="token punctuation">[</span><span class="token punctuation">]</span> buffer<span class="token punctuation">;</span>
+	<span class="token function">XFlush</span><span class="token punctuation">(</span>m_display<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">update</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token function">idle_cb</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">draw</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token function">display</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">notifyExit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">disable</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token macro property">#<span class="token directive keyword">ifdef</span> TARGET_LINUX</span>
+	<span class="token function">glutLeaveMainLoop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token macro property">#<span class="token directive keyword">else</span></span>
+	std<span class="token operator">::</span><span class="token function">exit</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">loop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">notifySetup</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">notifyUpdate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">glutMainLoop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">setWindowTitle</span><span class="token punctuation">(</span>string title<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token function">glutSetWindowTitle</span><span class="token punctuation">(</span>title<span class="token punctuation">.</span><span class="token function">c_str</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+glm<span class="token operator">::</span>vec2 ofAppGlutWindow<span class="token operator">::</span><span class="token function">getWindowSize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">return</span> <span class="token punctuation">{</span>windowW<span class="token punctuation">,</span> windowH<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+glm<span class="token operator">::</span>vec2 ofAppGlutWindow<span class="token operator">::</span><span class="token function">getWindowPosition</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token function">glutGet</span><span class="token punctuation">(</span>GLUT_WINDOW_X<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">int</span> y <span class="token operator">=</span> <span class="token function">glutGet</span><span class="token punctuation">(</span>GLUT_WINDOW_Y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">if</span><span class="token punctuation">(</span> orientation <span class="token operator">==</span> OF_ORIENTATION_DEFAULT <span class="token operator">||</span> orientation <span class="token operator">==</span> OF_ORIENTATION_180 <span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token punctuation">{</span>x<span class="token punctuation">,</span>y<span class="token punctuation">}</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token punctuation">{</span>y<span class="token punctuation">,</span>x<span class="token punctuation">}</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+glm<span class="token operator">::</span>vec2 ofAppGlutWindow<span class="token operator">::</span><span class="token function">getScreenSize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">int</span> width <span class="token operator">=</span> <span class="token function">glutGet</span><span class="token punctuation">(</span>GLUT_SCREEN_WIDTH<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">int</span> height <span class="token operator">=</span> <span class="token function">glutGet</span><span class="token punctuation">(</span>GLUT_SCREEN_HEIGHT<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">if</span><span class="token punctuation">(</span> orientation <span class="token operator">==</span> OF_ORIENTATION_DEFAULT <span class="token operator">||</span> orientation <span class="token operator">==</span> OF_ORIENTATION_180 <span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token punctuation">{</span>width<span class="token punctuation">,</span> height<span class="token punctuation">}</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token punctuation">{</span>height<span class="token punctuation">,</span> width<span class="token punctuation">}</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">int</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">getWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">if</span><span class="token punctuation">(</span> orientation <span class="token operator">==</span> OF_ORIENTATION_DEFAULT <span class="token operator">||</span> orientation <span class="token operator">==</span> OF_ORIENTATION_180 <span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token keyword">return</span> windowW<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">return</span> windowH<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">int</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">getHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">if</span><span class="token punctuation">(</span> orientation <span class="token operator">==</span> OF_ORIENTATION_DEFAULT <span class="token operator">||</span> orientation <span class="token operator">==</span> OF_ORIENTATION_180 <span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token keyword">return</span> windowH<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">return</span> windowW<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">setOrientation</span><span class="token punctuation">(</span>ofOrientation orientationIn<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	orientation <span class="token operator">=</span> orientationIn<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+ofOrientation ofAppGlutWindow<span class="token operator">::</span><span class="token function">getOrientation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">return</span> orientation<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">setWindowPosition</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token function">glutPositionWindow</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">setWindowShape</span><span class="token punctuation">(</span><span class="token keyword">int</span> w<span class="token punctuation">,</span> <span class="token keyword">int</span> h<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token function">glutReshapeWindow</span><span class="token punctuation">(</span>w<span class="token punctuation">,</span> h<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token comment" spellcheck="true">// this is useful, esp if we are in the first frame (setup):</span>
+	requestedWidth  <span class="token operator">=</span> w<span class="token punctuation">;</span>
+	requestedHeight <span class="token operator">=</span> h<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">hideCursor</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token macro property">#<span class="token directive keyword">if</span> defined(TARGET_OSX) && defined(MAC_OS_X_VERSION_10_7)</span>
+		 <span class="token function">CGDisplayHideCursor</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token macro property">#<span class="token directive keyword">else</span></span>
+		<span class="token function">glutSetCursor</span><span class="token punctuation">(</span>GLUT_CURSOR_NONE<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">showCursor</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token macro property">#<span class="token directive keyword">if</span> defined(TARGET_OSX) && defined(MAC_OS_X_VERSION_10_7)</span>
+		 <span class="token function">CGDisplayShowCursor</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token macro property">#<span class="token directive keyword">else</span></span>
+		<span class="token function">glutSetCursor</span><span class="token punctuation">(</span>GLUT_CURSOR_LEFT_ARROW<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+ofWindowMode ofAppGlutWindow<span class="token operator">::</span><span class="token function">getWindowMode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">return</span> windowMode<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">toggleFullscreen</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">if</span><span class="token punctuation">(</span> windowMode <span class="token operator">==</span> OF_GAME_MODE<span class="token punctuation">)</span><span class="token keyword">return</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">if</span><span class="token punctuation">(</span> windowMode <span class="token operator">==</span> OF_WINDOW <span class="token punctuation">)</span><span class="token punctuation">{</span>
+		windowMode <span class="token operator">=</span> OF_FULLSCREEN<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+		windowMode <span class="token operator">=</span> OF_WINDOW<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	bNewScreenMode <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">setFullscreen</span><span class="token punctuation">(</span><span class="token keyword">bool</span> fullscreen<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span> windowMode <span class="token operator">==</span> OF_GAME_MODE<span class="token punctuation">)</span><span class="token keyword">return</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span><span class="token punctuation">(</span>fullscreen <span class="token operator">&&</span> windowMode <span class="token operator">!=</span> OF_FULLSCREEN<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        bNewScreenMode  <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        windowMode      <span class="token operator">=</span> OF_FULLSCREEN<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>fullscreen <span class="token operator">&&</span> windowMode <span class="token operator">!=</span> OF_WINDOW<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        bNewScreenMode  <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        windowMode      <span class="token operator">=</span> OF_WINDOW<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">enableSetupScreen</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	bEnableSetupScreen <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">disableSetupScreen</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	bEnableSetupScreen <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">setVerticalSync</span><span class="token punctuation">(</span><span class="token keyword">bool</span> bSync<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token comment" spellcheck="true">//----------------------------</span>
+	<span class="token macro property">#<span class="token directive keyword">ifdef</span> TARGET_WIN32</span>
+	<span class="token comment" spellcheck="true">//----------------------------</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>bSync<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">if</span> <span class="token punctuation">(</span>WGL_EXT_swap_control<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				<span class="token function">wglSwapIntervalEXT</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+			<span class="token keyword">if</span> <span class="token punctuation">(</span>WGL_EXT_swap_control<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				<span class="token function">wglSwapIntervalEXT</span> <span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+	<span class="token comment" spellcheck="true">//----------------------------</span>
+	<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+	<span class="token comment" spellcheck="true">//----------------------------</span>
+
+	<span class="token comment" spellcheck="true">//--------------------------------------</span>
+	<span class="token macro property">#<span class="token directive keyword">ifdef</span> TARGET_OSX</span>
+	<span class="token comment" spellcheck="true">//--------------------------------------</span>
+		GLint sync <span class="token operator">=</span> bSync <span class="token operator">==</span> <span class="token boolean">true</span> <span class="token operator">?</span> <span class="token number">1</span> <span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">;</span>
+		<span class="token function">CGLSetParameter</span> <span class="token punctuation">(</span><span class="token function">CGLGetCurrentContext</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> kCGLCPSwapInterval<span class="token punctuation">,</span> <span class="token operator">&</span>sync<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token comment" spellcheck="true">//--------------------------------------</span>
+	<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+	<span class="token comment" spellcheck="true">//--------------------------------------</span>
+
+	<span class="token comment" spellcheck="true">//--------------------------------------</span>
+	<span class="token macro property">#<span class="token directive keyword">ifdef</span> TARGET_LINUX</span>
+	<span class="token comment" spellcheck="true">//--------------------------------------</span>
+		<span class="token keyword">void</span> <span class="token punctuation">(</span><span class="token operator">*</span>swapIntervalExt<span class="token punctuation">)</span><span class="token punctuation">(</span>Display <span class="token operator">*</span><span class="token punctuation">,</span>GLXDrawable<span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token punctuation">)</span>	 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">void</span> <span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">(</span>Display <span class="token operator">*</span><span class="token punctuation">,</span>GLXDrawable<span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">glXGetProcAddress</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">const</span> GLubyte<span class="token operator">*</span><span class="token punctuation">)</span> <span class="token string">"glXSwapIntervalEXT"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">if</span><span class="token punctuation">(</span>swapIntervalExt<span class="token punctuation">)</span><span class="token punctuation">{</span>
+			Display <span class="token operator">*</span>dpy <span class="token operator">=</span> <span class="token function">glXGetCurrentDisplay</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			GLXDrawable drawable <span class="token operator">=</span> <span class="token function">glXGetCurrentDrawable</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token keyword">if</span> <span class="token punctuation">(</span>drawable<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				<span class="token function">swapIntervalExt</span><span class="token punctuation">(</span>dpy<span class="token punctuation">,</span> drawable<span class="token punctuation">,</span> bSync <span class="token operator">?</span> <span class="token number">1</span> <span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token keyword">return</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+		<span class="token keyword">void</span> <span class="token punctuation">(</span><span class="token operator">*</span>swapInterval<span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">void</span> <span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">glXGetProcAddress</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">const</span> GLubyte<span class="token operator">*</span><span class="token punctuation">)</span> <span class="token string">"glXSwapIntervalSGI"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>swapInterval<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			swapInterval <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">void</span> <span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token function">glXGetProcAddress</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token keyword">const</span> GLubyte<span class="token operator">*</span><span class="token punctuation">)</span> <span class="token string">"glXSwapIntervalMESA"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		<span class="token keyword">if</span><span class="token punctuation">(</span>swapInterval<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token function">swapInterval</span><span class="token punctuation">(</span>bSync <span class="token operator">?</span> <span class="token number">1</span> <span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token comment" spellcheck="true">//--------------------------------------</span>
+	<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+	<span class="token comment" spellcheck="true">//--------------------------------------</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+ofCoreEvents <span class="token operator">&</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">return</span> coreEvents<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+shared_ptr<span class="token operator">&lt;</span>ofBaseRenderer<span class="token operator">></span> <span class="token operator">&</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">renderer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">return</span> currentRenderer<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">display</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+	<span class="token comment" spellcheck="true">//--------------------------------</span>
+	<span class="token comment" spellcheck="true">// when I had "glutFullScreen()"</span>
+	<span class="token comment" spellcheck="true">// in the initOpenGl, I was gettings a "heap" allocation error</span>
+	<span class="token comment" spellcheck="true">// when debugging via visual studio.  putting it here, changes that.</span>
+	<span class="token comment" spellcheck="true">// maybe it's voodoo, or I am getting rid of the problem</span>
+	<span class="token comment" spellcheck="true">// by removing something unrelated, but everything seems</span>
+	<span class="token comment" spellcheck="true">// to work if I put fullscreen on the first frame of display.</span>
+
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>windowMode <span class="token operator">!=</span> OF_GAME_MODE<span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span> bNewScreenMode <span class="token punctuation">)</span><span class="token punctuation">{</span>
+			<span class="token keyword">if</span><span class="token punctuation">(</span> windowMode <span class="token operator">==</span> OF_FULLSCREEN<span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+				<span class="token comment" spellcheck="true">//----------------------------------------------------</span>
+				<span class="token comment" spellcheck="true">// before we go fullscreen, take a snapshot of where we are:</span>
+				nonFullScreenX <span class="token operator">=</span> <span class="token function">glutGet</span><span class="token punctuation">(</span>GLUT_WINDOW_X<span class="token punctuation">)</span><span class="token punctuation">;</span>
+				nonFullScreenY <span class="token operator">=</span> <span class="token function">glutGet</span><span class="token punctuation">(</span>GLUT_WINDOW_Y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token comment" spellcheck="true">//----------------------------------------------------</span>
+
+				<span class="token function">glutFullScreen</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+				<span class="token macro property">#<span class="token directive keyword">ifdef</span> TARGET_OSX</span>
+					<span class="token punctuation">[</span>NSApp setPresentationOptions<span class="token operator">:</span>NSApplicationPresentationHideMenuBar <span class="token operator">|</span> NSApplicationPresentationHideDock<span class="token punctuation">]</span><span class="token punctuation">;</span>
+					<span class="token macro property">#<span class="token directive keyword">ifdef</span> MAC_OS_X_VERSION_10_7 </span><span class="token comment" spellcheck="true">//needed for Lion as when the machine reboots the app is not at front level</span>
+						<span class="token keyword">if</span><span class="token punctuation">(</span> instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getFrameNum</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;=</span> <span class="token number">10</span> <span class="token punctuation">)</span><span class="token punctuation">{</span>  <span class="token comment" spellcheck="true">//is this long enough? too long?</span>
+							<span class="token punctuation">[</span><span class="token punctuation">[</span>NSApplication sharedApplication<span class="token punctuation">]</span> activateIgnoringOtherApps<span class="token operator">:</span>YES<span class="token punctuation">]</span><span class="token punctuation">;</span>
+						<span class="token punctuation">}</span>
+					<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+				<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+
+			<span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span> windowMode <span class="token operator">==</span> OF_WINDOW <span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+				<span class="token function">glutReshapeWindow</span><span class="token punctuation">(</span>requestedWidth<span class="token punctuation">,</span> requestedHeight<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+				<span class="token comment" spellcheck="true">//----------------------------------------------------</span>
+				<span class="token comment" spellcheck="true">// if we have recorded the screen posion, put it there</span>
+				<span class="token comment" spellcheck="true">// if not, better to let the system do it (and put it where it wants)</span>
+				<span class="token keyword">if</span> <span class="token punctuation">(</span>instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getFrameNum</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+					<span class="token function">glutPositionWindow</span><span class="token punctuation">(</span>nonFullScreenX<span class="token punctuation">,</span>nonFullScreenY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token punctuation">}</span>
+				<span class="token comment" spellcheck="true">//----------------------------------------------------</span>
+
+				<span class="token macro property">#<span class="token directive keyword">ifdef</span> TARGET_OSX</span>
+					<span class="token punctuation">[</span>NSApp setPresentationOptions<span class="token operator">:</span>NSApplicationPresentationDefault<span class="token punctuation">]</span><span class="token punctuation">;</span>
+				<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+			<span class="token punctuation">}</span>
+			bNewScreenMode <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+
+	instance<span class="token operator">-</span><span class="token operator">></span>currentRenderer<span class="token operator">-</span><span class="token operator">></span><span class="token function">startRender</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">if</span><span class="token punctuation">(</span> bEnableSetupScreen <span class="token punctuation">)</span> instance<span class="token operator">-</span><span class="token operator">></span>currentRenderer<span class="token operator">-</span><span class="token operator">></span><span class="token function">setupScreen</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">notifyDraw</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token macro property">#<span class="token directive keyword">ifdef</span> TARGET_WIN32</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>instance<span class="token operator">-</span><span class="token operator">></span>currentRenderer<span class="token operator">-</span><span class="token operator">></span><span class="token function">getBackgroundAuto</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token comment" spellcheck="true">// on a PC resizing a window with this method of accumulation (essentially single buffering)</span>
+        <span class="token comment" spellcheck="true">// is BAD, so we clear on resize events.</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>nFramesSinceWindowResized <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            instance<span class="token operator">-</span><span class="token operator">></span>currentRenderer<span class="token operator">-</span><span class="token operator">></span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span> <span class="token punctuation">(</span>instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getFrameNum</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token number">3</span> <span class="token operator">||</span> nFramesSinceWindowResized <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token operator">&&</span> bDoubleBuffered<span class="token punctuation">)</span>    <span class="token function">glutSwapBuffers</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">else</span>  <span class="token function">glFlush</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>bDoubleBuffered<span class="token punctuation">)</span><span class="token punctuation">{</span>
+			<span class="token function">glutSwapBuffers</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span> <span class="token keyword">else</span><span class="token punctuation">{</span>
+			<span class="token function">glFlush</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token macro property">#<span class="token directive keyword">else</span></span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>instance<span class="token operator">-</span><span class="token operator">></span>currentRenderer<span class="token operator">-</span><span class="token operator">></span><span class="token function">getBackgroundAuto</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+			<span class="token comment" spellcheck="true">// in accum mode resizing a window is BAD, so we clear on resize events.</span>
+			<span class="token keyword">if</span> <span class="token punctuation">(</span>nFramesSinceWindowResized <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+				instance<span class="token operator">-</span><span class="token operator">></span>currentRenderer<span class="token operator">-</span><span class="token operator">></span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+		<span class="token keyword">if</span><span class="token punctuation">(</span>bDoubleBuffered<span class="token punctuation">)</span><span class="token punctuation">{</span>
+			<span class="token function">glutSwapBuffers</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span> <span class="token keyword">else</span><span class="token punctuation">{</span>
+			<span class="token function">glFlush</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+    <span class="token macro property">#<span class="token directive keyword">endif</span></span>
+
+	instance<span class="token operator">-</span><span class="token operator">></span>currentRenderer<span class="token operator">-</span><span class="token operator">></span><span class="token function">finishRender</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    nFramesSinceWindowResized<span class="token operator">++</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">swapBuffers</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token function">glutSwapBuffers</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//--------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">startRender</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token function">renderer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">></span><span class="token function">startRender</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//--------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">finishRender</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token function">renderer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">></span><span class="token function">finishRender</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">rotateMouseXY</span><span class="token punctuation">(</span>ofOrientation orientation<span class="token punctuation">,</span> <span class="token keyword">int</span> w<span class="token punctuation">,</span> <span class="token keyword">int</span> h<span class="token punctuation">,</span> <span class="token keyword">int</span> <span class="token operator">&</span>x<span class="token punctuation">,</span> <span class="token keyword">int</span> <span class="token operator">&</span>y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">int</span> savedY<span class="token punctuation">;</span>
+	<span class="token keyword">switch</span><span class="token punctuation">(</span>orientation<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">case</span> OF_ORIENTATION_180<span class="token operator">:</span>
+			x <span class="token operator">=</span> w <span class="token operator">-</span> x<span class="token punctuation">;</span>
+			y <span class="token operator">=</span> h <span class="token operator">-</span> y<span class="token punctuation">;</span>
+			<span class="token keyword">break</span><span class="token punctuation">;</span>
+
+		<span class="token keyword">case</span> OF_ORIENTATION_90_RIGHT<span class="token operator">:</span>
+			savedY <span class="token operator">=</span> y<span class="token punctuation">;</span>
+			y <span class="token operator">=</span> x<span class="token punctuation">;</span>
+			x <span class="token operator">=</span> w<span class="token operator">-</span>savedY<span class="token punctuation">;</span>
+			<span class="token keyword">break</span><span class="token punctuation">;</span>
+
+		<span class="token keyword">case</span> OF_ORIENTATION_90_LEFT<span class="token operator">:</span>
+			savedY <span class="token operator">=</span> y<span class="token punctuation">;</span>
+			y <span class="token operator">=</span> h <span class="token operator">-</span> x<span class="token punctuation">;</span>
+			x <span class="token operator">=</span> savedY<span class="token punctuation">;</span>
+			<span class="token keyword">break</span><span class="token punctuation">;</span>
+
+		<span class="token keyword">case</span> OF_ORIENTATION_DEFAULT<span class="token operator">:</span>
+		<span class="token keyword">default</span><span class="token operator">:</span>
+			<span class="token keyword">break</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">mouse_cb</span><span class="token punctuation">(</span><span class="token keyword">int</span> button<span class="token punctuation">,</span> <span class="token keyword">int</span> state<span class="token punctuation">,</span> <span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token function">rotateMouseXY</span><span class="token punctuation">(</span>orientation<span class="token punctuation">,</span> instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">getWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">getHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> x<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+	<span class="token keyword">switch</span><span class="token punctuation">(</span>button<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">case</span> GLUT_LEFT_BUTTON<span class="token operator">:</span>
+		button <span class="token operator">=</span> OF_MOUSE_BUTTON_LEFT<span class="token punctuation">;</span>
+		<span class="token keyword">break</span><span class="token punctuation">;</span>
+	<span class="token keyword">case</span> GLUT_RIGHT_BUTTON<span class="token operator">:</span>
+		button <span class="token operator">=</span> OF_MOUSE_BUTTON_RIGHT<span class="token punctuation">;</span>
+		<span class="token keyword">break</span><span class="token punctuation">;</span>
+	<span class="token keyword">case</span> GLUT_MIDDLE_BUTTON<span class="token operator">:</span>
+		button <span class="token operator">=</span> OF_MOUSE_BUTTON_MIDDLE<span class="token punctuation">;</span>
+		<span class="token keyword">break</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getFrameNum</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>state <span class="token operator">==</span> GLUT_DOWN<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">notifyMousePressed</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> button<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>state <span class="token operator">==</span> GLUT_UP<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">notifyMouseReleased</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> button<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+
+		buttonInUse <span class="token operator">=</span> button<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">motion_cb</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token function">rotateMouseXY</span><span class="token punctuation">(</span>orientation<span class="token punctuation">,</span> instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">getWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">getHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> x<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getFrameNum</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">notifyMouseDragged</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> buttonInUse<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">passive_motion_cb</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token function">rotateMouseXY</span><span class="token punctuation">(</span>orientation<span class="token punctuation">,</span> instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">getWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">getHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> x<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getFrameNum</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">notifyMouseMoved</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">dragEvent</span><span class="token punctuation">(</span><span class="token keyword">char</span> <span class="token operator">*</span><span class="token operator">*</span> names<span class="token punctuation">,</span> <span class="token keyword">int</span> howManyFiles<span class="token punctuation">,</span> <span class="token keyword">int</span> dragX<span class="token punctuation">,</span> <span class="token keyword">int</span> dragY<span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+	<span class="token comment" spellcheck="true">// TODO: we need position info on mac passed through</span>
+	ofDragInfo info<span class="token punctuation">;</span>
+	info<span class="token punctuation">.</span>position<span class="token punctuation">.</span>x <span class="token operator">=</span> dragX<span class="token punctuation">;</span>
+	info<span class="token punctuation">.</span>position<span class="token punctuation">.</span>y <span class="token operator">=</span> instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">getHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span>dragY<span class="token punctuation">;</span>
+
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> howManyFiles<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		string temp <span class="token operator">=</span> <span class="token function">string</span><span class="token punctuation">(</span>names<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		info<span class="token punctuation">.</span>files<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>temp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">notifyDragEvent</span><span class="token punctuation">(</span>info<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">idle_cb</span><span class="token punctuation">(</span><span class="token keyword">void</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">notifyUpdate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token function">glutPostRedisplay</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">keyboard_cb</span><span class="token punctuation">(</span><span class="token keyword">unsigned</span> <span class="token keyword">char</span> key<span class="token punctuation">,</span> <span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">notifyKeyPressed</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">keyboard_up_cb</span><span class="token punctuation">(</span><span class="token keyword">unsigned</span> <span class="token keyword">char</span> key<span class="token punctuation">,</span> <span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">notifyKeyReleased</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">special_key_cb</span><span class="token punctuation">(</span><span class="token keyword">int</span> key<span class="token punctuation">,</span> <span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">notifyKeyPressed</span><span class="token punctuation">(</span><span class="token function">special_key_to_of</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">special_key_up_cb</span><span class="token punctuation">(</span><span class="token keyword">int</span> key<span class="token punctuation">,</span> <span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">notifyKeyReleased</span><span class="token punctuation">(</span><span class="token function">special_key_to_of</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">int</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">special_key_to_of</span><span class="token punctuation">(</span><span class="token keyword">int</span> key<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">switch</span> <span class="token punctuation">(</span>key<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">case</span> GLUT_KEY_F1<span class="token operator">:</span>
+		<span class="token keyword">return</span> OF_KEY_F1<span class="token punctuation">;</span>
+
+	<span class="token keyword">case</span> GLUT_KEY_F2<span class="token operator">:</span>
+		<span class="token keyword">return</span> OF_KEY_F2<span class="token punctuation">;</span>
+
+	<span class="token keyword">case</span> GLUT_KEY_F3<span class="token operator">:</span>
+		<span class="token keyword">return</span> OF_KEY_F3<span class="token punctuation">;</span>
+
+	<span class="token keyword">case</span> GLUT_KEY_F4<span class="token operator">:</span>
+		<span class="token keyword">return</span> OF_KEY_F4<span class="token punctuation">;</span>
+
+	<span class="token keyword">case</span> GLUT_KEY_F5<span class="token operator">:</span>
+		<span class="token keyword">return</span> OF_KEY_F5<span class="token punctuation">;</span>
+
+	<span class="token keyword">case</span> GLUT_KEY_F6<span class="token operator">:</span>
+		<span class="token keyword">return</span> OF_KEY_F6<span class="token punctuation">;</span>
+
+	<span class="token keyword">case</span> GLUT_KEY_F7<span class="token operator">:</span>
+		<span class="token keyword">return</span> OF_KEY_F7<span class="token punctuation">;</span>
+
+	<span class="token keyword">case</span> GLUT_KEY_F8<span class="token operator">:</span>
+		<span class="token keyword">return</span> OF_KEY_F8<span class="token punctuation">;</span>
+
+	<span class="token keyword">case</span> GLUT_KEY_F9<span class="token operator">:</span>
+		<span class="token keyword">return</span> OF_KEY_F9<span class="token punctuation">;</span>
+
+	<span class="token keyword">case</span> GLUT_KEY_F10<span class="token operator">:</span>
+		<span class="token keyword">return</span> OF_KEY_F10<span class="token punctuation">;</span>
+
+	<span class="token keyword">case</span> GLUT_KEY_F11<span class="token operator">:</span>
+		<span class="token keyword">return</span> OF_KEY_F11<span class="token punctuation">;</span>
+
+	<span class="token keyword">case</span> GLUT_KEY_F12<span class="token operator">:</span>
+		<span class="token keyword">return</span> OF_KEY_F12<span class="token punctuation">;</span>
+
+	<span class="token keyword">case</span> GLUT_KEY_LEFT<span class="token operator">:</span>
+		<span class="token keyword">return</span> OF_KEY_LEFT<span class="token punctuation">;</span>
+
+	<span class="token keyword">case</span> GLUT_KEY_UP<span class="token operator">:</span>
+		<span class="token keyword">return</span> OF_KEY_UP<span class="token punctuation">;</span>
+
+	<span class="token keyword">case</span> GLUT_KEY_RIGHT<span class="token operator">:</span>
+		<span class="token keyword">return</span> OF_KEY_RIGHT<span class="token punctuation">;</span>
+
+	<span class="token keyword">case</span> GLUT_KEY_DOWN<span class="token operator">:</span>
+		<span class="token keyword">return</span> OF_KEY_DOWN<span class="token punctuation">;</span>
+
+	<span class="token keyword">case</span> GLUT_KEY_PAGE_UP<span class="token operator">:</span>
+		<span class="token keyword">return</span> OF_KEY_PAGE_UP<span class="token punctuation">;</span>
+
+	<span class="token keyword">case</span> GLUT_KEY_PAGE_DOWN<span class="token operator">:</span>
+		<span class="token keyword">return</span> OF_KEY_PAGE_DOWN<span class="token punctuation">;</span>
+
+	<span class="token keyword">case</span> GLUT_KEY_HOME<span class="token operator">:</span>
+		<span class="token keyword">return</span> OF_KEY_HOME<span class="token punctuation">;</span>
+
+	<span class="token keyword">case</span> GLUT_KEY_END<span class="token operator">:</span>
+		<span class="token keyword">return</span> OF_KEY_END<span class="token punctuation">;</span>
+
+	<span class="token keyword">case</span> GLUT_KEY_INSERT<span class="token operator">:</span>
+		<span class="token keyword">return</span> OF_KEY_INSERT<span class="token punctuation">;</span>
+
+	<span class="token keyword">default</span><span class="token operator">:</span>
+		<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">resize_cb</span><span class="token punctuation">(</span><span class="token keyword">int</span> w<span class="token punctuation">,</span> <span class="token keyword">int</span> h<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	windowW <span class="token operator">=</span> w<span class="token punctuation">;</span>
+	windowH <span class="token operator">=</span> h<span class="token punctuation">;</span>
+
+	instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">notifyWindowResized</span><span class="token punctuation">(</span>w<span class="token punctuation">,</span> h<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	nFramesSinceWindowResized <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">entry_cb</span><span class="token punctuation">(</span><span class="token keyword">int</span> state<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>state <span class="token operator">==</span> GLUT_ENTERED<span class="token punctuation">)</span><span class="token punctuation">{</span>
+		instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">notifyMouseEntered</span><span class="token punctuation">(</span>instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getMouseX</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getMouseY</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>state <span class="token operator">==</span> GLUT_LEFT<span class="token punctuation">)</span><span class="token punctuation">{</span>
+		instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">notifyMouseExited</span><span class="token punctuation">(</span>instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getMouseX</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getMouseY</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofAppGlutWindow<span class="token operator">::</span><span class="token function">exit_cb</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">notifyExit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	instance<span class="token operator">-</span><span class="token operator">></span><span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">disable</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1583566544124/openframeworks/app/ofAppGlutWindow_cpp/payload.js"></script><script src="/_nuxt/cede893bee7aedd34019.js" defer></script><script src="/_nuxt/3517dc6c150c1f5be417.js" defer></script><script src="/_nuxt/561e36663ec83bdcd2ac.js" defer></script><script src="/_nuxt/26c5a70906ce7aaac460.js" defer></script><script src="/_nuxt/2c5d9034468f7212e81b.js" defer></script>
+  </body>
+</html>

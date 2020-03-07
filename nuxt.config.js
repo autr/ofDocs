@@ -35,7 +35,7 @@ export default {
     dir: 'docs',
     subFolders: true,
     concurrency: 50,
-    interval: 0,
+    interval: 1,
     routes() {
       return sitemap.payloads( './static' ).then( (routes) => {
         return routes;

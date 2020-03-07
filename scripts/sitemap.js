@@ -100,8 +100,12 @@ module.exports = {
                   route: r,
                   payload: payload_
                 });
-                console.log('🚤  [sitemap.js]', 'parsed:', payload_.entry.name, Object.keys( payload_ ).length );
-                // module.exports.writeFile( w  , JSON.stringify( JSON.parse(d.data) ), root );
+                try {
+                  console.log('🚤  [sitemap.js]', 'parsed:', payload_.entry.name );
+                } catch (e) {
+                  console.log('🚤  [sitemap.js]', 'error:', payload_.entry);
+                  // module.exports.writeFile( w  , JSON.stringify( JSON.parse(d.data) ), root );
+                }
               }
             }).catch( err => {
               console.error( 'errrrr', r, err)
