@@ -2,14 +2,15 @@
 .directory( v-if="filtered( items, patterns ).length > 0" )
 	.markdown: hr
 	.columns
-		.column.mb2(
+		.column(
+			:class="[margin]"
 			v-for="p, i in filtered( items, patterns ) "
 			:key="i"
 			)
 			list.recursive-header( 
 				:entry="p" 
 				:filters="patterns"
-				:depth="3",
+				:depth="depth",
 				:useIcon="false"
 			)
 
@@ -41,6 +42,16 @@ export default {
 		items: {
 			type: Array,
 			required: true
+		},
+		margin: {
+			type: String,
+			required: false,
+			default: 'mb2'
+		},
+		depth: {
+			type: Number,
+			required: false,
+			default: 3
 		},
 		patterns: {
 			type: Array,

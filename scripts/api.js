@@ -1,8 +1,11 @@
 const parser = require('./apiUtils.js');
 const sitemap = require('./sitemap.js');
 
-
 export default function (req, res, next) {
+    if (req.url === '/') {
+        next();
+        return;
+    }
 
     parser( req.url ).then( (r) => {
 

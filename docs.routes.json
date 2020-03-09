@@ -1,43 +1,33 @@
 [
     {
-        "path": "/home/",
+        "path": "/pages/",
         "component": "components/Page.vue",
-        "name": "home"
+        "name": "pages"
     },
     {
-        "path": "/home/README",
-        "component": "components/Page.vue",
-        "name": "README"
-    },
-    {
-        "path": "/home/",
-        "component": "components/Page.vue",
-        "name": "home"
-    },
-    {
-        "path": "/home/README",
-        "component": "components/Page.vue",
-        "name": "README"
-    },
-    {
-        "path": "/contribute/contribute",
+        "path": "/pages/contribute",
         "component": "components/Page.vue",
         "name": "contribute"
     },
     {
-        "path": "/home/",
-        "component": "components/Page.vue",
-        "name": "home"
-    },
-    {
-        "path": "/home/README",
+        "path": "/pages/README",
         "component": "components/Page.vue",
         "name": "README"
     },
     {
-        "path": "/contribute/contribute",
+        "path": "/pages/",
+        "component": "components/Page.vue",
+        "name": "pages"
+    },
+    {
+        "path": "/pages/contribute",
         "component": "components/Page.vue",
         "name": "contribute"
+    },
+    {
+        "path": "/pages/README",
+        "component": "components/Page.vue",
+        "name": "README"
     },
     {
         "path": "/guides/",
@@ -195,19 +185,19 @@
         "name": "xcode"
     },
     {
-        "path": "/home/",
+        "path": "/pages/",
         "component": "components/Page.vue",
-        "name": "home"
+        "name": "pages"
     },
     {
-        "path": "/home/README",
-        "component": "components/Page.vue",
-        "name": "README"
-    },
-    {
-        "path": "/contribute/contribute",
+        "path": "/pages/contribute",
         "component": "components/Page.vue",
         "name": "contribute"
+    },
+    {
+        "path": "/pages/README",
+        "component": "components/Page.vue",
+        "name": "README"
     },
     {
         "path": "/guides/",
@@ -1165,19 +1155,19 @@
         "name": "ofxXmlSettings.h"
     },
     {
-        "path": "/home/",
+        "path": "/pages/",
         "component": "components/Page.vue",
-        "name": "home"
+        "name": "pages"
     },
     {
-        "path": "/home/README",
-        "component": "components/Page.vue",
-        "name": "README"
-    },
-    {
-        "path": "/contribute/contribute",
+        "path": "/pages/contribute",
         "component": "components/Page.vue",
         "name": "contribute"
+    },
+    {
+        "path": "/pages/README",
+        "component": "components/Page.vue",
+        "name": "README"
     },
     {
         "path": "/guides/",
@@ -3075,19 +3065,19 @@
         "name": "ofVideoPlayer.h"
     },
     {
-        "path": "/home/",
+        "path": "/pages/",
         "component": "components/Page.vue",
-        "name": "home"
+        "name": "pages"
     },
     {
-        "path": "/home/README",
-        "component": "components/Page.vue",
-        "name": "README"
-    },
-    {
-        "path": "/contribute/contribute",
+        "path": "/pages/contribute",
         "component": "components/Page.vue",
         "name": "contribute"
+    },
+    {
+        "path": "/pages/README",
+        "component": "components/Page.vue",
+        "name": "README"
     },
     {
         "path": "/guides/",
@@ -5010,19 +5000,19 @@
         "name": "images"
     },
     {
-        "path": "/home/",
+        "path": "/pages/",
         "component": "components/Page.vue",
-        "name": "home"
+        "name": "pages"
     },
     {
-        "path": "/home/README",
-        "component": "components/Page.vue",
-        "name": "README"
-    },
-    {
-        "path": "/contribute/contribute",
+        "path": "/pages/contribute",
         "component": "components/Page.vue",
         "name": "contribute"
+    },
+    {
+        "path": "/pages/README",
+        "component": "components/Page.vue",
+        "name": "README"
     },
     {
         "path": "/guides/",
@@ -12840,19 +12830,19 @@
         "name": "ofApp.h"
     },
     {
-        "path": "/home/",
+        "path": "/pages/",
         "component": "components/Page.vue",
-        "name": "home"
+        "name": "pages"
     },
     {
-        "path": "/home/README",
-        "component": "components/Page.vue",
-        "name": "README"
-    },
-    {
-        "path": "/contribute/contribute",
+        "path": "/pages/contribute",
         "component": "components/Page.vue",
         "name": "contribute"
+    },
+    {
+        "path": "/pages/README",
+        "component": "components/Page.vue",
+        "name": "README"
     },
     {
         "path": "/guides/",

@@ -18,46 +18,11 @@ export default {
 		version() {
 			return this.$store.state.version;
 		},
-		pageName() {
-			return this.cleanFilename( this.page.entry.name );
-		},
 		structure() {
 			return this.$store.state.structure;
 		},
 		data() {
 			return this.$store.state.data;
-		}
-	},
-	head () {
-		return {
-			title: this.getMetaTitle(),
-			meta: [
-				{ 
-					hid: 'description', 
-					name: 'description', 
-					content: this.getMetaDesc()
-				},
-				{ 
-					hid: 'keyword', 
-					name: 'keyword', 
-					content: this.getMetaKeywords()
-				},
-				{ 
-					property: 'og:description', 
-					content: this.getMetaDesc(),
-					vmid: 'og:description'
-				},
-				{ 
-					property: 'og:title', 
-					content: this.getMetaTitle(),
-					vmid: 'og:title'
-				},
-				{ 
-					property: 'og:image', 
-					content: this.getMetaImage(), 
-					vmid: 'og:image'
-				},
-			]
 		}
 	},
 	methods: {
@@ -99,18 +64,6 @@ export default {
 		stripWhitespace(str) {
 			if (!str) return "";
 			return str.replace(/\s+/g,'');
-		},
-		getMetaTitle() {
-			return "";
-		},
-		getMetaDesc() {
-			return "";
-		},
-		getMetaImage() {
-			return "";
-		},
-		getMetaKeywords() {
-			return "";
 		}
 	},
 	components: {

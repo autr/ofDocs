@@ -12,12 +12,11 @@ export default {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   },
   router: {
-    trailingSlash: true,
     extendRoutes (routes, resolve) {
       routes.push({
         path: '/',
-        name: 'Home',
-        component: resolve(__dirname, 'components/Page.vue')
+        name: 'homepage',
+        component: resolve(__dirname, 'components/HomePage.vue')
       });
       data.forEach( d => {
         let r = {
@@ -25,10 +24,16 @@ export default {
           name: d.path,
           component: resolve(__dirname, 'components/Page.vue')
         };
-        if (d.type !== 'asset' ) routes.push(r);
+        if (d.type !== 'asset' ) {
+          routes.push(r);
+        }
       });
     }
   },
+  head() {
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+  },
+  link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   buildDir: 'dist', // for SSR build
   generate: {
     static: true, // makes totally static

@@ -237,7 +237,7 @@ module.exports = ( rawUrl ) => {
                 return;
             }
 
-            if (url === '/') url = '/home/';
+            // if (url === '/') url = '/pages/';
 
             if (url === '/version') {
                 version().then( v => {

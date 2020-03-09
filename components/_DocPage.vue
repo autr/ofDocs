@@ -1,40 +1,6 @@
 <template lang="pug">
 #documentation-page
 
-	#side-menu.markdown
-		#params(v-if="paramsOnly.length > 0")
-			h4 Variables
-			code(
-				v-for=" vari, i in paramsOnly"
-				:key="i")
-				.functions(v-if="vari.name")
-				.variable
-					.title
-						span.token.keyword {{stripWhitespace( vari.type )}} 
-						span {{stripWhitespace( vari.name )}}
-						span.token.comment(v-html=" stripHtml( vari.short ) ")
-					.desc(v-html="vari.desc")
-			hr
-		#methods-list(v-if="methodsMenu.length > 0")
-			h4 Methods
-			.anchor(
-				v-for=" m, i in methodsMenu"
-				v-if="m.name"
-				:key="i")
-				code
-					a( 
-					:href="'#'+m.name" 
-					:class="{pink: m.short || m.desc}" ) {{stripWhitespace(m.name)}}
-		see-also( v-bind="entry" )#see-also
-
-
-
-
-
-
-
-
-
 
 	#offset-page
 					
@@ -99,6 +65,39 @@
 								.short(v-html="m.short")
 								.desc(v-html="m.desc")
 							hr 
+	#side-menu.markdown
+		#params(v-if="paramsOnly.length > 0")
+			h4 Variables
+			code(
+				v-for=" vari, i in paramsOnly"
+				:key="i")
+				.functions(v-if="vari.name")
+				.variable
+					.title
+						span.token.keyword {{stripWhitespace( vari.type )}} 
+						span {{stripWhitespace( vari.name )}}
+						span.token.comment(v-html=" stripHtml( vari.short ) ")
+					.desc(v-html="vari.desc")
+			hr
+		#methods-list(v-if="methodsMenu.length > 0")
+			h4 Methods
+			.anchor(
+				v-for=" m, i in methodsMenu"
+				v-if="m.name"
+				:key="i")
+				code
+					a( 
+					:href="'#'+m.name" 
+					:class="{pink: m.short || m.desc}" ) {{stripWhitespace(m.name)}}
+		see-also( v-bind="entry" )#see-also
+
+
+
+
+
+
+
+
 </template>
 
 <script>

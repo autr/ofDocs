@@ -3,6 +3,7 @@
 @import '~/assets/css/_utils'
 @import '~/assets/css/_grid'
 @import './theme'
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap')
 
 
 body
@@ -18,6 +19,12 @@ h1, h2, h3, h4, h5, h6
 	font-weight: bold
 
 @import 'burgers'
+
+#app
+	.pink
+		color: $pink
+	.black
+		color: mono(10)
 
 .ico
 	font-family: 'Material Icons'
@@ -38,6 +45,25 @@ h1, h2, h3, h4, h5, h6
 	text-rendering: optimizeLegibility
 	-moz-osx-font-smoothing: grayscale
 	font-feature-settings: 'liga'
+
+#app
+
+	.list-page
+		.recursive-header
+			> a
+				font-size: 14px
+				color: $pink
+				display: block
+		.auto-flow
+			column-count: 4
+			.auto
+				font-size: $baseText + 1px
+				a
+					display: block
+					// color: mono(10)
+					padding: 1em 0em
+					&:hover
+						// color: $pink
 
 
 #app
@@ -290,3 +316,255 @@ h1, h2, h3, h4, h5, h6
 			right: 0
 			border-left: none
 
+
+
+
+#app
+
+	.langs
+		> span
+			// border-left: 1px solid mono(70)
+			margin-left: 0px
+			padding-left: 10px
+			&:first-child
+				border-left: none
+				margin-left: 0px
+	$sx: 20px
+	.x 
+	    height: $sx
+	    width: $sx
+	    background-color: #FA6900
+	    border-radius: 5px
+	    position: relative
+	
+
+	.x:after 
+	    position: absolute
+	    top: 0
+	    bottom: 0
+	    left: 0
+	    right: 0
+	    content: "\d7" /* use the hex value here... */
+	    font-size: $sx
+	    color: #FFF
+	    line-height: $sx
+	    text-align: center
+	
+
+
+	$cpadd: 40px
+	.columns
+		display: flex
+		flex-wrap: wrap
+		width: calc( 100% + 40px)
+		margin-left: -20px
+		.column
+			padding: 0px 20px
+			flex-grow: 0
+			flex-shrink: 0
+			// flex-basis: 25%
+			flex-basis: 320px
+			display: flex
+			align-items: left
+			justify-content: left
+			word-break: break-all
+			word-wrap: break-word
+
+
+	*
+		outline-color: $pink
+	#menu
+		background: #f3f3f3
+		#mini-footer
+			position: fixed
+			bottom: 5px
+			left: 20px
+			a
+				color: $pink
+			*
+				margin-right: 10px
+		h1 a
+			font-weight: normal
+			color: mono(10)
+		.item
+			position: relative
+			display: block
+			padding: 0em 0em
+			padding-left: 20px
+			overflow: hidden
+			&:before
+				content: ""
+				height: 100%
+				width: 1px
+				background: mono(80)
+				position: absolute
+				left: 5px
+				top: 2em
+			> a
+				position: relative
+				padding: 0em
+				left: -20px
+				&.nuxt-link-exact-active
+					color: mono(10)
+				// color: $pink
+				&.back
+					position: absolute
+					top: 0
+					left: 0
+					width: 100%
+					display: none
+					&.active
+						display: block
+			.list
+				// transition: max-height 0.5s ease
+				max-height: 0vh
+				overflow: hidden
+		.nuxt-link-active + .list
+			max-height: 300vh
+		.menu-inner > .item
+			padding-left: 0px
+			border-left: none
+
+#app .pink
+	color: $pink
+::selection
+	color: white
+	background: lighten($pink,8)
+
+
+
+$ml: 300px
+$fl: 200px
+.inner
+	padding: 0px 20px
+#app
+
+	.version
+		font-family: Courier, serif;
+	#search
+		.search-result
+			border-bottom: 1px solid mono(90)
+			display: block
+			&.active
+				background-color: mono(80)
+			.inner
+				display: block
+			> a
+				padding: 15px 0px 
+				display: block
+				&:focus, &.nuxt-link-exact-active
+					background: mono(90)
+					// border: 1px solid $pink
+				&.nuxt-link-exact-active
+					.name 
+						font-weight: bold
+					.breadcrumbs .crumb .link
+						// color: mono(10)
+			.name
+				color: mono(10)
+				// font-size: $baseText + 2px
+			.breadcrumbs
+				font-family: Courier, serif
+				display: block
+				position: relative
+				&:before
+					content: ""
+					@include fill()
+				a, a:hover, *
+					color: mono(60)
+					font-size: $baseText
+				.crumb
+					&:first-child
+						// span.link
+						// 	color: mono(100)
+						// 	background: mono(60)
+						// 	padding: 0em 0.4em
+						// 	padding-right: 0em
+						// 	margin-right: 0.4em
+							// color: $pink
+					.chevron
+						margin: 0px
+						margin-right: 0px
+						left: -4px
+						top: 1px
+						position: relative
+						&:before
+							transform: rotate(45deg) scale(0.75)
+						// display: none
+		.field-inner
+			position: relative
+			.x
+				position: absolute
+				top: 11px
+				cursor: pointer
+				right: 10px
+				background: transparent
+				&:after
+					color: mono(20)
+			svg
+				position: absolute
+				top: 15px
+				left: 15px
+				transform: scale(0.4)
+				transform-origin: 0 0
+				width: 36px
+				path
+					fill: mono(70)
+			.text-wrapper 
+				border-radius: 0px
+				border-color: mono(90)
+				background: mono(100)
+				input
+					padding-left: 40px
+					&:focus
+						box-shadow: 0px 0px 2px 1px $pink
+
+
+	#menu, #functions
+		position: fixed
+		top: 0
+		height: 100%
+		overflow: auto
+		border-right: 1px solid #eee
+		#lists
+			.item
+				a
+					font-weight: normal
+					display: block
+					margin: 0
+					padding: 0.2em 0em
+					&:hover
+						// background: #eee
+			a.nuxt-link-active
+				font-weight: bold
+				color: mono(10)
+				position: relative
+				&:before
+					content: ""
+					$ss: 3px
+					width: $ss
+					height: $ss
+					border-radius: $ss
+					background-color: $pink
+					position: absolute
+					left: -10px - ($ss/2) + 5px
+					top: calc( 50% - #{$ss/2})
+	#menu
+		transition: transform 0.4s ease
+		width: $ml
+		left: 0 
+	#functions
+		width: $fl
+		left: $ml
+	#document
+		margin-left: $ml
+		.inner
+			padding: 0px 60px
+
+#app 
+	.questrial
+		font-family: Questrial, sans-serif
+		font-weight: normal
+	&.documentation
+		#menu
+			// transform: translate( -$ml, 0px)

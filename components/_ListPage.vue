@@ -1,9 +1,8 @@
 <template lang="pug">
-#list-page
-	#list-header.inner
+.list-page
+	#list-header.inner( v-if="entry.path.toLowerCase().indexOf('pages') === -1" )
 		#doctitles
 			h1.page-title.mb4.questrial 
-
 				span.f7 
 					i.ico.f5(v-if="entry.icon") {{entry.icon}}
 					span {{ entry.name }} 
@@ -56,28 +55,6 @@ export default {
 
 @import '@/assets/css/theme'
 @import '@/assets/css/_utils' 
-
-#app
-
-	#list-page
-		.recursive-header
-			> a
-				font-size: 14px
-				// font-weight: bold
-				color: $pink
-				padding-bottom: 1em
-				display: block
-				// color: mono(10)
-		.auto-flow
-			column-count: 4
-			.auto
-				font-size: $baseText + 1px
-				a
-					display: block
-					// color: mono(10)
-					padding: 1em 0em
-					&:hover
-						// color: $pink
 
 
 </style>

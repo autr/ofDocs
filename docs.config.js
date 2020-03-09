@@ -2,14 +2,14 @@ const ofCoreAddons = '{ofxAccelerometer,ofxAndroid,ofxAssimpModelLoader,ofxEmscr
 const allAddons = '*';
 
 module.exports = {
+	meta: {
+		baseTitle: 'ofDocs',
+		baseDesc: 'openFrameworks documentation and examples browser'
+	},
 	directories: {
-		home: {
+		pages: {
 			dir: './',
-			pattern: 'README.md'
-		},
-		contribute: {
-			dir: './',
-			pattern: 'contribute.md'
+			pattern: '*.md'
 		},
 		documentation: {
 			dir: '../ofSite/documentation/',
@@ -39,7 +39,7 @@ module.exports = {
 	exts: {
 		page: ['md','markdown'],
 		source: ['cpp','h','mm'],
-		asset: ['png','svg','jpg','gif']
+		asset: ['png','svg','jpg','jpeg','gif']
 	},
 	icons: {
 		"application": "web",

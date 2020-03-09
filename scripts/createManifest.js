@@ -2,6 +2,7 @@ const fs = require('fs'),
     path = require('path'),
     {exec} = require('child_process'),
     directories = require('../docs.config.js').directories,
+    meta = require('../docs.config.js').meta,
     exts = require('../docs.config.js').exts,
     icons = require('../docs.config.js').icons,
     Glob = require("glob").Glob,
@@ -46,8 +47,7 @@ const createProtoEntry = ( _url, _strDirKey, _baseUrl ) => {
     const filename = path.basename( _url );
     const absolute = path.resolve( _url );
     const bare = absolute.replace( _baseUrl, '');
-
-    let route_ = '/' + _strDirKey.toLowerCase() + bare;
+    let route_ = '/'+_strDirKey.toLowerCase() + bare;
     let path_ = route_;
 
     /*-- clean dots --*/
@@ -307,7 +307,8 @@ Promise.all(promises__).then( (res) => {
 
     const output = {
         structure: tree__,
-        data: data__
+        data: data__,
+        meta: meta
     };
 
 

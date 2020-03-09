@@ -1,7 +1,6 @@
 <template lang="pug">
 #code-page.markdown
 	#side-menu
-
 		#code-sources( v-if="insideSrc" )
 			h4 Sources
 			.srcsiblings
@@ -12,7 +11,7 @@
 					span.src src 
 					nuxt-link( :to=" c.path " ) {{c.name}} 
 		see-also( v-bind="toplevel" )#see-also
-	#code-render( :id="(insideSrc) ? 'offset-page' : 'code-inner'" ): .inner
+	#code-render: .inner
 		pre
 			code(v-html="document" ref="code")
 			a.line-number(
@@ -130,7 +129,7 @@ export default {
 
 	},
 	mounted() {
-		// this.offsetHeight = this.$refs.code.offsetHeight;
+		this.offsetHeight = this.$refs.code.offsetHeight;
 	}
 }
 </script>
@@ -141,6 +140,9 @@ export default {
 @import '@/assets/css/_utils' 
 
 #app
+	#code-render
+		padding-right: 320px
+		position: relative
 	&.code
 		#actions
 			.button
@@ -151,21 +153,14 @@ export default {
 			color: mono(70)
 		a
 			color: deeppink!important
-	.wrap 
-		padding: 0 40px
-
-		pre
-			position: relative
-			min-height: 100vh
-			a.line-number
-				position: absolute
-				height: 18px
-				// width: 200px
-				box-sizing: border-box
-				// border-bottom: 1px solid white
-				left: -30px
-				// font-size: $baseText - 1
-				color: mono( 60 )
+	a.line-number
+		position: absolute
+		height: 18px
+		box-sizing: border-box
+		left: 5px
+		color: mono( 80 )!important
+		&:active, &:focus
+			color: $pink!important
 
 
 </style>

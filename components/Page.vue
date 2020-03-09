@@ -1,8 +1,7 @@
 <template lang="pug">
 #renderer(v-if="page")
-  page-header( v-if="page.entry.name !== 'home'" v-bind="page.entry" )
-  home-page( v-if="page.entry.name === 'home'" v-bind="page" )
-  doc-page(  v-else-if="page.type === 'page' && page.methods" v-bind="page" )
+  page-header( v-bind="page.entry" )
+  doc-page(  v-if="page.type === 'page' && page.methods" v-bind="page" )
   list-page( v-else-if="page.type === 'page' && !page.methods" v-bind="page" )
   list-page( v-else-if="page.type === 'folder'" v-bind="page" )
   code-page( v-else-if="page.type === 'source'" v-bind="page" )
@@ -14,7 +13,6 @@ import Base from '~/components/Base.vue'
 import DocPage from '~/components/_DocPage.vue'
 import CodePage from '~/components/_CodePage.vue'
 import ListPage from '~/components/_ListPage.vue'
-import HomePage from '~/components/_HomePage.vue'
 import PageHeader from '~/components/_PageHeader.vue'
 export default {
   extends: Base,
@@ -22,19 +20,67 @@ export default {
     DocPage,
     CodePage,
     ListPage,
-    HomePage,
     PageHeader
   },
   computed: {
   },
+  head () {
+    return {
+      title: this.getMetaTitle(),
+      meta: [
+        { 
+          hid: 'description', 
+          name: 'description', 
+          content: this.getMetaDesc()
+        },
+        { 
+          hid: 'keyword', 
+          name: 'keyword', 
+          content: this.getMetaKeywords()
+        },
+        { 
+          property: 'og:description', 
+          content: this.getMetaDesc(),
+          vmid: 'og:description'
+        },
+        { 
+          property: 'og:title', 
+          content: this.getMetaTitle(),
+          vmid: 'og:title'
+        },
+        { 
+          property: 'og:image', 
+          content: this.getMetaImage(), 
+          vmid: 'og:image'
+        },
+      ]
+    }
+  },
   methods: {
 
+    getMetaTitle() {
+      let parent = this.data[this.page.entry.parent];
+      let b = "";
+      while (parent) {
+        b = parent.name + ' | ';
+        parent = this.data[parent.parent];
+      }
+      return `${this.page.entry.name} | ${b}${this.$store.state.meta.baseTitle}`;
+    },
+    getMetaDesc() {
+      return this.$store.state.meta.baseDesc;
+    },
+    getMetaImage() {
+      return "/files/images/ofw-logo.png";
+    },
+    getMetaKeywords() {
+      return "";
+    },
   },
   created() {
 
   },
   async asyncData ( { $axios, app, store, route, params, query, env, isDev, isHMR, redirect, error, payload } ) {
-
     if (payload) {
       console.log('🚜  [Page.vue] payload:', payload.entry.name );
       return {page: payload};
@@ -50,12 +96,12 @@ export default {
       }
     }
   },
-  mounted() {
-    const w = window.location.pathname;
-    console.log(this.page.entry.path, w);
-    if (this.page.entry.path === w + '/') {
-       this.$router.push( w.substring(0,w.length-1) );
-    }
+  beforeMount() {
+    // let w = window.location.pathname;
+    // console.log(this.page.entry.path, w);
+    // if (this.page.entry.path + '/' === w  ) {
+    //    this.$router.replace( w.substring(0,w.length-1) );
+    // }
   }
 }
 </script>
