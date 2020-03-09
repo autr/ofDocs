@@ -141,7 +141,7 @@ export default {
 
 #app
 	#code-render
-		padding-right: 320px
+		margin-right: 320px
 		position: relative
 	&.code
 		#actions

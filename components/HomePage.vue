@@ -1,10 +1,10 @@
 <template lang="pug">
 .list-page
   .inner
-    .markdown.mb4
+    .markdown.mb4.pt2
       .html( v-if="page.document" v-html="page.document" )
     section.mb2( v-if="k !== 'files'" v-for="i, k in structure" :key="k" ) 
-      h3: nuxt-link.f4.questrial.black( :to="i.path" ) {{k}}
+      h3: nuxt-link.f5.questrial.black( :to="i.path" ) {{k}}
       directory( v-bind:items="i.children" :depth="1" margin="mb0" )
 
 </template>
