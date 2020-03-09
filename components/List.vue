@@ -1,5 +1,8 @@
 <template lang="pug">
-.item(v-if="level < depth")
+.item(
+	v-if="level < depth"
+	:class="className"
+	)
 	nuxt-link( :to="entry.path" :title="entry.route" )
 		i.ico(v-if="entry.icon && useIcon") {{entry.icon}}
 		span(v-if="$slots.default"): slot
@@ -27,6 +30,11 @@ export default {
   		}
 	},
 	computed: {
+		className() {
+			let obj = {};	
+			obj[this.entry.name] = true;
+			return obj;
+		},
 		isLinked() {
 			return (this.entry.path.indexOf(this.$route.path) !== -1) || (this.$route.path.indexOf(this.entry.path) !== -1);
 		},

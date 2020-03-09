@@ -39,7 +39,6 @@ export default {
       console.log('🚜  [Page.vue] payload:', payload.entry.name );
       return {page: payload};
     } else {
-      console.log(route);
       let p = route.path.toLowerCase();
       // if (p.indexOf('/ofDocs' === -1)) p = '/ofDocs' + p;
       const path = p + '?as=json';

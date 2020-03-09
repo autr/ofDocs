@@ -12,12 +12,22 @@ When running locally, an API middleware reads files and folders into structured 
 yarn run dev
 ```
 
-### Static website
+### Generating a static website
 
-ofDocs is currently dependent on a future release of Nuxt.js [[feat/target-2](https://github.com/nuxt/nuxt.js/tree/feat/target-2)], included at the `/nuxt.js` root. To generate a static-website to the `docs` folder (used by Github Pages):
+ofDocs is currently dependent on a future release of Nuxt.js [[feat/target-2](https://github.com/nuxt/nuxt.js/tree/feat/target-2), included at the `/nuxt.js` root. To install the dependencies:
+
+```
+cd nuxt.js
+yarn install && yarn run build
+cd ../
+```
+
+And to generate a static version of the website into the `docs` folder (used by Github Pages):
 
 ```
 yarn run generate
 ```
 
-By default GH Pages resolves to a /ofDocs domain, which will break the Nuxt SSR implementation. This can be cicumvented by giving the GH Page a domain name, ie. ofdocs.autr.tv
+## Github Pages
+
+By default GH Pages resolves to a /ofDocs domain, which will break the Nuxt routing. This can be cicumvented by giving the GH Page a domain name, ie. ofdocs.autr.tv

@@ -15,41 +15,25 @@
 	#list-body.inner
 		.markdown.mb4
 			.html( v-if="document" v-html="document" )
-		#items( v-if="filtered( entry.children, patterns ).length > 0" )
-			.markdown: hr
-			.columns
-				.column.mb2(
-					v-for="p, i in filtered( entry.children, patterns ) "
-					:key="i"
-					)
-					list.recursive-header( 
-						:entry="p" 
-						:filters="patterns"
-						:depth="3",
-						:useIcon="false"
-					)
+		directory( v-bind:items="entry.children" )
 
 </template>
 
 <script>
 import Base from '~/components/Base.vue'
 import List from '~/components/List.vue'
+import Directory from '~/components/_Directory.vue'
 export default {
 	extends: Base,
 	props: ['entry', 'intro', 'items', 'document'],
 	components: {
-		List
+		List,
+		Directory
 	},
 	computed: {
 		trans() {
 			if (this.$props.intro) return this.$props.intro.translations;
 			if (this.$props.entry.translations) return this.$props.entry.translations;
-			return false;
-		},
-		findSrc() {
-			for (let i = 0; i < this.$props.items.length; i++) {
-				if (this.$props.items[i].name === 'src') return this.$props.items[i];
-			}
 			return false;
 		}
 	},

@@ -1,46 +1,41 @@
 <template lang="pug">
-#home-page
-  #home-body.inner
-    #items
-      .columns
-        .column.mt4(
-          v-for="n, i in menu"
-          v-if="structure[n[0]]"
-          :key="i" 
-          )
-          list.recursive-header( 
-            :entry="structure[n[0]]" 
-            :filters="f"
-            :depth="1"
-          )
-      .markdown: hr
-    .markdown.mb4
-      .html( v-if="document" v-html="document" )
+#list-page
+  #list-header.inner
+    #doctitles
+      h1.page-title.mb4.questrial 
+        span.f7 ofDocs
+  #list-body.inner
+    //- h1 {{rootItems}}
+    //- .markdown.mb4
+    //-   .html( v-if="document" v-html="document" )
+    section( v-for="s, i in structure " :key="i" )
+      h1 {{s.name}}
 
 </template>
 
 <script>
 import Base from '~/components/Base.vue'
-import List from '~/components/List.vue'
+import Directory from '~/components/_Directory.vue'
 export default {
   extends: Base,
   props: ['entry', 'intro', 'items', 'document'],
   components: {
-    List
+    Directory
   },
   computed: {
+    rootItems() {
+      let arr = [];
+      console.log( this.$store.state.structure   );
+      Object.keys( this.$store.state.structure ).forEach( k => {
+        const e = this.$store.state.data[ this.$store.state.structure[k].id ];
+        arr.push( e.id );
+      });
+      return arr;
+    }
   },
   data() {
     return {
-
-      menu: [ 
-        ['Documentation', 4], 
-        ['Guides', 2], 
-        ['examples', 3], 
-        ['openFrameworks', 2], 
-        ['addons', 2]
-      ],
-      f: ['jpg', 'png', 'gif', 'svg', 'search_results', 'introduction', 'readme', 'index', '.ja', '.ko', '.zh_cn', '-ja', '-ko', '-zh_cn']
+      patterns: ['jpg', 'png', 'gif', 'svg', 'search_results', 'introduction', 'readme', 'index', '.ja', '.ko', '.zh_cn', '-ja', '-ko', '-zh_cn']
     }
   },
   methods: {
@@ -58,6 +53,27 @@ export default {
 @import '@/assets/css/theme'
 @import '@/assets/css/_utils' 
 
+#app
+
+  #list-page
+    .recursive-header
+      > a
+        font-size: 14px
+        // font-weight: bold
+        color: $pink
+        padding-bottom: 1em
+        display: block
+        // color: mono(10)
+    .auto-flow
+      column-count: 4
+      .auto
+        font-size: $baseText + 1px
+        a
+          display: block
+          // color: mono(10)
+          padding: 1em 0em
+          &:hover
+            // color: $pink
 
 
 </style>
