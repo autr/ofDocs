@@ -21,6 +21,45 @@ h1, h2, h3, h4, h5, h6
 @import 'burgers'
 
 #app
+	textarea
+		width: 100%
+		&.markdown-editor
+			// background: mono(30)
+			// color: white
+			border: none
+			font-size: $baseText 
+			color: mono(10)
+			font-family: Courier, serif
+			outline: none
+			padding: 60px
+			overflow: none
+	#extends
+		position: relative
+		top: -10px
+		color: mono(60)
+	#doc-header
+		display: flex
+		width: 100%
+		#actions
+			text-align: right
+			flex-grow: 1
+	#methods-list
+		a
+			color: mono(30)
+			&.pink
+				color: $pink
+	.editor
+		outline: none
+		padding: 2em 0em
+		margin: 4em 0em
+	.page-title, .actions
+		display: inline-block
+	.actions
+		position: relative
+		top: -0.4em
+		left: 1em
+
+#app
 	.pink
 		color: $pink
 	.black
@@ -151,15 +190,26 @@ h1, h2, h3, h4, h5, h6
 				z-index: 2
 			
 	.button
-		padding: 10px 20px
+		padding: 0em 1.5em
+		height: 2.5em
+		line-height: 2.5em
 		display: inline-block
 		border: 1px solid mono(85)
 		outline: 0
 		background: transparent
 		border-radius: 2px
 		font-size: $baseText
+		cursor: pointer
 		&:disabled
 			opacity: 0.5
+		&.black
+			background: mono(30)
+			border-color: mono(30)
+			color: white
+		&.pink
+			background: $pink
+			border-color: $pink
+			color: white
 
 	$logoSize: 60px
 	$footerHeight: 200px

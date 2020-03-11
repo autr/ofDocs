@@ -1,16 +1,5 @@
 <template lang="pug">
 .list-page
-	#list-header.inner( v-if="entry.path.toLowerCase().indexOf('pages') === -1" )
-		#doctitles
-			h1.page-title.mb4.questrial 
-				span.f7 
-					i.ico.f5(v-if="entry.icon") {{entry.icon}}
-					span {{ entry.name }} 
-				span.langs.f5(v-if="trans") 
-					span(
-						v-for="l, k in trans"
-					)
-						nuxt-link.pink( :to="l.path" ) {{k}}
 	#list-body.inner
 		.markdown.mb4
 			.html( v-if="document" v-html="document" )
@@ -30,11 +19,6 @@ export default {
 		Directory
 	},
 	computed: {
-		trans() {
-			if (this.$props.intro) return this.$props.intro.translations;
-			if (this.$props.entry.translations) return this.$props.entry.translations;
-			return false;
-		}
 	},
 	data() {
 		return {

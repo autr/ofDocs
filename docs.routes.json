@@ -1,31 +1,31 @@
 [
     {
-        "path": "/pages/",
+        "path": "/about/",
         "component": "components/Page.vue",
-        "name": "pages"
+        "name": "about"
     },
     {
-        "path": "/pages/contribute",
+        "path": "/about/contribute",
         "component": "components/Page.vue",
         "name": "contribute"
     },
     {
-        "path": "/pages/README",
+        "path": "/about/README",
         "component": "components/Page.vue",
         "name": "README"
     },
     {
-        "path": "/pages/",
+        "path": "/about/",
         "component": "components/Page.vue",
-        "name": "pages"
+        "name": "about"
     },
     {
-        "path": "/pages/contribute",
+        "path": "/about/contribute",
         "component": "components/Page.vue",
         "name": "contribute"
     },
     {
-        "path": "/pages/README",
+        "path": "/about/README",
         "component": "components/Page.vue",
         "name": "README"
     },
@@ -185,17 +185,17 @@
         "name": "xcode"
     },
     {
-        "path": "/pages/",
+        "path": "/about/",
         "component": "components/Page.vue",
-        "name": "pages"
+        "name": "about"
     },
     {
-        "path": "/pages/contribute",
+        "path": "/about/contribute",
         "component": "components/Page.vue",
         "name": "contribute"
     },
     {
-        "path": "/pages/README",
+        "path": "/about/README",
         "component": "components/Page.vue",
         "name": "README"
     },
@@ -1155,17 +1155,17 @@
         "name": "ofxXmlSettings.h"
     },
     {
-        "path": "/pages/",
+        "path": "/about/",
         "component": "components/Page.vue",
-        "name": "pages"
+        "name": "about"
     },
     {
-        "path": "/pages/contribute",
+        "path": "/about/contribute",
         "component": "components/Page.vue",
         "name": "contribute"
     },
     {
-        "path": "/pages/README",
+        "path": "/about/README",
         "component": "components/Page.vue",
         "name": "README"
     },
@@ -3065,17 +3065,17 @@
         "name": "ofVideoPlayer.h"
     },
     {
-        "path": "/pages/",
+        "path": "/about/",
         "component": "components/Page.vue",
-        "name": "pages"
+        "name": "about"
     },
     {
-        "path": "/pages/contribute",
+        "path": "/about/contribute",
         "component": "components/Page.vue",
         "name": "contribute"
     },
     {
-        "path": "/pages/README",
+        "path": "/about/README",
         "component": "components/Page.vue",
         "name": "README"
     },
@@ -5000,17 +5000,17 @@
         "name": "images"
     },
     {
-        "path": "/pages/",
+        "path": "/about/",
         "component": "components/Page.vue",
-        "name": "pages"
+        "name": "about"
     },
     {
-        "path": "/pages/contribute",
+        "path": "/about/contribute",
         "component": "components/Page.vue",
         "name": "contribute"
     },
     {
-        "path": "/pages/README",
+        "path": "/about/README",
         "component": "components/Page.vue",
         "name": "README"
     },
@@ -12830,17 +12830,17 @@
         "name": "ofApp.h"
     },
     {
-        "path": "/pages/",
+        "path": "/about/",
         "component": "components/Page.vue",
-        "name": "pages"
+        "name": "about"
     },
     {
-        "path": "/pages/contribute",
+        "path": "/about/contribute",
         "component": "components/Page.vue",
         "name": "contribute"
     },
     {
-        "path": "/pages/README",
+        "path": "/about/README",
         "component": "components/Page.vue",
         "name": "README"
     },

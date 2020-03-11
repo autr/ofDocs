@@ -1,5 +1,5 @@
 <template lang="pug">
-.see-also(v-if="also")
+.see-also(v-if="also.length > 0")
   h4 See also
   .also(
     v-for="a, i in also"

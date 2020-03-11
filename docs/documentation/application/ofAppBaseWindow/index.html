@@ -1,764 +1,1448 @@
 <!doctype html>
 <html data-n-head-ssr>
   <head>
-    <meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><meta data-n-head="ssr" data-hid="description" name="description" content=""><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="" vmid="og:image"><link rel="preload" href="/_nuxt/cede893bee7aedd34019.js" as="script"><link rel="preload" href="/_nuxt/561e36663ec83bdcd2ac.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/26c5a70906ce7aaac460.js" as="script"><link rel="preload" href="/_nuxt/75259d9b56378e7dbe47.css" as="style"><link rel="preload" href="/_nuxt/2c5d9034468f7212e81b.js" as="script"><link rel="preload" href="/_nuxt/74971516fa343f955f83.css" as="style"><link rel="preload" href="/_nuxt/3517dc6c150c1f5be417.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/75259d9b56378e7dbe47.css"><link rel="stylesheet" href="/_nuxt/74971516fa343f955f83.css">
+    <title>ofAppBaseWindow | documentation | ofDocs</title><meta data-n-head="ssr" data-hid="description" name="description" content="openFrameworks documentation and examples browser"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="openFrameworks documentation and examples browser" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="ofAppBaseWindow | documentation | ofDocs" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="/files/images/ofw-logo.png" vmid="og:image"><link rel="preload" href="/_nuxt/1222c887b819d0202cfa.js" as="script"><link rel="preload" href="/_nuxt/e2974c46edd15e353a99.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/f8d94d1c92ade1d8a6da.js" as="script"><link rel="preload" href="/_nuxt/f3151c6e69ccf58ccdfd.css" as="style"><link rel="preload" href="/_nuxt/c01572c3f985d7f6c287.js" as="script"><link rel="preload" href="/_nuxt/21c4d0f9583096394838.css" as="style"><link rel="preload" href="/_nuxt/adc32956be059d7527f6.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/f3151c6e69ccf58ccdfd.css"><link rel="stylesheet" href="/_nuxt/21c4d0f9583096394838.css">
   </head>
   <body>
-    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app" class="unknown"><div id="menu"><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><div class="txt"><span class="docs f7 questrial">ofDocs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" x="0px" y="0px" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343						c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88						c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593						c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789						C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><div id="results" class="mt1"></div></div><div id="lists" class="menu-inner mt1"><div class="inner"><div class="item"><a href="/documentation/" title="/documentation/" class="nuxt-link-active"><!----><span>documentation</span></a><div class="list"><div class="item"><a href="/documentation/3d/" title="/documentation/3d/"><!----><span>3d</span></a><!----></div><div class="item"><a href="/documentation/addons/" title="/documentation/addons/"><!----><span>addons</span></a><!----></div><div class="item"><a href="/documentation/application/" title="/documentation/application/" class="nuxt-link-active"><!----><span>application</span></a><div class="list"><div class="item"><a href="/documentation/application/ofAppBaseGLESWindow" title="/documentation/application/ofAppBaseGLESWindow.markdown"><!----><span>ofAppBaseGLESWindow</span></a><!----></div><div class="item"><a href="/documentation/application/ofAppBaseGLWindow" title="/documentation/application/ofAppBaseGLWindow.markdown"><!----><span>ofAppBaseGLWindow</span></a><!----></div><div class="item"><a href="/documentation/application/ofAppBaseWindow" title="/documentation/application/ofAppBaseWindow.markdown" class="nuxt-link-exact-active nuxt-link-active"><!----><span>ofAppBaseWindow</span></a><div class="list"></div></div><div class="item"><a href="/documentation/application/ofAppEGLWindow::Settings" title="/documentation/application/ofAppEGLWindow::Settings.markdown"><!----><span>ofAppEGLWindow::Settings</span></a><!----></div><div class="item"><a href="/documentation/application/ofAppEGLWindow" title="/documentation/application/ofAppEGLWindow.markdown"><!----><span>ofAppEGLWindow</span></a><!----></div><div class="item"><a href="/documentation/application/ofAppEGLWindowSettings" title="/documentation/application/ofAppEGLWindowSettings.markdown"><!----><span>ofAppEGLWindowSettings</span></a><!----></div><div class="item"><a href="/documentation/application/ofAppGLFWWindow" title="/documentation/application/ofAppGLFWWindow.markdown"><!----><span>ofAppGLFWWindow</span></a><!----></div><div class="item"><a href="/documentation/application/ofAppGlutWindow" title="/documentation/application/ofAppGlutWindow.markdown"><!----><span>ofAppGlutWindow</span></a><!----></div><div class="item"><a href="/documentation/application/ofAppNoWindow" title="/documentation/application/ofAppNoWindow.markdown"><!----><span>ofAppNoWindow</span></a><!----></div><div class="item"><a href="/documentation/application/ofAppRunner_functions" title="/documentation/application/ofAppRunner_functions.markdown"><!----><span>ofAppRunner_functions</span></a><!----></div><div class="item"><a href="/documentation/application/ofBaseApp" title="/documentation/application/ofBaseApp.markdown"><!----><span>ofBaseApp</span></a><!----></div><div class="item"><a href="/documentation/application/ofGLESWindowSettings" title="/documentation/application/ofGLESWindowSettings.markdown"><!----><span>ofGLESWindowSettings</span></a><!----></div><div class="item"><a href="/documentation/application/ofGLFWWindowSettings" title="/documentation/application/ofGLFWWindowSettings.markdown"><!----><span>ofGLFWWindowSettings</span></a><!----></div><div class="item"><a href="/documentation/application/ofGLWindowSettings" title="/documentation/application/ofGLWindowSettings.markdown"><!----><span>ofGLWindowSettings</span></a><!----></div><div class="item"><a href="/documentation/application/ofMainLoop" title="/documentation/application/ofMainLoop.markdown"><!----><span>ofMainLoop</span></a><!----></div><div class="item"><a href="/documentation/application/ofNoopRenderer" title="/documentation/application/ofNoopRenderer.markdown"><!----><span>ofNoopRenderer</span></a><!----></div><div class="item"><a href="/documentation/application/ofWindowSettings" title="/documentation/application/ofWindowSettings.markdown"><!----><span>ofWindowSettings</span></a><!----></div></div></div><div class="item"><a href="/documentation/communication/" title="/documentation/communication/"><!----><span>communication</span></a><!----></div><div class="item"><a href="/documentation/events/" title="/documentation/events/"><!----><span>events</span></a><!----></div><div class="item"><a href="/documentation/gl/" title="/documentation/gl/"><!----><span>gl</span></a><!----></div><div class="item"><a href="/documentation/glm/" title="/documentation/glm/"><!----><span>glm</span></a><!----></div><div class="item"><a href="/documentation/graphics/" title="/documentation/graphics/"><!----><span>graphics</span></a><!----></div><div class="item"><a href="/documentation/math/" title="/documentation/math/"><!----><span>math</span></a><!----></div><div class="item"><a href="/documentation/sound/" title="/documentation/sound/"><!----><span>sound</span></a><!----></div><div class="item"><a href="/documentation/types/" title="/documentation/types/"><!----><span>types</span></a><!----></div><div class="item"><a href="/documentation/utils/" title="/documentation/utils/"><!----><span>utils</span></a><!----></div><div class="item"><a href="/documentation/video/" title="/documentation/video/"><!----><span>video</span></a><!----></div></div></div><div class="item"><a href="/examples/" title="/examples/"><!----><span>examples</span></a><!----></div><div class="item"><a href="/openframeworks/" title="/openframeworks/"><!----><span>openFrameworks</span></a><!----></div><div class="item"><a href="/addons/" title="/addons/"><!----><span>addons</span></a><!----></div><div class="item"><a href="/guides/" title="/guides/"><!----><span>guides</span></a><!----></div></div></div></div><div id="document"><div id="renderer" class="main"><div absolute="/Users/gilbertsinnott/Code/openFrameworks/ofSite/documentation/application/ofAppBaseWindow.markdown" route="/documentation/application/ofAppBaseWindow.markdown" dir="../ofSite/documentation/application" ext="markdown" type="page" id="1902" parent="1897" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><div class="mt2 mb2"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/" class="pink nuxt-link-active">documentation </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/application/" class="pink nuxt-link-active">application </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link">ofAppBaseWindow </span><!----></span></span></div></div></div></div><div id="documentation-page" document="<p>#class ofAppBaseWindow</p>
-<p>&amp;lt;!--
-<em>visible: True</em>
-<em>advanced: False</em>
-<em>istemplated: False</em>
-_extends: _
---&amp;gt;</p>
-<p>##InlineDescription</p>
-<p>##Description</p>
-<p>Base class for all windowing classes. In OF we're extending this to create a different version of the default window in oF, like the ofAppEGLWindow or the ofAppGLFWWindow instances. For those interested in the under-the-hood details, you can always get a reference to the base graphics context from the ofAppBaseWindow, like getEGLContext() for those on Linux or getGLXContext() for those using GLFW. This is where your methods like setFullscreen() are implemented but other than that you're probably not going to be deeply interested in the ofAppBaseWindow since it's extended by every window system that you actually use (i.e. getX11Display() and getWin32Window()).</p>
-<p>##Methods</p>
-<p>###void close()</p>
-<p>&amp;lt;!--
-<em>syntax: close()</em>
-<em>name: close</em>
-<em>returns: void</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 0.9.0</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###void disableSetupScreen()</p>
-<p>&amp;lt;!--
-<em>syntax: disableSetupScreen()</em>
-<em>name: disableSetupScreen</em>
-<em>returns: void</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 006</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###bool doesHWOrientation()</p>
-<p>&amp;lt;!--
-<em>syntax: doesHWOrientation()</em>
-<em>name: doesHWOrientation</em>
-<em>returns: bool</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 007</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###void draw()</p>
-<p>&amp;lt;!--
-<em>syntax: draw()</em>
-<em>name: draw</em>
-<em>returns: void</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 0.9.0</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###void enableSetupScreen()</p>
-<p>&amp;lt;!--
-<em>syntax: enableSetupScreen()</em>
-<em>name: enableSetupScreen</em>
-<em>returns: void</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 006</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###ofCoreEvents &amp;amp; events()</p>
-<p>&amp;lt;!--
-<em>syntax: events()</em>
-<em>name: events</em>
-<em>returns: ofCoreEvents &amp;amp;</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 0.9.0</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###void finishRender()</p>
-<p>&amp;lt;!--
-<em>syntax: finishRender()</em>
-<em>name: finishRender</em>
-<em>returns: void</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 0.10.0</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###string getClipboardString()</p>
-<p>&amp;lt;!--
-<em>syntax: getClipboardString()</em>
-<em>name: getClipboardString</em>
-<em>returns: string</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 0.9.0</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###GLXContext getGLXContext()</p>
-<p>&amp;lt;!--
-<em>syntax: getGLXContext()</em>
-<em>name: getGLXContext</em>
-<em>returns: GLXContext</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 0.9.0</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###int getHeight()</p>
-<p>&amp;lt;!--
-<em>syntax: getHeight()</em>
-<em>name: getHeight</em>
-<em>returns: int</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 007</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###ofOrientation getOrientation()</p>
-<p>&amp;lt;!--
-<em>syntax: getOrientation()</em>
-<em>name: getOrientation</em>
-<em>returns: ofOrientation</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 007</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###glm::vec2 getScreenSize()</p>
-<p>&amp;lt;!--
-<em>syntax: getScreenSize()</em>
-<em>name: getScreenSize</em>
-<em>returns: glm::vec2</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 006</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###int getWidth()</p>
-<p>&amp;lt;!--
-<em>syntax: getWidth()</em>
-<em>name: getWidth</em>
-<em>returns: int</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 007</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###void * getWindowContext()</p>
-<p>&amp;lt;!--
-<em>syntax: getWindowContext()</em>
-<em>name: getWindowContext</em>
-<em>returns: void *</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 0.9.0</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###ofWindowMode getWindowMode()</p>
-<p>&amp;lt;!--
-<em>syntax: getWindowMode()</em>
-<em>name: getWindowMode</em>
-<em>returns: ofWindowMode</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 006</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###glm::vec2 getWindowPosition()</p>
-<p>&amp;lt;!--
-<em>syntax: getWindowPosition()</em>
-<em>name: getWindowPosition</em>
-<em>returns: glm::vec2</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 006</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###bool getWindowShouldClose()</p>
-<p>&amp;lt;!--
-<em>syntax: getWindowShouldClose()</em>
-<em>name: getWindowShouldClose</em>
-<em>returns: bool</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 0.9.0</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###glm::vec2 getWindowSize()</p>
-<p>&amp;lt;!--
-<em>syntax: getWindowSize()</em>
-<em>name: getWindowSize</em>
-<em>returns: glm::vec2</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 006</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###Display * getX11Display()</p>
-<p>&amp;lt;!--
-<em>syntax: getX11Display()</em>
-<em>name: getX11Display</em>
-<em>returns: Display *</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 0.9.0</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###Window getX11Window()</p>
-<p>&amp;lt;!--
-<em>syntax: getX11Window()</em>
-<em>name: getX11Window</em>
-<em>returns: Window</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 0.9.0</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###void hideCursor()</p>
-<p>&amp;lt;!--
-<em>syntax: hideCursor()</em>
-<em>name: hideCursor</em>
-<em>returns: void</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 006</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###void makeCurrent()</p>
-<p>&amp;lt;!--
-<em>syntax: makeCurrent()</em>
-<em>name: makeCurrent</em>
-<em>returns: void</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 0.9.0</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<h3>ofAppBaseWindow()</h3>
-<p>&amp;lt;!--
-<em>syntax: ofAppBaseWindow()</em>
-<em>name: ofAppBaseWindow</em>
-_returns: _
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 006</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: False</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###shared_ptr&amp;lt; ofBaseRenderer &amp;gt; &amp;amp; renderer()</p>
-<p>&amp;lt;!--
-<em>syntax: renderer()</em>
-<em>name: renderer</em>
-<em>returns: shared_ptr&amp;lt; ofBaseRenderer &amp;gt; &amp;amp;</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 0.9.0</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###void setClipboardString(&amp;amp;text)</p>
-<p>&amp;lt;!--
-<em>syntax: setClipboardString(&amp;amp;text)</em>
-<em>name: setClipboardString</em>
-<em>returns: void</em>
-_returns_description: _
-<em>parameters: const string &amp;amp;text</em>
-<em>access: public</em>
-<em>version_started: 0.9.0</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###void setFullscreen(fullscreen)</p>
-<p>&amp;lt;!--
-<em>syntax: setFullscreen(fullscreen)</em>
-<em>name: setFullscreen</em>
-<em>returns: void</em>
-_returns_description: _
-<em>parameters: bool fullscreen</em>
-<em>access: public</em>
-<em>version_started: 006</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###void setOrientation(orientation)</p>
-<p>&amp;lt;!--
-<em>syntax: setOrientation(orientation)</em>
-<em>name: setOrientation</em>
-<em>returns: void</em>
-_returns_description: _
-<em>parameters: ofOrientation orientation</em>
-<em>access: public</em>
-<em>version_started: 007</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###void setVerticalSync(enabled)</p>
-<p>&amp;lt;!--
-<em>syntax: setVerticalSync(enabled)</em>
-<em>name: setVerticalSync</em>
-<em>returns: void</em>
-_returns_description: _
-<em>parameters: bool enabled</em>
-<em>access: public</em>
-<em>version_started: 0073</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###void setWindowPosition(x, y)</p>
-<p>&amp;lt;!--
-<em>syntax: setWindowPosition(x, y)</em>
-<em>name: setWindowPosition</em>
-<em>returns: void</em>
-_returns_description: _
-<em>parameters: int x, int y</em>
-<em>access: public</em>
-<em>version_started: 006</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###void setWindowShape(w, h)</p>
-<p>&amp;lt;!--
-<em>syntax: setWindowShape(w, h)</em>
-<em>name: setWindowShape</em>
-<em>returns: void</em>
-_returns_description: _
-<em>parameters: int w, int h</em>
-<em>access: public</em>
-<em>version_started: 006</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###void setWindowShouldClose()</p>
-<p>&amp;lt;!--
-<em>syntax: setWindowShouldClose()</em>
-<em>name: setWindowShouldClose</em>
-<em>returns: void</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 0.9.0</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###void setWindowTitle(title)</p>
-<p>&amp;lt;!--
-<em>syntax: setWindowTitle(title)</em>
-<em>name: setWindowTitle</em>
-<em>returns: void</em>
-_returns_description: _
-<em>parameters: string title</em>
-<em>access: public</em>
-<em>version_started: 006</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###void setup(&amp;amp;settings)</p>
-<p>&amp;lt;!--
-<em>syntax: setup(&amp;amp;settings)</em>
-<em>name: setup</em>
-<em>returns: void</em>
-_returns_description: _
-<em>parameters: const ofWindowSettings &amp;amp;settings</em>
-<em>access: public</em>
-<em>version_started: 0.9.0</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###void showCursor()</p>
-<p>&amp;lt;!--
-<em>syntax: showCursor()</em>
-<em>name: showCursor</em>
-<em>returns: void</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 006</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###void startRender()</p>
-<p>&amp;lt;!--
-<em>syntax: startRender()</em>
-<em>name: startRender</em>
-<em>returns: void</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 0.10.0</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###void swapBuffers()</p>
-<p>&amp;lt;!--
-<em>syntax: swapBuffers()</em>
-<em>name: swapBuffers</em>
-<em>returns: void</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 0.10.0</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###void toggleFullscreen()</p>
-<p>&amp;lt;!--
-<em>syntax: toggleFullscreen()</em>
-<em>name: toggleFullscreen</em>
-<em>returns: void</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 006</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>###void update()</p>
-<p>&amp;lt;!--
-<em>syntax: update()</em>
-<em>name: update</em>
-<em>returns: void</em>
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 0.9.0</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: True</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<h3>~ofAppBaseWindow()</h3>
-<p>&amp;lt;!--
-<em>syntax: ~ofAppBaseWindow()</em>
-<em>name: ~ofAppBaseWindow</em>
-_returns: _
-_returns_description: _
-_parameters: _
-<em>access: public</em>
-<em>version_started: 006</em>
-_version_deprecated: _
-_summary: _
-<em>constant: False</em>
-<em>static: False</em>
-<em>visible: False</em>
-<em>advanced: False</em>
---&amp;gt;</p>
-<p>_inlined_description: _</p>
-<p>_description: _</p>
-<p>&amp;lt;!-----------------------------------------------------------------------------&amp;gt;</p>
-<p>##Variables</p>
-"><div id="side-menu" class="markdown"><!----><div id="methods-list"><h4>Methods</h4><div class="anchor"><code><a href="#close">close</a></code></div><div class="anchor"><code><a href="#disableSetupScreen">disableSetupScreen</a></code></div><div class="anchor"><code><a href="#doesHWOrientation">doesHWOrientation</a></code></div><div class="anchor"><code><a href="#draw">draw</a></code></div><div class="anchor"><code><a href="#enableSetupScreen">enableSetupScreen</a></code></div><div class="anchor"><code><a href="#events">events</a></code></div><div class="anchor"><code><a href="#finishRender">finishRender</a></code></div><div class="anchor"><code><a href="#getClipboardString">getClipboardString</a></code></div><div class="anchor"><code><a href="#getGLXContext">getGLXContext</a></code></div><div class="anchor"><code><a href="#getHeight">getHeight</a></code></div><div class="anchor"><code><a href="#getOrientation">getOrientation</a></code></div><div class="anchor"><code><a href="#getScreenSize">getScreenSize</a></code></div><div class="anchor"><code><a href="#getWidth">getWidth</a></code></div><div class="anchor"><code><a href="#getWindowContext">getWindowContext</a></code></div><div class="anchor"><code><a href="#getWindowMode">getWindowMode</a></code></div><div class="anchor"><code><a href="#getWindowPosition">getWindowPosition</a></code></div><div class="anchor"><code><a href="#getWindowShouldClose">getWindowShouldClose</a></code></div><div class="anchor"><code><a href="#getWindowSize">getWindowSize</a></code></div><div class="anchor"><code><a href="#getX11Display">getX11Display</a></code></div><div class="anchor"><code><a href="#getX11Window">getX11Window</a></code></div><div class="anchor"><code><a href="#hideCursor">hideCursor</a></code></div><div class="anchor"><code><a href="#makeCurrent">makeCurrent</a></code></div><div class="anchor"><code><a href="#ofAppBaseWindow">ofAppBaseWindow</a></code></div><div class="anchor"><code><a href="#setClipboardString">setClipboardString</a></code></div><div class="anchor"><code><a href="#setFullscreen">setFullscreen</a></code></div><div class="anchor"><code><a href="#setOrientation">setOrientation</a></code></div><div class="anchor"><code><a href="#setVerticalSync">setVerticalSync</a></code></div><div class="anchor"><code><a href="#setWindowPosition">setWindowPosition</a></code></div><div class="anchor"><code><a href="#setWindowShape">setWindowShape</a></code></div><div class="anchor"><code><a href="#setWindowShouldClose">setWindowShouldClose</a></code></div><div class="anchor"><code><a href="#setWindowTitle">setWindowTitle</a></code></div><div class="anchor"><code><a href="#setup">setup</a></code></div><div class="anchor"><code><a href="#showCursor">showCursor</a></code></div><div class="anchor"><code><a href="#startRender">startRender</a></code></div><div class="anchor"><code><a href="#swapBuffers">swapBuffers</a></code></div><div class="anchor"><code><a href="#toggleFullscreen">toggleFullscreen</a></code></div><div class="anchor"><code><a href="#update">update</a></code></div><div class="anchor"><code><a href="#~ofAppBaseWindow">~ofAppBaseWindow</a></code></div></div><div id="see-also" filename="ofAppBaseWindow.markdown" absolute="/Users/gilbertsinnott/Code/openFrameworks/ofSite/documentation/application/ofAppBaseWindow.markdown" route="/documentation/application/ofAppBaseWindow.markdown" dir="../ofSite/documentation/application" ext="markdown" type="page" parent="1897" breadcrumbs="1897,1718" siblings="" translations="[object Object]" class="see-also"><h4>See also</h4><div class="also"><a href="/openframeworks/app/ofAppBaseWindow_h"><span class="origin">openframeworks</span><span class="name">ofAppBaseWindow.h</span></a></div></div></div><div id="offset-page"><div id="doc-header" class="inner"><div id="doctitles"><h1 class="page-title mb1 questrial"><span class="f7">ofAppBaseWindow</span><span class="langs f5"></span></h1><!----></div><div id="actions"><button class="button">Edit</button><!----></div></div><div id="doc-body" class="markdown"><!----><div class="inner"><div class="renderer"><div id="description"><div class="full-description"><div class="html"><p>Base class for all windowing classes. In OF we're extending this to create a different version of the default window in oF, like the ofAppEGLWindow or the ofAppGLFWWindow instances. For those interested in the under-the-hood details, you can always get a reference to the base graphics context from the ofAppBaseWindow, like getEGLContext() for those on Linux or getGLXContext() for those using GLFW. This is where your methods like setFullscreen() are implemented but other than that you're probably not going to be deeply interested in the ofAppBaseWindow since it's extended by every window system that you actually use (i.e. getX11Display() and getWin32Window()).</p>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app" class="unknown"><div id="menu"><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><div class="txt"><span class="docs f7 questrial">ofDocs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" x="0px" y="0px" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343						c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88						c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593						c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789						C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><div id="results" class="mt1"></div></div><div id="lists" class="menu-inner mt1"><div class="inner"><div class="item documentation"><a href="/documentation/" title="/documentation/" class="nuxt-link-active"><i class="ico" style="display:none"></i><span>documentation</span><span style="display:none">documentation</span></a><div class="list"><div class="item 3d"><a href="/documentation/3d/" title="/documentation/3d/"><i class="ico" style="display:none"></i><span style="display:none"></span><span>3d</span></a><!----></div><div class="item addons"><a href="/documentation/addons/" title="/documentation/addons/"><i class="ico" style="display:none">extension</i><span style="display:none"></span><span>addons</span></a><!----></div><div class="item application"><a href="/documentation/application/" title="/documentation/application/" class="nuxt-link-active"><i class="ico" style="display:none">web</i><span style="display:none"></span><span>application</span></a><div class="list"><div class="item ofAppBaseGLESWindow"><a href="/documentation/application/ofAppBaseGLESWindow" title="/documentation/application/ofAppBaseGLESWindow.markdown"><i class="ico" style="display:none"></i><span style="display:none"></span><span>ofAppBaseGLESWindow</span></a><!----></div><div class="item ofAppBaseGLWindow"><a href="/documentation/application/ofAppBaseGLWindow" title="/documentation/application/ofAppBaseGLWindow.markdown"><i class="ico" style="display:none"></i><span style="display:none"></span><span>ofAppBaseGLWindow</span></a><!----></div><div class="item ofAppBaseWindow"><a href="/documentation/application/ofAppBaseWindow" title="/documentation/application/ofAppBaseWindow.markdown" class="nuxt-link-exact-active nuxt-link-active"><i class="ico" style="display:none"></i><span style="display:none"></span><span>ofAppBaseWindow</span></a><div class="list"></div></div><div class="item ofAppEGLWindow::Settings"><a href="/documentation/application/ofAppEGLWindow::Settings" title="/documentation/application/ofAppEGLWindow::Settings.markdown"><i class="ico" style="display:none"></i><span style="display:none"></span><span>ofAppEGLWindow::Settings</span></a><!----></div><div class="item ofAppEGLWindow"><a href="/documentation/application/ofAppEGLWindow" title="/documentation/application/ofAppEGLWindow.markdown"><i class="ico" style="display:none"></i><span style="display:none"></span><span>ofAppEGLWindow</span></a><!----></div><div class="item ofAppEGLWindowSettings"><a href="/documentation/application/ofAppEGLWindowSettings" title="/documentation/application/ofAppEGLWindowSettings.markdown"><i class="ico" style="display:none"></i><span style="display:none"></span><span>ofAppEGLWindowSettings</span></a><!----></div><div class="item ofAppGLFWWindow"><a href="/documentation/application/ofAppGLFWWindow" title="/documentation/application/ofAppGLFWWindow.markdown"><i class="ico" style="display:none"></i><span style="display:none"></span><span>ofAppGLFWWindow</span></a><!----></div><div class="item ofAppGlutWindow"><a href="/documentation/application/ofAppGlutWindow" title="/documentation/application/ofAppGlutWindow.markdown"><i class="ico" style="display:none"></i><span style="display:none"></span><span>ofAppGlutWindow</span></a><!----></div><div class="item ofAppNoWindow"><a href="/documentation/application/ofAppNoWindow" title="/documentation/application/ofAppNoWindow.markdown"><i class="ico" style="display:none"></i><span style="display:none"></span><span>ofAppNoWindow</span></a><!----></div><div class="item ofAppRunner_functions"><a href="/documentation/application/ofAppRunner_functions" title="/documentation/application/ofAppRunner_functions.markdown"><i class="ico" style="display:none"></i><span style="display:none"></span><span>ofAppRunner_functions</span></a><!----></div><div class="item ofBaseApp"><a href="/documentation/application/ofBaseApp" title="/documentation/application/ofBaseApp.markdown"><i class="ico" style="display:none"></i><span style="display:none"></span><span>ofBaseApp</span></a><!----></div><div class="item ofGLESWindowSettings"><a href="/documentation/application/ofGLESWindowSettings" title="/documentation/application/ofGLESWindowSettings.markdown"><i class="ico" style="display:none"></i><span style="display:none"></span><span>ofGLESWindowSettings</span></a><!----></div><div class="item ofGLFWWindowSettings"><a href="/documentation/application/ofGLFWWindowSettings" title="/documentation/application/ofGLFWWindowSettings.markdown"><i class="ico" style="display:none"></i><span style="display:none"></span><span>ofGLFWWindowSettings</span></a><!----></div><div class="item ofGLWindowSettings"><a href="/documentation/application/ofGLWindowSettings" title="/documentation/application/ofGLWindowSettings.markdown"><i class="ico" style="display:none"></i><span style="display:none"></span><span>ofGLWindowSettings</span></a><!----></div><div class="item ofMainLoop"><a href="/documentation/application/ofMainLoop" title="/documentation/application/ofMainLoop.markdown"><i class="ico" style="display:none"></i><span style="display:none"></span><span>ofMainLoop</span></a><!----></div><div class="item ofNoopRenderer"><a href="/documentation/application/ofNoopRenderer" title="/documentation/application/ofNoopRenderer.markdown"><i class="ico" style="display:none"></i><span style="display:none"></span><span>ofNoopRenderer</span></a><!----></div><div class="item ofWindowSettings"><a href="/documentation/application/ofWindowSettings" title="/documentation/application/ofWindowSettings.markdown"><i class="ico" style="display:none"></i><span style="display:none"></span><span>ofWindowSettings</span></a><!----></div></div></div><div class="item communication"><a href="/documentation/communication/" title="/documentation/communication/"><i class="ico" style="display:none">language</i><span style="display:none"></span><span>communication</span></a><!----></div><div class="item events"><a href="/documentation/events/" title="/documentation/events/"><i class="ico" style="display:none">question_answer</i><span style="display:none"></span><span>events</span></a><!----></div><div class="item gl"><a href="/documentation/gl/" title="/documentation/gl/"><i class="ico" style="display:none"></i><span style="display:none"></span><span>gl</span></a><!----></div><div class="item glm"><a href="/documentation/glm/" title="/documentation/glm/"><i class="ico" style="display:none"></i><span style="display:none"></span><span>glm</span></a><!----></div><div class="item graphics"><a href="/documentation/graphics/" title="/documentation/graphics/"><i class="ico" style="display:none">category</i><span style="display:none"></span><span>graphics</span></a><!----></div><div class="item math"><a href="/documentation/math/" title="/documentation/math/"><i class="ico" style="display:none">border_clear</i><span style="display:none"></span><span>math</span></a><!----></div><div class="item sound"><a href="/documentation/sound/" title="/documentation/sound/"><i class="ico" style="display:none">volume_up</i><span style="display:none"></span><span>sound</span></a><!----></div><div class="item types"><a href="/documentation/types/" title="/documentation/types/"><i class="ico" style="display:none">ring_volume</i><span style="display:none"></span><span>types</span></a><!----></div><div class="item utils"><a href="/documentation/utils/" title="/documentation/utils/"><i class="ico" style="display:none">build</i><span style="display:none"></span><span>utils</span></a><!----></div><div class="item video"><a href="/documentation/video/" title="/documentation/video/"><i class="ico" style="display:none">videocam</i><span style="display:none"></span><span>video</span></a><!----></div></div></div><div class="item examples"><a href="/examples/" title="/examples/"><i class="ico" style="display:none"></i><span>examples</span><span style="display:none">examples</span></a><!----></div><div class="item openframeworks"><a href="/openframeworks/" title="/openframeworks/"><i class="ico" style="display:none"></i><span>openFrameworks</span><span style="display:none">openframeworks</span></a><!----></div><div class="item addons"><a href="/addons/" title="/addons/"><i class="ico" style="display:none">extension</i><span>addons</span><span style="display:none">addons</span></a><!----></div><div class="item guides"><a href="/guides/" title="/guides/"><i class="ico" style="display:none"></i><span>guides</span><span style="display:none">guides</span></a><!----></div></div></div></div><div id="document"><div id="renderer" class="main"><div absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/application/ofAppBaseWindow.markdown" route="/documentation/application/ofAppBaseWindow.markdown" dir="../ofSite/documentation/application" ext="markdown" type="page" id="1902" parent="1897" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><div class="mt2 mb2"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/" class="pink nuxt-link-active">documentation </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/application/" class="pink nuxt-link-active">application </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link selector"><span>ofAppBaseWindow </span><span class="chevron bottom"></span><select><option value="/documentation/application/ofAppBaseGLESWindow">ofAppBaseGLESWindow</option><option value="/documentation/application/ofAppBaseGLWindow">ofAppBaseGLWindow</option><option value="/documentation/application/ofAppBaseWindow">ofAppBaseWindow</option><option value="/documentation/application/ofAppEGLWindow::Settings">ofAppEGLWindow::Settings</option><option value="/documentation/application/ofAppEGLWindow">ofAppEGLWindow</option><option value="/documentation/application/ofAppEGLWindowSettings">ofAppEGLWindowSettings</option><option value="/documentation/application/ofAppGLFWWindow">ofAppGLFWWindow</option><option value="/documentation/application/ofAppGlutWindow">ofAppGlutWindow</option><option value="/documentation/application/ofAppNoWindow">ofAppNoWindow</option><option value="/documentation/application/ofAppRunner_functions">ofAppRunner_functions</option><option value="/documentation/application/ofBaseApp">ofBaseApp</option><option value="/documentation/application/ofGLESWindowSettings">ofGLESWindowSettings</option><option value="/documentation/application/ofGLFWWindowSettings">ofGLFWWindowSettings</option><option value="/documentation/application/ofGLWindowSettings">ofGLWindowSettings</option><option value="/documentation/application/ofMainLoop">ofMainLoop</option><option value="/documentation/application/ofNoopRenderer">ofNoopRenderer</option><option value="/documentation/application/ofWindowSettings">ofWindowSettings</option></select></span><!----></span></span></div></div></div></div><div class="editable-wrapper"><div class="header inner"><h1 class="page-title mb4 questrial"><span class="f7"><!----><span>ofAppBaseWindow </span></span><span class="f3"></span></h1><div class="actions"><a href="/about/contribute/" class="button"><i class="ico">edit</i><span>Edit</span></a></div></div><div class="rendered"><div id="documentation-page" static="true"><div id="offset-page"><div id="doc-body" class="markdown"><div class="inner"><div id="description"><div class="full-description"><div class="html"><p>Base class for all windowing classes. In OF we're extending this to create a different version of the default window in oF, like the ofAppEGLWindow or the ofAppGLFWWindow instances. For those interested in the under-the-hood details, you can always get a reference to the base graphics context from the ofAppBaseWindow, like getEGLContext() for those on Linux or getGLXContext() for those using GLFW. This is where your methods like setFullscreen() are implemented but other than that you're probably not going to be deeply interested in the ofAppBaseWindow since it's extended by every window system that you actually use (i.e. getX11Display() and getWin32Window()).</p>
 <h1></h1>
-</div></div></div><div id="methods"><hr><section name="close" id="close" class="mb2"><div class="method mb2"><h3 class="f3 title">close(<!---->)</h3><code><span class="token keyword">void  </span><span class="token function">close</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="disableSetupScreen" id="disableSetupScreen" class="mb2"><div class="method mb2"><h3 class="f3 title">disableSetupScreen(<!---->)</h3><code><span class="token keyword">void  </span><span class="token function">disableSetupScreen</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="doesHWOrientation" id="doesHWOrientation" class="mb2"><div class="method mb2"><h3 class="f3 title">doesHWOrientation(<!---->)</h3><code><span class="token keyword">bool  </span><span class="token function">doesHWOrientation</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="draw" id="draw" class="mb2"><div class="method mb2"><h3 class="f3 title">draw(<!---->)</h3><code><span class="token keyword">void  </span><span class="token function">draw</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="enableSetupScreen" id="enableSetupScreen" class="mb2"><div class="method mb2"><h3 class="f3 title">enableSetupScreen(<!---->)</h3><code><span class="token keyword">void  </span><span class="token function">enableSetupScreen</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="events" id="events" class="mb2"><div class="method mb2"><h3 class="f3 title">events(<!---->)</h3><code><span class="token keyword">ofCoreEvents &  </span><span class="token function">events</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="finishRender" id="finishRender" class="mb2"><div class="method mb2"><h3 class="f3 title">finishRender(<!---->)</h3><code><span class="token keyword">void  </span><span class="token function">finishRender</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getClipboardString" id="getClipboardString" class="mb2"><div class="method mb2"><h3 class="f3 title">getClipboardString(<!---->)</h3><code><span class="token keyword">string  </span><span class="token function">getClipboardString</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getGLXContext" id="getGLXContext" class="mb2"><div class="method mb2"><h3 class="f3 title">getGLXContext(<!---->)</h3><code><span class="token keyword">GLXContext  </span><span class="token function">getGLXContext</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getHeight" id="getHeight" class="mb2"><div class="method mb2"><h3 class="f3 title">getHeight(<!---->)</h3><code><span class="token keyword">int  </span><span class="token function">getHeight</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getOrientation" id="getOrientation" class="mb2"><div class="method mb2"><h3 class="f3 title">getOrientation(<!---->)</h3><code><span class="token keyword">ofOrientation  </span><span class="token function">getOrientation</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getScreenSize" id="getScreenSize" class="mb2"><div class="method mb2"><h3 class="f3 title">getScreenSize(<!---->)</h3><code><span class="token keyword">glm::vec2  </span><span class="token function">getScreenSize</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getWidth" id="getWidth" class="mb2"><div class="method mb2"><h3 class="f3 title">getWidth(<!---->)</h3><code><span class="token keyword">int  </span><span class="token function">getWidth</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getWindowContext" id="getWindowContext" class="mb2"><div class="method mb2"><h3 class="f3 title">getWindowContext(<!---->)</h3><code><span class="token keyword">void *  </span><span class="token function">getWindowContext</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getWindowMode" id="getWindowMode" class="mb2"><div class="method mb2"><h3 class="f3 title">getWindowMode(<!---->)</h3><code><span class="token keyword">ofWindowMode  </span><span class="token function">getWindowMode</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getWindowPosition" id="getWindowPosition" class="mb2"><div class="method mb2"><h3 class="f3 title">getWindowPosition(<!---->)</h3><code><span class="token keyword">glm::vec2  </span><span class="token function">getWindowPosition</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getWindowShouldClose" id="getWindowShouldClose" class="mb2"><div class="method mb2"><h3 class="f3 title">getWindowShouldClose(<!---->)</h3><code><span class="token keyword">bool  </span><span class="token function">getWindowShouldClose</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getWindowSize" id="getWindowSize" class="mb2"><div class="method mb2"><h3 class="f3 title">getWindowSize(<!---->)</h3><code><span class="token keyword">glm::vec2  </span><span class="token function">getWindowSize</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getX11Display" id="getX11Display" class="mb2"><div class="method mb2"><h3 class="f3 title">getX11Display(<!---->)</h3><code><span class="token keyword">Display *  </span><span class="token function">getX11Display</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getX11Window" id="getX11Window" class="mb2"><div class="method mb2"><h3 class="f3 title">getX11Window(<!---->)</h3><code><span class="token keyword">Window  </span><span class="token function">getX11Window</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="hideCursor" id="hideCursor" class="mb2"><div class="method mb2"><h3 class="f3 title">hideCursor(<!---->)</h3><code><span class="token keyword">void  </span><span class="token function">hideCursor</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="makeCurrent" id="makeCurrent" class="mb2"><div class="method mb2"><h3 class="f3 title">makeCurrent(<!---->)</h3><code><span class="token keyword">void  </span><span class="token function">makeCurrent</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofAppBaseWindow" id="ofAppBaseWindow" class="mb2"><div class="method mb2"><h3 class="f3 title">ofAppBaseWindow(<!---->)</h3><code><!----><span class="token function">ofAppBaseWindow</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setClipboardString" id="setClipboardString" class="mb2"><div class="method mb2"><h3 class="f3 title">setClipboardString(<code class="pink">…</code>)</h3><code><span class="token keyword">void  </span><span class="token function">setClipboardString</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>text</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setFullscreen" id="setFullscreen" class="mb2"><div class="method mb2"><h3 class="f3 title">setFullscreen(<code class="pink">…</code>)</h3><code><span class="token keyword">void  </span><span class="token function">setFullscreen</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">bool</span> fullscreen</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setOrientation" id="setOrientation" class="mb2"><div class="method mb2"><h3 class="f3 title">setOrientation(<code class="pink">…</code>)</h3><code><span class="token keyword">void  </span><span class="token function">setOrientation</span><span class="token punctuation">(</span><code class="token boolean">ofOrientation orientation</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setVerticalSync" id="setVerticalSync" class="mb2"><div class="method mb2"><h3 class="f3 title">setVerticalSync(<code class="pink">…</code>)</h3><code><span class="token keyword">void  </span><span class="token function">setVerticalSync</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">bool</span> enabled</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setWindowPosition" id="setWindowPosition" class="mb2"><div class="method mb2"><h3 class="f3 title">setWindowPosition(<code class="pink">…</code>)</h3><code><span class="token keyword">void  </span><span class="token function">setWindowPosition</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setWindowShape" id="setWindowShape" class="mb2"><div class="method mb2"><h3 class="f3 title">setWindowShape(<code class="pink">…</code>)</h3><code><span class="token keyword">void  </span><span class="token function">setWindowShape</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> w<span class="token punctuation">,</span> <span class="token keyword">int</span> h</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setWindowShouldClose" id="setWindowShouldClose" class="mb2"><div class="method mb2"><h3 class="f3 title">setWindowShouldClose(<!---->)</h3><code><span class="token keyword">void  </span><span class="token function">setWindowShouldClose</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setWindowTitle" id="setWindowTitle" class="mb2"><div class="method mb2"><h3 class="f3 title">setWindowTitle(<code class="pink">…</code>)</h3><code><span class="token keyword">void  </span><span class="token function">setWindowTitle</span><span class="token punctuation">(</span><code class="token boolean">string title</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setup" id="setup" class="mb2"><div class="method mb2"><h3 class="f3 title">setup(<code class="pink">…</code>)</h3><code><span class="token keyword">void  </span><span class="token function">setup</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofWindowSettings <span class="token operator">&</span>settings</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="showCursor" id="showCursor" class="mb2"><div class="method mb2"><h3 class="f3 title">showCursor(<!---->)</h3><code><span class="token keyword">void  </span><span class="token function">showCursor</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="startRender" id="startRender" class="mb2"><div class="method mb2"><h3 class="f3 title">startRender(<!---->)</h3><code><span class="token keyword">void  </span><span class="token function">startRender</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="swapBuffers" id="swapBuffers" class="mb2"><div class="method mb2"><h3 class="f3 title">swapBuffers(<!---->)</h3><code><span class="token keyword">void  </span><span class="token function">swapBuffers</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="toggleFullscreen" id="toggleFullscreen" class="mb2"><div class="method mb2"><h3 class="f3 title">toggleFullscreen(<!---->)</h3><code><span class="token keyword">void  </span><span class="token function">toggleFullscreen</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="update" id="update" class="mb2"><div class="method mb2"><h3 class="f3 title">update(<!---->)</h3><code><span class="token keyword">void  </span><span class="token function">update</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="~ofAppBaseWindow" id="~ofAppBaseWindow" class="mb2"><div class="method mb2"><h3 class="f3 title">~ofAppBaseWindow(<!---->)</h3><code><!----><span class="token function">~ofAppBaseWindow</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section></div></div></div></div></div></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1583566544124/documentation/application/ofAppBaseWindow/payload.js"></script><script src="/_nuxt/cede893bee7aedd34019.js" defer></script><script src="/_nuxt/3517dc6c150c1f5be417.js" defer></script><script src="/_nuxt/561e36663ec83bdcd2ac.js" defer></script><script src="/_nuxt/26c5a70906ce7aaac460.js" defer></script><script src="/_nuxt/2c5d9034468f7212e81b.js" defer></script>
+</div></div></div><div id="methods"><hr><section name="close" id="close" class="mb2"><div class="method mb2"><h3 class="f3 title">close(<!---->)</h3><code><span class="token keyword">void  </span><span class="token function">close</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="disableSetupScreen" id="disableSetupScreen" class="mb2"><div class="method mb2"><h3 class="f3 title">disableSetupScreen(<!---->)</h3><code><span class="token keyword">void  </span><span class="token function">disableSetupScreen</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="doesHWOrientation" id="doesHWOrientation" class="mb2"><div class="method mb2"><h3 class="f3 title">doesHWOrientation(<!---->)</h3><code><span class="token keyword">bool  </span><span class="token function">doesHWOrientation</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="draw" id="draw" class="mb2"><div class="method mb2"><h3 class="f3 title">draw(<!---->)</h3><code><span class="token keyword">void  </span><span class="token function">draw</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="enableSetupScreen" id="enableSetupScreen" class="mb2"><div class="method mb2"><h3 class="f3 title">enableSetupScreen(<!---->)</h3><code><span class="token keyword">void  </span><span class="token function">enableSetupScreen</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="events" id="events" class="mb2"><div class="method mb2"><h3 class="f3 title">events(<!---->)</h3><code><span class="token keyword">ofCoreEvents &  </span><span class="token function">events</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="finishRender" id="finishRender" class="mb2"><div class="method mb2"><h3 class="f3 title">finishRender(<!---->)</h3><code><span class="token keyword">void  </span><span class="token function">finishRender</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getClipboardString" id="getClipboardString" class="mb2"><div class="method mb2"><h3 class="f3 title">getClipboardString(<!---->)</h3><code><span class="token keyword">string  </span><span class="token function">getClipboardString</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getGLXContext" id="getGLXContext" class="mb2"><div class="method mb2"><h3 class="f3 title">getGLXContext(<!---->)</h3><code><span class="token keyword">GLXContext  </span><span class="token function">getGLXContext</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getHeight" id="getHeight" class="mb2"><div class="method mb2"><h3 class="f3 title">getHeight(<!---->)</h3><code><span class="token keyword">int  </span><span class="token function">getHeight</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getOrientation" id="getOrientation" class="mb2"><div class="method mb2"><h3 class="f3 title">getOrientation(<!---->)</h3><code><span class="token keyword">ofOrientation  </span><span class="token function">getOrientation</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getScreenSize" id="getScreenSize" class="mb2"><div class="method mb2"><h3 class="f3 title">getScreenSize(<!---->)</h3><code><span class="token keyword">glm::vec2  </span><span class="token function">getScreenSize</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getWidth" id="getWidth" class="mb2"><div class="method mb2"><h3 class="f3 title">getWidth(<!---->)</h3><code><span class="token keyword">int  </span><span class="token function">getWidth</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getWindowContext" id="getWindowContext" class="mb2"><div class="method mb2"><h3 class="f3 title">getWindowContext(<!---->)</h3><code><span class="token keyword">void *  </span><span class="token function">getWindowContext</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getWindowMode" id="getWindowMode" class="mb2"><div class="method mb2"><h3 class="f3 title">getWindowMode(<!---->)</h3><code><span class="token keyword">ofWindowMode  </span><span class="token function">getWindowMode</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getWindowPosition" id="getWindowPosition" class="mb2"><div class="method mb2"><h3 class="f3 title">getWindowPosition(<!---->)</h3><code><span class="token keyword">glm::vec2  </span><span class="token function">getWindowPosition</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getWindowShouldClose" id="getWindowShouldClose" class="mb2"><div class="method mb2"><h3 class="f3 title">getWindowShouldClose(<!---->)</h3><code><span class="token keyword">bool  </span><span class="token function">getWindowShouldClose</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getWindowSize" id="getWindowSize" class="mb2"><div class="method mb2"><h3 class="f3 title">getWindowSize(<!---->)</h3><code><span class="token keyword">glm::vec2  </span><span class="token function">getWindowSize</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getX11Display" id="getX11Display" class="mb2"><div class="method mb2"><h3 class="f3 title">getX11Display(<!---->)</h3><code><span class="token keyword">Display *  </span><span class="token function">getX11Display</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getX11Window" id="getX11Window" class="mb2"><div class="method mb2"><h3 class="f3 title">getX11Window(<!---->)</h3><code><span class="token keyword">Window  </span><span class="token function">getX11Window</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="hideCursor" id="hideCursor" class="mb2"><div class="method mb2"><h3 class="f3 title">hideCursor(<!---->)</h3><code><span class="token keyword">void  </span><span class="token function">hideCursor</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="makeCurrent" id="makeCurrent" class="mb2"><div class="method mb2"><h3 class="f3 title">makeCurrent(<!---->)</h3><code><span class="token keyword">void  </span><span class="token function">makeCurrent</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofAppBaseWindow" id="ofAppBaseWindow" class="mb2"><div class="method mb2"><h3 class="f3 title">ofAppBaseWindow(<!---->)</h3><code><!----><span class="token function">ofAppBaseWindow</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setClipboardString" id="setClipboardString" class="mb2"><div class="method mb2"><h3 class="f3 title">setClipboardString(<code class="pink">…</code>)</h3><code><span class="token keyword">void  </span><span class="token function">setClipboardString</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>text</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setFullscreen" id="setFullscreen" class="mb2"><div class="method mb2"><h3 class="f3 title">setFullscreen(<code class="pink">…</code>)</h3><code><span class="token keyword">void  </span><span class="token function">setFullscreen</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">bool</span> fullscreen</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setOrientation" id="setOrientation" class="mb2"><div class="method mb2"><h3 class="f3 title">setOrientation(<code class="pink">…</code>)</h3><code><span class="token keyword">void  </span><span class="token function">setOrientation</span><span class="token punctuation">(</span><code class="token boolean">ofOrientation orientation</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setVerticalSync" id="setVerticalSync" class="mb2"><div class="method mb2"><h3 class="f3 title">setVerticalSync(<code class="pink">…</code>)</h3><code><span class="token keyword">void  </span><span class="token function">setVerticalSync</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">bool</span> enabled</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setWindowPosition" id="setWindowPosition" class="mb2"><div class="method mb2"><h3 class="f3 title">setWindowPosition(<code class="pink">…</code>)</h3><code><span class="token keyword">void  </span><span class="token function">setWindowPosition</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setWindowShape" id="setWindowShape" class="mb2"><div class="method mb2"><h3 class="f3 title">setWindowShape(<code class="pink">…</code>)</h3><code><span class="token keyword">void  </span><span class="token function">setWindowShape</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> w<span class="token punctuation">,</span> <span class="token keyword">int</span> h</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setWindowShouldClose" id="setWindowShouldClose" class="mb2"><div class="method mb2"><h3 class="f3 title">setWindowShouldClose(<!---->)</h3><code><span class="token keyword">void  </span><span class="token function">setWindowShouldClose</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setWindowTitle" id="setWindowTitle" class="mb2"><div class="method mb2"><h3 class="f3 title">setWindowTitle(<code class="pink">…</code>)</h3><code><span class="token keyword">void  </span><span class="token function">setWindowTitle</span><span class="token punctuation">(</span><code class="token boolean">string title</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setup" id="setup" class="mb2"><div class="method mb2"><h3 class="f3 title">setup(<code class="pink">…</code>)</h3><code><span class="token keyword">void  </span><span class="token function">setup</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofWindowSettings <span class="token operator">&</span>settings</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="showCursor" id="showCursor" class="mb2"><div class="method mb2"><h3 class="f3 title">showCursor(<!---->)</h3><code><span class="token keyword">void  </span><span class="token function">showCursor</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="startRender" id="startRender" class="mb2"><div class="method mb2"><h3 class="f3 title">startRender(<!---->)</h3><code><span class="token keyword">void  </span><span class="token function">startRender</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="swapBuffers" id="swapBuffers" class="mb2"><div class="method mb2"><h3 class="f3 title">swapBuffers(<!---->)</h3><code><span class="token keyword">void  </span><span class="token function">swapBuffers</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="toggleFullscreen" id="toggleFullscreen" class="mb2"><div class="method mb2"><h3 class="f3 title">toggleFullscreen(<!---->)</h3><code><span class="token keyword">void  </span><span class="token function">toggleFullscreen</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="update" id="update" class="mb2"><div class="method mb2"><h3 class="f3 title">update(<!---->)</h3><code><span class="token keyword">void  </span><span class="token function">update</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="~ofAppBaseWindow" id="~ofAppBaseWindow" class="mb2"><div class="method mb2"><h3 class="f3 title">~ofAppBaseWindow(<!---->)</h3><code><!----><span class="token function">~ofAppBaseWindow</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section></div></div></div></div><div id="side-menu" class="markdown"><!----><div id="methods-list"><h4>Methods</h4><div class="anchor"><code><a href="#close">close</a></code></div><div class="anchor"><code><a href="#disableSetupScreen">disableSetupScreen</a></code></div><div class="anchor"><code><a href="#doesHWOrientation">doesHWOrientation</a></code></div><div class="anchor"><code><a href="#draw">draw</a></code></div><div class="anchor"><code><a href="#enableSetupScreen">enableSetupScreen</a></code></div><div class="anchor"><code><a href="#events">events</a></code></div><div class="anchor"><code><a href="#finishRender">finishRender</a></code></div><div class="anchor"><code><a href="#getClipboardString">getClipboardString</a></code></div><div class="anchor"><code><a href="#getGLXContext">getGLXContext</a></code></div><div class="anchor"><code><a href="#getHeight">getHeight</a></code></div><div class="anchor"><code><a href="#getOrientation">getOrientation</a></code></div><div class="anchor"><code><a href="#getScreenSize">getScreenSize</a></code></div><div class="anchor"><code><a href="#getWidth">getWidth</a></code></div><div class="anchor"><code><a href="#getWindowContext">getWindowContext</a></code></div><div class="anchor"><code><a href="#getWindowMode">getWindowMode</a></code></div><div class="anchor"><code><a href="#getWindowPosition">getWindowPosition</a></code></div><div class="anchor"><code><a href="#getWindowShouldClose">getWindowShouldClose</a></code></div><div class="anchor"><code><a href="#getWindowSize">getWindowSize</a></code></div><div class="anchor"><code><a href="#getX11Display">getX11Display</a></code></div><div class="anchor"><code><a href="#getX11Window">getX11Window</a></code></div><div class="anchor"><code><a href="#hideCursor">hideCursor</a></code></div><div class="anchor"><code><a href="#makeCurrent">makeCurrent</a></code></div><div class="anchor"><code><a href="#ofAppBaseWindow">ofAppBaseWindow</a></code></div><div class="anchor"><code><a href="#setClipboardString">setClipboardString</a></code></div><div class="anchor"><code><a href="#setFullscreen">setFullscreen</a></code></div><div class="anchor"><code><a href="#setOrientation">setOrientation</a></code></div><div class="anchor"><code><a href="#setVerticalSync">setVerticalSync</a></code></div><div class="anchor"><code><a href="#setWindowPosition">setWindowPosition</a></code></div><div class="anchor"><code><a href="#setWindowShape">setWindowShape</a></code></div><div class="anchor"><code><a href="#setWindowShouldClose">setWindowShouldClose</a></code></div><div class="anchor"><code><a href="#setWindowTitle">setWindowTitle</a></code></div><div class="anchor"><code><a href="#setup">setup</a></code></div><div class="anchor"><code><a href="#showCursor">showCursor</a></code></div><div class="anchor"><code><a href="#startRender">startRender</a></code></div><div class="anchor"><code><a href="#swapBuffers">swapBuffers</a></code></div><div class="anchor"><code><a href="#toggleFullscreen">toggleFullscreen</a></code></div><div class="anchor"><code><a href="#update">update</a></code></div><div class="anchor"><code><a href="#~ofAppBaseWindow">~ofAppBaseWindow</a></code></div></div><div id="see-also" filename="ofAppBaseWindow.markdown" absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/application/ofAppBaseWindow.markdown" route="/documentation/application/ofAppBaseWindow.markdown" dir="../ofSite/documentation/application" ext="markdown" type="page" parent="1897" breadcrumbs="1897,1718" siblings="" translations="[object Object]" class="see-also"><h4>See also</h4><div class="also"><a href="/openframeworks/app/ofAppBaseWindow_h"><span class="origin">openframeworks</span><span class="name">ofAppBaseWindow.h</span></a></div></div></div></div></div><textarea rows="0" class="markdown-editor" style="display:none">#class ofAppBaseWindow
+
+
+&lt;!--
+_visible: True_
+_advanced: False_
+_istemplated: False_
+_extends: _
+-->
+
+##InlineDescription
+
+
+
+
+
+
+##Description
+
+Base class for all windowing classes. In OF we're extending this to create a different version of the default window in oF, like the ofAppEGLWindow or the ofAppGLFWWindow instances. For those interested in the under-the-hood details, you can always get a reference to the base graphics context from the ofAppBaseWindow, like getEGLContext() for those on Linux or getGLXContext() for those using GLFW. This is where your methods like setFullscreen() are implemented but other than that you're probably not going to be deeply interested in the ofAppBaseWindow since it's extended by every window system that you actually use (i.e. getX11Display() and getWin32Window()).
+
+
+
+
+
+##Methods
+
+
+
+###void close()
+
+&lt;!--
+_syntax: close()_
+_name: close_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void disableSetupScreen()
+
+&lt;!--
+_syntax: disableSetupScreen()_
+_name: disableSetupScreen_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool doesHWOrientation()
+
+&lt;!--
+_syntax: doesHWOrientation()_
+_name: doesHWOrientation_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void draw()
+
+&lt;!--
+_syntax: draw()_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void enableSetupScreen()
+
+&lt;!--
+_syntax: enableSetupScreen()_
+_name: enableSetupScreen_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofCoreEvents & events()
+
+&lt;!--
+_syntax: events()_
+_name: events_
+_returns: ofCoreEvents &_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void finishRender()
+
+&lt;!--
+_syntax: finishRender()_
+_name: finishRender_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###string getClipboardString()
+
+&lt;!--
+_syntax: getClipboardString()_
+_name: getClipboardString_
+_returns: string_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###GLXContext getGLXContext()
+
+&lt;!--
+_syntax: getGLXContext()_
+_name: getGLXContext_
+_returns: GLXContext_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int getHeight()
+
+&lt;!--
+_syntax: getHeight()_
+_name: getHeight_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofOrientation getOrientation()
+
+&lt;!--
+_syntax: getOrientation()_
+_name: getOrientation_
+_returns: ofOrientation_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###glm::vec2 getScreenSize()
+
+&lt;!--
+_syntax: getScreenSize()_
+_name: getScreenSize_
+_returns: glm::vec2_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int getWidth()
+
+&lt;!--
+_syntax: getWidth()_
+_name: getWidth_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void * getWindowContext()
+
+&lt;!--
+_syntax: getWindowContext()_
+_name: getWindowContext_
+_returns: void *_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofWindowMode getWindowMode()
+
+&lt;!--
+_syntax: getWindowMode()_
+_name: getWindowMode_
+_returns: ofWindowMode_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###glm::vec2 getWindowPosition()
+
+&lt;!--
+_syntax: getWindowPosition()_
+_name: getWindowPosition_
+_returns: glm::vec2_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool getWindowShouldClose()
+
+&lt;!--
+_syntax: getWindowShouldClose()_
+_name: getWindowShouldClose_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###glm::vec2 getWindowSize()
+
+&lt;!--
+_syntax: getWindowSize()_
+_name: getWindowSize_
+_returns: glm::vec2_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###Display * getX11Display()
+
+&lt;!--
+_syntax: getX11Display()_
+_name: getX11Display_
+_returns: Display *_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###Window getX11Window()
+
+&lt;!--
+_syntax: getX11Window()_
+_name: getX11Window_
+_returns: Window_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void hideCursor()
+
+&lt;!--
+_syntax: hideCursor()_
+_name: hideCursor_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void makeCurrent()
+
+&lt;!--
+_syntax: makeCurrent()_
+_name: makeCurrent_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofAppBaseWindow()
+
+&lt;!--
+_syntax: ofAppBaseWindow()_
+_name: ofAppBaseWindow_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###shared_ptr&lt; ofBaseRenderer > & renderer()
+
+&lt;!--
+_syntax: renderer()_
+_name: renderer_
+_returns: shared_ptr&lt; ofBaseRenderer > &_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setClipboardString(&text)
+
+&lt;!--
+_syntax: setClipboardString(&text)_
+_name: setClipboardString_
+_returns: void_
+_returns_description: _
+_parameters: const string &text_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setFullscreen(fullscreen)
+
+&lt;!--
+_syntax: setFullscreen(fullscreen)_
+_name: setFullscreen_
+_returns: void_
+_returns_description: _
+_parameters: bool fullscreen_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setOrientation(orientation)
+
+&lt;!--
+_syntax: setOrientation(orientation)_
+_name: setOrientation_
+_returns: void_
+_returns_description: _
+_parameters: ofOrientation orientation_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setVerticalSync(enabled)
+
+&lt;!--
+_syntax: setVerticalSync(enabled)_
+_name: setVerticalSync_
+_returns: void_
+_returns_description: _
+_parameters: bool enabled_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setWindowPosition(x, y)
+
+&lt;!--
+_syntax: setWindowPosition(x, y)_
+_name: setWindowPosition_
+_returns: void_
+_returns_description: _
+_parameters: int x, int y_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setWindowShape(w, h)
+
+&lt;!--
+_syntax: setWindowShape(w, h)_
+_name: setWindowShape_
+_returns: void_
+_returns_description: _
+_parameters: int w, int h_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setWindowShouldClose()
+
+&lt;!--
+_syntax: setWindowShouldClose()_
+_name: setWindowShouldClose_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setWindowTitle(title)
+
+&lt;!--
+_syntax: setWindowTitle(title)_
+_name: setWindowTitle_
+_returns: void_
+_returns_description: _
+_parameters: string title_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setup(&settings)
+
+&lt;!--
+_syntax: setup(&settings)_
+_name: setup_
+_returns: void_
+_returns_description: _
+_parameters: const ofWindowSettings &settings_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void showCursor()
+
+&lt;!--
+_syntax: showCursor()_
+_name: showCursor_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void startRender()
+
+&lt;!--
+_syntax: startRender()_
+_name: startRender_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void swapBuffers()
+
+&lt;!--
+_syntax: swapBuffers()_
+_name: swapBuffers_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void toggleFullscreen()
+
+&lt;!--
+_syntax: toggleFullscreen()_
+_name: toggleFullscreen_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void update()
+
+&lt;!--
+_syntax: update()_
+_name: update_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ~ofAppBaseWindow()
+
+&lt;!--
+_syntax: ~ofAppBaseWindow()_
+_name: ~ofAppBaseWindow_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+##Variables
+
+
+
+</textarea></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1583940179515/documentation/application/ofAppBaseWindow/payload.js"></script><script src="/_nuxt/1222c887b819d0202cfa.js" defer></script><script src="/_nuxt/adc32956be059d7527f6.js" defer></script><script src="/_nuxt/e2974c46edd15e353a99.js" defer></script><script src="/_nuxt/f8d94d1c92ade1d8a6da.js" defer></script><script src="/_nuxt/c01572c3f985d7f6c287.js" defer></script>
   </body>
 </html>

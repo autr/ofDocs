@@ -1,8 +1,10 @@
 # ofDocs
 
-ofDocs is a dynamic documentation and examples browser for [openFrameworks](https://openframeworks.cc/), which mirrors a list of files and folders into a website using Nuxt and Vue. Currently it is set up to serve documentation from ofSite, READMEs and code from the [openFrameworks repository](https://github.com/openframeworks/openFrameworks), and optionally [user-installed addons](https://ofxaddons.com). 
+ofDocs is a dynamic documentation, examples and code browser for [openFrameworks](https://openframeworks.cc/), which mirrors a list of files and folders into a website using Nuxt and Vue. Currently it is set up to serve documentation from ofSite, READMEs and code from the [openFrameworks repository](https://github.com/openframeworks/openFrameworks), and optionally [user-installed addons](https://ofxaddons.com). 
 
-When running locally, an API middleware reads files and folders into structured JSON, which are server-side rendered by Nuxt. Changes to the documentation or code-base can be viewed in real-time. 
+When running locally, an API middleware reads files and folders into structured JSON, which are server-side rendered by Nuxt. Changes to the documentation or code-base can be viewed in instantly. It is also possible to edit markdown files from within the app, after which the edited version is written to file and re-rendered.
+
+After running ofDocs locally, a static version can be generated using Nuxt. The structure of files and folders will be are parsed into recursive HTML that can be hosted on a standard LAMP server, or on Github Pages:
 
 ## [View ofDocs](https://ofdocs.autr.tv)
 
@@ -12,7 +14,7 @@ When running locally, an API middleware reads files and folders into structured 
 
 ```
 cd openFrameworks
-git clone https://github.com/openframeworks/ofSite
+git clone https://github.com/openframeworks/ofSite # documentation
 git clone https://github.com/autr/ofDocs
 ```
 

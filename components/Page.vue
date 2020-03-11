@@ -1,18 +1,23 @@
 <template lang="pug">
 #renderer(v-if="page")
   page-header( v-bind="page.entry" )
-  doc-page(  v-if="page.type === 'page' && page.methods" v-bind="page" )
-  list-page( v-else-if="page.type === 'page' && !page.methods" v-bind="page" )
-  list-page( v-else-if="page.type === 'folder'" v-bind="page" )
-  code-page( v-else-if="page.type === 'source'" v-bind="page" )
+  edit-wrapper( 
+    v-if="page.type !== 'source'" 
+    :page="page"
+    @updatePage="onUpdatePage"
+  )
+  //- doc-page(  v-if="page.type === 'page' && page.methods" v-bind="page" )
+  //- list-page( v-else-if="page.type === 'folder'" v-bind="page" )
+  code-page( v-else v-bind="page" )
 </template>
 
 <script>
 import Vue from 'vue';
 import Base from '~/components/Base.vue'
+import EditWrapper from '~/components/_EditWrapper.vue'
 import DocPage from '~/components/_DocPage.vue'
-import CodePage from '~/components/_CodePage.vue'
 import ListPage from '~/components/_ListPage.vue'
+import CodePage from '~/components/_CodePage.vue'
 import PageHeader from '~/components/_PageHeader.vue'
 export default {
   extends: Base,
@@ -20,7 +25,8 @@ export default {
     DocPage,
     CodePage,
     ListPage,
-    PageHeader
+    PageHeader,
+    EditWrapper
   },
   computed: {
   },
@@ -56,8 +62,14 @@ export default {
       ]
     }
   },
+  data() {
+    return {
+    }
+  },
   methods: {
-
+    onUpdatePage(data) {
+      this.page = data;
+    },
     getMetaTitle() {
       let parent = this.data[this.page.entry.parent];
       let b = "";

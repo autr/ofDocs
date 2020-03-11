@@ -1,4 +1,4 @@
-module.exports = ( rawUrl ) => {
+module.exports = ( rawUrl, method ) => {
 
         const codeBreak = "<!----------------------------------------------------------------------------->";
 
@@ -263,6 +263,22 @@ module.exports = ( rawUrl ) => {
                 return ;
             }
 
+            if (method === 'POST' && entry.type === 'page') {
+                resolve( {
+                    status: 500,
+                    type: mime.lookup( "json.json" ),
+                    data: JSON.stringify({
+                        entry: entry,
+                        type: entry.type
+                    })
+                }); 
+                return;
+            }
+
+
+
+
+
             const isFolder =  entry.type === 'folder';
             const isAsset =  entry.type === 'asset';
             const isSource =  entry.type === 'source';
@@ -280,7 +296,6 @@ module.exports = ( rawUrl ) => {
                     data: JSON.stringify({
                         entry: entry,
                         intro: {},
-                        // items: mapChildren(entry),
                         type: entry.type
                     })
                 }); 
@@ -311,7 +326,7 @@ module.exports = ( rawUrl ) => {
                             entry: og,
                             intro: intro,
                             document: parseHtmlAndHighlight( raw.toString('utf8') ),
-                            // items: mapChildren(og),
+                            raw: raw.toString('utf8'),
                             type: og.type
                         };
                     } else if (isSource) {

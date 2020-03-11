@@ -6,8 +6,9 @@ module.exports = {
 		baseTitle: 'ofDocs',
 		baseDesc: 'openFrameworks documentation and examples browser'
 	},
+	root: 'about',
 	directories: {
-		pages: {
+		about: {
 			dir: './',
 			pattern: '*.md'
 		},

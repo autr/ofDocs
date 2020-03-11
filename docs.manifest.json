@@ -1,26 +1,26 @@
 {
     "structure": {
-        "pages": {
-            "name": "pages",
-            "path": "/pages/",
+        "about": {
+            "name": "about",
+            "path": "/about/",
             "id": 0,
-            "route": "/pages/",
+            "route": "/about/",
             "type": "folder",
             "filename": ".",
             "children": [
                 {
                     "name": "contribute",
-                    "path": "/pages/contribute",
+                    "path": "/about/contribute",
                     "id": 1,
-                    "route": "/pages/contribute.md",
+                    "route": "/about/contribute.md",
                     "type": "page",
                     "filename": "contribute.md"
                 },
                 {
                     "name": "README",
-                    "path": "/pages/README",
+                    "path": "/about/README",
                     "id": 2,
-                    "route": "/pages/README.md",
+                    "route": "/about/README.md",
                     "type": "page",
                     "filename": "README.md"
                 }
@@ -19154,12 +19154,12 @@
     },
     "data": [
         {
-            "name": "pages",
+            "name": "about",
             "filename": ".",
             "absolute": "/Users/Gilbert/Code/openFrameworks/ofDocs",
-            "path": "/pages/",
+            "path": "/about/",
             "dir": ".",
-            "route": "/pages/",
+            "route": "/about/",
             "ext": "",
             "type": "folder",
             "id": 0,
@@ -19173,8 +19173,8 @@
             "name": "contribute",
             "filename": "contribute.md",
             "absolute": "/Users/Gilbert/Code/openFrameworks/ofDocs/contribute.md",
-            "path": "/pages/contribute",
-            "route": "/pages/contribute.md",
+            "path": "/about/contribute",
+            "route": "/about/contribute.md",
             "dir": ".",
             "ext": "md",
             "type": "page",
@@ -19188,8 +19188,8 @@
             "name": "README",
             "filename": "README.md",
             "absolute": "/Users/Gilbert/Code/openFrameworks/ofDocs/README.md",
-            "path": "/pages/README",
-            "route": "/pages/README.md",
+            "path": "/about/README",
+            "route": "/about/README.md",
             "dir": ".",
             "ext": "md",
             "type": "page",
@@ -60510,6 +60510,56 @@
             "breadcrumbs": [
                 2237,
                 1718
+            ]
+        },
+        {
+            "name": "about",
+            "filename": ".",
+            "absolute": "/Users/Gilbert/Code/openFrameworks/ofDocs",
+            "path": "/",
+            "dir": ".",
+            "route": "/about/",
+            "ext": "",
+            "type": "folder",
+            "id": 2263,
+            "children": [
+                1,
+                2
+            ],
+            "breadcrumbs": [],
+            "parent": null
+        },
+        {
+            "name": "about",
+            "filename": "about",
+            "absolute": "/Users/Gilbert/Code/openFrameworks/ofSite/files/about",
+            "path": "/",
+            "dir": "../ofSite/files",
+            "route": "/files/about/",
+            "ext": "",
+            "type": "folder",
+            "id": 2264,
+            "children": [
+                384,
+                385,
+                386,
+                387,
+                388,
+                389,
+                390,
+                391,
+                392,
+                393,
+                394,
+                395,
+                396,
+                397,
+                398,
+                399
+            ],
+            "parent": null,
+            "breadcrumbs": [
+                383
             ]
         }
     ],

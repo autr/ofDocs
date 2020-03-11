@@ -95,7 +95,8 @@ module.exports = {
             promises.push( parser( r + '?as=json' ).then( d => {
 
               if (d.status === 500) {
-                const payload_ = JSON.parse( d.data );
+                let payload_ = JSON.parse( d.data );
+                payload_.static = true;
                 routes.push({
                   route: r,
                   payload: payload_

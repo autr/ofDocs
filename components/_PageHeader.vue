@@ -2,7 +2,7 @@
 
 .doc-header: .doc-header-inner: .inner
 	.mt2.mb2
-		breadcrumbs( :entry="$props" :last="true" :first="true" :links="true")
+		breadcrumbs( :entry="$props" :last="true" :first="true" :links="true" :selector="true")
 			nuxt-link.pink( to="/" ) ofDocs
 		
 </template>

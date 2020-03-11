@@ -2,6 +2,7 @@ const fs = require('fs'),
     path = require('path'),
     {exec} = require('child_process'),
     directories = require('../docs.config.js').directories,
+    root = require('../docs.config.js').root,
     meta = require('../docs.config.js').meta,
     exts = require('../docs.config.js').exts,
     icons = require('../docs.config.js').icons,
@@ -49,6 +50,7 @@ const createProtoEntry = ( _url, _strDirKey, _baseUrl ) => {
     const bare = absolute.replace( _baseUrl, '');
     let route_ = '/'+_strDirKey.toLowerCase() + bare;
     let path_ = route_;
+
 
     /*-- clean dots --*/
 
@@ -171,6 +173,7 @@ const parseDirectory = (strDirKey ) => {
         const pattern = directories[ strDirKey ].pattern;
 
 
+
         console.log(`🗂  [createManifest.js] "${dir}"`);
 
         let g = new Glob( dir + pattern , {
@@ -194,6 +197,10 @@ const parseDirectory = (strDirKey ) => {
 
                 const match = matches[i]
                 const current = createProtoEntry( match, strDirKey, baseUrl );
+
+
+
+
 
                 if (current) {
 
@@ -299,11 +306,24 @@ const getVersion = () => {
 
 
 Object.keys( directories ).forEach( strDirKey => {
+
+
     promises__.push( parseDirectory(strDirKey) );
 });
 
 
 Promise.all(promises__).then( (res) => {
+
+
+    data__.forEach( d => {
+        if (d.name === root) {
+            let r = JSON.parse(JSON.stringify(d));
+            r.path = "/";
+            r.parent = null;
+            r.id = data__.length;
+            data__.push(r);
+        }
+    });
 
     const output = {
         structure: tree__,

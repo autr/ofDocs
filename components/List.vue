@@ -4,12 +4,12 @@
 	:class="className"
 	)
 	nuxt-link( :to="entry.path" :title="entry.route" )
-		i.ico(v-if="entry.icon && useIcon") {{entry.icon}}
-		span(v-if="$slots.default"): slot
-		span(v-else) {{  entry.name  }}
+		i.ico(v-show="entry.icon && useIcon") {{entry.icon}}
+		span(v-show="$slots.default"): slot
+		span(v-show="!$slots.default") {{  entry.name  }}
 	.list( v-if="isLinked")
 		list( 
-			v-if="filtered"
+			v-show="filtered"
 			v-for=" child, i in filtered( entry.children, filters )"
 			:filters="filters"
 			:level="level + 1"

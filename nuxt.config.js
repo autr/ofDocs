@@ -13,11 +13,6 @@ export default {
   },
   router: {
     extendRoutes (routes, resolve) {
-      routes.push({
-        path: '/',
-        name: 'homepage',
-        component: resolve(__dirname, 'components/HomePage.vue')
-      });
       data.forEach( d => {
         let r = {
           path: d.path,

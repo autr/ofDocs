@@ -7,10 +7,10 @@ span.breadcrumbs
 		v-for="b, i in crumbs"
 		:key="i" )
 		nuxt-link.pink( v-if="(b.path !== entry.path) && links" :to="b.path" ) {{  b.name  }} 
-		span.link( v-if="(b.path === entry.path) || !links" :class="{selector: options}" ) 
+		span.link( v-if="(b.path === entry.path) || !links" :class="{selector: options && selector}" ) 
 			span {{  b.name  }} 
 			span.chevron.bottom
-			select( v-if="options" v-model="selector" @change="onSelectorChange" )
+			select( v-if="options && selector" v-model="selectorValue" @change="onSelectorChange" )
 				option( v-for="o, i in options" :value="o.path" ) {{o.name}}
 		span.chevron.right( v-if=" i < crumbs.length - 1")
 </template>
@@ -22,6 +22,10 @@ export default {
 	components: {
 	},
 	computed: {
+    langs() {
+      if (this.$props.entry.translations) return this.$props.entry.translations;
+      return false;
+    },
 		options() {
 			let arr = [];
 			const e = this.$props.entry;
@@ -39,12 +43,11 @@ export default {
 	},
 	data() {
 		return {
-			selector: this.$props.entry.path
+			selectorValue: ""
 		}
 	},
 	methods: {
 		onSelectorChange(e) {
-			console.log('WEEEEE', e.target.value);
 			this.$router.push( e.target.value );
 		}
 	},
@@ -52,8 +55,9 @@ export default {
 
 	},
 	mounted() {
+		this.selectorValue = this.$props.entry.path;
 	},
-	props: ['entry', 'last', 'first', 'links']
+	props: ['entry', 'last', 'first', 'links', 'selector']
 }
 </script>
 
