@@ -31,7 +31,7 @@
           i.ico save_alt
           span Save
         p.error {{errorMessage}}
-      .actions( v-else )
+      .actions( v-else-if="canEdit && page.static" )
         nuxt-link.button(to="/about/contribute/")
           i.ico edit
           span Edit

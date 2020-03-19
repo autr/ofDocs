@@ -6,7 +6,6 @@ module.exports = {
 		baseTitle: 'ofDocs',
 		baseDesc: 'openFrameworks documentation and examples browser'
 	},
-	root: 'about',
 	directories: {
 		about: {
 			dir: './',
@@ -36,7 +35,24 @@ module.exports = {
 			dir: '../ofSite/files/',
 			pattern: '*/*.{markdown,md,png,svg,jpg}'
 		}
+		// learning: {
+		// 	dir: '../ofSite/learning/',
+		// 	pattern: '**/*.{markdown,md,png,svg,jpg,gif}'
+		// },
+		// ofBook: {
+		// 	dir: '../ofBook/',
+		// 	pattern: '**/*.{markdown,md,png,svg,jpg,gif}'
+		// }
 	},
+	navigation: [ 
+		['documentation', 4], 
+		['examples', 3], 
+		['openFrameworks', 3], 
+		['addons', 3], 
+		['guides', 2]
+		// ['learning', 4], 
+		// ['ofBook', 4]
+	],
 	exts: {
 		page: ['md','markdown'],
 		source: ['cpp','h','mm'],

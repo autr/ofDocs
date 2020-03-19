@@ -34,7 +34,7 @@
 								breadcrumbs( :entry="s" :last="false" :first="false" :links="false")
 			#lists.menu-inner.mt1( v-if="searchResults.length === 0"): .inner
 				list( 
-					v-for="n, i in navigation"
+					v-for="n, i in $store.state.navigation"
 					:key="i"
 					v-if="structure[n[0]]"
 					:entry="structure[n[0]]"
@@ -67,13 +67,6 @@ export default {
 	},
 	data() {
 			return {
-				navigation: [ 
-					['documentation', 4], 
-					['examples', 3], 
-					['openFrameworks', 3], 
-					['addons', 3], 
-					['guides', 2]
-				],
 				selected: [],
 				search: {
 					value: "",

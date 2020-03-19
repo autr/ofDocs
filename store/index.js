@@ -6,6 +6,7 @@ export const state = () => ({
 	data: Manifest.data,
 	version: Manifest.version,
 	meta: Manifest.meta,
+	navigation: Manifest.navigation,
 	pages: {},
 	pageType: "unknown",
 	page: 'index'

@@ -1,12 +1,11 @@
 # ofDocs
 
-ofDocs is a dynamic documentation, examples and code browser for [openFrameworks](https://openframeworks.cc/), which mirrors a list of files and folders into a website using Nuxt and Vue. Currently it is set up to serve documentation from ofSite, READMEs and code from the [openFrameworks repository](https://github.com/openframeworks/openFrameworks), and optionally [user-installed addons](https://ofxaddons.com). 
+ofDocs is an alternative documentation, examples and code browser for [openFrameworks](https://openframeworks.cc/), which mirrors a list of files and folders into a website using Nuxt and Vue. Currently it is set up to serve documentation from ofSite, READMEs and code from the [openFrameworks repository](https://github.com/openframeworks/openFrameworks), and optionally [user-installed addons](https://ofxaddons.com). 
 
-When running locally, an API middleware reads files and folders into structured JSON, which are server-side rendered by Nuxt. Changes to the documentation or code-base can be viewed in instantly. It is also possible to edit markdown files from within the app, after which the edited version is written to file and re-rendered.
+When running ofDocs locally, changes to markdown files can be made from within the app and viewed instantly. A static version can be also generated using Nuxt. The structure of files and folders will are parsed into HTML and JSON that can be hosted on a standard LAMP server, or on Github Pages:
 
-After running ofDocs locally, a static version can be generated using Nuxt. The structure of files and folders will be are parsed into recursive HTML that can be hosted on a standard LAMP server, or on Github Pages:
-
-## [View ofDocs](https://ofdocs.autr.tv)
+### [View ofDocs (static)](https://ofdocs.autr.tv)
+### [View Github](https://github.com/autr/ofdocs)
 
 ---
 
@@ -24,13 +23,13 @@ Install [Node](https://nodejs.org/en/download/) and [yarn](https://classic.yarnp
 yarn install
 ```
 
-### Running locally
+### Running development server
 
 ```
 yarn run dev
 ```
 
-### Generating a static website
+### Generate static website
 
 ofDocs is currently dependent on a [future release of Nuxt](https://github.com/nuxt/nuxt.js/tree/feat/target-2), which is included at the `/nuxt.js` root. To install the dependencies:
 

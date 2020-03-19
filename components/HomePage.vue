@@ -1,9 +1,9 @@
 <template lang="pug">
 .list-page
   .inner
-    .markdown.mb4.pt2
+    .markdown.mb4.mt4.homepage-inner
       .html( v-if="page.document" v-html="page.document" )
-    section.mb2( v-if="k !== 'files'" v-for="i, k in structure" :key="k" ) 
+    section.mb2( v-if="k !== 'files'" v-for="i, k in navStructure" :key="k" ) 
       h3: nuxt-link.f5.questrial.black( :to="i.path" ) {{k}}
       directory( v-bind:items="i.children" :depth="1" margin="mb1" )
 
@@ -18,6 +18,13 @@ export default {
     Directory
   },
   computed: {
+    navStructure() {
+      let obj = {};
+      this.$store.state.navigation.forEach( n => {
+        obj[n[0]] = this.structure[n[0]];
+      });
+      return obj;
+    }
   },
   data() {
       return {
@@ -47,7 +54,7 @@ export default {
       console.log('🚜  [Homepage.vue] payload:', payload.entry.name );
       return {page: payload};
     } else {
-      const path = '/pages/readme?as=json';
+      const path = '/about/readme?as=json';
       console.log('🚜  [Homepage.vue] api:', path);
       try {
         return { page: await $axios.$get( path ) };

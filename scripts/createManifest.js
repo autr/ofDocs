@@ -6,6 +6,7 @@ const fs = require('fs'),
     meta = require('../docs.config.js').meta,
     exts = require('../docs.config.js').exts,
     icons = require('../docs.config.js').icons,
+    navigation = require('../docs.config.js').navigation,
     Glob = require("glob").Glob,
     mimeType = require("mime-types");
 
@@ -328,7 +329,8 @@ Promise.all(promises__).then( (res) => {
     const output = {
         structure: tree__,
         data: data__,
-        meta: meta
+        meta: meta,
+        navigation: navigation
     };
 
 

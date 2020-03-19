@@ -1,10 +1,23 @@
-When ran locally, it is possible to edit markdown files within ofDocs and save the changes directly to disk. To set up ofDocs locally follow instructions in the root [README](/). By default ofDocs renders markdown files named index, readme or introduction as the folder root, ie. _/documentation/communication_ renders _/documentation/communication/introduction.markdown_. The API can also only overwrite markdown files defined within docs.config.json. Once some edits have been made you can submit the changes using a pull request:
+ofDocs aims to make contributing to openFrameworks documentation easier by allowing direct editing of markdown files within the app. This will write changes to disk, so will only work when running ofDocs locally, after which changes can be submitted via Github.
+
+
+To set up ofDocs locally you can follow the instructions in the root [README](/), and clone [ofSite](https://github.com/openframeworks/ofSite). Be sure to also read the original [submission guidelines](https://openframeworks.cc/learning/08_other/contributing/) which contain instructions for structure and formatting.
+
+
+Changes can then be submitted via the [command line](https://github.com/jd/git-pull-request), via [Github](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) or with a [desktop client](https://desktop.github.com/). For example:
+
 
 ```
+
+# using a Python pull request helper
+
 pip3 install git-pull-request
-# install CLI pull request wizard
+
+# after editing a page within ofSite...
+
 cd openFrameworks/ofSite
 git branch my-new-edits
 git commit -a -m "updated description for ofArduino"
 git pull-request
+
 ```
