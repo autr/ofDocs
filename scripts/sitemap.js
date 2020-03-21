@@ -81,42 +81,43 @@ module.exports = {
         console.error('no root supplied');
         return;
       }
-        let promises = [];
-        let routes = [];
+    
+      let promises = [];
+      let routes = [];
 
 
-        module.exports.list().forEach( r => {
-            let w = "";
-            if (r.substring(r.length-1,r.length) === '/') {
-              w = r.substring(0,r.length-1) + '.json';
-            } else {
-              w =  r + '.json'
-            }
-            promises.push( parser( r + '?as=json' ).then( d => {
+      module.exports.list().forEach( r => {
+          let w = "";
+          if (r.substring(r.length-1,r.length) === '/') {
+            w = r.substring(0,r.length-1) + '.json';
+          } else {
+            w =  r + '.json'
+          }
+          promises.push( parser( r + '?as=json' ).then( d => {
 
-              if (d.status === 500) {
-                let payload_ = JSON.parse( d.data );
-                payload_.static = true;
-                routes.push({
-                  route: r,
-                  payload: payload_
-                });
-                try {
-                  console.log('🚤  [sitemap.js]', 'parsed:', payload_.entry.name );
-                } catch (e) {
-                  console.log('🚤  [sitemap.js]', 'error:', payload_.entry);
-                  // module.exports.writeFile( w  , JSON.stringify( JSON.parse(d.data) ), root );
-                }
+            if (d.status === 500) {
+              let payload_ = JSON.parse( d.data );
+              payload_.static = true;
+              routes.push({
+                route: r,
+                payload: payload_
+              });
+              try {
+                console.log('🚤  [sitemap.js]', 'parsed:', payload_.entry.name );
+              } catch (e) {
+                console.log('🚤  [sitemap.js]', 'error:', payload_.entry);
+                // module.exports.writeFile( w  , JSON.stringify( JSON.parse(d.data) ), root );
               }
-            }).catch( err => {
-              console.error( 'errrrr', r, err)
-            }));
-        });
+            }
+          }).catch( err => {
+            console.error( 'errrrr', r, err)
+          }));
+      });
 
-        return Promise.all( promises ).then( res => {
-          console.log('✅  [sitemap.js]', 'created:', routes.length, 'json payloads...');
-          return routes;
-        });
+      return Promise.all( promises ).then( res => {
+        console.log('✅  [sitemap.js]', 'created:', routes.length, 'json payloads...');
+        return routes;
+      });
 
   }
 }

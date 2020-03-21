@@ -2,13 +2,13 @@ module.exports = ( rawUrl, method ) => {
 
         const codeBreak = "<!----------------------------------------------------------------------------->";
 
-        const path = require('path'),
-            md = require('markdown-it')();
-
+        const path = require('path');
+        const md = require('markdown-it')();
         const queryString = require('query-string');
+        const mime = require('mime-types');
+
         const version = require('../docs.config.js').version;
 
-        const mime = require('mime-types');
 
         const dirs = require('./../docs.config.js').directories,
             data = require('../docs.manifest.json').data,

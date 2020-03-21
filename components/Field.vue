@@ -3,6 +3,18 @@
 ////// http://vee-validate.logaretm.com/rules.html /////
 ////////////////////////////////////////////////////////
 
+<!-- 
+
+		value: 0,
+		id: 'Hello',
+		autocomplete: true,
+		type: 'input',
+		disabled: false,
+		placeholder: 'Enter'
+		options: ['A'],
+		rows: 4 -->
+
+
 <template lang="pug">
 	.field(
 		:class="fieldClasses"

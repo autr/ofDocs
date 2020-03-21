@@ -1,8 +1,9 @@
+
+const fs = require('fs');
 const parser = require('./apiUtils.js');
 const sitemap = require('./sitemap.js');
-const fs = require('fs');
 
-export default function (req, res, next) {
+module.exports = (req, res, next) => {
     if (req.url === '/') {
         next();
         return;

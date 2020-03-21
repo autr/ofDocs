@@ -1,7 +1,6 @@
-const data = require('./docs.manifest.json').data;
-const sitemap = require('./scripts/sitemap');
-export default {
+module.exports = {
   debug: true,
+  dev: false,
   vue: {
     config: {
       productionTip: true,
@@ -18,7 +17,7 @@ export default {
         name: 'homepage',
         component: resolve(__dirname, 'components/HomePage.vue')
       } );
-      data.forEach( d => {
+      require('./docs.manifest.json').data.forEach( d => {
         let r = {
           path: d.path,
           name: d.path,
@@ -42,7 +41,8 @@ export default {
     concurrency: 50,
     interval: 1,
     routes() {
-      return sitemap.payloads( './static' ).then( (routes) => {
+
+      return require('./scripts/sitemap').payloads( './static' ).then( (routes) => {
         return routes;
       }).catch( err => {
         console.error(err);
@@ -50,7 +50,7 @@ export default {
     } 
   },
   serverMiddleware: [
-    '~/scripts/api.js' // file-server API
+     __dirname + '/scripts/api.js' // file-server API
   ],
   plugins: [
     {
