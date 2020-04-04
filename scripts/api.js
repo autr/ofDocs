@@ -1,14 +1,14 @@
-
+ 
 const fs = require('fs');
 const parser = require('./apiUtils.js');
 const sitemap = require('./sitemap.js');
-
+     
 module.exports = (req, res, next) => {
     if (req.url === '/') {
         next();
         return;
     }
-
+ 
 
     if (req.method === 'POST') {
 
@@ -28,7 +28,7 @@ module.exports = (req, res, next) => {
                     const j = JSON.parse( r.data.toString() );
 
                     fs.writeFile( j.entry.absolute, body, (err) => {
-                        if (err) {
+                        if (err) { 
 
                             console.log(`❌ [api.js] POST could not write: ${req.url}`, err);
                             res.writeHead(404, {'content-type': 'application/json'});
@@ -65,14 +65,14 @@ module.exports = (req, res, next) => {
                     res.writeHead(404, {'content-type': 'application/json'});
                     res.end();
                     return;
-                }
+                }      
 
             }).catch(err => {
 
                 console.log(`❌ [api.js] POST error: ${req.url}`, err);
                 res.writeHead(404, {'content-type': 'application/json'});
                 res.end();
-                return;
+                return; 
             });
         });
 
@@ -90,7 +90,7 @@ module.exports = (req, res, next) => {
 
                 console.log(`⚡️ [api.js] send: ${r.type} / ${req.url}`);
                 res.setHeader('Content-Type', r.type);
-                res.end( r.data )
+                res.end( r.data ) 
                 return;
             } else if (r.status === 600) {
                 console.log(`⚓️ [api.js] next: ${req.url}`);

@@ -1,21 +1,31 @@
 <template lang="pug">
-.list-page
-  .inner
-    .markdown.mb4.mt4.homepage-inner
-      .html( v-if="page.document" v-html="page.document" )
-    section.mb2( v-if="k !== 'files'" v-for="i, k in navStructure" :key="k" ) 
-      h3: nuxt-link.f5.questrial.black( :to="i.path" ) {{k}}
-      directory( v-bind:items="i.children" :depth="1" margin="mb1" )
+#homepage
+  .inner.markdown.mt4.mb4
+    p
+      span 
+        a(href="https://github.com/Autr/ofDocs") ofDocs 
+        span is an alternative documentation, examples and code browser for 
+      a( href="https://openframeworks.cc/") openFrameworks
+      span , which mirrors a list of files and folders into a website using Nuxt and Vue. Currently it is set up to serve documentation from 
+      a( href="https://github.com/openframeworks/ofSite") ofSite
+      span , READMEs and code from the 
+      a( href="https://github.com/openframeworks/openFrameworks") openFrameworks repository
+      span , and optionally 
+      a( href="https://ofxaddons.com" ) user-installed addons
+      span . 
+  list-page.homepage( v-bind="tweakedPage" :showDoc="false" )
 
 </template>
 
 <script>
 import Base from '~/components/Base.vue'
 import Directory from '~/components/_Directory.vue'
+import ListPage from '~/components/_ListPage.vue'
 export default {
   extends: Base,
   components: {
-    Directory
+    Directory,
+    ListPage
   },
   computed: {
     navStructure() {
@@ -24,6 +34,14 @@ export default {
         obj[n[0]] = this.structure[n[0]];
       });
       return obj;
+    },
+    tweakedPage() {
+      console.log( this.page.entry );
+      this.page.entry.children = [];
+      Object.keys( this.structure ).forEach( k => {
+        this.page.entry.children.push( this.structure[k].id );
+      });
+      return this.page;
     }
   },
   data() {
@@ -54,7 +72,7 @@ export default {
       console.log('🚜  [Homepage.vue] payload:', payload.entry.name );
       return {page: payload};
     } else {
-      const path = '/about/readme?as=json';
+      const path = '/ofDocs/readme?as=json';
       console.log('🚜  [Homepage.vue] api:', path);
       try {
         return { page: await $axios.$get( path ) };
@@ -72,8 +90,3 @@ export default {
   }
 }
 </script>
-
-<style lang="sass">
-
-
-</style>

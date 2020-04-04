@@ -1,5 +1,5 @@
 <template lang="pug">
-#renderer(v-if="page")
+#renderer(v-if="page" :class="{[page.type]: true}" )
   page-header( v-bind="page.entry" )
   edit-wrapper( 
     v-if="page.type !== 'source'" 
@@ -77,7 +77,9 @@ export default {
         b = parent.name + ' | ';
         parent = this.data[parent.parent];
       }
-      return `${this.page.entry.name} | ${b}${this.$store.state.meta.baseTitle}`;
+      let n = this.page.entry.name;
+      let r = this.$store.state.meta.baseTitle;
+      return `${n} | ${b}${r}`;
     },
     getMetaDesc() {
       return this.$store.state.meta.baseDesc;
@@ -102,7 +104,9 @@ export default {
       const path = p + '?as=json';
       console.log('🚜  [Page.vue] api:', path);
       try {
-        return { page: await $axios.$get( path ) };
+        const page = await $axios.$get( path );
+        store.state.id = page.entry.id;
+        return { page: page };
       } catch(err) {
         console.error('❌  [Page.vue] api:', err.response.statusText, path);
       }

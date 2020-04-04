@@ -1,15 +1,15 @@
 <template lang="pug">
-.directory( v-if="filtered( items, patterns ).length > 0" )
+.directory( v-if="filtered( items, filters ).length > 0" )
 	.markdown: hr
 	.columns
 		.column(
 			:class="[margin]"
-			v-for="p, i in filtered( items, patterns ) "
+			v-for="p, i in filtered( items, filters ) "
 			:key="i"
 			)
 			list.recursive-header( 
 				:entry="p" 
-				:filters="patterns"
+				:filters="filters"
 				:depth="depth",
 				:useIcon="false"
 			)
@@ -53,19 +53,13 @@ export default {
 			required: false,
 			default: 3
 		},
-		patterns: {
+		filters: {
 			type: Array,
 			required: false,
 			default() {
-				return ['jpg', 'png', 'gif', 'svg', 'search_results', 'introduction', 'readme', 'index', '.ja', '.ko', '.zh_cn', '-ja', '-ko', '-zh_cn']
+				return this.$store.state.filters
 			}
 		}
 	}
 }
 </script>
-
-<style lang="sass">
-
-
-
-</style>

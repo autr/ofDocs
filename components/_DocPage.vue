@@ -25,9 +25,9 @@
 						:key="i")
 						.method.mb2
 							h3.f3.title
-								| {{m.name}}(
-								code.pink(v-if="m.parameters") …
-								| )
+								| {{m.name}}( 
+								code.pink(v-if="m.parameters") ...
+								|  )
 							code
 								span.token.keyword(v-if="m.returns") {{m.returns}}  
 								span.token.function {{m.name}}
@@ -35,15 +35,15 @@
 								code.token.boolean(v-if="m.parameters" v-html="m.parameters")
 								span.token.punctuation )
 							.short(v-html="m.short")
-							.desc(v-html="m.desc")
+							.desc( v-html="m.desc")
 						hr 
 			.inner( v-else v-html="document" )
 
 
 
-	#side-menu.markdown
+	#side-menu
 		#params(v-if="paramsOnly.length > 0")
-			h4 Variables
+			h4.f3 Variables
 			code(
 				v-for=" vari, i in paramsOnly"
 				:key="i")
@@ -54,9 +54,8 @@
 						span {{stripWhitespace( vari.name )}}
 						span.token.comment(v-html=" stripHtml( vari.short ) ")
 					.desc(v-html="vari.desc")
-			hr
 		#methods-list(v-if="methodsMenu.length > 0")
-			h4 Methods
+			h4.f3 Methods
 			.anchor(
 				v-for=" m, i in methodsMenu"
 				v-if="m.name"
@@ -64,7 +63,9 @@
 				code
 					a( 
 					:href="'#'+m.name" 
-					:class="{pink: m.short || m.desc}" ) {{stripWhitespace(m.name)}}
+					:class="{pink: m.short || m.desc}" ) 
+						span {{stripWhitespace(m.name)}}
+						span(v-if="m.counter > 0") ({{m.counter + 1}})
 		see-also( v-bind="entry" )#see-also
 
 
@@ -111,11 +112,25 @@ export default {
 		},
 		methodsMenu() {
 			if (!this.$props.methods) return [];
-			return this.methodsOnly;
+			const m = this.methodsOnly;
+			let n = [];
+			let out = [];
+			for (let i = 0; i < m.length; i++) {
+				const idx = n.indexOf( m[i].name );
+				if (idx === -1) {
+					m[i].counter = 0;
+					out.push(m[i]);
+					n.push(m[i].name);
+				} else {
+					out[idx].counter += 1;
+				}
+			};
+			return out;
 		}
 	},
 	data() {
 		return {
+			viewIdx: 0
 		}
 	},
 	methods: {

@@ -2,6 +2,7 @@ export const strict = false
 import Manifest from '~/docs.manifest.json'
 
 export const state = () => ({
+	filters: Manifest.filters,
 	structure: Manifest.structure,
 	data: Manifest.data,
 	version: Manifest.version,

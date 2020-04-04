@@ -7,8 +7,8 @@
   ) 
     
     nuxt-link( :to="a.path" ) 
-      span.origin {{origin(a).name}}
-      span.name {{a.name}}
+      span.origin {{origin(a)}}
+      span.name(v-html="a.name")
 </template>
 
 <script>
@@ -48,7 +48,8 @@ export default {
   },
   methods: {
     origin(a) {
-      return this.data[ a.breadcrumbs.slice(-1)[0] ];
+      if (a.breadcrumbs.length <= 0) return "ofDocs";
+      return this.data[ a.breadcrumbs.slice(-1)[0] ].name;
     }
   },
   created() {
@@ -60,14 +61,3 @@ export default {
 }
 </script>
 
-<style lang="sass">
-
-@import '@/assets/css/theme'
-@import '@/assets/css/_utils' 
-.see-also
-  a
-    display: block
-    .origin
-      color: mono(70)
-      margin-right: 5px
-</style>

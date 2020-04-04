@@ -3,14 +3,15 @@
 	v-if="level < depth"
 	:class="className"
 	)
-	nuxt-link( :to="entry.path" :title="entry.route" )
+	a.allow-active( v-on:click.prevent.stop="beforeClick" :href="entry.path" :title="entry.route" :class="{ 'nuxt-link-active' : isActive }" )
 		i.ico(v-show="entry.icon && useIcon") {{entry.icon}}
-		span(v-show="$slots.default"): slot
-		span(v-show="!$slots.default") {{  entry.name  }}
+		span.name(v-show="$slots.default"): slot
+		span.name(v-show="!$slots.default" v-html="entry.name.replace(' (functions)','<span>functions</span>')")
 	.list( v-if="isLinked")
 		list( 
 			v-show="filtered"
 			v-for=" child, i in filtered( entry.children, filters )"
+			:parentPath="entry.path"
 			:filters="filters"
 			:level="level + 1"
 			:depth="depth"
@@ -26,32 +27,48 @@ export default {
 	extends: Base,
 	data() {
   		return {
-
   		}
 	},
 	computed: {
 		className() {
-			let obj = {};	
-			obj[this.entry.name] = true;
-			return obj;
+			return {
+				"show-menu": this.isActive,
+				[this.entry.name]: true
+			};	
 		},
 		isLinked() {
-			return (this.entry.path.indexOf(this.$route.path) !== -1) || (this.$route.path.indexOf(this.entry.path) !== -1);
-		},
-		isExact() {
-			return (this.$route.path === this.item.route);
+			return ( this.entry.path.indexOf( this.$route.path ) !== -1) || ( this.$route.path.indexOf( this.entry.path ) !== -1 );
 		},
 		item() {
 			return this.$store.state.data[this.$props.entry.id];
+		},
+		isActive() {
+			const b = (process) ? process.browser : false;
+			const u = this.entry.path;
+			const r = this.$route.path;
+			const i = r.indexOf( u );
+			const has = ( i !== -1 ) || ( r === u );
+			const slash = r.substring( i, u.length - 1 ).indexOf('/') !== -1;
+			return has && slash;
 		}
 	},
 	methods: {
+		beforeClick(e) {
+			if ( this.$route.path === this.entry.path ) {
+				this.$router.push(this.parentPath);
+				return;
+			}
+
+			this.$router.push(this.entry.path);
+			return;
+		}
 
 	},
 	components: {
 		// List
 	},
 	mounted() {
+
 	},
 	props: {
 
@@ -76,13 +93,12 @@ export default {
 			type: Boolean,
 			required: false,
 			default: false
+		},
+		parentPath: {
+			type: String,
+			required: false,
+			default: "/"
 		}
 	}
 }
 </script>
-
-<style lang="sass">
-
-
-
-</style>

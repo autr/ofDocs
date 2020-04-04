@@ -2,8 +2,10 @@ module.exports = ( rawUrl, method ) => {
 
         const codeBreak = "<!----------------------------------------------------------------------------->";
 
+        let currentVersion = "0.11.0";
+
         const path = require('path');
-        const md = require('markdown-it')();
+        const MarkdownIt = require('markdown-it'), md = new MarkdownIt();
         const queryString = require('query-string');
         const mime = require('mime-types');
 
@@ -62,21 +64,43 @@ module.exports = ( rawUrl, method ) => {
         };
 
         const parseHtmlAndHighlight = ( str ) => {
-            let html = md.render( str, {
-                html: true
-            } );
-            html = html.replace( new RegExp(/<code[\s\S]*?\/code>/g), (m) => {
-                const a = m.indexOf('>');
-                const b = m.lastIndexOf('</');
-                const substr = m.substring(a + 1, b);
-                const parsed = highlight('cpp', substr)
-                // console.log('LANG', parsed.language);
-                return `<code>${parsed}</code>`;
-            });
+            str = str.replace("${currentVersion}", currentVersion);
 
-            // 
-            return html ;
+
+            let md = require('markdown-it')({
+                html: true,
+                highlight: ( code, lang) => {
+                    return highlight('cpp', code);
+                }
+            } );
+
+            // md.renderer.rules.code_block = md.renderer.rules.fence;
+            // console.log(md());
+            return md.render( str );
         };
+
+
+        const parseNikolaMethods = (str) => {
+            if (!str) return undefined;
+            let methods = [];       
+            const splitted = str.split(codeBreak);
+            if (splitted <= 1) return undefined;
+            splitted.forEach( ( methodStr, i ) => {
+                methods[i] = parseNikolaConfig(  methodStr );
+                let short =  methodStr.match( new RegExp(/(_inlined_description: _)[^>]+(_description: _)/g) );
+                let desc =  methodStr.match( new RegExp(/[^a-z](_description: _)[^>]+/g) );
+                if (short) {
+                    short = short[0].substring(24, short[0].length - 15);
+                    methods[i].short = parseHtmlAndHighlight(  short );
+                }
+                if (desc) {
+                    desc = desc[0].substring(16, desc[0].length );
+                    methods[i].desc = parseHtmlAndHighlight(  desc );
+                }
+            });
+            return methods;
+        }
+
 
         const extractMainSection = ( raw ) => {
 
@@ -119,30 +143,12 @@ module.exports = ( rawUrl, method ) => {
         };
 
 
-        const parseNikolaMethods = (str) => {
-            if (!str) return undefined;
-            let methods = [];       
-            const splitted = str.split(codeBreak);
-            if (splitted <= 1) return undefined;
-            splitted.forEach( ( methodStr, i ) => {
-                methods[i] = parseNikolaConfig(  methodStr );
-                let short =  methodStr.match( new RegExp(/(_inlined_description: _)[^>]+(_description: _)/g) );
-                let desc =  methodStr.match( new RegExp(/[^a-z](_description: _)[^>]+/g) );
-                if (short) {
-                    short = short[0].substring(24, short[0].length - 15);
-                    methods[i].short = parseHtmlAndHighlight(  short );
-                }
-                if (desc) {
-                    desc = desc[0].substring(16, desc[0].length );
-                    methods[i].desc = parseHtmlAndHighlight(  desc );
-                }
-            });
-            return methods;
-        }
-
         const indexOf = (url, ext) => {
             return ( url.toLowerCase().indexOf( ext.toLowerCase() ) !== -1);
         }
+
+
+        // render "page" into json...
 
         const renderDocument = ( entry, raw ) => {
 
@@ -242,6 +248,7 @@ module.exports = ( rawUrl, method ) => {
             if (url === '/version') {
                 version().then( v => {
 
+                    currentVersion = version.major+version.minor+version.patch;
                     resolve({
                         status: 500,
                         type: mime.lookup( 'json.json' ),
@@ -289,6 +296,10 @@ module.exports = ( rawUrl, method ) => {
             if (intro) addTranslations(intro);
             if (entry) addTranslations(entry);
 
+
+
+            // list page...
+
             if (!intro && isFolder && params.as === 'json') { 
                 resolve( {
                     status: 500,
@@ -305,6 +316,9 @@ module.exports = ( rawUrl, method ) => {
                 entry = intro;
             }
 
+
+            // raw page ...
+
             const fs = require('fs');
             if (params.as === 'raw' || isAsset ) {
 
@@ -317,6 +331,9 @@ module.exports = ( rawUrl, method ) => {
                 });
                 return;
             } else if (params.as === 'json') {
+
+
+                // main json page ...
 
                 fs.readFile( entry.absolute, (err,raw) => {
 

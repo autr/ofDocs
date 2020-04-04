@@ -1,12 +1,12 @@
 <template lang="pug">
   .editable-wrapper
     .header.inner
-      h1.page-title.mb4.questrial 
+      h1.page-title.questrial 
         span.f7 
           i.ico.f5(v-if="page.entry.icon") {{page.entry.icon}}
-          span {{ page.entry.name }} 
+          span(v-html="page.entry.name")
         span.f3(v-if="langs") 
-          span.mr1(
+          span.ml1(
             v-for="l, k in langs"
           )
             nuxt-link.pink( :to="l.path" ) {{k}}
@@ -32,12 +32,12 @@
           span Save
         p.error {{errorMessage}}
       .actions( v-else-if="canEdit && page.static" )
-        nuxt-link.button(to="/about/contribute/")
+        nuxt-link.button(to="/ofDocs/contribute/")
           i.ico edit
           span Edit
     .rendered( v-show="!editMode" )
       doc-page(  v-if="page.type === 'page'" v-bind="page" )
-      list-page( v-else-if="page.type === 'folder'" v-bind="page" )
+      list-page( v-else-if="page.type === 'folder'" v-bind="page" :showDoc="true" )
       //- slot( name="actions" )
     textarea.markdown-editor(  
       v-show="editMode"

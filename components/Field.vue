@@ -70,7 +70,7 @@
 						:key="i"
 						:id="i"
 						:value="i"
-					) {{o.name}}
+					) {{ o.name }}
 				.text-wrapper: span( v-if="options()[internalValue]") {{ options()[internalValue].name }}
 
 
@@ -192,22 +192,3 @@ export default {
 	}
 }
 </script>
-<style lang="sass">
-
-@import '~/assets/css/_utils'
-
-.select-wrapper
-	position: relative
-	svg
-		width: 1em
-		position: absolute
-		top: 0.5em
-		right: 1em
-		path
-			stroke: black
-			stroke-width: 1px
-			fill: none
-	select
-		opacity: 0
-		@include fill()
-</style>

@@ -8,7 +8,7 @@ span.breadcrumbs
 		:key="i" )
 		nuxt-link.pink( v-if="(b.path !== entry.path) && links" :to="b.path" ) {{  b.name  }} 
 		span.link( v-if="(b.path === entry.path) || !links" :class="{selector: options && selector}" ) 
-			span {{  b.name  }} 
+			span.name(v-html="b.name ") 
 			span.chevron.bottom
 			select( v-if="options && selector" v-model="selectorValue" @change="onSelectorChange" )
 				option( v-for="o, i in options" :value="o.path" ) {{o.name}}
@@ -32,7 +32,8 @@ export default {
 			const b = e.breadcrumbs;
 			const p = this.data[b[0] ];
 			if (!p) return undefined;
-			return this.filtered(p.children);
+			let c = this.filtered(p.children);
+			return c;
 		},
 		crumbs() {
 			if (!this.$props.entry.breadcrumbs) {
@@ -60,32 +61,3 @@ export default {
 	props: ['entry', 'last', 'first', 'links', 'selector']
 }
 </script>
-
-<style lang="sass">
-
-@import '@/assets/css/theme'
-@import '@/assets/css/_utils'
-#app 
-	.crumb
-		display: inline-block
-		color: mono(60)
-		.chevron
-			margin-right: 0.75em
-			margin-left: 0.2em
-		.link .chevron
-			display: none
-		.selector
-			position: relative
-			background: mono(96)
-			padding: 0.2em 0.2em 0.2em 0.8em
-			border-radius: 2px
-			.chevron
-				display: inline-block
-			.chevron:before
-
-				// transform: scale(0.5)
-			select
-				@include fill()
-				opacity: 0
-
-</style>

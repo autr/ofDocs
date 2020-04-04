@@ -28,7 +28,7 @@ export default {
 	methods: {
 
 		filtered( list, filters ) {
-			if (!filters) filters = ['jpg', 'png', 'gif', 'svg', 'search_results', 'introduction', 'readme', 'index', '.ja', '.ko', '.zh_cn', '-ja', '-ko', '-zh_cn', 'src'];
+			if (!filters) filters = this.$store.state.filters;
 			let out = [];
 
 			if (!list) return out;

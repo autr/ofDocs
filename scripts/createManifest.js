@@ -4,12 +4,12 @@ const fs = require('fs'),
     directories = require('../docs.config.js').directories,
     root = require('../docs.config.js').root,
     meta = require('../docs.config.js').meta,
+    filters = require('../docs.config.js').filters,
     exts = require('../docs.config.js').exts,
     icons = require('../docs.config.js').icons,
     navigation = require('../docs.config.js').navigation,
     Glob = require("glob").Glob,
     mimeType = require("mime-types");
-
 
 /*-- GLOBAL__ --*/
 
@@ -20,8 +20,6 @@ let tree__ = {};
 let routes__ = [];
 let totals__ = {};
 
-
-console.log('🗂  [createManifest.js] using', Object.keys(directories).join());
 
 
 const findEntryFromKey = ( _key, _value ) => {
@@ -84,6 +82,9 @@ const createProtoEntry = ( _url, _strDirKey, _baseUrl ) => {
         path_ += '.' + ext_;
         name_ += '.' + ext_;
     }
+
+    name_ = name_.replace("_functions", " (functions)");
+    name_ = name_.replace("_", "");
 
     return {
         filename: filename,
@@ -219,7 +220,6 @@ const parseDirectory = (strDirKey ) => {
                         parent: parent.id
                     };
 
-
                     parent.children.push( entry.id );
                     data__.push( entry )
                 }
@@ -229,18 +229,23 @@ const parseDirectory = (strDirKey ) => {
             /* -- add icons -- */
 
             for ( let i = 0; i < data__.length; i++) {
+                const d = data__[i];
                 const n = data__[i].name;
                 if ( Object.keys(icons).indexOf( n ) !== -1) {
                     data__[i].icon = icons[n];
                 }
             }
 
-
-
             /* -- create structure store --*/
 
             totals__ = {};
-            tree__[strDirKey] = createTree( createBasic( findEntryFromKey('absolute', baseUrl ) ) );
+            const baseEntry_ = findEntryFromKey('absolute', baseUrl );
+
+            if (!baseEntry_ || matches.length === 0) {
+                console.error("❌", baseEntry_, "does not return any files...");
+            }
+
+            tree__[strDirKey] = createTree( createBasic( baseEntry_ ) );
 
             /*-- add breadcrumbs to data__ store --*/
 
@@ -330,6 +335,7 @@ Promise.all(promises__).then( (res) => {
         structure: tree__,
         data: data__,
         meta: meta,
+        filters: filters,
         navigation: navigation
     };
 
@@ -368,5 +374,3 @@ Promise.all(promises__).then( (res) => {
     console.log('❌ [createManifest.js] error')
     console.error(err);
 });
-
-

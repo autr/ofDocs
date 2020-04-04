@@ -1,16 +1,31 @@
 <template lang="pug">
-#code-page.markdown
+#code-page
 	#side-menu
-		#code-sources( v-if="insideSrc" )
-			h4 Sources
-			.srcsiblings
-				.other(
+		#code-sources
+			h4.f3.dropdown-toggle Sources
+			// (:click="showSources = !showSouces") Sources
+			.srcsiblings.dropdown-area
+				// ( v-show="showSources" )
+				nuxt-link.block(
 					v-for="c, i in siblings"
 					:key="i"
+					:to=" c.path " 
+					:class="{ current: (c.path == entry.path) }"
 				)
 					span.src src 
-					nuxt-link( :to=" c.path " ) {{c.name}} 
-		see-also( v-bind="toplevel" )#see-also
+					span.name {{c.name}} 
+		#comments.dropdown-area
+			// (v-if="comments.length > 0")
+			h4.f3.dropdown-toggle Comments
+			.dropdown-area( v-show="showComments" )
+				a.block( 
+					:href="'#'+c.number"
+					v-for="c, i in comments " 
+					v-if="c.valid"
+					:key="i")
+					span.number {{c.number}}
+					span.comment {{c.text}}
+		see-also( v-bind="toplevel" )
 	#code-render: .inner
 		pre
 			code(v-html="document" ref="code")
@@ -119,7 +134,10 @@ export default {
 	data() {
 		return {
 			offsetHeight: 0,
-			f: ['jpg', 'png', 'gif', 'svg', 'search_results', 'introduction', 'readme', 'index', '.ja', '.ko', '.zh_cn', '-ja', '-ko', '-zh_cn']
+			f: this.$store.state.filters,
+			comments: [],
+			showComments: true,
+			showSources: true
 		}
 	},
 	methods: {
@@ -130,37 +148,41 @@ export default {
 	},
 	mounted() {
 		this.offsetHeight = this.$refs.code.offsetHeight;
+
+		let idx = 0;
+		let text = "";
+		let texts = [];
+		this.$refs.code.querySelectorAll('.comment').forEach( c => {
+
+
+			const line =  Math.round(c.offsetTop / 18);
+			const h =  Math.round(c.offsetHeight/18) ;
+
+			if (idx !== line ) {
+				this.comments.push( {
+					number: line,
+					text: "",
+					valid: false
+				} );
+				texts.push(text);
+				text = "";
+			}
+			text += c.innerText;
+			idx = line + h;
+		});
+		texts.push(text);
+
+		for (let i = 1; i < texts.length; i++ ) {
+
+			let idx = 0;
+			let t = texts[i];
+			const chars = [" ", "/", "-", "<", "\\", "}","{","*"];
+			while( chars.indexOf( t[idx] ) !== -1) idx += 1;
+			this.comments[i-1].valid = (idx < t.length);
+			this.comments[i-1].text = t.substring( idx,t.length );
+		}
+
+
 	}
 }
 </script>
-
-<style lang="sass">
-
-@import '@/assets/css/theme'
-@import '@/assets/css/_utils' 
-
-#app
-	#code-render
-		margin-right: 320px
-		position: relative
-	&.code
-		#actions
-			.button
-				color: white
-	.srcsiblings
-		font-family: Courier, serif
-		.src
-			color: mono(70)
-		a
-			color: deeppink!important
-	a.line-number
-		position: absolute
-		height: 18px
-		box-sizing: border-box
-		left: 5px
-		color: mono( 80 )!important
-		&:active, &:focus
-			color: $pink!important
-
-
-</style>

@@ -1,9 +1,32 @@
 <template lang="pug">
 .list-page
 	#list-body.inner
-		.markdown.mb4
-			.html( v-if="document" v-html="document" )
-		directory( v-bind:items="entry.children" )
+		.markdown.pt2( v-if="document && showDoc")
+			.html( v-html="document" )
+		.direct(v-if="filtered(entry.children, filters).length > 0")
+			.markdown.pb1: hr
+			.nrow(
+				v-for="e, i in filtered(entry.children, filters)"
+				:key="i"
+			)
+				.ncol-left
+					nuxt-link.pink.ptb1( :to="e.path" v-html="e.name" )
+				.ncol-columns.mb1( v-if="e.children" )
+					.flow( :class="{ 'no-cols': (filtered( e.children, filters ).length <= 4) }" )
+						nuxt-link(
+							v-for="ee, ii in filtered( e.children, filters )"
+							:key="ii"
+							:to="ee.path"
+							v-html="ee.name.replace(' (functions)','<span>functions</span>')"
+						)
+						span.extra(v-if="getSrc(e)")
+							nuxt-link(
+								v-for="ee, ii in filtered( getSrc(e).children, filters )"
+								:key="ii"
+								:to="ee.path"
+								v-html="ee.name.replace(' (functions)','<span>functions</span>')"
+							)
+		//- directory( v-bind:items="entry.children" )
 
 </template>
 
@@ -13,7 +36,7 @@ import List from '~/components/List.vue'
 import Directory from '~/components/_Directory.vue'
 export default {
 	extends: Base,
-	props: ['entry', 'intro', 'items', 'document'],
+	props: ['entry', 'intro', 'items', 'document', 'showDoc'],
 	components: {
 		List,
 		Directory
@@ -22,10 +45,22 @@ export default {
 	},
 	data() {
 		return {
-			patterns: ['jpg', 'png', 'gif', 'svg', 'search_results', 'introduction', 'readme', 'index', '.ja', '.ko', '.zh_cn', '-ja', '-ko', '-zh_cn']
+			filters: this.$store.state.filters
 		}
 	},
 	methods: {
+		divide( ) {
+
+		},
+		getSrc( e ) {
+			if (!e.children) return false;
+			if (e.children.length <= 0) return false;
+			let out = false;
+			e.children.forEach( i => {
+				if (this.data[i].name === "src") out = this.data[i];
+			})
+			return out;
+		}
 	},
 	created() {
 
@@ -35,10 +70,3 @@ export default {
 }
 </script>
 
-<style lang="sass">
-
-@import '@/assets/css/theme'
-@import '@/assets/css/_utils' 
-
-
-</style>
