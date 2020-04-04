@@ -2,12 +2,17 @@ const ofCoreAddons = '{ofxAccelerometer,ofxAndroid,ofxAssimpModelLoader,ofxEmscr
 const allAddons = '*';
 
 module.exports = {
+
+  test: (args, e) => {
+    console.log('>>>>>>>>>>>>>>>>>>>>>>>>');
+    console.log(args,e);
+  },
 	meta: {
 		baseTitle: 'ofDocs',
 		baseDesc: 'openFrameworks documentation and examples browser'
 	},
 	directories: {
-		about: {
+		ofDocs: {
 			dir: './',
 			pattern: '*.md'
 		},
@@ -21,7 +26,7 @@ module.exports = {
 		},
 		guides: {
 			dir: '../ofSite/content/setup/',
-			pattern: '**.{markdown,md,png,svg,jpg,gif}',
+			pattern: '**/*.{markdown,md,png,svg,jpg,gif}',
 		},
 		examples: {
 			dir: '../examples/',
@@ -33,16 +38,8 @@ module.exports = {
 		},
 		files: {
 			dir: '../ofSite/files/',
-			pattern: '*/*.{markdown,md,png,svg,jpg}'
+			pattern: '*/*.{markdown,md,png,svg,jpg,jpeg}'
 		}
-		// learning: {
-		// 	dir: '../ofSite/learning/',
-		// 	pattern: '**/*.{markdown,md,png,svg,jpg,gif}'
-		// },
-		// ofBook: {
-		// 	dir: '../ofBook/',
-		// 	pattern: '**/*.{markdown,md,png,svg,jpg,gif}'
-		// }
 	},
 	navigation: [ 
 		['documentation', 4], 
@@ -50,11 +47,10 @@ module.exports = {
 		['openFrameworks', 3], 
 		['addons', 3], 
 		['guides', 2]
-		// ['learning', 4], 
-		// ['ofBook', 4]
 	],
+	filters: ['jpg', 'png', 'gif', 'svg', 'search_results', 'introduction', 'readme', 'index', '.ja', '.ko', '.zh_cn', '-ja', '-ko', '-zh_cn' ],
 	exts: {
-		page: ['md','markdown'],
+		page: ['md','markdown','html'],
 		source: ['cpp','h','mm'],
 		asset: ['png','svg','jpg','jpeg','gif']
 	},

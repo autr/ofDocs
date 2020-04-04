@@ -41,7 +41,6 @@ module.exports = {
     concurrency: 50,
     interval: 1,
     routes() {
-
       return require('./scripts/sitemap').payloads( './static' ).then( (routes) => {
         return routes;
       }).catch( err => {
@@ -62,6 +61,7 @@ module.exports = {
     '@nuxtjs/moment' // date formatting
   ],
   modules: [
+    'cookie-universal-nuxt', // cookies
     '@nuxtjs/axios', // REST module
     'nuxt-material-design-icons-iconfont' // icons
   ],

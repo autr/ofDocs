@@ -92,3 +92,7 @@ sw.*
 .nuxt
 
 .now
+
+docs.config.custom.js
+docs.manifest.json
+docs.routes.json
