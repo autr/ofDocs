@@ -1,0 +1,885 @@
+@mixin entireStylesheet(  $color, $darkest, $dark, $midGray, $midGray2, $midGray3, $light, $lightest, $white  )
+
+  
+  #app
+
+    h1, h2, h3, h4, h5, h6, strong
+      font-weight: bold
+      color: $darkest
+    em
+      color: $darkest
+
+
+  .ccolor
+    color: $color
+  .cdarkest
+    color: $darkest
+  .cdark
+    color: $dark
+  .cmidGray
+    color: $midGray
+  .cmidGray2
+    color: $midGray2
+  .cmidGray3
+    color: $midGray3
+  .clight
+    color: $light
+  .clightest
+    color: $lightest
+  .courier
+    font-family: Courier, serif
+
+  #app
+    min-width: 1000px
+    a, a:active
+      text-decoration: none
+      color: $dark
+      &:hover
+        color: $darkest!important
+    .dark 
+      color: $darkest
+    #menu, #document
+      padding-bottom: 60px
+    #lists
+      overflow: hidden
+    .item 
+      a
+        span.name
+          span
+            font-weight: normal!important
+            color: $color
+            font-family: Courier, serif
+            font-size: $fontSize - 0px
+            left: 5px
+            position: relative
+    textarea
+      width: 100%
+      &.markdown-editor
+        border: none
+        font-size: $fontSize 
+        color: $darkest
+        font-family: Courier, serif
+        outline: none
+        padding: 20px 60px
+        overflow: none
+    #extends
+      position: relative
+      top: -10px
+      color: $midGray
+    #methods-list
+      a
+        color: $dark
+        &.pink
+          color: $color
+    .editor
+      outline: none
+      padding: 2em 0em
+      margin: 4em 0em
+    .page-title, .actions
+      display: inline-block
+    .actions
+      position: relative
+      top: -0.4em
+      left: 1em
+
+  #app
+    .pink
+      color: $color
+    .black
+      color: $darkest
+
+  .ico
+    font-family: 'Material Icons'
+    font-weight: normal
+    font-style: normal
+    font-size: 1.5em
+    top: 0.2em
+    margin-right: 0.5em
+    position: relative
+    display: inline-block
+    line-height: 1
+    text-transform: none
+    letter-spacing: normal
+    word-wrap: normal
+    white-space: nowrap
+    direction: ltr
+    -webkit-font-smoothing: antialiased
+    text-rendering: optimizeLegibility
+    -moz-osx-font-smoothing: grayscale
+    font-feature-settings: 'liga'
+
+  #app
+
+    .list-page
+      .recursive-header
+        > a
+          font-size: 14px
+          color: $color
+          display: block
+      .auto-flow
+        column-count: 4
+        .auto
+          font-size: $fontSize + 1px
+          a
+            display: block
+            padding: 1em 0em
+
+
+  #app
+
+    font-family: Helvetica, Arial, sans-serif
+    .chevron::before 
+      border-style: solid
+      border-width: 1px 1px 0 0
+      content: ''
+      display: inline-block
+      height: 0.5em
+      left: 0em
+      position: relative
+      top: 0.5em
+      transform: rotate(-45deg)
+      vertical-align: top
+      width: 0.5em
+    
+
+    .chevron.right:before 
+      left: 0
+      transform: rotate(45deg)
+    
+
+    .chevron.bottom:before 
+      top: 0.45em
+      transform: rotate(135deg)
+    
+
+    .chevron.left:before 
+      left: 0.25em
+      transform: rotate(-135deg)
+    
+
+
+    $dot: 4px
+    .dot
+      width: $dot
+      height: $dot
+      border-radius: $dot
+      background: #eee
+      display: inline-block
+      margin: 0.25em 5px
+      &.active
+        background: $color
+
+    $mw: 320px
+    #side-menu
+      position: fixed
+      right: 0px
+      top: 0
+      height: 100vh
+      overflow: auto
+      width: $mw
+      background: $white
+      padding: 30px
+      border-left: 1px solid $lightest
+      padding-bottom: 80px
+      @media only screen and (max-width: 1000px )
+        right: auto
+        left: 1000px - $mw
+
+      h1,h2,h3,h4,h5
+        color: $darkest
+        margin: 2em 0em
+    #offset-page
+      margin-right: $mw
+
+
+
+
+
+
+
+
+
+
+        
+
+
+    .map-wrapper, .GMap, .map, .gm-style, .GMap__Wrapper, .GMap__Wrapper > *
+      @include fill()
+      overflow: hidden
+    .GMap
+      height: calc( 100% + 24px )
+
+    @media only screen and (max-width: 48em)
+      .map-wrapper
+        &:before
+          content: ""
+          @include fill()
+          z-index: 2
+        
+    .button
+      padding: 0em 1.5em
+      height: 2.5em
+      line-height: 2.5em
+      display: inline-block
+      outline: 0
+      background: transparent
+      border-radius: 2px
+      font-size: $fontSize
+      cursor: pointer
+      color: $darkest
+      border: 1px solid $light
+      &:disabled
+        opacity: 0.5
+      &.dark
+        background: $dark
+        border-color: $dark
+        color: $white
+      &.color
+        background: $color
+        border-color: $color
+        color: $white
+
+    $logoSize: 60px
+    $footerHeight: 200px
+    #side-menu
+      .anchor code a
+        width: 100%
+        display: block
+        padding: 2px 0px
+    #menu
+      .allow-active
+
+        background: $lightest
+        &:hover 
+          &:before
+            content: ""
+            position: absolute
+            top: 0px
+            left: -320px
+            width: 320px * 2
+            height: 100%
+            background: $midGray2
+            opacity: 0.2
+            z-index: 0
+        span.name
+          z-index: 2
+          position: relative
+        &:focus, &:active
+          span.name 
+            font-weight: bold!important
+            color: $dark
+          &.nuxt-link-active span.name
+            color: $darkest
+    .logo,.gradient
+      width: 110px
+      height: 58px
+      transform: scale(0.7)
+      transform-origin: 0% 100%
+      margin-right: -30px
+      margin-top: 10px
+    .gradient
+      clip-path: url(#clip)
+      display: inline-block
+      transition: background-image 1s ease
+    .logo
+      display: inline-block
+      rect, path
+        fill: $darkest
+      &.clip
+        position: absolute
+        left: -9999px
+    .txt
+      display: inline-block
+    #header
+      width: 100vw
+      background: $white
+      .col
+        padding-bottom: 0
+      .header-link a
+        padding: 2em 0em
+        display: block
+        &.nuxt-link-active
+          color: $darkest
+      @media only screen and (max-width: 48em)
+        min-height: 70px
+        transition: border-bottom-color 0.2s ease
+        .wrapper
+          height: 0px
+        .row
+          margin-top: 70px
+          padding-top: 1em
+          height: 100vh
+          display: block
+          position: relative
+          background: $white
+          left: -9999px
+          opacity: 0
+          transition: opacity 0.4s ease, transform 0.4s ease
+          transform: translate(0px, 40px)
+        &.is-active
+          border-bottom-color: $white
+          .row
+            left: 0px
+            opacity: 1
+            transform: translate(0px, 0px)
+        .logo
+          width: 50px
+          height: 50px
+          top: 10px
+        .hamburger
+          position: absolute
+          left: 10px
+          top: 5px
+          outline: none
+          transform: scale(0.8)
+          *, *:after, *:before
+            border-radius: 0px !important
+            background: mono(80)
+          .hamburger-box
+            background: transparent
+        .col
+          padding-bottom: 0
+          text-align: center
+
+
+
+    #header + * 
+      padding-top: $logoSize!important
+      min-height: 100vh
+      @media only screen and (min-width: 48em)
+        padding-bottom: $footerHeight
+    #footer
+      min-height: $footerHeight
+      background: $white
+      width: 100%
+      @media only screen and (min-width: 48em)
+        position: absolute
+        bottom: 0
+
+    body 
+      font-family: 'Montserrat', sans-serif
+
+
+    .header-push
+      height: 100px
+
+    // ui fields...
+
+    .select-wrapper
+      position: relative
+      svg
+        width: 1em
+        position: absolute
+        top: 0.5em
+        right: 1em
+        path
+          stroke: $darkest
+          stroke-width: 1px
+          fill: none
+      select
+        opacity: 0
+        @include fill()
+
+    .text-wrapper
+      border: 1px solid $light
+      > *
+        border: none
+        background: transparent
+        width: 100%
+        font-size: $fontSize
+        padding: 10px
+        color: $darkest
+        &::placeholder
+          color: $midGray
+
+    // columns...
+
+    .row
+      margin-left: -$colPadding
+      margin-right: -$colPadding
+    .col
+      padding: 0em $colPadding
+      padding-bottom: $colPadding
+    .app-wrapper
+      position: relative
+    .full-wrapper, .wrapper
+      padding-left: $pagePadding
+      padding-right: $pagePadding
+      margin: 0 auto
+      box-sizing: border-box
+    .wrapper
+      max-width: $maxWidth
+
+    .bb
+      border-bottom: 1px solid $light
+
+    .html
+      p
+        margin: 0
+        padding-bottom: 1em
+        padding-top: 0em
+      strong
+        font-weight: bold
+
+    .brackets
+      padding: 0 0.5em
+      position: relative
+      &:before, &:after
+        content: ""
+        width: 0.3em
+        height: 100%
+        border: 0.05em solid $darkest
+        position: absolute
+        top: 0
+      &:before
+        left: 0
+        border-right: none
+      &:after
+        right: 0
+        border-left: none
+
+
+
+
+  #app
+
+    .langs
+      > span
+        margin-left: 0px
+        padding-left: 10px
+        &:first-child
+          border-left: none
+          margin-left: 0px
+    $sx: 20px
+    .x 
+        height: $sx
+        width: $sx
+        background-color: $color
+        border-radius: 5px
+        position: relative
+    
+
+    .x:after 
+        position: absolute
+        top: -3px
+        bottom: 0
+        left: 0
+        right: 0
+        content: "\d7" /* use the hex value here... */
+        font-size: $sx
+        line-height: $sx
+        text-align: center
+    
+
+
+    $cpadd: 40px
+    .columns
+      display: flex
+      flex-wrap: wrap
+      width: calc( 100% + 40px)
+      margin-left: -20px
+      .column
+        padding: 0px 20px
+        flex-grow: 0
+        flex-shrink: 0
+        flex-basis: 320px
+        display: flex
+        align-items: left
+        justify-content: left
+        word-break: break-all
+        word-wrap: break-word
+
+
+    *
+      outline: 1
+      outline-width: 1px
+      outline-color: $color
+      // &:focus
+      //   // background: rgba( $color, 0.5 )
+      //   box-shadow: 0px 0px 1px 1px rgba( $color, 0.5 )
+    #menu
+      background: $lightest
+      #mini-footer
+        position: fixed
+        bottom: 5px
+        left: 20px
+        a
+          color: $color
+        *
+          margin-right: 10px
+      h1 a
+        font-weight: normal
+        color: $darkest
+      .item
+        position: relative
+        display: block
+        padding: 0em 0em
+        padding-left: 20px
+        &:before
+          content: ""
+          height: 100%
+          width: 1px
+          background: $midGray3
+          position: absolute
+          left: 5px
+          top: 2em
+        > a
+          position: relative
+          padding: 0em
+          left: -20px
+          &.nuxt-link-exact-active
+            color: $darkest
+          &.back
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            display: none
+            &.active
+              display: block
+      .nuxt-link-active + .list
+        max-height: 300vh
+      .menu-inner > .item
+        padding-left: 0px
+        border-left: none
+
+  #app .pink
+    color: $color
+  ::selection
+    color: $white
+    background: rgba( $color, 0.8 )
+
+
+
+  $ml: 300px
+  $fl: 200px
+  .inner
+    padding: 0px 20px
+  #app
+
+    .version
+      font-family: Courier, serif;
+      color: $midGray3
+      // padding: 5px 10px
+      // background: $light
+      // font-size: $fontSize - 2px
+    #search
+      &.resetting
+        .text-wrapper
+
+      .search-result
+        border-bottom: 1px solid $light
+        display: block
+        &.active
+          background-color: $midGray2
+        .inner
+          display: block
+        > a
+          padding: 15px 0px 
+          display: block
+          &:focus, &.nuxt-link-exact-active
+            background: $light
+          &.nuxt-link-exact-active
+            .name 
+              font-weight: bold
+        .name
+          color: $darkest
+        .breadcrumbs
+          font-family: Courier, serif
+          display: block
+          position: relative
+          &:before
+            content: ""
+            @include fill()
+          a, a:hover, *
+            font-weight: normal!important
+            color: $midGray
+            font-size: $fontSize
+          .crumb
+            .chevron
+              margin: 0px
+              margin-right: 5px
+              left: 0px
+              top: 1px
+              position: relative
+              &:before
+                transform: rotate(45deg) scale(0.75)
+      .field-inner
+        position: relative
+        .x
+          position: absolute
+          top: 11px
+          cursor: pointer
+          right: 10px
+          background: transparent
+          &:after
+            color: $dark
+        svg
+          position: absolute
+          top: 12px
+          left: 12px
+          transform: scale(0.4)
+          transform-origin: 0 0
+          width: 36px
+          path
+            fill: $midGray
+        .text-wrapper 
+          border-radius: 0px
+          border-color: $light
+          background: $white
+          input
+            padding-left: 36px
+            &:focus
+              box-shadow: 0px 0px 1px 1px $color
+              background: none
+
+
+    #menu, #functions
+      position: fixed
+      top: 0
+      height: 100%
+      overflow: auto
+      #lists
+        .item
+          .list
+            display: none
+          &.show-menu
+            > .list
+              display: block
+          a
+            font-weight: normal
+            display: block
+            margin: 0
+            padding: 0.2em 0em
+        a.nuxt-link-active
+          font-weight: bold
+          color: $darkest
+          position: relative
+    #menu
+      transition: transform 0.4s ease
+      width: $ml
+      left: 0 
+      .menu-inner
+        min-height: calc( 100% - 0px )
+        display: block
+      .menu-bottom
+        padding-top: 20px
+        margin-top: -60px
+        .inner
+          position: relative
+          top: 40px
+    #functions
+      width: $fl
+      left: $ml
+    #document
+      margin-left: $ml
+      .inner
+        padding: 0px 60px
+
+  #app 
+    .questrial
+      font-family: Questrial, sans-serif
+      font-weight: normal
+
+
+
+
+  #app .markdown
+    p, h1, h2, h3, h4, h5, h6
+      margin-top: 1em
+    .light
+      font-weight: normal
+    h1, h2, h3, h4, h5, h6
+      color: $darkest
+    h1, h2, h3, h4, h5, h6
+      margin-bottom: 1em
+    p+*:not(p)
+      margin-top: 1em
+    *:not(p) + p
+      margin-top: 1em
+    p+p
+      margin-top: 0em
+    h1 
+      font-size: 28px
+    h2 
+      font-size: 20px
+    h3, h4, h5, h6
+      font-size: 16px
+    strong
+      font-weight: bold
+    img
+      margin: 2em 0em
+      max-width: 100%
+    a
+      color: $color
+    s 
+      padding: 0.2em 0.5em
+      border-radius: 2px
+      margin-right: 0.5em
+      box-sizing: border-box
+      font-family: Courier
+      color: $darkest
+      text-decoration: none
+      background: $lightest
+    hr 
+      border: none
+      background: none
+      margin: 2em 0em!important
+      display: block
+      border-top: 1px solid $lightest
+  #app
+    pre
+      display: block
+      padding: 20px 0px
+      border-radius: 2px
+    pre, code
+      color: $darkest
+      font-family: Courier, serif
+      white-space: pre-wrap
+      white-space: -o-pre-wrap
+      word-wrap: break-word
+      line-height: 18px!important
+  #app
+    
+    .doc-header
+      display: flex
+      width: 100%
+      padding: 30px 0px
+      #actions
+        text-align: right
+        flex-grow: 1
+
+
+
+  #app
+    .courier
+      font-family: Courier, serif
+    .nrow a span, #results .name span
+      font-family: Courier, serif
+      color: $color
+      font-weight: normal
+      &:before
+        content: " "
+      &:after
+        content: ""
+    .nrow
+      margin-bottom: 1em
+      width: 100%
+      display: flex
+      flex: 1
+      justify-content: space-between
+      @media only screen and (max-width: 1200px)
+        display: block
+      .ncol-left
+        min-width: 25%
+      .ncol-columns
+        flex-grow: 1
+        display: flex
+        .flow
+          width: 100%
+          column-count: 2
+          &.no-cols
+            column-count: 1
+          a
+            display: block!important
+            color: $dark
+
+
+
+  #app 
+    .crumb
+      display: inline-block
+      color: $midGray
+      .chevron
+        margin-right: 0.75em
+        margin-left: 0.2em
+      .link .chevron
+        display: none
+      .selector
+        position: relative
+        background: $lightest
+        padding: 0.2em 0.2em 0.2em 0.8em
+        border-radius: 2px
+        .chevron
+          display: inline-block
+        select
+          @include fill()
+          opacity: 0
+
+
+
+  #app
+    #comments
+      a.block
+        display: block
+        overflow: hidden
+        width: 100%
+        text-overflow: ellipsis
+        white-space: nowrap
+        font-family: Courier, serif
+        font-size: $fontSize - 1px
+        color: $darkest
+        span.number
+          width: 40px
+          color: $midGray2
+          display: inline-block
+        span.comment
+    #code-render
+      margin-right: 320px
+      position: relative
+    &.code
+      #actions
+        .button
+          color: $white
+    .srcsiblings
+      font-family: Courier, serif
+      .src
+        color: $midGray2
+      a
+        color: deeppink!important
+        &.current
+          color: $darkest!important
+          background: $lightest
+          margin-left: -10px
+          padding-left: 10px
+          border-radius: 2px
+    a.line-number
+      position: absolute
+      height: 18px
+      box-sizing: border-box
+      left: 5px
+      color: $midGray2!important
+      &:active, &:focus
+        color: $color!important
+ 
+
+  .see-also
+    a
+      display: block
+      .origin
+        color: $midGray2
+        margin-right: 5px
+      .name
+        color: $darkest
+        span
+          margin-left: 5px  
+          font-family: Courier, serif
+
+
+
+  #app.code
+    .page-title
+      display: none
+
+  .doc-header
+    .doc-header-inner
+      .inner
+        position: relative
+        #actions
+          position: absolute
+          right: 50px
+          top: 20px
+
+
+  #app .homepage h1
+    display: none!important

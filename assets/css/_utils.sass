@@ -1,3 +1,37 @@
+
+
+@mixin createColorStyle($name, $bgColor, $uiColor, $uiHighlight)
+
+	.#{$name}, .#{$name} #view, .#{$name} #network, .#{$name} #projects, .#{$name} #footer, .#{$name}#footer
+		background: $bgColor
+		color: $uiColor
+		blockquote
+			color: $uiColor
+		input[type=text], textarea
+			color: $uiColor
+			&:focus
+				box-shadow-color: $uiColor
+			&::placeholder, &:disabled::placeholder
+				color: $uiColor
+		.button, button, input[type=submit]
+			color: $bgColor
+			background: $uiColor
+			&:active, .active
+				background: $uiHighlight
+			&.outline
+				color: $uiColor
+				border: 1px solid $uiColor
+				background: transparent
+				&:active, .active
+					color: $uiHighlight
+					background: transparent
+		.header, .title
+			color: $uiColor
+			.bordered
+				border-color: $uiColor
+		a, a:visited
+			color: $uiColor
+
 @mixin fill()
 	content: ""
 	display: block
@@ -7,8 +41,6 @@
 	width: 100%
 	height: 100%
 
-@function mono($l)
-	@return hsl(0,0%,$l)
 
 .align-right
 	text-align: right
