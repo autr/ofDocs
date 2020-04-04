@@ -10,7 +10,7 @@
   "pkg": {
     "options": [],
     "targets": [
-      "node13"
+      "node12"
     ],
     "assets": [
       "./node_modules/@nuxtjs/youch/src/resources/error.mustache"
@@ -22,20 +22,19 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "yarn run createManifest && cd nuxt.js && yarn run nuxt generate ../ && cd ../ && node ./scripts/copyAssets.js",
-    "serve": "node scripts/server/index.js",
-    "now-dev": "nuxt"
+    "serve": "node scripts/server/index.js"
   },
   "dependencies": {
-    "nuxt-start": "^2.12.0",
     "@nuxtjs/axios": "^5.9.5",
     "@nuxtjs/moment": "^1.4.0",
+    "cookie-universal-nuxt": "^2.1.3",
     "fs": "^0.0.1-security",
     "markdown-it": "^10.0.0",
-    "markdown-it-highlightjs": "^3.0.0",
     "mime-types": "^2.1.26",
     "mkdirp": "^1.0.3",
     "node-prismjs": "^0.1.2",
     "nuxt-material-design-icons-iconfont": "^1.0.2",
+    "nuxt-start": "^2.12.0",
     "query-string": "^6.11.1"
   },
   "devDependencies": {
