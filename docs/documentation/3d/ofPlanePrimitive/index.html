@@ -1,0 +1,855 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>ofPlanePrimitive | documentation | ofDocs</title><meta data-n-head="ssr" data-hid="description" name="description" content="openFrameworks documentation and examples browser"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="openFrameworks documentation and examples browser" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="ofPlanePrimitive | documentation | ofDocs" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="/files/images/ofw-logo.png" vmid="og:image"><link rel="preload" href="/_nuxt/5f71eaca0bd2f1a0f939.js" as="script"><link rel="preload" href="/_nuxt/906a3ca0fb13ed3c6651.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/b673915e8a08acf593e8.js" as="script"><link rel="preload" href="/_nuxt/46e8fcacdadb233d9fb6.css" as="style"><link rel="preload" href="/_nuxt/bf355f21967a23c26c07.js" as="script"><link rel="preload" href="/_nuxt/35a90d914f539af1362f.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/46e8fcacdadb233d9fb6.css">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app"><div id="menu"><div class="menu-inner"><div id="settings"></div><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><svg version="1.1" viewbox="0 0 110 58" width="110px" height="58px" enable-background="0 0 110 58" xml:space="preserve" class="logo"><g><path d="M58,29 C58,13 45,0 29,0 C13,0 0,13 0,29 C0,45 13,58 29,58 C45,58 58,45 58,29 Z"></path><rect x="59" y="0" width="25" height="58"></rect><rect x="85" y="26" width="15" height="15"></rect><path d="M85,0 L110,0 L85,25 L85,0 Z"></path></g></svg><div class="txt"><span class="docs f7 questrial">Docs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343							c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88							c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593							c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789							C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><!----></div><div id="lists" class="menu-inner mt1 mb2"><div class="inner"></div></div></div><div class="menu-bottom"><div class="inner"><button class="button"><!----><span><span class="ico">nights_stay</span></span></button></div></div></div><div id="document"><div id="renderer" class="main page"><div absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/3d/ofPlanePrimitive.markdown" route="/documentation/3d/ofPlanePrimitive.markdown" dir="../ofSite/documentation/3d" ext="markdown" type="page" id="1989" parent="1967" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/" class="pink nuxt-link-active">documentation </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/3d/" class="pink nuxt-link-active">3d </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link selector"><span class="name">ofPlanePrimitive</span><span class="chevron bottom"></span><select><option value="/documentation/3d/of3dGraphics_functions">of3dGraphics (functions)</option><option value="/documentation/3d/of3dGraphics">of3dGraphics</option><option value="/documentation/3d/of3dPrimitive">of3dPrimitive</option><option value="/documentation/3d/of3dUtils_functions">of3dUtils (functions)</option><option value="/documentation/3d/ofBoxPrimitive">ofBoxPrimitive</option><option value="/documentation/3d/ofCamera">ofCamera</option><option value="/documentation/3d/ofConePrimitive">ofConePrimitive</option><option value="/documentation/3d/ofCylinderPrimitive">ofCylinderPrimitive</option><option value="/documentation/3d/ofEasyCam">ofEasyCam</option><option value="/documentation/3d/ofIcoSpherePrimitive">ofIcoSpherePrimitive</option><option value="/documentation/3d/ofMesh_">ofMesh</option><option value="/documentation/3d/ofMeshFace_">ofMeshFace</option><option value="/documentation/3d/ofNode">ofNode</option><option value="/documentation/3d/ofPlanePrimitive">ofPlanePrimitive</option><option value="/documentation/3d/ofSpherePrimitive">ofSpherePrimitive</option></select></span><!----></span></span></div></div></div><div class="editable-wrapper"><div class="header inner"><h1 class="page-title questrial"><span class="f7"><!----><span>ofPlanePrimitive</span></span><span class="f3"></span></h1><div class="actions"><a href="/ofdocs/contribute/" class="button"><i class="ico">edit</i><span>Edit</span></a></div></div><div class="rendered"><div id="documentation-page" static="true"><div id="offset-page"><div id="doc-body" class="markdown"><div class="inner"><div id="description"><div class="full-description"><div class="html"><p>The ofPlanePrimitive allows you to create an UV plane, which can be used for example as simple canvas for projecting simple texture .</p>
+<p>Like all primitives it allows you to set the size, in this case height and width, draw it, set positions, etc, as a simple example:</p>
+<pre><code class="language-{.cpp}">
+ofPlanePrimitive plane<span class="token punctuation">;</span>
+
+<span class="token keyword">void</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+<span class="token comment" spellcheck="true">/// let's say we have a window set to be at </span>
+<span class="token comment" spellcheck="true">// resolution 640x480...</span>
+
+	plane<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token number">640</span><span class="token punctuation">,</span> <span class="token number">480</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment" spellcheck="true">///dimensions for width and height in pixels</span>
+plane<span class="token punctuation">.</span><span class="token function">setPosition</span><span class="token punctuation">(</span><span class="token number">320</span><span class="token punctuation">,</span> <span class="token number">240</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/// position in x y z</span>
+plane<span class="token punctuation">.</span><span class="token function">setResolution</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">/// this resolution (as columns and rows) is enough</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">void</span> <span class="token function">draw</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+plane<span class="token punctuation">.</span><span class="token function">drawWireframe</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>As you can see, plane is constructed from two triangles.
+To draw a texture over any primitive, simply bind the ofTexture instance and then draw your primitive:</p>
+<pre><code class="language-{.cpp}">
+texture<span class="token punctuation">.</span><span class="token function">getTextureReference</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">// now draw filled...</span>
+plane<span class="token punctuation">.</span><span class="token function">draw</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre>
+<p>The plane primitive also allows you to simply pass an ofTexture to the plane and generate the texture coordinates from that texture so that the ofTexture fills the plane when it's drawn. This saves you the hassle of creating all the texture coordinates for each vertex, which is nice.</p>
+<h1></h1>
+</div></div></div><div id="methods"><hr><section name="getHeight" id="getHeight" class="mb2"><div class="method mb2"><h3 class="f3 title">getHeight( <!----> )</h3><code><span class="token keyword">float  </span><span class="token function">getHeight</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getNumColumns" id="getNumColumns" class="mb2"><div class="method mb2"><h3 class="f3 title">getNumColumns( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">getNumColumns</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getNumRows" id="getNumRows" class="mb2"><div class="method mb2"><h3 class="f3 title">getNumRows( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">getNumRows</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getResolution" id="getResolution" class="mb2"><div class="method mb2"><h3 class="f3 title">getResolution( <!----> )</h3><code><span class="token keyword">glm::vec2  </span><span class="token function">getResolution</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getWidth" id="getWidth" class="mb2"><div class="method mb2"><h3 class="f3 title">getWidth( <!----> )</h3><code><span class="token keyword">float  </span><span class="token function">getWidth</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofPlanePrimitive" id="ofPlanePrimitive" class="mb2"><div class="method mb2"><h3 class="f3 title">ofPlanePrimitive( <!----> )</h3><code><!----><span class="token function">ofPlanePrimitive</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofPlanePrimitive" id="ofPlanePrimitive" class="mb2"><div class="method mb2"><h3 class="f3 title">ofPlanePrimitive( <code class="pink">...</code> )</h3><code><!----><span class="token function">ofPlanePrimitive</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> width<span class="token punctuation">,</span> <span class="token keyword">float</span> height<span class="token punctuation">,</span> <span class="token keyword">int</span> columns<span class="token punctuation">,</span> <span class="token keyword">int</span> rows<span class="token punctuation">,</span> ofPrimitiveMode mode<span class="token operator">=</span>OF_PRIMITIVE_TRIANGLE_STRIP</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="resizeToTexture" id="resizeToTexture" class="mb2"><div class="method mb2"><h3 class="f3 title">resizeToTexture( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">resizeToTexture</span><span class="token punctuation">(</span><code class="token boolean">ofTexture <span class="token operator">&</span>inTexture<span class="token punctuation">,</span> <span class="token keyword">float</span> scale<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">.</span>f</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="set" id="set" class="mb2"><div class="method mb2"><h3 class="f3 title">set( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">set</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> width<span class="token punctuation">,</span> <span class="token keyword">float</span> height</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="set" id="set" class="mb2"><div class="method mb2"><h3 class="f3 title">set( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">set</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> width<span class="token punctuation">,</span> <span class="token keyword">float</span> height<span class="token punctuation">,</span> <span class="token keyword">int</span> columns<span class="token punctuation">,</span> <span class="token keyword">int</span> rows<span class="token punctuation">,</span> ofPrimitiveMode mode<span class="token operator">=</span>OF_PRIMITIVE_TRIANGLE_STRIP</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setColumns" id="setColumns" class="mb2"><div class="method mb2"><h3 class="f3 title">setColumns( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setColumns</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> columns</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setHeight" id="setHeight" class="mb2"><div class="method mb2"><h3 class="f3 title">setHeight( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setHeight</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> height</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setMode" id="setMode" class="mb2"><div class="method mb2"><h3 class="f3 title">setMode( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setMode</span><span class="token punctuation">(</span><code class="token boolean">ofPrimitiveMode mode</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setResolution" id="setResolution" class="mb2"><div class="method mb2"><h3 class="f3 title">setResolution( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setResolution</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> columns<span class="token punctuation">,</span> <span class="token keyword">int</span> rows</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setRows" id="setRows" class="mb2"><div class="method mb2"><h3 class="f3 title">setRows( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setRows</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> rows</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setWidth" id="setWidth" class="mb2"><div class="method mb2"><h3 class="f3 title">setWidth( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setWidth</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> width</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="~ofPlanePrimitive" id="~ofPlanePrimitive" class="mb2"><div class="method mb2"><h3 class="f3 title">~ofPlanePrimitive( <!----> )</h3><code><!----><span class="token function">~ofPlanePrimitive</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section></div></div></div></div><div id="side-menu"><div id="params"><h4 class="f3">Variables</h4><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">float </span><span>height</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofVec2f </span><span>resolution</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">float </span><span>width</span><span class="token comment"></span></div><div class="desc"></div></div></code></div><div id="methods-list"><h4 class="f3">Methods</h4><div class="anchor"><code><a href="#getHeight"><span>getHeight</span><!----></a></code></div><div class="anchor"><code><a href="#getNumColumns"><span>getNumColumns</span><!----></a></code></div><div class="anchor"><code><a href="#getNumRows"><span>getNumRows</span><!----></a></code></div><div class="anchor"><code><a href="#getResolution"><span>getResolution</span><!----></a></code></div><div class="anchor"><code><a href="#getWidth"><span>getWidth</span><!----></a></code></div><div class="anchor"><code><a href="#ofPlanePrimitive"><span>ofPlanePrimitive</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#resizeToTexture"><span>resizeToTexture</span><!----></a></code></div><div class="anchor"><code><a href="#set"><span>set</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#setColumns"><span>setColumns</span><!----></a></code></div><div class="anchor"><code><a href="#setHeight"><span>setHeight</span><!----></a></code></div><div class="anchor"><code><a href="#setMode"><span>setMode</span><!----></a></code></div><div class="anchor"><code><a href="#setResolution"><span>setResolution</span><!----></a></code></div><div class="anchor"><code><a href="#setRows"><span>setRows</span><!----></a></code></div><div class="anchor"><code><a href="#setWidth"><span>setWidth</span><!----></a></code></div><div class="anchor"><code><a href="#~ofPlanePrimitive"><span>~ofPlanePrimitive</span><!----></a></code></div></div><!----></div></div></div><textarea rows="0" class="markdown-editor" style="display:none">#class ofPlanePrimitive
+
+
+&lt;!--
+_visible: True_
+_advanced: False_
+_istemplated: False_
+_extends: of3dPrimitive_
+-->
+
+##InlineDescription
+
+The ofPlanePrimitive allows you to create an UV plane.
+Can be used for example as simple canvas for projecting simple texture .
+
+Like all primitives it allows you to set the size, in this case height
+and width, draw it, set positions, etc, as a simple example:
+
+~~~~{.cpp}
+
+ofPlanePrimitive plane;
+
+void setup()
+{
+let's say we have a window set to be at
+// resolution 640x480...
+
+    plane.set(640, 480);   dimensions for width and height in pixels
+plane.setPosition(320, 240, 0); position in x y z
+plane.setResolution(2, 2); this resolution (as columns and rows) is enough
+}
+
+void draw()
+{
+plane.drawWireframe();
+}
+~~~~
+As you can see, plane is constructed from two triangles.
+To draw a texture over any primitive, simply bind the ofTexture instance
+and then draw your primitive:
+
+~~~~{.cpp}
+
+texture.getTextureReference().bind();
+// now draw filled...
+plane.draw();
+
+~~~~
+
+The plane primitive also allows you to simply pass an ofTexture to the
+plane and generate the texture coordinates from that texture so that the
+ofTexture fills the plane when it's drawn. This saves you the hassle of
+creating all the texture coordinates for each vertex, which is nice.
+
+
+
+
+
+##Description
+
+The ofPlanePrimitive allows you to create an UV plane, which can be used for example as simple canvas for projecting simple texture .
+
+Like all primitives it allows you to set the size, in this case height and width, draw it, set positions, etc, as a simple example:
+
+~~~~{.cpp}
+
+ofPlanePrimitive plane;
+
+void setup()
+{
+/// let's say we have a window set to be at 
+// resolution 640x480...
+
+	plane.set(640, 480);   ///dimensions for width and height in pixels
+plane.setPosition(320, 240, 0); /// position in x y z
+plane.setResolution(2, 2); /// this resolution (as columns and rows) is enough
+}
+
+void draw()
+{
+plane.drawWireframe();
+}
+~~~~
+As you can see, plane is constructed from two triangles.
+To draw a texture over any primitive, simply bind the ofTexture instance and then draw your primitive:
+
+~~~~{.cpp}
+
+texture.getTextureReference().bind();
+// now draw filled...
+plane.draw();
+
+~~~~
+
+The plane primitive also allows you to simply pass an ofTexture to the plane and generate the texture coordinates from that texture so that the ofTexture fills the plane when it's drawn. This saves you the hassle of creating all the texture coordinates for each vertex, which is nice.
+
+
+
+
+
+##Methods
+
+
+
+###float getHeight()
+
+&lt;!--
+_syntax: getHeight()_
+_name: getHeight_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int getNumColumns()
+
+&lt;!--
+_syntax: getNumColumns()_
+_name: getNumColumns_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int getNumRows()
+
+&lt;!--
+_syntax: getNumRows()_
+_name: getNumRows_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###glm::vec2 getResolution()
+
+&lt;!--
+_syntax: getResolution()_
+_name: getResolution_
+_returns: glm::vec2_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float getWidth()
+
+&lt;!--
+_syntax: getWidth()_
+_name: getWidth_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofPlanePrimitive()
+
+&lt;!--
+_syntax: ofPlanePrimitive()_
+_name: ofPlanePrimitive_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofPlanePrimitive(width, height, columns, rows, mode = OF_PRIMITIVE_TRIANGLE_STRIP)
+
+&lt;!--
+_syntax: ofPlanePrimitive(width, height, columns, rows, mode = OF_PRIMITIVE_TRIANGLE_STRIP)_
+_name: ofPlanePrimitive_
+_returns: _
+_returns_description: _
+_parameters: float width, float height, int columns, int rows, ofPrimitiveMode mode=OF_PRIMITIVE_TRIANGLE_STRIP_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void resizeToTexture(&inTexture, scale = 1.f)
+
+&lt;!--
+_syntax: resizeToTexture(&inTexture, scale = 1.f)_
+_name: resizeToTexture_
+_returns: void_
+_returns_description: _
+_parameters: ofTexture &inTexture, float scale=1.f_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void set(width, height)
+
+&lt;!--
+_syntax: set(width, height)_
+_name: set_
+_returns: void_
+_returns_description: _
+_parameters: float width, float height_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void set(width, height, columns, rows, mode = OF_PRIMITIVE_TRIANGLE_STRIP)
+
+&lt;!--
+_syntax: set(width, height, columns, rows, mode = OF_PRIMITIVE_TRIANGLE_STRIP)_
+_name: set_
+_returns: void_
+_returns_description: _
+_parameters: float width, float height, int columns, int rows, ofPrimitiveMode mode=OF_PRIMITIVE_TRIANGLE_STRIP_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setColumns(columns)
+
+&lt;!--
+_syntax: setColumns(columns)_
+_name: setColumns_
+_returns: void_
+_returns_description: _
+_parameters: int columns_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setHeight(height)
+
+&lt;!--
+_syntax: setHeight(height)_
+_name: setHeight_
+_returns: void_
+_returns_description: _
+_parameters: float height_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setMode(mode)
+
+&lt;!--
+_syntax: setMode(mode)_
+_name: setMode_
+_returns: void_
+_returns_description: _
+_parameters: ofPrimitiveMode mode_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setResolution(columns, rows)
+
+&lt;!--
+_syntax: setResolution(columns, rows)_
+_name: setResolution_
+_returns: void_
+_returns_description: _
+_parameters: int columns, int rows_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setRows(rows)
+
+&lt;!--
+_syntax: setRows(rows)_
+_name: setRows_
+_returns: void_
+_returns_description: _
+_parameters: int rows_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setWidth(width)
+
+&lt;!--
+_syntax: setWidth(width)_
+_name: setWidth_
+_returns: void_
+_returns_description: _
+_parameters: float width_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ~ofPlanePrimitive()
+
+&lt;!--
+_syntax: ~ofPlanePrimitive()_
+_name: ~ofPlanePrimitive_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+##Variables
+
+
+
+###float height
+
+&lt;!--
+_name: height_
+_type: float_
+_access: protected_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofVec2f resolution
+
+&lt;!--
+_name: resolution_
+_type: ofVec2f_
+_access: protected_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float width
+
+&lt;!--
+_name: width_
+_type: float_
+_access: protected_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+</textarea></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1586012716389/documentation/3d/ofPlanePrimitive/payload.js"></script><script src="/_nuxt/5f71eaca0bd2f1a0f939.js" defer></script><script src="/_nuxt/35a90d914f539af1362f.js" defer></script><script src="/_nuxt/906a3ca0fb13ed3c6651.js" defer></script><script src="/_nuxt/b673915e8a08acf593e8.js" defer></script><script src="/_nuxt/bf355f21967a23c26c07.js" defer></script>
+  </body>
+</html>

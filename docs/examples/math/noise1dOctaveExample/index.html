@@ -1,0 +1,100 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>noise1dOctaveExample | examples | ofDocs</title><meta data-n-head="ssr" data-hid="description" name="description" content="openFrameworks documentation and examples browser"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="openFrameworks documentation and examples browser" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="noise1dOctaveExample | examples | ofDocs" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="/files/images/ofw-logo.png" vmid="og:image"><link rel="preload" href="/_nuxt/5f71eaca0bd2f1a0f939.js" as="script"><link rel="preload" href="/_nuxt/906a3ca0fb13ed3c6651.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/b673915e8a08acf593e8.js" as="script"><link rel="preload" href="/_nuxt/46e8fcacdadb233d9fb6.css" as="style"><link rel="preload" href="/_nuxt/bf355f21967a23c26c07.js" as="script"><link rel="preload" href="/_nuxt/35a90d914f539af1362f.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/46e8fcacdadb233d9fb6.css">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app"><div id="menu"><div class="menu-inner"><div id="settings"></div><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><svg version="1.1" viewbox="0 0 110 58" width="110px" height="58px" enable-background="0 0 110 58" xml:space="preserve" class="logo"><g><path d="M58,29 C58,13 45,0 29,0 C13,0 0,13 0,29 C0,45 13,58 29,58 C45,58 58,45 58,29 Z"></path><rect x="59" y="0" width="25" height="58"></rect><rect x="85" y="26" width="15" height="15"></rect><path d="M85,0 L110,0 L85,25 L85,0 Z"></path></g></svg><div class="txt"><span class="docs f7 questrial">Docs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343							c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88							c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593							c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789							C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><!----></div><div id="lists" class="menu-inner mt1 mb2"><div class="inner"></div></div></div><div class="menu-bottom"><div class="inner"><button class="button"><!----><span><span class="ico">nights_stay</span></span></button></div></div></div><div id="document"><div id="renderer" class="main folder"><div absolute="/Users/Gilbert/Code/openFrameworks/examples/math/noise1dOctaveExample" dir="../examples/math" route="/examples/math/noise1dOctaveExample/" ext="" type="folder" id="1529" children="1530,1531,1532" parent="1520" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/examples/" class="pink nuxt-link-active">examples </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/examples/math/" class="pink nuxt-link-active">math </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link selector"><span class="name">noise1dOctaveExample</span><span class="chevron bottom"></span><select><option value="/examples/math/noise1dExample/">noise1dExample</option><option value="/examples/math/noise1dOctaveExample/">noise1dOctaveExample</option><option value="/examples/math/noiseField2dExample/">noiseField2dExample</option><option value="/examples/math/particlesExample/">particlesExample</option><option value="/examples/math/periodicSignalsExample/">periodicSignalsExample</option><option value="/examples/math/trigonometricMotionExample/">trigonometricMotionExample</option><option value="/examples/math/trigonometryExample/">trigonometryExample</option><option value="/examples/math/vectorMathExample/">vectorMathExample</option></select></span><!----></span></span></div></div></div><div class="editable-wrapper"><div class="header inner"><h1 class="page-title questrial"><span class="f7"><!----><span>noise1dOctaveExample</span></span><span class="f3"></span></h1><div class="actions"><a href="/ofdocs/contribute/" class="button"><i class="ico">edit</i><span>Edit</span></a></div></div><div class="rendered"><div raw="#level2_noise1dOctaveExample
+--
+![Screenshot of Example](noise1dOctaveExample.png)
+
+### Learning Objectives
+
+This openFrameworks Example is designed to demonstrate how more &#34;organic&#34; noise signals can be generated by summing multiple [&#34;octaves&#34;](http://freespace.virgin.net/hugo.elias/models/m_perlin.htm) of noise. 
+
+In this example, pay attention to the following code: 
+
+*   ```ofNoise()``` creates a signal that varies smoothly between 0 and 1. More 'organic' noise can be made by adding multiple 'octaves' of noise. Each noise function that is added to the final strip is an 'octave'.
+*    ```struct NoiseDataStrip {}```, struct is a data structure that can have a number of data elements grouped together. In this app, &#34;NoiseDataStrip&#34; (in ofApp.h) is a simple struct  to store the data contained by one of these noise recordings. Each struct contains the bounding coordinates (x,y,w,h), and some other parameters, plus the float array (data) containing the noise recordings.
+*  ```void setupMultibandNoiseDemo()``` used to setup and allocate resources used in the multi-noise strip demo
+*  ```void updateMultibandNoiseDemo()``` this is where the data for each strip is updated, ofNoise() is called, normalization factor is computed, and each strip is summed and normalized 
+* ```void render1DNoiseStrip (...)``` renders  each individual strip
+* ```void renderMultibandNoiseDemo()``` is where ```void render1DNoiseStrip (...)``` is called for each strip, rendering each strip simultaneously 
+
+### Expected Behavior
+
+When launching this app, you should see:
+
+* 8 graphs or 'strips' of the noise function will appear each with different noise step value and a weight value that can be controlled with the slider
+* the bottom graph is the sum of each strip, weighted by the values controlled by the slider
+
+Instructions for use:
+
+* Move the slider to the right of each strip to control the weighted value which affects the bottom summed graph. Each graph that is added is considered an 'octave' 
+
+### Other classes used in this file
+
+This Example uses &#34;ofxSimpleSlider&#34; to add sliders to the final outpout. 
+
+
+" type="folder" static="true" class="list-page"><div id="list-body" class="inner"><div class="markdown pt2"><div class="html"><h2>#level2_noise1dOctaveExample</h2>
+<p><img src="noise1dOctaveExample.png" alt="Screenshot of Example"></p>
+<h3>Learning Objectives</h3>
+<p>This openFrameworks Example is designed to demonstrate how more "organic" noise signals can be generated by summing multiple <a href="http://freespace.virgin.net/hugo.elias/models/m_perlin.htm">"octaves"</a> of noise.</p>
+<p>In this example, pay attention to the following code:</p>
+<ul>
+<li><code>ofNoise()</code> creates a signal that varies smoothly between 0 and 1. More 'organic' noise can be made by adding multiple 'octaves' of noise. Each noise function that is added to the final strip is an 'octave'.</li>
+<li><code>struct NoiseDataStrip {}</code>, struct is a data structure that can have a number of data elements grouped together. In this app, "NoiseDataStrip" (in ofApp.h) is a simple struct  to store the data contained by one of these noise recordings. Each struct contains the bounding coordinates (x,y,w,h), and some other parameters, plus the float array (data) containing the noise recordings.</li>
+<li><code>void setupMultibandNoiseDemo()</code> used to setup and allocate resources used in the multi-noise strip demo</li>
+<li><code>void updateMultibandNoiseDemo()</code> this is where the data for each strip is updated, ofNoise() is called, normalization factor is computed, and each strip is summed and normalized</li>
+<li><code>void render1DNoiseStrip (...)</code> renders  each individual strip</li>
+<li><code>void renderMultibandNoiseDemo()</code> is where <code>void render1DNoiseStrip (...)</code> is called for each strip, rendering each strip simultaneously</li>
+</ul>
+<h3>Expected Behavior</h3>
+<p>When launching this app, you should see:</p>
+<ul>
+<li>8 graphs or 'strips' of the noise function will appear each with different noise step value and a weight value that can be controlled with the slider</li>
+<li>the bottom graph is the sum of each strip, weighted by the values controlled by the slider</li>
+</ul>
+<p>Instructions for use:</p>
+<ul>
+<li>Move the slider to the right of each strip to control the weighted value which affects the bottom summed graph. Each graph that is added is considered an 'octave'</li>
+</ul>
+<h3>Other classes used in this file</h3>
+<p>This Example uses "ofxSimpleSlider" to add sliders to the final outpout.</p>
+</div></div><div class="direct"><div class="markdown pb1"><hr></div><div class="nrow"><div class="ncol-left"><a href="/examples/math/noise1dOctaveExample/src/" class="pink ptb1">src</a></div><div class="ncol-columns mb1"><div class="flow"><a href="/examples/math/noise1dOctaveExample/src/main_cpp">main.cpp</a><a href="/examples/math/noise1dOctaveExample/src/ofApp_cpp">ofApp.cpp</a><a href="/examples/math/noise1dOctaveExample/src/ofApp_h">ofApp.h</a><a href="/examples/math/noise1dOctaveExample/src/ofxSimpleSlider_cpp">ofxSimpleSlider.cpp</a><a href="/examples/math/noise1dOctaveExample/src/ofxSimpleSlider_h">ofxSimpleSlider.h</a><!----></div></div></div></div></div></div></div><textarea rows="0" class="markdown-editor" style="display:none">#level2_noise1dOctaveExample
+--
+![Screenshot of Example](noise1dOctaveExample.png)
+
+### Learning Objectives
+
+This openFrameworks Example is designed to demonstrate how more "organic" noise signals can be generated by summing multiple ["octaves"](http://freespace.virgin.net/hugo.elias/models/m_perlin.htm) of noise. 
+
+In this example, pay attention to the following code: 
+
+*   ```ofNoise()``` creates a signal that varies smoothly between 0 and 1. More 'organic' noise can be made by adding multiple 'octaves' of noise. Each noise function that is added to the final strip is an 'octave'.
+*    ```struct NoiseDataStrip {}```, struct is a data structure that can have a number of data elements grouped together. In this app, "NoiseDataStrip" (in ofApp.h) is a simple struct  to store the data contained by one of these noise recordings. Each struct contains the bounding coordinates (x,y,w,h), and some other parameters, plus the float array (data) containing the noise recordings.
+*  ```void setupMultibandNoiseDemo()``` used to setup and allocate resources used in the multi-noise strip demo
+*  ```void updateMultibandNoiseDemo()``` this is where the data for each strip is updated, ofNoise() is called, normalization factor is computed, and each strip is summed and normalized 
+* ```void render1DNoiseStrip (...)``` renders  each individual strip
+* ```void renderMultibandNoiseDemo()``` is where ```void render1DNoiseStrip (...)``` is called for each strip, rendering each strip simultaneously 
+
+### Expected Behavior
+
+When launching this app, you should see:
+
+* 8 graphs or 'strips' of the noise function will appear each with different noise step value and a weight value that can be controlled with the slider
+* the bottom graph is the sum of each strip, weighted by the values controlled by the slider
+
+Instructions for use:
+
+* Move the slider to the right of each strip to control the weighted value which affects the bottom summed graph. Each graph that is added is considered an 'octave' 
+
+### Other classes used in this file
+
+This Example uses "ofxSimpleSlider" to add sliders to the final outpout. 
+
+
+</textarea></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1586012716389/examples/math/noise1dOctaveExample/payload.js"></script><script src="/_nuxt/5f71eaca0bd2f1a0f939.js" defer></script><script src="/_nuxt/35a90d914f539af1362f.js" defer></script><script src="/_nuxt/906a3ca0fb13ed3c6651.js" defer></script><script src="/_nuxt/b673915e8a08acf593e8.js" defer></script><script src="/_nuxt/bf355f21967a23c26c07.js" defer></script>
+  </body>
+</html>

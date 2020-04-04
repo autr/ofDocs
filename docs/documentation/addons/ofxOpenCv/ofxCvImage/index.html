@@ -1,0 +1,3575 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>ofxCvImage | documentation | ofDocs</title><meta data-n-head="ssr" data-hid="description" name="description" content="openFrameworks documentation and examples browser"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="openFrameworks documentation and examples browser" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="ofxCvImage | documentation | ofDocs" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="/files/images/ofw-logo.png" vmid="og:image"><link rel="preload" href="/_nuxt/5f71eaca0bd2f1a0f939.js" as="script"><link rel="preload" href="/_nuxt/906a3ca0fb13ed3c6651.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/b673915e8a08acf593e8.js" as="script"><link rel="preload" href="/_nuxt/46e8fcacdadb233d9fb6.css" as="style"><link rel="preload" href="/_nuxt/bf355f21967a23c26c07.js" as="script"><link rel="preload" href="/_nuxt/35a90d914f539af1362f.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/46e8fcacdadb233d9fb6.css">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app"><div id="menu"><div class="menu-inner"><div id="settings"></div><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><svg version="1.1" viewbox="0 0 110 58" width="110px" height="58px" enable-background="0 0 110 58" xml:space="preserve" class="logo"><g><path d="M58,29 C58,13 45,0 29,0 C13,0 0,13 0,29 C0,45 13,58 29,58 C45,58 58,45 58,29 Z"></path><rect x="59" y="0" width="25" height="58"></rect><rect x="85" y="26" width="15" height="15"></rect><path d="M85,0 L110,0 L85,25 L85,0 Z"></path></g></svg><div class="txt"><span class="docs f7 questrial">Docs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343							c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88							c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593							c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789							C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><!----></div><div id="lists" class="menu-inner mt1 mb2"><div class="inner"></div></div></div><div class="menu-bottom"><div class="inner"><button class="button"><!----><span><span class="ico">nights_stay</span></span></button></div></div></div><div id="document"><div id="renderer" class="main page"><div absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/addons/ofxOpenCv/ofxCvImage.markdown" route="/documentation/addons/ofxOpenCv/ofxCvImage.markdown" dir="../ofSite/documentation/addons/ofxOpenCv" ext="markdown" type="page" id="2105" parent="2084" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/" class="pink nuxt-link-active">documentation </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/addons/" class="pink nuxt-link-active">addons </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/addons/ofxOpenCv/" class="pink nuxt-link-active">ofxOpenCv </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link selector"><span class="name">ofxCvImage</span><span class="chevron bottom"></span><select><option value="/documentation/addons/ofxOpenCv/ofxCvBlob">ofxCvBlob</option><option value="/documentation/addons/ofxOpenCv/ofxCvColorImage">ofxCvColorImage</option><option value="/documentation/addons/ofxOpenCv/ofxCvContourFinder">ofxCvContourFinder</option><option value="/documentation/addons/ofxOpenCv/ofxCvFloatImage">ofxCvFloatImage</option><option value="/documentation/addons/ofxOpenCv/ofxCvGrayscaleImage">ofxCvGrayscaleImage</option><option value="/documentation/addons/ofxOpenCv/ofxCvHaarFinder">ofxCvHaarFinder</option><option value="/documentation/addons/ofxOpenCv/ofxCvImage">ofxCvImage</option><option value="/documentation/addons/ofxOpenCv/ofxCvShortImage">ofxCvShortImage</option></select></span><!----></span></span></div></div></div><div class="editable-wrapper"><div class="header inner"><h1 class="page-title questrial"><span class="f7"><!----><span>ofxCvImage</span></span><span class="f3"></span></h1><div class="actions"><a href="/ofdocs/contribute/" class="button"><i class="ico">edit</i><span>Edit</span></a></div></div><div class="rendered"><div id="documentation-page" static="true"><div id="offset-page"><div id="doc-body" class="markdown"><div class="inner"><div id="description"><div class="full-description"><div class="html"><p>This is the base class for all the ofxOpenCV image types: ofxCvShortImage, ofxCvColorImage, ofxCvFloatImage, ofxCvGrayscaleImage. It's made to provide interoperability between the core OF imaging types, ofImage and ofTexture, and OpenCv.</p>
+<h1></h1>
+</div></div></div><div id="methods"><hr><section name="allocate" id="allocate" class="mb2"><div class="method mb2"><h3 class="f3 title">allocate( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">allocate</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> w<span class="token punctuation">,</span> <span class="token keyword">int</span> h</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Allocates the image with the w, h passed in. This must be done before the pixels of the image are created.</p>
+</div></div><hr></section><section name="allocatePixels" id="allocatePixels" class="mb2"><div class="method mb2"><h3 class="f3 title">allocatePixels( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">allocatePixels</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> w<span class="token punctuation">,</span> <span class="token keyword">int</span> h</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="allocateTexture" id="allocateTexture" class="mb2"><div class="method mb2"><h3 class="f3 title">allocateTexture( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">allocateTexture</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="blur" id="blur" class="mb2"><div class="method mb2"><h3 class="f3 title">blur( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">blur</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> value<span class="token operator">=</span><span class="token number">3</span></code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Blurs the image</p>
+<p>![Blurring] (../blur.png "Blurring an image original on Left")</p>
+</div></div><hr></section><section name="blurGaussian" id="blurGaussian" class="mb2"><div class="method mb2"><h3 class="f3 title">blurGaussian( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">blurGaussian</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> value<span class="token operator">=</span><span class="token number">3</span></code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Blurs the using Gaussian blurring. Gaussian blurring is typically to reduce image noise and reduce detail.</p>
+</div></div><hr></section><section name="clear" id="clear" class="mb2"><div class="method mb2"><h3 class="f3 title">clear( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">clear</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Clears the pixel data of the image. The image must be allocated again with a call to allocate() before it can be used.</p>
+</div></div><hr></section><section name="contrastStretch" id="contrastStretch" class="mb2"><div class="method mb2"><h3 class="f3 title">contrastStretch( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">contrastStretch</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>This increases the contrast of the image remapping the brightest points in the image to 255 and the darkest points in the image to 0.</p>
+</div></div><hr></section><section name="convertToRange" id="convertToRange" class="mb2"><div class="method mb2"><h3 class="f3 title">convertToRange( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">convertToRange</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> min<span class="token punctuation">,</span> <span class="token keyword">float</span> max</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Maps the pixels of an image to the min and max range passed in.</p>
+<pre><code class="language-{.cpp}">
+colors<span class="token punctuation">.</span><span class="token function">setFromPixels</span><span class="token punctuation">(</span>grabber<span class="token punctuation">.</span><span class="token function">getPixels</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+first <span class="token operator">=</span> colors<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// will leave unaltered</span>
+second <span class="token operator">=</span> colors<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// change it</span>
+second<span class="token punctuation">.</span><span class="token function">convertToRange</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">140</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// super low contrast</span>
+
+</code></pre>
+<p><img src="../convertToRangeColor.png" alt="Image convert to range" title="Converting the range of an image"></p>
+</div></div><hr></section><section name="countNonZeroInRegion" id="countNonZeroInRegion" class="mb2"><div class="method mb2"><h3 class="f3 title">countNonZeroInRegion( <code class="pink">...</code> )</h3><code><span class="token keyword">int  </span><span class="token function">countNonZeroInRegion</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">,</span> <span class="token keyword">int</span> w<span class="token punctuation">,</span> <span class="token keyword">int</span> h</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Returns the number of non-zero pixels in an image.</p>
+</div></div><hr></section><section name="dilate" id="dilate" class="mb2"><div class="method mb2"><h3 class="f3 title">dilate( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">dilate</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>![Dilating] (../dilate.png "Dilating an image, original on Left")</p>
+</div></div><hr></section><section name="draw" id="draw" class="mb2"><div class="method mb2"><h3 class="f3 title">draw( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">draw</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> x<span class="token punctuation">,</span> <span class="token keyword">float</span> y</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Draw the image at the x,y.</p>
+</div></div><hr></section><section name="draw" id="draw" class="mb2"><div class="method mb2"><h3 class="f3 title">draw( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">draw</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> x<span class="token punctuation">,</span> <span class="token keyword">float</span> y<span class="token punctuation">,</span> <span class="token keyword">float</span> w<span class="token punctuation">,</span> <span class="token keyword">float</span> h</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Draw the image at the x,y with the w,h.</p>
+</div></div><hr></section><section name="draw" id="draw" class="mb2"><div class="method mb2"><h3 class="f3 title">draw( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">draw</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofPoint <span class="token operator">&</span>point</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Draw the image at the ofPoint passed in.</p>
+</div></div><hr></section><section name="draw" id="draw" class="mb2"><div class="method mb2"><h3 class="f3 title">draw( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">draw</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofRectangle <span class="token operator">&</span>rect</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Draw the image into the ofRectangle passed in.</p>
+</div></div><hr></section><section name="drawBlobIntoMe" id="drawBlobIntoMe" class="mb2"><div class="method mb2"><h3 class="f3 title">drawBlobIntoMe( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">drawBlobIntoMe</span><span class="token punctuation">(</span><code class="token boolean">ofxCvBlob <span class="token operator">&</span>blob<span class="token punctuation">,</span> <span class="token keyword">int</span> color</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Draw the outline of an ofxCvblob into the ofxCvImage.</p>
+</div></div><hr></section><section name="drawROI" id="drawROI" class="mb2"><div class="method mb2"><h3 class="f3 title">drawROI( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">drawROI</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> x<span class="token punctuation">,</span> <span class="token keyword">float</span> y</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Draw just the Region of Interest of the image at the x,y.</p>
+</div></div><hr></section><section name="drawROI" id="drawROI" class="mb2"><div class="method mb2"><h3 class="f3 title">drawROI( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">drawROI</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> x<span class="token punctuation">,</span> <span class="token keyword">float</span> y<span class="token punctuation">,</span> <span class="token keyword">float</span> w<span class="token punctuation">,</span> <span class="token keyword">float</span> h</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Draw just the Region of Interest of the image into the x,y with the w,h passed in.</p>
+</div></div><hr></section><section name="erode" id="erode" class="mb2"><div class="method mb2"><h3 class="f3 title">erode( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">erode</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Erodes the image.</p>
+<p>![Eroding] (../erode.png "Eroding an image, original on Left")</p>
+</div></div><hr></section><section name="flagImageChanged" id="flagImageChanged" class="mb2"><div class="method mb2"><h3 class="f3 title">flagImageChanged( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">flagImageChanged</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Marks the image as changed so that the ofTexture can be updated, if the image contains one.</p>
+</div></div><hr></section><section name="getCv8BitsImage" id="getCv8BitsImage" class="mb2"><div class="method mb2"><h3 class="f3 title">getCv8BitsImage( <!----> )</h3><code><span class="token keyword">int *  </span><span class="token function">getCv8BitsImage</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getCv8BitsRoiImage" id="getCv8BitsRoiImage" class="mb2"><div class="method mb2"><h3 class="f3 title">getCv8BitsRoiImage( <!----> )</h3><code><span class="token keyword">int *  </span><span class="token function">getCv8BitsRoiImage</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getCvImage" id="getCvImage" class="mb2"><div class="method mb2"><h3 class="f3 title">getCvImage( <!----> )</h3><code><span class="token keyword">int *  </span><span class="token function">getCvImage</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Returns a raw pointer to the OpenCV IplImage.</p>
+</div></div><hr></section><section name="getCvImage" id="getCvImage" class="mb2"><div class="method mb2"><h3 class="f3 title">getCvImage( <!----> )</h3><code><span class="token keyword">const int *  </span><span class="token function">getCvImage</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getHeight" id="getHeight" class="mb2"><div class="method mb2"><h3 class="f3 title">getHeight( <!----> )</h3><code><span class="token keyword">float  </span><span class="token function">getHeight</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Returns the height of the image in pixels.</p>
+</div></div><hr></section><section name="getIntersectionROI" id="getIntersectionROI" class="mb2"><div class="method mb2"><h3 class="f3 title">getIntersectionROI( <code class="pink">...</code> )</h3><code><span class="token keyword">ofRectangle  </span><span class="token function">getIntersectionROI</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofRectangle <span class="token operator">&</span>rec1<span class="token punctuation">,</span> <span class="token keyword">const</span> ofRectangle <span class="token operator">&</span>rec2</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getPixels" id="getPixels" class="mb2"><div class="method mb2"><h3 class="f3 title">getPixels( <!----> )</h3><code><span class="token keyword">ofPixels &  </span><span class="token function">getPixels</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Returns a raw pointer to the pixel data within the image.</p>
+</div></div><hr></section><section name="getPixels" id="getPixels" class="mb2"><div class="method mb2"><h3 class="f3 title">getPixels( <!----> )</h3><code><span class="token keyword">const ofPixels &  </span><span class="token function">getPixels</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getROI" id="getROI" class="mb2"><div class="method mb2"><h3 class="f3 title">getROI( <!----> )</h3><code><span class="token keyword">ofRectangle  </span><span class="token function">getROI</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Returns the region of interest in an ofxCvImage.</p>
+</div></div><hr></section><section name="getRoiPixels" id="getRoiPixels" class="mb2"><div class="method mb2"><h3 class="f3 title">getRoiPixels( <!----> )</h3><code><span class="token keyword">ofPixels &  </span><span class="token function">getRoiPixels</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Returns a raw pointer to the pixel data within the Region of Interest in the ofxCvImage.</p>
+</div></div><hr></section><section name="getRoiPixels" id="getRoiPixels" class="mb2"><div class="method mb2"><h3 class="f3 title">getRoiPixels( <!----> )</h3><code><span class="token keyword">const ofPixels &  </span><span class="token function">getRoiPixels</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getTexture" id="getTexture" class="mb2"><div class="method mb2"><h3 class="f3 title">getTexture( <!----> )</h3><code><span class="token keyword">ofTexture &  </span><span class="token function">getTexture</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getTexture" id="getTexture" class="mb2"><div class="method mb2"><h3 class="f3 title">getTexture( <!----> )</h3><code><span class="token keyword">const ofTexture &  </span><span class="token function">getTexture</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getWidth" id="getWidth" class="mb2"><div class="method mb2"><h3 class="f3 title">getWidth( <!----> )</h3><code><span class="token keyword">float  </span><span class="token function">getWidth</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Returns the width of the image in pixels.</p>
+</div></div><hr></section><section name="invert" id="invert" class="mb2"><div class="method mb2"><h3 class="f3 title">invert( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">invert</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Flip the pixel values of the image.</p>
+<p>![Inverting an image] (../invert.png "Original on Left")</p>
+</div></div><hr></section><section name="isUsingTexture" id="isUsingTexture" class="mb2"><div class="method mb2"><h3 class="f3 title">isUsingTexture( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">isUsingTexture</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="matchingROI" id="matchingROI" class="mb2"><div class="method mb2"><h3 class="f3 title">matchingROI( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">matchingROI</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofRectangle <span class="token operator">&</span>rec1<span class="token punctuation">,</span> <span class="token keyword">const</span> ofRectangle <span class="token operator">&</span>rec2</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Returns whether the Region of Interests match position and dimension or not.</p>
+</div></div><hr></section><section name="mirror" id="mirror" class="mb2"><div class="method mb2"><h3 class="f3 title">mirror( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">mirror</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">bool</span> bFlipVertically<span class="token punctuation">,</span> <span class="token keyword">bool</span> bFlipHorizontally</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Flips the image horizontally and/or vertically.</p>
+</div></div><hr></section><section name="ofxCvImage" id="ofxCvImage" class="mb2"><div class="method mb2"><h3 class="f3 title">ofxCvImage( <!----> )</h3><code><!----><span class="token function">ofxCvImage</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Constructor.</p>
+</div></div><hr></section><section name="operator&=" id="operator&=" class="mb2"><div class="method mb2"><h3 class="f3 title">operator&=( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">operator&=</span><span class="token punctuation">(</span><code class="token boolean">ofxCvImage <span class="token operator">&</span>mom</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Binary & (Logical AND http://en.wikipedia.org/wiki/Bitwise_operation) the pixel data of the right hand side image from the current image:</p>
+<pre><code class="language-{.cpp}">cvPuppy<span class="token punctuation">.</span><span class="token function">allocate</span><span class="token punctuation">(</span> <span class="token number">320</span><span class="token punctuation">,</span> <span class="token number">240</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+cvPuppy <span class="token operator">=</span> puppyImg<span class="token punctuation">.</span><span class="token function">getPixels</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// copy pixels from a loaded image</span>
+
+andPuppy<span class="token punctuation">.</span><span class="token function">allocate</span><span class="token punctuation">(</span> <span class="token number">320</span><span class="token punctuation">,</span> <span class="token number">240</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+andPuppy<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// make the AND image red</span>
+andPuppy <span class="token operator">&</span><span class="token operator">=</span> cvPuppy<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// will & all the bits</span>
+</code></pre>
+<p><img src="../ANDoperation.png" alt="puppy AND"></p>
+</div></div><hr></section><section name="operator*=" id="operator*=" class="mb2"><div class="method mb2"><h3 class="f3 title">operator*=( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">operator*=</span><span class="token punctuation">(</span><code class="token boolean">ofxCvImage <span class="token operator">&</span>mom</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Multiplies the pixel data of the right hand side image from the current image:</p>
+<pre><code class="language-{.cpp}">first <span class="token operator">*</span><span class="token operator">=</span> second<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// both are ofxCvImage instances</span>
+</code></pre>
+</div></div><hr></section><section name="operator+=" id="operator+=" class="mb2"><div class="method mb2"><h3 class="f3 title">operator+=( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">operator+=</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> value</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Adds the pixel data of the right hand side image from the current image:</p>
+<pre><code class="language-{.cpp}">first <span class="token operator">+</span><span class="token operator">=</span> second<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// both are ofxCvImage instances</span>
+</code></pre>
+</div></div><hr></section><section name="operator+=" id="operator+=" class="mb2"><div class="method mb2"><h3 class="f3 title">operator+=( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">operator+=</span><span class="token punctuation">(</span><code class="token boolean">ofxCvImage <span class="token operator">&</span>mom</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Adds the pixel data of the right hand side image from the current image:</p>
+<pre><code class="language-{.cpp}">first <span class="token operator">+</span><span class="token operator">=</span> second<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// both are ofxCvImage instances</span>
+</code></pre>
+</div></div><hr></section><section name="operator-=" id="operator-=" class="mb2"><div class="method mb2"><h3 class="f3 title">operator-=( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">operator-=</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> value</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Subtracts the pixel data of the right hand side image from the current image:</p>
+<pre><code class="language-{.cpp}">first <span class="token operator">-</span><span class="token operator">=</span> second<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// both are ofxCvImage instances</span>
+</code></pre>
+</div></div><hr></section><section name="operator-=" id="operator-=" class="mb2"><div class="method mb2"><h3 class="f3 title">operator-=( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">operator-=</span><span class="token punctuation">(</span><code class="token boolean">ofxCvImage <span class="token operator">&</span>mom</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Subtracts the pixel data of the right hand side image from the current image:</p>
+<pre><code class="language-{.cpp}">first <span class="token operator">-</span><span class="token operator">=</span> second<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// both are ofxCvImage instances</span>
+</code></pre>
+</div></div><hr></section><section name="operator=" id="operator=" class="mb2"><div class="method mb2"><h3 class="f3 title">operator=( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">operator=</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofxCvGrayscaleImage <span class="token operator">&</span>mom</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Copy a ofxCvGrayscaleImage into the current ofxCvImage.</p>
+</div></div><hr></section><section name="operator=" id="operator=" class="mb2"><div class="method mb2"><h3 class="f3 title">operator=( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">operator=</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofxCvColorImage <span class="token operator">&</span>mom</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Copy the image data of an ofxCvColorImage into the ofxCvImage instance.</p>
+</div></div><hr></section><section name="operator=" id="operator=" class="mb2"><div class="method mb2"><h3 class="f3 title">operator=( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">operator=</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofxCvFloatImage <span class="token operator">&</span>mom</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Copy the image data ofxCvFloatImage into the ofxCvImage instance.</p>
+</div></div><hr></section><section name="operator=" id="operator=" class="mb2"><div class="method mb2"><h3 class="f3 title">operator=( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">operator=</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofxCvShortImage <span class="token operator">&</span>mom</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Copy the image data of a ofxCvShortImage into the ofxCvImage instance.</p>
+</div></div><hr></section><section name="operator=" id="operator=" class="mb2"><div class="method mb2"><h3 class="f3 title">operator=( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">operator=</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> <span class="token keyword">int</span> <span class="token operator">*</span>mom</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="rangeMap" id="rangeMap" class="mb2"><div class="method mb2"><h3 class="f3 title">rangeMap( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">rangeMap</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> <span class="token operator">*</span>img<span class="token punctuation">,</span> <span class="token keyword">float</span> min1<span class="token punctuation">,</span> <span class="token keyword">float</span> max1<span class="token punctuation">,</span> <span class="token keyword">float</span> min2<span class="token punctuation">,</span> <span class="token keyword">float</span> max2</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="rangeMap" id="rangeMap" class="mb2"><div class="method mb2"><h3 class="f3 title">rangeMap( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">rangeMap</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> <span class="token operator">*</span>mom<span class="token punctuation">,</span> <span class="token keyword">int</span> <span class="token operator">*</span>kid<span class="token punctuation">,</span> <span class="token keyword">float</span> min1<span class="token punctuation">,</span> <span class="token keyword">float</span> max1<span class="token punctuation">,</span> <span class="token keyword">float</span> min2<span class="token punctuation">,</span> <span class="token keyword">float</span> max2</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="remap" id="remap" class="mb2"><div class="method mb2"><h3 class="f3 title">remap( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">remap</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> <span class="token operator">*</span>mapX<span class="token punctuation">,</span> <span class="token keyword">int</span> <span class="token operator">*</span>mapY</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>This uses a generic geometrical transformation to remap one image to another. This is particularly useful when doing camera calibration.</p>
+</div></div><hr></section><section name="resetAnchor" id="resetAnchor" class="mb2"><div class="method mb2"><h3 class="f3 title">resetAnchor( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">resetAnchor</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Reset the anchor point of the image, i.e. the center point for rotations,</p>
+</div></div><hr></section><section name="resetImageROI" id="resetImageROI" class="mb2"><div class="method mb2"><h3 class="f3 title">resetImageROI( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">resetImageROI</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> <span class="token operator">*</span>img</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="resetROI" id="resetROI" class="mb2"><div class="method mb2"><h3 class="f3 title">resetROI( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">resetROI</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Removes the region of interest from an ofxCvImage.</p>
+</div></div><hr></section><section name="resize" id="resize" class="mb2"><div class="method mb2"><h3 class="f3 title">resize( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">resize</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> w<span class="token punctuation">,</span> <span class="token keyword">int</span> h</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Resizes the image to the w.h passed in.</p>
+</div></div><hr></section><section name="rotate" id="rotate" class="mb2"><div class="method mb2"><h3 class="f3 title">rotate( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">rotate</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> angle<span class="token punctuation">,</span> <span class="token keyword">float</span> centerX<span class="token punctuation">,</span> <span class="token keyword">float</span> centerY</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Rotates the image. This is different than the OpenGL rotate as it actually sets the pixel data, rather than just the posotion of the drawing.</p>
+</div></div><hr></section><section name="scale" id="scale" class="mb2"><div class="method mb2"><h3 class="f3 title">scale( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">scale</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> scaleX<span class="token punctuation">,</span> <span class="token keyword">float</span> sclaeY</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Scales the image to the scaleX, scaleY passed in. This is different than the OpenGL rotate as it actually sets the pixel data, rather than just the posotion of the drawing.</p>
+</div></div><hr></section><section name="scaleIntoMe" id="scaleIntoMe" class="mb2"><div class="method mb2"><h3 class="f3 title">scaleIntoMe( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">scaleIntoMe</span><span class="token punctuation">(</span><code class="token boolean">ofxCvImage <span class="token operator">&</span>mom<span class="token punctuation">,</span> <span class="token keyword">int</span> interpolationMethod</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Scales the image passed in to be the size of the current image,</p>
+<pre><code class="language-{.cpp}">
+ofxCvImage first<span class="token punctuation">;</span>
+first<span class="token punctuation">.</span><span class="token function">allocate</span><span class="token punctuation">(</span><span class="token number">640</span><span class="token punctuation">,</span> <span class="token number">480</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ofxCvImage second<span class="token punctuation">;</span>
+second<span class="token punctuation">.</span><span class="token function">allocate</span><span class="token punctuation">(</span><span class="token number">320</span><span class="token punctuation">,</span> <span class="token number">240</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+second<span class="token punctuation">.</span><span class="token function">scaleIntoMe</span><span class="token punctuation">(</span>first<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// first is now 320,240</span>
+
+</code></pre>
+</div></div><hr></section><section name="set" id="set" class="mb2"><div class="method mb2"><h3 class="f3 title">set( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">set</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> value</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Set all the pixels in the image to the float value passed in. This is useful for blanking or filling an image quickly. the values are 1.0 to 255.0.</p>
+</div></div><hr></section><section name="setAnchorPercent" id="setAnchorPercent" class="mb2"><div class="method mb2"><h3 class="f3 title">setAnchorPercent( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setAnchorPercent</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> xPct<span class="token punctuation">,</span> <span class="token keyword">float</span> yPct</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Set the anchor point of the image, i.e. the center point for rotations, at the percentage positions passed in.</p>
+</div></div><hr></section><section name="setAnchorPoint" id="setAnchorPoint" class="mb2"><div class="method mb2"><h3 class="f3 title">setAnchorPoint( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setAnchorPoint</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> x<span class="token punctuation">,</span> <span class="token keyword">float</span> y</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Set the anchor point of the image, i.e. the center point for rotations, at the x,y passed in.</p>
+</div></div><hr></section><section name="setFromPixels" id="setFromPixels" class="mb2"><div class="method mb2"><h3 class="f3 title">setFromPixels( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setFromPixels</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> <span class="token keyword">unsigned</span> <span class="token keyword">char</span> <span class="token operator">*</span>_pixels<span class="token punctuation">,</span> <span class="token keyword">int</span> w<span class="token punctuation">,</span> <span class="token keyword">int</span> h</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Set all the pixels in a ofxCvImage from a pointer to an array of unsigned char values, using the w and h parameters to determine the dimensions of the image.</p>
+</div></div><hr></section><section name="setFromPixels" id="setFromPixels" class="mb2"><div class="method mb2"><h3 class="f3 title">setFromPixels( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setFromPixels</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofPixels <span class="token operator">&</span>pixels</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Set all the pixels in a ofxCvImage from an ofPixels reference.</p>
+</div></div><hr></section><section name="setImageROI" id="setImageROI" class="mb2"><div class="method mb2"><h3 class="f3 title">setImageROI( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setImageROI</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> <span class="token operator">*</span>img<span class="token punctuation">,</span> <span class="token keyword">const</span> ofRectangle <span class="token operator">&</span>rect</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setROI" id="setROI" class="mb2"><div class="method mb2"><h3 class="f3 title">setROI( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setROI</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">,</span> <span class="token keyword">int</span> w<span class="token punctuation">,</span> <span class="token keyword">int</span> h</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Sets the region of interest on the image.  Region of Interest is a rectangular area in an image, to segment object for further processing. Once the ROI is defined, OpenCV functions will operate on the ROI, reducing the number of pixels that the operation will examine.</p>
+</div></div><hr></section><section name="setROI" id="setROI" class="mb2"><div class="method mb2"><h3 class="f3 title">setROI( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setROI</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofRectangle <span class="token operator">&</span>rect</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Sets the region of interest on the image.  Region of Interest is a rectangular area in an image, to segment object for further processing. Once the ROI is defined, OpenCV functions will operate on the ROI, reducing the number of pixels that the operation will examine.</p>
+</div></div><hr></section><section name="setRoiFromPixels" id="setRoiFromPixels" class="mb2"><div class="method mb2"><h3 class="f3 title">setRoiFromPixels( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setRoiFromPixels</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> <span class="token keyword">unsigned</span> <span class="token keyword">char</span> <span class="token operator">*</span>_pixels<span class="token punctuation">,</span> <span class="token keyword">int</span> w<span class="token punctuation">,</span> <span class="token keyword">int</span> h</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Set the Region Of Interest using a pointer to an unsigned char array and a w,h to define the area of the ROI</p>
+</div></div><hr></section><section name="setRoiFromPixels" id="setRoiFromPixels" class="mb2"><div class="method mb2"><h3 class="f3 title">setRoiFromPixels( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setRoiFromPixels</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofPixels <span class="token operator">&</span>pixels</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Set the Region Of Interest using an ofPixels reference The w,h of the ofPixels will define the area of the ROI</p>
+</div></div><hr></section><section name="setUseTexture" id="setUseTexture" class="mb2"><div class="method mb2"><h3 class="f3 title">setUseTexture( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUseTexture</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">bool</span> bUse</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Sets whether the image is using a texture or not. If the image is not using a texture then calls to getTextureReference() will return null and the image cannot be drawn. This is handy if you know that you won't be displaying the image to the screen.</p>
+</div></div><hr></section><section name="swapTemp" id="swapTemp" class="mb2"><div class="method mb2"><h3 class="f3 title">swapTemp( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">swapTemp</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="transform" id="transform" class="mb2"><div class="method mb2"><h3 class="f3 title">transform( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">transform</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> angle<span class="token punctuation">,</span> <span class="token keyword">float</span> centerX<span class="token punctuation">,</span> <span class="token keyword">float</span> centerY<span class="token punctuation">,</span> <span class="token keyword">float</span> scaleX<span class="token punctuation">,</span> <span class="token keyword">float</span> scaleY<span class="token punctuation">,</span> <span class="token keyword">float</span> moveX<span class="token punctuation">,</span> <span class="token keyword">float</span> moveY</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Transforms the image with the angle, scaling, and transformation passed in. This is different than the OpenGL rotate as it actually sets the pixel data, rather than just the posotion of the drawing.</p>
+</div></div><hr></section><section name="translate" id="translate" class="mb2"><div class="method mb2"><h3 class="f3 title">translate( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">translate</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> x<span class="token punctuation">,</span> <span class="token keyword">float</span> y</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Moves the image by the x,y amount passed in. This is different than the OpenGL rotate as it actually sets the pixel data, rather than just the posotion of the drawing.</p>
+</div></div><hr></section><section name="undistort" id="undistort" class="mb2"><div class="method mb2"><h3 class="f3 title">undistort( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">undistort</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> radialDistX<span class="token punctuation">,</span> <span class="token keyword">float</span> radialDistY<span class="token punctuation">,</span> <span class="token keyword">float</span> tangentDistX<span class="token punctuation">,</span> <span class="token keyword">float</span> tangentDistY<span class="token punctuation">,</span> <span class="token keyword">float</span> focalX<span class="token punctuation">,</span> <span class="token keyword">float</span> focalY<span class="token punctuation">,</span> <span class="token keyword">float</span> centerX<span class="token punctuation">,</span> <span class="token keyword">float</span> centerY</code><span class="token punctuation">)</span></code><div class="short"><p>/**</p>
+<ul>
+<li>undistort Usage Example:</li>
+<li>undistort( 0, 1, 0, 0, 200, 200, cwidth/2, cheight/2 );</li>
+<li>creates kind of an old TV monitor distortion.
+*/</li>
+</ul>
+</div><div class="desc"><p>The function cvUnDistortOnce corrects camera lens distortion for the image. It requires that you have an estimate of the camera distortion from a call to cvCalibrateCamera() or other calibration method.</p>
+</div></div><hr></section><section name="updateTexture" id="updateTexture" class="mb2"><div class="method mb2"><h3 class="f3 title">updateTexture( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">updateTexture</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Updates the texture of the ofxCvImage if it contains one. This is handy after you've changed the image pixel data and want it to be uploaded to the texture on the graphics card.</p>
+</div></div><hr></section><section name="warpIntoMe" id="warpIntoMe" class="mb2"><div class="method mb2"><h3 class="f3 title">warpIntoMe( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">warpIntoMe</span><span class="token punctuation">(</span><code class="token boolean">ofxCvImage <span class="token operator">&</span>mom<span class="token punctuation">,</span> <span class="token keyword">const</span> ofPoint <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span> src<span class="token operator">=</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token keyword">const</span> ofPoint <span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span> dst<span class="token operator">=</span><span class="token number">4</span></code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>This warps the image perspective into the ofxCvImage using two sets four points passed in:</p>
+<pre><code class="language-{.cpp}">ofPoint<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span> src<span class="token punctuation">;</span>
+src<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">ofPoint</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+src<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">ofPoint</span><span class="token punctuation">(</span><span class="token number">320</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+src<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">ofPoint</span><span class="token punctuation">(</span><span class="token number">320</span><span class="token punctuation">,</span> <span class="token number">240</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+src<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">ofPoint</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">240</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+ofPoint<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span> dst<span class="token punctuation">;</span>
+dst<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">ofPoint</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+dst<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">ofPoint</span><span class="token punctuation">(</span><span class="token number">310</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+dst<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">ofPoint</span><span class="token punctuation">(</span><span class="token number">310</span><span class="token punctuation">,</span> <span class="token number">230</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+dst<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">ofPoint</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">230</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+image<span class="token punctuation">.</span><span class="token function">warpIntoMe</span><span class="token punctuation">(</span>parent<span class="token punctuation">,</span> src<span class="token punctuation">,</span> dst<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre>
+<p>![Warping] (../warpPerspective.png "Four corners for warping")</p>
+</div></div><hr></section><section name="warpPerspective" id="warpPerspective" class="mb2"><div class="method mb2"><h3 class="f3 title">warpPerspective( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">warpPerspective</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofPoint <span class="token operator">&</span>A<span class="token punctuation">,</span> <span class="token keyword">const</span> ofPoint <span class="token operator">&</span>B<span class="token punctuation">,</span> <span class="token keyword">const</span> ofPoint <span class="token operator">&</span>C<span class="token punctuation">,</span> <span class="token keyword">const</span> ofPoint <span class="token operator">&</span>D</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>This warps the image perspective to the four points passed in:</p>
+<p>![Warping] (../warpPerspective.png "Four corners for warping")</p>
+</div></div><hr></section><section name="~ofxCvImage" id="~ofxCvImage" class="mb2"><div class="method mb2"><h3 class="f3 title">~ofxCvImage( <!----> )</h3><code><!----><span class="token function">~ofxCvImage</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Destructor.</p>
+</div></div><hr></section></div></div></div></div><div id="side-menu"><div id="params"><h4 class="f3">Variables</h4><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofPoint </span><span>anchor</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>bAllocated</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>bAnchorIsPct</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>bPixelsDirty</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>bRoiPixelsDirty</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>bTextureDirty</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>bUseTexture</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">IplImage* </span><span>cvImage</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">IplImage* </span><span>cvImageTemp</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">int </span><span>height</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">int </span><span>iplchannels</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">int </span><span>ipldepth</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofPixels </span><span>pixels</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofPixels </span><span>roiPixels</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofTexture </span><span>tex</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">int </span><span>width</span><span class="token comment"></span></div><div class="desc"></div></div></code></div><div id="methods-list"><h4 class="f3">Methods</h4><div class="anchor"><code><a href="#allocate" class="pink"><span>allocate</span><!----></a></code></div><div class="anchor"><code><a href="#allocatePixels"><span>allocatePixels</span><!----></a></code></div><div class="anchor"><code><a href="#allocateTexture"><span>allocateTexture</span><!----></a></code></div><div class="anchor"><code><a href="#blur" class="pink"><span>blur</span><!----></a></code></div><div class="anchor"><code><a href="#blurGaussian" class="pink"><span>blurGaussian</span><!----></a></code></div><div class="anchor"><code><a href="#clear" class="pink"><span>clear</span><!----></a></code></div><div class="anchor"><code><a href="#contrastStretch" class="pink"><span>contrastStretch</span><!----></a></code></div><div class="anchor"><code><a href="#convertToRange" class="pink"><span>convertToRange</span><!----></a></code></div><div class="anchor"><code><a href="#countNonZeroInRegion" class="pink"><span>countNonZeroInRegion</span><!----></a></code></div><div class="anchor"><code><a href="#dilate" class="pink"><span>dilate</span><!----></a></code></div><div class="anchor"><code><a href="#draw" class="pink"><span>draw</span><span>(4)</span></a></code></div><div class="anchor"><code><a href="#drawBlobIntoMe" class="pink"><span>drawBlobIntoMe</span><!----></a></code></div><div class="anchor"><code><a href="#drawROI" class="pink"><span>drawROI</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#erode" class="pink"><span>erode</span><!----></a></code></div><div class="anchor"><code><a href="#flagImageChanged" class="pink"><span>flagImageChanged</span><!----></a></code></div><div class="anchor"><code><a href="#getCv8BitsImage"><span>getCv8BitsImage</span><!----></a></code></div><div class="anchor"><code><a href="#getCv8BitsRoiImage"><span>getCv8BitsRoiImage</span><!----></a></code></div><div class="anchor"><code><a href="#getCvImage" class="pink"><span>getCvImage</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#getHeight" class="pink"><span>getHeight</span><!----></a></code></div><div class="anchor"><code><a href="#getIntersectionROI"><span>getIntersectionROI</span><!----></a></code></div><div class="anchor"><code><a href="#getPixels" class="pink"><span>getPixels</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#getROI" class="pink"><span>getROI</span><!----></a></code></div><div class="anchor"><code><a href="#getRoiPixels" class="pink"><span>getRoiPixels</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#getTexture"><span>getTexture</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#getWidth" class="pink"><span>getWidth</span><!----></a></code></div><div class="anchor"><code><a href="#invert" class="pink"><span>invert</span><!----></a></code></div><div class="anchor"><code><a href="#isUsingTexture"><span>isUsingTexture</span><!----></a></code></div><div class="anchor"><code><a href="#matchingROI" class="pink"><span>matchingROI</span><!----></a></code></div><div class="anchor"><code><a href="#mirror" class="pink"><span>mirror</span><!----></a></code></div><div class="anchor"><code><a href="#ofxCvImage" class="pink"><span>ofxCvImage</span><!----></a></code></div><div class="anchor"><code><a href="#operator&=" class="pink"><span>operator&=</span><!----></a></code></div><div class="anchor"><code><a href="#operator*=" class="pink"><span>operator*=</span><!----></a></code></div><div class="anchor"><code><a href="#operator+=" class="pink"><span>operator+=</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#operator-=" class="pink"><span>operator-=</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#operator=" class="pink"><span>operator=</span><span>(5)</span></a></code></div><div class="anchor"><code><a href="#rangeMap"><span>rangeMap</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#remap" class="pink"><span>remap</span><!----></a></code></div><div class="anchor"><code><a href="#resetAnchor" class="pink"><span>resetAnchor</span><!----></a></code></div><div class="anchor"><code><a href="#resetImageROI"><span>resetImageROI</span><!----></a></code></div><div class="anchor"><code><a href="#resetROI" class="pink"><span>resetROI</span><!----></a></code></div><div class="anchor"><code><a href="#resize" class="pink"><span>resize</span><!----></a></code></div><div class="anchor"><code><a href="#rotate" class="pink"><span>rotate</span><!----></a></code></div><div class="anchor"><code><a href="#scale" class="pink"><span>scale</span><!----></a></code></div><div class="anchor"><code><a href="#scaleIntoMe" class="pink"><span>scaleIntoMe</span><!----></a></code></div><div class="anchor"><code><a href="#set" class="pink"><span>set</span><!----></a></code></div><div class="anchor"><code><a href="#setAnchorPercent" class="pink"><span>setAnchorPercent</span><!----></a></code></div><div class="anchor"><code><a href="#setAnchorPoint" class="pink"><span>setAnchorPoint</span><!----></a></code></div><div class="anchor"><code><a href="#setFromPixels" class="pink"><span>setFromPixels</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#setImageROI"><span>setImageROI</span><!----></a></code></div><div class="anchor"><code><a href="#setROI" class="pink"><span>setROI</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#setRoiFromPixels" class="pink"><span>setRoiFromPixels</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#setUseTexture" class="pink"><span>setUseTexture</span><!----></a></code></div><div class="anchor"><code><a href="#swapTemp"><span>swapTemp</span><!----></a></code></div><div class="anchor"><code><a href="#transform" class="pink"><span>transform</span><!----></a></code></div><div class="anchor"><code><a href="#translate" class="pink"><span>translate</span><!----></a></code></div><div class="anchor"><code><a href="#undistort" class="pink"><span>undistort</span><!----></a></code></div><div class="anchor"><code><a href="#updateTexture" class="pink"><span>updateTexture</span><!----></a></code></div><div class="anchor"><code><a href="#warpIntoMe" class="pink"><span>warpIntoMe</span><!----></a></code></div><div class="anchor"><code><a href="#warpPerspective" class="pink"><span>warpPerspective</span><!----></a></code></div><div class="anchor"><code><a href="#~ofxCvImage" class="pink"><span>~ofxCvImage</span><!----></a></code></div></div><div id="see-also" filename="ofxCvImage.markdown" absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/addons/ofxOpenCv/ofxCvImage.markdown" route="/documentation/addons/ofxOpenCv/ofxCvImage.markdown" dir="../ofSite/documentation/addons/ofxOpenCv" ext="markdown" type="page" parent="2084" breadcrumbs="2084,1993,1968" siblings="" translations="[object Object]" class="see-also"><h4 class="f3">See also</h4><div class="also"><a href="/addons/ofxOpenCv/src/ofxCvImage_h"><span class="origin">addons</span><span class="name">ofxCvImage.h</span></a></div><div class="also"><a href="/addons/ofxOpenCv/src/ofxCvImage_cpp"><span class="origin">addons</span><span class="name">ofxCvImage.cpp</span></a></div></div></div></div></div><textarea rows="0" class="markdown-editor" style="display:none">#class ofxCvImage
+
+
+&lt;!--
+_visible: True_
+_advanced: False_
+_istemplated: False_
+_extends: _
+-->
+
+##InlineDescription
+
+
+
+
+
+
+##Description
+
+This is the base class for all the ofxOpenCV image types: ofxCvShortImage, ofxCvColorImage, ofxCvFloatImage, ofxCvGrayscaleImage. It's made to provide interoperability between the core OF imaging types, ofImage and ofTexture, and OpenCv.
+
+
+
+
+
+##Methods
+
+
+
+###void allocate(w, h)
+
+&lt;!--
+_syntax: allocate(w, h)_
+_name: allocate_
+_returns: void_
+_returns_description: _
+_parameters: int w, int h_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Allocates the image with the w, h passed in. This must be done before the pixels of the image are created.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void allocatePixels(w, h)
+
+&lt;!--
+_syntax: allocatePixels(w, h)_
+_name: allocatePixels_
+_returns: void_
+_returns_description: _
+_parameters: int w, int h_
+_access: protected_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void allocateTexture()
+
+&lt;!--
+_syntax: allocateTexture()_
+_name: allocateTexture_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void blur(value = 3)
+
+&lt;!--
+_syntax: blur(value = 3)_
+_name: blur_
+_returns: void_
+_returns_description: _
+_parameters: int value=3_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Blurs the image
+
+![Blurring] (../blur.png "Blurring an image original on Left")
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void blurGaussian(value = 3)
+
+&lt;!--
+_syntax: blurGaussian(value = 3)_
+_name: blurGaussian_
+_returns: void_
+_returns_description: _
+_parameters: int value=3_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Blurs the using Gaussian blurring. Gaussian blurring is typically to reduce image noise and reduce detail.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void clear()
+
+&lt;!--
+_syntax: clear()_
+_name: clear_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Clears the pixel data of the image. The image must be allocated again with a call to allocate() before it can be used.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void contrastStretch()
+
+&lt;!--
+_syntax: contrastStretch()_
+_name: contrastStretch_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+This increases the contrast of the image remapping the brightest points in the image to 255 and the darkest points in the image to 0.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void convertToRange(min, max)
+
+&lt;!--
+_syntax: convertToRange(min, max)_
+_name: convertToRange_
+_returns: void_
+_returns_description: _
+_parameters: float min, float max_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Maps the pixels of an image to the min and max range passed in.
+
+~~~~{.cpp}
+
+colors.setFromPixels(grabber.getPixels());
+
+first = colors; // will leave unaltered
+second = colors; // change it
+second.convertToRange(100, 140); // super low contrast
+
+~~~~
+
+![Image convert to range](../convertToRangeColor.png "Converting the range of an image")
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int countNonZeroInRegion(x, y, w, h)
+
+&lt;!--
+_syntax: countNonZeroInRegion(x, y, w, h)_
+_name: countNonZeroInRegion_
+_returns: int_
+_returns_description: _
+_parameters: int x, int y, int w, int h_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Returns the number of non-zero pixels in an image.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void dilate()
+
+&lt;!--
+_syntax: dilate()_
+_name: dilate_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+![Dilating] (../dilate.png "Dilating an image, original on Left")
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void draw(x, y)
+
+&lt;!--
+_syntax: draw(x, y)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Draw the image at the x,y.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void draw(x, y, w, h)
+
+&lt;!--
+_syntax: draw(x, y, w, h)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float w, float h_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Draw the image at the x,y with the w,h.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void draw(&point)
+
+&lt;!--
+_syntax: draw(&point)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: const ofPoint &point_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Draw the image at the ofPoint passed in.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void draw(&rect)
+
+&lt;!--
+_syntax: draw(&rect)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: const ofRectangle &rect_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Draw the image into the ofRectangle passed in.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void drawBlobIntoMe(&blob, color)
+
+&lt;!--
+_syntax: drawBlobIntoMe(&blob, color)_
+_name: drawBlobIntoMe_
+_returns: void_
+_returns_description: _
+_parameters: ofxCvBlob &blob, int color_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Draw the outline of an ofxCvblob into the ofxCvImage.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void drawROI(x, y)
+
+&lt;!--
+_syntax: drawROI(x, y)_
+_name: drawROI_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Draw just the Region of Interest of the image at the x,y.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void drawROI(x, y, w, h)
+
+&lt;!--
+_syntax: drawROI(x, y, w, h)_
+_name: drawROI_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float w, float h_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Draw just the Region of Interest of the image into the x,y with the w,h passed in.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void erode()
+
+&lt;!--
+_syntax: erode()_
+_name: erode_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Erodes the image.
+
+![Eroding] (../erode.png "Eroding an image, original on Left")
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void flagImageChanged()
+
+&lt;!--
+_syntax: flagImageChanged()_
+_name: flagImageChanged_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Marks the image as changed so that the ofTexture can be updated, if the image contains one.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int * getCv8BitsImage()
+
+&lt;!--
+_syntax: getCv8BitsImage()_
+_name: getCv8BitsImage_
+_returns: int *_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int * getCv8BitsRoiImage()
+
+&lt;!--
+_syntax: getCv8BitsRoiImage()_
+_name: getCv8BitsRoiImage_
+_returns: int *_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int * getCvImage()
+
+&lt;!--
+_syntax: getCvImage()_
+_name: getCvImage_
+_returns: int *_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Returns a raw pointer to the OpenCV IplImage.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###const int * getCvImage()
+
+&lt;!--
+_syntax: getCvImage()_
+_name: getCvImage_
+_returns: const int *_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float getHeight()
+
+&lt;!--
+_syntax: getHeight()_
+_name: getHeight_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Returns the height of the image in pixels.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofRectangle getIntersectionROI(&rec1, &rec2)
+
+&lt;!--
+_syntax: getIntersectionROI(&rec1, &rec2)_
+_name: getIntersectionROI_
+_returns: ofRectangle_
+_returns_description: _
+_parameters: const ofRectangle &rec1, const ofRectangle &rec2_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofPixels & getPixels()
+
+&lt;!--
+_syntax: getPixels()_
+_name: getPixels_
+_returns: ofPixels &_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Returns a raw pointer to the pixel data within the image.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###const ofPixels & getPixels()
+
+&lt;!--
+_syntax: getPixels()_
+_name: getPixels_
+_returns: const ofPixels &_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofRectangle getROI()
+
+&lt;!--
+_syntax: getROI()_
+_name: getROI_
+_returns: ofRectangle_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Returns the region of interest in an ofxCvImage.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofPixels & getRoiPixels()
+
+&lt;!--
+_syntax: getRoiPixels()_
+_name: getRoiPixels_
+_returns: ofPixels &_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Returns a raw pointer to the pixel data within the Region of Interest in the ofxCvImage.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###const ofPixels & getRoiPixels()
+
+&lt;!--
+_syntax: getRoiPixels()_
+_name: getRoiPixels_
+_returns: const ofPixels &_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofTexture & getTexture()
+
+&lt;!--
+_syntax: getTexture()_
+_name: getTexture_
+_returns: ofTexture &_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###const ofTexture & getTexture()
+
+&lt;!--
+_syntax: getTexture()_
+_name: getTexture_
+_returns: const ofTexture &_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float getWidth()
+
+&lt;!--
+_syntax: getWidth()_
+_name: getWidth_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Returns the width of the image in pixels.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void invert()
+
+&lt;!--
+_syntax: invert()_
+_name: invert_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Flip the pixel values of the image.
+
+![Inverting an image] (../invert.png "Original on Left")
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool isUsingTexture()
+
+&lt;!--
+_syntax: isUsingTexture()_
+_name: isUsingTexture_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool matchingROI(&rec1, &rec2)
+
+&lt;!--
+_syntax: matchingROI(&rec1, &rec2)_
+_name: matchingROI_
+_returns: bool_
+_returns_description: _
+_parameters: const ofRectangle &rec1, const ofRectangle &rec2_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Returns whether the Region of Interests match position and dimension or not.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void mirror(bFlipVertically, bFlipHorizontally)
+
+&lt;!--
+_syntax: mirror(bFlipVertically, bFlipHorizontally)_
+_name: mirror_
+_returns: void_
+_returns_description: _
+_parameters: bool bFlipVertically, bool bFlipHorizontally_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Flips the image horizontally and/or vertically.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofxCvImage()
+
+&lt;!--
+_syntax: ofxCvImage()_
+_name: ofxCvImage_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Constructor.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void operator&=(&mom)
+
+&lt;!--
+_syntax: operator&=(&mom)_
+_name: operator&=_
+_returns: void_
+_returns_description: _
+_parameters: ofxCvImage &mom_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Binary & (Logical AND http://en.wikipedia.org/wiki/Bitwise_operation) the pixel data of the right hand side image from the current image:
+
+~~~~{.cpp}
+cvPuppy.allocate( 320, 240 );
+cvPuppy = puppyImg.getPixels(); // copy pixels from a loaded image
+
+andPuppy.allocate( 320, 240 );
+
+andPuppy.set(255, 0, 0); // make the AND image red
+andPuppy &= cvPuppy; // will & all the bits
+~~~~
+
+![puppy AND](../ANDoperation.png)
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void operator*=(&mom)
+
+&lt;!--
+_syntax: operator*=(&mom)_
+_name: operator*=_
+_returns: void_
+_returns_description: _
+_parameters: ofxCvImage &mom_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Multiplies the pixel data of the right hand side image from the current image:
+
+~~~~{.cpp}
+first *= second; // both are ofxCvImage instances
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void operator+=(value)
+
+&lt;!--
+_syntax: operator+=(value)_
+_name: operator+=_
+_returns: void_
+_returns_description: _
+_parameters: float value_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Adds the pixel data of the right hand side image from the current image:
+
+~~~~{.cpp}
+first += second; // both are ofxCvImage instances
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void operator+=(&mom)
+
+&lt;!--
+_syntax: operator+=(&mom)_
+_name: operator+=_
+_returns: void_
+_returns_description: _
+_parameters: ofxCvImage &mom_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Adds the pixel data of the right hand side image from the current image:
+
+~~~~{.cpp}
+first += second; // both are ofxCvImage instances
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void operator-=(value)
+
+&lt;!--
+_syntax: operator-=(value)_
+_name: operator-=_
+_returns: void_
+_returns_description: _
+_parameters: float value_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Subtracts the pixel data of the right hand side image from the current image:
+
+~~~~{.cpp}
+first -= second; // both are ofxCvImage instances
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void operator-=(&mom)
+
+&lt;!--
+_syntax: operator-=(&mom)_
+_name: operator-=_
+_returns: void_
+_returns_description: _
+_parameters: ofxCvImage &mom_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Subtracts the pixel data of the right hand side image from the current image:
+
+~~~~{.cpp}
+first -= second; // both are ofxCvImage instances
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void operator=(&mom)
+
+&lt;!--
+_syntax: operator=(&mom)_
+_name: operator=_
+_returns: void_
+_returns_description: _
+_parameters: const ofxCvGrayscaleImage &mom_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Copy a ofxCvGrayscaleImage into the current ofxCvImage.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void operator=(&mom)
+
+&lt;!--
+_syntax: operator=(&mom)_
+_name: operator=_
+_returns: void_
+_returns_description: _
+_parameters: const ofxCvColorImage &mom_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Copy the image data of an ofxCvColorImage into the ofxCvImage instance.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void operator=(&mom)
+
+&lt;!--
+_syntax: operator=(&mom)_
+_name: operator=_
+_returns: void_
+_returns_description: _
+_parameters: const ofxCvFloatImage &mom_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Copy the image data ofxCvFloatImage into the ofxCvImage instance.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void operator=(&mom)
+
+&lt;!--
+_syntax: operator=(&mom)_
+_name: operator=_
+_returns: void_
+_returns_description: _
+_parameters: const ofxCvShortImage &mom_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Copy the image data of a ofxCvShortImage into the ofxCvImage instance.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void operator=(*mom)
+
+&lt;!--
+_syntax: operator=(*mom)_
+_name: operator=_
+_returns: void_
+_returns_description: _
+_parameters: const int *mom_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void rangeMap(*img, min1, max1, min2, max2)
+
+&lt;!--
+_syntax: rangeMap(*img, min1, max1, min2, max2)_
+_name: rangeMap_
+_returns: void_
+_returns_description: _
+_parameters: int *img, float min1, float max1, float min2, float max2_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void rangeMap(*mom, *kid, min1, max1, min2, max2)
+
+&lt;!--
+_syntax: rangeMap(*mom, *kid, min1, max1, min2, max2)_
+_name: rangeMap_
+_returns: void_
+_returns_description: _
+_parameters: int *mom, int *kid, float min1, float max1, float min2, float max2_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void remap(*mapX, *mapY)
+
+&lt;!--
+_syntax: remap(*mapX, *mapY)_
+_name: remap_
+_returns: void_
+_returns_description: _
+_parameters: int *mapX, int *mapY_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+This uses a generic geometrical transformation to remap one image to another. This is particularly useful when doing camera calibration.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void resetAnchor()
+
+&lt;!--
+_syntax: resetAnchor()_
+_name: resetAnchor_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Reset the anchor point of the image, i.e. the center point for rotations,
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void resetImageROI(*img)
+
+&lt;!--
+_syntax: resetImageROI(*img)_
+_name: resetImageROI_
+_returns: void_
+_returns_description: _
+_parameters: int *img_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void resetROI()
+
+&lt;!--
+_syntax: resetROI()_
+_name: resetROI_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Removes the region of interest from an ofxCvImage.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void resize(w, h)
+
+&lt;!--
+_syntax: resize(w, h)_
+_name: resize_
+_returns: void_
+_returns_description: _
+_parameters: int w, int h_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Resizes the image to the w.h passed in.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void rotate(angle, centerX, centerY)
+
+&lt;!--
+_syntax: rotate(angle, centerX, centerY)_
+_name: rotate_
+_returns: void_
+_returns_description: _
+_parameters: float angle, float centerX, float centerY_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Rotates the image. This is different than the OpenGL rotate as it actually sets the pixel data, rather than just the posotion of the drawing.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void scale(scaleX, sclaeY)
+
+&lt;!--
+_syntax: scale(scaleX, sclaeY)_
+_name: scale_
+_returns: void_
+_returns_description: _
+_parameters: float scaleX, float sclaeY_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Scales the image to the scaleX, scaleY passed in. This is different than the OpenGL rotate as it actually sets the pixel data, rather than just the posotion of the drawing.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void scaleIntoMe(&mom, interpolationMethod)
+
+&lt;!--
+_syntax: scaleIntoMe(&mom, interpolationMethod)_
+_name: scaleIntoMe_
+_returns: void_
+_returns_description: _
+_parameters: ofxCvImage &mom, int interpolationMethod_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Scales the image passed in to be the size of the current image,
+
+~~~~{.cpp}
+
+ofxCvImage first;
+first.allocate(640, 480);
+ofxCvImage second;
+second.allocate(320, 240);
+
+second.scaleIntoMe(first); // first is now 320,240
+
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void set(value)
+
+&lt;!--
+_syntax: set(value)_
+_name: set_
+_returns: void_
+_returns_description: _
+_parameters: float value_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Set all the pixels in the image to the float value passed in. This is useful for blanking or filling an image quickly. the values are 1.0 to 255.0.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setAnchorPercent(xPct, yPct)
+
+&lt;!--
+_syntax: setAnchorPercent(xPct, yPct)_
+_name: setAnchorPercent_
+_returns: void_
+_returns_description: _
+_parameters: float xPct, float yPct_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Set the anchor point of the image, i.e. the center point for rotations, at the percentage positions passed in.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setAnchorPoint(x, y)
+
+&lt;!--
+_syntax: setAnchorPoint(x, y)_
+_name: setAnchorPoint_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Set the anchor point of the image, i.e. the center point for rotations, at the x,y passed in.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setFromPixels(*_pixels, w, h)
+
+&lt;!--
+_syntax: setFromPixels(*_pixels, w, h)_
+_name: setFromPixels_
+_returns: void_
+_returns_description: _
+_parameters: const unsigned char *_pixels, int w, int h_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Set all the pixels in a ofxCvImage from a pointer to an array of unsigned char values, using the w and h parameters to determine the dimensions of the image.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setFromPixels(&pixels)
+
+&lt;!--
+_syntax: setFromPixels(&pixels)_
+_name: setFromPixels_
+_returns: void_
+_returns_description: _
+_parameters: const ofPixels &pixels_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Set all the pixels in a ofxCvImage from an ofPixels reference.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setImageROI(*img, &rect)
+
+&lt;!--
+_syntax: setImageROI(*img, &rect)_
+_name: setImageROI_
+_returns: void_
+_returns_description: _
+_parameters: int *img, const ofRectangle &rect_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setROI(x, y, w, h)
+
+&lt;!--
+_syntax: setROI(x, y, w, h)_
+_name: setROI_
+_returns: void_
+_returns_description: _
+_parameters: int x, int y, int w, int h_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Sets the region of interest on the image.  Region of Interest is a rectangular area in an image, to segment object for further processing. Once the ROI is defined, OpenCV functions will operate on the ROI, reducing the number of pixels that the operation will examine.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setROI(&rect)
+
+&lt;!--
+_syntax: setROI(&rect)_
+_name: setROI_
+_returns: void_
+_returns_description: _
+_parameters: const ofRectangle &rect_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Sets the region of interest on the image.  Region of Interest is a rectangular area in an image, to segment object for further processing. Once the ROI is defined, OpenCV functions will operate on the ROI, reducing the number of pixels that the operation will examine.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setRoiFromPixels(*_pixels, w, h)
+
+&lt;!--
+_syntax: setRoiFromPixels(*_pixels, w, h)_
+_name: setRoiFromPixels_
+_returns: void_
+_returns_description: _
+_parameters: const unsigned char *_pixels, int w, int h_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Set the Region Of Interest using a pointer to an unsigned char array and a w,h to define the area of the ROI
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setRoiFromPixels(&pixels)
+
+&lt;!--
+_syntax: setRoiFromPixels(&pixels)_
+_name: setRoiFromPixels_
+_returns: void_
+_returns_description: _
+_parameters: const ofPixels &pixels_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Set the Region Of Interest using an ofPixels reference The w,h of the ofPixels will define the area of the ROI
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUseTexture(bUse)
+
+&lt;!--
+_syntax: setUseTexture(bUse)_
+_name: setUseTexture_
+_returns: void_
+_returns_description: _
+_parameters: bool bUse_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Sets whether the image is using a texture or not. If the image is not using a texture then calls to getTextureReference() will return null and the image cannot be drawn. This is handy if you know that you won't be displaying the image to the screen.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void swapTemp()
+
+&lt;!--
+_syntax: swapTemp()_
+_name: swapTemp_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void transform(angle, centerX, centerY, scaleX, scaleY, moveX, moveY)
+
+&lt;!--
+_syntax: transform(angle, centerX, centerY, scaleX, scaleY, moveX, moveY)_
+_name: transform_
+_returns: void_
+_returns_description: _
+_parameters: float angle, float centerX, float centerY, float scaleX, float scaleY, float moveX, float moveY_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Transforms the image with the angle, scaling, and transformation passed in. This is different than the OpenGL rotate as it actually sets the pixel data, rather than just the posotion of the drawing.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void translate(x, y)
+
+&lt;!--
+_syntax: translate(x, y)_
+_name: translate_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Moves the image by the x,y amount passed in. This is different than the OpenGL rotate as it actually sets the pixel data, rather than just the posotion of the drawing.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void undistort(radialDistX, radialDistY, tangentDistX, tangentDistY, focalX, focalY, centerX, centerY)
+
+&lt;!--
+_syntax: undistort(radialDistX, radialDistY, tangentDistX, tangentDistY, focalX, focalY, centerX, centerY)_
+_name: undistort_
+_returns: void_
+_returns_description: _
+_parameters: float radialDistX, float radialDistY, float tangentDistX, float tangentDistY, float focalX, float focalY, float centerX, float centerY_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+/**
+* undistort Usage Example:
+* undistort( 0, 1, 0, 0, 200, 200, cwidth/2, cheight/2 );
+* creates kind of an old TV monitor distortion.
+*/
+
+
+
+
+
+_description: _
+
+The function cvUnDistortOnce corrects camera lens distortion for the image. It requires that you have an estimate of the camera distortion from a call to cvCalibrateCamera() or other calibration method.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void updateTexture()
+
+&lt;!--
+_syntax: updateTexture()_
+_name: updateTexture_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Updates the texture of the ofxCvImage if it contains one. This is handy after you've changed the image pixel data and want it to be uploaded to the texture on the graphics card.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void warpIntoMe(&mom, src = 4, dst = 4)
+
+&lt;!--
+_syntax: warpIntoMe(&mom, src = 4, dst = 4)_
+_name: warpIntoMe_
+_returns: void_
+_returns_description: _
+_parameters: ofxCvImage &mom, const ofPoint [4] src=4, const ofPoint [4] dst=4_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+This warps the image perspective into the ofxCvImage using two sets four points passed in:
+
+~~~~{.cpp}
+ofPoint[4] src;
+src[0] = ofPoint(0, 0);
+src[1] = ofPoint(320, 0);
+src[2] = ofPoint(320, 240);
+src[3] = ofPoint(0, 240);
+
+ofPoint[4] dst;
+dst[0] = ofPoint(10, 0);
+dst[1] = ofPoint(310, 0);
+dst[2] = ofPoint(310, 230);
+dst[3] = ofPoint(10, 230);
+
+image.warpIntoMe(parent, src, dst);
+
+~~~~
+
+![Warping] (../warpPerspective.png "Four corners for warping")
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void warpPerspective(&A, &B, &C, &D)
+
+&lt;!--
+_syntax: warpPerspective(&A, &B, &C, &D)_
+_name: warpPerspective_
+_returns: void_
+_returns_description: _
+_parameters: const ofPoint &A, const ofPoint &B, const ofPoint &C, const ofPoint &D_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+This warps the image perspective to the four points passed in:
+
+![Warping] (../warpPerspective.png "Four corners for warping")
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ~ofxCvImage()
+
+&lt;!--
+_syntax: ~ofxCvImage()_
+_name: ~ofxCvImage_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Destructor.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+##Variables
+
+
+
+###ofPoint anchor
+
+&lt;!--
+_name: anchor_
+_type: ofPoint_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool bAllocated
+
+&lt;!--
+_name: bAllocated_
+_type: bool_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool bAnchorIsPct
+
+&lt;!--
+_name: bAnchorIsPct_
+_type: bool_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool bPixelsDirty
+
+&lt;!--
+_name: bPixelsDirty_
+_type: bool_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool bRoiPixelsDirty
+
+&lt;!--
+_name: bRoiPixelsDirty_
+_type: bool_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool bTextureDirty
+
+&lt;!--
+_name: bTextureDirty_
+_type: bool_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool bUseTexture
+
+&lt;!--
+_name: bUseTexture_
+_type: bool_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###IplImage * cvImage
+
+&lt;!--
+_name: cvImage_
+_type: IplImage *_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###IplImage * cvImageTemp
+
+&lt;!--
+_name: cvImageTemp_
+_type: IplImage *_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int height
+
+&lt;!--
+_name: height_
+_type: int_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int iplchannels
+
+&lt;!--
+_name: iplchannels_
+_type: int_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int ipldepth
+
+&lt;!--
+_name: ipldepth_
+_type: int_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofPixels pixels
+
+&lt;!--
+_name: pixels_
+_type: ofPixels_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofPixels roiPixels
+
+&lt;!--
+_name: roiPixels_
+_type: ofPixels_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofTexture tex
+
+&lt;!--
+_name: tex_
+_type: ofTexture_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int width
+
+&lt;!--
+_name: width_
+_type: int_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+</textarea></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1586012716389/documentation/addons/ofxOpenCv/ofxCvImage/payload.js"></script><script src="/_nuxt/5f71eaca0bd2f1a0f939.js" defer></script><script src="/_nuxt/35a90d914f539af1362f.js" defer></script><script src="/_nuxt/906a3ca0fb13ed3c6651.js" defer></script><script src="/_nuxt/b673915e8a08acf593e8.js" defer></script><script src="/_nuxt/bf355f21967a23c26c07.js" defer></script>
+  </body>
+</html>

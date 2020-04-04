@@ -1,0 +1,515 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>ofEvents.h | openframeworks | ofDocs</title><meta data-n-head="ssr" data-hid="description" name="description" content="openFrameworks documentation and examples browser"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="openFrameworks documentation and examples browser" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="ofEvents.h | openframeworks | ofDocs" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="/files/images/ofw-logo.png" vmid="og:image"><link rel="preload" href="/_nuxt/5f71eaca0bd2f1a0f939.js" as="script"><link rel="preload" href="/_nuxt/906a3ca0fb13ed3c6651.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/b673915e8a08acf593e8.js" as="script"><link rel="preload" href="/_nuxt/46e8fcacdadb233d9fb6.css" as="style"><link rel="preload" href="/_nuxt/bf355f21967a23c26c07.js" as="script"><link rel="preload" href="/_nuxt/35a90d914f539af1362f.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/46e8fcacdadb233d9fb6.css">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app"><div id="menu"><div class="menu-inner"><div id="settings"></div><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><svg version="1.1" viewbox="0 0 110 58" width="110px" height="58px" enable-background="0 0 110 58" xml:space="preserve" class="logo"><g><path d="M58,29 C58,13 45,0 29,0 C13,0 0,13 0,29 C0,45 13,58 29,58 C45,58 58,45 58,29 Z"></path><rect x="59" y="0" width="25" height="58"></rect><rect x="85" y="26" width="15" height="15"></rect><path d="M85,0 L110,0 L85,25 L85,0 Z"></path></g></svg><div class="txt"><span class="docs f7 questrial">Docs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343							c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88							c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593							c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789							C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><!----></div><div id="lists" class="menu-inner mt1 mb2"><div class="inner"></div></div></div><div class="menu-bottom"><div class="inner"><button class="button"><!----><span><span class="ico">nights_stay</span></span></button></div></div></div><div id="document"><div id="renderer" class="main source"><div absolute="/Users/Gilbert/Code/openFrameworks/libs/openFrameworks/events/ofEvents.h" route="/openframeworks/events/ofEvents.h" dir="../libs/openFrameworks/events" ext="h" type="source" id="202" parent="199" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/openframeworks/" class="pink nuxt-link-active">openframeworks </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/openframeworks/events/" class="pink nuxt-link-active">events </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link selector"><span class="name">ofEvents.h</span><span class="chevron bottom"></span><select><option value="/openframeworks/events/ofEvent_h">ofEvent.h</option><option value="/openframeworks/events/ofEvents_cpp">ofEvents.cpp</option><option value="/openframeworks/events/ofEvents_h">ofEvents.h</option><option value="/openframeworks/events/ofEventUtils_h">ofEventUtils.h</option></select></span><!----></span></span></div></div></div><div id="code-page" static="true"><div id="side-menu"><div id="code-sources"><h4 class="f3 dropdown-toggle">Sources</h4><div class="srcsiblings dropdown-area"><a href="/openframeworks/events/ofEvent_h" class="block"><span class="src">src </span><span class="name">ofEvent.h </span></a><a href="/openframeworks/events/ofEvents_cpp" class="block"><span class="src">src </span><span class="name">ofEvents.cpp </span></a><a href="/openframeworks/events/ofEvents_h" class="block nuxt-link-exact-active nuxt-link-active current"><span class="src">src </span><span class="name">ofEvents.h </span></a><a href="/openframeworks/events/ofEventUtils_h" class="block"><span class="src">src </span><span class="name">ofEventUtils.h </span></a></div></div><div id="comments" class="dropdown-area"><h4 class="f3 dropdown-toggle">Comments</h4><div class="dropdown-area"></div></div><div filename="events" absolute="/Users/Gilbert/Code/openFrameworks/libs/openFrameworks/events" dir="../libs/openFrameworks" route="/openframeworks/events/" ext="" type="folder" id="199" children="200,201,202,203" icon="question_answer" parent="164" breadcrumbs="164" class="see-also"><h4 class="f3">See also</h4><div class="also"><a href="/documentation/events/"><span class="origin">documentation</span><span class="name">events</span></a></div><div class="also"><a href="/examples/ios/eventsExample/"><span class="origin">examples</span><span class="name">eventsExample</span></a></div><div class="also"><a href="/examples/ios/advancedEventsExample/src/eventsObject_h"><span class="origin">examples</span><span class="name">eventsObject.h</span></a></div><div class="also"><a href="/examples/ios/advancedEventsExample/src/eventsObject_cpp"><span class="origin">examples</span><span class="name">eventsObject.cpp</span></a></div><div class="also"><a href="/examples/events/advancedEventsExample/src/eventsObject_h"><span class="origin">examples</span><span class="name">eventsObject.h</span></a></div><div class="also"><a href="/examples/events/"><span class="origin">examples</span><span class="name">events</span></a></div></div></div><div id="code-render"><div class="inner"><pre><code><span class="token macro property">#<span class="token directive keyword">pragma</span> once</span>
+
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"ofConstants.h"</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"ofEventUtils.h"</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"ofTimer.h"</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"ofFpsCounter.h"</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;set></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"glm/vec2.hpp"</span></span>
+
+<span class="token comment" spellcheck="true">//-------------------------- mouse/key query</span>
+<span class="token keyword">bool</span> <span class="token function">ofGetMousePressed</span><span class="token punctuation">(</span><span class="token keyword">int</span> button<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//by default any button</span>
+<span class="token keyword">bool</span> <span class="token function">ofGetKeyPressed</span><span class="token punctuation">(</span><span class="token keyword">int</span> key<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//by default any key</span>
+
+<span class="token keyword">int</span>	<span class="token function">ofGetMouseX</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span>	<span class="token function">ofGetMouseY</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span>	<span class="token function">ofGetPreviousMouseX</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span>	<span class="token function">ofGetPreviousMouseY</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+
+<span class="token comment" spellcheck="true">//--------------------------------------------</span>
+<span class="token comment" spellcheck="true">//</span>
+<span class="token comment" spellcheck="true">// 	Keyboard definitions</span>
+<span class="token comment" spellcheck="true">//</span>
+<span class="token comment" spellcheck="true">// 	ok -- why this?</span>
+<span class="token comment" spellcheck="true">// 	glut key commands have some annoying features,</span>
+<span class="token comment" spellcheck="true">// 	in that some normal keys have the same value as special keys,</span>
+<span class="token comment" spellcheck="true">// 	but we want ONE key routine, so we need to redefine several,</span>
+<span class="token comment" spellcheck="true">// 	so that we get some normalacy across keys routines</span>
+<span class="token comment" spellcheck="true">//</span>
+<span class="token comment" spellcheck="true">// 	(everything that comes through "glutSpecialKeyFunc" will get 256 added to it,</span>
+<span class="token comment" spellcheck="true">// 	to avoid conflicts, before, values like "left, right up down" (ie, 104, 105, 106) were conflicting with</span>
+<span class="token comment" spellcheck="true">// 	letters.. now they will be 256 + 104, 256 + 105....)</span>
+
+<span class="token keyword">enum</span> ofKey<span class="token punctuation">{</span>
+	OF_KEY_RETURN	<span class="token operator">=</span>	<span class="token number">13</span><span class="token punctuation">,</span>
+	OF_KEY_ESC		<span class="token operator">=</span>	<span class="token number">27</span><span class="token punctuation">,</span>
+	OF_KEY_TAB      <span class="token operator">=</span>    <span class="token number">9</span><span class="token punctuation">,</span>
+
+
+	OF_KEY_BACKSPACE <span class="token operator">=</span>	<span class="token number">8</span><span class="token punctuation">,</span>
+	OF_KEY_DEL		 <span class="token operator">=</span>	<span class="token number">127</span><span class="token punctuation">,</span>
+
+
+	<span class="token comment" spellcheck="true">// For legacy reasons we are mixing up control keys</span>
+	<span class="token comment" spellcheck="true">// and unicode codepoints when sending key events,</span>
+	<span class="token comment" spellcheck="true">// for the modifiers that need to be usable as bitmask</span>
+	<span class="token comment" spellcheck="true">// we are using some control codes that have nothing to do</span>
+	<span class="token comment" spellcheck="true">// with the keys being represented and then 0x0ee0.. and 0x0e60...</span>
+	<span class="token comment" spellcheck="true">// which are free in the unicode table</span>
+
+	OF_KEY_SHIFT	<span class="token operator">=</span>	 <span class="token number">0x1</span><span class="token punctuation">,</span>
+	OF_KEY_CONTROL	<span class="token operator">=</span>	 <span class="token number">0x2</span><span class="token punctuation">,</span>
+	OF_KEY_ALT		<span class="token operator">=</span>	 <span class="token number">0x4</span><span class="token punctuation">,</span>
+	OF_KEY_SUPER	<span class="token operator">=</span>	 <span class="token number">0x10</span><span class="token punctuation">,</span>
+	OF_KEY_COMMAND  <span class="token operator">=</span>    OF_KEY_SUPER<span class="token punctuation">,</span>
+	OF_KEY_LEFT_SHIFT    <span class="token operator">=</span>	 <span class="token number">0xe60</span><span class="token punctuation">,</span>
+	OF_KEY_RIGHT_SHIFT   <span class="token operator">=</span>	 <span class="token number">0xe61</span><span class="token punctuation">,</span>
+	OF_KEY_LEFT_CONTROL  <span class="token operator">=</span>	 <span class="token number">0xe62</span><span class="token punctuation">,</span>
+	OF_KEY_RIGHT_CONTROL <span class="token operator">=</span> <span class="token number">0xe63</span><span class="token punctuation">,</span>
+	OF_KEY_LEFT_ALT		<span class="token operator">=</span> <span class="token number">0xe64</span><span class="token punctuation">,</span>
+	OF_KEY_RIGHT_ALT	<span class="token operator">=</span> <span class="token number">0xe65</span><span class="token punctuation">,</span>
+	OF_KEY_LEFT_SUPER	<span class="token operator">=</span> <span class="token number">0xe66</span><span class="token punctuation">,</span>
+	OF_KEY_RIGHT_SUPER	<span class="token operator">=</span> <span class="token number">0xe67</span><span class="token punctuation">,</span>
+	OF_KEY_LEFT_COMMAND <span class="token operator">=</span> OF_KEY_LEFT_SUPER<span class="token punctuation">,</span>
+	OF_KEY_RIGHT_COMMAND <span class="token operator">=</span> OF_KEY_RIGHT_SUPER<span class="token punctuation">,</span>
+
+	<span class="token comment" spellcheck="true">// Use values from the Unicode private use codepoint range E000 - F8FF. </span>
+	<span class="token comment" spellcheck="true">// See https://www.unicode.org/faq/private_use.html</span>
+	OF_KEY_F1        <span class="token operator">=</span> <span class="token number">0xe000</span><span class="token punctuation">,</span>
+	OF_KEY_F2        <span class="token operator">=</span> <span class="token number">0xe001</span><span class="token punctuation">,</span>
+	OF_KEY_F3        <span class="token operator">=</span> <span class="token number">0xe002</span><span class="token punctuation">,</span>
+	OF_KEY_F4        <span class="token operator">=</span> <span class="token number">0xe003</span><span class="token punctuation">,</span>
+	OF_KEY_F5        <span class="token operator">=</span> <span class="token number">0xe004</span><span class="token punctuation">,</span>
+	OF_KEY_F6        <span class="token operator">=</span> <span class="token number">0xe005</span><span class="token punctuation">,</span>
+	OF_KEY_F7        <span class="token operator">=</span> <span class="token number">0xe006</span><span class="token punctuation">,</span>
+	OF_KEY_F8        <span class="token operator">=</span> <span class="token number">0xe007</span><span class="token punctuation">,</span>
+	OF_KEY_F9        <span class="token operator">=</span> <span class="token number">0xe008</span><span class="token punctuation">,</span>
+	OF_KEY_F10       <span class="token operator">=</span> <span class="token number">0xe009</span><span class="token punctuation">,</span>
+	OF_KEY_F11       <span class="token operator">=</span> <span class="token number">0xe00A</span><span class="token punctuation">,</span>
+	OF_KEY_F12       <span class="token operator">=</span> <span class="token number">0xe00B</span><span class="token punctuation">,</span>
+	OF_KEY_LEFT      <span class="token operator">=</span> <span class="token number">0xe00C</span><span class="token punctuation">,</span>
+	OF_KEY_UP        <span class="token operator">=</span> <span class="token number">0xe00D</span><span class="token punctuation">,</span>
+	OF_KEY_RIGHT     <span class="token operator">=</span> <span class="token number">0xe00E</span><span class="token punctuation">,</span>
+	OF_KEY_DOWN      <span class="token operator">=</span> <span class="token number">0xe00F</span><span class="token punctuation">,</span>
+	OF_KEY_PAGE_UP   <span class="token operator">=</span> <span class="token number">0xe010</span><span class="token punctuation">,</span>
+	OF_KEY_PAGE_DOWN <span class="token operator">=</span> <span class="token number">0xe011</span><span class="token punctuation">,</span>
+	OF_KEY_HOME      <span class="token operator">=</span> <span class="token number">0xe012</span><span class="token punctuation">,</span>
+	OF_KEY_END       <span class="token operator">=</span> <span class="token number">0xe013</span><span class="token punctuation">,</span>
+	OF_KEY_INSERT    <span class="token operator">=</span> <span class="token number">0xe014</span><span class="token punctuation">,</span>
+
+	OF_MOUSE_BUTTON_1 <span class="token operator">=</span>    <span class="token number">0</span><span class="token punctuation">,</span>
+	OF_MOUSE_BUTTON_2 <span class="token operator">=</span>    <span class="token number">1</span><span class="token punctuation">,</span>
+	OF_MOUSE_BUTTON_3 <span class="token operator">=</span>    <span class="token number">2</span><span class="token punctuation">,</span>
+	OF_MOUSE_BUTTON_4 <span class="token operator">=</span>    <span class="token number">3</span><span class="token punctuation">,</span>
+	OF_MOUSE_BUTTON_5 <span class="token operator">=</span>    <span class="token number">4</span><span class="token punctuation">,</span>
+	OF_MOUSE_BUTTON_6 <span class="token operator">=</span>    <span class="token number">5</span><span class="token punctuation">,</span>
+	OF_MOUSE_BUTTON_7 <span class="token operator">=</span>    <span class="token number">6</span><span class="token punctuation">,</span>
+	OF_MOUSE_BUTTON_8 <span class="token operator">=</span>    <span class="token number">7</span><span class="token punctuation">,</span>
+	OF_MOUSE_BUTTON_LAST   <span class="token operator">=</span> OF_MOUSE_BUTTON_8<span class="token punctuation">,</span>
+	OF_MOUSE_BUTTON_LEFT   <span class="token operator">=</span> OF_MOUSE_BUTTON_1<span class="token punctuation">,</span>
+	OF_MOUSE_BUTTON_MIDDLE <span class="token operator">=</span> OF_MOUSE_BUTTON_2<span class="token punctuation">,</span>
+	OF_MOUSE_BUTTON_RIGHT  <span class="token operator">=</span> OF_MOUSE_BUTTON_3<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//-----------------------------------------------</span>
+<span class="token keyword">class</span> <span class="token class-name">ofDragInfo</span><span class="token punctuation">{</span>
+	<span class="token keyword">public</span><span class="token operator">:</span>
+		std<span class="token operator">::</span>vector <span class="token operator">&lt;</span>std<span class="token operator">::</span>string<span class="token operator">></span> files<span class="token punctuation">;</span>
+		glm<span class="token operator">::</span>vec2 position<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+
+<span class="token comment" spellcheck="true">//-----------------------------------------------</span>
+<span class="token comment" spellcheck="true">// event arguments, this are used in oF to pass</span>
+<span class="token comment" spellcheck="true">// the data when notifying events</span>
+
+<span class="token keyword">class</span> <span class="token class-name">ofEventArgs</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">ofKeyEventArgs</span> <span class="token operator">:</span> <span class="token keyword">public</span> ofEventArgs <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+	<span class="token keyword">enum</span> Type<span class="token punctuation">{</span>
+		Pressed<span class="token punctuation">,</span>
+		Released<span class="token punctuation">,</span>
+	<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+	<span class="token function">ofKeyEventArgs</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  	<span class="token operator">:</span><span class="token function">type</span><span class="token punctuation">(</span>Pressed<span class="token punctuation">)</span>
+  	<span class="token punctuation">,</span><span class="token function">key</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">keycode</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">scancode</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">codepoint</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">isRepeat</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+	<span class="token function">ofKeyEventArgs</span><span class="token punctuation">(</span>Type type<span class="token punctuation">,</span> <span class="token keyword">int</span> key<span class="token punctuation">,</span> <span class="token keyword">int</span> keycode<span class="token punctuation">,</span> <span class="token keyword">int</span> scancode<span class="token punctuation">,</span> <span class="token keyword">unsigned</span> <span class="token keyword">int</span> codepoint<span class="token punctuation">,</span> <span class="token keyword">int</span> modifiers<span class="token punctuation">)</span>
+	<span class="token operator">:</span><span class="token function">type</span><span class="token punctuation">(</span>type<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">key</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">keycode</span><span class="token punctuation">(</span>keycode<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">scancode</span><span class="token punctuation">(</span>scancode<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">codepoint</span><span class="token punctuation">(</span>codepoint<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">isRepeat</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">modifiers</span><span class="token punctuation">(</span>modifiers<span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+	<span class="token punctuation">}</span>
+
+	<span class="token function">ofKeyEventArgs</span><span class="token punctuation">(</span>Type type<span class="token punctuation">,</span> <span class="token keyword">int</span> key<span class="token punctuation">)</span>
+	<span class="token operator">:</span><span class="token function">type</span><span class="token punctuation">(</span>type<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">key</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">keycode</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">scancode</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">codepoint</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">isRepeat</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+	<span class="token punctuation">}</span>
+
+	Type type<span class="token punctuation">;</span>
+	<span class="token comment" spellcheck="true">/// For special keys, one of OF_KEY_* (@see ofConstants.h). For all other keys, the Unicode code point you'd expect if this key combo (including modifier keys that may be down) was pressed in a text editor (same as codepoint).</span>
+	<span class="token keyword">int</span> key<span class="token punctuation">;</span>
+	<span class="token comment" spellcheck="true">/// The keycode returned by the windowing system, independent of any modifier keys or keyboard layout settings. For ofAppGLFWWindow this value is one of GLFW_KEY_* (@see glfw3.h) - typically, ASCII representation of the symbol on the physical key, so A key always returns 0x41 even if shift, alt, ctrl are down.</span>
+	<span class="token keyword">int</span> keycode<span class="token punctuation">;</span>
+	<span class="token comment" spellcheck="true">/// The raw scan code returned by the keyboard, OS and hardware specific.</span>
+	<span class="token keyword">int</span> scancode<span class="token punctuation">;</span>
+	<span class="token comment" spellcheck="true">/// The Unicode code point you'd expect if this key combo (including modifier keys) was pressed in a text editor, or 0 for non-printable characters.</span>
+	uint32_t codepoint<span class="token punctuation">;</span>
+	<span class="token comment" spellcheck="true">/// If this is a repeat event</span>
+	<span class="token keyword">bool</span> isRepeat<span class="token punctuation">;</span>
+	<span class="token comment" spellcheck="true">/// Key modifiers</span>
+	<span class="token keyword">int</span> modifiers <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">bool</span> <span class="token function">hasModifier</span><span class="token punctuation">(</span><span class="token keyword">int</span> modifier<span class="token punctuation">)</span> <span class="token keyword">const</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> modifiers <span class="token operator">&</span> modifier<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">ofMouseEventArgs</span> <span class="token operator">:</span> <span class="token keyword">public</span> ofEventArgs<span class="token punctuation">,</span> <span class="token keyword">public</span> glm<span class="token operator">::</span>vec2 <span class="token punctuation">{</span>
+  <span class="token keyword">public</span><span class="token operator">:</span>
+	<span class="token keyword">enum</span> Type<span class="token punctuation">{</span>
+		Pressed<span class="token punctuation">,</span>
+		Moved<span class="token punctuation">,</span>
+		Released<span class="token punctuation">,</span>
+		Dragged<span class="token punctuation">,</span>
+		Scrolled<span class="token punctuation">,</span>
+		Entered<span class="token punctuation">,</span>
+		Exited
+	<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+	<span class="token function">ofMouseEventArgs</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token operator">:</span><span class="token function">type</span><span class="token punctuation">(</span>Pressed<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">button</span><span class="token punctuation">(</span>OF_MOUSE_BUTTON_LEFT<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">scrollX</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">.</span>f<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">scrollY</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">.</span>f<span class="token punctuation">)</span>
+	<span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+	<span class="token function">ofMouseEventArgs</span><span class="token punctuation">(</span>Type type<span class="token punctuation">,</span> <span class="token keyword">float</span> x<span class="token punctuation">,</span> <span class="token keyword">float</span> y<span class="token punctuation">,</span> <span class="token keyword">int</span> button<span class="token punctuation">)</span>
+	<span class="token operator">:</span>glm<span class="token operator">::</span><span class="token function">vec2</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">type</span><span class="token punctuation">(</span>type<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">button</span><span class="token punctuation">(</span>button<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">scrollX</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">.</span>f<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">scrollY</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">.</span>f<span class="token punctuation">)</span>
+	<span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+	<span class="token function">ofMouseEventArgs</span><span class="token punctuation">(</span>Type type<span class="token punctuation">,</span> <span class="token keyword">float</span> x<span class="token punctuation">,</span> <span class="token keyword">float</span> y<span class="token punctuation">,</span> <span class="token keyword">int</span> button<span class="token punctuation">,</span> <span class="token keyword">int</span> modifiers<span class="token punctuation">)</span>
+	<span class="token operator">:</span>glm<span class="token operator">::</span><span class="token function">vec2</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">type</span><span class="token punctuation">(</span>type<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">button</span><span class="token punctuation">(</span>button<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">scrollX</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">.</span>f<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">scrollY</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">.</span>f<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">modifiers</span><span class="token punctuation">(</span>modifiers<span class="token punctuation">)</span>
+	<span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+	<span class="token function">ofMouseEventArgs</span><span class="token punctuation">(</span>Type type<span class="token punctuation">,</span> <span class="token keyword">float</span> x<span class="token punctuation">,</span> <span class="token keyword">float</span> y<span class="token punctuation">)</span>
+	<span class="token operator">:</span>glm<span class="token operator">::</span><span class="token function">vec2</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">type</span><span class="token punctuation">(</span>type<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">button</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">scrollX</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">.</span>f<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">scrollY</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">.</span>f<span class="token punctuation">)</span>
+	<span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+	Type type<span class="token punctuation">;</span>
+	<span class="token keyword">int</span> button<span class="token punctuation">;</span>
+	<span class="token keyword">float</span> scrollX<span class="token punctuation">;</span>
+	<span class="token keyword">float</span> scrollY<span class="token punctuation">;</span>
+	<span class="token comment" spellcheck="true">/// Key modifiers</span>
+	<span class="token keyword">int</span> modifiers <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">bool</span> <span class="token function">hasModifier</span><span class="token punctuation">(</span><span class="token keyword">int</span> modifier<span class="token punctuation">)</span><span class="token punctuation">{</span>
+		<span class="token keyword">return</span> modifiers <span class="token operator">&</span> modifier<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">ofTouchEventArgs</span> <span class="token operator">:</span> <span class="token keyword">public</span> ofEventArgs<span class="token punctuation">,</span> <span class="token keyword">public</span> glm<span class="token operator">::</span>vec2 <span class="token punctuation">{</span>
+  <span class="token keyword">public</span><span class="token operator">:</span>
+	<span class="token keyword">enum</span> Type<span class="token punctuation">{</span>
+		down<span class="token punctuation">,</span>
+		up<span class="token punctuation">,</span>
+		move<span class="token punctuation">,</span>
+		doubleTap<span class="token punctuation">,</span>
+		cancel
+	<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+	<span class="token function">ofTouchEventArgs</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token operator">:</span><span class="token function">type</span><span class="token punctuation">(</span>down<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">id</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">time</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">numTouches</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">width</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">height</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">angle</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">minoraxis</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">majoraxis</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">pressure</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">xspeed</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">yspeed</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">xaccel</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">yaccel</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+
+	<span class="token punctuation">}</span>
+
+	<span class="token function">ofTouchEventArgs</span><span class="token punctuation">(</span>Type type<span class="token punctuation">,</span> <span class="token keyword">float</span> x<span class="token punctuation">,</span> <span class="token keyword">float</span> y<span class="token punctuation">,</span> <span class="token keyword">int</span> id<span class="token punctuation">)</span>
+	<span class="token operator">:</span>glm<span class="token operator">::</span><span class="token function">vec2</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">type</span><span class="token punctuation">(</span>type<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">id</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">time</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">numTouches</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">width</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">height</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">angle</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">minoraxis</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">majoraxis</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">pressure</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">xspeed</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">yspeed</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">xaccel</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">yaccel</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+	Type type<span class="token punctuation">;</span>
+	<span class="token keyword">int</span> id<span class="token punctuation">;</span>
+	<span class="token keyword">int</span> time<span class="token punctuation">;</span>
+	<span class="token keyword">int</span> numTouches<span class="token punctuation">;</span>
+	<span class="token keyword">float</span> width<span class="token punctuation">,</span> height<span class="token punctuation">;</span>
+	<span class="token keyword">float</span> angle<span class="token punctuation">;</span>
+	<span class="token keyword">float</span> minoraxis<span class="token punctuation">,</span> majoraxis<span class="token punctuation">;</span>
+	<span class="token keyword">float</span> pressure<span class="token punctuation">;</span>
+	<span class="token keyword">float</span> xspeed<span class="token punctuation">,</span> yspeed<span class="token punctuation">;</span>
+	<span class="token keyword">float</span> xaccel<span class="token punctuation">,</span> yaccel<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">ofResizeEventArgs</span> <span class="token operator">:</span> <span class="token keyword">public</span> ofEventArgs <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+	<span class="token function">ofResizeEventArgs</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  	<span class="token operator">:</span><span class="token function">width</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">height</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+	<span class="token function">ofResizeEventArgs</span><span class="token punctuation">(</span><span class="token keyword">int</span> width<span class="token punctuation">,</span> <span class="token keyword">int</span> height<span class="token punctuation">)</span>
+	<span class="token operator">:</span><span class="token function">width</span><span class="token punctuation">(</span>width<span class="token punctuation">)</span>
+	<span class="token punctuation">,</span><span class="token function">height</span><span class="token punctuation">(</span>height<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+	<span class="token keyword">int</span> width<span class="token punctuation">;</span>
+	<span class="token keyword">int</span> height<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">ofWindowPosEventArgs</span> <span class="token operator">:</span> <span class="token keyword">public</span> ofEventArgs<span class="token punctuation">,</span> <span class="token keyword">public</span> glm<span class="token operator">::</span>vec2  <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+	<span class="token function">ofWindowPosEventArgs</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+	<span class="token function">ofWindowPosEventArgs</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span>
+	<span class="token operator">:</span>glm<span class="token operator">::</span><span class="token function">vec2</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span>y<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">ofMessage</span> <span class="token operator">:</span> <span class="token keyword">public</span> ofEventArgs<span class="token punctuation">{</span>
+	<span class="token keyword">public</span><span class="token operator">:</span>
+		<span class="token function">ofMessage</span><span class="token punctuation">(</span> std<span class="token operator">::</span>string msg <span class="token punctuation">)</span><span class="token punctuation">{</span>
+			message <span class="token operator">=</span> msg<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		std<span class="token operator">::</span>string message<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">enum</span> ofTimeMode<span class="token punctuation">{</span>
+	System<span class="token punctuation">,</span>
+	FixedRate<span class="token punctuation">,</span>
+	Filtered<span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">ofCoreEvents</span> <span class="token punctuation">{</span>
+  <span class="token keyword">public</span><span class="token operator">:</span>
+	<span class="token function">ofCoreEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	ofEvent<span class="token operator">&lt;</span>ofEventArgs<span class="token operator">></span> 		setup<span class="token punctuation">;</span>
+	ofEvent<span class="token operator">&lt;</span>ofEventArgs<span class="token operator">></span> 		update<span class="token punctuation">;</span>
+	ofEvent<span class="token operator">&lt;</span>ofEventArgs<span class="token operator">></span> 		draw<span class="token punctuation">;</span>
+	ofEvent<span class="token operator">&lt;</span>ofEventArgs<span class="token operator">></span> 		exit<span class="token punctuation">;</span>
+
+	ofEvent<span class="token operator">&lt;</span>ofResizeEventArgs<span class="token operator">></span> 	windowResized<span class="token punctuation">;</span>
+	ofEvent<span class="token operator">&lt;</span>ofWindowPosEventArgs<span class="token operator">></span> 	windowMoved<span class="token punctuation">;</span>
+
+	ofEvent<span class="token operator">&lt;</span>ofKeyEventArgs<span class="token operator">></span> 	keyPressed<span class="token punctuation">;</span>
+	ofEvent<span class="token operator">&lt;</span>ofKeyEventArgs<span class="token operator">></span> 	keyReleased<span class="token punctuation">;</span>
+
+	ofEvent<span class="token operator">&lt;</span>ofMouseEventArgs<span class="token operator">></span> 	mouseMoved<span class="token punctuation">;</span>
+	ofEvent<span class="token operator">&lt;</span>ofMouseEventArgs<span class="token operator">></span> 	mouseDragged<span class="token punctuation">;</span>
+	ofEvent<span class="token operator">&lt;</span>ofMouseEventArgs<span class="token operator">></span> 	mousePressed<span class="token punctuation">;</span>
+	ofEvent<span class="token operator">&lt;</span>ofMouseEventArgs<span class="token operator">></span> 	mouseReleased<span class="token punctuation">;</span>
+	ofEvent<span class="token operator">&lt;</span>ofMouseEventArgs<span class="token operator">></span> 	mouseScrolled<span class="token punctuation">;</span>
+	ofEvent<span class="token operator">&lt;</span>ofMouseEventArgs<span class="token operator">></span> 	mouseEntered<span class="token punctuation">;</span>
+	ofEvent<span class="token operator">&lt;</span>ofMouseEventArgs<span class="token operator">></span> 	mouseExited<span class="token punctuation">;</span>
+
+	ofEvent<span class="token operator">&lt;</span>ofTouchEventArgs<span class="token operator">></span>	touchDown<span class="token punctuation">;</span>
+	ofEvent<span class="token operator">&lt;</span>ofTouchEventArgs<span class="token operator">></span>	touchUp<span class="token punctuation">;</span>
+	ofEvent<span class="token operator">&lt;</span>ofTouchEventArgs<span class="token operator">></span>	touchMoved<span class="token punctuation">;</span>
+	ofEvent<span class="token operator">&lt;</span>ofTouchEventArgs<span class="token operator">></span>	touchDoubleTap<span class="token punctuation">;</span>
+	ofEvent<span class="token operator">&lt;</span>ofTouchEventArgs<span class="token operator">></span>	touchCancelled<span class="token punctuation">;</span>
+
+	ofEvent<span class="token operator">&lt;</span>ofMessage<span class="token operator">></span>			messageEvent<span class="token punctuation">;</span>
+	ofEvent<span class="token operator">&lt;</span>ofDragInfo<span class="token operator">></span>			fileDragEvent<span class="token punctuation">;</span>
+	ofEvent<span class="token operator">&lt;</span>uint32_t<span class="token operator">></span>			charEvent<span class="token punctuation">;</span>
+
+	<span class="token keyword">void</span> <span class="token function">disable</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">enable</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">void</span> <span class="token function">setTimeModeSystem</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">setTimeModeFixedRate</span><span class="token punctuation">(</span>uint64_t nanosecsPerFrame<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">setTimeModeFiltered</span><span class="token punctuation">(</span><span class="token keyword">float</span> alpha<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">void</span> <span class="token function">setFrameRate</span><span class="token punctuation">(</span><span class="token keyword">int</span> _targetRate<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">float</span> <span class="token function">getFrameRate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+	<span class="token keyword">float</span> <span class="token function">getTargetFrameRate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+	<span class="token keyword">double</span> <span class="token function">getLastFrameTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+	uint64_t <span class="token function">getFrameNum</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">bool</span> <span class="token function">getMousePressed</span><span class="token punctuation">(</span><span class="token keyword">int</span> button<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+	<span class="token keyword">bool</span> <span class="token function">getKeyPressed</span><span class="token punctuation">(</span><span class="token keyword">int</span> key<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+	<span class="token keyword">int</span> <span class="token function">getMouseX</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+	<span class="token keyword">int</span> <span class="token function">getMouseY</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+	<span class="token keyword">int</span> <span class="token function">getPreviousMouseX</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+	<span class="token keyword">int</span> <span class="token function">getPreviousMouseY</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+	<span class="token keyword">int</span> <span class="token function">getModifiers</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+	<span class="token comment" spellcheck="true">//  event notification only for internal OF use</span>
+	<span class="token keyword">bool</span> <span class="token function">notifySetup</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">bool</span> <span class="token function">notifyUpdate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">bool</span> <span class="token function">notifyDraw</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">bool</span> <span class="token function">notifyKeyPressed</span><span class="token punctuation">(</span><span class="token keyword">int</span> key<span class="token punctuation">,</span> <span class="token keyword">int</span> keycode<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token keyword">int</span> scancode<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> uint32_t codepoint<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">bool</span> <span class="token function">notifyKeyReleased</span><span class="token punctuation">(</span><span class="token keyword">int</span> key<span class="token punctuation">,</span> <span class="token keyword">int</span> keycode<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token keyword">int</span> scancode<span class="token operator">=</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> uint32_t codepoint<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">bool</span> <span class="token function">notifyKeyEvent</span><span class="token punctuation">(</span>ofKeyEventArgs <span class="token operator">&</span> keyEvent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">bool</span> <span class="token function">notifyMousePressed</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">,</span> <span class="token keyword">int</span> button<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">bool</span> <span class="token function">notifyMouseReleased</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">,</span> <span class="token keyword">int</span> button<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">bool</span> <span class="token function">notifyMouseDragged</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">,</span> <span class="token keyword">int</span> button<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">bool</span> <span class="token function">notifyMouseMoved</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">bool</span> <span class="token function">notifyMouseScrolled</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">,</span> <span class="token keyword">float</span> scrollX<span class="token punctuation">,</span> <span class="token keyword">float</span> scrollY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">bool</span> <span class="token function">notifyMouseEntered</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">bool</span> <span class="token function">notifyMouseExited</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">bool</span> <span class="token function">notifyMouseEvent</span><span class="token punctuation">(</span>ofMouseEventArgs <span class="token operator">&</span> mouseEvent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">void</span> <span class="token function">notifyTouchDown</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">,</span> <span class="token keyword">int</span> touchID<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">notifyTouchUp</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">,</span> <span class="token keyword">int</span> touchID<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">notifyTouchMoved</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">,</span> <span class="token keyword">int</span> touchID<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">notifyTouchCancelled</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">,</span> <span class="token keyword">int</span> touchID<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">notifyTouchDoubleTap</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">,</span> <span class="token keyword">int</span> touchID<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">notifyTouchEvent</span><span class="token punctuation">(</span>ofTouchEventArgs <span class="token operator">&</span> touchEvent<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">bool</span> <span class="token function">notifyExit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">bool</span> <span class="token function">notifyWindowResized</span><span class="token punctuation">(</span><span class="token keyword">int</span> width<span class="token punctuation">,</span> <span class="token keyword">int</span> height<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">bool</span> <span class="token function">notifyWindowMoved</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">bool</span> <span class="token function">notifyDragEvent</span><span class="token punctuation">(</span>ofDragInfo info<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">private</span><span class="token operator">:</span>
+	<span class="token keyword">float</span> targetRate<span class="token punctuation">;</span>
+	<span class="token keyword">bool</span> bFrameRateSet<span class="token punctuation">;</span>
+	ofTimer timer<span class="token punctuation">;</span>
+	ofFpsCounter fps<span class="token punctuation">;</span>
+
+	<span class="token keyword">int</span>	currentMouseX<span class="token punctuation">,</span> currentMouseY<span class="token punctuation">;</span>
+	<span class="token keyword">int</span>	previousMouseX<span class="token punctuation">,</span> previousMouseY<span class="token punctuation">;</span>
+	<span class="token keyword">bool</span> bPreMouseNotSet<span class="token punctuation">;</span>
+	std<span class="token operator">::</span>set<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> pressedMouseButtons<span class="token punctuation">;</span>
+	std<span class="token operator">::</span>set<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">></span> pressedKeys<span class="token punctuation">;</span>
+	<span class="token keyword">int</span> modifiers <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">enum</span> TimeMode<span class="token punctuation">{</span>
+		System<span class="token punctuation">,</span>
+		FixedRate<span class="token punctuation">,</span>
+		Filtered<span class="token punctuation">,</span>
+	<span class="token punctuation">}</span> timeMode <span class="token operator">=</span> System<span class="token punctuation">;</span>
+	std<span class="token operator">::</span>chrono<span class="token operator">::</span>nanoseconds fixedRateTimeNanos<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">bool</span> <span class="token function">ofSendMessage</span><span class="token punctuation">(</span>ofMessage msg<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">bool</span> <span class="token function">ofSendMessage</span><span class="token punctuation">(</span>std<span class="token operator">::</span>string messageString<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+ofCoreEvents <span class="token operator">&</span> <span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">template</span><span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token class-name">ListenerClass</span><span class="token operator">></span>
+<span class="token keyword">void</span> <span class="token function">ofRegisterMouseEvents</span><span class="token punctuation">(</span>ListenerClass <span class="token operator">*</span> listener<span class="token punctuation">,</span> <span class="token keyword">int</span> prio<span class="token operator">=</span>OF_EVENT_ORDER_AFTER_APP<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token function">ofAddListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>mouseDragged<span class="token punctuation">,</span>listener<span class="token punctuation">,</span><span class="token operator">&</span>ListenerClass<span class="token operator">::</span>mouseDragged<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">ofAddListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>mouseMoved<span class="token punctuation">,</span>listener<span class="token punctuation">,</span><span class="token operator">&</span>ListenerClass<span class="token operator">::</span>mouseMoved<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">ofAddListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>mousePressed<span class="token punctuation">,</span>listener<span class="token punctuation">,</span><span class="token operator">&</span>ListenerClass<span class="token operator">::</span>mousePressed<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">ofAddListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>mouseReleased<span class="token punctuation">,</span>listener<span class="token punctuation">,</span><span class="token operator">&</span>ListenerClass<span class="token operator">::</span>mouseReleased<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">ofAddListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>mouseScrolled<span class="token punctuation">,</span>listener<span class="token punctuation">,</span><span class="token operator">&</span>ListenerClass<span class="token operator">::</span>mouseScrolled<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">ofAddListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>mouseEntered<span class="token punctuation">,</span>listener<span class="token punctuation">,</span><span class="token operator">&</span>ListenerClass<span class="token operator">::</span>mouseEntered<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">ofAddListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>mouseExited<span class="token punctuation">,</span>listener<span class="token punctuation">,</span><span class="token operator">&</span>ListenerClass<span class="token operator">::</span>mouseExited<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">template</span><span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token class-name">ListenerClass</span><span class="token operator">></span>
+<span class="token keyword">void</span> <span class="token function">ofRegisterKeyEvents</span><span class="token punctuation">(</span>ListenerClass <span class="token operator">*</span> listener<span class="token punctuation">,</span> <span class="token keyword">int</span> prio<span class="token operator">=</span>OF_EVENT_ORDER_AFTER_APP<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token function">ofAddListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>keyPressed<span class="token punctuation">,</span> listener<span class="token punctuation">,</span> <span class="token operator">&</span>ListenerClass<span class="token operator">::</span>keyPressed<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">ofAddListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>keyReleased<span class="token punctuation">,</span> listener<span class="token punctuation">,</span> <span class="token operator">&</span>ListenerClass<span class="token operator">::</span>keyReleased<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">template</span><span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token class-name">ListenerClass</span><span class="token operator">></span>
+<span class="token keyword">void</span> <span class="token function">ofRegisterTouchEvents</span><span class="token punctuation">(</span>ListenerClass <span class="token operator">*</span> listener<span class="token punctuation">,</span> <span class="token keyword">int</span> prio<span class="token operator">=</span>OF_EVENT_ORDER_AFTER_APP<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token function">ofAddListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>touchDoubleTap<span class="token punctuation">,</span> listener<span class="token punctuation">,</span> <span class="token operator">&</span>ListenerClass<span class="token operator">::</span>touchDoubleTap<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">ofAddListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>touchDown<span class="token punctuation">,</span> listener<span class="token punctuation">,</span> <span class="token operator">&</span>ListenerClass<span class="token operator">::</span>touchDown<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">ofAddListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>touchMoved<span class="token punctuation">,</span> listener<span class="token punctuation">,</span> <span class="token operator">&</span>ListenerClass<span class="token operator">::</span>touchMoved<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">ofAddListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>touchUp<span class="token punctuation">,</span> listener<span class="token punctuation">,</span> <span class="token operator">&</span>ListenerClass<span class="token operator">::</span>touchUp<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">ofAddListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>touchCancelled<span class="token punctuation">,</span> listener<span class="token punctuation">,</span> <span class="token operator">&</span>ListenerClass<span class="token operator">::</span>touchCancelled<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">template</span><span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token class-name">ListenerClass</span><span class="token operator">></span>
+<span class="token keyword">void</span> <span class="token function">ofRegisterGetMessages</span><span class="token punctuation">(</span>ListenerClass <span class="token operator">*</span> listener<span class="token punctuation">,</span> <span class="token keyword">int</span> prio<span class="token operator">=</span>OF_EVENT_ORDER_AFTER_APP<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token function">ofAddListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>messageEvent<span class="token punctuation">,</span> listener<span class="token punctuation">,</span> <span class="token operator">&</span>ListenerClass<span class="token operator">::</span>gotMessage<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">template</span><span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token class-name">ListenerClass</span><span class="token operator">></span>
+<span class="token keyword">void</span> <span class="token function">ofRegisterDragEvents</span><span class="token punctuation">(</span>ListenerClass <span class="token operator">*</span> listener<span class="token punctuation">,</span> <span class="token keyword">int</span> prio<span class="token operator">=</span>OF_EVENT_ORDER_AFTER_APP<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token function">ofAddListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>fileDragEvent<span class="token punctuation">,</span> listener<span class="token punctuation">,</span> <span class="token operator">&</span>ListenerClass<span class="token operator">::</span>dragEvent<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">template</span><span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token class-name">ListenerClass</span><span class="token operator">></span>
+<span class="token keyword">void</span> <span class="token function">ofUnregisterMouseEvents</span><span class="token punctuation">(</span>ListenerClass <span class="token operator">*</span> listener<span class="token punctuation">,</span> <span class="token keyword">int</span> prio<span class="token operator">=</span>OF_EVENT_ORDER_AFTER_APP<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token function">ofRemoveListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>mouseDragged<span class="token punctuation">,</span>listener<span class="token punctuation">,</span><span class="token operator">&</span>ListenerClass<span class="token operator">::</span>mouseDragged<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">ofRemoveListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>mouseMoved<span class="token punctuation">,</span>listener<span class="token punctuation">,</span><span class="token operator">&</span>ListenerClass<span class="token operator">::</span>mouseMoved<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">ofRemoveListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>mousePressed<span class="token punctuation">,</span>listener<span class="token punctuation">,</span><span class="token operator">&</span>ListenerClass<span class="token operator">::</span>mousePressed<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">ofRemoveListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>mouseReleased<span class="token punctuation">,</span>listener<span class="token punctuation">,</span><span class="token operator">&</span>ListenerClass<span class="token operator">::</span>mouseReleased<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">ofRemoveListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>mouseScrolled<span class="token punctuation">,</span>listener<span class="token punctuation">,</span><span class="token operator">&</span>ListenerClass<span class="token operator">::</span>mouseScrolled<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">ofRemoveListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>mouseEntered<span class="token punctuation">,</span>listener<span class="token punctuation">,</span><span class="token operator">&</span>ListenerClass<span class="token operator">::</span>mouseEntered<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">ofRemoveListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>mouseExited<span class="token punctuation">,</span>listener<span class="token punctuation">,</span><span class="token operator">&</span>ListenerClass<span class="token operator">::</span>mouseExited<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">template</span><span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token class-name">ListenerClass</span><span class="token operator">></span>
+<span class="token keyword">void</span> <span class="token function">ofUnregisterKeyEvents</span><span class="token punctuation">(</span>ListenerClass <span class="token operator">*</span> listener<span class="token punctuation">,</span> <span class="token keyword">int</span> prio<span class="token operator">=</span>OF_EVENT_ORDER_AFTER_APP<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token function">ofRemoveListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>keyPressed<span class="token punctuation">,</span> listener<span class="token punctuation">,</span> <span class="token operator">&</span>ListenerClass<span class="token operator">::</span>keyPressed<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">ofRemoveListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>keyReleased<span class="token punctuation">,</span> listener<span class="token punctuation">,</span> <span class="token operator">&</span>ListenerClass<span class="token operator">::</span>keyReleased<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">template</span><span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token class-name">ListenerClass</span><span class="token operator">></span>
+<span class="token keyword">void</span> <span class="token function">ofUnregisterTouchEvents</span><span class="token punctuation">(</span>ListenerClass <span class="token operator">*</span> listener<span class="token punctuation">,</span> <span class="token keyword">int</span> prio<span class="token operator">=</span>OF_EVENT_ORDER_AFTER_APP<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token function">ofRemoveListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>touchDoubleTap<span class="token punctuation">,</span> listener<span class="token punctuation">,</span> <span class="token operator">&</span>ListenerClass<span class="token operator">::</span>touchDoubleTap<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">ofRemoveListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>touchDown<span class="token punctuation">,</span> listener<span class="token punctuation">,</span> <span class="token operator">&</span>ListenerClass<span class="token operator">::</span>touchDown<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">ofRemoveListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>touchMoved<span class="token punctuation">,</span> listener<span class="token punctuation">,</span> <span class="token operator">&</span>ListenerClass<span class="token operator">::</span>touchMoved<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">ofRemoveListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>touchUp<span class="token punctuation">,</span> listener<span class="token punctuation">,</span> <span class="token operator">&</span>ListenerClass<span class="token operator">::</span>touchUp<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">ofRemoveListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>touchCancelled<span class="token punctuation">,</span> listener<span class="token punctuation">,</span> <span class="token operator">&</span>ListenerClass<span class="token operator">::</span>touchCancelled<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">template</span><span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token class-name">ListenerClass</span><span class="token operator">></span>
+<span class="token keyword">void</span> <span class="token function">ofUnregisterGetMessages</span><span class="token punctuation">(</span>ListenerClass <span class="token operator">*</span> listener<span class="token punctuation">,</span> <span class="token keyword">int</span> prio<span class="token operator">=</span>OF_EVENT_ORDER_AFTER_APP<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token function">ofRemoveListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>messageEvent<span class="token punctuation">,</span> listener<span class="token punctuation">,</span> <span class="token operator">&</span>ListenerClass<span class="token operator">::</span>gotMessage<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">template</span><span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token class-name">ListenerClass</span><span class="token operator">></span>
+<span class="token keyword">void</span> <span class="token function">ofUnregisterDragEvents</span><span class="token punctuation">(</span>ListenerClass <span class="token operator">*</span> listener<span class="token punctuation">,</span> <span class="token keyword">int</span> prio<span class="token operator">=</span>OF_EVENT_ORDER_AFTER_APP<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token function">ofRemoveListener</span><span class="token punctuation">(</span><span class="token function">ofEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>fileDragEvent<span class="token punctuation">,</span> listener<span class="token punctuation">,</span> <span class="token operator">&</span>ListenerClass<span class="token operator">::</span>dragEvent<span class="token punctuation">,</span>prio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1586012716389/openframeworks/events/ofEvents_h/payload.js"></script><script src="/_nuxt/5f71eaca0bd2f1a0f939.js" defer></script><script src="/_nuxt/35a90d914f539af1362f.js" defer></script><script src="/_nuxt/906a3ca0fb13ed3c6651.js" defer></script><script src="/_nuxt/b673915e8a08acf593e8.js" defer></script><script src="/_nuxt/bf355f21967a23c26c07.js" defer></script>
+  </body>
+</html>

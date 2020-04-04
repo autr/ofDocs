@@ -1,0 +1,959 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>ofRectangle.h | openframeworks | ofDocs</title><meta data-n-head="ssr" data-hid="description" name="description" content="openFrameworks documentation and examples browser"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="openFrameworks documentation and examples browser" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="ofRectangle.h | openframeworks | ofDocs" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="/files/images/ofw-logo.png" vmid="og:image"><link rel="preload" href="/_nuxt/5f71eaca0bd2f1a0f939.js" as="script"><link rel="preload" href="/_nuxt/906a3ca0fb13ed3c6651.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/b673915e8a08acf593e8.js" as="script"><link rel="preload" href="/_nuxt/46e8fcacdadb233d9fb6.css" as="style"><link rel="preload" href="/_nuxt/bf355f21967a23c26c07.js" as="script"><link rel="preload" href="/_nuxt/35a90d914f539af1362f.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/46e8fcacdadb233d9fb6.css">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app"><div id="menu"><div class="menu-inner"><div id="settings"></div><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><svg version="1.1" viewbox="0 0 110 58" width="110px" height="58px" enable-background="0 0 110 58" xml:space="preserve" class="logo"><g><path d="M58,29 C58,13 45,0 29,0 C13,0 0,13 0,29 C0,45 13,58 29,58 C45,58 58,45 58,29 Z"></path><rect x="59" y="0" width="25" height="58"></rect><rect x="85" y="26" width="15" height="15"></rect><path d="M85,0 L110,0 L85,25 L85,0 Z"></path></g></svg><div class="txt"><span class="docs f7 questrial">Docs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343							c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88							c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593							c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789							C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><!----></div><div id="lists" class="menu-inner mt1 mb2"><div class="inner"></div></div></div><div class="menu-bottom"><div class="inner"><button class="button"><!----><span><span class="ico">nights_stay</span></span></button></div></div></div><div id="document"><div id="renderer" class="main source"><div absolute="/Users/Gilbert/Code/openFrameworks/libs/openFrameworks/types/ofRectangle.h" route="/openframeworks/types/ofRectangle.h" dir="../libs/openFrameworks/types" ext="h" type="source" id="296" parent="285" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/openframeworks/" class="pink nuxt-link-active">openframeworks </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/openframeworks/types/" class="pink nuxt-link-active">types </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link selector"><span class="name">ofRectangle.h</span><span class="chevron bottom"></span><select><option value="/openframeworks/types/ofBaseTypes_cpp">ofBaseTypes.cpp</option><option value="/openframeworks/types/ofBaseTypes_h">ofBaseTypes.h</option><option value="/openframeworks/types/ofColor_cpp">ofColor.cpp</option><option value="/openframeworks/types/ofColor_h">ofColor.h</option><option value="/openframeworks/types/ofParameter_cpp">ofParameter.cpp</option><option value="/openframeworks/types/ofParameter_h">ofParameter.h</option><option value="/openframeworks/types/ofParameterGroup_cpp">ofParameterGroup.cpp</option><option value="/openframeworks/types/ofParameterGroup_h">ofParameterGroup.h</option><option value="/openframeworks/types/ofPoint_h">ofPoint.h</option><option value="/openframeworks/types/ofRectangle_cpp">ofRectangle.cpp</option><option value="/openframeworks/types/ofRectangle_h">ofRectangle.h</option><option value="/openframeworks/types/ofTypes_h">ofTypes.h</option></select></span><!----></span></span></div></div></div><div id="code-page" static="true"><div id="side-menu"><div id="code-sources"><h4 class="f3 dropdown-toggle">Sources</h4><div class="srcsiblings dropdown-area"><a href="/openframeworks/types/ofBaseTypes_cpp" class="block"><span class="src">src </span><span class="name">ofBaseTypes.cpp </span></a><a href="/openframeworks/types/ofBaseTypes_h" class="block"><span class="src">src </span><span class="name">ofBaseTypes.h </span></a><a href="/openframeworks/types/ofColor_cpp" class="block"><span class="src">src </span><span class="name">ofColor.cpp </span></a><a href="/openframeworks/types/ofColor_h" class="block"><span class="src">src </span><span class="name">ofColor.h </span></a><a href="/openframeworks/types/ofParameter_cpp" class="block"><span class="src">src </span><span class="name">ofParameter.cpp </span></a><a href="/openframeworks/types/ofParameter_h" class="block"><span class="src">src </span><span class="name">ofParameter.h </span></a><a href="/openframeworks/types/ofParameterGroup_cpp" class="block"><span class="src">src </span><span class="name">ofParameterGroup.cpp </span></a><a href="/openframeworks/types/ofParameterGroup_h" class="block"><span class="src">src </span><span class="name">ofParameterGroup.h </span></a><a href="/openframeworks/types/ofPoint_h" class="block"><span class="src">src </span><span class="name">ofPoint.h </span></a><a href="/openframeworks/types/ofRectangle_cpp" class="block"><span class="src">src </span><span class="name">ofRectangle.cpp </span></a><a href="/openframeworks/types/ofRectangle_h" class="block nuxt-link-exact-active nuxt-link-active current"><span class="src">src </span><span class="name">ofRectangle.h </span></a><a href="/openframeworks/types/ofTypes_h" class="block"><span class="src">src </span><span class="name">ofTypes.h </span></a></div></div><div id="comments" class="dropdown-area"><h4 class="f3 dropdown-toggle">Comments</h4><div class="dropdown-area"></div></div><div filename="types" absolute="/Users/Gilbert/Code/openFrameworks/libs/openFrameworks/types" dir="../libs/openFrameworks" route="/openframeworks/types/" ext="" type="folder" id="285" children="286,287,288,289,290,291,292,293,294,295,296,297" icon="ring_volume" parent="164" breadcrumbs="164" class="see-also"><h4 class="f3">See also</h4><div class="also"><a href="/documentation/types/"><span class="origin">documentation</span><span class="name">types</span></a></div></div></div><div id="code-render"><div class="inner"><pre><code>    <span class="token macro property">#<span class="token directive keyword">pragma</span> once</span>
+
+
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"ofConstants.h"</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;glm/vec3.hpp></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;glm/vec2.hpp></span></span>
+
+
+
+<span class="token comment" spellcheck="true">/// \brief Used to represent the available rectangle aspect ratio scaling modes.</span>
+<span class="token comment" spellcheck="true">///</span>
+<span class="token comment" spellcheck="true">/// \sa ofRectangle</span>
+<span class="token keyword">enum</span> ofAspectRatioMode <span class="token punctuation">{</span>
+	<span class="token comment" spellcheck="true">/// \brief Set the rectangle's width and height to match the target.</span>
+	OF_ASPECT_RATIO_IGNORE            <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span>
+	<span class="token comment" spellcheck="true">/// \brief Resizes the rectangle to completely fit within the target.</span>
+	OF_ASPECT_RATIO_KEEP              <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	<span class="token comment" spellcheck="true">/// \brief Resizes the rectangle to completely enclose the target.</span>
+	OF_ASPECT_RATIO_KEEP_BY_EXPANDING <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">/// \brief Used to represent the available vertical rectangle alignment modes.</span>
+<span class="token comment" spellcheck="true">///</span>
+<span class="token comment" spellcheck="true">/// \sa ofRectangle</span>
+<span class="token keyword">enum</span> ofAlignVert <span class="token punctuation">{</span>
+	<span class="token comment" spellcheck="true">/// \brief Do not perform any vertical alignment.</span>
+	OF_ALIGN_VERT_IGNORE   <span class="token operator">=</span> <span class="token number">0x0000</span><span class="token punctuation">,</span>
+	<span class="token comment" spellcheck="true">/// \brief Use the upper edge of the rectangle to vertically anchor the alignment.</span>
+	OF_ALIGN_VERT_TOP      <span class="token operator">=</span> <span class="token number">0x0010</span><span class="token punctuation">,</span>
+	<span class="token comment" spellcheck="true">/// \brief Use the bottom edge of the rectangle to vertically anchor the alignment.</span>
+	OF_ALIGN_VERT_BOTTOM   <span class="token operator">=</span> <span class="token number">0x0020</span><span class="token punctuation">,</span>
+	<span class="token comment" spellcheck="true">/// \brief Use the center of the rectangle to vertically anchor the alignment.</span>
+	OF_ALIGN_VERT_CENTER   <span class="token operator">=</span> <span class="token number">0x0040</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+
+<span class="token comment" spellcheck="true">/// \brief Used to represent the available horizontal rectangle alignment modes.</span>
+<span class="token comment" spellcheck="true">///</span>
+<span class="token comment" spellcheck="true">/// \sa ofRectangle</span>
+<span class="token keyword">enum</span> ofAlignHorz <span class="token punctuation">{</span>
+	<span class="token comment" spellcheck="true">/// \brief Do not perform any horizontal alignment.</span>
+	OF_ALIGN_HORZ_IGNORE   <span class="token operator">=</span> <span class="token number">0x0000</span><span class="token punctuation">,</span>
+	<span class="token comment" spellcheck="true">/// \brief Use the left edge of the rectangle to horizontally anchor the alignment.</span>
+	OF_ALIGN_HORZ_LEFT     <span class="token operator">=</span> <span class="token number">0x0001</span><span class="token punctuation">,</span>
+	<span class="token comment" spellcheck="true">/// \brief Use the right edge of the rectangle to horizontally anchor the alignment.</span>
+	OF_ALIGN_HORZ_RIGHT    <span class="token operator">=</span> <span class="token number">0x0002</span><span class="token punctuation">,</span>
+	<span class="token comment" spellcheck="true">/// \brief Use the center of the rectangle to horizontally anchor the alignment.</span>
+	OF_ALIGN_HORZ_CENTER   <span class="token operator">=</span> <span class="token number">0x0004</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">/// \brief Used to represent the available rectangle scaling modes.</span>
+<span class="token comment" spellcheck="true">///</span>
+<span class="token comment" spellcheck="true">/// ofScaleMode can usually be interpreted as a concise combination of</span>
+<span class="token comment" spellcheck="true">/// an ::ofAspectRatioMode, an ::ofAlignVert and an ::ofAlignHorz.</span>
+<span class="token keyword">enum</span> ofScaleMode<span class="token punctuation">{</span>
+
+	<span class="token comment" spellcheck="true">/// \brief Center and scale the rectangle to fit inside the target.</span>
+	<span class="token comment" spellcheck="true">///</span>
+	<span class="token comment" spellcheck="true">/// This centers the subject rectangle within the target rectangle and</span>
+	<span class="token comment" spellcheck="true">/// resizes the subject rectangle to completely fit within the target</span>
+	<span class="token comment" spellcheck="true">/// rectangle.</span>
+	OF_SCALEMODE_FIT     <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span>
+
+	<span class="token comment" spellcheck="true">/// \brief Move and scale the rectangle to completely enclose the target.</span>
+	<span class="token comment" spellcheck="true">///</span>
+	<span class="token comment" spellcheck="true">/// This centers the subject rectangle within the target rectangle and</span>
+	<span class="token comment" spellcheck="true">/// resizes the subject rectangle to completely encompass the target</span>
+	<span class="token comment" spellcheck="true">/// rectangle.</span>
+	OF_SCALEMODE_FILL    <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span>
+
+	<span class="token comment" spellcheck="true">/// \brief Move the rectangle to be centered on the target.</span>
+	<span class="token comment" spellcheck="true">///</span>
+	<span class="token comment" spellcheck="true">/// This centers the subject rectangle within the target rectangle and</span>
+	<span class="token comment" spellcheck="true">/// does not modify the Subject's size or aspect ratio.</span>
+	OF_SCALEMODE_CENTER  <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment" spellcheck="true">// centers the subject</span>
+
+	<span class="token comment" spellcheck="true">/// \brief Match the target rectangle's position and dimensions.</span>
+	OF_SCALEMODE_STRETCH_TO_FILL <span class="token operator">=</span> <span class="token number">3</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+
+<span class="token comment" spellcheck="true">/// \brief A class representing a 2D rectangle.</span>
+<span class="token comment" spellcheck="true">///</span>
+<span class="token comment" spellcheck="true">/// ofRectangle is a simple container for describing the position and size of a</span>
+<span class="token comment" spellcheck="true">/// 2D rectangle. The ofRectangle::standardize() method can be used to ensure</span>
+<span class="token comment" spellcheck="true">/// that the origin is in the "standard" form.</span>
+<span class="token comment" spellcheck="true">///</span>
+<span class="token comment" spellcheck="true">/// \warning While ofRectangle takes glm::vec3</span>
+<span class="token comment" spellcheck="true">/// all ofRectangle operations are 2D only, ignoring the z-component.</span>
+<span class="token keyword">class</span> <span class="token class-name">ofRectangle</span><span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+
+    <span class="token comment" spellcheck="true">/// \name Constructor</span>
+    <span class="token comment" spellcheck="true">/// \{</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Construct a rectangle with zero width and zero height at 0, 0.</span>
+    <span class="token function">ofRectangle</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Construct a rectangle using position and size.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// To produce consistent results, users are encouraged to initialize</span>
+    <span class="token comment" spellcheck="true">/// rectangles in the standardized form with width >=0 and height >= 0.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param px The x-position of the rectangle.</span>
+    <span class="token comment" spellcheck="true">/// \param py The y-position of the rectangle.</span>
+    <span class="token comment" spellcheck="true">/// \param w The width of the rectangle.</span>
+    <span class="token comment" spellcheck="true">/// \param h The height of the rectangle.</span>
+    <span class="token function">ofRectangle</span><span class="token punctuation">(</span><span class="token keyword">float</span> px<span class="token punctuation">,</span> <span class="token keyword">float</span> py<span class="token punctuation">,</span> <span class="token keyword">float</span> w<span class="token punctuation">,</span> <span class="token keyword">float</span> h<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Construct a rectangle from a point and dimensions.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// To produce consistent results, users are encouraged to initialize</span>
+    <span class="token comment" spellcheck="true">/// rectangles in the standardized form with width >=0 and height >= 0.</span>
+    <span class="token comment" spellcheck="true">///</span>
+	<span class="token comment" spellcheck="true">/// \warning The z-component of the passed glm::vec3 is ignored.</span>
+    <span class="token comment" spellcheck="true">///</span>
+	<span class="token comment" spellcheck="true">/// \param p The glm::vec3 representing the position of the rectangle.</span>
+    <span class="token comment" spellcheck="true">/// \param w The width of the rectangle.</span>
+    <span class="token comment" spellcheck="true">/// \param h The height of the rectangle.</span>
+	<span class="token function">ofRectangle</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec3<span class="token operator">&</span> p<span class="token punctuation">,</span> <span class="token keyword">float</span> w<span class="token punctuation">,</span> <span class="token keyword">float</span> h<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">ofRectangle</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec2<span class="token operator">&</span> p<span class="token punctuation">,</span> <span class="token keyword">float</span> w<span class="token punctuation">,</span> <span class="token keyword">float</span> h<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Construct a rectangle by copying another rectangle.</span>
+    <span class="token comment" spellcheck="true">/// \param rect The rectangle to copy.</span>
+    <span class="token function">ofRectangle</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofRectangle<span class="token operator">&</span> rect<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Construct a rectangle by defining two corners.</span>
+    <span class="token comment" spellcheck="true">///</span>
+	<span class="token comment" spellcheck="true">/// \warning The z-components of the passed glm::vec3s are ignored.</span>
+    <span class="token comment" spellcheck="true">///</span>
+	<span class="token comment" spellcheck="true">/// \param p0 An glm::vec3 representing the upper left hand corner.</span>
+	<span class="token comment" spellcheck="true">/// \param p1 An glm::vec3 representing the lower right hand corner.</span>
+	<span class="token function">ofRectangle</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec3<span class="token operator">&</span> p0<span class="token punctuation">,</span> <span class="token keyword">const</span> glm<span class="token operator">::</span>vec3<span class="token operator">&</span> p1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">ofRectangle</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec2<span class="token operator">&</span> p0<span class="token punctuation">,</span> <span class="token keyword">const</span> glm<span class="token operator">::</span>vec2<span class="token operator">&</span> p1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Destroy the rectangle.</span>
+    <span class="token keyword">virtual</span> <span class="token operator">~</span><span class="token function">ofRectangle</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \}</span>
+
+    <span class="token comment" spellcheck="true">/// \name Setters</span>
+    <span class="token comment" spellcheck="true">/// \{</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Set the position and size of the rectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// To produce consistent results, users are encouraged to initialize</span>
+    <span class="token comment" spellcheck="true">/// rectangles in the standardized form with width >=0 and height >= 0.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param px The new x-position.</span>
+    <span class="token comment" spellcheck="true">/// \param py The new y-position.</span>
+    <span class="token comment" spellcheck="true">/// \param w The new width.</span>
+    <span class="token comment" spellcheck="true">/// \param h The new height.</span>
+    <span class="token keyword">void</span> <span class="token function">set</span><span class="token punctuation">(</span><span class="token keyword">float</span> px<span class="token punctuation">,</span> <span class="token keyword">float</span> py<span class="token punctuation">,</span> <span class="token keyword">float</span> w<span class="token punctuation">,</span> <span class="token keyword">float</span> h<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Set the position and size of the rectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// To produce consistent results, users are encouraged to initialize</span>
+    <span class="token comment" spellcheck="true">/// rectangles in the standardized form with width >=0 and height >= 0.</span>
+    <span class="token comment" spellcheck="true">///</span>
+	<span class="token comment" spellcheck="true">/// \warning The z-component of the passed glm::vec3 is ignored.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param p The new position.</span>
+    <span class="token comment" spellcheck="true">/// \param w The new width.</span>
+    <span class="token comment" spellcheck="true">/// \param h The new height.</span>
+	<span class="token keyword">void</span> <span class="token function">set</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec3<span class="token operator">&</span> p<span class="token punctuation">,</span> <span class="token keyword">float</span> w<span class="token punctuation">,</span> <span class="token keyword">float</span> h<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">set</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec2<span class="token operator">&</span> p<span class="token punctuation">,</span> <span class="token keyword">float</span> w<span class="token punctuation">,</span> <span class="token keyword">float</span> h<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Set the position and size by copying them from anohter rectangle.</span>
+    <span class="token comment" spellcheck="true">/// \param rect The rectangle to copy.</span>
+    <span class="token keyword">void</span> <span class="token function">set</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofRectangle<span class="token operator">&</span> rect<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Set the position and size of the rectangle using corners.</span>
+    <span class="token comment" spellcheck="true">///</span>
+	<span class="token comment" spellcheck="true">/// \warning The z-components of the passed glm::vec3s are ignored.</span>
+    <span class="token comment" spellcheck="true">///</span>
+	<span class="token comment" spellcheck="true">/// \param p0 The glm::vec3 representing the upper left hand corner.</span>
+	<span class="token comment" spellcheck="true">/// \param p1 The glm::vec3 representing the lower right hand corner.</span>
+	<span class="token keyword">void</span> <span class="token function">set</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec3<span class="token operator">&</span> p0<span class="token punctuation">,</span> <span class="token keyword">const</span> glm<span class="token operator">::</span>vec3<span class="token operator">&</span> p1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">set</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec2<span class="token operator">&</span> p0<span class="token punctuation">,</span> <span class="token keyword">const</span> glm<span class="token operator">::</span>vec2<span class="token operator">&</span> p1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Set the x-position of the rectangle.</span>
+    <span class="token comment" spellcheck="true">/// \param px The new x-position.</span>
+    <span class="token keyword">void</span> <span class="token function">setX</span><span class="token punctuation">(</span><span class="token keyword">float</span> px<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Set the y-position of the rectangle.</span>
+    <span class="token comment" spellcheck="true">/// \param py The new y-position.</span>
+    <span class="token keyword">void</span> <span class="token function">setY</span><span class="token punctuation">(</span><span class="token keyword">float</span> py<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Set the width of the rectangle.</span>
+    <span class="token comment" spellcheck="true">/// \param w The new width.</span>
+    <span class="token keyword">void</span> <span class="token function">setWidth</span><span class="token punctuation">(</span><span class="token keyword">float</span> w<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Set the height of the rectangle.</span>
+    <span class="token comment" spellcheck="true">/// \param h The new height.</span>
+    <span class="token keyword">void</span> <span class="token function">setHeight</span><span class="token punctuation">(</span><span class="token keyword">float</span> h<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Set the position of the rectangle.</span>
+    <span class="token comment" spellcheck="true">/// \param px The new x-position.</span>
+    <span class="token comment" spellcheck="true">/// \param py The new y-position.</span>
+    <span class="token keyword">void</span> <span class="token function">setPosition</span><span class="token punctuation">(</span><span class="token keyword">float</span> px<span class="token punctuation">,</span> <span class="token keyword">float</span> py<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Set the position of the rectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+	<span class="token comment" spellcheck="true">/// \warning The z-component of the passed glm::vec3 is ignored.</span>
+    <span class="token comment" spellcheck="true">///</span>
+	<span class="token comment" spellcheck="true">/// \param p The position as an glm::vec3.</span>
+	<span class="token keyword">void</span> <span class="token function">setPosition</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec3<span class="token operator">&</span> p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token comment" spellcheck="true">/// \brief Set the size of the rectangle.</span>
+	<span class="token comment" spellcheck="true">/// \param w The new width.</span>
+	<span class="token comment" spellcheck="true">/// \param h The new height.</span>
+	<span class="token keyword">void</span> <span class="token function">setSize</span><span class="token punctuation">(</span><span class="token keyword">float</span> w<span class="token punctuation">,</span> <span class="token keyword">float</span> h<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Set position and size of the rectangle from the center.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// The center of the rectangle is defined and the width and height grow</span>
+    <span class="token comment" spellcheck="true">/// out around the center.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param px The x-position of the rectangle's center.</span>
+    <span class="token comment" spellcheck="true">/// \param py The y-position of the rectangle's center.</span>
+    <span class="token comment" spellcheck="true">/// \param w The width of the rectangle.</span>
+    <span class="token comment" spellcheck="true">/// \param h The height of the rectangle.</span>
+    <span class="token keyword">void</span> <span class="token function">setFromCenter</span><span class="token punctuation">(</span><span class="token keyword">float</span> px<span class="token punctuation">,</span> <span class="token keyword">float</span> py<span class="token punctuation">,</span> <span class="token keyword">float</span> w<span class="token punctuation">,</span> <span class="token keyword">float</span> h<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Set position and size of the rectangle from the center.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// The center of the rectangle is defined and the width and height grow</span>
+    <span class="token comment" spellcheck="true">/// out around the center.</span>
+    <span class="token comment" spellcheck="true">///</span>
+	<span class="token comment" spellcheck="true">/// \param p The position of the rectangle's center as an glm::vec3.</span>
+    <span class="token comment" spellcheck="true">/// \param w The width of the rectangle.</span>
+    <span class="token comment" spellcheck="true">/// \param h The height of the rectangle.</span>
+	<span class="token keyword">void</span> <span class="token function">setFromCenter</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec3<span class="token operator">&</span> p<span class="token punctuation">,</span> <span class="token keyword">float</span> w<span class="token punctuation">,</span> <span class="token keyword">float</span> h<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">setFromCenter</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec2<span class="token operator">&</span> p<span class="token punctuation">,</span> <span class="token keyword">float</span> w<span class="token punctuation">,</span> <span class="token keyword">float</span> h<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \}</span>
+
+    <span class="token comment" spellcheck="true">/// \name Transformation</span>
+    <span class="token comment" spellcheck="true">/// \{</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Translate the rectangle's position by an x and y amount.</span>
+    <span class="token comment" spellcheck="true">/// \param dx The amount to translate in the x direction.</span>
+    <span class="token comment" spellcheck="true">/// \param dy The amount to translate in the y direction.</span>
+    <span class="token keyword">void</span> <span class="token function">translate</span><span class="token punctuation">(</span><span class="token keyword">float</span> dx<span class="token punctuation">,</span> <span class="token keyword">float</span> dy<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Translate the rectangle's position by an x and y amount.</span>
+    <span class="token comment" spellcheck="true">///</span>
+	<span class="token comment" spellcheck="true">/// \warning The z-component of the passed glm::vec3 is ignored.</span>
+    <span class="token comment" spellcheck="true">///</span>
+	<span class="token comment" spellcheck="true">/// \param dp The amount to translate as an glm::vec3.</span>
+	<span class="token keyword">void</span> <span class="token function">translate</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec3<span class="token operator">&</span> dp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">translate</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec2<span class="token operator">&</span> dp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Translate the x-position of the rectangle.</span>
+    <span class="token comment" spellcheck="true">/// \param dx The amount to translate on the x-axis.</span>
+    <span class="token keyword">void</span> <span class="token function">translateX</span><span class="token punctuation">(</span><span class="token keyword">float</span> dx<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Translate the y-position of the rectangle.</span>
+    <span class="token comment" spellcheck="true">/// \param dy The amount to translate on the y-axis.</span>
+    <span class="token keyword">void</span> <span class="token function">translateY</span><span class="token punctuation">(</span><span class="token keyword">float</span> dy<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Scale the rectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// Scaling will scale the width and the height, but will not change the</span>
+    <span class="token comment" spellcheck="true">/// position.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param s The scaling factor.</span>
+    <span class="token keyword">void</span> <span class="token function">scale</span><span class="token punctuation">(</span><span class="token keyword">float</span> s<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Scale the rectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// Scaling will scale the width and the height, but will not change the</span>
+    <span class="token comment" spellcheck="true">/// position.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param sX The width-scaling factor.</span>
+    <span class="token comment" spellcheck="true">/// \param sY The height-scaling factor.</span>
+    <span class="token keyword">void</span> <span class="token function">scale</span><span class="token punctuation">(</span><span class="token keyword">float</span> sX<span class="token punctuation">,</span> <span class="token keyword">float</span> sY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Scale the rectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// Scaling will scale the width and the height, but will not change the</span>
+    <span class="token comment" spellcheck="true">/// position.</span>
+    <span class="token comment" spellcheck="true">///</span>
+	<span class="token comment" spellcheck="true">/// \warning The z-component of the passed glm::vec3 is ignored.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param s The scaling factor.</span>
+	<span class="token keyword">void</span> <span class="token function">scale</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec3<span class="token operator">&</span> s<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">scale</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec2<span class="token operator">&</span> s<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Scale the width of the rectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// This will scale the width but will not change the position or height.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param sX The width-scaling factor.</span>
+    <span class="token keyword">void</span> <span class="token function">scaleWidth</span><span class="token punctuation">(</span><span class="token keyword">float</span> sX<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Scale the height of the rectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// This will scale the height but will not change the position and width.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param sY The height-scaling factor.</span>
+    <span class="token keyword">void</span> <span class="token function">scaleHeight</span><span class="token punctuation">(</span><span class="token keyword">float</span> sY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Scales both the width and height the ofRectangle from its center.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// The center point of the rectangle will remain fixed and the width,</span>
+    <span class="token comment" spellcheck="true">/// height, x, and y will be adjusted.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param s The scaling factor.</span>
+    <span class="token keyword">void</span> <span class="token function">scaleFromCenter</span><span class="token punctuation">(</span><span class="token keyword">float</span> s<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Scales both the width and height the ofRectangle from its center.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// The center point of the rectangle will remain fixed and the width,</span>
+    <span class="token comment" spellcheck="true">/// height, x, and y will be adjusted.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param sX the width-scaling factor.</span>
+    <span class="token comment" spellcheck="true">/// \param sY the height-scaling factor.</span>
+    <span class="token keyword">void</span> <span class="token function">scaleFromCenter</span><span class="token punctuation">(</span><span class="token keyword">float</span> sX<span class="token punctuation">,</span> <span class="token keyword">float</span> sY<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Scales both the width and height the ofRectangle from its center.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// The center point of the rectangle will remain fixed and the width,</span>
+    <span class="token comment" spellcheck="true">/// height, x, and y will be adjusted.</span>
+    <span class="token comment" spellcheck="true">///</span>
+	<span class="token comment" spellcheck="true">/// \warning The z-component of the passed glm::vec3 is ignored.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param s The scaling factor.</span>
+	<span class="token keyword">void</span> <span class="token function">scaleFromCenter</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec3<span class="token operator">&</span> s<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">scaleFromCenter</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec2<span class="token operator">&</span> s<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Scale the rectanle using a target ofRectangle and ofScaleMode.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// Adjusts the ofRectangle to match the provided ofRectangle using the</span>
+    <span class="token comment" spellcheck="true">/// provided ofScaleMode.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param targetRect The Target Rectangle to scale to.</span>
+    <span class="token comment" spellcheck="true">/// \param scaleMode The scale mode to use when scaling.</span>
+    <span class="token keyword">void</span> <span class="token function">scaleTo</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofRectangle<span class="token operator">&</span> targetRect<span class="token punctuation">,</span>
+                 ofScaleMode scaleMode <span class="token operator">=</span> OF_SCALEMODE_FIT<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+    <span class="token comment" spellcheck="true">/// \brief Scale the rectangle using a target ofRectangle and parameters.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// Scales the ofRectangle to match the target ofRectangle. It will use the</span>
+    <span class="token comment" spellcheck="true">/// ofAspectRatioMode to scale the ofRectangle and will use the</span>
+    <span class="token comment" spellcheck="true">/// alignment anchor parameters to position the rectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param targetRect The Target Rectangle to scale to.</span>
+    <span class="token comment" spellcheck="true">/// \param subjectAspectRatioMode Aspect ratio scaling mode.</span>
+    <span class="token comment" spellcheck="true">/// \param sharedHorzAnchor The horizontal alignment method.</span>
+    <span class="token comment" spellcheck="true">/// \param sharedVertAnchor The vertical alignment method.</span>
+    <span class="token keyword">void</span> <span class="token function">scaleTo</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofRectangle<span class="token operator">&</span> targetRect<span class="token punctuation">,</span>
+                 ofAspectRatioMode subjectAspectRatioMode<span class="token punctuation">,</span>
+                 ofAlignHorz sharedHorzAnchor <span class="token operator">=</span> OF_ALIGN_HORZ_CENTER<span class="token punctuation">,</span>
+                 ofAlignVert sharedVertAnchor <span class="token operator">=</span> OF_ALIGN_VERT_CENTER<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Scale the rectangle using a target ofRectangle and parameters.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// Adjusts the ofRectangle to match the passed-in ofRectangle. It will</span>
+    <span class="token comment" spellcheck="true">/// use the ofAspectRatioMode to scale the ofRectangle, and will use the</span>
+    <span class="token comment" spellcheck="true">/// use the alignment anchor parameters to position the rectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param targetRect The Target Rectangle to scale to.</span>
+    <span class="token comment" spellcheck="true">/// \param subjectAspectRatioMode Aspect ratio scaling mode.</span>
+    <span class="token comment" spellcheck="true">/// \param modelHorzAnchor The target horizontal alignment method.</span>
+    <span class="token comment" spellcheck="true">/// \param modelVertAnchor The target vertical alignment method.</span>
+    <span class="token comment" spellcheck="true">/// \param subjectHorzAnchor The subject horizontal alignment method.</span>
+    <span class="token comment" spellcheck="true">/// \param subjectVertAnchor The subject vertical alignment method.</span>
+    <span class="token keyword">void</span> <span class="token function">scaleTo</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofRectangle<span class="token operator">&</span> targetRect<span class="token punctuation">,</span>
+                 ofAspectRatioMode subjectAspectRatioMode<span class="token punctuation">,</span>
+                 ofAlignHorz modelHorzAnchor<span class="token punctuation">,</span>
+                 ofAlignVert modelVertAnchor<span class="token punctuation">,</span>
+                 ofAlignHorz subjectHorzAnchor<span class="token punctuation">,</span>
+                 ofAlignVert subjectVertAnchor<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \}</span>
+
+    <span class="token comment" spellcheck="true">/// \name Alignment</span>
+    <span class="token comment" spellcheck="true">/// \{</span>
+
+
+    <span class="token comment" spellcheck="true">/// \brief Horizontally align a rectangle using a position and anchor edge.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// Aligns the horizontal position of the ofRectangle to the given x-</span>
+    <span class="token comment" spellcheck="true">/// position using an ofAlignHorz constant as anchor. If a constant is not passed in</span>
+    <span class="token comment" spellcheck="true">/// this will align the center of the rectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param targetX The x-position to align this rectangle to.</span>
+    <span class="token comment" spellcheck="true">/// \param thisHorzAnchor The edge of this rectangle to align.</span>
+    <span class="token keyword">void</span> <span class="token function">alignToHorz</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">float</span><span class="token operator">&</span> targetX<span class="token punctuation">,</span>
+                     ofAlignHorz thisHorzAnchor <span class="token operator">=</span> OF_ALIGN_HORZ_CENTER<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Horizontally align two rectangles to another using one anchor for both.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// Aligns the horizontal position of the ofRectangle to that of the</span>
+    <span class="token comment" spellcheck="true">/// passed-in ofRectangle using an ofAlignHorz constant as anchor.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// If a constant is not passed in, this will align the horizontal centers</span>
+    <span class="token comment" spellcheck="true">/// of the rectangles.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// If a constant is passed in, it will use that constant for both</span>
+    <span class="token comment" spellcheck="true">/// rectangles.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param targetRect The target rectangle to align this rectangle to.</span>
+    <span class="token comment" spellcheck="true">/// \param sharedAnchor The common edge of the rectangles to align.</span>
+    <span class="token keyword">void</span> <span class="token function">alignToHorz</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofRectangle<span class="token operator">&</span> targetRect<span class="token punctuation">,</span>
+                     ofAlignHorz sharedAnchor <span class="token operator">=</span> OF_ALIGN_HORZ_CENTER<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Horizontally align two rectangles to another using two anchors.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// Aligns the horizontal position of the ofRectangle to that of the</span>
+    <span class="token comment" spellcheck="true">/// passed-in ofRectangle. Takes two ofAlignHorz constants as anchors.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// Will align the chosen anchor in the ofRectangle with the chosen anchor</span>
+    <span class="token comment" spellcheck="true">/// in the passed-in ofRectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param targetRect The target rectangle to align this rectangle to.</span>
+    <span class="token comment" spellcheck="true">/// \param targetHorzAnchor The edge of the other rectangle to align.</span>
+    <span class="token comment" spellcheck="true">/// \param thisHorzAnchor The edge of this rectangle to align.</span>
+    <span class="token keyword">void</span> <span class="token function">alignToHorz</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofRectangle<span class="token operator">&</span> targetRect<span class="token punctuation">,</span>
+                     ofAlignHorz targetHorzAnchor<span class="token punctuation">,</span>
+                     ofAlignHorz thisHorzAnchor<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Vertically align a rectangle using a position and anchor edge.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// Aligns the vertical position of the ofRectangle to the given y-</span>
+    <span class="token comment" spellcheck="true">/// position using an ofAlignVert constant as anchor. If a constant is not passed in</span>
+    <span class="token comment" spellcheck="true">/// this will align the center of the rectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param targetY The target y-position to align this rectangle to.</span>
+    <span class="token comment" spellcheck="true">/// \param sharedAnchor The alignment position of this ofRectangle to use.</span>
+    <span class="token keyword">void</span> <span class="token function">alignToVert</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">float</span><span class="token operator">&</span> targetY<span class="token punctuation">,</span>
+                     ofAlignVert sharedAnchor <span class="token operator">=</span> OF_ALIGN_VERT_CENTER<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Vertically align two rectangles to another using one anchor for both.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// Aligns the vertical position of the ofRectangle to that of the</span>
+    <span class="token comment" spellcheck="true">/// passed-in ofRectangle using an ofAlignVert constant as anchor.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// If a constant is not passed in, this will align the vertical centers</span>
+    <span class="token comment" spellcheck="true">/// of the rectangles.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// If a constant is passed in, it will use that constant for both rectangles.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param targetRect The target ofRectangle to align this rectangle to.</span>
+    <span class="token comment" spellcheck="true">/// \param sharedAnchor The alignment position for both rectangles to use.</span>
+    <span class="token keyword">void</span> <span class="token function">alignToVert</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofRectangle<span class="token operator">&</span> targetRect<span class="token punctuation">,</span>
+                     ofAlignVert sharedAnchor <span class="token operator">=</span> OF_ALIGN_VERT_CENTER<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+    <span class="token comment" spellcheck="true">/// \brief Vertically align two rectangles to another using two anchors.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// Will align the chosen anchor in the ofRectangle with the chosen anchor</span>
+    <span class="token comment" spellcheck="true">/// in the passed-in ofRectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param targetRect The target ofRectangle to align this rectangle to.</span>
+    <span class="token comment" spellcheck="true">/// \param targetVertAnchor The alignment anchor for this rectangle.</span>
+    <span class="token comment" spellcheck="true">/// \param thisVertAnchor The alignment anchor for the other rectangle.</span>
+    <span class="token keyword">void</span> <span class="token function">alignToVert</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofRectangle<span class="token operator">&</span> targetRect<span class="token punctuation">,</span>
+                     ofAlignVert targetVertAnchor<span class="token punctuation">,</span>
+                     ofAlignVert thisVertAnchor<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token comment" spellcheck="true">/// \brief Align this ofRectangle to an glm::vec3 in both x- and y dimentions.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// Aligns the position of the ofRectangle to the given point using an</span>
+    <span class="token comment" spellcheck="true">/// ofAlignHorz constant and an ofAlignVert constant. If neither constant is</span>
+    <span class="token comment" spellcheck="true">/// passed in, this will align the center of the rectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+	<span class="token comment" spellcheck="true">/// \warning The z-component of the passed glm::vec3 is ignored.</span>
+    <span class="token comment" spellcheck="true">///</span>
+	<span class="token comment" spellcheck="true">/// \param targetPoint The target glm::vec3 to align to.</span>
+    <span class="token comment" spellcheck="true">/// \param thisHorzAnchor The horizontal alignment anchor.</span>
+    <span class="token comment" spellcheck="true">/// \param thisVertAnchor The vertical alignment anchor.</span>
+	<span class="token keyword">void</span> <span class="token function">alignTo</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec3<span class="token operator">&</span> targetPoint<span class="token punctuation">,</span>
+                ofAlignHorz thisHorzAnchor <span class="token operator">=</span> OF_ALIGN_HORZ_CENTER<span class="token punctuation">,</span>
+                ofAlignVert thisVertAnchor <span class="token operator">=</span> OF_ALIGN_VERT_CENTER<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">alignTo</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec2<span class="token operator">&</span> targetPoint<span class="token punctuation">,</span>
+				ofAlignHorz thisHorzAnchor <span class="token operator">=</span> OF_ALIGN_HORZ_CENTER<span class="token punctuation">,</span>
+				ofAlignVert thisVertAnchor <span class="token operator">=</span> OF_ALIGN_VERT_CENTER<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token comment" spellcheck="true">/// \brief Align this ofRectangle to an glm::vec3 in both x- and y dimentions using a shared anchor.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// Aligns the position of the ofRectangle to that of the passed-in</span>
+    <span class="token comment" spellcheck="true">/// ofRectangle. Can take an ofAlignHorz constant and an ofAlignVert</span>
+    <span class="token comment" spellcheck="true">/// constant.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// If neither constant is passed in, this will align the centers of the</span>
+    <span class="token comment" spellcheck="true">/// rectangles.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// If constants are passed in, it will use those constants for both</span>
+    <span class="token comment" spellcheck="true">/// rectangles.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param targetRect The target ofRectangle to align this rectangle to.</span>
+    <span class="token comment" spellcheck="true">/// \param sharedHorzAnchor The alignment anchor for both rectangles.</span>
+    <span class="token comment" spellcheck="true">/// \param sharedVertAnchor The alignment anchor for both rectangles.</span>
+    <span class="token keyword">void</span> <span class="token function">alignTo</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofRectangle<span class="token operator">&</span> targetRect<span class="token punctuation">,</span>
+                 ofAlignHorz sharedHorzAnchor <span class="token operator">=</span> OF_ALIGN_HORZ_CENTER<span class="token punctuation">,</span>
+                 ofAlignVert sharedVertAnchor <span class="token operator">=</span> OF_ALIGN_VERT_CENTER<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+    <span class="token comment" spellcheck="true">/// \brief Vertically align this ofRectangle to another target ofRectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// Aligns the position of the ofRectangle to that of the passed-in</span>
+    <span class="token comment" spellcheck="true">/// ofRectangle. Takes two ofAlignHorz constants and two ofAlignVert</span>
+    <span class="token comment" spellcheck="true">/// constants.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// Will align the chosen anchors in the ofRectangle with the chosen</span>
+    <span class="token comment" spellcheck="true">/// anchors in the passed-in ofRectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param targetRect The target ofRectangle to align this rectangle to.</span>
+    <span class="token comment" spellcheck="true">/// \param targetHorzAnchor The vertical alignment anchor for the target rectangle.</span>
+    <span class="token comment" spellcheck="true">/// \param targetVertAnchor The horizontal alignment anchor for the target rectangle.</span>
+    <span class="token comment" spellcheck="true">/// \param thisHorzAnchor The horizontal alignment anchor for this rectangle.</span>
+    <span class="token comment" spellcheck="true">/// \param thisVertAnchor The vertical alignment anchor for this rectangle.</span>
+    <span class="token keyword">void</span> <span class="token function">alignTo</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofRectangle<span class="token operator">&</span> targetRect<span class="token punctuation">,</span>
+                 ofAlignHorz targetHorzAnchor<span class="token punctuation">,</span>
+                 ofAlignVert targetVertAnchor<span class="token punctuation">,</span>
+                 ofAlignHorz thisHorzAnchor<span class="token punctuation">,</span>
+                 ofAlignVert thisVertAnchor<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \}</span>
+
+    <span class="token comment" spellcheck="true">/// \name Intersection</span>
+    <span class="token comment" spellcheck="true">/// \{</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Determines if the coordinates (x, y) are within the ofRectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// Note that coordinates on the edge of the ofRectangle are not</span>
+    <span class="token comment" spellcheck="true">/// considered within the rectangle and will return false.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param px The x-coordinate to test.</span>
+    <span class="token comment" spellcheck="true">/// \param py The y-coordinate to test.</span>
+    <span class="token comment" spellcheck="true">/// \returns true if px and py are inside this ofRectangle.</span>
+    <span class="token keyword">bool</span> <span class="token function">inside</span><span class="token punctuation">(</span><span class="token keyword">float</span> px<span class="token punctuation">,</span> <span class="token keyword">float</span> py<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+	<span class="token comment" spellcheck="true">/// \brief Determines if the glm::vec3 is within the ofRectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// Note that points on the edge of the ofRectangle are not</span>
+    <span class="token comment" spellcheck="true">/// considered within the rectangle and will return false.</span>
+    <span class="token comment" spellcheck="true">///</span>
+	<span class="token comment" spellcheck="true">/// \warning The z-component of the passed glm::vec3 is ignored.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param p The point to test.</span>
+    <span class="token comment" spellcheck="true">/// \returns true if the point p is inside this ofRectangle.</span>
+	<span class="token keyword">bool</span> <span class="token function">inside</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec3<span class="token operator">&</span> p<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+	<span class="token keyword">bool</span> <span class="token function">inside</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec2<span class="token operator">&</span> p<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Determines if another ofRectangle is completely within the ofRectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// Note that rectangles that share an edge with the ofRectangle are not</span>
+    <span class="token comment" spellcheck="true">/// considered within the rectangle and will return false.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param rect The ofRectangle to test.</span>
+    <span class="token comment" spellcheck="true">/// \returns true if all four corners of the rect are within this rectangle.</span>
+    <span class="token keyword">bool</span> <span class="token function">inside</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofRectangle<span class="token operator">&</span> rect<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+	<span class="token comment" spellcheck="true">/// \brief Determines if both of the passed glm::vec3s are within the ofRectangle or not.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// Note that points on the edge of the ofRectangle are not considered</span>
+    <span class="token comment" spellcheck="true">/// within the rectangle and will return false.</span>
+    <span class="token comment" spellcheck="true">///</span>
+	<span class="token comment" spellcheck="true">/// \warning The z-components of the passed glm::vec3s are ignored.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param p0 The first point to test.</span>
+    <span class="token comment" spellcheck="true">/// \param p1 The second point to test.</span>
+    <span class="token comment" spellcheck="true">/// \returns true if both points are inside the rectangle.</span>
+	<span class="token keyword">bool</span> <span class="token function">inside</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec3<span class="token operator">&</span> p0<span class="token punctuation">,</span> <span class="token keyword">const</span> glm<span class="token operator">::</span>vec3<span class="token operator">&</span> p1<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+	<span class="token keyword">bool</span> <span class="token function">inside</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec2<span class="token operator">&</span> p0<span class="token punctuation">,</span> <span class="token keyword">const</span> glm<span class="token operator">::</span>vec2<span class="token operator">&</span> p1<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Determines if another rectangle intersects with this rectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// Rectangles that only share an edge and do not intersect otherwise are</span>
+    <span class="token comment" spellcheck="true">/// not considered to intersect and will return false.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param rect The rectangle to test.</span>
+    <span class="token comment" spellcheck="true">/// \returns `true` if the area contained within the ofRectangle overlaps</span>
+    <span class="token comment" spellcheck="true">///     with the area contained within the passed ofRectangle.</span>
+    <span class="token keyword">bool</span> <span class="token function">intersects</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofRectangle<span class="token operator">&</span> rect<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Determines if a line segment intersects with the ofRectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+	<span class="token comment" spellcheck="true">/// \warning The z-components of the passed glm::vec3s are ignored.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param p0 The first point to test.</span>
+    <span class="token comment" spellcheck="true">/// \param p1 The second point to test.</span>
+	<span class="token comment" spellcheck="true">/// \returns `true` if the line segment defined by the two passed glm::vec3s</span>
+    <span class="token comment" spellcheck="true">///     either crosses the perimeter of the ofRectangle or is completely</span>
+    <span class="token comment" spellcheck="true">///     contained within.</span>
+	<span class="token keyword">bool</span> <span class="token function">intersects</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec3<span class="token operator">&</span> p0<span class="token punctuation">,</span> <span class="token keyword">const</span> glm<span class="token operator">::</span>vec3<span class="token operator">&</span> p1<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+	<span class="token keyword">bool</span> <span class="token function">intersects</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec2<span class="token operator">&</span> p0<span class="token punctuation">,</span> <span class="token keyword">const</span> glm<span class="token operator">::</span>vec2<span class="token operator">&</span> p1<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Grow the ofRectangle to include the given (x, y) coordinates.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// This will potentially change the width, height, x-position, and y-</span>
+    <span class="token comment" spellcheck="true">/// position of the ofRectangle. If the points are already within the</span>
+    <span class="token comment" spellcheck="true">/// rectangle, this rectangle will remain unchanged.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param px The x-coordinate to include.</span>
+    <span class="token comment" spellcheck="true">/// \param py The y-coordiante to include.</span>
+    <span class="token keyword">void</span> <span class="token function">growToInclude</span><span class="token punctuation">(</span><span class="token keyword">float</span> px<span class="token punctuation">,</span> <span class="token keyword">float</span> py<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Grow the ofRectangle to include the given point.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// This will potentially change the width, height, x-position, and y-</span>
+    <span class="token comment" spellcheck="true">/// position of the ofRectangle.  If the point is already within the</span>
+    <span class="token comment" spellcheck="true">/// rectangle, this rectangle will remain unchanged.</span>
+    <span class="token comment" spellcheck="true">///</span>
+	<span class="token comment" spellcheck="true">/// \warning The z-component of the passed glm::vec3 is ignored.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param p The position to include.</span>
+	<span class="token keyword">void</span> <span class="token function">growToInclude</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec3<span class="token operator">&</span> p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">growToInclude</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec2<span class="token operator">&</span> p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Grow the ofRectangle to include the given ofRectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// This will potentially change the width, height, x-position, and y-</span>
+    <span class="token comment" spellcheck="true">/// position of the ofRectangle.  If the rectangle is already within the</span>
+    <span class="token comment" spellcheck="true">/// rectangle, this rectangle will remain unchanged.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param rect The rectangle to include.</span>
+    <span class="token keyword">void</span> <span class="token function">growToInclude</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofRectangle<span class="token operator">&</span> rect<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Grow the ofRectangle to include the given line segment.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// This will potentially change the width, height, x-position, and</span>
+    <span class="token comment" spellcheck="true">/// y-position of the ofRectangle.  If the points are already within the</span>
+    <span class="token comment" spellcheck="true">/// rectangle, this rectangle will remain unchanged.</span>
+    <span class="token comment" spellcheck="true">///</span>
+	<span class="token comment" spellcheck="true">/// \warning The z-components of the passed glm::vec3s are ignored.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param p0 The first point to include.</span>
+    <span class="token comment" spellcheck="true">/// \param p1 The second point to include.</span>
+	<span class="token keyword">void</span> <span class="token function">growToInclude</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec3<span class="token operator">&</span> p0<span class="token punctuation">,</span> <span class="token keyword">const</span> glm<span class="token operator">::</span>vec3<span class="token operator">&</span> p1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">growToInclude</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec2<span class="token operator">&</span> p0<span class="token punctuation">,</span> <span class="token keyword">const</span> glm<span class="token operator">::</span>vec2<span class="token operator">&</span> p1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Get the intersecting area between this rectangle and another.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// This method will attempt to return the area of overlap between this</span>
+    <span class="token comment" spellcheck="true">/// rectangle and the passed rectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// If the two rectangles do not overlap, it will return an "empty"</span>
+    <span class="token comment" spellcheck="true">/// rectangle located (0, 0) with 0 width and 0 height.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// If the two rectangles only share an edge this will return a rectangle</span>
+    <span class="token comment" spellcheck="true">/// positioned on that edge:</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// If the shared edge is vertical, the rectangle will have zero width,</span>
+    <span class="token comment" spellcheck="true">/// otherwise it will have zero height.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param rect The rectangle to intersect.</span>
+    <span class="token comment" spellcheck="true">/// \returns A new ofRectangle representing the intersecting area or an</span>
+    <span class="token comment" spellcheck="true">///          empty rectangle (0, 0, 0, 0) if there is no intersection.</span>
+    ofRectangle <span class="token function">getIntersection</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofRectangle<span class="token operator">&</span> rect<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Get the union area between this rectangle and anohter.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \sa getIntersection(const ofRectangle& rect) const</span>
+    <span class="token comment" spellcheck="true">/// \param rect The rectangle to unite with.</span>
+    <span class="token comment" spellcheck="true">/// \returns A new ofRectangle whose area contains both the area of the</span>
+    <span class="token comment" spellcheck="true">///          this rectangle and the passed rectangle..</span>
+    ofRectangle <span class="token function">getUnion</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofRectangle<span class="token operator">&</span> rect<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \}</span>
+
+    <span class="token comment" spellcheck="true">/// \name Standardization</span>
+    <span class="token comment" spellcheck="true">/// \{</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Standardize the rectangle</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// "Standardized" rectangles are rectangles whose width and height are positive: width >= 0 and height</span>
+    <span class="token comment" spellcheck="true">/// >= 0. This method can be used to ensure that the rectangle is</span>
+    <span class="token comment" spellcheck="true">/// "standardized". If the rectangle is non-standard, it will modify the x /</span>
+    <span class="token comment" spellcheck="true">/// width and y / height values into their respective standardized versions.</span>
+    <span class="token keyword">void</span> <span class="token function">standardize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Get the standardized representation of this rectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// "Standardized" rectangles are rectangles whose width and height are positive. </span>
+    <span class="token comment" spellcheck="true">/// For more information about standardized rectangles, see the discussion of the standardize() method.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \returns the Standardized version of this ofRectangle.</span>
+    ofRectangle <span class="token function">getStandardized</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Returns true if this ofRectangle is standardized.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// "Standardized" rectangles are rectangles whose width and height are positive. </span>
+    <span class="token comment" spellcheck="true">/// For more information about standardized rectangles, see the discussion of the standardize() method.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \returns true if both width >= 0 and height >= 0.</span>
+    <span class="token keyword">bool</span> <span class="token function">isStandardized</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \}</span>
+
+    <span class="token comment" spellcheck="true">/// \name Getters</span>
+    <span class="token comment" spellcheck="true">/// \{</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Get the area of the ofRectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// This is the product of the width and height of the recatngle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \returns The area of the rectangle as float.</span>
+    <span class="token keyword">float</span> <span class="token function">getArea</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+
+    <span class="token comment" spellcheck="true">/// \brief Gets the perimeter of the ofRectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// This is the sum of the lengths of the sides.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \returns The perimeter of the rectangle as float.</span>
+    <span class="token keyword">float</span> <span class="token function">getPerimeter</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Gets the ratio of width to height of the ofRectangle.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \returns The aspect ratio of the rectangle.</span>
+    <span class="token keyword">float</span> <span class="token function">getAspectRatio</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Determines if the ofRectangle's area is zero.</span>
+    <span class="token comment" spellcheck="true">/// \sa getArea().</span>
+    <span class="token comment" spellcheck="true">/// \returns true if both the width == 0 and height == 0, false if either is non-zero.</span>
+    <span class="token keyword">bool</span> <span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+	<span class="token comment" spellcheck="true">/// \brief Get the minimum x and y coordinates of the ofRectangle as glm::vec3.</span>
+    <span class="token comment" spellcheck="true">/// \returns The minimum x and y coordinates of the rectangle.</span>
+	glm<span class="token operator">::</span>vec3 <span class="token function">getMin</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+	<span class="token comment" spellcheck="true">/// \brief Get the maximum x and y coordinates of the ofRectangle as glm::vec3.</span>
+    <span class="token comment" spellcheck="true">/// \returns The maximum x and y coordinates of the rectangle.</span>
+	glm<span class="token operator">::</span>vec3 <span class="token function">getMax</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Get the smallest x position of the ofRectangle as float.</span>
+    <span class="token comment" spellcheck="true">/// \returns The smallest xposition of the rectangle.</span>
+    <span class="token keyword">float</span> <span class="token function">getMinX</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Get the largest x position of the ofRectangle as float.</span>
+    <span class="token comment" spellcheck="true">/// \returns The largest x position of the rectangle.</span>
+    <span class="token keyword">float</span> <span class="token function">getMaxX</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Get the smallest y position of the ofRectangle as float.</span>
+    <span class="token comment" spellcheck="true">/// \returns The smallest y position of the rectangle.</span>
+    <span class="token keyword">float</span> <span class="token function">getMinY</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Get the largest y position of the ofRectangle as float.</span>
+    <span class="token comment" spellcheck="true">/// \returns The largest y position of the rectangle.</span>
+    <span class="token keyword">float</span> <span class="token function">getMaxY</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Gets the x position of the left edge of the ofRectangle as float.</span>
+    <span class="token comment" spellcheck="true">/// \sa getMinX()</span>
+    <span class="token comment" spellcheck="true">/// \returns The x position of the left edge of the rectangle.</span>
+    <span class="token keyword">float</span> <span class="token function">getLeft</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Gets the x position of the right edge of the ofRectangle as float.</span>
+    <span class="token comment" spellcheck="true">/// \sa getMaxX()</span>
+    <span class="token comment" spellcheck="true">/// \returns The y position of the right edge of the rectangle.</span>
+    <span class="token keyword">float</span> <span class="token function">getRight</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Gets the y position of the top edge of the ofRectangle as float.</span>
+    <span class="token comment" spellcheck="true">/// \sa getMinY()</span>
+    <span class="token comment" spellcheck="true">/// \returns The y position of the top edge of the rectangle.</span>
+    <span class="token keyword">float</span> <span class="token function">getTop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Gets the y position of the bottom edge of the ofRectangle as float.</span>
+    <span class="token comment" spellcheck="true">/// \sa getMaxY()</span>
+    <span class="token comment" spellcheck="true">/// \returns The y position of the bottom edge of the rectangle.</span>
+    <span class="token keyword">float</span> <span class="token function">getBottom</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+	<span class="token comment" spellcheck="true">/// \brief Get the top-left coordinates of the ofRectangle as glm::vec3.</span>
+    <span class="token comment" spellcheck="true">/// \sa getMin()</span>
+    <span class="token comment" spellcheck="true">/// \returns The top-left coordinates of the rectangle.</span>
+	glm<span class="token operator">::</span>vec3 <span class="token function">getTopLeft</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+	<span class="token comment" spellcheck="true">/// \brief Get the top-right coordinates of the ofRectangle as glm::vec3.</span>
+    <span class="token comment" spellcheck="true">/// \returns The top-right coordinates of the rectangle.</span>
+	glm<span class="token operator">::</span>vec3 <span class="token function">getTopRight</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+	<span class="token comment" spellcheck="true">/// \brief Get the bottom-left coordinates of the ofRectangle as glm::vec3.</span>
+    <span class="token comment" spellcheck="true">/// \returns The bottom-left coordinates of the rectangle.</span>
+	glm<span class="token operator">::</span>vec3 <span class="token function">getBottomLeft</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+	<span class="token comment" spellcheck="true">/// \brief Get the bottom-right coordinates of the ofRectangle as glm::vec3.</span>
+    <span class="token comment" spellcheck="true">/// \sa getMax()</span>
+    <span class="token comment" spellcheck="true">/// \returns The bottom-right coordinates of the rectangle.</span>
+	glm<span class="token operator">::</span>vec3 <span class="token function">getBottomRight</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief A convenience method that returns the value of one of</span>
+    <span class="token comment" spellcheck="true">/// the horizontal edges of the ofRectangle using the `ofAlignHorz` enum.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param anchor The anchor position to query.</span>
+    <span class="token comment" spellcheck="true">/// \returns the value of the referenced anchor position.</span>
+    <span class="token keyword">float</span> <span class="token function">getHorzAnchor</span><span class="token punctuation">(</span>ofAlignHorz anchor<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief A convenience method that returns the value of one of the</span>
+    <span class="token comment" spellcheck="true">/// vertical edges of the ofRectangle using the ofAlignVert enum.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param anchor The anchor position to query.</span>
+    <span class="token comment" spellcheck="true">/// \returns the value of the referenced anchor position.</span>
+    <span class="token keyword">float</span> <span class="token function">getVertAnchor</span><span class="token punctuation">(</span>ofAlignVert anchor<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Get the ofRectangle's position.</span>
+    <span class="token comment" spellcheck="true">///</span>
+	<span class="token comment" spellcheck="true">/// \warning The z component of the returned glm::vec3 is undefined.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \returns The rectangle's position.</span>
+	<span class="token keyword">const</span> glm<span class="token operator">::</span>vec3<span class="token operator">&</span> <span class="token function">getPosition</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+	<span class="token function">OF_DEPRECATED_MSG</span><span class="token punctuation">(</span><span class="token string">"Use getPosition() instead."</span><span class="token punctuation">,</span> glm<span class="token operator">::</span>vec3<span class="token operator">&</span> <span class="token function">getPositionRef</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token comment" spellcheck="true">/// \brief Get the coordiantes of the ofRectangle's center as glm::vec3.</span>
+    <span class="token comment" spellcheck="true">///</span>
+	<span class="token comment" spellcheck="true">/// \warning The z component of the returned glm::vec3 will always be 0.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \returns The x and y coordinates of the center of the rectangle (z = 0).</span>
+	glm<span class="token operator">::</span>vec3 <span class="token function">getCenter</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Gets the x position of the ofRectangle as float.</span>
+    <span class="token comment" spellcheck="true">/// \returns The x position of the rectangle.</span>
+    <span class="token keyword">float</span> <span class="token function">getX</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Gets the y position of the ofRectangle as float.</span>
+    <span class="token comment" spellcheck="true">/// \returns the y position of the rectangle.</span>
+    <span class="token keyword">float</span> <span class="token function">getY</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Gets the width of the ofRectangle as float.</span>
+    <span class="token comment" spellcheck="true">/// \returns The width of the rectangle.</span>
+    <span class="token keyword">float</span> <span class="token function">getWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Gets the height of the ofRectangle as float.</span>
+    <span class="token comment" spellcheck="true">/// \returns The height of the rectangle.</span>
+    <span class="token keyword">float</span> <span class="token function">getHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+    
+    <span class="token comment" spellcheck="true">/// \brief Maps a normalized coordinate into this rectangle</span>
+    <span class="token comment" spellcheck="true">/// </span>
+    <span class="token comment" spellcheck="true">/// Normalized coordinates range from [0,1] inclusive. It is used to define a ratio</span>
+    <span class="token comment" spellcheck="true">/// between the coordinates and a unitary rectangle. This ratio is mapped into</span>
+    <span class="token comment" spellcheck="true">/// this rectangle to scale to real values. If normalized coordinates are out of bounds,</span>
+    <span class="token comment" spellcheck="true">/// output will be scaled accordingly.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \param coeff Normalized coordinate to map to this rectangle</span>
+    <span class="token comment" spellcheck="true">/// \returns The mapped coordinate</span>
+    glm<span class="token operator">::</span>vec2 <span class="token function">map</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec2 <span class="token operator">&</span> coeff<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+    
+    <span class="token comment" spellcheck="true">/// \brief Maps a normalized coordinate into this rectangle</span>
+    <span class="token comment" spellcheck="true">/// </span>
+    <span class="token comment" spellcheck="true">/// Normalized rectangles' position, width and height range from [0,1] inclusive.</span>
+    <span class="token comment" spellcheck="true">/// It is used to define a ratio between the rectangle and a unitary rectangle.</span>
+    <span class="token comment" spellcheck="true">/// This ratio is mapped into this rectangle to scale to real values. </span>
+    <span class="token comment" spellcheck="true">/// If normalized rectangle is out of bounds, output will be scaled accordingly.</span>
+    <span class="token comment" spellcheck="true">/// </span>
+    <span class="token comment" spellcheck="true">/// \param coeff Normalized rectangle to map to this rectangle</span>
+    <span class="token comment" spellcheck="true">/// \returns The mapped coordinate</span>
+    ofRectangle <span class="token function">map</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofRectangle <span class="token operator">&</span> coeff<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+    
+    <span class="token comment" spellcheck="true">/// \brief Maps a normalized coordinate into this rectangle, clamping if out of bounds</span>
+    <span class="token comment" spellcheck="true">/// </span>
+    <span class="token comment" spellcheck="true">/// Normalized coordinates range from [0,1] inclusive. It is used to define a ratio</span>
+    <span class="token comment" spellcheck="true">/// between the coordinates and a unitary rectangle. This ratio is mapped into</span>
+    <span class="token comment" spellcheck="true">/// this rectangle to scale to real values. If normalized coordinates are out of bounds,</span>
+    <span class="token comment" spellcheck="true">/// output will be clamped to this rectangle's position, width and height.</span>
+    <span class="token comment" spellcheck="true">/// </span>
+    <span class="token comment" spellcheck="true">/// \param coeff Normalized coordinate to map to this rectangle</span>
+    <span class="token comment" spellcheck="true">/// \returns The mapped coordinate, clamped</span>
+    glm<span class="token operator">::</span>vec2 <span class="token function">mapClamp</span><span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec2 <span class="token operator">&</span> coeff<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+    
+    <span class="token comment" spellcheck="true">/// \brief Maps a normalized rectangle to this rectangle, clamping if out of bounds</span>
+    <span class="token comment" spellcheck="true">/// </span>
+    <span class="token comment" spellcheck="true">/// Normalized rectangles' position, width and height range from [0,1] inclusive.</span>
+    <span class="token comment" spellcheck="true">/// It is used to define a ratio between the rectangle and a unitary rectangle.</span>
+    <span class="token comment" spellcheck="true">/// This ratio is mapped into this rectangle to scale to real values. </span>
+    <span class="token comment" spellcheck="true">/// If normalized rectangle is out of bounds, output will be clamped to this </span>
+    <span class="token comment" spellcheck="true">/// rectangle's position, width and height.</span>
+    <span class="token comment" spellcheck="true">/// </span>
+    <span class="token comment" spellcheck="true">/// \param coeff Normalized rectangle to map to this rectangle</span>
+    <span class="token comment" spellcheck="true">/// \returns The mapped rectangle</span>
+    ofRectangle <span class="token function">mapClamp</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofRectangle <span class="token operator">&</span> coeff<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+    
+    <span class="token comment" spellcheck="true">/// \}</span>
+
+    <span class="token comment" spellcheck="true">/// \name Operators</span>
+    <span class="token comment" spellcheck="true">/// \{</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Assignment operator.</span>
+    <span class="token comment" spellcheck="true">/// \param rect The rectangle to assign.</span>
+    <span class="token comment" spellcheck="true">/// \returns A reference to this rectangle.</span>
+    ofRectangle<span class="token operator">&</span> <span class="token keyword">operator</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">const</span> ofRectangle<span class="token operator">&</span> rect<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief Returns a new ofRectangle where the x and y positions of the</span>
+	<span class="token comment" spellcheck="true">/// rectangle are offset by the (x, y) coordinates of the glm::vec3.</span>
+    <span class="token comment" spellcheck="true">/// \param p The point to translate.</span>
+    <span class="token comment" spellcheck="true">/// \returns The translated ofRectangle.</span>
+	ofRectangle <span class="token keyword">operator</span> <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec3<span class="token operator">&</span> p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	ofRectangle <span class="token keyword">operator</span> <span class="token operator">+</span> <span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec2<span class="token operator">&</span> p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token comment" spellcheck="true">/// \brief Returns a new ofRectangle where the x and y-positions of the</span>
+	<span class="token comment" spellcheck="true">/// rectangle are offset by the (x, y) coordinates of the glm::vec3.</span>
+	<span class="token comment" spellcheck="true">/// \param p The point to translate.</span>
+	<span class="token comment" spellcheck="true">/// \returns The translated ofRectangle.</span>
+	ofRectangle <span class="token keyword">operator</span> <span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec3<span class="token operator">&</span> p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	ofRectangle <span class="token keyword">operator</span> <span class="token operator">-</span> <span class="token punctuation">(</span><span class="token keyword">const</span> glm<span class="token operator">::</span>vec2<span class="token operator">&</span> p<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief If both ofRectangles have the same x, y, width, and height,</span>
+    <span class="token comment" spellcheck="true">/// they are considered equal.</span>
+    <span class="token comment" spellcheck="true">/// \param rect The rectangle to compare.</span>
+    <span class="token comment" spellcheck="true">/// \returns True if the rectangles are equal.</span>
+    <span class="token keyword">bool</span> <span class="token keyword">operator</span> <span class="token operator">==</span> <span class="token punctuation">(</span><span class="token keyword">const</span> ofRectangle<span class="token operator">&</span> rect<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief If the two ofRectangles differ in x, y, width, or height, they</span>
+    <span class="token comment" spellcheck="true">/// are considered unequal.</span>
+    <span class="token comment" spellcheck="true">/// \param rect The rectangle to compare.</span>
+    <span class="token comment" spellcheck="true">/// \returns True if the rectangles are not equal.</span>
+    <span class="token keyword">bool</span> <span class="token keyword">operator</span> <span class="token operator">!=</span> <span class="token punctuation">(</span><span class="token keyword">const</span> ofRectangle<span class="token operator">&</span> rect<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+    
+    <span class="token keyword">bool</span> <span class="token function">isZero</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+
+    <span class="token comment" spellcheck="true">/// \}</span>
+
+    <span class="token comment" spellcheck="true">/// \name Properties</span>
+    <span class="token comment" spellcheck="true">/// \{</span>
+
+
+	<span class="token comment" spellcheck="true">/// \brief The (x,y) position of the ofRectangle as an glm::vec3.</span>
+    <span class="token comment" spellcheck="true">///</span>
+    <span class="token comment" spellcheck="true">/// \warning The z-component of this position is preserved and can be used</span>
+    <span class="token comment" spellcheck="true">/// but all ofRectangle operations will ignore the z-component.</span>
+	glm<span class="token operator">::</span>vec3 position<span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief The x position of the ofRectangle.</span>
+    <span class="token keyword">float</span><span class="token operator">&</span> x<span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief The y position of the ofRectangle.</span>
+    <span class="token keyword">float</span><span class="token operator">&</span> y<span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief The width of the ofRectangle.</span>
+    <span class="token keyword">float</span> width<span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \brief The height of the ofRectangle.</span>
+    <span class="token keyword">float</span> height<span class="token punctuation">;</span>
+
+    <span class="token comment" spellcheck="true">/// \}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">/// \cond INTERNAL</span>
+<span class="token comment" spellcheck="true">/// \warning The internal z component of the glm::vec3 is preserved even though it</span>
+<span class="token comment" spellcheck="true">/// is not used.</span>
+std<span class="token operator">::</span>ostream<span class="token operator">&</span> <span class="token keyword">operator</span><span class="token operator">&lt;&lt;</span><span class="token punctuation">(</span>std<span class="token operator">::</span>ostream<span class="token operator">&</span> os<span class="token punctuation">,</span> <span class="token keyword">const</span> ofRectangle<span class="token operator">&</span> rect<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">/// \warning The internal z component of the glm::vec3 is preserved even though it</span>
+<span class="token comment" spellcheck="true">/// is not used.</span>
+std<span class="token operator">::</span>istream<span class="token operator">&</span> <span class="token keyword">operator</span><span class="token operator">>></span><span class="token punctuation">(</span>std<span class="token operator">::</span>istream<span class="token operator">&</span> is<span class="token punctuation">,</span> ofRectangle<span class="token operator">&</span> rect<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">/// \endcond</span>
+</code></pre></div></div></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1586012716389/openframeworks/types/ofRectangle_h/payload.js"></script><script src="/_nuxt/5f71eaca0bd2f1a0f939.js" defer></script><script src="/_nuxt/35a90d914f539af1362f.js" defer></script><script src="/_nuxt/906a3ca0fb13ed3c6651.js" defer></script><script src="/_nuxt/b673915e8a08acf593e8.js" defer></script><script src="/_nuxt/bf355f21967a23c26c07.js" defer></script>
+  </body>
+</html>

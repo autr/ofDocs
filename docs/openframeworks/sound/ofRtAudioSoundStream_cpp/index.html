@@ -1,0 +1,326 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>ofRtAudioSoundStream.cpp | openframeworks | ofDocs</title><meta data-n-head="ssr" data-hid="description" name="description" content="openFrameworks documentation and examples browser"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="openFrameworks documentation and examples browser" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="ofRtAudioSoundStream.cpp | openframeworks | ofDocs" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="/files/images/ofw-logo.png" vmid="og:image"><link rel="preload" href="/_nuxt/5f71eaca0bd2f1a0f939.js" as="script"><link rel="preload" href="/_nuxt/906a3ca0fb13ed3c6651.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/b673915e8a08acf593e8.js" as="script"><link rel="preload" href="/_nuxt/46e8fcacdadb233d9fb6.css" as="style"><link rel="preload" href="/_nuxt/bf355f21967a23c26c07.js" as="script"><link rel="preload" href="/_nuxt/35a90d914f539af1362f.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/46e8fcacdadb233d9fb6.css">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app"><div id="menu"><div class="menu-inner"><div id="settings"></div><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><svg version="1.1" viewbox="0 0 110 58" width="110px" height="58px" enable-background="0 0 110 58" xml:space="preserve" class="logo"><g><path d="M58,29 C58,13 45,0 29,0 C13,0 0,13 0,29 C0,45 13,58 29,58 C45,58 58,45 58,29 Z"></path><rect x="59" y="0" width="25" height="58"></rect><rect x="85" y="26" width="15" height="15"></rect><path d="M85,0 L110,0 L85,25 L85,0 Z"></path></g></svg><div class="txt"><span class="docs f7 questrial">Docs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343							c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88							c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593							c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789							C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><!----></div><div id="lists" class="menu-inner mt1 mb2"><div class="inner"></div></div></div><div class="menu-bottom"><div class="inner"><button class="button"><!----><span><span class="ico">nights_stay</span></span></button></div></div></div><div id="document"><div id="renderer" class="main source"><div absolute="/Users/Gilbert/Code/openFrameworks/libs/openFrameworks/sound/ofRtAudioSoundStream.cpp" route="/openframeworks/sound/ofRtAudioSoundStream.cpp" dir="../libs/openFrameworks/sound" ext="cpp" type="source" id="274" parent="269" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/openframeworks/" class="pink nuxt-link-active">openframeworks </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/openframeworks/sound/" class="pink nuxt-link-active">sound </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link selector"><span class="name">ofRtAudioSoundStream.cpp</span><span class="chevron bottom"></span><select><option value="/openframeworks/sound/ofFmodSoundPlayer_cpp">ofFmodSoundPlayer.cpp</option><option value="/openframeworks/sound/ofFmodSoundPlayer_h">ofFmodSoundPlayer.h</option><option value="/openframeworks/sound/ofOpenALSoundPlayer_cpp">ofOpenALSoundPlayer.cpp</option><option value="/openframeworks/sound/ofOpenALSoundPlayer_h">ofOpenALSoundPlayer.h</option><option value="/openframeworks/sound/ofRtAudioSoundStream_cpp">ofRtAudioSoundStream.cpp</option><option value="/openframeworks/sound/ofRtAudioSoundStream_h">ofRtAudioSoundStream.h</option><option value="/openframeworks/sound/ofSoundBaseTypes_cpp">ofSoundBaseTypes.cpp</option><option value="/openframeworks/sound/ofSoundBaseTypes_h">ofSoundBaseTypes.h</option><option value="/openframeworks/sound/ofSoundBuffer_cpp">ofSoundBuffer.cpp</option><option value="/openframeworks/sound/ofSoundBuffer_h">ofSoundBuffer.h</option><option value="/openframeworks/sound/ofSoundPlayer_cpp">ofSoundPlayer.cpp</option><option value="/openframeworks/sound/ofSoundPlayer_h">ofSoundPlayer.h</option><option value="/openframeworks/sound/ofSoundStream_cpp">ofSoundStream.cpp</option><option value="/openframeworks/sound/ofSoundStream_h">ofSoundStream.h</option><option value="/openframeworks/sound/ofSoundUtils_h">ofSoundUtils.h</option></select></span><!----></span></span></div></div></div><div id="code-page" static="true"><div id="side-menu"><div id="code-sources"><h4 class="f3 dropdown-toggle">Sources</h4><div class="srcsiblings dropdown-area"><a href="/openframeworks/sound/ofFmodSoundPlayer_cpp" class="block"><span class="src">src </span><span class="name">ofFmodSoundPlayer.cpp </span></a><a href="/openframeworks/sound/ofFmodSoundPlayer_h" class="block"><span class="src">src </span><span class="name">ofFmodSoundPlayer.h </span></a><a href="/openframeworks/sound/ofOpenALSoundPlayer_cpp" class="block"><span class="src">src </span><span class="name">ofOpenALSoundPlayer.cpp </span></a><a href="/openframeworks/sound/ofOpenALSoundPlayer_h" class="block"><span class="src">src </span><span class="name">ofOpenALSoundPlayer.h </span></a><a href="/openframeworks/sound/ofRtAudioSoundStream_cpp" class="block nuxt-link-exact-active nuxt-link-active current"><span class="src">src </span><span class="name">ofRtAudioSoundStream.cpp </span></a><a href="/openframeworks/sound/ofRtAudioSoundStream_h" class="block"><span class="src">src </span><span class="name">ofRtAudioSoundStream.h </span></a><a href="/openframeworks/sound/ofSoundBaseTypes_cpp" class="block"><span class="src">src </span><span class="name">ofSoundBaseTypes.cpp </span></a><a href="/openframeworks/sound/ofSoundBaseTypes_h" class="block"><span class="src">src </span><span class="name">ofSoundBaseTypes.h </span></a><a href="/openframeworks/sound/ofSoundBuffer_cpp" class="block"><span class="src">src </span><span class="name">ofSoundBuffer.cpp </span></a><a href="/openframeworks/sound/ofSoundBuffer_h" class="block"><span class="src">src </span><span class="name">ofSoundBuffer.h </span></a><a href="/openframeworks/sound/ofSoundPlayer_cpp" class="block"><span class="src">src </span><span class="name">ofSoundPlayer.cpp </span></a><a href="/openframeworks/sound/ofSoundPlayer_h" class="block"><span class="src">src </span><span class="name">ofSoundPlayer.h </span></a><a href="/openframeworks/sound/ofSoundStream_cpp" class="block"><span class="src">src </span><span class="name">ofSoundStream.cpp </span></a><a href="/openframeworks/sound/ofSoundStream_h" class="block"><span class="src">src </span><span class="name">ofSoundStream.h </span></a><a href="/openframeworks/sound/ofSoundUtils_h" class="block"><span class="src">src </span><span class="name">ofSoundUtils.h </span></a></div></div><div id="comments" class="dropdown-area"><h4 class="f3 dropdown-toggle">Comments</h4><div class="dropdown-area"></div></div><div filename="sound" absolute="/Users/Gilbert/Code/openFrameworks/libs/openFrameworks/sound" dir="../libs/openFrameworks" route="/openframeworks/sound/" ext="" type="folder" id="269" children="270,271,272,273,274,275,276,277,278,279,280,281,282,283,284" icon="volume_up" parent="164" breadcrumbs="164" class="see-also"><h4 class="f3">See also</h4><div class="also"><a href="/documentation/sound/"><span class="origin">documentation</span><span class="name">sound</span></a></div><div class="also"><a href="/examples/sound/soundPlayerFFTExample/"><span class="origin">examples</span><span class="name">soundPlayerFFTExample</span></a></div><div class="also"><a href="/examples/sound/soundPlayerExample/"><span class="origin">examples</span><span class="name">soundPlayerExample</span></a></div><div class="also"><a href="/examples/sound/soundBufferExample/"><span class="origin">examples</span><span class="name">soundBufferExample</span></a></div><div class="also"><a href="/examples/sound/"><span class="origin">examples</span><span class="name">sound</span></a></div><div class="also"><a href="/examples/ios/soundPlayerExample/"><span class="origin">examples</span><span class="name">soundPlayerExample</span></a></div></div></div><div id="code-render"><div class="inner"><pre><code><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"ofRtAudioSoundStream.h"</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"ofMath.h"</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"ofUtils.h"</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"ofAppRunner.h"</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"ofLog.h"</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"RtAudio.h"</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------------------------</span>
+RtAudio<span class="token operator">::</span>Api <span class="token function">toRtAudio</span><span class="token punctuation">(</span>ofSoundDevice<span class="token operator">::</span>Api api<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">switch</span> <span class="token punctuation">(</span>api<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">case</span> ofSoundDevice<span class="token operator">::</span>Api<span class="token operator">::</span>ALSA<span class="token operator">:</span>
+		<span class="token keyword">return</span> RtAudio<span class="token operator">::</span>Api<span class="token operator">::</span>LINUX_ALSA<span class="token punctuation">;</span>
+	<span class="token keyword">case</span> ofSoundDevice<span class="token operator">::</span>Api<span class="token operator">::</span>PULSE<span class="token operator">:</span>
+		<span class="token keyword">return</span> RtAudio<span class="token operator">::</span>Api<span class="token operator">::</span>LINUX_PULSE<span class="token punctuation">;</span>
+	<span class="token keyword">case</span> ofSoundDevice<span class="token operator">::</span>Api<span class="token operator">::</span>OSS<span class="token operator">:</span>
+		<span class="token keyword">return</span> RtAudio<span class="token operator">::</span>Api<span class="token operator">::</span>LINUX_OSS<span class="token punctuation">;</span>
+	<span class="token keyword">case</span> ofSoundDevice<span class="token operator">::</span>Api<span class="token operator">::</span>JACK<span class="token operator">:</span>
+		<span class="token keyword">return</span> RtAudio<span class="token operator">::</span>Api<span class="token operator">::</span>UNIX_JACK<span class="token punctuation">;</span>
+<span class="token macro property">#<span class="token directive keyword">ifndef</span> TARGET_LINUX</span>
+	<span class="token keyword">case</span> ofSoundDevice<span class="token operator">::</span>Api<span class="token operator">::</span>OSX_CORE<span class="token operator">:</span>
+		<span class="token keyword">return</span> RtAudio<span class="token operator">::</span>Api<span class="token operator">::</span>MACOSX_CORE<span class="token punctuation">;</span>
+	<span class="token keyword">case</span> ofSoundDevice<span class="token operator">::</span>Api<span class="token operator">::</span>MS_WASAPI<span class="token operator">:</span>
+		<span class="token keyword">return</span> RtAudio<span class="token operator">::</span>Api<span class="token operator">::</span>WINDOWS_WASAPI<span class="token punctuation">;</span>
+	<span class="token keyword">case</span> ofSoundDevice<span class="token operator">::</span>Api<span class="token operator">::</span>MS_ASIO<span class="token operator">:</span>
+		<span class="token keyword">return</span> RtAudio<span class="token operator">::</span>Api<span class="token operator">::</span>WINDOWS_ASIO<span class="token punctuation">;</span>
+	<span class="token keyword">case</span> ofSoundDevice<span class="token operator">::</span>Api<span class="token operator">::</span>MS_DS<span class="token operator">:</span>
+		<span class="token keyword">return</span> RtAudio<span class="token operator">::</span>Api<span class="token operator">::</span>WINDOWS_DS<span class="token punctuation">;</span>
+<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+	<span class="token keyword">default</span><span class="token operator">:</span>
+		<span class="token keyword">return</span> RtAudio<span class="token operator">::</span>Api<span class="token operator">::</span>UNSPECIFIED<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------------------------</span>
+ofSoundDevice<span class="token operator">::</span>Api <span class="token function">toOf</span><span class="token punctuation">(</span>RtAudio<span class="token operator">::</span>Api api<span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">switch</span> <span class="token punctuation">(</span>api<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">case</span> RtAudio<span class="token operator">::</span>Api<span class="token operator">::</span>LINUX_ALSA<span class="token operator">:</span>
+		<span class="token keyword">return</span> ofSoundDevice<span class="token operator">::</span>Api<span class="token operator">::</span>ALSA<span class="token punctuation">;</span>
+	<span class="token keyword">case</span> RtAudio<span class="token operator">::</span>Api<span class="token operator">::</span>LINUX_PULSE<span class="token operator">:</span>
+		<span class="token keyword">return</span> ofSoundDevice<span class="token operator">::</span>Api<span class="token operator">::</span>PULSE<span class="token punctuation">;</span>
+	<span class="token keyword">case</span> RtAudio<span class="token operator">::</span>Api<span class="token operator">::</span>LINUX_OSS<span class="token operator">:</span>
+		<span class="token keyword">return</span> ofSoundDevice<span class="token operator">::</span>Api<span class="token operator">::</span>OSS<span class="token punctuation">;</span>
+	<span class="token keyword">case</span> RtAudio<span class="token operator">::</span>Api<span class="token operator">::</span>UNIX_JACK<span class="token operator">:</span>
+		<span class="token keyword">return</span> ofSoundDevice<span class="token operator">::</span>Api<span class="token operator">::</span>JACK<span class="token punctuation">;</span>
+<span class="token macro property">#<span class="token directive keyword">ifndef</span> TARGET_LINUX</span>
+	<span class="token keyword">case</span> RtAudio<span class="token operator">::</span>Api<span class="token operator">::</span>MACOSX_CORE<span class="token operator">:</span>
+		<span class="token keyword">return</span> ofSoundDevice<span class="token operator">::</span>Api<span class="token operator">::</span>OSX_CORE<span class="token punctuation">;</span>
+	<span class="token keyword">case</span> RtAudio<span class="token operator">::</span>Api<span class="token operator">::</span>WINDOWS_WASAPI<span class="token operator">:</span>
+		<span class="token keyword">return</span> ofSoundDevice<span class="token operator">::</span>Api<span class="token operator">::</span>MS_WASAPI<span class="token punctuation">;</span>
+	<span class="token keyword">case</span> RtAudio<span class="token operator">::</span>Api<span class="token operator">::</span>WINDOWS_ASIO<span class="token operator">:</span>
+		<span class="token keyword">return</span> ofSoundDevice<span class="token operator">::</span>Api<span class="token operator">::</span>MS_ASIO<span class="token punctuation">;</span>
+	<span class="token keyword">case</span> RtAudio<span class="token operator">::</span>Api<span class="token operator">::</span>WINDOWS_DS<span class="token operator">:</span>
+		<span class="token keyword">return</span> ofSoundDevice<span class="token operator">::</span>Api<span class="token operator">::</span>MS_DS<span class="token punctuation">;</span>
+<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+	<span class="token keyword">default</span><span class="token operator">:</span>
+		<span class="token keyword">return</span> ofSoundDevice<span class="token operator">::</span>Api<span class="token operator">::</span>UNSPECIFIED<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------------------------</span>
+ofRtAudioSoundStream<span class="token operator">::</span><span class="token function">ofRtAudioSoundStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	tickCount <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------------------------</span>
+ofRtAudioSoundStream<span class="token operator">::</span><span class="token operator">~</span><span class="token function">ofRtAudioSoundStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token function">stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------------------------</span>
+std<span class="token operator">::</span>vector<span class="token operator">&lt;</span>ofSoundDevice<span class="token operator">></span> ofRtAudioSoundStream<span class="token operator">::</span><span class="token function">getDeviceList</span><span class="token punctuation">(</span>ofSoundDevice<span class="token operator">::</span>Api api<span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">{</span>
+	vector<span class="token operator">&lt;</span>ofSoundDevice<span class="token operator">></span> deviceList<span class="token punctuation">;</span>
+	<span class="token keyword">try</span> <span class="token punctuation">{</span>
+		<span class="token keyword">auto</span> rtAudioApi <span class="token operator">=</span> <span class="token function">toRtAudio</span><span class="token punctuation">(</span>api<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		RtAudio <span class="token function">audioTemp</span><span class="token punctuation">(</span><span class="token function">toRtAudio</span><span class="token punctuation">(</span>api<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		audioTemp<span class="token punctuation">.</span><span class="token function">showWarnings</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">if</span><span class="token punctuation">(</span>audioTemp<span class="token punctuation">.</span><span class="token function">getCurrentApi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">!=</span>rtAudioApi <span class="token operator">&&</span> rtAudioApi<span class="token operator">!=</span>RtAudio<span class="token operator">::</span>Api<span class="token operator">::</span>UNSPECIFIED<span class="token punctuation">)</span><span class="token punctuation">{</span>
+			<span class="token keyword">return</span> deviceList<span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		<span class="token keyword">auto</span> deviceCount <span class="token operator">=</span> audioTemp<span class="token punctuation">.</span><span class="token function">getDeviceCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		RtAudio<span class="token operator">::</span>DeviceInfo info<span class="token punctuation">;</span>
+		<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">unsigned</span> <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> deviceCount<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			<span class="token keyword">try</span> <span class="token punctuation">{</span>
+				info <span class="token operator">=</span> audioTemp<span class="token punctuation">.</span><span class="token function">getDeviceInfo</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+			<span class="token keyword">catch</span> <span class="token punctuation">(</span>std<span class="token operator">::</span>exception <span class="token operator">&</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				<span class="token function">ofLogError</span><span class="token punctuation">(</span><span class="token string">"ofRtAudioSoundStream"</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token string">"Error retrieving info for device "</span> <span class="token operator">&lt;&lt;</span> i<span class="token punctuation">;</span>
+				<span class="token function">ofLogError</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> error<span class="token punctuation">.</span><span class="token function">what</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token keyword">break</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+
+			ofSoundDevice dev<span class="token punctuation">;</span>
+			dev<span class="token punctuation">.</span>deviceID <span class="token operator">=</span> i<span class="token punctuation">;</span>
+			dev<span class="token punctuation">.</span>name <span class="token operator">=</span> info<span class="token punctuation">.</span>name<span class="token punctuation">;</span>
+			dev<span class="token punctuation">.</span>outputChannels <span class="token operator">=</span> info<span class="token punctuation">.</span>outputChannels<span class="token punctuation">;</span>
+			dev<span class="token punctuation">.</span>inputChannels <span class="token operator">=</span> info<span class="token punctuation">.</span>inputChannels<span class="token punctuation">;</span>
+			dev<span class="token punctuation">.</span>sampleRates <span class="token operator">=</span> info<span class="token punctuation">.</span>sampleRates<span class="token punctuation">;</span>
+			dev<span class="token punctuation">.</span>isDefaultInput <span class="token operator">=</span> info<span class="token punctuation">.</span>isDefaultInput<span class="token punctuation">;</span>
+			dev<span class="token punctuation">.</span>isDefaultOutput <span class="token operator">=</span> info<span class="token punctuation">.</span>isDefaultOutput<span class="token punctuation">;</span>
+			dev<span class="token punctuation">.</span>api <span class="token operator">=</span> api<span class="token punctuation">;</span>
+			deviceList<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>dev<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span><span class="token keyword">catch</span> <span class="token punctuation">(</span>std<span class="token operator">::</span>exception <span class="token operator">&</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token function">ofLogError</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> error<span class="token punctuation">.</span><span class="token function">what</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">return</span> deviceList<span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofRtAudioSoundStream<span class="token operator">::</span><span class="token function">setInput</span><span class="token punctuation">(</span>ofBaseSoundInput <span class="token operator">*</span> soundInput<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	settings<span class="token punctuation">.</span><span class="token function">setInListener</span><span class="token punctuation">(</span>soundInput<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofRtAudioSoundStream<span class="token operator">::</span><span class="token function">setOutput</span><span class="token punctuation">(</span>ofBaseSoundOutput <span class="token operator">*</span> soundOutput<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	settings<span class="token punctuation">.</span><span class="token function">setOutListener</span><span class="token punctuation">(</span>soundOutput<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------------------------</span>
+<span class="token keyword">bool</span> ofRtAudioSoundStream<span class="token operator">::</span><span class="token function">setup</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofSoundStreamSettings <span class="token operator">&</span> settings_<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>audio <span class="token operator">!=</span> <span class="token keyword">nullptr</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">this</span><span class="token operator">-</span><span class="token operator">></span>settings <span class="token operator">=</span> settings_<span class="token punctuation">;</span>
+
+	tickCount <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token keyword">this</span><span class="token operator">-</span><span class="token operator">></span>settings<span class="token punctuation">.</span>bufferSize <span class="token operator">=</span> <span class="token function">ofNextPow2</span><span class="token punctuation">(</span>settings<span class="token punctuation">.</span>bufferSize<span class="token punctuation">)</span><span class="token punctuation">;</span>	<span class="token comment" spellcheck="true">// must be pow2</span>
+
+	<span class="token keyword">try</span> <span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>settings<span class="token punctuation">.</span><span class="token function">getApi</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">!=</span> ofSoundDevice<span class="token operator">::</span>Api<span class="token operator">::</span>UNSPECIFIED<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			audio <span class="token operator">=</span> std<span class="token operator">::</span>make_shared<span class="token operator">&lt;</span>RtAudio<span class="token operator">></span><span class="token punctuation">(</span><span class="token function">toRtAudio</span><span class="token punctuation">(</span>settings<span class="token punctuation">.</span><span class="token function">getApi</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+			audio <span class="token operator">=</span> std<span class="token operator">::</span>make_shared<span class="token operator">&lt;</span>RtAudio<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">catch</span> <span class="token punctuation">(</span>std<span class="token operator">::</span>exception <span class="token operator">&</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token function">ofLogError</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> error<span class="token punctuation">.</span><span class="token function">what</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	RtAudio<span class="token operator">::</span>StreamParameters outputParameters<span class="token punctuation">;</span>
+	RtAudio<span class="token operator">::</span>StreamParameters inputParameters<span class="token punctuation">;</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>settings<span class="token punctuation">.</span>numInputChannels <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>settings<span class="token punctuation">.</span><span class="token function">getInDevice</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			ofSoundDevice device<span class="token punctuation">;</span>
+			device<span class="token punctuation">.</span>deviceID <span class="token operator">=</span> audio<span class="token operator">-</span><span class="token operator">></span><span class="token function">getDefaultInputDevice</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			settings<span class="token punctuation">.</span><span class="token function">setInDevice</span><span class="token punctuation">(</span>device<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		inputParameters<span class="token punctuation">.</span>deviceId <span class="token operator">=</span> settings<span class="token punctuation">.</span><span class="token function">getInDevice</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">></span>deviceID<span class="token punctuation">;</span>
+		inputParameters<span class="token punctuation">.</span>nChannels <span class="token operator">=</span> settings<span class="token punctuation">.</span>numInputChannels<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>settings<span class="token punctuation">.</span>numOutputChannels <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>settings<span class="token punctuation">.</span><span class="token function">getOutDevice</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			ofSoundDevice device<span class="token punctuation">;</span>
+			device<span class="token punctuation">.</span>deviceID <span class="token operator">=</span> audio<span class="token operator">-</span><span class="token operator">></span><span class="token function">getDefaultOutputDevice</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			settings<span class="token punctuation">.</span><span class="token function">setOutDevice</span><span class="token punctuation">(</span>device<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		outputParameters<span class="token punctuation">.</span>deviceId <span class="token operator">=</span> settings<span class="token punctuation">.</span><span class="token function">getOutDevice</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span><span class="token operator">></span>deviceID<span class="token punctuation">;</span>
+		outputParameters<span class="token punctuation">.</span>nChannels <span class="token operator">=</span> settings<span class="token punctuation">.</span>numOutputChannels<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	RtAudio<span class="token operator">::</span>StreamOptions options<span class="token punctuation">;</span>
+	options<span class="token punctuation">.</span>flags <span class="token operator">=</span> RTAUDIO_SCHEDULE_REALTIME<span class="token punctuation">;</span>
+	options<span class="token punctuation">.</span>numberOfBuffers <span class="token operator">=</span> settings<span class="token punctuation">.</span>numBuffers<span class="token punctuation">;</span>
+	options<span class="token punctuation">.</span>priority <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+	outputBuffer<span class="token punctuation">.</span><span class="token function">setDeviceID</span><span class="token punctuation">(</span>outputParameters<span class="token punctuation">.</span>deviceId<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	inputBuffer<span class="token punctuation">.</span><span class="token function">setDeviceID</span><span class="token punctuation">(</span>inputParameters<span class="token punctuation">.</span>deviceId<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	outputBuffer<span class="token punctuation">.</span><span class="token function">setSampleRate</span><span class="token punctuation">(</span>settings<span class="token punctuation">.</span>sampleRate<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	inputBuffer<span class="token punctuation">.</span><span class="token function">setSampleRate</span><span class="token punctuation">(</span>settings<span class="token punctuation">.</span>sampleRate<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">unsigned</span> <span class="token keyword">int</span> bufferSize <span class="token operator">=</span> settings<span class="token punctuation">.</span>bufferSize<span class="token punctuation">;</span>
+	<span class="token keyword">try</span> <span class="token punctuation">{</span>
+		audio<span class="token operator">-</span><span class="token operator">></span><span class="token function">openStream</span><span class="token punctuation">(</span><span class="token punctuation">(</span>settings<span class="token punctuation">.</span>numOutputChannels <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token operator">&</span>outputParameters <span class="token operator">:</span> <span class="token keyword">nullptr</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>settings<span class="token punctuation">.</span>numInputChannels <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token operator">&</span>inputParameters <span class="token operator">:</span> <span class="token keyword">nullptr</span><span class="token punctuation">,</span> RTAUDIO_FLOAT32<span class="token punctuation">,</span>
+			settings<span class="token punctuation">.</span>sampleRate<span class="token punctuation">,</span> <span class="token operator">&</span>bufferSize<span class="token punctuation">,</span> <span class="token operator">&</span>rtAudioCallback<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token operator">&</span>options<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		audio<span class="token operator">-</span><span class="token operator">></span><span class="token function">startStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">catch</span> <span class="token punctuation">(</span>std<span class="token operator">::</span>exception <span class="token operator">&</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token function">ofLogError</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> error<span class="token punctuation">.</span><span class="token function">what</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofRtAudioSoundStream<span class="token operator">::</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>audio <span class="token operator">==</span> <span class="token keyword">nullptr</span><span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">try</span> <span class="token punctuation">{</span>
+		audio<span class="token operator">-</span><span class="token operator">></span><span class="token function">startStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">catch</span> <span class="token punctuation">(</span>std<span class="token operator">::</span>exception <span class="token operator">&</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token function">ofLogError</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> error<span class="token punctuation">.</span><span class="token function">what</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofRtAudioSoundStream<span class="token operator">::</span><span class="token function">stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>audio <span class="token operator">==</span> <span class="token keyword">nullptr</span><span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">try</span> <span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>audio<span class="token operator">-</span><span class="token operator">></span><span class="token function">isStreamRunning</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			audio<span class="token operator">-</span><span class="token operator">></span><span class="token function">stopStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">catch</span> <span class="token punctuation">(</span>std<span class="token operator">::</span>exception <span class="token operator">&</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token function">ofLogError</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> error<span class="token punctuation">.</span><span class="token function">what</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------------------------</span>
+<span class="token keyword">void</span> ofRtAudioSoundStream<span class="token operator">::</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>audio <span class="token operator">==</span> <span class="token keyword">nullptr</span><span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">try</span> <span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>audio<span class="token operator">-</span><span class="token operator">></span><span class="token function">isStreamOpen</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			audio<span class="token operator">-</span><span class="token operator">></span><span class="token function">closeStream</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">catch</span> <span class="token punctuation">(</span>std<span class="token operator">::</span>exception <span class="token operator">&</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token function">ofLogError</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> error<span class="token punctuation">.</span><span class="token function">what</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	settings<span class="token punctuation">.</span>outCallback <span class="token operator">=</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span>
+	settings<span class="token punctuation">.</span>inCallback <span class="token operator">=</span> <span class="token keyword">nullptr</span><span class="token punctuation">;</span>
+	audio<span class="token punctuation">.</span><span class="token function">reset</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>	<span class="token comment" spellcheck="true">// delete</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------------------------</span>
+uint64_t ofRtAudioSoundStream<span class="token operator">::</span><span class="token function">getTickCount</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span> <span class="token punctuation">{</span>
+	<span class="token keyword">return</span> tickCount<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------------------------</span>
+<span class="token keyword">int</span> ofRtAudioSoundStream<span class="token operator">::</span><span class="token function">getNumInputChannels</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span> <span class="token punctuation">{</span>
+	<span class="token keyword">return</span> settings<span class="token punctuation">.</span>numInputChannels<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------------------------</span>
+<span class="token keyword">int</span> ofRtAudioSoundStream<span class="token operator">::</span><span class="token function">getNumOutputChannels</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span> <span class="token punctuation">{</span>
+	<span class="token keyword">return</span>  settings<span class="token punctuation">.</span>numOutputChannels<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------------------------</span>
+<span class="token keyword">int</span> ofRtAudioSoundStream<span class="token operator">::</span><span class="token function">getSampleRate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span> <span class="token punctuation">{</span>
+	<span class="token keyword">return</span> settings<span class="token punctuation">.</span>sampleRate<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------------------------</span>
+<span class="token keyword">int</span> ofRtAudioSoundStream<span class="token operator">::</span><span class="token function">getBufferSize</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span> <span class="token punctuation">{</span>
+	<span class="token keyword">return</span> settings<span class="token punctuation">.</span>bufferSize<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+ofSoundDevice ofRtAudioSoundStream<span class="token operator">::</span><span class="token function">getInDevice</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">{</span>
+	<span class="token keyword">return</span> <span class="token operator">*</span>settings<span class="token punctuation">.</span><span class="token function">getInDevice</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+ofSoundDevice ofRtAudioSoundStream<span class="token operator">::</span><span class="token function">getOutDevice</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">{</span>
+	<span class="token keyword">return</span> <span class="token operator">*</span>settings<span class="token punctuation">.</span><span class="token function">getOutDevice</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------------------------</span>
+<span class="token keyword">int</span> ofRtAudioSoundStream<span class="token operator">::</span><span class="token function">rtAudioCallback</span><span class="token punctuation">(</span><span class="token keyword">void</span> <span class="token operator">*</span>outputBuffer<span class="token punctuation">,</span> <span class="token keyword">void</span> <span class="token operator">*</span>inputBuffer<span class="token punctuation">,</span> <span class="token keyword">unsigned</span> <span class="token keyword">int</span> nFramesPerBuffer<span class="token punctuation">,</span> <span class="token keyword">double</span> streamTime<span class="token punctuation">,</span> RtAudioStreamStatus status<span class="token punctuation">,</span> <span class="token keyword">void</span> <span class="token operator">*</span>data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	ofRtAudioSoundStream <span class="token operator">*</span> rtStreamPtr <span class="token operator">=</span> <span class="token punctuation">(</span>ofRtAudioSoundStream <span class="token operator">*</span><span class="token punctuation">)</span>data<span class="token punctuation">;</span>
+
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>status<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token function">ofLogWarning</span><span class="token punctuation">(</span><span class="token string">"ofRtAudioSoundStream"</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token string">"stream over/underflow detected"</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment" spellcheck="true">// 	rtAudio uses a system by which the audio</span>
+	<span class="token comment" spellcheck="true">// 	can be of different formats</span>
+	<span class="token comment" spellcheck="true">// 	char, float, etc.</span>
+	<span class="token comment" spellcheck="true">// 	we choose float</span>
+	<span class="token keyword">float</span> <span class="token operator">*</span> fPtrOut <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">float</span> <span class="token operator">*</span><span class="token punctuation">)</span>outputBuffer<span class="token punctuation">;</span>
+	<span class="token keyword">float</span> <span class="token operator">*</span> fPtrIn <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">float</span> <span class="token operator">*</span><span class="token punctuation">)</span>inputBuffer<span class="token punctuation">;</span>
+	<span class="token comment" spellcheck="true">// [zach] memset output to zero before output call</span>
+	<span class="token comment" spellcheck="true">// this is because of how rtAudio works: duplex w/ one callback</span>
+	<span class="token comment" spellcheck="true">// you need to cut in the middle. if the simpleApp</span>
+	<span class="token comment" spellcheck="true">// doesn't produce audio, we pass silence instead of duplex...</span>
+
+	size_t nInputChannels  <span class="token operator">=</span> rtStreamPtr<span class="token operator">-</span><span class="token operator">></span><span class="token function">getNumInputChannels</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	size_t nOutputChannels <span class="token operator">=</span> rtStreamPtr<span class="token operator">-</span><span class="token operator">></span><span class="token function">getNumOutputChannels</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>nInputChannels <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>rtStreamPtr<span class="token operator">-</span><span class="token operator">></span>settings<span class="token punctuation">.</span>inCallback<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			rtStreamPtr<span class="token operator">-</span><span class="token operator">></span>inputBuffer<span class="token punctuation">.</span><span class="token function">copyFrom</span><span class="token punctuation">(</span>fPtrIn<span class="token punctuation">,</span> nFramesPerBuffer<span class="token punctuation">,</span> nInputChannels<span class="token punctuation">,</span> rtStreamPtr<span class="token operator">-</span><span class="token operator">></span><span class="token function">getSampleRate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			rtStreamPtr<span class="token operator">-</span><span class="token operator">></span>inputBuffer<span class="token punctuation">.</span><span class="token function">setTickCount</span><span class="token punctuation">(</span>rtStreamPtr<span class="token operator">-</span><span class="token operator">></span>tickCount<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			rtStreamPtr<span class="token operator">-</span><span class="token operator">></span>settings<span class="token punctuation">.</span><span class="token function">inCallback</span><span class="token punctuation">(</span>rtStreamPtr<span class="token operator">-</span><span class="token operator">></span>inputBuffer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		<span class="token comment" spellcheck="true">// [damian] not sure what this is for? assuming it's for underruns? or for when the sound system becomes broken?</span>
+		<span class="token function">memset</span><span class="token punctuation">(</span>fPtrIn<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> nFramesPerBuffer <span class="token operator">*</span> nInputChannels <span class="token operator">*</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span><span class="token keyword">float</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">if</span> <span class="token punctuation">(</span>nOutputChannels <span class="token operator">></span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>rtStreamPtr<span class="token operator">-</span><span class="token operator">></span>settings<span class="token punctuation">.</span>outCallback<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+			<span class="token keyword">if</span> <span class="token punctuation">(</span>rtStreamPtr<span class="token operator">-</span><span class="token operator">></span>outputBuffer<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">!=</span> nFramesPerBuffer<span class="token operator">*</span>nOutputChannels <span class="token operator">||</span> rtStreamPtr<span class="token operator">-</span><span class="token operator">></span>outputBuffer<span class="token punctuation">.</span><span class="token function">getNumChannels</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">!=</span> nOutputChannels<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				rtStreamPtr<span class="token operator">-</span><span class="token operator">></span>outputBuffer<span class="token punctuation">.</span><span class="token function">setNumChannels</span><span class="token punctuation">(</span>nOutputChannels<span class="token punctuation">)</span><span class="token punctuation">;</span>
+				rtStreamPtr<span class="token operator">-</span><span class="token operator">></span>outputBuffer<span class="token punctuation">.</span><span class="token function">resize</span><span class="token punctuation">(</span>nFramesPerBuffer<span class="token operator">*</span>nOutputChannels<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+			rtStreamPtr<span class="token operator">-</span><span class="token operator">></span>outputBuffer<span class="token punctuation">.</span><span class="token function">setTickCount</span><span class="token punctuation">(</span>rtStreamPtr<span class="token operator">-</span><span class="token operator">></span>tickCount<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			rtStreamPtr<span class="token operator">-</span><span class="token operator">></span>settings<span class="token punctuation">.</span><span class="token function">outCallback</span><span class="token punctuation">(</span>rtStreamPtr<span class="token operator">-</span><span class="token operator">></span>outputBuffer<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		rtStreamPtr<span class="token operator">-</span><span class="token operator">></span>outputBuffer<span class="token punctuation">.</span><span class="token function">copyTo</span><span class="token punctuation">(</span>fPtrOut<span class="token punctuation">,</span> nFramesPerBuffer<span class="token punctuation">,</span> nOutputChannels<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		rtStreamPtr<span class="token operator">-</span><span class="token operator">></span>outputBuffer<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment" spellcheck="true">// increment tick count</span>
+	rtStreamPtr<span class="token operator">-</span><span class="token operator">></span>tickCount<span class="token operator">++</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1586012716389/openframeworks/sound/ofRtAudioSoundStream_cpp/payload.js"></script><script src="/_nuxt/5f71eaca0bd2f1a0f939.js" defer></script><script src="/_nuxt/35a90d914f539af1362f.js" defer></script><script src="/_nuxt/906a3ca0fb13ed3c6651.js" defer></script><script src="/_nuxt/b673915e8a08acf593e8.js" defer></script><script src="/_nuxt/bf355f21967a23c26c07.js" defer></script>
+  </body>
+</html>

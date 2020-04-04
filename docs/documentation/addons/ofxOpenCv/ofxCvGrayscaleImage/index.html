@@ -1,0 +1,1275 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>ofxCvGrayscaleImage | documentation | ofDocs</title><meta data-n-head="ssr" data-hid="description" name="description" content="openFrameworks documentation and examples browser"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="openFrameworks documentation and examples browser" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="ofxCvGrayscaleImage | documentation | ofDocs" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="/files/images/ofw-logo.png" vmid="og:image"><link rel="preload" href="/_nuxt/5f71eaca0bd2f1a0f939.js" as="script"><link rel="preload" href="/_nuxt/906a3ca0fb13ed3c6651.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/b673915e8a08acf593e8.js" as="script"><link rel="preload" href="/_nuxt/46e8fcacdadb233d9fb6.css" as="style"><link rel="preload" href="/_nuxt/bf355f21967a23c26c07.js" as="script"><link rel="preload" href="/_nuxt/35a90d914f539af1362f.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/46e8fcacdadb233d9fb6.css">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app"><div id="menu"><div class="menu-inner"><div id="settings"></div><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><svg version="1.1" viewbox="0 0 110 58" width="110px" height="58px" enable-background="0 0 110 58" xml:space="preserve" class="logo"><g><path d="M58,29 C58,13 45,0 29,0 C13,0 0,13 0,29 C0,45 13,58 29,58 C45,58 58,45 58,29 Z"></path><rect x="59" y="0" width="25" height="58"></rect><rect x="85" y="26" width="15" height="15"></rect><path d="M85,0 L110,0 L85,25 L85,0 Z"></path></g></svg><div class="txt"><span class="docs f7 questrial">Docs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343							c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88							c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593							c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789							C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><!----></div><div id="lists" class="menu-inner mt1 mb2"><div class="inner"></div></div></div><div class="menu-bottom"><div class="inner"><button class="button"><!----><span><span class="ico">nights_stay</span></span></button></div></div></div><div id="document"><div id="renderer" class="main page"><div absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/addons/ofxOpenCv/ofxCvGrayscaleImage.markdown" route="/documentation/addons/ofxOpenCv/ofxCvGrayscaleImage.markdown" dir="../ofSite/documentation/addons/ofxOpenCv" ext="markdown" type="page" id="2103" parent="2084" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/" class="pink nuxt-link-active">documentation </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/addons/" class="pink nuxt-link-active">addons </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/addons/ofxOpenCv/" class="pink nuxt-link-active">ofxOpenCv </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link selector"><span class="name">ofxCvGrayscaleImage</span><span class="chevron bottom"></span><select><option value="/documentation/addons/ofxOpenCv/ofxCvBlob">ofxCvBlob</option><option value="/documentation/addons/ofxOpenCv/ofxCvColorImage">ofxCvColorImage</option><option value="/documentation/addons/ofxOpenCv/ofxCvContourFinder">ofxCvContourFinder</option><option value="/documentation/addons/ofxOpenCv/ofxCvFloatImage">ofxCvFloatImage</option><option value="/documentation/addons/ofxOpenCv/ofxCvGrayscaleImage">ofxCvGrayscaleImage</option><option value="/documentation/addons/ofxOpenCv/ofxCvHaarFinder">ofxCvHaarFinder</option><option value="/documentation/addons/ofxOpenCv/ofxCvImage">ofxCvImage</option><option value="/documentation/addons/ofxOpenCv/ofxCvShortImage">ofxCvShortImage</option></select></span><!----></span></span></div></div></div><div class="editable-wrapper"><div class="header inner"><h1 class="page-title questrial"><span class="f7"><!----><span>ofxCvGrayscaleImage</span></span><span class="f3"></span></h1><div class="actions"><a href="/ofdocs/contribute/" class="button"><i class="ico">edit</i><span>Edit</span></a></div></div><div class="rendered"><div id="documentation-page" static="true"><div id="offset-page"><div id="doc-body" class="markdown"><div class="inner"><div id="description"><div class="full-description"><div class="html"><p>This represents an OpenCV friendly image in grayscale, i.e. without any color data. This is useful because many of the image processing and analysis routines in OpenCV (or OF for that matter) don't require color information. Less information to sort through means faster image analysis and faster applications. You can convert an ofxCvColorImage to an ofxCvGrayscaleImage using the = operator like so:</p>
+<pre><code class="language-{.cpp}">grayscaleImg <span class="token operator">=</span> colorImg<span class="token punctuation">;</span>
+</code></pre>
+<p>A common routine that you'll see is something like the following:</p>
+<pre><code class="language-{.cpp}">colorImg<span class="token punctuation">.</span><span class="token function">setFromPixels</span><span class="token punctuation">(</span>vidGrabber<span class="token punctuation">.</span><span class="token function">getPixels</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+grayImage <span class="token operator">=</span> colorImg<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// convert our color image to a grayscale image</span>
+</code></pre>
+<p>The ofxCvGrayscaleImage can then be passed to a ofxCvContourFinder instance for contour and blob detection.</p>
+<pre><code class="language-{.cpp}">contourFinder<span class="token punctuation">.</span><span class="token function">findContours</span><span class="token punctuation">(</span>grayscaleImage<span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">340</span><span class="token operator">*</span><span class="token number">240</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h1></h1>
+</div></div></div><div id="methods"><hr><section name="absDiff" id="absDiff" class="mb2"><div class="method mb2"><h3 class="f3 title">absDiff( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">absDiff</span><span class="token punctuation">(</span><code class="token boolean">ofxCvGrayscaleImage <span class="token operator">&</span>mom</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Makes a diff of the current image and the mom image. This alters the pixels of the ofxCvGrayscaleImage instance.</p>
+<pre><code class="language-{.cpp}">current<span class="token punctuation">.</span><span class="token function">absDiff</span><span class="token punctuation">(</span>incoming<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>The below image shows how the diff process operates:</p>
+<p><img src="absdiff.png" alt="Image diff" title="Diffing two images"></p>
+</div></div><hr></section><section name="absDiff" id="absDiff" class="mb2"><div class="method mb2"><h3 class="f3 title">absDiff( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">absDiff</span><span class="token punctuation">(</span><code class="token boolean">ofxCvGrayscaleImage <span class="token operator">&</span>mom<span class="token punctuation">,</span> ofxCvGrayscaleImage <span class="token operator">&</span>dad</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Sets the pixels of the images ofxCvGrayscaleImage instance to a diff of the &mom and &dad instance.</p>
+<p><img src="absdiff.png" alt="Image diff" title="Diffing two images"></p>
+</div></div><hr></section><section name="adaptiveThreshold" id="adaptiveThreshold" class="mb2"><div class="method mb2"><h3 class="f3 title">adaptiveThreshold( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">adaptiveThreshold</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> blockSize<span class="token punctuation">,</span> <span class="token keyword">int</span> offset<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token keyword">bool</span> invert<span class="token operator">=</span><span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token keyword">bool</span> gauss<span class="token operator">=</span><span class="token boolean">false</span></code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Increases the contrast of the image by blocks, the larger the block, the larger the area that is thresholded at one time. Invert flips the values of the image, making black into white and vice versa. gauss determines whether the image is to be thresholded usinga Gaussian method or simply a plain thresholding. Below you can see the result of using adaptive threshold with two different values.</p>
+<pre><code class="language-{.cpp}">left<span class="token punctuation">.</span><span class="token function">adaptiveThreshold</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+right<span class="token punctuation">.</span><span class="token function">adaptiveThreshold</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><img src="threshold.png" alt="Threshold" title="Thresholding an image"></p>
+</div></div><hr></section><section name="allocatePixels" id="allocatePixels" class="mb2"><div class="method mb2"><h3 class="f3 title">allocatePixels( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">allocatePixels</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> w<span class="token punctuation">,</span> <span class="token keyword">int</span> h</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="allocateTexture" id="allocateTexture" class="mb2"><div class="method mb2"><h3 class="f3 title">allocateTexture( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">allocateTexture</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="blurHeavily" id="blurHeavily" class="mb2"><div class="method mb2"><h3 class="f3 title">blurHeavily( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">blurHeavily</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Blurs the image using a pre-determine blur amount.</p>
+</div></div><hr></section><section name="brightnessContrast" id="brightnessContrast" class="mb2"><div class="method mb2"><h3 class="f3 title">brightnessContrast( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">brightnessContrast</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> brightness<span class="token punctuation">,</span> <span class="token keyword">float</span> contrast</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Sets the brightness and contrast of an image.</p>
+</div></div><hr></section><section name="contrastStretch" id="contrastStretch" class="mb2"><div class="method mb2"><h3 class="f3 title">contrastStretch( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">contrastStretch</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>This increases the contrast of the image remapping the brightest points in the image to white and the darkest points in the image to black. Generally on a ofxCvGrayscaleImage it isn't particularly noticeable, though it can have a large effect mathematically.</p>
+</div></div><hr></section><section name="convertToRange" id="convertToRange" class="mb2"><div class="method mb2"><h3 class="f3 title">convertToRange( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">convertToRange</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> min<span class="token punctuation">,</span> <span class="token keyword">float</span> max</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Maps the pixels of an image to the min and max range passed in.</p>
+<pre><code class="language-{.cpp}">
+colors<span class="token punctuation">.</span><span class="token function">setFromPixels</span><span class="token punctuation">(</span>grabber<span class="token punctuation">.</span><span class="token function">getPixels</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+first <span class="token operator">=</span> colors<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// will leave unaltered</span>
+second <span class="token operator">=</span> colors<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// change it</span>
+second<span class="token punctuation">.</span><span class="token function">convertToRange</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">,</span> <span class="token number">140</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// super low contrast</span>
+
+</code></pre>
+<p><img src="convertToRange.png" alt="Image convert to range" title="Converting the range of an image"></p>
+</div></div><hr></section><section name="dilate_3x3" id="dilate_3x3" class="mb2"><div class="method mb2"><h3 class="f3 title">dilate_3x3( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">dilate_3x3</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="erode_3x3" id="erode_3x3" class="mb2"><div class="method mb2"><h3 class="f3 title">erode_3x3( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">erode_3x3</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="init" id="init" class="mb2"><div class="method mb2"><h3 class="f3 title">init( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">init</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofxCvGrayscaleImage" id="ofxCvGrayscaleImage" class="mb2"><div class="method mb2"><h3 class="f3 title">ofxCvGrayscaleImage( <!----> )</h3><code><!----><span class="token function">ofxCvGrayscaleImage</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Constructor.</p>
+</div></div><hr></section><section name="ofxCvGrayscaleImage" id="ofxCvGrayscaleImage" class="mb2"><div class="method mb2"><h3 class="f3 title">ofxCvGrayscaleImage( <code class="pink">...</code> )</h3><code><!----><span class="token function">ofxCvGrayscaleImage</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofxCvGrayscaleImage <span class="token operator">&</span>mom</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Copy constructor, allows you copy one ofxCvGrayscaleImage into another.</p>
+</div></div><hr></section><section name="operator=" id="operator=" class="mb2"><div class="method mb2"><h3 class="f3 title">operator=( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">operator=</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofPixels <span class="token operator">&</span>_pixels</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Copies a IplImage into a ofxCvGrayscaleImage using the = symbol.</p>
+<pre><code class="language-{.cpp}">grayImage <span class="token operator">=</span> iplImage<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// make sure that the dimensions and ROI match</span>
+</code></pre>
+</div></div><hr></section><section name="operator=" id="operator=" class="mb2"><div class="method mb2"><h3 class="f3 title">operator=( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">operator=</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofxCvGrayscaleImage <span class="token operator">&</span>mom</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Copies one ofxCvGrayscaleImage to another ofxCvGrayscaleImage using the = symbol.</p>
+<pre><code class="language-{.cpp}">imageOne <span class="token operator">=</span> imageTwo<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// make sure that the dimensions and ROI match</span>
+</code></pre>
+</div></div><hr></section><section name="operator=" id="operator=" class="mb2"><div class="method mb2"><h3 class="f3 title">operator=( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">operator=</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofxCvColorImage <span class="token operator">&</span>mom</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Copies a ofxCvColorImage into a ofxCvGrayscaleImage using the = symbol.</p>
+<pre><code class="language-{.cpp}">grayImage <span class="token operator">=</span> colorImage<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// make sure that the dimensions and ROI match</span>
+</code></pre>
+</div></div><hr></section><section name="operator=" id="operator=" class="mb2"><div class="method mb2"><h3 class="f3 title">operator=( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">operator=</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofxCvFloatImage <span class="token operator">&</span>mom</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Copies a ofxCvFloatImage into a ofxCvGrayscaleImage using the = symbol.</p>
+<pre><code class="language-{.cpp}">grayImage <span class="token operator">=</span> floatColorImage<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// make sure that the dimensions and ROI match</span>
+</code></pre>
+</div></div><hr></section><section name="operator=" id="operator=" class="mb2"><div class="method mb2"><h3 class="f3 title">operator=( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">operator=</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofxCvShortImage <span class="token operator">&</span>mom</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Copies a ofxCvShortImage into a ofxCvGrayscaleImage using the = symbol.</p>
+<pre><code class="language-{.cpp}">grayImage <span class="token operator">=</span> shortColorImage<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// make sure that the dimensions and ROI match</span>
+</code></pre>
+</div></div><hr></section><section name="operator=" id="operator=" class="mb2"><div class="method mb2"><h3 class="f3 title">operator=( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">operator=</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> <span class="token keyword">int</span> <span class="token operator">*</span>mom</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="resize" id="resize" class="mb2"><div class="method mb2"><h3 class="f3 title">resize( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">resize</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> w<span class="token punctuation">,</span> <span class="token keyword">int</span> h</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Resizes the image to the w, h passed in.</p>
+</div></div><hr></section><section name="scaleIntoMe" id="scaleIntoMe" class="mb2"><div class="method mb2"><h3 class="f3 title">scaleIntoMe( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">scaleIntoMe</span><span class="token punctuation">(</span><code class="token boolean">ofxCvImage <span class="token operator">&</span>mom<span class="token punctuation">,</span> <span class="token keyword">int</span> interpolationMethod</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Scales the image passed in to be the size of the current image,</p>
+<pre><code class="language-{.cpp}">
+ofxCvImage first<span class="token punctuation">;</span>
+first<span class="token punctuation">.</span><span class="token function">allocate</span><span class="token punctuation">(</span><span class="token number">640</span><span class="token punctuation">,</span> <span class="token number">480</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+ofxCvImage second<span class="token punctuation">;</span>
+second<span class="token punctuation">.</span><span class="token function">allocate</span><span class="token punctuation">(</span><span class="token number">320</span><span class="token punctuation">,</span> <span class="token number">240</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+second<span class="token punctuation">.</span><span class="token function">scaleIntoMe</span><span class="token punctuation">(</span>first<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// first is now 320,240</span>
+
+</code></pre>
+</div></div><hr></section><section name="set" id="set" class="mb2"><div class="method mb2"><h3 class="f3 title">set( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">set</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> value</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Set all the pixels in the image to the float value passed in. This is useful for blanking or filling an image quickly. the values are 1.0 to 255.0.</p>
+</div></div><hr></section><section name="setFromColorImage" id="setFromColorImage" class="mb2"><div class="method mb2"><h3 class="f3 title">setFromColorImage( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setFromColorImage</span><span class="token punctuation">(</span><code class="token boolean">ofxCvColorImage <span class="token operator">&</span>mom</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Sets the grayscale image from an ofxCvColorImage.</p>
+</div></div><hr></section><section name="setFromFloatImage" id="setFromFloatImage" class="mb2"><div class="method mb2"><h3 class="f3 title">setFromFloatImage( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setFromFloatImage</span><span class="token punctuation">(</span><code class="token boolean">ofxCvFloatImage <span class="token operator">&</span>mom</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Sets the grayscale image from an ofxCvFloatImage.</p>
+</div></div><hr></section><section name="setFromPixels" id="setFromPixels" class="mb2"><div class="method mb2"><h3 class="f3 title">setFromPixels( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setFromPixels</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> <span class="token keyword">unsigned</span> <span class="token keyword">char</span> <span class="token operator">*</span>_pixels<span class="token punctuation">,</span> <span class="token keyword">int</span> w<span class="token punctuation">,</span> <span class="token keyword">int</span> h</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Set all the pixels in a ofxCvGrayscaleImage from a pointer to an array of unsigned char values, using the w and h parameters to determine the dimensions of the image. The array is assumed to contain grayscale values.</p>
+</div></div><hr></section><section name="setRoiFromPixels" id="setRoiFromPixels" class="mb2"><div class="method mb2"><h3 class="f3 title">setRoiFromPixels( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setRoiFromPixels</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> <span class="token keyword">unsigned</span> <span class="token keyword">char</span> <span class="token operator">*</span>_pixels<span class="token punctuation">,</span> <span class="token keyword">int</span> w<span class="token punctuation">,</span> <span class="token keyword">int</span> h</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>This allows you to set the ROI on the image from an ofPixels instance. Region of Interest is a rectangular area in an image, to segment object for further processing. Once the ROI is defined, OpenCV functions will operate on the ROI, reducing the number of pixels that the operation will examine.</p>
+</div></div><hr></section><section name="threshold" id="threshold" class="mb2"><div class="method mb2"><h3 class="f3 title">threshold( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">threshold</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> value<span class="token punctuation">,</span> <span class="token keyword">bool</span> invert<span class="token operator">=</span><span class="token boolean">false</span></code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Increases the contrast of the image. The value is the threshold level applied to the image, for instance:</p>
+<pre><code class="language-{.cpp}">altered<span class="token punctuation">.</span><span class="token function">threshold</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// super high contrast</span>
+</code></pre>
+<p><img src="threshold.png" alt="Threshold" title="Thresholding an image"></p>
+</div></div><hr></section><section name="~ofxCvGrayscaleImage" id="~ofxCvGrayscaleImage" class="mb2"><div class="method mb2"><h3 class="f3 title">~ofxCvGrayscaleImage( <!----> )</h3><code><!----><span class="token function">~ofxCvGrayscaleImage</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Destructor.</p>
+</div></div><hr></section></div></div></div></div><div id="side-menu"><div id="params"><h4 class="f3">Variables</h4><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">CvMat* </span><span>briConLutMatrix</span><span class="token comment"></span></div><div class="desc"></div></div></code></div><div id="methods-list"><h4 class="f3">Methods</h4><div class="anchor"><code><a href="#absDiff" class="pink"><span>absDiff</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#adaptiveThreshold" class="pink"><span>adaptiveThreshold</span><!----></a></code></div><div class="anchor"><code><a href="#allocatePixels"><span>allocatePixels</span><!----></a></code></div><div class="anchor"><code><a href="#allocateTexture"><span>allocateTexture</span><!----></a></code></div><div class="anchor"><code><a href="#blurHeavily" class="pink"><span>blurHeavily</span><!----></a></code></div><div class="anchor"><code><a href="#brightnessContrast" class="pink"><span>brightnessContrast</span><!----></a></code></div><div class="anchor"><code><a href="#contrastStretch" class="pink"><span>contrastStretch</span><!----></a></code></div><div class="anchor"><code><a href="#convertToRange" class="pink"><span>convertToRange</span><!----></a></code></div><div class="anchor"><code><a href="#dilate_3x3"><span>dilate_3x3</span><!----></a></code></div><div class="anchor"><code><a href="#erode_3x3"><span>erode_3x3</span><!----></a></code></div><div class="anchor"><code><a href="#init"><span>init</span><!----></a></code></div><div class="anchor"><code><a href="#ofxCvGrayscaleImage" class="pink"><span>ofxCvGrayscaleImage</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#operator=" class="pink"><span>operator=</span><span>(6)</span></a></code></div><div class="anchor"><code><a href="#resize" class="pink"><span>resize</span><!----></a></code></div><div class="anchor"><code><a href="#scaleIntoMe" class="pink"><span>scaleIntoMe</span><!----></a></code></div><div class="anchor"><code><a href="#set" class="pink"><span>set</span><!----></a></code></div><div class="anchor"><code><a href="#setFromColorImage" class="pink"><span>setFromColorImage</span><!----></a></code></div><div class="anchor"><code><a href="#setFromFloatImage" class="pink"><span>setFromFloatImage</span><!----></a></code></div><div class="anchor"><code><a href="#setFromPixels" class="pink"><span>setFromPixels</span><!----></a></code></div><div class="anchor"><code><a href="#setRoiFromPixels" class="pink"><span>setRoiFromPixels</span><!----></a></code></div><div class="anchor"><code><a href="#threshold" class="pink"><span>threshold</span><!----></a></code></div><div class="anchor"><code><a href="#~ofxCvGrayscaleImage" class="pink"><span>~ofxCvGrayscaleImage</span><!----></a></code></div></div><div id="see-also" filename="ofxCvGrayscaleImage.markdown" absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/addons/ofxOpenCv/ofxCvGrayscaleImage.markdown" route="/documentation/addons/ofxOpenCv/ofxCvGrayscaleImage.markdown" dir="../ofSite/documentation/addons/ofxOpenCv" ext="markdown" type="page" parent="2084" breadcrumbs="2084,1993,1968" siblings="" translations="[object Object]" class="see-also"><h4 class="f3">See also</h4><div class="also"><a href="/addons/ofxOpenCv/src/ofxCvGrayscaleImage_h"><span class="origin">addons</span><span class="name">ofxCvGrayscaleImage.h</span></a></div><div class="also"><a href="/addons/ofxOpenCv/src/ofxCvGrayscaleImage_cpp"><span class="origin">addons</span><span class="name">ofxCvGrayscaleImage.cpp</span></a></div></div></div></div></div><textarea rows="0" class="markdown-editor" style="display:none">#class ofxCvGrayscaleImage
+
+
+&lt;!--
+_visible: True_
+_advanced: False_
+_istemplated: False_
+_extends: ofxCvImage_
+-->
+
+##InlineDescription
+
+
+
+
+
+
+##Description
+
+This represents an OpenCV friendly image in grayscale, i.e. without any color data. This is useful because many of the image processing and analysis routines in OpenCV (or OF for that matter) don't require color information. Less information to sort through means faster image analysis and faster applications. You can convert an ofxCvColorImage to an ofxCvGrayscaleImage using the = operator like so:
+
+~~~~{.cpp}
+grayscaleImg = colorImg;
+~~~~
+
+A common routine that you'll see is something like the following:
+
+~~~~{.cpp}
+colorImg.setFromPixels(vidGrabber.getPixels());
+grayImage = colorImg; // convert our color image to a grayscale image
+~~~~
+
+The ofxCvGrayscaleImage can then be passed to a ofxCvContourFinder instance for contour and blob detection.
+
+~~~~{.cpp}
+contourFinder.findContours(grayscaleImage, 5, (340*240)/4, 4, false, true);
+~~~~
+
+
+
+
+
+##Methods
+
+
+
+###void absDiff(&mom)
+
+&lt;!--
+_syntax: absDiff(&mom)_
+_name: absDiff_
+_returns: void_
+_returns_description: _
+_parameters: ofxCvGrayscaleImage &mom_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Makes a diff of the current image and the mom image. This alters the pixels of the ofxCvGrayscaleImage instance. 
+
+~~~~{.cpp}
+current.absDiff(incoming);
+~~~~
+
+The below image shows how the diff process operates:
+
+![Image diff](absdiff.png "Diffing two images")
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void absDiff(&mom, &dad)
+
+&lt;!--
+_syntax: absDiff(&mom, &dad)_
+_name: absDiff_
+_returns: void_
+_returns_description: _
+_parameters: ofxCvGrayscaleImage &mom, ofxCvGrayscaleImage &dad_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Sets the pixels of the images ofxCvGrayscaleImage instance to a diff of the &mom and &dad instance.
+
+![Image diff](absdiff.png "Diffing two images")
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void adaptiveThreshold(blockSize, offset = 0, invert = false, gauss = false)
+
+&lt;!--
+_syntax: adaptiveThreshold(blockSize, offset = 0, invert = false, gauss = false)_
+_name: adaptiveThreshold_
+_returns: void_
+_returns_description: _
+_parameters: int blockSize, int offset=0, bool invert=false, bool gauss=false_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Increases the contrast of the image by blocks, the larger the block, the larger the area that is thresholded at one time. Invert flips the values of the image, making black into white and vice versa. gauss determines whether the image is to be thresholded usinga Gaussian method or simply a plain thresholding. Below you can see the result of using adaptive threshold with two different values.
+
+~~~~{.cpp}
+left.adaptiveThreshold(20);
+right.adaptiveThreshold(50);
+~~~~
+
+![Threshold](threshold.png "Thresholding an image")
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void allocatePixels(w, h)
+
+&lt;!--
+_syntax: allocatePixels(w, h)_
+_name: allocatePixels_
+_returns: void_
+_returns_description: _
+_parameters: int w, int h_
+_access: protected_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void allocateTexture()
+
+&lt;!--
+_syntax: allocateTexture()_
+_name: allocateTexture_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void blurHeavily()
+
+&lt;!--
+_syntax: blurHeavily()_
+_name: blurHeavily_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Blurs the image using a pre-determine blur amount.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void brightnessContrast(brightness, contrast)
+
+&lt;!--
+_syntax: brightnessContrast(brightness, contrast)_
+_name: brightnessContrast_
+_returns: void_
+_returns_description: _
+_parameters: float brightness, float contrast_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Sets the brightness and contrast of an image.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void contrastStretch()
+
+&lt;!--
+_syntax: contrastStretch()_
+_name: contrastStretch_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+This increases the contrast of the image remapping the brightest points in the image to white and the darkest points in the image to black. Generally on a ofxCvGrayscaleImage it isn't particularly noticeable, though it can have a large effect mathematically.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void convertToRange(min, max)
+
+&lt;!--
+_syntax: convertToRange(min, max)_
+_name: convertToRange_
+_returns: void_
+_returns_description: _
+_parameters: float min, float max_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Maps the pixels of an image to the min and max range passed in.
+
+~~~~{.cpp}
+
+colors.setFromPixels(grabber.getPixels());
+
+first = colors; // will leave unaltered
+second = colors; // change it
+second.convertToRange(100, 140); // super low contrast
+
+~~~~
+
+![Image convert to range](convertToRange.png "Converting the range of an image")
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void dilate_3x3()
+
+&lt;!--
+_syntax: dilate_3x3()_
+_name: dilate_3x3_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void erode_3x3()
+
+&lt;!--
+_syntax: erode_3x3()_
+_name: erode_3x3_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void init()
+
+&lt;!--
+_syntax: init()_
+_name: init_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofxCvGrayscaleImage()
+
+&lt;!--
+_syntax: ofxCvGrayscaleImage()_
+_name: ofxCvGrayscaleImage_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Constructor.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofxCvGrayscaleImage(&mom)
+
+&lt;!--
+_syntax: ofxCvGrayscaleImage(&mom)_
+_name: ofxCvGrayscaleImage_
+_returns: _
+_returns_description: _
+_parameters: const ofxCvGrayscaleImage &mom_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Copy constructor, allows you copy one ofxCvGrayscaleImage into another.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void operator=(&_pixels)
+
+&lt;!--
+_syntax: operator=(&_pixels)_
+_name: operator=_
+_returns: void_
+_returns_description: _
+_parameters: const ofPixels &_pixels_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Copies a IplImage into a ofxCvGrayscaleImage using the = symbol.
+
+~~~~{.cpp}
+grayImage = iplImage; // make sure that the dimensions and ROI match
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void operator=(&mom)
+
+&lt;!--
+_syntax: operator=(&mom)_
+_name: operator=_
+_returns: void_
+_returns_description: _
+_parameters: const ofxCvGrayscaleImage &mom_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Copies one ofxCvGrayscaleImage to another ofxCvGrayscaleImage using the = symbol.
+
+~~~~{.cpp}
+imageOne = imageTwo; // make sure that the dimensions and ROI match
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void operator=(&mom)
+
+&lt;!--
+_syntax: operator=(&mom)_
+_name: operator=_
+_returns: void_
+_returns_description: _
+_parameters: const ofxCvColorImage &mom_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Copies a ofxCvColorImage into a ofxCvGrayscaleImage using the = symbol.
+
+~~~~{.cpp}
+grayImage = colorImage; // make sure that the dimensions and ROI match
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void operator=(&mom)
+
+&lt;!--
+_syntax: operator=(&mom)_
+_name: operator=_
+_returns: void_
+_returns_description: _
+_parameters: const ofxCvFloatImage &mom_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Copies a ofxCvFloatImage into a ofxCvGrayscaleImage using the = symbol.
+
+~~~~{.cpp}
+grayImage = floatColorImage; // make sure that the dimensions and ROI match
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void operator=(&mom)
+
+&lt;!--
+_syntax: operator=(&mom)_
+_name: operator=_
+_returns: void_
+_returns_description: _
+_parameters: const ofxCvShortImage &mom_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Copies a ofxCvShortImage into a ofxCvGrayscaleImage using the = symbol.
+
+~~~~{.cpp}
+grayImage = shortColorImage; // make sure that the dimensions and ROI match
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void operator=(*mom)
+
+&lt;!--
+_syntax: operator=(*mom)_
+_name: operator=_
+_returns: void_
+_returns_description: _
+_parameters: const int *mom_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void resize(w, h)
+
+&lt;!--
+_syntax: resize(w, h)_
+_name: resize_
+_returns: void_
+_returns_description: _
+_parameters: int w, int h_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Resizes the image to the w, h passed in.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void scaleIntoMe(&mom, interpolationMethod)
+
+&lt;!--
+_syntax: scaleIntoMe(&mom, interpolationMethod)_
+_name: scaleIntoMe_
+_returns: void_
+_returns_description: _
+_parameters: ofxCvImage &mom, int interpolationMethod_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Scales the image passed in to be the size of the current image, 
+
+~~~~{.cpp}
+
+ofxCvImage first;
+first.allocate(640, 480);
+ofxCvImage second;
+second.allocate(320, 240);
+
+second.scaleIntoMe(first); // first is now 320,240
+
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void set(value)
+
+&lt;!--
+_syntax: set(value)_
+_name: set_
+_returns: void_
+_returns_description: _
+_parameters: float value_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Set all the pixels in the image to the float value passed in. This is useful for blanking or filling an image quickly. the values are 1.0 to 255.0.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setFromColorImage(&mom)
+
+&lt;!--
+_syntax: setFromColorImage(&mom)_
+_name: setFromColorImage_
+_returns: void_
+_returns_description: _
+_parameters: ofxCvColorImage &mom_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Sets the grayscale image from an ofxCvColorImage.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setFromFloatImage(&mom)
+
+&lt;!--
+_syntax: setFromFloatImage(&mom)_
+_name: setFromFloatImage_
+_returns: void_
+_returns_description: _
+_parameters: ofxCvFloatImage &mom_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Sets the grayscale image from an ofxCvFloatImage.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setFromPixels(*_pixels, w, h)
+
+&lt;!--
+_syntax: setFromPixels(*_pixels, w, h)_
+_name: setFromPixels_
+_returns: void_
+_returns_description: _
+_parameters: const unsigned char *_pixels, int w, int h_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Set all the pixels in a ofxCvGrayscaleImage from a pointer to an array of unsigned char values, using the w and h parameters to determine the dimensions of the image. The array is assumed to contain grayscale values.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setRoiFromPixels(*_pixels, w, h)
+
+&lt;!--
+_syntax: setRoiFromPixels(*_pixels, w, h)_
+_name: setRoiFromPixels_
+_returns: void_
+_returns_description: _
+_parameters: const unsigned char *_pixels, int w, int h_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+This allows you to set the ROI on the image from an ofPixels instance. Region of Interest is a rectangular area in an image, to segment object for further processing. Once the ROI is defined, OpenCV functions will operate on the ROI, reducing the number of pixels that the operation will examine.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void threshold(value, invert = false)
+
+&lt;!--
+_syntax: threshold(value, invert = false)_
+_name: threshold_
+_returns: void_
+_returns_description: _
+_parameters: int value, bool invert=false_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Increases the contrast of the image. The value is the threshold level applied to the image, for instance:
+
+~~~~{.cpp}
+altered.threshold(30); // super high contrast
+~~~~
+
+![Threshold](threshold.png "Thresholding an image")
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ~ofxCvGrayscaleImage()
+
+&lt;!--
+_syntax: ~ofxCvGrayscaleImage()_
+_name: ~ofxCvGrayscaleImage_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Destructor.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+##Variables
+
+
+
+###CvMat * briConLutMatrix
+
+&lt;!--
+_name: briConLutMatrix_
+_type: CvMat *_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+</textarea></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1586012716389/documentation/addons/ofxOpenCv/ofxCvGrayscaleImage/payload.js"></script><script src="/_nuxt/5f71eaca0bd2f1a0f939.js" defer></script><script src="/_nuxt/35a90d914f539af1362f.js" defer></script><script src="/_nuxt/906a3ca0fb13ed3c6651.js" defer></script><script src="/_nuxt/b673915e8a08acf593e8.js" defer></script><script src="/_nuxt/bf355f21967a23c26c07.js" defer></script>
+  </body>
+</html>

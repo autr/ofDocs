@@ -1,0 +1,890 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>gtxsimd_quat (functions) | documentation | ofDocs</title><meta data-n-head="ssr" data-hid="description" name="description" content="openFrameworks documentation and examples browser"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="openFrameworks documentation and examples browser" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="gtxsimd_quat (functions) | documentation | ofDocs" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="/files/images/ofw-logo.png" vmid="og:image"><link rel="preload" href="/_nuxt/5f71eaca0bd2f1a0f939.js" as="script"><link rel="preload" href="/_nuxt/906a3ca0fb13ed3c6651.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/b673915e8a08acf593e8.js" as="script"><link rel="preload" href="/_nuxt/46e8fcacdadb233d9fb6.css" as="style"><link rel="preload" href="/_nuxt/bf355f21967a23c26c07.js" as="script"><link rel="preload" href="/_nuxt/35a90d914f539af1362f.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/46e8fcacdadb233d9fb6.css">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app"><div id="menu"><div class="menu-inner"><div id="settings"></div><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><svg version="1.1" viewbox="0 0 110 58" width="110px" height="58px" enable-background="0 0 110 58" xml:space="preserve" class="logo"><g><path d="M58,29 C58,13 45,0 29,0 C13,0 0,13 0,29 C0,45 13,58 29,58 C45,58 58,45 58,29 Z"></path><rect x="59" y="0" width="25" height="58"></rect><rect x="85" y="26" width="15" height="15"></rect><path d="M85,0 L110,0 L85,25 L85,0 Z"></path></g></svg><div class="txt"><span class="docs f7 questrial">Docs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343							c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88							c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593							c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789							C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><!----></div><div id="lists" class="menu-inner mt1 mb2"><div class="inner"></div></div></div><div class="menu-bottom"><div class="inner"><button class="button"><!----><span><span class="ico">nights_stay</span></span></button></div></div></div><div id="document"><div id="renderer" class="main page"><div absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/glm/gtx_simd_quat_functions.markdown" route="/documentation/glm/gtx_simd_quat_functions.markdown" dir="../ofSite/documentation/glm" ext="markdown" type="page" id="2314" parent="2235" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/" class="pink nuxt-link-active">documentation </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/glm/" class="pink nuxt-link-active">glm </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link selector"><span class="name">gtxsimd_quat (functions)</span><span class="chevron bottom"></span><select><option value="/documentation/glm/detail_func_common_functions">detailfunc_common (functions)</option><option value="/documentation/glm/detail_func_exponential_functions">detailfunc_exponential (functions)</option><option value="/documentation/glm/detail_func_geometric_functions">detailfunc_geometric (functions)</option><option value="/documentation/glm/detail_func_integer_functions">detailfunc_integer (functions)</option><option value="/documentation/glm/detail_func_matrix_functions">detailfunc_matrix (functions)</option><option value="/documentation/glm/detail_func_packing_functions">detailfunc_packing (functions)</option><option value="/documentation/glm/detail_func_trigonometric_functions">detailfunc_trigonometric (functions)</option><option value="/documentation/glm/detail_func_vector_relational_functions">detailfunc_vector_relational (functions)</option><option value="/documentation/glm/detail_setup_functions">detailsetup (functions)</option><option value="/documentation/glm/detail_type_mat_functions">detailtype_mat (functions)</option><option value="/documentation/glm/glm::mat2">glm::mat2</option><option value="/documentation/glm/glm::mat2x3">glm::mat2x3</option><option value="/documentation/glm/glm::mat2x4">glm::mat2x4</option><option value="/documentation/glm/glm::mat3">glm::mat3</option><option value="/documentation/glm/glm::mat3x2">glm::mat3x2</option><option value="/documentation/glm/glm::mat3x4">glm::mat3x4</option><option value="/documentation/glm/glm::mat4">glm::mat4</option><option value="/documentation/glm/glm::mat4x2">glm::mat4x2</option><option value="/documentation/glm/glm::mat4x3">glm::mat4x3</option><option value="/documentation/glm/glm::quat">glm::quat</option><option value="/documentation/glm/glm::vec1">glm::vec1</option><option value="/documentation/glm/glm::vec2">glm::vec2</option><option value="/documentation/glm/glm::vec3">glm::vec3</option><option value="/documentation/glm/glm::vec4">glm::vec4</option><option value="/documentation/glm/gtc_bitfield_functions">gtcbitfield (functions)</option><option value="/documentation/glm/gtc_constants_functions">gtcconstants (functions)</option><option value="/documentation/glm/gtc_epsilon_functions">gtcepsilon (functions)</option><option value="/documentation/glm/gtc_functions_functions">gtc (functions)functions</option><option value="/documentation/glm/gtc_matrix_access_functions">gtcmatrix_access (functions)</option><option value="/documentation/glm/gtc_matrix_inverse_functions">gtcmatrix_inverse (functions)</option><option value="/documentation/glm/gtc_matrix_transform_functions">gtcmatrix_transform (functions)</option><option value="/documentation/glm/gtc_noise_functions">gtcnoise (functions)</option><option value="/documentation/glm/gtc_packing_functions">gtcpacking (functions)</option><option value="/documentation/glm/gtc_quaternion_functions">gtcquaternion (functions)</option><option value="/documentation/glm/gtc_random_functions">gtcrandom (functions)</option><option value="/documentation/glm/gtc_reciprocal_functions">gtcreciprocal (functions)</option><option value="/documentation/glm/gtc_round_functions">gtcround (functions)</option><option value="/documentation/glm/gtc_type_ptr_functions">gtctype_ptr (functions)</option><option value="/documentation/glm/gtc_ulp_functions">gtculp (functions)</option><option value="/documentation/glm/gtx_associated_min_max_functions">gtxassociated_min_max (functions)</option><option value="/documentation/glm/gtx_bit_functions">gtxbit (functions)</option><option value="/documentation/glm/gtx_closest_point_functions">gtxclosest_point (functions)</option><option value="/documentation/glm/gtx_color_space_functions">gtxcolor_space (functions)</option><option value="/documentation/glm/gtx_color_space_YCoCg_functions">gtxcolor_space_YCoCg (functions)</option><option value="/documentation/glm/gtx_common_functions">gtxcommon (functions)</option><option value="/documentation/glm/gtx_compatibility_functions">gtxcompatibility (functions)</option><option value="/documentation/glm/gtx_component_wise_functions">gtxcomponent_wise (functions)</option><option value="/documentation/glm/gtx_dual_quaternion_functions">gtxdual_quaternion (functions)</option><option value="/documentation/glm/gtx_euler_angles_functions">gtxeuler_angles (functions)</option><option value="/documentation/glm/gtx_extend_functions">gtxextend (functions)</option><option value="/documentation/glm/gtx_extended_min_max_functions">gtxextended_min_max (functions)</option><option value="/documentation/glm/gtx_extented_min_max_functions">gtxextented_min_max (functions)</option><option value="/documentation/glm/gtx_fast_exponential_functions">gtxfast_exponential (functions)</option><option value="/documentation/glm/gtx_fast_square_root_functions">gtxfast_square_root (functions)</option><option value="/documentation/glm/gtx_fast_trigonometry_functions">gtxfast_trigonometry (functions)</option><option value="/documentation/glm/gtx_gradient_paint_functions">gtxgradient_paint (functions)</option><option value="/documentation/glm/gtx_handed_coordinate_space_functions">gtxhanded_coordinate_space (functions)</option><option value="/documentation/glm/gtx_integer_functions">gtxinteger (functions)</option><option value="/documentation/glm/gtx_intersect_functions">gtxintersect (functions)</option><option value="/documentation/glm/gtx_log_base_functions">gtxlog_base (functions)</option><option value="/documentation/glm/gtx_matrix_cross_product_functions">gtxmatrix_cross_product (functions)</option><option value="/documentation/glm/gtx_matrix_decompose_functions">gtxmatrix_decompose (functions)</option><option value="/documentation/glm/gtx_matrix_interpolation_functions">gtxmatrix_interpolation (functions)</option><option value="/documentation/glm/gtx_matrix_major_storage_functions">gtxmatrix_major_storage (functions)</option><option value="/documentation/glm/gtx_matrix_operation_functions">gtxmatrix_operation (functions)</option><option value="/documentation/glm/gtx_matrix_query_functions">gtxmatrix_query (functions)</option><option value="/documentation/glm/gtx_matrix_transform_2d_functions">gtxmatrix_transform_2d (functions)</option><option value="/documentation/glm/gtx_mixed_product_functions">gtxmixed_product (functions)</option><option value="/documentation/glm/gtx_normal_functions">gtxnormal (functions)</option><option value="/documentation/glm/gtx_normalize_dot_functions">gtxnormalize_dot (functions)</option><option value="/documentation/glm/gtx_orthonormalize_functions">gtxorthonormalize (functions)</option><option value="/documentation/glm/gtx_perpendicular_functions">gtxperpendicular (functions)</option><option value="/documentation/glm/gtx_polar_coordinates_functions">gtxpolar_coordinates (functions)</option><option value="/documentation/glm/gtx_projection_functions">gtxprojection (functions)</option><option value="/documentation/glm/gtx_range_functions">gtxrange (functions)</option><option value="/documentation/glm/gtx_rotate_normalized_axis_functions">gtxrotate_normalized_axis (functions)</option><option value="/documentation/glm/gtx_rotate_vector_functions">gtxrotate_vector (functions)</option><option value="/documentation/glm/gtx_simd_mat4_functions">gtxsimd_mat4 (functions)</option><option value="/documentation/glm/gtx_simd_quat_functions">gtxsimd_quat (functions)</option><option value="/documentation/glm/gtx_simd_vec4_functions">gtxsimd_vec4 (functions)</option><option value="/documentation/glm/gtx_spline_functions">gtxspline (functions)</option><option value="/documentation/glm/gtx_string_cast_functions">gtxstring_cast (functions)</option><option value="/documentation/glm/gtx_transform_functions">gtxtransform (functions)</option><option value="/documentation/glm/gtx_transform2_functions">gtxtransform2 (functions)</option><option value="/documentation/glm/gtx_vector_angle_functions">gtxvector_angle (functions)</option><option value="/documentation/glm/gtx_vector_query_functions">gtxvector_query (functions)</option><option value="/documentation/glm/gtx_wrap_functions">gtxwrap (functions)</option></select></span><!----></span></span></div></div></div><div class="editable-wrapper"><div class="header inner"><h1 class="page-title questrial"><span class="f7"><!----><span>gtxsimd_quat (functions)</span></span><span class="f3"></span></h1><div class="actions"><a href="/ofdocs/contribute/" class="button"><i class="ico">edit</i><span>Edit</span></a></div></div><div class="rendered"><div id="documentation-page" static="true"><div id="offset-page"><div id="doc-body" class="markdown"><div class="inner"><div id="description"><!----></div><div id="methods"><hr><section name="glm::angleAxisSIMD" id="glm::angleAxisSIMD" class="mb2"><div class="method mb2"><h3 class="f3 title">glm::angleAxisSIMD( <code class="pink">...</code> )</h3><code><span class="token keyword">detail::fquatSIMD  </span><span class="token function">glm::angleAxisSIMD</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> <span class="token keyword">float</span> <span class="token operator">&</span>angle<span class="token punctuation">,</span> <span class="token keyword">const</span> glm<span class="token operator">::</span>vec3 <span class="token operator">&</span>axis</code><span class="token punctuation">)</span></code><div class="short"><p>Build a quaternion from an angle and a normalized axis.</p>
+<p><strong>Parameters:</strong></p>
+<p>angle Angle expressed in radians.</p>
+<p>axis Axis of the quaternion, must be normalized.</p>
+<p><strong>See also</strong>: gtx_simd_quat</p>
+</div><div class="desc"></div></div><hr></section><section name="glm::angleAxisSIMD" id="glm::angleAxisSIMD" class="mb2"><div class="method mb2"><h3 class="f3 title">glm::angleAxisSIMD( <code class="pink">...</code> )</h3><code><span class="token keyword">detail::fquatSIMD  </span><span class="token function">glm::angleAxisSIMD</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> <span class="token keyword">float</span> <span class="token operator">&</span>angle<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">float</span> <span class="token operator">&</span>x<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">float</span> <span class="token operator">&</span>y<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">float</span> <span class="token operator">&</span>z</code><span class="token punctuation">)</span></code><div class="short"><p>Build a quaternion from an angle and a normalized axis.</p>
+<p><strong>Parameters:</strong></p>
+<p>angle Angle expressed in radians.</p>
+<p>x x component of the x-axis, x, y, z must be a normalized axis</p>
+<p>y y component of the y-axis, x, y, z must be a normalized axis</p>
+<p>z z component of the z-axis, x, y, z must be a normalized axis</p>
+<p><strong>See also</strong>: gtx_simd_quat</p>
+</div><div class="desc"></div></div><hr></section><section name="glm::conjugate" id="glm::conjugate" class="mb2"><div class="method mb2"><h3 class="f3 title">glm::conjugate( <code class="pink">...</code> )</h3><code><span class="token keyword">detail::fquatSIMD  </span><span class="token function">glm::conjugate</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> detail<span class="token operator">::</span>fquatSIMD <span class="token operator">&</span>q</code><span class="token punctuation">)</span></code><div class="short"><p>Returns the q conjugate.</p>
+<p><strong>See also</strong>: gtx_simd_quat</p>
+</div><div class="desc"></div></div><hr></section><section name="glm::dot" id="glm::dot" class="mb2"><div class="method mb2"><h3 class="f3 title">glm::dot( <code class="pink">...</code> )</h3><code><span class="token keyword">float  </span><span class="token function">glm::dot</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> detail<span class="token operator">::</span>fquatSIMD <span class="token operator">&</span>q1<span class="token punctuation">,</span> <span class="token keyword">const</span> detail<span class="token operator">::</span>fquatSIMD <span class="token operator">&</span>q2</code><span class="token punctuation">)</span></code><div class="short"><p>Returns dot product of q1 and q2, i.e., q1[0] * q2[0] + q1[1] * q2[1] + ...</p>
+<p><strong>See also</strong>: gtx_simd_quat</p>
+</div><div class="desc"></div></div><hr></section><section name="glm::fastMix" id="glm::fastMix" class="mb2"><div class="method mb2"><h3 class="f3 title">glm::fastMix( <code class="pink">...</code> )</h3><code><span class="token keyword">detail::fquatSIMD  </span><span class="token function">glm::fastMix</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> detail<span class="token operator">::</span>fquatSIMD <span class="token operator">&</span>x<span class="token punctuation">,</span> <span class="token keyword">const</span> detail<span class="token operator">::</span>fquatSIMD <span class="token operator">&</span>y<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">float</span> <span class="token operator">&</span>a</code><span class="token punctuation">)</span></code><div class="short"><p>Faster spherical linear interpolation of two unit length quaternions.</p>
+<p>This is the same as mix(), except for two rules:</p>
+<ol>
+<li>The two quaternions must be unit length.</li>
+<li>The interpolation factor (a) must be in the range [0, 1].</li>
+</ol>
+<p>This will use the equivalent to fastAcos() and fastSin().</p>
+<p><strong>See also</strong>: gtx_simd_quat</p>
+<p><strong>See also</strong>: - mix(detail::fquatSIMD const & x, detail::fquatSIMD const & y, T const & a)</p>
+</div><div class="desc"></div></div><hr></section><section name="glm::fastSin" id="glm::fastSin" class="mb2"><div class="method mb2"><h3 class="f3 title">glm::fastSin( <code class="pink">...</code> )</h3><code><span class="token keyword">__m128  </span><span class="token function">glm::fastSin</span><span class="token punctuation">(</span><code class="token boolean">__m128 x</code><span class="token punctuation">)</span></code><div class="short"><p>Performs the equivalent of glm::fastSin() on each component of the given __m128.</p>
+</div><div class="desc"></div></div><hr></section><section name="glm::fastSlerp" id="glm::fastSlerp" class="mb2"><div class="method mb2"><h3 class="f3 title">glm::fastSlerp( <code class="pink">...</code> )</h3><code><span class="token keyword">detail::fquatSIMD  </span><span class="token function">glm::fastSlerp</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> detail<span class="token operator">::</span>fquatSIMD <span class="token operator">&</span>x<span class="token punctuation">,</span> <span class="token keyword">const</span> detail<span class="token operator">::</span>fquatSIMD <span class="token operator">&</span>y<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">float</span> <span class="token operator">&</span>a</code><span class="token punctuation">)</span></code><div class="short"><p>Identical to fastMix() except takes the shortest path.</p>
+<p>The same rules apply here as those in fastMix(). Both quaternions must be unit length and 'a' must be
+in the range [0, 1].</p>
+<p><strong>See also</strong>: - fastMix(detail::fquatSIMD const & x, detail::fquatSIMD const & y, T const & a)</p>
+<p><strong>See also</strong>: - slerp(detail::fquatSIMD const & x, detail::fquatSIMD const & y, T const & a)</p>
+</div><div class="desc"></div></div><hr></section><section name="glm::inverse" id="glm::inverse" class="mb2"><div class="method mb2"><h3 class="f3 title">glm::inverse( <code class="pink">...</code> )</h3><code><span class="token keyword">detail::fquatSIMD  </span><span class="token function">glm::inverse</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> detail<span class="token operator">::</span>fquatSIMD <span class="token operator">&</span>q</code><span class="token punctuation">)</span></code><div class="short"><p>Returns the q inverse.</p>
+<p><strong>See also</strong>: gtx_simd_quat</p>
+</div><div class="desc"></div></div><hr></section><section name="glm::length" id="glm::length" class="mb2"><div class="method mb2"><h3 class="f3 title">glm::length( <code class="pink">...</code> )</h3><code><span class="token keyword">float  </span><span class="token function">glm::length</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> detail<span class="token operator">::</span>fquatSIMD <span class="token operator">&</span>x</code><span class="token punctuation">)</span></code><div class="short"><p>Returns the length of the quaternion.</p>
+<p><strong>See also</strong>: gtx_simd_quat</p>
+</div><div class="desc"></div></div><hr></section><section name="glm::lerp" id="glm::lerp" class="mb2"><div class="method mb2"><h3 class="f3 title">glm::lerp( <code class="pink">...</code> )</h3><code><span class="token keyword">detail::fquatSIMD  </span><span class="token function">glm::lerp</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> detail<span class="token operator">::</span>fquatSIMD <span class="token operator">&</span>x<span class="token punctuation">,</span> <span class="token keyword">const</span> detail<span class="token operator">::</span>fquatSIMD <span class="token operator">&</span>y<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">float</span> <span class="token operator">&</span>a</code><span class="token punctuation">)</span></code><div class="short"><p>Linear interpolation of two quaternions.
+The interpolation is oriented.</p>
+<p><strong>Parameters:</strong></p>
+<p>x A quaternion</p>
+<p>y A quaternion</p>
+<p>a Interpolation factor. The interpolation is defined in the range [0, 1].</p>
+<p><strong>Type parameters:</strong></p>
+<p>T Value type used to build the quaternion. Supported: half, float or double.</p>
+<p><strong>See also</strong>: gtx_simd_quat</p>
+</div><div class="desc"></div></div><hr></section><section name="glm::mat4SIMD_cast" id="glm::mat4SIMD_cast" class="mb2"><div class="method mb2"><h3 class="f3 title">glm::mat4SIMD_cast( <code class="pink">...</code> )</h3><code><span class="token keyword">detail::fmat4x4SIMD  </span><span class="token function">glm::mat4SIMD_cast</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> detail<span class="token operator">::</span>fquatSIMD <span class="token operator">&</span>q</code><span class="token punctuation">)</span></code><div class="short"><p>Convert a simdQuat to a simdMat4</p>
+<p><strong>See also</strong>: gtx_simd_quat</p>
+</div><div class="desc"></div></div><hr></section><section name="glm::mat4_cast" id="glm::mat4_cast" class="mb2"><div class="method mb2"><h3 class="f3 title">glm::mat4_cast( <code class="pink">...</code> )</h3><code><span class="token keyword">glm::mat4  </span><span class="token function">glm::mat4_cast</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> detail<span class="token operator">::</span>fquatSIMD <span class="token operator">&</span>q</code><span class="token punctuation">)</span></code><div class="short"><p>Converts a simdQuat to a standard mat4.</p>
+<p><strong>See also</strong>: gtx_simd_quat</p>
+</div><div class="desc"></div></div><hr></section><section name="glm::mix" id="glm::mix" class="mb2"><div class="method mb2"><h3 class="f3 title">glm::mix( <code class="pink">...</code> )</h3><code><span class="token keyword">detail::fquatSIMD  </span><span class="token function">glm::mix</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> detail<span class="token operator">::</span>fquatSIMD <span class="token operator">&</span>x<span class="token punctuation">,</span> <span class="token keyword">const</span> detail<span class="token operator">::</span>fquatSIMD <span class="token operator">&</span>y<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">float</span> <span class="token operator">&</span>a</code><span class="token punctuation">)</span></code><div class="short"><p>Spherical linear interpolation of two quaternions.
+The interpolation is oriented and the rotation is performed at constant speed.
+For short path spherical linear interpolation, use the slerp function.</p>
+<p><strong>Parameters:</strong></p>
+<p>x A quaternion</p>
+<p>y A quaternion</p>
+<p>a Interpolation factor. The interpolation is defined beyond the range [0, 1].</p>
+<p><strong>Type parameters:</strong></p>
+<p>T Value type used to build the quaternion. Supported: half, float or double.</p>
+<p><strong>See also</strong>: gtx_simd_quat</p>
+<p><strong>See also</strong>: - slerp(detail::fquatSIMD const & x, detail::fquatSIMD const & y, T const & a)</p>
+</div><div class="desc"></div></div><hr></section><section name="glm::normalize" id="glm::normalize" class="mb2"><div class="method mb2"><h3 class="f3 title">glm::normalize( <code class="pink">...</code> )</h3><code><span class="token keyword">detail::fquatSIMD  </span><span class="token function">glm::normalize</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> detail<span class="token operator">::</span>fquatSIMD <span class="token operator">&</span>x</code><span class="token punctuation">)</span></code><div class="short"><p>Returns the normalized quaternion.</p>
+<p><strong>See also</strong>: gtx_simd_quat</p>
+</div><div class="desc"></div></div><hr></section><section name="glm::quatSIMD_cast" id="glm::quatSIMD_cast" class="mb2"><div class="method mb2"><h3 class="f3 title">glm::quatSIMD_cast( <code class="pink">...</code> )</h3><code><span class="token keyword">detail::fquatSIMD  </span><span class="token function">glm::quatSIMD_cast</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> glm<span class="token operator">::</span>mat4 <span class="token operator">&</span>m<span class="token operator">=</span>P</code><span class="token punctuation">)</span></code><div class="short"><p>Converts a mat4 to a simdQuat.</p>
+<p><strong>See also</strong>: gtx_simd_quat</p>
+</div><div class="desc"></div></div><hr></section><section name="glm::quatSIMD_cast" id="glm::quatSIMD_cast" class="mb2"><div class="method mb2"><h3 class="f3 title">glm::quatSIMD_cast( <code class="pink">...</code> )</h3><code><span class="token keyword">detail::fquatSIMD  </span><span class="token function">glm::quatSIMD_cast</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> glm<span class="token operator">::</span>mat3 <span class="token operator">&</span>m<span class="token operator">=</span>P</code><span class="token punctuation">)</span></code><div class="short"><p>Converts a mat3 to a simdQuat.</p>
+<p><strong>See also</strong>: gtx_simd_quat</p>
+</div><div class="desc"></div></div><hr></section><section name="glm::quatSIMD_cast" id="glm::quatSIMD_cast" class="mb2"><div class="method mb2"><h3 class="f3 title">glm::quatSIMD_cast( <code class="pink">...</code> )</h3><code><span class="token keyword">detail::fquatSIMD  </span><span class="token function">glm::quatSIMD_cast</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> detail<span class="token operator">::</span>fmat4x4SIMD <span class="token operator">&</span>m</code><span class="token punctuation">)</span></code><div class="short"><p>Convert a simdMat4 to a simdQuat.</p>
+<p><strong>See also</strong>: gtx_simd_quat</p>
+</div><div class="desc"></div></div><hr></section><section name="glm::quat_cast" id="glm::quat_cast" class="mb2"><div class="method mb2"><h3 class="f3 title">glm::quat_cast( <code class="pink">...</code> )</h3><code><span class="token keyword">glm::quat  </span><span class="token function">glm::quat_cast</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> detail<span class="token operator">::</span>fquatSIMD <span class="token operator">&</span>x</code><span class="token punctuation">)</span></code><div class="short"><p>Convert a simdQuat to a quat.</p>
+<p><strong>See also</strong>: gtx_simd_quat</p>
+</div><div class="desc"></div></div><hr></section><section name="glm::slerp" id="glm::slerp" class="mb2"><div class="method mb2"><h3 class="f3 title">glm::slerp( <code class="pink">...</code> )</h3><code><span class="token keyword">detail::fquatSIMD  </span><span class="token function">glm::slerp</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> detail<span class="token operator">::</span>fquatSIMD <span class="token operator">&</span>x<span class="token punctuation">,</span> <span class="token keyword">const</span> detail<span class="token operator">::</span>fquatSIMD <span class="token operator">&</span>y<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">float</span> <span class="token operator">&</span>a</code><span class="token punctuation">)</span></code><div class="short"><p>Spherical linear interpolation of two quaternions.
+The interpolation always take the short path and the rotation is performed at constant speed.</p>
+<p><strong>Parameters:</strong></p>
+<p>x A quaternion</p>
+<p>y A quaternion</p>
+<p>a Interpolation factor. The interpolation is defined beyond the range [0, 1].</p>
+<p><strong>Type parameters:</strong></p>
+<p>T Value type used to build the quaternion. Supported: half, float or double.</p>
+<p><strong>See also</strong>: gtx_simd_quat</p>
+</div><div class="desc"></div></div><hr></section></div></div></div></div><div id="side-menu"><!----><div id="methods-list"><h4 class="f3">Methods</h4><div class="anchor"><code><a href="#glm::angleAxisSIMD" class="pink"><span>glm::angleAxisSIMD</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#glm::conjugate" class="pink"><span>glm::conjugate</span><!----></a></code></div><div class="anchor"><code><a href="#glm::dot" class="pink"><span>glm::dot</span><!----></a></code></div><div class="anchor"><code><a href="#glm::fastMix" class="pink"><span>glm::fastMix</span><!----></a></code></div><div class="anchor"><code><a href="#glm::fastSin" class="pink"><span>glm::fastSin</span><!----></a></code></div><div class="anchor"><code><a href="#glm::fastSlerp" class="pink"><span>glm::fastSlerp</span><!----></a></code></div><div class="anchor"><code><a href="#glm::inverse" class="pink"><span>glm::inverse</span><!----></a></code></div><div class="anchor"><code><a href="#glm::length" class="pink"><span>glm::length</span><!----></a></code></div><div class="anchor"><code><a href="#glm::lerp" class="pink"><span>glm::lerp</span><!----></a></code></div><div class="anchor"><code><a href="#glm::mat4SIMD_cast" class="pink"><span>glm::mat4SIMD_cast</span><!----></a></code></div><div class="anchor"><code><a href="#glm::mat4_cast" class="pink"><span>glm::mat4_cast</span><!----></a></code></div><div class="anchor"><code><a href="#glm::mix" class="pink"><span>glm::mix</span><!----></a></code></div><div class="anchor"><code><a href="#glm::normalize" class="pink"><span>glm::normalize</span><!----></a></code></div><div class="anchor"><code><a href="#glm::quatSIMD_cast" class="pink"><span>glm::quatSIMD_cast</span><span>(3)</span></a></code></div><div class="anchor"><code><a href="#glm::quat_cast" class="pink"><span>glm::quat_cast</span><!----></a></code></div><div class="anchor"><code><a href="#glm::slerp" class="pink"><span>glm::slerp</span><!----></a></code></div></div><!----></div></div></div><textarea rows="0" class="markdown-editor" style="display:none">#functions
+
+
+&lt;!--
+_visible: True_
+_advanced: False_
+-->
+
+##Description
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###detail::fquatSIMD glm::angleAxisSIMD(&angle, &axis)
+
+&lt;!--
+_syntax: glm::angleAxisSIMD(&angle, &axis)_
+_name: glm::angleAxisSIMD_
+_returns: detail::fquatSIMD_
+_returns_description: _
+_parameters: const float &angle, const glm::vec3 &axis_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Build a quaternion from an angle and a normalized axis.
+
+
+**Parameters:**
+
+angle Angle expressed in radians.
+
+axis Axis of the quaternion, must be normalized.
+
+
+**See also**: gtx_simd_quat
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###detail::fquatSIMD glm::angleAxisSIMD(&angle, &x, &y, &z)
+
+&lt;!--
+_syntax: glm::angleAxisSIMD(&angle, &x, &y, &z)_
+_name: glm::angleAxisSIMD_
+_returns: detail::fquatSIMD_
+_returns_description: _
+_parameters: const float &angle, const float &x, const float &y, const float &z_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Build a quaternion from an angle and a normalized axis.
+
+
+**Parameters:**
+
+angle Angle expressed in radians.
+
+x x component of the x-axis, x, y, z must be a normalized axis
+
+y y component of the y-axis, x, y, z must be a normalized axis
+
+z z component of the z-axis, x, y, z must be a normalized axis
+
+
+**See also**: gtx_simd_quat
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###detail::fquatSIMD glm::conjugate(&q)
+
+&lt;!--
+_syntax: glm::conjugate(&q)_
+_name: glm::conjugate_
+_returns: detail::fquatSIMD_
+_returns_description: _
+_parameters: const detail::fquatSIMD &q_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Returns the q conjugate.
+
+
+**See also**: gtx_simd_quat
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float glm::dot(&q1, &q2)
+
+&lt;!--
+_syntax: glm::dot(&q1, &q2)_
+_name: glm::dot_
+_returns: float_
+_returns_description: _
+_parameters: const detail::fquatSIMD &q1, const detail::fquatSIMD &q2_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Returns dot product of q1 and q2, i.e., q1[0] * q2[0] + q1[1] * q2[1] + ...
+
+
+**See also**: gtx_simd_quat
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###detail::fquatSIMD glm::fastMix(&x, &y, &a)
+
+&lt;!--
+_syntax: glm::fastMix(&x, &y, &a)_
+_name: glm::fastMix_
+_returns: detail::fquatSIMD_
+_returns_description: _
+_parameters: const detail::fquatSIMD &x, const detail::fquatSIMD &y, const float &a_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Faster spherical linear interpolation of two unit length quaternions.
+
+This is the same as mix(), except for two rules:
+  1) The two quaternions must be unit length.
+  2) The interpolation factor (a) must be in the range [0, 1].
+
+This will use the equivalent to fastAcos() and fastSin().
+
+
+**See also**: gtx_simd_quat
+
+**See also**: - mix(detail::fquatSIMD const & x, detail::fquatSIMD const & y, T const & a)
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###__m128 glm::fastSin(x)
+
+&lt;!--
+_syntax: glm::fastSin(x)_
+_name: glm::fastSin_
+_returns: __m128_
+_returns_description: _
+_parameters: __m128 x_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Performs the equivalent of glm::fastSin() on each component of the given __m128.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###detail::fquatSIMD glm::fastSlerp(&x, &y, &a)
+
+&lt;!--
+_syntax: glm::fastSlerp(&x, &y, &a)_
+_name: glm::fastSlerp_
+_returns: detail::fquatSIMD_
+_returns_description: _
+_parameters: const detail::fquatSIMD &x, const detail::fquatSIMD &y, const float &a_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Identical to fastMix() except takes the shortest path.
+
+The same rules apply here as those in fastMix(). Both quaternions must be unit length and 'a' must be
+in the range [0, 1].
+
+
+**See also**: - fastMix(detail::fquatSIMD const & x, detail::fquatSIMD const & y, T const & a)
+
+**See also**: - slerp(detail::fquatSIMD const & x, detail::fquatSIMD const & y, T const & a)
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###detail::fquatSIMD glm::inverse(&q)
+
+&lt;!--
+_syntax: glm::inverse(&q)_
+_name: glm::inverse_
+_returns: detail::fquatSIMD_
+_returns_description: _
+_parameters: const detail::fquatSIMD &q_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Returns the q inverse.
+
+
+**See also**: gtx_simd_quat
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float glm::length(&x)
+
+&lt;!--
+_syntax: glm::length(&x)_
+_name: glm::length_
+_returns: float_
+_returns_description: _
+_parameters: const detail::fquatSIMD &x_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Returns the length of the quaternion.
+
+
+**See also**: gtx_simd_quat
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###detail::fquatSIMD glm::lerp(&x, &y, &a)
+
+&lt;!--
+_syntax: glm::lerp(&x, &y, &a)_
+_name: glm::lerp_
+_returns: detail::fquatSIMD_
+_returns_description: _
+_parameters: const detail::fquatSIMD &x, const detail::fquatSIMD &y, const float &a_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Linear interpolation of two quaternions.
+The interpolation is oriented.
+
+
+**Parameters:**
+
+x A quaternion
+
+y A quaternion
+
+a Interpolation factor. The interpolation is defined in the range [0, 1].
+
+**Type parameters:**
+
+T Value type used to build the quaternion. Supported: half, float or double.
+
+**See also**: gtx_simd_quat
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###detail::fmat4x4SIMD glm::mat4SIMD_cast(&q)
+
+&lt;!--
+_syntax: glm::mat4SIMD_cast(&q)_
+_name: glm::mat4SIMD_cast_
+_returns: detail::fmat4x4SIMD_
+_returns_description: _
+_parameters: const detail::fquatSIMD &q_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+ Convert a simdQuat to a simdMat4
+
+**See also**: gtx_simd_quat
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###glm::mat4 glm::mat4_cast(&q)
+
+&lt;!--
+_syntax: glm::mat4_cast(&q)_
+_name: glm::mat4_cast_
+_returns: glm::mat4_
+_returns_description: _
+_parameters: const detail::fquatSIMD &q_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+ Converts a simdQuat to a standard mat4.
+
+**See also**: gtx_simd_quat
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###detail::fquatSIMD glm::mix(&x, &y, &a)
+
+&lt;!--
+_syntax: glm::mix(&x, &y, &a)_
+_name: glm::mix_
+_returns: detail::fquatSIMD_
+_returns_description: _
+_parameters: const detail::fquatSIMD &x, const detail::fquatSIMD &y, const float &a_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Spherical linear interpolation of two quaternions.
+The interpolation is oriented and the rotation is performed at constant speed.
+For short path spherical linear interpolation, use the slerp function.
+
+
+**Parameters:**
+
+x A quaternion
+
+y A quaternion
+
+a Interpolation factor. The interpolation is defined beyond the range [0, 1].
+
+**Type parameters:**
+
+T Value type used to build the quaternion. Supported: half, float or double.
+
+**See also**: gtx_simd_quat
+
+**See also**: - slerp(detail::fquatSIMD const & x, detail::fquatSIMD const & y, T const & a)
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###detail::fquatSIMD glm::normalize(&x)
+
+&lt;!--
+_syntax: glm::normalize(&x)_
+_name: glm::normalize_
+_returns: detail::fquatSIMD_
+_returns_description: _
+_parameters: const detail::fquatSIMD &x_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Returns the normalized quaternion.
+
+
+**See also**: gtx_simd_quat
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###detail::fquatSIMD glm::quatSIMD_cast(&m = P)
+
+&lt;!--
+_syntax: glm::quatSIMD_cast(&m = P)_
+_name: glm::quatSIMD_cast_
+_returns: detail::fquatSIMD_
+_returns_description: _
+_parameters: const glm::mat4 &m=P_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+ Converts a mat4 to a simdQuat.
+
+**See also**: gtx_simd_quat
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###detail::fquatSIMD glm::quatSIMD_cast(&m = P)
+
+&lt;!--
+_syntax: glm::quatSIMD_cast(&m = P)_
+_name: glm::quatSIMD_cast_
+_returns: detail::fquatSIMD_
+_returns_description: _
+_parameters: const glm::mat3 &m=P_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+ Converts a mat3 to a simdQuat.
+
+**See also**: gtx_simd_quat
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###detail::fquatSIMD glm::quatSIMD_cast(&m)
+
+&lt;!--
+_syntax: glm::quatSIMD_cast(&m)_
+_name: glm::quatSIMD_cast_
+_returns: detail::fquatSIMD_
+_returns_description: _
+_parameters: const detail::fmat4x4SIMD &m_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+ Convert a simdMat4 to a simdQuat.
+
+**See also**: gtx_simd_quat
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###glm::quat glm::quat_cast(&x)
+
+&lt;!--
+_syntax: glm::quat_cast(&x)_
+_name: glm::quat_cast_
+_returns: glm::quat_
+_returns_description: _
+_parameters: const detail::fquatSIMD &x_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+ Convert a simdQuat to a quat.
+
+**See also**: gtx_simd_quat
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###detail::fquatSIMD glm::slerp(&x, &y, &a)
+
+&lt;!--
+_syntax: glm::slerp(&x, &y, &a)_
+_name: glm::slerp_
+_returns: detail::fquatSIMD_
+_returns_description: _
+_parameters: const detail::fquatSIMD &x, const detail::fquatSIMD &y, const float &a_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Spherical linear interpolation of two quaternions.
+The interpolation always take the short path and the rotation is performed at constant speed.
+
+
+**Parameters:**
+
+x A quaternion
+
+y A quaternion
+
+a Interpolation factor. The interpolation is defined beyond the range [0, 1].
+
+**Type parameters:**
+
+T Value type used to build the quaternion. Supported: half, float or double.
+
+**See also**: gtx_simd_quat
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+</textarea></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1586012716389/documentation/glm/gtx_simd_quat_functions/payload.js"></script><script src="/_nuxt/5f71eaca0bd2f1a0f939.js" defer></script><script src="/_nuxt/35a90d914f539af1362f.js" defer></script><script src="/_nuxt/906a3ca0fb13ed3c6651.js" defer></script><script src="/_nuxt/b673915e8a08acf593e8.js" defer></script><script src="/_nuxt/bf355f21967a23c26c07.js" defer></script>
+  </body>
+</html>
