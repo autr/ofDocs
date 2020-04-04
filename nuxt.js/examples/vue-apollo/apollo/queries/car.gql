@@ -1,8 +1,0 @@
-query Car($id: ID!) {
-  Car(id: $id) {
-    make
-    model
-    photoURL
-    price
-  }
-}

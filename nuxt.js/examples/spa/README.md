@@ -1,2 +1,0 @@
-# Nuxt in SPA mode
-
