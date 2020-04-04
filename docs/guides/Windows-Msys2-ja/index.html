@@ -1,0 +1,189 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>Windows-Msys2-ja | guides | ofDocs</title><meta data-n-head="ssr" data-hid="description" name="description" content="openFrameworks documentation and examples browser"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="openFrameworks documentation and examples browser" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="Windows-Msys2-ja | guides | ofDocs" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="/files/images/ofw-logo.png" vmid="og:image"><link rel="preload" href="/_nuxt/5f71eaca0bd2f1a0f939.js" as="script"><link rel="preload" href="/_nuxt/906a3ca0fb13ed3c6651.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/b673915e8a08acf593e8.js" as="script"><link rel="preload" href="/_nuxt/46e8fcacdadb233d9fb6.css" as="style"><link rel="preload" href="/_nuxt/bf355f21967a23c26c07.js" as="script"><link rel="preload" href="/_nuxt/35a90d914f539af1362f.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/46e8fcacdadb233d9fb6.css">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app"><div id="menu"><div class="menu-inner"><div id="settings"></div><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><svg version="1.1" viewbox="0 0 110 58" width="110px" height="58px" enable-background="0 0 110 58" xml:space="preserve" class="logo"><g><path d="M58,29 C58,13 45,0 29,0 C13,0 0,13 0,29 C0,45 13,58 29,58 C45,58 58,45 58,29 Z"></path><rect x="59" y="0" width="25" height="58"></rect><rect x="85" y="26" width="15" height="15"></rect><path d="M85,0 L110,0 L85,25 L85,0 Z"></path></g></svg><div class="txt"><span class="docs f7 questrial">Docs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343							c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88							c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593							c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789							C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><!----></div><div id="lists" class="menu-inner mt1 mb2"><div class="inner"></div></div></div><div class="menu-bottom"><div class="inner"><button class="button"><!----><span><span class="ico">nights_stay</span></span></button></div></div></div><div id="document"><div id="renderer" class="main page"><div absolute="/Users/Gilbert/Code/openFrameworks/ofSite/content/setup/Windows-Msys2.ja.md" route="/guides/Windows-Msys2.ja.md" dir="../ofSite/content/setup" ext="md" type="page" id="1961" parent="1795" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/guides/" class="pink nuxt-link-active">guides </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link selector"><span class="name">Windows-Msys2-ja</span><span class="chevron bottom"></span><select><option value="/guides/Android-Eclipse">Android-Eclipse</option><option value="/guides/Android-Studio">Android-Studio</option><option value="/guides/iOS">iOS</option><option value="/guides/Linux-Eclipse">Linux-Eclipse</option><option value="/guides/Linux-MAKE">Linux-MAKE</option><option value="/guides/Linux-QTCreator">Linux-QTCreator</option><option value="/guides/macOS-XCode">macOS-XCode</option><option value="/guides/RaspberryPi/">RaspberryPi</option><option value="/guides/Singleboard-Armv7">Singleboard-Armv7</option><option value="/guides/Singleboard-Pandaboard">Singleboard-Pandaboard</option><option value="/guides/Web-Empscripten">Web-Empscripten</option><option value="/guides/Web-Emscripten-js">Web-Emscripten-js</option><option value="/guides/Windows-Msys2">Windows-Msys2</option><option value="/guides/Windows-VisualStudio">Windows-VisualStudio</option></select></span><!----></span></span></div></div></div><div class="editable-wrapper"><div class="header inner"><h1 class="page-title questrial"><span class="f7"><!----><span>Windows-Msys2-ja</span></span><span class="f3"></span></h1><div class="actions"><a href="/ofdocs/contribute/" class="button"><i class="ico">edit</i><span>Edit</span></a></div></div><div class="rendered"><div id="documentation-page" static="true"><div id="offset-page"><div id="doc-body" class="markdown"><div class="inner"><h2>-<em>- coding: utf-8 -</em>-</h2>
+<p>.. title: msys2</p>
+<p><a href="/">openFrameworks</a> | <a href="table_of_contents.md">Documentation table of contents</a></p>
+<h1>msys2</h1>
+<h2>msys2をインストール</h2>
+<p>まず、 <a href="https://msys2.github.io/">1クリックインストーラー</a> もしくは <a href="http://sourceforge.net/projects/msys2/files/Base/x86_64/">リポジトリ</a> を直接解凍してMSYS2をインストールします。</p>
+<p>もしQtCreatorを使用したいと考えているなら、msys2はデフォルトのインストール場所の c:\msys64 にインストールする必要があります。</p>
+<p><strong>MSYS2 shell</strong> (<code>C:\msys64\msys2_shell.bat</code>) を開いて、システムのパッケージをアップデートします。</p>
+<pre><code>pacman --noconfirm  --needed -Sy bash pacman pacman-mirrors msys2-runtime
+</code></pre>
+<p>いちど開いていたshellを閉じ、新規に起動して残りのパッケージをアップデートします。</p>
+<pre><code>pacman --noconfirm -Su
+</code></pre>
+<p>これでopenFrameworksをインストールする準備ができました。</p>
+<h2>openFrameworksのインストール</h2>
+<p><strong>qt creator / msys2</strong> バージョンのopenFrameworksをダウンロードして解凍します。</p>
+<p><strong>MSYS shell</strong> (<code>C:\msys64\msys2_shell.bat</code>) を開いて、openFrameworksの依存関係をインストールします。</p>
+<pre><code>cd your_oF_directory/scripts/msys2
+./install_dependencies.sh`
+</code></pre>
+<p>もし、Qt Creatorの使用を考えているなら、依存関係のインストールスクリプトの実行を終えてから、コンピューターの再起動をお勧めします。再起動によって、システムへの変更が正しく更新されます。</p>
+<p><strong>MINGW32</strong> shell (<code>C:\msys64\mingw32_shell.bat</code>を起動) を開いて、openFrameworksのライブラリーをコンパイルします。</p>
+<pre><code>cd your_oF_directory/libs/openFrameworksCompiled/project
+make
+</code></pre>
+<p><code>make -j4</code>とすることで複数コアを使った並列ビルドも可能です(数字部分は使いたいコア数に応じて変更してください)。</p>
+<h2>PATH環境変数の設定</h2>
+<p>普通install_dependencies.shのスクリプトは、パスの設定を行ってくれるはずです。もしコンピューターを再起動した後でもQt Creatorやコンパイルに関して問題があるようであれば、正しくパスが設定されているか確認することができ、もし正しくない場合は以下の手動で手動で修正可能です。</p>
+<p>MSYS2とともにopenFrameworksを使うためにはMSYS2のパッケージマネージャーである<code>pacman</code>が提供するいくつかのDLLが必要になります。PATH環境変数はDLLの場所をシステムに教えるためのものです。Windowsでは、実行ファイルはカレントディレクトリ、システム環境変数で定義されたPATH、ユーザー環境変数で定義されたPATHの順に探索されます。</p>
+<p>PATH環境変数の設定方法はこちらを参照してください :  http://www.computerhope.com/issues/ch000549.htm</p>
+<p><code>c:\msys64\mingw32\bin</code> と <code>c:\msys64\usr\bin</code> をPATHに追加する必要があります。2種類の方法があります。</p>
+<ol>
+<li>「コントロールパネル > システム > システムの詳細設定」で表示される画面の「環境変数」のボタンを押す</li>
+<li>WindowsのコマンドプロンプトからPATHを設定</li>
+</ol>
+<pre><code>setx PATH <span class="token string">"c:\msys64\mingw32\bin;c:\msys64\usr\bin;%PATH%"</span>
+</code></pre>
+<p>もし管理者権限を持っていればシステム環境変数の設定も可能です。この場合、すべてのユーザーが恩恵を受けることができるでしょう。</p>
+<p>これで完了です。まずはサンプルプロジェクトを楽しんでみてください！</p>
+<h2>サンプルプロジェクトの実行</h2>
+<p>例として3DPrimitivesExampleをコンパイルしてみましょう。</p>
+<pre><code>cd your_oF_directory/examples/3d/3DPrimitivesExample
+make
+</code></pre>
+<p><code>make run</code>と打つかダブルクリックしてアプリケーションを起動してください。</p>
+<h2>Makefile</h2>
+<p>すべてのサンプルプロジェクトにはMakefileがあり、config.makeファイルおよびaddons.makeファイルを使用して設定をおこなうことができます。</p>
+<p>config.make: 一般的なMakefileの記法を使ってサーチパスやライブラリの追加をおこなうためのファイルです。ファイル内のコメントを参考にしてください。</p>
+<p>addons.make: アドオンを使いたい場合は、そのアドオンの名前をこのファイルに書き加えます。</p>
+<h2>QtCreator</h2>
+<p>IDEとしてQt Creatorを使用することもできます。詳しくは<a href="https://openframeworks.cc/ja/setup/qtcreator">セットアップガイド</a>を参照してください。</p>
+<h2>よくある質問</h2>
+<ul>
+<li>exeファイルをダブルクリックすると "TLSv1_1_client_method missing" というエラーが出ます</li>
+</ul>
+<p>実行ファイルが見つけたssleay32.dllおよびlibeay32.dllがTLS v1.1をサポートしていないために出るエラーで、Intel iClsソフトウェアでよく起こります。解決するにはyour_msys2_directory\mingw32\binのパスを衝突しているパスより前に移動させます。衝突しているパスがシステム環境変数の中にあり、管理者権限を持っていない場合は、ssleay32.dllとlibeay32.dllをyour_msys2_directory\mingw32\binからexeファイルのあるフォルダにコピーもしくはリンクしてください。</p>
+<ul>
+<li>会社のネットワークにプロキシが設定されているため、pacmanからパッケージをダウンロードできません</li>
+</ul>
+<p>HTTP_PROXYおよびHTTPS_PROXY環境変数を設定する必要があります。コマンドプロンプトで以下のように打ち込んでください。</p>
+<pre><code>From a DOS/CMD prompt :
+set http_proxy=http://your_proxy:your_port
+set http_proxy=http://username:password@your_proxy:your_port
+set https_proxy=https://your_proxy:your_port
+set https_proxy=https://username:password@your_proxy:your_port
+</code></pre>
+<p>パスワードに含まれる特殊文字をエスケープするのをお忘れなく。</p>
+<p>ありがとう! oFチームより。</p>
+</div></div></div><div id="side-menu"><!----><!----><div id="see-also" filename="Windows-Msys2.ja.md" absolute="/Users/Gilbert/Code/openFrameworks/ofSite/content/setup/Windows-Msys2.ja.md" route="/guides/Windows-Msys2.ja.md" dir="../ofSite/content/setup" ext="md" type="page" parent="1795" breadcrumbs="1795" siblings="" translations="[object Object]" class="see-also"><h4 class="f3">See also</h4><div class="also"><a href="/guides/Windows-Msys2"><span class="origin">guides</span><span class="name">Windows-Msys2</span></a></div></div></div></div></div><textarea rows="0" class="markdown-editor" style="display:none">## -*- coding: utf-8 -*-
+.. title: msys2
+
+[openFrameworks](/) | [Documentation table of contents](table_of_contents.md)
+
+msys2
+=====
+
+msys2をインストール
+----------------
+
+まず、 [1クリックインストーラー](https://msys2.github.io/) もしくは [リポジトリ](http://sourceforge.net/projects/msys2/files/Base/x86_64/) を直接解凍してMSYS2をインストールします。
+
+もしQtCreatorを使用したいと考えているなら、msys2はデフォルトのインストール場所の c:\msys64 にインストールする必要があります。
+
+**MSYS2 shell** (`C:\msys64\msys2_shell.bat`) を開いて、システムのパッケージをアップデートします。
+
+    pacman --noconfirm  --needed -Sy bash pacman pacman-mirrors msys2-runtime
+
+いちど開いていたshellを閉じ、新規に起動して残りのパッケージをアップデートします。
+
+    pacman --noconfirm -Su
+
+これでopenFrameworksをインストールする準備ができました。
+
+
+openFrameworksのインストール
+-------------------------
+
+**qt creator / msys2** バージョンのopenFrameworksをダウンロードして解凍します。
+
+**MSYS shell** (`C:\msys64\msys2_shell.bat`) を開いて、openFrameworksの依存関係をインストールします。
+
+    cd your_oF_directory/scripts/msys2
+    ./install_dependencies.sh`
+
+もし、Qt Creatorの使用を考えているなら、依存関係のインストールスクリプトの実行を終えてから、コンピューターの再起動をお勧めします。再起動によって、システムへの変更が正しく更新されます。
+
+ **MINGW32** shell (`C:\msys64\mingw32_shell.bat`を起動) を開いて、openFrameworksのライブラリーをコンパイルします。 
+
+    cd your_oF_directory/libs/openFrameworksCompiled/project
+    make
+
+`make -j4`とすることで複数コアを使った並列ビルドも可能です(数字部分は使いたいコア数に応じて変更してください)。
+
+
+PATH環境変数の設定
+-------------------------
+
+普通install_dependencies.shのスクリプトは、パスの設定を行ってくれるはずです。もしコンピューターを再起動した後でもQt Creatorやコンパイルに関して問題があるようであれば、正しくパスが設定されているか確認することができ、もし正しくない場合は以下の手動で手動で修正可能です。
+
+MSYS2とともにopenFrameworksを使うためにはMSYS2のパッケージマネージャーである`pacman`が提供するいくつかのDLLが必要になります。PATH環境変数はDLLの場所をシステムに教えるためのものです。Windowsでは、実行ファイルはカレントディレクトリ、システム環境変数で定義されたPATH、ユーザー環境変数で定義されたPATHの順に探索されます。
+
+PATH環境変数の設定方法はこちらを参照してください :  http://www.computerhope.com/issues/ch000549.htm
+
+`c:\msys64\mingw32\bin` と `c:\msys64\usr\bin` をPATHに追加する必要があります。2種類の方法があります。
+
+1. 「コントロールパネル > システム > システムの詳細設定」で表示される画面の「環境変数」のボタンを押す
+2. WindowsのコマンドプロンプトからPATHを設定
+
+```
+setx PATH "c:\msys64\mingw32\bin;c:\msys64\usr\bin;%PATH%"
+```
+
+もし管理者権限を持っていればシステム環境変数の設定も可能です。この場合、すべてのユーザーが恩恵を受けることができるでしょう。
+
+これで完了です。まずはサンプルプロジェクトを楽しんでみてください！
+
+サンプルプロジェクトの実行
+----------------
+
+例として3DPrimitivesExampleをコンパイルしてみましょう。
+
+    cd your_oF_directory/examples/3d/3DPrimitivesExample
+    make
+
+`make run`と打つかダブルクリックしてアプリケーションを起動してください。
+
+
+Makefile
+--------
+
+すべてのサンプルプロジェクトにはMakefileがあり、config.makeファイルおよびaddons.makeファイルを使用して設定をおこなうことができます。
+
+config.make: 一般的なMakefileの記法を使ってサーチパスやライブラリの追加をおこなうためのファイルです。ファイル内のコメントを参考にしてください。
+
+addons.make: アドオンを使いたい場合は、そのアドオンの名前をこのファイルに書き加えます。
+
+QtCreator
+---------
+
+IDEとしてQt Creatorを使用することもできます。詳しくは[セットアップガイド](https://openframeworks.cc/ja/setup/qtcreator)を参照してください。
+
+## よくある質問
+
+- exeファイルをダブルクリックすると "TLSv1_1_client_method missing" というエラーが出ます
+
+実行ファイルが見つけたssleay32.dllおよびlibeay32.dllがTLS v1.1をサポートしていないために出るエラーで、Intel iClsソフトウェアでよく起こります。解決するにはyour_msys2_directory\mingw32\binのパスを衝突しているパスより前に移動させます。衝突しているパスがシステム環境変数の中にあり、管理者権限を持っていない場合は、ssleay32.dllとlibeay32.dllをyour_msys2_directory\mingw32\binからexeファイルのあるフォルダにコピーもしくはリンクしてください。
+
+- 会社のネットワークにプロキシが設定されているため、pacmanからパッケージをダウンロードできません
+
+HTTP_PROXYおよびHTTPS_PROXY環境変数を設定する必要があります。コマンドプロンプトで以下のように打ち込んでください。
+
+    From a DOS/CMD prompt :
+    set http_proxy=http://your_proxy:your_port
+    set http_proxy=http://username:password@your_proxy:your_port
+    set https_proxy=https://your_proxy:your_port
+    set https_proxy=https://username:password@your_proxy:your_port
+パスワードに含まれる特殊文字をエスケープするのをお忘れなく。
+
+ありがとう! oFチームより。
+
+</textarea></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1586012716389/guides/Windows-Msys2-ja/payload.js"></script><script src="/_nuxt/5f71eaca0bd2f1a0f939.js" defer></script><script src="/_nuxt/35a90d914f539af1362f.js" defer></script><script src="/_nuxt/906a3ca0fb13ed3c6651.js" defer></script><script src="/_nuxt/b673915e8a08acf593e8.js" defer></script><script src="/_nuxt/bf355f21967a23c26c07.js" defer></script>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 <template lang="pug">
 .see-also(v-if="also.length > 0")
-  h4 See also
+  h4.f3 See also
   .also(
     v-for="a, i in also"
     :key="i"

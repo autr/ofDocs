@@ -15,6 +15,7 @@ module.exports = {
       let p = module.exports.resolveToStatic( writePath, root );
 
       if (!fs.existsSync( p )) {
+        console.log('📁   [copyAssets.js] making folder:', path.dirname(p));
         mkdirp( path.dirname( p ) , (err) => {
           if (err) console.error(err);
           const json =  data ;
@@ -29,11 +30,15 @@ module.exports = {
 
       dest = module.exports.resolveToStatic( dest, baseRoot );
       if (!fs.existsSync( dest )) {
-        mkdirp( path.dirname( dest ) , (err) => {
-          if (err) throw err;
+        const p = path.dirname( dest );
+        console.log('📁   [copyAssets.js] making folder:', p);
+        mkdirp( p ).then( made => {
           fs.copyFile(source, dest, (err2) => {
-            if (err) throw err2;
+            if (err2) throw err2;
           });
+        }).catch( (err) => {
+          console.log('couldnt make...')
+          throw err;
         });
       } else {
         return "skipped";
@@ -55,6 +60,7 @@ module.exports = {
 
   },
   copyAssets: ( baseRoot ) => {
+
         if (!baseRoot) {
           console.error('no baseRoot supplied');
           return;
@@ -71,8 +77,8 @@ module.exports = {
               }
             }
         });
-        if (copied.length > 0) console.log(`🛫  [copyAssets.js] copied: ${copied.length} assets`);
-        if (skipped.length > 0) console.log(`🛬  [copyAssets.js] skipped: ${skipped.length} (already exist)`);
+        if (copied.length > 0) console.log(`🛫   [copyAssets.js] copied: ${copied.length} assets`);
+        if (skipped.length > 0) console.log(`🛬   [copyAssets.js] skipped: ${skipped.length} (already exist)`);
   },
   payloads: ( root ) => {
 

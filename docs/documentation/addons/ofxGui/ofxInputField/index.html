@@ -1,0 +1,2137 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>ofxInputField | documentation | ofDocs</title><meta data-n-head="ssr" data-hid="description" name="description" content="openFrameworks documentation and examples browser"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="openFrameworks documentation and examples browser" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="ofxInputField | documentation | ofDocs" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="/files/images/ofw-logo.png" vmid="og:image"><link rel="preload" href="/_nuxt/5f71eaca0bd2f1a0f939.js" as="script"><link rel="preload" href="/_nuxt/906a3ca0fb13ed3c6651.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/b673915e8a08acf593e8.js" as="script"><link rel="preload" href="/_nuxt/46e8fcacdadb233d9fb6.css" as="style"><link rel="preload" href="/_nuxt/bf355f21967a23c26c07.js" as="script"><link rel="preload" href="/_nuxt/35a90d914f539af1362f.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/46e8fcacdadb233d9fb6.css">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app"><div id="menu"><div class="menu-inner"><div id="settings"></div><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><svg version="1.1" viewbox="0 0 110 58" width="110px" height="58px" enable-background="0 0 110 58" xml:space="preserve" class="logo"><g><path d="M58,29 C58,13 45,0 29,0 C13,0 0,13 0,29 C0,45 13,58 29,58 C45,58 58,45 58,29 Z"></path><rect x="59" y="0" width="25" height="58"></rect><rect x="85" y="26" width="15" height="15"></rect><path d="M85,0 L110,0 L85,25 L85,0 Z"></path></g></svg><div class="txt"><span class="docs f7 questrial">Docs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343							c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88							c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593							c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789							C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><!----></div><div id="lists" class="menu-inner mt1 mb2"><div class="inner"></div></div></div><div class="menu-bottom"><div class="inner"><button class="button"><!----><span><span class="ico">nights_stay</span></span></button></div></div></div><div id="document"><div id="renderer" class="main page"><div absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/addons/ofxGui/ofxInputField.markdown" route="/documentation/addons/ofxGui/ofxInputField.markdown" dir="../ofSite/documentation/addons/ofxGui" ext="markdown" type="page" id="2039" parent="2031" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/" class="pink nuxt-link-active">documentation </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/addons/" class="pink nuxt-link-active">addons </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/addons/ofxGui/" class="pink nuxt-link-active">ofxGui </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link selector"><span class="name">ofxInputField</span><span class="chevron bottom"></span><select><option value="/documentation/addons/ofxGui/ofxBaseGui">ofxBaseGui</option><option value="/documentation/addons/ofxGui/ofxButton">ofxButton</option><option value="/documentation/addons/ofxGui/ofxColorPicker_">ofxColorPicker</option><option value="/documentation/addons/ofxGui/ofxColorSlider_">ofxColorSlider</option><option value="/documentation/addons/ofxGui/ofxGui_functions">ofxGui (functions)</option><option value="/documentation/addons/ofxGui/ofxGuiGroup">ofxGuiGroup</option><option value="/documentation/addons/ofxGui/ofxInputField">ofxInputField</option><option value="/documentation/addons/ofxGui/ofxLabel">ofxLabel</option><option value="/documentation/addons/ofxGui/ofxPanel">ofxPanel</option><option value="/documentation/addons/ofxGui/ofxSlider">ofxSlider</option><option value="/documentation/addons/ofxGui/ofxToggle">ofxToggle</option><option value="/documentation/addons/ofxGui/ofxVecSlider_">ofxVecSlider</option></select></span><!----></span></span></div></div></div><div class="editable-wrapper"><div class="header inner"><h1 class="page-title questrial"><span class="f7"><!----><span>ofxInputField</span></span><span class="f3"></span></h1><div class="actions"><a href="/ofdocs/contribute/" class="button"><i class="ico">edit</i><span>Edit</span></a></div></div><div class="rendered"><div id="documentation-page" static="true"><div id="offset-page"><div id="doc-body" class="markdown"><div class="inner"><div id="description"><div class="full-description"><div class="html"><h1></h1>
+</div></div></div><div id="methods"><hr><section name="addListener" id="addListener" class="mb2"><div class="method mb2"><h3 class="f3 title">addListener( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">addListener</span><span class="token punctuation">(</span><code class="token boolean">ListenerClass <span class="token operator">*</span>listener<span class="token punctuation">,</span> ListenerMethod method</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="calculateSelectionArea" id="calculateSelectionArea" class="mb2"><div class="method mb2"><h3 class="f3 title">calculateSelectionArea( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">calculateSelectionArea</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> selectIdx1<span class="token punctuation">,</span> <span class="token keyword">int</span> selectIdx2</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="charPressed" id="charPressed" class="mb2"><div class="method mb2"><h3 class="f3 title">charPressed( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">charPressed</span><span class="token punctuation">(</span><code class="token boolean">uint32_t <span class="token operator">&</span>key</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="containsValidValue" id="containsValidValue" class="mb2"><div class="method mb2"><h3 class="f3 title">containsValidValue( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">containsValidValue</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="drawCursor" id="drawCursor" class="mb2"><div class="method mb2"><h3 class="f3 title">drawCursor( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">drawCursor</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="generateDraw" id="generateDraw" class="mb2"><div class="method mb2"><h3 class="f3 title">generateDraw( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">generateDraw</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getMax" id="getMax" class="mb2"><div class="method mb2"><h3 class="f3 title">getMax( <!----> )</h3><code><span class="token keyword">Type  </span><span class="token function">getMax</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getMin" id="getMin" class="mb2"><div class="method mb2"><h3 class="f3 title">getMin( <!----> )</h3><code><span class="token keyword">Type  </span><span class="token function">getMin</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getParameter" id="getParameter" class="mb2"><div class="method mb2"><h3 class="f3 title">getParameter( <!----> )</h3><code><span class="token keyword">ofAbstractParameter &  </span><span class="token function">getParameter</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="hasSelectedText" id="hasSelectedText" class="mb2"><div class="method mb2"><h3 class="f3 title">hasSelectedText( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">hasSelectedText</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="insertAlphabetic" id="insertAlphabetic" class="mb2"><div class="method mb2"><h3 class="f3 title">insertAlphabetic( <code class="pink">...</code> )</h3><code><span class="token keyword">int  </span><span class="token function">insertAlphabetic</span><span class="token punctuation">(</span><code class="token boolean">uint32_t character</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="insertKeystroke" id="insertKeystroke" class="mb2"><div class="method mb2"><h3 class="f3 title">insertKeystroke( <code class="pink">...</code> )</h3><code><span class="token keyword">int  </span><span class="token function">insertKeystroke</span><span class="token punctuation">(</span><code class="token boolean">uint32_t character</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="keyPressed" id="keyPressed" class="mb2"><div class="method mb2"><h3 class="f3 title">keyPressed( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">keyPressed</span><span class="token punctuation">(</span><code class="token boolean">ofKeyEventArgs <span class="token operator">&</span>args</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="leaveFocus" id="leaveFocus" class="mb2"><div class="method mb2"><h3 class="f3 title">leaveFocus( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">leaveFocus</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="mouseDragged" id="mouseDragged" class="mb2"><div class="method mb2"><h3 class="f3 title">mouseDragged( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">mouseDragged</span><span class="token punctuation">(</span><code class="token boolean">ofMouseEventArgs <span class="token operator">&</span>args</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="mouseMoved" id="mouseMoved" class="mb2"><div class="method mb2"><h3 class="f3 title">mouseMoved( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">mouseMoved</span><span class="token punctuation">(</span><code class="token boolean">ofMouseEventArgs <span class="token operator">&</span>args</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="mousePressed" id="mousePressed" class="mb2"><div class="method mb2"><h3 class="f3 title">mousePressed( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">mousePressed</span><span class="token punctuation">(</span><code class="token boolean">ofMouseEventArgs <span class="token operator">&</span>args</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="mouseReleased" id="mouseReleased" class="mb2"><div class="method mb2"><h3 class="f3 title">mouseReleased( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">mouseReleased</span><span class="token punctuation">(</span><code class="token boolean">ofMouseEventArgs <span class="token operator">&</span>args</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="mouseScrolled" id="mouseScrolled" class="mb2"><div class="method mb2"><h3 class="f3 title">mouseScrolled( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">mouseScrolled</span><span class="token punctuation">(</span><code class="token boolean">ofMouseEventArgs <span class="token operator">&</span>args</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="moveCursor" id="moveCursor" class="mb2"><div class="method mb2"><h3 class="f3 title">moveCursor( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">moveCursor</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> cursorPos</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofxInputField" id="ofxInputField" class="mb2"><div class="method mb2"><h3 class="f3 title">ofxInputField( <!----> )</h3><code><!----><span class="token function">ofxInputField</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofxSlider" id="ofxSlider" class="mb2"><div class="method mb2"><h3 class="f3 title">ofxSlider( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">ofxSlider</span><span class="token punctuation">(</span><code class="token boolean">ofxInputField<span class="token operator">::</span>Inside </code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="operator=" id="operator=" class="mb2"><div class="method mb2"><h3 class="f3 title">operator=( <code class="pink">...</code> )</h3><code><span class="token keyword">Type  </span><span class="token function">operator=</span><span class="token punctuation">(</span><code class="token boolean">Type v</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="parseInput" id="parseInput" class="mb2"><div class="method mb2"><h3 class="f3 title">parseInput( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">parseInput</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="removeListener" id="removeListener" class="mb2"><div class="method mb2"><h3 class="f3 title">removeListener( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">removeListener</span><span class="token punctuation">(</span><code class="token boolean">ListenerClass <span class="token operator">*</span>listener<span class="token punctuation">,</span> ListenerMethod method</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="render" id="render" class="mb2"><div class="method mb2"><h3 class="f3 title">render( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">render</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setBlinkingCursor" id="setBlinkingCursor" class="mb2"><div class="method mb2"><h3 class="f3 title">setBlinkingCursor( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setBlinkingCursor</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">bool</span> blink</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setMax" id="setMax" class="mb2"><div class="method mb2"><h3 class="f3 title">setMax( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setMax</span><span class="token punctuation">(</span><code class="token boolean">Type max</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setMin" id="setMin" class="mb2"><div class="method mb2"><h3 class="f3 title">setMin( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setMin</span><span class="token punctuation">(</span><code class="token boolean">Type min</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setShowLabelWhileEditing" id="setShowLabelWhileEditing" class="mb2"><div class="method mb2"><h3 class="f3 title">setShowLabelWhileEditing( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setShowLabelWhileEditing</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">bool</span> show</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setValue" id="setValue" class="mb2"><div class="method mb2"><h3 class="f3 title">setValue( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">setValue</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> mx<span class="token punctuation">,</span> <span class="token keyword">float</span> my<span class="token punctuation">,</span> <span class="token keyword">bool</span> bCheck</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="valueChanged" id="valueChanged" class="mb2"><div class="method mb2"><h3 class="f3 title">valueChanged( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">valueChanged</span><span class="token punctuation">(</span><code class="token boolean">Type <span class="token operator">&</span>value</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section></div></div></div></div><div id="side-menu"><div id="params"><h4 class="f3">Variables</h4><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>bGuiActive</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>bMouseOver</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>bMousePressed</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofVboMesh </span><span>bg</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>blinkingCursor</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">uint64_t </span><span>errorTime</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">string </span><span>input</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>insideSlider</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">uint64_t </span><span>lastCursorMoveTime</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">int </span><span>leftFocus</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofEventListeners </span><span>listeners</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">int </span><span>mousePressedPos</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">int </span><span>originalColors</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>overlappingLabel</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">int </span><span>selectEndPos</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">int </span><span>selectStartPos</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">float </span><span>selectStartX</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">float </span><span>selectionWidth</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>showLabelWhileEditing</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofVboMesh </span><span>textMesh</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>validValue</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">string </span><span>visibleInput</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">int </span><span>visibleInputEnd</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">int </span><span>visibleInputStart</span><span class="token comment"></span></div><div class="desc"></div></div></code></div><div id="methods-list"><h4 class="f3">Methods</h4><div class="anchor"><code><a href="#addListener"><span>addListener</span><!----></a></code></div><div class="anchor"><code><a href="#calculateSelectionArea"><span>calculateSelectionArea</span><!----></a></code></div><div class="anchor"><code><a href="#charPressed"><span>charPressed</span><!----></a></code></div><div class="anchor"><code><a href="#containsValidValue"><span>containsValidValue</span><!----></a></code></div><div class="anchor"><code><a href="#drawCursor"><span>drawCursor</span><!----></a></code></div><div class="anchor"><code><a href="#generateDraw"><span>generateDraw</span><!----></a></code></div><div class="anchor"><code><a href="#getMax"><span>getMax</span><!----></a></code></div><div class="anchor"><code><a href="#getMin"><span>getMin</span><!----></a></code></div><div class="anchor"><code><a href="#getParameter"><span>getParameter</span><!----></a></code></div><div class="anchor"><code><a href="#hasSelectedText"><span>hasSelectedText</span><!----></a></code></div><div class="anchor"><code><a href="#insertAlphabetic"><span>insertAlphabetic</span><!----></a></code></div><div class="anchor"><code><a href="#insertKeystroke"><span>insertKeystroke</span><!----></a></code></div><div class="anchor"><code><a href="#keyPressed"><span>keyPressed</span><!----></a></code></div><div class="anchor"><code><a href="#leaveFocus"><span>leaveFocus</span><!----></a></code></div><div class="anchor"><code><a href="#mouseDragged"><span>mouseDragged</span><!----></a></code></div><div class="anchor"><code><a href="#mouseMoved"><span>mouseMoved</span><!----></a></code></div><div class="anchor"><code><a href="#mousePressed"><span>mousePressed</span><!----></a></code></div><div class="anchor"><code><a href="#mouseReleased"><span>mouseReleased</span><!----></a></code></div><div class="anchor"><code><a href="#mouseScrolled"><span>mouseScrolled</span><!----></a></code></div><div class="anchor"><code><a href="#moveCursor"><span>moveCursor</span><!----></a></code></div><div class="anchor"><code><a href="#ofxInputField"><span>ofxInputField</span><!----></a></code></div><div class="anchor"><code><a href="#ofxSlider"><span>ofxSlider</span><!----></a></code></div><div class="anchor"><code><a href="#operator="><span>operator=</span><!----></a></code></div><div class="anchor"><code><a href="#parseInput"><span>parseInput</span><!----></a></code></div><div class="anchor"><code><a href="#removeListener"><span>removeListener</span><!----></a></code></div><div class="anchor"><code><a href="#render"><span>render</span><!----></a></code></div><div class="anchor"><code><a href="#setBlinkingCursor"><span>setBlinkingCursor</span><!----></a></code></div><div class="anchor"><code><a href="#setMax"><span>setMax</span><!----></a></code></div><div class="anchor"><code><a href="#setMin"><span>setMin</span><!----></a></code></div><div class="anchor"><code><a href="#setShowLabelWhileEditing"><span>setShowLabelWhileEditing</span><!----></a></code></div><div class="anchor"><code><a href="#setValue"><span>setValue</span><!----></a></code></div><div class="anchor"><code><a href="#valueChanged"><span>valueChanged</span><!----></a></code></div></div><div id="see-also" filename="ofxInputField.markdown" absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/addons/ofxGui/ofxInputField.markdown" route="/documentation/addons/ofxGui/ofxInputField.markdown" dir="../ofSite/documentation/addons/ofxGui" ext="markdown" type="page" parent="2031" breadcrumbs="2031,1993,1968" siblings="" translations="[object Object]" class="see-also"><h4 class="f3">See also</h4><div class="also"><a href="/addons/ofxGui/src/ofxInputField_h"><span class="origin">addons</span><span class="name">ofxInputField.h</span></a></div><div class="also"><a href="/addons/ofxGui/src/ofxInputField_cpp"><span class="origin">addons</span><span class="name">ofxInputField.cpp</span></a></div></div></div></div></div><textarea rows="0" class="markdown-editor" style="display:none">#class ofxInputField
+
+
+&lt;!--
+_visible: True_
+_advanced: False_
+_istemplated: False_
+_extends: ofxBaseGui_
+-->
+
+##InlineDescription
+
+
+
+
+
+
+##Description
+
+
+
+
+
+##Methods
+
+
+
+###void addListener(*listener, method)
+
+&lt;!--
+_syntax: addListener(*listener, method)_
+_name: addListener_
+_returns: void_
+_returns_description: _
+_parameters: ListenerClass *listener, ListenerMethod method_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void calculateSelectionArea(selectIdx1, selectIdx2)
+
+&lt;!--
+_syntax: calculateSelectionArea(selectIdx1, selectIdx2)_
+_name: calculateSelectionArea_
+_returns: void_
+_returns_description: _
+_parameters: int selectIdx1, int selectIdx2_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool charPressed(&key)
+
+&lt;!--
+_syntax: charPressed(&key)_
+_name: charPressed_
+_returns: bool_
+_returns_description: _
+_parameters: uint32_t &key_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool containsValidValue()
+
+&lt;!--
+_syntax: containsValidValue()_
+_name: containsValidValue_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void drawCursor()
+
+&lt;!--
+_syntax: drawCursor()_
+_name: drawCursor_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void generateDraw()
+
+&lt;!--
+_syntax: generateDraw()_
+_name: generateDraw_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###Type getMax()
+
+&lt;!--
+_syntax: getMax()_
+_name: getMax_
+_returns: Type_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###Type getMin()
+
+&lt;!--
+_syntax: getMin()_
+_name: getMin_
+_returns: Type_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofAbstractParameter & getParameter()
+
+&lt;!--
+_syntax: getParameter()_
+_name: getParameter_
+_returns: ofAbstractParameter &_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool hasSelectedText()
+
+&lt;!--
+_syntax: hasSelectedText()_
+_name: hasSelectedText_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int insertAlphabetic(character)
+
+&lt;!--
+_syntax: insertAlphabetic(character)_
+_name: insertAlphabetic_
+_returns: int_
+_returns_description: _
+_parameters: uint32_t character_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int insertKeystroke(character)
+
+&lt;!--
+_syntax: insertKeystroke(character)_
+_name: insertKeystroke_
+_returns: int_
+_returns_description: _
+_parameters: uint32_t character_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool keyPressed(&args)
+
+&lt;!--
+_syntax: keyPressed(&args)_
+_name: keyPressed_
+_returns: bool_
+_returns_description: _
+_parameters: ofKeyEventArgs &args_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void leaveFocus()
+
+&lt;!--
+_syntax: leaveFocus()_
+_name: leaveFocus_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool mouseDragged(&args)
+
+&lt;!--
+_syntax: mouseDragged(&args)_
+_name: mouseDragged_
+_returns: bool_
+_returns_description: _
+_parameters: ofMouseEventArgs &args_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool mouseMoved(&args)
+
+&lt;!--
+_syntax: mouseMoved(&args)_
+_name: mouseMoved_
+_returns: bool_
+_returns_description: _
+_parameters: ofMouseEventArgs &args_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool mousePressed(&args)
+
+&lt;!--
+_syntax: mousePressed(&args)_
+_name: mousePressed_
+_returns: bool_
+_returns_description: _
+_parameters: ofMouseEventArgs &args_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool mouseReleased(&args)
+
+&lt;!--
+_syntax: mouseReleased(&args)_
+_name: mouseReleased_
+_returns: bool_
+_returns_description: _
+_parameters: ofMouseEventArgs &args_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool mouseScrolled(&args)
+
+&lt;!--
+_syntax: mouseScrolled(&args)_
+_name: mouseScrolled_
+_returns: bool_
+_returns_description: _
+_parameters: ofMouseEventArgs &args_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void moveCursor(cursorPos)
+
+&lt;!--
+_syntax: moveCursor(cursorPos)_
+_name: moveCursor_
+_returns: void_
+_returns_description: _
+_parameters: int cursorPos_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofxInputField()
+
+&lt;!--
+_syntax: ofxInputField()_
+_name: ofxInputField_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofxInputField(_val, width, height)
+
+&lt;!--
+_syntax: ofxInputField(_val, width, height)_
+_name: ofxInputField_
+_returns: _
+_returns_description: _
+_parameters: ofParameter&lt; Type > _val, float width, float height_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofxSlider(ofxInputField::Inside)
+
+&lt;!--
+_syntax: ofxSlider(ofxInputField::Inside)_
+_name: ofxSlider_
+_returns: void_
+_returns_description: _
+_parameters: ofxInputField::Inside _
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###Type operator=(v)
+
+&lt;!--
+_syntax: operator=(v)_
+_name: operator=_
+_returns: Type_
+_returns_description: _
+_parameters: Type v_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void parseInput()
+
+&lt;!--
+_syntax: parseInput()_
+_name: parseInput_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void removeListener(*listener, method)
+
+&lt;!--
+_syntax: removeListener(*listener, method)_
+_name: removeListener_
+_returns: void_
+_returns_description: _
+_parameters: ListenerClass *listener, ListenerMethod method_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void render()
+
+&lt;!--
+_syntax: render()_
+_name: render_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setBlinkingCursor(blink)
+
+&lt;!--
+_syntax: setBlinkingCursor(blink)_
+_name: setBlinkingCursor_
+_returns: void_
+_returns_description: _
+_parameters: bool blink_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setMax(max)
+
+&lt;!--
+_syntax: setMax(max)_
+_name: setMax_
+_returns: void_
+_returns_description: _
+_parameters: Type max_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setMin(min)
+
+&lt;!--
+_syntax: setMin(min)_
+_name: setMin_
+_returns: void_
+_returns_description: _
+_parameters: Type min_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setShowLabelWhileEditing(show)
+
+&lt;!--
+_syntax: setShowLabelWhileEditing(show)_
+_name: setShowLabelWhileEditing_
+_returns: void_
+_returns_description: _
+_parameters: bool show_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool setValue(mx, my, bCheck)
+
+&lt;!--
+_syntax: setValue(mx, my, bCheck)_
+_name: setValue_
+_returns: bool_
+_returns_description: _
+_parameters: float mx, float my, bool bCheck_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofxInputField&lt; Type > * setup(&_name, _val)
+
+&lt;!--
+_syntax: setup(&_name, _val)_
+_name: setup_
+_returns: ofxInputField&lt; Type > *_
+_returns_description: _
+_parameters: const string &_name, Type _val_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofxInputField&lt; Type > * setup(&_name, _val, _min, _max, width, height)
+
+&lt;!--
+_syntax: setup(&_name, _val, _min, _max, width, height)_
+_name: setup_
+_returns: ofxInputField&lt; Type > *_
+_returns_description: _
+_parameters: const string &_name, Type _val, Type _min, Type _max, float width, float height_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofxInputField&lt; Type > * setup(_val, width, height)
+
+&lt;!--
+_syntax: setup(_val, width, height)_
+_name: setup_
+_returns: ofxInputField&lt; Type > *_
+_returns_description: _
+_parameters: ofParameter&lt; Type > _val, float width, float height_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void valueChanged(&value)
+
+&lt;!--
+_syntax: valueChanged(&value)_
+_name: valueChanged_
+_returns: void_
+_returns_description: _
+_parameters: Type &value_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+##Variables
+
+
+
+###bool bGuiActive
+
+&lt;!--
+_name: bGuiActive_
+_type: bool_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool bMouseOver
+
+&lt;!--
+_name: bMouseOver_
+_type: bool_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool bMousePressed
+
+&lt;!--
+_name: bMousePressed_
+_type: bool_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofVboMesh bg
+
+&lt;!--
+_name: bg_
+_type: ofVboMesh_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool blinkingCursor
+
+&lt;!--
+_name: blinkingCursor_
+_type: bool_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###uint64_t errorTime
+
+&lt;!--
+_name: errorTime_
+_type: uint64_t_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###string input
+
+&lt;!--
+_name: input_
+_type: string_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool insideSlider
+
+&lt;!--
+_name: insideSlider_
+_type: bool_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###uint64_t lastCursorMoveTime
+
+&lt;!--
+_name: lastCursorMoveTime_
+_type: uint64_t_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int leftFocus
+
+&lt;!--
+_name: leftFocus_
+_type: int_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofEventListeners listeners
+
+&lt;!--
+_name: listeners_
+_type: ofEventListeners_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int mousePressedPos
+
+&lt;!--
+_name: mousePressedPos_
+_type: int_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int originalColors
+
+&lt;!--
+_name: originalColors_
+_type: int_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool overlappingLabel
+
+&lt;!--
+_name: overlappingLabel_
+_type: bool_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int selectEndPos
+
+&lt;!--
+_name: selectEndPos_
+_type: int_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int selectStartPos
+
+&lt;!--
+_name: selectStartPos_
+_type: int_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float selectStartX
+
+&lt;!--
+_name: selectStartX_
+_type: float_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float selectionWidth
+
+&lt;!--
+_name: selectionWidth_
+_type: float_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool showLabelWhileEditing
+
+&lt;!--
+_name: showLabelWhileEditing_
+_type: bool_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofVboMesh textMesh
+
+&lt;!--
+_name: textMesh_
+_type: ofVboMesh_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool validValue
+
+&lt;!--
+_name: validValue_
+_type: bool_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofParameter&lt; Type > value
+
+&lt;!--
+_name: value_
+_type: ofParameter&lt; Type >_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###string visibleInput
+
+&lt;!--
+_name: visibleInput_
+_type: string_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int visibleInputEnd
+
+&lt;!--
+_name: visibleInputEnd_
+_type: int_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int visibleInputStart
+
+&lt;!--
+_name: visibleInputStart_
+_type: int_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+</textarea></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1586012716389/documentation/addons/ofxGui/ofxInputField/payload.js"></script><script src="/_nuxt/5f71eaca0bd2f1a0f939.js" defer></script><script src="/_nuxt/35a90d914f539af1362f.js" defer></script><script src="/_nuxt/906a3ca0fb13ed3c6651.js" defer></script><script src="/_nuxt/b673915e8a08acf593e8.js" defer></script><script src="/_nuxt/bf355f21967a23c26c07.js" defer></script>
+  </body>
+</html>

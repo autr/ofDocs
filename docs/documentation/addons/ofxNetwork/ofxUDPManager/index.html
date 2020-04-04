@@ -1,0 +1,1695 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>ofxUDPManager | documentation | ofDocs</title><meta data-n-head="ssr" data-hid="description" name="description" content="openFrameworks documentation and examples browser"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="openFrameworks documentation and examples browser" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="ofxUDPManager | documentation | ofDocs" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="/files/images/ofw-logo.png" vmid="og:image"><link rel="preload" href="/_nuxt/5f71eaca0bd2f1a0f939.js" as="script"><link rel="preload" href="/_nuxt/906a3ca0fb13ed3c6651.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/b673915e8a08acf593e8.js" as="script"><link rel="preload" href="/_nuxt/46e8fcacdadb233d9fb6.css" as="style"><link rel="preload" href="/_nuxt/bf355f21967a23c26c07.js" as="script"><link rel="preload" href="/_nuxt/35a90d914f539af1362f.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/46e8fcacdadb233d9fb6.css">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app"><div id="menu"><div class="menu-inner"><div id="settings"></div><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><svg version="1.1" viewbox="0 0 110 58" width="110px" height="58px" enable-background="0 0 110 58" xml:space="preserve" class="logo"><g><path d="M58,29 C58,13 45,0 29,0 C13,0 0,13 0,29 C0,45 13,58 29,58 C45,58 58,45 58,29 Z"></path><rect x="59" y="0" width="25" height="58"></rect><rect x="85" y="26" width="15" height="15"></rect><path d="M85,0 L110,0 L85,25 L85,0 Z"></path></g></svg><div class="txt"><span class="docs f7 questrial">Docs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343							c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88							c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593							c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789							C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><!----></div><div id="lists" class="menu-inner mt1 mb2"><div class="inner"></div></div></div><div class="menu-bottom"><div class="inner"><button class="button"><!----><span><span class="ico">nights_stay</span></span></button></div></div></div><div id="document"><div id="renderer" class="main page"><div absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/addons/ofxNetwork/ofxUDPManager.markdown" route="/documentation/addons/ofxNetwork/ofxUDPManager.markdown" dir="../ofSite/documentation/addons/ofxNetwork" ext="markdown" type="page" id="2082" parent="2074" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/" class="pink nuxt-link-active">documentation </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/addons/" class="pink nuxt-link-active">addons </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/addons/ofxNetwork/" class="pink nuxt-link-active">ofxNetwork </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link selector"><span class="name">ofxUDPManager</span><span class="chevron bottom"></span><select><option value="/documentation/addons/ofxNetwork/InetAddr">InetAddr</option><option value="/documentation/addons/ofxNetwork/ofxNetworkUtils_functions">ofxNetworkUtils (functions)</option><option value="/documentation/addons/ofxNetwork/ofxTCPClient">ofxTCPClient</option><option value="/documentation/addons/ofxNetwork/ofxTCPManager">ofxTCPManager</option><option value="/documentation/addons/ofxNetwork/ofxTCPServer">ofxTCPServer</option><option value="/documentation/addons/ofxNetwork/ofxTCPSettings">ofxTCPSettings</option><option value="/documentation/addons/ofxNetwork/ofxUDPManager">ofxUDPManager</option><option value="/documentation/addons/ofxNetwork/ofxUDPSettings">ofxUDPSettings</option></select></span><!----></span></span></div></div></div><div class="editable-wrapper"><div class="header inner"><h1 class="page-title questrial"><span class="f7"><!----><span>ofxUDPManager</span></span><span class="f3"></span></h1><div class="actions"><a href="/ofdocs/contribute/" class="button"><i class="ico">edit</i><span>Edit</span></a></div></div><div class="rendered"><div id="documentation-page" static="true"><div id="offset-page"><div id="doc-body" class="markdown"><div class="inner"><div id="description"><div class="full-description"><div class="html"><p>UDP is a network protocol that is faster and less rigid in its packet transmission requirements. Unlike TCP, UDP has no notion of connections nor does it check to see if a packet has been successfuly recieved by the client. A UDP socket can receive datagrams from any server on the network and send datagrams to any host on the network. In addition, datagrams may arrive in any order, never arrive at all, or be duplicated in transit. There are three modes of UDP servers: socket (aka unicast), broadcast, and multicast.</p>
+<p>Unicast refers to a unique host-client. This is a one-to one connection between the client and the server</p>
+<p>Multicast is the delivery of a message or information to a group of destination computers simultaneously in a single transmission. A packet sent to a unicast or broadcast address is only delivered to the host identified by that address. To the contrary, when packet is send to a multicast address, all interfaces identified by that address receive the data. However, multicast has the drawback that it is not well supported by routers and NAT.</p>
+<p>Broadcast allows you to call every host within a subnet. It's like Multicast but doesn't require that your network infrastructure support it.</p>
+<p>A very simple unicast server looks like this:</p>
+<pre><code class="language-{.cpp}">
+<span class="token keyword">void</span> ofApp<span class="token operator">::</span><span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+
+	<span class="token comment" spellcheck="true">//create the socket and set to send to 127.0.0.1:11999</span>
+	udpConnection<span class="token punctuation">.</span><span class="token function">Create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	udpConnection<span class="token punctuation">.</span><span class="token function">Connect</span><span class="token punctuation">(</span><span class="token string">"127.0.0.1"</span><span class="token punctuation">,</span><span class="token number">11999</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	udpConnection<span class="token punctuation">.</span><span class="token function">SetNonBlocking</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">void</span> ofApp<span class="token operator">::</span><span class="token function">keyPressed</span><span class="token punctuation">(</span><span class="token keyword">int</span> key<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	string message <span class="token operator">=</span> <span class="token string">"You pressed a key"</span><span class="token punctuation">;</span>
+	udpConnection<span class="token punctuation">.</span><span class="token function">Send</span><span class="token punctuation">(</span>message<span class="token punctuation">.</span><span class="token function">c_str</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> message<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>A very simple unicast client looks like this:</p>
+<pre><code class="language-{.cpp}">
+<span class="token keyword">void</span> ofApp<span class="token operator">::</span><span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+
+	<span class="token comment" spellcheck="true">//create the socket and bind to port 11999</span>
+	udpConnection<span class="token punctuation">.</span><span class="token function">Create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	udpConnection<span class="token punctuation">.</span><span class="token function">Bind</span><span class="token punctuation">(</span><span class="token number">11999</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	udpConnection<span class="token punctuation">.</span><span class="token function">SetNonBlocking</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">void</span> ofApp<span class="token operator">::</span><span class="token function">update</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token keyword">char</span> udpMessage<span class="token punctuation">[</span><span class="token number">1000</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+	udpConnection<span class="token punctuation">.</span><span class="token function">Receive</span><span class="token punctuation">(</span>udpMessage<span class="token punctuation">,</span><span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	string message<span class="token operator">=</span>udpMessage<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Notice that these are quite different than the creation of TCP servers and clients which you might be more familiar with.</p>
+<p>The basic usage of UDP for socket servers and clients looks like so:</p>
+<p>UDP Socket Server (sending):</p>
+<ol>
+<li>Create() - initialize the server</li>
+<li>Connect() - connect to an IP and a Port that you'll be sending messages on</li>
+<li>Send() - send the message</li>
+</ol>
+<p>UDP Socket Client (receiving):</p>
+<ol>
+<li>Create() - intialize the client</li>
+<li>Bind() - bind the client to a port and listen for any UDP messages on that port</li>
+<li>Receive() - receive any data broadcast over UDP on the port set up to receive on</li>
+</ol>
+<p>The basic usage of UDP for multicast looks like so:</p>
+<p>UDP Multicast (sending):</p>
+<ol>
+<li>Create() - initialize the server</li>
+<li>ConnectMcast() - connect to an IP and a Port that you'll broadcast on</li>
+<li>Send() - send a message to any listening clients</li>
+</ol>
+<p>UDP Multicast (receiving):</p>
+<ol>
+<li>Create() - initialize the client</li>
+<li>BindMcast() - bind to a port</li>
+<li>Receive() - check to see if any data has been received</li>
+</ol>
+<h1></h1>
+</div></div></div><div id="methods"><hr><section name="Bind" id="Bind" class="mb2"><div class="method mb2"><h3 class="f3 title">Bind( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">Bind</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">unsigned</span> <span class="token keyword">short</span> usPort</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Bind a port to receive socket/unicast UDP:</p>
+<pre><code class="language-{.cpp}">udpConnection<span class="token punctuation">.</span><span class="token function">Create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+udpConnection<span class="token punctuation">.</span><span class="token function">Bind</span><span class="token punctuation">(</span><span class="token number">11999</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+udpConnection<span class="token punctuation">.</span><span class="token function">SetNonBlocking</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+</div></div><hr></section><section name="BindMcast" id="BindMcast" class="mb2"><div class="method mb2"><h3 class="f3 title">BindMcast( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">BindMcast</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">char</span> <span class="token operator">*</span>pMcast<span class="token punctuation">,</span> <span class="token keyword">unsigned</span> <span class="token keyword">short</span> usPort</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Bind to multicast address to receive data:</p>
+<pre><code class="language-{.cpp}">udpConnection<span class="token punctuation">.</span><span class="token function">Create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+udpConnection<span class="token punctuation">.</span><span class="token function">BindMcast</span><span class="token punctuation">(</span><span class="token string">"224.0.0.1"</span><span class="token punctuation">,</span> <span class="token number">11999</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+</div></div><hr></section><section name="Close" id="Close" class="mb2"><div class="method mb2"><h3 class="f3 title">Close( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">Close</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Stop listening on a given port. Works with both socket and multicast.</p>
+</div></div><hr></section><section name="Connect" id="Connect" class="mb2"><div class="method mb2"><h3 class="f3 title">Connect( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">Connect</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span>pHost<span class="token punctuation">,</span> <span class="token keyword">unsigned</span> <span class="token keyword">short</span> usPort</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Connect to a socket client to send information.</p>
+<pre><code class="language-{.cpp}">
+udpConnection<span class="token punctuation">.</span><span class="token function">Create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+udpConnection<span class="token punctuation">.</span><span class="token function">Connect</span><span class="token punctuation">(</span><span class="token string">"127.0.0.1"</span><span class="token punctuation">,</span><span class="token number">11999</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+udpConnection<span class="token punctuation">.</span><span class="token function">SetNonBlocking</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre>
+</div></div><hr></section><section name="ConnectMcast" id="ConnectMcast" class="mb2"><div class="method mb2"><h3 class="f3 title">ConnectMcast( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">ConnectMcast</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">char</span> <span class="token operator">*</span>pMcast<span class="token punctuation">,</span> <span class="token keyword">unsigned</span> <span class="token keyword">short</span> usPort</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Connect to a multicast address.</p>
+<pre><code class="language-{.cpp}">
+udpConnection<span class="token punctuation">.</span><span class="token function">Create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+udpConnection<span class="token punctuation">.</span><span class="token function">Connect</span><span class="token punctuation">(</span><span class="token string">"224.0.0.1"</span><span class="token punctuation">,</span><span class="token number">11999</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre>
+</div></div><hr></section><section name="Create" id="Create" class="mb2"><div class="method mb2"><h3 class="f3 title">Create( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">Create</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Create the UDP manager. Must be called before binding to any IP or sockets.</p>
+</div></div><hr></section><section name="GetListenAddr" id="GetListenAddr" class="mb2"><div class="method mb2"><h3 class="f3 title">GetListenAddr( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">GetListenAddr</span><span class="token punctuation">(</span><code class="token boolean">string <span class="token operator">&</span>address<span class="token punctuation">,</span> <span class="token keyword">int</span> <span class="token operator">&</span>port</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="GetMaxMsgSize" id="GetMaxMsgSize" class="mb2"><div class="method mb2"><h3 class="f3 title">GetMaxMsgSize( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">GetMaxMsgSize</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="GetReceiveBufferSize" id="GetReceiveBufferSize" class="mb2"><div class="method mb2"><h3 class="f3 title">GetReceiveBufferSize( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">GetReceiveBufferSize</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Get the size of the receive buffer. The minimum (doubled) value for this option is 256. The max is determined by your OS.</p>
+</div></div><hr></section><section name="GetRemoteAddr" id="GetRemoteAddr" class="mb2"><div class="method mb2"><h3 class="f3 title">GetRemoteAddr( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">GetRemoteAddr</span><span class="token punctuation">(</span><code class="token boolean">string <span class="token operator">&</span>address<span class="token punctuation">,</span> <span class="token keyword">int</span> <span class="token operator">&</span>port</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Returns the dots and numbers remote address in a string,</p>
+</div></div><hr></section><section name="GetSendBufferSize" id="GetSendBufferSize" class="mb2"><div class="method mb2"><h3 class="f3 title">GetSendBufferSize( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">GetSendBufferSize</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Get the size of the send buffer. The minimum (doubled) value for this option is 256. The max is determined by your OS.</p>
+</div></div><hr></section><section name="GetTTL" id="GetTTL" class="mb2"><div class="method mb2"><h3 class="f3 title">GetTTL( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">GetTTL</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>returns -1 on failure</p>
+</div><div class="desc"></div></div><hr></section><section name="GetTimeoutReceive" id="GetTimeoutReceive" class="mb2"><div class="method mb2"><h3 class="f3 title">GetTimeoutReceive( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">GetTimeoutReceive</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Return the current receive timeout.</p>
+</div></div><hr></section><section name="GetTimeoutSend" id="GetTimeoutSend" class="mb2"><div class="method mb2"><h3 class="f3 title">GetTimeoutSend( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">GetTimeoutSend</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Return the current send timeout.</p>
+</div></div><hr></section><section name="HasSocket" id="HasSocket" class="mb2"><div class="method mb2"><h3 class="f3 title">HasSocket( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">HasSocket</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="PeekReceive" id="PeekReceive" class="mb2"><div class="method mb2"><h3 class="f3 title">PeekReceive( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">PeekReceive</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="Receive" id="Receive" class="mb2"><div class="method mb2"><h3 class="f3 title">Receive( <code class="pink">...</code> )</h3><code><span class="token keyword">int  </span><span class="token function">Receive</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">char</span> <span class="token operator">*</span>pBuff<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">int</span> iSize</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Receives a message to a buffer of size iSize. Receive() returns the number of bytes actually received.</p>
+<pre><code class="language-{.cpp}"><span class="token keyword">char</span> udpMessage<span class="token punctuation">[</span><span class="token number">100000</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+udpConnection<span class="token punctuation">.</span><span class="token function">Receive</span><span class="token punctuation">(</span>udpMessage<span class="token punctuation">,</span><span class="token number">100000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+string message<span class="token operator">=</span>udpMessage<span class="token punctuation">;</span>
+</code></pre>
+</div></div><hr></section><section name="Send" id="Send" class="mb2"><div class="method mb2"><h3 class="f3 title">Send( <code class="pink">...</code> )</h3><code><span class="token keyword">int  </span><span class="token function">Send</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span>pBuff<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">int</span> iSize</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Send a char* of data with length of iSize to all listeners.</p>
+<pre><code class="language-{.cpp}">string message <span class="token operator">=</span> <span class="token string">"A message"</span><span class="token punctuation">;</span>
+udpConnection<span class="token punctuation">.</span><span class="token function">Send</span><span class="token punctuation">(</span>message<span class="token punctuation">.</span><span class="token function">c_str</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>message<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre>
+</div></div><hr></section><section name="SendAll" id="SendAll" class="mb2"><div class="method mb2"><h3 class="f3 title">SendAll( <code class="pink">...</code> )</h3><code><span class="token keyword">int  </span><span class="token function">SendAll</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span>pBuff<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">int</span> iSize</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>The SendAll() method is useful for extremely large data objects that may need multiple sendto() calls to actually be completely.</p>
+</div></div><hr></section><section name="SetEnableBroadcast" id="SetEnableBroadcast" class="mb2"><div class="method mb2"><h3 class="f3 title">SetEnableBroadcast( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">SetEnableBroadcast</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">bool</span> enableBroadcast</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Broadcast allows sending of packets to a particular network layer. If you're only using a single local network without a large number of attached machines, using broadcast may make more sense than trying to use multicast.</p>
+</div></div><hr></section><section name="SetNonBlocking" id="SetNonBlocking" class="mb2"><div class="method mb2"><h3 class="f3 title">SetNonBlocking( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">SetNonBlocking</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">bool</span> useNonBlocking</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Determines whether calls to send or receive are allowed to block their thread until they've completed. If your network infrastructure is time critical, then this may be a good choice. Usually though, you should leave it off.</p>
+</div></div><hr></section><section name="SetReceiveBufferSize" id="SetReceiveBufferSize" class="mb2"><div class="method mb2"><h3 class="f3 title">SetReceiveBufferSize( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">SetReceiveBufferSize</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> sizeInByte</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Set the size of the receive buffer. The minimum (doubled) value for this option is 256. The max is determined by your OS.</p>
+</div></div><hr></section><section name="SetReuseAddress" id="SetReuseAddress" class="mb2"><div class="method mb2"><h3 class="f3 title">SetReuseAddress( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">SetReuseAddress</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">bool</span> allowReuse</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="SetSendBufferSize" id="SetSendBufferSize" class="mb2"><div class="method mb2"><h3 class="f3 title">SetSendBufferSize( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">SetSendBufferSize</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> sizeInByte</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Set the size of the send buffer. The minimum (doubled) value for this option is 256. The max is determined by your OS.</p>
+</div></div><hr></section><section name="SetTTL" id="SetTTL" class="mb2"><div class="method mb2"><h3 class="f3 title">SetTTL( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">SetTTL</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> nTTL</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>The TTL (Time To Live) field in the IP header has a double significance in multicast. As always, it controls the live time of the datagram to avoid it being looped forever due to routing errors. Routers decrement the TTL of every datagram as it traverses from one network to another and when its value reaches 0 the packet is dropped.</p>
+<p>A list of TTL thresholds and their associated scope follows:</p>
+<h2>TTL     Scope</h2>
+<p>0    Restricted to the same host. Won't be output by any interface.
+1    Restricted to the same subnet. Won't be forwarded by a router.
+&lt;32         Restricted to the same site, organization or department.
+&lt;64 Restricted to the same region.
+&lt;128 Restricted to the same continent.
+&lt;255 Unrestricted in scope. Global.</p>
+</div></div><hr></section><section name="SetTimeoutReceive" id="SetTimeoutReceive" class="mb2"><div class="method mb2"><h3 class="f3 title">SetTimeoutReceive( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">SetTimeoutReceive</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> timeoutInSeconds</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Set a timeout for any receive operations in seconds.</p>
+</div></div><hr></section><section name="SetTimeoutSend" id="SetTimeoutSend" class="mb2"><div class="method mb2"><h3 class="f3 title">SetTimeoutSend( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">SetTimeoutSend</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> timeoutInSeconds</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Set a timeout for any send operations in seconds.</p>
+</div></div><hr></section><section name="Setup" id="Setup" class="mb2"><div class="method mb2"><h3 class="f3 title">Setup( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">Setup</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofxUDPSettings <span class="token operator">&</span>settings</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="WaitReceive" id="WaitReceive" class="mb2"><div class="method mb2"><h3 class="f3 title">WaitReceive( <code class="pink">...</code> )</h3><code><span class="token keyword">int  </span><span class="token function">WaitReceive</span><span class="token punctuation">(</span><code class="token boolean">time_t timeoutSeconds<span class="token punctuation">,</span> time_t timeoutMillis</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="WaitSend" id="WaitSend" class="mb2"><div class="method mb2"><h3 class="f3 title">WaitSend( <code class="pink">...</code> )</h3><code><span class="token keyword">int  </span><span class="token function">WaitSend</span><span class="token punctuation">(</span><code class="token boolean">time_t timeoutSeconds<span class="token punctuation">,</span> time_t timeoutMillis</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofxUDPManager" id="ofxUDPManager" class="mb2"><div class="method mb2"><h3 class="f3 title">ofxUDPManager( <!----> )</h3><code><!----><span class="token function">ofxUDPManager</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="~ofxUDPManager" id="~ofxUDPManager" class="mb2"><div class="method mb2"><h3 class="f3 title">~ofxUDPManager( <!----> )</h3><code><!----><span class="token function">~ofxUDPManager</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section></div></div></div></div><div id="side-menu"><div id="params"><h4 class="f3">Variables</h4><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>canGetRemoteAddress</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>m_bWinsockInit</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">unsignedlong </span><span>m_dwTimeoutReceive</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">unsignedlong </span><span>m_dwTimeoutSend</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">int </span><span>m_hSocket</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>nonBlocking</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">structsockaddr_in </span><span>saClient</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">structsockaddr_in </span><span>saServer</span><span class="token comment"></span></div><div class="desc"></div></div></code></div><div id="methods-list"><h4 class="f3">Methods</h4><div class="anchor"><code><a href="#Bind" class="pink"><span>Bind</span><!----></a></code></div><div class="anchor"><code><a href="#BindMcast" class="pink"><span>BindMcast</span><!----></a></code></div><div class="anchor"><code><a href="#Close" class="pink"><span>Close</span><!----></a></code></div><div class="anchor"><code><a href="#Connect" class="pink"><span>Connect</span><!----></a></code></div><div class="anchor"><code><a href="#ConnectMcast" class="pink"><span>ConnectMcast</span><!----></a></code></div><div class="anchor"><code><a href="#Create" class="pink"><span>Create</span><!----></a></code></div><div class="anchor"><code><a href="#GetListenAddr"><span>GetListenAddr</span><!----></a></code></div><div class="anchor"><code><a href="#GetMaxMsgSize"><span>GetMaxMsgSize</span><!----></a></code></div><div class="anchor"><code><a href="#GetReceiveBufferSize" class="pink"><span>GetReceiveBufferSize</span><!----></a></code></div><div class="anchor"><code><a href="#GetRemoteAddr" class="pink"><span>GetRemoteAddr</span><!----></a></code></div><div class="anchor"><code><a href="#GetSendBufferSize" class="pink"><span>GetSendBufferSize</span><!----></a></code></div><div class="anchor"><code><a href="#GetTTL" class="pink"><span>GetTTL</span><!----></a></code></div><div class="anchor"><code><a href="#GetTimeoutReceive" class="pink"><span>GetTimeoutReceive</span><!----></a></code></div><div class="anchor"><code><a href="#GetTimeoutSend" class="pink"><span>GetTimeoutSend</span><!----></a></code></div><div class="anchor"><code><a href="#HasSocket"><span>HasSocket</span><!----></a></code></div><div class="anchor"><code><a href="#PeekReceive"><span>PeekReceive</span><!----></a></code></div><div class="anchor"><code><a href="#Receive" class="pink"><span>Receive</span><!----></a></code></div><div class="anchor"><code><a href="#Send" class="pink"><span>Send</span><!----></a></code></div><div class="anchor"><code><a href="#SendAll" class="pink"><span>SendAll</span><!----></a></code></div><div class="anchor"><code><a href="#SetEnableBroadcast" class="pink"><span>SetEnableBroadcast</span><!----></a></code></div><div class="anchor"><code><a href="#SetNonBlocking" class="pink"><span>SetNonBlocking</span><!----></a></code></div><div class="anchor"><code><a href="#SetReceiveBufferSize" class="pink"><span>SetReceiveBufferSize</span><!----></a></code></div><div class="anchor"><code><a href="#SetReuseAddress"><span>SetReuseAddress</span><!----></a></code></div><div class="anchor"><code><a href="#SetSendBufferSize" class="pink"><span>SetSendBufferSize</span><!----></a></code></div><div class="anchor"><code><a href="#SetTTL" class="pink"><span>SetTTL</span><!----></a></code></div><div class="anchor"><code><a href="#SetTimeoutReceive" class="pink"><span>SetTimeoutReceive</span><!----></a></code></div><div class="anchor"><code><a href="#SetTimeoutSend" class="pink"><span>SetTimeoutSend</span><!----></a></code></div><div class="anchor"><code><a href="#Setup"><span>Setup</span><!----></a></code></div><div class="anchor"><code><a href="#WaitReceive"><span>WaitReceive</span><!----></a></code></div><div class="anchor"><code><a href="#WaitSend"><span>WaitSend</span><!----></a></code></div><div class="anchor"><code><a href="#ofxUDPManager"><span>ofxUDPManager</span><!----></a></code></div><div class="anchor"><code><a href="#~ofxUDPManager"><span>~ofxUDPManager</span><!----></a></code></div></div><div id="see-also" filename="ofxUDPManager.markdown" absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/addons/ofxNetwork/ofxUDPManager.markdown" route="/documentation/addons/ofxNetwork/ofxUDPManager.markdown" dir="../ofSite/documentation/addons/ofxNetwork" ext="markdown" type="page" parent="2074" breadcrumbs="2074,1993,1968" siblings="" translations="[object Object]" class="see-also"><h4 class="f3">See also</h4><div class="also"><a href="/addons/ofxNetwork/src/ofxUDPManager_h"><span class="origin">addons</span><span class="name">ofxUDPManager.h</span></a></div><div class="also"><a href="/addons/ofxNetwork/src/ofxUDPManager_cpp"><span class="origin">addons</span><span class="name">ofxUDPManager.cpp</span></a></div></div></div></div></div><textarea rows="0" class="markdown-editor" style="display:none">#class ofxUDPManager
+
+
+&lt;!--
+_visible: True_
+_advanced: False_
+_istemplated: False_
+_extends: _
+-->
+
+##InlineDescription
+
+
+
+
+
+
+##Description
+
+UDP is a network protocol that is faster and less rigid in its packet transmission requirements. Unlike TCP, UDP has no notion of connections nor does it check to see if a packet has been successfuly recieved by the client. A UDP socket can receive datagrams from any server on the network and send datagrams to any host on the network. In addition, datagrams may arrive in any order, never arrive at all, or be duplicated in transit. There are three modes of UDP servers: socket (aka unicast), broadcast, and multicast. 
+
+Unicast refers to a unique host-client. This is a one-to one connection between the client and the server 
+
+Multicast is the delivery of a message or information to a group of destination computers simultaneously in a single transmission. A packet sent to a unicast or broadcast address is only delivered to the host identified by that address. To the contrary, when packet is send to a multicast address, all interfaces identified by that address receive the data. However, multicast has the drawback that it is not well supported by routers and NAT.
+
+Broadcast allows you to call every host within a subnet. It's like Multicast but doesn't require that your network infrastructure support it.
+
+A very simple unicast server looks like this:
+
+~~~~{.cpp}
+
+void ofApp::setup()
+{
+
+	//create the socket and set to send to 127.0.0.1:11999
+	udpConnection.Create();
+	udpConnection.Connect("127.0.0.1",11999);
+	udpConnection.SetNonBlocking(true);
+}
+
+void ofApp::keyPressed(int key)
+{
+	string message = "You pressed a key";
+	udpConnection.Send(message.c_str(), message.length());
+}
+~~~~
+
+A very simple unicast client looks like this:
+
+~~~~{.cpp}
+
+void ofApp::setup()
+{
+
+	//create the socket and bind to port 11999
+	udpConnection.Create();
+	udpConnection.Bind(11999);
+	udpConnection.SetNonBlocking(true);
+}
+
+void ofApp::update()
+{
+	char udpMessage[1000];
+	udpConnection.Receive(udpMessage,1000);
+	string message=udpMessage;
+}
+~~~~
+
+Notice that these are quite different than the creation of TCP servers and clients which you might be more familiar with.
+
+The basic usage of UDP for socket servers and clients looks like so:
+
+UDP Socket Server (sending):
+1) Create() - initialize the server
+2) Connect() - connect to an IP and a Port that you'll be sending messages on
+3) Send() - send the message
+
+UDP Socket Client (receiving):
+1) Create() - intialize the client
+2) Bind() - bind the client to a port and listen for any UDP messages on that port
+3) Receive() - receive any data broadcast over UDP on the port set up to receive on
+
+The basic usage of UDP for multicast looks like so:
+
+UDP Multicast (sending):
+1) Create() - initialize the server
+2) ConnectMcast() - connect to an IP and a Port that you'll broadcast on
+3) Send() - send a message to any listening clients
+
+UDP Multicast (receiving):
+1) Create() - initialize the client
+2) BindMcast() - bind to a port
+3) Receive() - check to see if any data has been received
+
+
+
+
+
+##Methods
+
+
+
+###bool Bind(usPort)
+
+&lt;!--
+_syntax: Bind(usPort)_
+_name: Bind_
+_returns: bool_
+_returns_description: _
+_parameters: unsigned short usPort_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Bind a port to receive socket/unicast UDP:
+
+~~~~{.cpp}
+udpConnection.Create();
+udpConnection.Bind(11999);
+udpConnection.SetNonBlocking(true);
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool BindMcast(*pMcast, usPort)
+
+&lt;!--
+_syntax: BindMcast(*pMcast, usPort)_
+_name: BindMcast_
+_returns: bool_
+_returns_description: _
+_parameters: char *pMcast, unsigned short usPort_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Bind to multicast address to receive data:
+
+~~~~{.cpp}
+udpConnection.Create();
+udpConnection.BindMcast("224.0.0.1", 11999);
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool Close()
+
+&lt;!--
+_syntax: Close()_
+_name: Close_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Stop listening on a given port. Works with both socket and multicast.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool Connect(*pHost, usPort)
+
+&lt;!--
+_syntax: Connect(*pHost, usPort)_
+_name: Connect_
+_returns: bool_
+_returns_description: _
+_parameters: const char *pHost, unsigned short usPort_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Connect to a socket client to send information.
+
+~~~~{.cpp}
+
+udpConnection.Create();
+udpConnection.Connect("127.0.0.1",11999);
+udpConnection.SetNonBlocking(true);
+
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool ConnectMcast(*pMcast, usPort)
+
+&lt;!--
+_syntax: ConnectMcast(*pMcast, usPort)_
+_name: ConnectMcast_
+_returns: bool_
+_returns_description: _
+_parameters: char *pMcast, unsigned short usPort_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Connect to a multicast address. 
+
+~~~~{.cpp}
+
+udpConnection.Create();
+udpConnection.Connect("224.0.0.1",11999);
+
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool Create()
+
+&lt;!--
+_syntax: Create()_
+_name: Create_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Create the UDP manager. Must be called before binding to any IP or sockets.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool GetListenAddr(&address, &port)
+
+&lt;!--
+_syntax: GetListenAddr(&address, &port)_
+_name: GetListenAddr_
+_returns: bool_
+_returns_description: _
+_parameters: string &address, int &port_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int GetMaxMsgSize()
+
+&lt;!--
+_syntax: GetMaxMsgSize()_
+_name: GetMaxMsgSize_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int GetReceiveBufferSize()
+
+&lt;!--
+_syntax: GetReceiveBufferSize()_
+_name: GetReceiveBufferSize_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Get the size of the receive buffer. The minimum (doubled) value for this option is 256. The max is determined by your OS.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool GetRemoteAddr(&address, &port)
+
+&lt;!--
+_syntax: GetRemoteAddr(&address, &port)_
+_name: GetRemoteAddr_
+_returns: bool_
+_returns_description: _
+_parameters: string &address, int &port_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Returns the dots and numbers remote address in a string, 
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int GetSendBufferSize()
+
+&lt;!--
+_syntax: GetSendBufferSize()_
+_name: GetSendBufferSize_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Get the size of the send buffer. The minimum (doubled) value for this option is 256. The max is determined by your OS.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int GetTTL()
+
+&lt;!--
+_syntax: GetTTL()_
+_name: GetTTL_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+returns -1 on failure
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int GetTimeoutReceive()
+
+&lt;!--
+_syntax: GetTimeoutReceive()_
+_name: GetTimeoutReceive_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Return the current receive timeout.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int GetTimeoutSend()
+
+&lt;!--
+_syntax: GetTimeoutSend()_
+_name: GetTimeoutSend_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Return the current send timeout.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool HasSocket()
+
+&lt;!--
+_syntax: HasSocket()_
+_name: HasSocket_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int PeekReceive()
+
+&lt;!--
+_syntax: PeekReceive()_
+_name: PeekReceive_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int Receive(*pBuff, iSize)
+
+&lt;!--
+_syntax: Receive(*pBuff, iSize)_
+_name: Receive_
+_returns: int_
+_returns_description: _
+_parameters: char *pBuff, const int iSize_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Receives a message to a buffer of size iSize. Receive() returns the number of bytes actually received.
+
+~~~~{.cpp}
+char udpMessage[100000];
+udpConnection.Receive(udpMessage,100000);
+string message=udpMessage;
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int Send(*pBuff, iSize)
+
+&lt;!--
+_syntax: Send(*pBuff, iSize)_
+_name: Send_
+_returns: int_
+_returns_description: _
+_parameters: const char *pBuff, const int iSize_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Send a char* of data with length of iSize to all listeners.
+
+~~~~{.cpp}
+string message = "A message";
+udpConnection.Send(message.c_str(),message.length());
+
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int SendAll(*pBuff, iSize)
+
+&lt;!--
+_syntax: SendAll(*pBuff, iSize)_
+_name: SendAll_
+_returns: int_
+_returns_description: _
+_parameters: const char *pBuff, const int iSize_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+The SendAll() method is useful for extremely large data objects that may need multiple sendto() calls to actually be completely.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool SetEnableBroadcast(enableBroadcast)
+
+&lt;!--
+_syntax: SetEnableBroadcast(enableBroadcast)_
+_name: SetEnableBroadcast_
+_returns: bool_
+_returns_description: _
+_parameters: bool enableBroadcast_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Broadcast allows sending of packets to a particular network layer. If you're only using a single local network without a large number of attached machines, using broadcast may make more sense than trying to use multicast.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool SetNonBlocking(useNonBlocking)
+
+&lt;!--
+_syntax: SetNonBlocking(useNonBlocking)_
+_name: SetNonBlocking_
+_returns: bool_
+_returns_description: _
+_parameters: bool useNonBlocking_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Determines whether calls to send or receive are allowed to block their thread until they've completed. If your network infrastructure is time critical, then this may be a good choice. Usually though, you should leave it off.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool SetReceiveBufferSize(sizeInByte)
+
+&lt;!--
+_syntax: SetReceiveBufferSize(sizeInByte)_
+_name: SetReceiveBufferSize_
+_returns: bool_
+_returns_description: _
+_parameters: int sizeInByte_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Set the size of the receive buffer. The minimum (doubled) value for this option is 256. The max is determined by your OS.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool SetReuseAddress(allowReuse)
+
+&lt;!--
+_syntax: SetReuseAddress(allowReuse)_
+_name: SetReuseAddress_
+_returns: bool_
+_returns_description: _
+_parameters: bool allowReuse_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool SetSendBufferSize(sizeInByte)
+
+&lt;!--
+_syntax: SetSendBufferSize(sizeInByte)_
+_name: SetSendBufferSize_
+_returns: bool_
+_returns_description: _
+_parameters: int sizeInByte_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Set the size of the send buffer. The minimum (doubled) value for this option is 256. The max is determined by your OS.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool SetTTL(nTTL)
+
+&lt;!--
+_syntax: SetTTL(nTTL)_
+_name: SetTTL_
+_returns: bool_
+_returns_description: _
+_parameters: int nTTL_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+The TTL (Time To Live) field in the IP header has a double significance in multicast. As always, it controls the live time of the datagram to avoid it being looped forever due to routing errors. Routers decrement the TTL of every datagram as it traverses from one network to another and when its value reaches 0 the packet is dropped.
+
+A list of TTL thresholds and their associated scope follows:
+
+TTL     Scope
+----------------------------------------------------------------------
+   0    Restricted to the same host. Won't be output by any interface.
+   1    Restricted to the same subnet. Won't be forwarded by a router.
+ &lt;32         Restricted to the same site, organization or department.
+ &lt;64 Restricted to the same region.
+&lt;128 Restricted to the same continent.
+&lt;255 Unrestricted in scope. Global.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void SetTimeoutReceive(timeoutInSeconds)
+
+&lt;!--
+_syntax: SetTimeoutReceive(timeoutInSeconds)_
+_name: SetTimeoutReceive_
+_returns: void_
+_returns_description: _
+_parameters: int timeoutInSeconds_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Set a timeout for any receive operations in seconds.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void SetTimeoutSend(timeoutInSeconds)
+
+&lt;!--
+_syntax: SetTimeoutSend(timeoutInSeconds)_
+_name: SetTimeoutSend_
+_returns: void_
+_returns_description: _
+_parameters: int timeoutInSeconds_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Set a timeout for any send operations in seconds.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool Setup(&settings)
+
+&lt;!--
+_syntax: Setup(&settings)_
+_name: Setup_
+_returns: bool_
+_returns_description: _
+_parameters: const ofxUDPSettings &settings_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int WaitReceive(timeoutSeconds, timeoutMillis)
+
+&lt;!--
+_syntax: WaitReceive(timeoutSeconds, timeoutMillis)_
+_name: WaitReceive_
+_returns: int_
+_returns_description: _
+_parameters: time_t timeoutSeconds, time_t timeoutMillis_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int WaitSend(timeoutSeconds, timeoutMillis)
+
+&lt;!--
+_syntax: WaitSend(timeoutSeconds, timeoutMillis)_
+_name: WaitSend_
+_returns: int_
+_returns_description: _
+_parameters: time_t timeoutSeconds, time_t timeoutMillis_
+_access: protected_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofxUDPManager()
+
+&lt;!--
+_syntax: ofxUDPManager()_
+_name: ofxUDPManager_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ~ofxUDPManager()
+
+&lt;!--
+_syntax: ~ofxUDPManager()_
+_name: ~ofxUDPManager_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+##Variables
+
+
+
+###bool canGetRemoteAddress
+
+&lt;!--
+_name: canGetRemoteAddress_
+_type: bool_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool m_bWinsockInit
+
+&lt;!--
+_name: m_bWinsockInit_
+_type: bool_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###unsigned long m_dwTimeoutReceive
+
+&lt;!--
+_name: m_dwTimeoutReceive_
+_type: unsigned long_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###unsigned long m_dwTimeoutSend
+
+&lt;!--
+_name: m_dwTimeoutSend_
+_type: unsigned long_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int m_hSocket
+
+&lt;!--
+_name: m_hSocket_
+_type: int_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool nonBlocking
+
+&lt;!--
+_name: nonBlocking_
+_type: bool_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###struct sockaddr_in saClient
+
+&lt;!--
+_name: saClient_
+_type: struct sockaddr_in_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###struct sockaddr_in saServer
+
+&lt;!--
+_name: saServer_
+_type: struct sockaddr_in_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+</textarea></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1586012716389/documentation/addons/ofxNetwork/ofxUDPManager/payload.js"></script><script src="/_nuxt/5f71eaca0bd2f1a0f939.js" defer></script><script src="/_nuxt/35a90d914f539af1362f.js" defer></script><script src="/_nuxt/906a3ca0fb13ed3c6651.js" defer></script><script src="/_nuxt/b673915e8a08acf593e8.js" defer></script><script src="/_nuxt/bf355f21967a23c26c07.js" defer></script>
+  </body>
+</html>

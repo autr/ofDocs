@@ -36,7 +36,6 @@ export default {
       return obj;
     },
     tweakedPage() {
-      console.log( this.page.entry );
       this.page.entry.children = [];
       Object.keys( this.structure ).forEach( k => {
         this.page.entry.children.push( this.structure[k].id );
@@ -72,7 +71,7 @@ export default {
       console.log('🚜  [Homepage.vue] payload:', payload.entry.name );
       return {page: payload};
     } else {
-      const path = '/ofDocs/readme?as=json';
+      const path = '/ofdocs/readme?as=json';
       console.log('🚜  [Homepage.vue] api:', path);
       try {
         return { page: await $axios.$get( path ) };

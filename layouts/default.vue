@@ -38,7 +38,7 @@
 						.txt
 							span.docs.f7.questrial Docs 
 							span.version {{version.major}}.{{version.minor}}.{{version.patch}}
-			#search( :class="{resetting: newShortcut}")
+			#search( :class="{resetting: newShortcut}" )
 				.inner
 					field( ref="search" v-bind.sync="search" @onChange="searchChange" )
 						svg( @click="resetShortcut" viewbox='0 0 36 36' enable-background='new 0 0 36 36' xml:space='preserve')
@@ -51,27 +51,27 @@
 							v-if="search.value.length > 0"
 							@click="search.value = ''; searchResults = []"
 						)
-				#results.mt1( ref="searchResults" v-show="resultsOrRecent" )
+				#results.mt1( ref="searchResults" v-if="resultsOrRecent.length > 0"  )
 					.inner
 						h4
 							span.ptb1.block( v-show="searchResults.length > 0") Search results:
 							span.ptb1.block( v-show="showRecent && searchResults.length == 0") Recently viewed:
 					.search-result(
 						v-for=" s, i in resultsOrRecent"
+						v-if=" s "
 						:tabindex="i+1"
 						:key="i"
 					)
 						nuxt-link(:to="s.path")
 							span.inner
 								span.name.f3(v-html="s.name.replace(' (functions)','<span>functions</span>')")
-								//- span.origin.block.cmidGray {{origin(s)}}
 								breadcrumbs( :entry="s" :last="false" :first="false" :links="false")
-					.inner
-						.cdark.courier.ptb2(v-if="resultsOrRecent.length === maxResults") 
+					.inner.ptb2
+						.cdark.courier(v-if="resultsOrRecent.length === maxResults") 
 							span Search limit reached: <= {{maxResults}}
-			#lists.menu-inner.mt1( v-show="resultsOrRecent.length === 0" v-if="staticNav"): .inner
+			#lists.menu-inner.mt1.mb2( v-show="resultsOrRecent.length === 0" ): .inner
 				list( 
-					v-for="n, i in staticNav"
+					v-for="n, i in storeNavigation"
 					:key="i"
 					v-show="structure[n[0]]"
 					:entry="structure[n[0]]"
@@ -106,24 +106,27 @@ export default {
 		'list': List
 	},
 	computed: {
-		recentEntries() {
-			const r = this.$cookies.get("OFDOCS_RECENT");
-			if (!Array.isArray(r)) return [];
-			return r;
-		},
 		shortcutString() {
 			let str = "";
-			this.shortcut.forEach( (s,i) => { 
+			this.searchShortcut.forEach( (s,i) => { 
 				str += (i == 0) ? s : "+" + s 
 			})
 			return str;
 		},
 		resultsOrRecent() {
-			if (this.searchResults.length > 0 ) return this.searchResults;
-			if (this.showRecent) return this.recentEntries.slice(1,this.recentEntries.length).map( (id) => {
-				return this.$store.state.data[id];
-			});
-			return this.searchResults;
+			const d = false;
+				if (this.searchResults.length > 0 ) {
+					if (d) console.log('results > recent...')
+					return this.searchResults;
+				} else if (this.showRecent) {
+					if (d) console.log('recent > results...')
+					return this.recentFromCookies.slice( 1, this.recentFromCookies.length ).map( id => {
+						return this.$store.state.data[ id ];
+					});
+				} else {
+					if (d) console.log('!recent && !results...')
+					return [];
+				}
 		},
 		gradient() {
 			let a = this.c1;
@@ -140,18 +143,25 @@ export default {
 	},
 	data() {
 			return {
+				recentFromCookies: [],
 				darkMode: false,
-				shortcut: ['NOCOOKIE'],
+
+				maxResults: 30,
+
+				searchShortcut: [],
+				clearShortcut: ['Meta','Shift','C'],
+
 				newShortcut: false,
 				showRecent: false,
 				keys: {},
+
+
 				c1: this.randomHue(),
 				c2: this.randomHue(),
 				cAngle: this.randomHue(),
-				staticNav: null,
-				selected: [],
-				searchMessage: null,
-				maxResults: 30,
+
+
+				storeNavigation: null,
 				search: {
 					value: "",
 					id: "search_field",
@@ -176,121 +186,115 @@ export default {
 	},
 	methods: {
     origin(a) {
-      if (a.breadcrumbs.length <= 0) return "ofDocs";
-      return this.data[ a.breadcrumbs.slice(-1)[0] ].name;
+    	try {
+	      if (a.breadcrumbs.length <= 0) return "ofDocs";
+	      return this.data[ a.breadcrumbs.slice(-1)[0] ].name;
+			} catch(err) {
+				console.log('[default.vue] origin');
+			}
     },
 		randomHue( a = 360 ) {
 			return Math.round( Math.random() * a )
 		},
 		searchChange() {
 
+			// --> searchChange
 
-			const filters = this.$store.state.filters;
-			let out = [];
+			try {
 
-			// too few chars...
+				const filters = this.$store.state.filters;
+				let out = [];
 
-			this.searchMessage = "No results";
-			if (this.search.value.length < 4) {
-				this.searchResults = [];
-				return;
-			}
+				// too few chars...
 
-			// split string...
-
-			const components = this.search.value.split(' ');
-
-
-			// search data...
-
-			for (let i = 0; i < this.data.length; i++) {
-
-				const entry = this.data[i];
-				const path = this.data[i].path;
-				const name = this.data[i].name;
-
-				// weighting sorts...
-
-				let foundPrimary = 0;
-				let foundSecondary = 0;
-				let weighting = 0;
-
-				// doesnt already exist...
-
-				const doesntAlreadyExist = out.indexOf( entry ) 
-
-				// common filters...
-
-				let isFiltered = false;
-				filters.forEach( filter => {
-					if ( name.indexOf(filter) !== -1 ) isFiltered = true;
-				});
-
-				// is can be processed...
-
-				if (doesntAlreadyExist && !isFiltered ) {
-
-					// parse search words...
-
-					for (let i = 0; i < components.length; i++ ) {
-
-
-						const word = components[i].toLowerCase();
-						const idx = path.indexOf( word )
-						const hasSecondary = idx !== -1;
-						const hasPrimary = name.indexOf( word ) !== -1;
-
-						if ( hasPrimary ) {
-							console.log( name );
-							foundPrimary += 1;
-						}
-						if ( hasSecondary ) {
-							foundSecondary += 1;
-							const weight = path.length - idx + word.length;
-							if (weight > weighting) weighting = weight;
-						}
-
-					}
-					if ( (foundPrimary > 0 || foundSecondary > 0 ) ) {
-						let copy =	{...entry}
-						copy.weight = weighting;
-						copy.foundPrimary = foundPrimary;
-						copy.foundSecondary = foundSecondary;
-						out.push( copy );
-					}
-
+				if (this.search.value.length < 4) {
+					this.searchResults = [];
+					return;
 				}
 
+				// split string...
 
+				const components = this.search.value.split(' ');
+
+
+				// search data...
+
+				for (let i = 0; i < this.data.length; i++) {
+
+					const entry = this.data[i];
+					const path = this.data[i].path;
+					const name = this.data[i].name;
+
+					// weighting sorts...
+
+					let foundPrimary = 0;
+					let foundSecondary = 0;
+					let weighting = 0;
+
+					// doesnt already exist...
+
+					const doesntAlreadyExist = out.indexOf( entry ) 
+
+					// common filters...
+
+					let isFiltered = false;
+					filters.forEach( filter => {
+						if ( name.indexOf(filter) !== -1 ) isFiltered = true;
+					});
+
+					// is can be processed...
+
+					if (doesntAlreadyExist && !isFiltered ) {
+
+						// parse search words...
+
+						for (let i = 0; i < components.length; i++ ) {
+
+
+							const word = components[i].toLowerCase();
+							const idx = path.indexOf( word )
+							const hasSecondary = idx !== -1;
+							const hasPrimary = name.indexOf( word ) !== -1;
+
+							if ( hasPrimary ) {
+								console.log( name );
+								foundPrimary += 1;
+							}
+							if ( hasSecondary ) {
+								foundSecondary += 1;
+								const weight = path.length - idx + word.length;
+								if (weight > weighting) weighting = weight;
+							}
+
+						}
+						if ( (foundPrimary > 0 || foundSecondary > 0 ) ) {
+							let copy =	{...entry}
+							copy.weight = weighting;
+							copy.foundPrimary = foundPrimary;
+							copy.foundSecondary = foundSecondary;
+							out.push( copy );
+						}
+
+					}
+
+
+				}
+				out.sort( (a, b) => {
+					const primary = a.foundPrimary - b.foundPrimary;
+					const secondary = a.foundSecondary - b.foundSecondary;
+					const weight = a.weighting < b.weighting;
+					return (primary * 0.5) + (secondary * 0.25) + (weight * 0.25);
+				});
+				out.reverse();
+				const max = this.maxResults;
+				const end = ( out.length > max ) ? max : out.length;
+				out = out.slice( 0, end );
+				this.searchIdx = -1;
+				this.searchResults = out;
+			} catch(err) {
+				console.log('[default.vue] error', err);
+				throw err;
 			}
-			out.sort( (a, b) => {
-				const primary = a.foundPrimary - b.foundPrimary;
-				const secondary = a.foundSecondary - b.foundSecondary;
-				const weight = a.weighting < b.weighting;
-				return (primary * 0.5) + (secondary * 0.25) + (weight * 0.25);
-			});
-			out.reverse();
-			const max = this.maxResults;
-			const end = ( out.length > max ) ? max : out.length;
-			out = out.slice( 0, end );
-			this.searchIdx = -1;
-			this.searchResults = out;
-			this.searchMessage = (out.length > 0) ? null : "No results";
-		},
-		toggle( n ) {
-			const i = this.selected.indexOf( n );
-			const s = this.isSelected( n );
-			if (s) this.selected.splice(i,1);
-			if (!s) this.selected.push( n );
-		},
-		select( n ) {
-			const s = this.isSelected( n );
-			if (s) this.selected = [];
-			if (!s) this.selected = [n];
-		},
-		isSelected( n ) {
-			return true;
-			return (this.selected.indexOf( n ) !== -1) ;
 		},
 		processKey( e ) {
 
@@ -312,19 +316,74 @@ export default {
 		doFocus() {
 
 		},
-		onKeyPress( e ) {
 
-
-	    let k = this.processKey(e);
-
+		isShortcut( shortcut_ ) {
 			let b = true;
-			this.shortcut.forEach( key => {
+			shortcut_.forEach( key => {
 				if ( !this.keys[key] ) b = false;
 			});
+			return b;
 
-			this.keys[k] = false;
+		},
+		onKeyPress( e ) {
 
-			if ( b ) {
+		},
+		resetShortcut() {
+			console.log('resetting shortcut...')
+			this.searchShortcut = [];
+			this.search.placeholder = "Listening..."
+			this.newShortcut = true;
+		},
+		setDarkMode() {
+			const html = document.querySelector('html');
+			if (html) {
+				if (this.darkMode) html.classList.add('dark-mode');
+				if (!this.darkMode) html.classList.remove('dark-mode');
+			}
+
+			this.$cookies.set("OFDOCS_DARKMODE", this.darkMode );
+		},
+		onKeyUp( e ) {
+			this.keys[ this.processKey(e) ] = false;
+		},
+		onKeyDown( e ) {
+
+		    const opp = ['Meta','Alt','Control','Shift'];
+		    const alpha = ["1","2","3","4","5","6","7","8","9","0","Q","W","E","R","T","Y","U","I","O","P","A","S","D","F","G","H","J","K","L","Z","X","C","V","B","N","M"];
+
+		    const key = this.processKey(e);
+				this.keys[ key ] = true;
+
+				// create new shortcut...
+
+		    if (this.newShortcut) {
+		    	const inOperator = opp.indexOf( key ) !== -1;
+		    	const inAlpha = alpha.indexOf( key ) !== -1;
+		    	const notDuplicate = this.searchShortcut.indexOf( key ) === -1;
+		    	if ( (inOperator || inAlpha )&&notDuplicate) {
+		    		this.searchShortcut.push( key );
+		    		this.search.placeholder = "Listening... " + this.shortcutString;
+		    		if (inAlpha) {
+		    			this.newShortcut = false;
+			    		this.search.placeholder = "Search (" + this.shortcutString + ")";
+			    		this.$cookies.set("OFDOCS_SHORTCUT", JSON.stringify( this.searchShortcut ) );
+			    		this.keys[ key ] = false;
+		    		}
+		    	}
+		    }
+
+			// console.log( "PRESS", JSON.stringify( this.keys ) )
+
+			const isSearchShortcut = this.isShortcut( this.searchShortcut );
+			const isClearCookies = this.isShortcut( this.clearShortcut );
+
+			if ( isClearCookies ) {
+				this.$cookies.removeAll();
+				console.log('🍪  [ofDocs] cookies removed...', JSON.stringify( this.$cookies.getAll() ) );
+			}
+
+
+			if ( isSearchShortcut ) {
 				const i = this.$refs.search.$el.querySelector('input');
 				e.preventDefault();
 				e.stopPropagation();
@@ -338,90 +397,66 @@ export default {
 					i.blur();
 				}
 			}
-		},
-		resetShortcut() {
-			this.shortcut = [];
-			this.search.placeholder = "Listening..."
-			this.newShortcut = true;
-		},
-		setDarkMode() {
-			const html = document.querySelector('html');
-			if (html) {
-				if (this.darkMode) html.classList.add('dark-mode');
-				if (!this.darkMode) html.classList.remove('dark-mode');
-			}
-
-			this.$cookies.set("OFDOCS_DARKMODE", this.darkMode );
-		},
-		onKeyDown( e ) {
-
-	    const opp = ['Meta','Alt','Control','Shift'];
-	    const alpha = ["1","2","3","4","5","6","7","8","9","0","Q","W","E","R","T","Y","U","I","O","P","A","S","D","F","G","H","J","K","L","Z","X","C","V","B","N","M"];
-
-	    let k = this.processKey(e);
-			this.keys[k] = true;
 
 
-	    if (this.newShortcut) {
-	    	const inOperator = opp.indexOf( k ) !== -1;
-	    	const inAlpha = alpha.indexOf( k ) !== -1;
-	    	const notDuplicate = this.shortcut.indexOf(k) === -1;
-	    	if ( (inOperator || inAlpha )&&notDuplicate) {
-	    		this.shortcut.push( k );
-	    		this.search.placeholder = "Listening... " + this.shortcutString;
-	    		if (inAlpha) {
-	    			this.newShortcut = false;
-		    		this.search.placeholder = "Search (" + this.shortcutString + ")";
-		    		this.$cookies.set("OFDOCS_SHORTCUT", JSON.stringify( this.shortcut ) );
-		    		this.keys[k] = false;
-	    		}
-	    	}
-	    }
+		    // search results....
 
-			if (this.searchResults.length > 0) {
-				const arrDown = e.key === 'ArrowDown';
-				const arrUp = e.key === 'ArrowUp';
+				if (this.searchResults.length > 0) {
+					const arrDown = e.key === 'ArrowDown';
+					const arrUp = e.key === 'ArrowUp';
 
-				if (arrDown) this.searchIdx += 1;
-				if (arrUp) this.searchIdx -= 1;
+					if (arrDown) this.searchIdx += 1;
+					if (arrUp) this.searchIdx -= 1;
 
-				if (arrDown || arrUp) {
+					if (arrDown || arrUp) {
 
-					if (this.searchIdx >= this.searchResults.length) this.searchIdx = -1;
-					if (this.searchIdx < 0) this.searchIdx = -1;
+						if (this.searchIdx >= this.searchResults.length) this.searchIdx = -1;
+						if (this.searchIdx < 0) this.searchIdx = -1;
 
-					const i = this.$refs.search.$el.querySelector('input');
-					if (this.searchIdx == -1) {
-						i.focus();
-						i.select();
-					} else {
-						i.blur();
-						setTimeout( () => {
-							if (this.searchIdx == -1) this.searchIdx = 0;
-							const r = this.$refs.searchResults.querySelectorAll('.search-result');
-							r.item(this.searchIdx).querySelector('a').focus();
-						},20);
+						const i = this.$refs.search.$el.querySelector('input');
+						if (this.searchIdx == -1) {
+							i.focus();
+							i.select();
+						} else {
+							i.blur();
+							setTimeout( () => {
+								if (this.searchIdx == -1) this.searchIdx = 0;
+								const r = this.$refs.searchResults.querySelectorAll('.search-result');
+								r.item(this.searchIdx).querySelector('a').focus();
+							},20);
+						}
+
+						e.preventDefault();
+						e.stopPropagation();
+
 					}
 
-					e.preventDefault();
-					e.stopPropagation();
 
 				}
-
-
-			}
 		},
 		addPageToCookies() {
-
 				const id = this.$store.state.id;
-				console.log('----');
+				try {
+					console.log('🍪  [ofDocs] adding page to cookies...', this.$store.state.data[id].name );
+				} catch(err) {
+					console.error( '🍪  [ofDocs] could not add id to cookies...', id );
+				}
 				let r = this.$cookies.get("OFDOCS_RECENT")
-				while (r.length > this.maxResults) r.pop();
 				if (!Array.isArray( r)) r = [];
-				if (r.indexOf(id) !== -1) return;
-				r.push( id );
+				while (r.length > this.maxResults) r.pop();
+
+				const found = r.indexOf( id );
+
+				if ( found !== -1) {
+					r.splice( found, 1);
+					r.unshift( id );
+					return;
+				} else {
+					r.unshift( id );
+				}
 
 				this.$cookies.set("OFDOCS_RECENT", r);
+				this.recentFromCookies = r;
 		}
 	},
 	watch: {
@@ -432,8 +467,9 @@ export default {
 		},
 		'$route': {
 			handler: function(to,from) {
-				console.log('fsdffsdf');
-				this.addPageToCookies();
+				setTimeout( () => {
+					this.addPageToCookies();
+				},200);
 			}
 		}
 	},
@@ -442,28 +478,72 @@ export default {
 	},
 	mounted() {
 
+		// search events...
+
 		document.addEventListener('keypress', this.onKeyPress);
 		document.addEventListener('keydown', this.onKeyDown);
+		document.addEventListener('keyup', this.onKeyUp);
 
-		const tween = ({ from = 0, to = 1, duration = 300, ease = easeOut, onUpdate } = {}) => {
-			const delta = to - from;
-			const startTime = performance.now();
+		const input = this.$refs.search.$el.querySelector('input');
+		input.addEventListener('focus', () => {
+			// console.log('FOCUS');
+			this.showRecent = true;
+		});
+		input.addEventListener('blur', () => {
+			// console.log('BLUR');
+			setTimeout( () => {
+				this.showRecent = false;
+			}, 100);
+		});
 
-			function update(currentTime) {
-				const elapsed = currentTime - startTime;
-				const progress = Math.min(elapsed / duration, 1);
-				const latest = from + ease(progress) * delta;
+		// print all cookies...
 
-				if (onUpdate) onUpdate(latest);
-				if (progress < 1) requestAnimationFrame(update);
-			}
+		console.log('🍪  [ofDocs] cookies loaded...', JSON.stringify( this.$cookies.getAll() ) );
 
-			requestAnimationFrame(update);
-		}
+		// search cookies...
 
-		const easeOut = (progress, power = 2) => {
-			return 1 - (1 - progress) ** power;
-		}
+		const cs = this.$cookies.get("OFDOCS_SHORTCUT");
+		this.searchShortcut = (cs) ? cs : ["Alt", "F"];
+		console.log( this.searchShortcut );
+		this.search.placeholder = "Search (" + this.shortcutString + ")";
+
+		// navigation...
+
+
+		this.storeNavigation = this.$store.state.navigation;
+
+
+		// nav cookies...
+
+		this.recentFromCookies = this.$cookies.get("OFDOCS_RECENT") || [];
+
+		this.addPageToCookies();
+		
+
+
+		this.darkMode = this.$cookies.get("OFDOCS_DARKMODE");
+		this.setDarkMode();
+
+
+		// const tween = ({ from = 0, to = 1, duration = 300, ease = easeOut, onUpdate } = {}) => {
+		// 	const delta = to - from;
+		// 	const startTime = performance.now();
+
+		// 	function update(currentTime) {
+		// 		const elapsed = currentTime - startTime;
+		// 		const progress = Math.min(elapsed / duration, 1);
+		// 		const latest = from + ease(progress) * delta;
+
+		// 		if (onUpdate) onUpdate(latest);
+		// 		if (progress < 1) requestAnimationFrame(update);
+		// 	}
+
+		// 	requestAnimationFrame(update);
+		// }
+
+		// const easeOut = (progress, power = 2) => {
+		// 	return 1 - (1 - progress) ** power;
+		// }
 		// this.$nextTick( () => {
 
 		// 	if (typeof this.$nuxt.$loading.$watch === 'function') {
@@ -484,29 +564,6 @@ export default {
 		// 	}
 		// });
 
-		this.staticNav = this.$store.state.navigation;
-
-		this.addPageToCookies();
-
-		const input = this.$refs.search.$el.querySelector('input');
-		input.addEventListener('focus', () => {
-			// console.log('FOCUS');
-			this.showRecent = true;
-		});
-		input.addEventListener('blur', () => {
-			// console.log('BLUR');
-			setTimeout( () => {
-				this.showRecent = false;
-			}, 100);
-		});
-
-
-		const s = this.$cookies.get("OFDOCS_SHORTCUT");
-		this.shortcut = (s) ? s : ["Alt", "F"];
-		this.search.placeholder = "Search (" + this.shortcutString + ")";
-
-		this.darkMode = this.$cookies.get("OFDOCS_DARKMODE");
-		this.setDarkMode();
 
 	}
 }

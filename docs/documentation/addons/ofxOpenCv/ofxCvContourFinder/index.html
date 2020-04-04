@@ -1,0 +1,1146 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>ofxCvContourFinder | documentation | ofDocs</title><meta data-n-head="ssr" data-hid="description" name="description" content="openFrameworks documentation and examples browser"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="openFrameworks documentation and examples browser" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="ofxCvContourFinder | documentation | ofDocs" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="/files/images/ofw-logo.png" vmid="og:image"><link rel="preload" href="/_nuxt/5f71eaca0bd2f1a0f939.js" as="script"><link rel="preload" href="/_nuxt/906a3ca0fb13ed3c6651.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/b673915e8a08acf593e8.js" as="script"><link rel="preload" href="/_nuxt/46e8fcacdadb233d9fb6.css" as="style"><link rel="preload" href="/_nuxt/bf355f21967a23c26c07.js" as="script"><link rel="preload" href="/_nuxt/35a90d914f539af1362f.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/46e8fcacdadb233d9fb6.css">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app"><div id="menu"><div class="menu-inner"><div id="settings"></div><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><svg version="1.1" viewbox="0 0 110 58" width="110px" height="58px" enable-background="0 0 110 58" xml:space="preserve" class="logo"><g><path d="M58,29 C58,13 45,0 29,0 C13,0 0,13 0,29 C0,45 13,58 29,58 C45,58 58,45 58,29 Z"></path><rect x="59" y="0" width="25" height="58"></rect><rect x="85" y="26" width="15" height="15"></rect><path d="M85,0 L110,0 L85,25 L85,0 Z"></path></g></svg><div class="txt"><span class="docs f7 questrial">Docs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343							c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88							c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593							c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789							C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><!----></div><div id="lists" class="menu-inner mt1 mb2"><div class="inner"></div></div></div><div class="menu-bottom"><div class="inner"><button class="button"><!----><span><span class="ico">nights_stay</span></span></button></div></div></div><div id="document"><div id="renderer" class="main page"><div absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/addons/ofxOpenCv/ofxCvContourFinder.markdown" route="/documentation/addons/ofxOpenCv/ofxCvContourFinder.markdown" dir="../ofSite/documentation/addons/ofxOpenCv" ext="markdown" type="page" id="2101" parent="2084" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/" class="pink nuxt-link-active">documentation </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/addons/" class="pink nuxt-link-active">addons </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/addons/ofxOpenCv/" class="pink nuxt-link-active">ofxOpenCv </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link selector"><span class="name">ofxCvContourFinder</span><span class="chevron bottom"></span><select><option value="/documentation/addons/ofxOpenCv/ofxCvBlob">ofxCvBlob</option><option value="/documentation/addons/ofxOpenCv/ofxCvColorImage">ofxCvColorImage</option><option value="/documentation/addons/ofxOpenCv/ofxCvContourFinder">ofxCvContourFinder</option><option value="/documentation/addons/ofxOpenCv/ofxCvFloatImage">ofxCvFloatImage</option><option value="/documentation/addons/ofxOpenCv/ofxCvGrayscaleImage">ofxCvGrayscaleImage</option><option value="/documentation/addons/ofxOpenCv/ofxCvHaarFinder">ofxCvHaarFinder</option><option value="/documentation/addons/ofxOpenCv/ofxCvImage">ofxCvImage</option><option value="/documentation/addons/ofxOpenCv/ofxCvShortImage">ofxCvShortImage</option></select></span><!----></span></span></div></div></div><div class="editable-wrapper"><div class="header inner"><h1 class="page-title questrial"><span class="f7"><!----><span>ofxCvContourFinder</span></span><span class="f3"></span></h1><div class="actions"><a href="/ofdocs/contribute/" class="button"><i class="ico">edit</i><span>Edit</span></a></div></div><div class="rendered"><div id="documentation-page" static="true"><div id="offset-page"><div id="doc-body" class="markdown"><div class="inner"><div id="description"><div class="full-description"><div class="html"><p>The contour finder allows you to detect objects in a scene by looking at contrast between adjoining pixels. For instance, in the image below, the hand is visible and trackable because the contrast between the wall behind it and the arm is quite distinct:</p>
+<p><img src="contour.png" alt="contour" title="Detecting contours in image"></p>
+<p>You can make contour detection more robust by comparing the current image to a background image and subtracting the background from the current image. This enables you to examine the incoming image without the background image data, reducing the amount of data that needs to be inspected.</p>
+<p>The contourFinder requires an ofxCvGrayscaleImage be passed to it, so you'll need to create one from either a video or camera feed that you're using. An example of working with a camera is shown here.</p>
+<p>In your ofApp header file:</p>
+<pre><code class="language-{.h}"><span class="token macro property">#<span class="token directive keyword">pragma</span> once</span>
+
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"ofMain.h"</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"ofxOpenCv.h"</span></span>
+
+<span class="token keyword">class</span> <span class="token class-name">ofApp</span> <span class="token operator">:</span> <span class="token keyword">public</span> ofBaseApp<span class="token punctuation">{</span>
+
+	<span class="token keyword">public</span><span class="token operator">:</span>
+		<span class="token keyword">void</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">void</span> <span class="token function">update</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">void</span> <span class="token function">draw</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">void</span> <span class="token function">keyPressed</span><span class="token punctuation">(</span><span class="token keyword">int</span> key<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		
+		<span class="token keyword">bool</span> bLearnBackground<span class="token punctuation">;</span>
+		ofVideoGrabber vidGrabber<span class="token punctuation">;</span>
+		ofxCvColorImage colorImg<span class="token punctuation">;</span>
+		ofxCvGrayscaleImage grayImage<span class="token punctuation">,</span> grayBg<span class="token punctuation">,</span> grayDiff<span class="token punctuation">;</span>
+		ofxCvContourFinder contourFinder<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<p>In your ofApp.cpp file:</p>
+<pre><code class="language-{.cpp}"><span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"ofApp.h"</span></span>
+
+<span class="token keyword">void</span> ofApp<span class="token operator">::</span><span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    
+    bLearnBackground <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    
+    vidGrabber<span class="token punctuation">.</span><span class="token function">setVerbose</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    vidGrabber<span class="token punctuation">.</span><span class="token function">initGrabber</span><span class="token punctuation">(</span><span class="token number">320</span><span class="token punctuation">,</span><span class="token number">240</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    colorImg<span class="token punctuation">.</span><span class="token function">allocate</span><span class="token punctuation">(</span><span class="token number">320</span><span class="token punctuation">,</span><span class="token number">240</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    grayImage<span class="token punctuation">.</span><span class="token function">allocate</span><span class="token punctuation">(</span><span class="token number">320</span><span class="token punctuation">,</span><span class="token number">240</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    grayBg<span class="token punctuation">.</span><span class="token function">allocate</span><span class="token punctuation">(</span><span class="token number">320</span><span class="token punctuation">,</span><span class="token number">240</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    grayDiff<span class="token punctuation">.</span><span class="token function">allocate</span><span class="token punctuation">(</span><span class="token number">320</span><span class="token punctuation">,</span><span class="token number">240</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">void</span> ofApp<span class="token operator">::</span><span class="token function">update</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    vidGrabber<span class="token punctuation">.</span><span class="token function">update</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">//do we have a new frame?</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>vidGrabber<span class="token punctuation">.</span><span class="token function">isFrameNew</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        colorImg<span class="token punctuation">.</span><span class="token function">setFromPixels</span><span class="token punctuation">(</span>vidGrabber<span class="token punctuation">.</span><span class="token function">getPixels</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        grayImage <span class="token operator">=</span> colorImg<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// convert our color image to a grayscale image</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>bLearnBackground <span class="token operator">==</span> <span class="token boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            grayBg <span class="token operator">=</span> grayImage<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// update the background image</span>
+            bLearnBackground <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        grayDiff<span class="token punctuation">.</span><span class="token function">absDiff</span><span class="token punctuation">(</span>grayBg<span class="token punctuation">,</span> grayImage<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        grayDiff<span class="token punctuation">.</span><span class="token function">threshold</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        contourFinder<span class="token punctuation">.</span><span class="token function">findContours</span><span class="token punctuation">(</span>grayDiff<span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">340</span><span class="token operator">*</span><span class="token number">240</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">void</span> ofApp<span class="token operator">::</span><span class="token function">draw</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">ofSetHexColor</span><span class="token punctuation">(</span><span class="token number">0xffffff</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    colorImg<span class="token punctuation">.</span><span class="token function">draw</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">320</span><span class="token punctuation">,</span> <span class="token number">240</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    grayDiff<span class="token punctuation">.</span><span class="token function">draw</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">240</span><span class="token punctuation">,</span> <span class="token number">320</span><span class="token punctuation">,</span> <span class="token number">240</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">ofDrawRectangle</span><span class="token punctuation">(</span><span class="token number">320</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">320</span><span class="token punctuation">,</span> <span class="token number">240</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    contourFinder<span class="token punctuation">.</span><span class="token function">draw</span><span class="token punctuation">(</span><span class="token number">320</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">320</span><span class="token punctuation">,</span> <span class="token number">240</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    ofColor <span class="token function">c</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> contourFinder<span class="token punctuation">.</span>nBlobs<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        ofRectangle r <span class="token operator">=</span> contourFinder<span class="token punctuation">.</span>blobs<span class="token punctuation">.</span><span class="token function">at</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">.</span>boundingRect<span class="token punctuation">;</span>
+        r<span class="token punctuation">.</span>x <span class="token operator">+</span><span class="token operator">=</span> <span class="token number">320</span><span class="token punctuation">;</span> r<span class="token punctuation">.</span>y <span class="token operator">+</span><span class="token operator">=</span> <span class="token number">240</span><span class="token punctuation">;</span>
+        c<span class="token punctuation">.</span><span class="token function">setHsb</span><span class="token punctuation">(</span>i <span class="token operator">*</span> <span class="token number">64</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">ofSetColor</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">ofDrawRectangle</span><span class="token punctuation">(</span>r<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">void</span> ofApp<span class="token operator">::</span><span class="token function">keyPressed</span><span class="token punctuation">(</span><span class="token keyword">int</span> key<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    bLearnBackground <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h1></h1>
+</div></div></div><div id="methods"><hr><section name="draw" id="draw" class="mb2"><div class="method mb2"><h3 class="f3 title">draw( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">draw</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Draws the detected contours at 0, 0.</p>
+</div></div><hr></section><section name="draw" id="draw" class="mb2"><div class="method mb2"><h3 class="f3 title">draw( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">draw</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> x<span class="token punctuation">,</span> <span class="token keyword">float</span> y</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Draws the detected contours into the coordintes passed in.</p>
+</div></div><hr></section><section name="draw" id="draw" class="mb2"><div class="method mb2"><h3 class="f3 title">draw( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">draw</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> x<span class="token punctuation">,</span> <span class="token keyword">float</span> y<span class="token punctuation">,</span> <span class="token keyword">float</span> w<span class="token punctuation">,</span> <span class="token keyword">float</span> h</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Draws the detected contours at the point passed in with the height and width, scaling as necessary.</p>
+</div></div><hr></section><section name="draw" id="draw" class="mb2"><div class="method mb2"><h3 class="f3 title">draw( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">draw</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofPoint <span class="token operator">&</span>point</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Draws the detected contours at the point passed in.</p>
+</div></div><hr></section><section name="draw" id="draw" class="mb2"><div class="method mb2"><h3 class="f3 title">draw( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">draw</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofRectangle <span class="token operator">&</span>rect</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Draws the detected contours into the ofRectangle passed in scaling if necessary.</p>
+</div></div><hr></section><section name="findContours" id="findContours" class="mb2"><div class="method mb2"><h3 class="f3 title">findContours( <code class="pink">...</code> )</h3><code><span class="token keyword">int  </span><span class="token function">findContours</span><span class="token punctuation">(</span><code class="token boolean">ofxCvGrayscaleImage <span class="token operator">&</span>input<span class="token punctuation">,</span> <span class="token keyword">int</span> minArea<span class="token punctuation">,</span> <span class="token keyword">int</span> maxArea<span class="token punctuation">,</span> <span class="token keyword">int</span> nConsidered<span class="token punctuation">,</span> <span class="token keyword">bool</span> bFindHoles<span class="token punctuation">,</span> <span class="token keyword">bool</span> bUseApproximation<span class="token operator">=</span><span class="token boolean">true</span></code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>This function tries to find distinct regions (blobs) in the given ofxCvGrayscaleImage. It returns the number of blobs found.</p>
+<p>input</p>
+<p>This is an ofxCvGrayscaleImage reference (ofxCvGrayscaleImage&) to a grayscale image that will be searched for blobs. Note that grayscale images only are considered. So if you're using a color image, you'll need to highlight the particular color that you're looking for beforehand. You can do this by looping through the pixels and changing the color values of any pixel with the desired color to white or black, for instance.</p>
+<p>minArea</p>
+<p>This is the smallest potential blob size as measured in pixels that will be considered as a blob for the application.</p>
+<p>maxArea</p>
+<p>This is the largest potential blob size as measured in pixels that will be considered as a blob for the application.</p>
+<p>nConsidered</p>
+<p>This is the maximum number of blobs to consider. This is an important parameter to get right, because you can save yourself a lot of processing time and possibly speed up the performance of your application by pruning this number down. An interface that uses a user's fingers, for instance, needs to look only for 5 points, one for each finger. One that uses a user's hands needs to look only for two points.</p>
+<p>bFindHoles</p>
+<p>This tells the contour finder to try to determine whether there are holes within any blob detected. This is computationally expensive but sometimes necessary.</p>
+<p>bUseApproximation</p>
+<p>This tells the contour finder to use approximation and to set the minimum number of points needed to represent a certain blob; for instance, a straight line would be represented by only two points if bUseApproximation is set to true.</p>
+</div></div><hr></section><section name="getHeight" id="getHeight" class="mb2"><div class="method mb2"><h3 class="f3 title">getHeight( <!----> )</h3><code><span class="token keyword">float  </span><span class="token function">getHeight</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Returns the height of the area that detection is being performed upon.</p>
+</div></div><hr></section><section name="getWidth" id="getWidth" class="mb2"><div class="method mb2"><h3 class="f3 title">getWidth( <!----> )</h3><code><span class="token keyword">float  </span><span class="token function">getWidth</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Returns the height of the area that detection is being performed upon.</p>
+</div></div><hr></section><section name="ofxCvContourFinder" id="ofxCvContourFinder" class="mb2"><div class="method mb2"><h3 class="f3 title">ofxCvContourFinder( <!----> )</h3><code><!----><span class="token function">ofxCvContourFinder</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Constructor.</p>
+</div></div><hr></section><section name="reset" id="reset" class="mb2"><div class="method mb2"><h3 class="f3 title">reset( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">reset</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="resetAnchor" id="resetAnchor" class="mb2"><div class="method mb2"><h3 class="f3 title">resetAnchor( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">resetAnchor</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Resets the anchor point, restoring it to 0,0.</p>
+</div></div><hr></section><section name="setAnchorPercent" id="setAnchorPercent" class="mb2"><div class="method mb2"><h3 class="f3 title">setAnchorPercent( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setAnchorPercent</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> xPct<span class="token punctuation">,</span> <span class="token keyword">float</span> yPct</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Sets the anchor point as a percentage.</p>
+</div></div><hr></section><section name="setAnchorPoint" id="setAnchorPoint" class="mb2"><div class="method mb2"><h3 class="f3 title">setAnchorPoint( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setAnchorPoint</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Sets an anchor point for the drawing.</p>
+</div></div><hr></section><section name="~ofxCvContourFinder" id="~ofxCvContourFinder" class="mb2"><div class="method mb2"><h3 class="f3 title">~ofxCvContourFinder( <!----> )</h3><code><!----><span class="token function">~ofxCvContourFinder</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Destructor.</p>
+</div></div><hr></section></div></div></div></div><div id="side-menu"><div id="params"><h4 class="f3">Variables</h4><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">int </span><span>_height</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">int </span><span>_width</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofPoint </span><span>anchor</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>bAnchorIsPct</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofxCvBlob </span><span>blobs</span><span class="token comment"></span></div><div class="desc"><p>The vector ofxCvBlob blobs returns each blob that was found in the image. These should, if all has gone well, correlate to the blobs in previous examples so that you can begin to perform tracking.</p>
+<pre><code class="language-{.cpp}"><span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> contourFinder<span class="token punctuation">.</span>nBlobs<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	ofxCvBlob blob <span class="token operator">=</span> contourFinder<span class="token punctuation">.</span>blobs<span class="token punctuation">.</span><span class="token function">at</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token comment" spellcheck="true">// do something fun with blob</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>or</p>
+<pre><code class="language-{.cpp}">vector<span class="token operator">&lt;</span>ofxCvBlob</code></pre>
+</div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">CvMemStorage* </span><span>contour_storage</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofxCvGrayscaleImage </span><span>inputCopy</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">CvMoments* </span><span>myMoments</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">int </span><span>nBlobs</span><span class="token comment"></span></div><div class="desc"><p>This is an int that returns the number of blobs found by the contour finder.</p>
+<pre><code class="language-{.cpp}"><span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> contourFinder<span class="token punctuation">.</span>nBlobs<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    contourFinder<span class="token punctuation">.</span>blobs<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">draw</span><span class="token punctuation">(</span><span class="token number">360</span><span class="token punctuation">,</span><span class="token number">540</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">CvMemStorage* </span><span>storage</span><span class="token comment"></span></div><div class="desc"></div></div></code></div><div id="methods-list"><h4 class="f3">Methods</h4><div class="anchor"><code><a href="#draw" class="pink"><span>draw</span><span>(5)</span></a></code></div><div class="anchor"><code><a href="#findContours" class="pink"><span>findContours</span><!----></a></code></div><div class="anchor"><code><a href="#getHeight" class="pink"><span>getHeight</span><!----></a></code></div><div class="anchor"><code><a href="#getWidth" class="pink"><span>getWidth</span><!----></a></code></div><div class="anchor"><code><a href="#ofxCvContourFinder" class="pink"><span>ofxCvContourFinder</span><!----></a></code></div><div class="anchor"><code><a href="#reset"><span>reset</span><!----></a></code></div><div class="anchor"><code><a href="#resetAnchor" class="pink"><span>resetAnchor</span><!----></a></code></div><div class="anchor"><code><a href="#setAnchorPercent" class="pink"><span>setAnchorPercent</span><!----></a></code></div><div class="anchor"><code><a href="#setAnchorPoint" class="pink"><span>setAnchorPoint</span><!----></a></code></div><div class="anchor"><code><a href="#~ofxCvContourFinder" class="pink"><span>~ofxCvContourFinder</span><!----></a></code></div></div><div id="see-also" filename="ofxCvContourFinder.markdown" absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/addons/ofxOpenCv/ofxCvContourFinder.markdown" route="/documentation/addons/ofxOpenCv/ofxCvContourFinder.markdown" dir="../ofSite/documentation/addons/ofxOpenCv" ext="markdown" type="page" parent="2084" breadcrumbs="2084,1993,1968" siblings="" translations="[object Object]" class="see-also"><h4 class="f3">See also</h4><div class="also"><a href="/addons/ofxOpenCv/src/ofxCvContourFinder_h"><span class="origin">addons</span><span class="name">ofxCvContourFinder.h</span></a></div><div class="also"><a href="/addons/ofxOpenCv/src/ofxCvContourFinder_cpp"><span class="origin">addons</span><span class="name">ofxCvContourFinder.cpp</span></a></div></div></div></div></div><textarea rows="0" class="markdown-editor" style="display:none">#class ofxCvContourFinder
+
+
+&lt;!--
+_visible: True_
+_advanced: False_
+_istemplated: False_
+_extends: ofBaseDraws_
+-->
+
+##InlineDescription
+
+
+
+
+
+
+##Description
+
+The contour finder allows you to detect objects in a scene by looking at contrast between adjoining pixels. For instance, in the image below, the hand is visible and trackable because the contrast between the wall behind it and the arm is quite distinct:
+
+![contour](contour.png "Detecting contours in image")
+
+You can make contour detection more robust by comparing the current image to a background image and subtracting the background from the current image. This enables you to examine the incoming image without the background image data, reducing the amount of data that needs to be inspected.
+
+The contourFinder requires an ofxCvGrayscaleImage be passed to it, so you'll need to create one from either a video or camera feed that you're using. An example of working with a camera is shown here.
+
+In your ofApp header file:
+
+~~~~{.h}
+#pragma once
+
+#include "ofMain.h"
+#include "ofxOpenCv.h"
+
+class ofApp : public ofBaseApp{
+
+	public:
+		void setup();
+		void update();
+		void draw();
+		void keyPressed(int key);
+		
+		bool bLearnBackground;
+		ofVideoGrabber vidGrabber;
+		ofxCvColorImage colorImg;
+		ofxCvGrayscaleImage grayImage, grayBg, grayDiff;
+		ofxCvContourFinder contourFinder;
+};
+~~~~
+
+In your ofApp.cpp file: 
+~~~~{.cpp}
+#include "ofApp.h"
+
+void ofApp::setup(){
+    
+    bLearnBackground = false;
+    
+    vidGrabber.setVerbose(true);
+    vidGrabber.initGrabber(320,240);
+    
+    colorImg.allocate(320,240);
+    grayImage.allocate(320,240);
+    grayBg.allocate(320,240);
+    grayDiff.allocate(320,240);
+}
+
+void ofApp::update(){
+    vidGrabber.update();
+    //do we have a new frame?
+    if (vidGrabber.isFrameNew()){
+        colorImg.setFromPixels(vidGrabber.getPixels());
+        grayImage = colorImg; // convert our color image to a grayscale image
+        if (bLearnBackground == true) {
+            grayBg = grayImage; // update the background image
+            bLearnBackground = false;
+        }
+        grayDiff.absDiff(grayBg, grayImage);
+        grayDiff.threshold(30);
+        contourFinder.findContours(grayDiff, 5, (340*240)/4, 4, false, true);
+    }
+}
+
+void ofApp::draw(){
+    ofSetHexColor(0xffffff);
+    colorImg.draw(0, 0, 320, 240);
+    grayDiff.draw(0, 240, 320, 240);
+    ofDrawRectangle(320, 0, 320, 240);
+    contourFinder.draw(320, 0, 320, 240);
+    ofColor c(255, 255, 255);
+    for(int i = 0; i &lt; contourFinder.nBlobs; i++) {
+        ofRectangle r = contourFinder.blobs.at(i).boundingRect;
+        r.x += 320; r.y += 240;
+        c.setHsb(i * 64, 255, 255);
+        ofSetColor(c);
+        ofDrawRectangle(r);
+    }
+}
+
+void ofApp::keyPressed(int key) {
+    bLearnBackground = true;
+}
+~~~~
+
+
+
+
+
+##Methods
+
+
+
+###void draw()
+
+&lt;!--
+_syntax: draw()_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Draws the detected contours at 0, 0.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void draw(x, y)
+
+&lt;!--
+_syntax: draw(x, y)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Draws the detected contours into the coordintes passed in.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void draw(x, y, w, h)
+
+&lt;!--
+_syntax: draw(x, y, w, h)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float w, float h_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Draws the detected contours at the point passed in with the height and width, scaling as necessary.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void draw(&point)
+
+&lt;!--
+_syntax: draw(&point)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: const ofPoint &point_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Draws the detected contours at the point passed in.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void draw(&rect)
+
+&lt;!--
+_syntax: draw(&rect)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: const ofRectangle &rect_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Draws the detected contours into the ofRectangle passed in scaling if necessary.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int findContours(&input, minArea, maxArea, nConsidered, bFindHoles, bUseApproximation = true)
+
+&lt;!--
+_syntax: findContours(&input, minArea, maxArea, nConsidered, bFindHoles, bUseApproximation = true)_
+_name: findContours_
+_returns: int_
+_returns_description: _
+_parameters: ofxCvGrayscaleImage &input, int minArea, int maxArea, int nConsidered, bool bFindHoles, bool bUseApproximation=true_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+This function tries to find distinct regions (blobs) in the given ofxCvGrayscaleImage. It returns the number of blobs found.
+
+input
+
+This is an ofxCvGrayscaleImage reference (ofxCvGrayscaleImage&) to a grayscale image that will be searched for blobs. Note that grayscale images only are considered. So if you're using a color image, you'll need to highlight the particular color that you're looking for beforehand. You can do this by looping through the pixels and changing the color values of any pixel with the desired color to white or black, for instance.
+
+minArea
+
+This is the smallest potential blob size as measured in pixels that will be considered as a blob for the application.
+
+maxArea
+
+This is the largest potential blob size as measured in pixels that will be considered as a blob for the application.
+
+nConsidered
+
+This is the maximum number of blobs to consider. This is an important parameter to get right, because you can save yourself a lot of processing time and possibly speed up the performance of your application by pruning this number down. An interface that uses a user's fingers, for instance, needs to look only for 5 points, one for each finger. One that uses a user's hands needs to look only for two points.
+
+bFindHoles
+
+This tells the contour finder to try to determine whether there are holes within any blob detected. This is computationally expensive but sometimes necessary.
+
+bUseApproximation
+
+This tells the contour finder to use approximation and to set the minimum number of points needed to represent a certain blob; for instance, a straight line would be represented by only two points if bUseApproximation is set to true.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float getHeight()
+
+&lt;!--
+_syntax: getHeight()_
+_name: getHeight_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Returns the height of the area that detection is being performed upon.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float getWidth()
+
+&lt;!--
+_syntax: getWidth()_
+_name: getWidth_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Returns the height of the area that detection is being performed upon.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofxCvContourFinder()
+
+&lt;!--
+_syntax: ofxCvContourFinder()_
+_name: ofxCvContourFinder_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Constructor.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void reset()
+
+&lt;!--
+_syntax: reset()_
+_name: reset_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void resetAnchor()
+
+&lt;!--
+_syntax: resetAnchor()_
+_name: resetAnchor_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Resets the anchor point, restoring it to 0,0.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setAnchorPercent(xPct, yPct)
+
+&lt;!--
+_syntax: setAnchorPercent(xPct, yPct)_
+_name: setAnchorPercent_
+_returns: void_
+_returns_description: _
+_parameters: float xPct, float yPct_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Sets the anchor point as a percentage.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setAnchorPoint(x, y)
+
+&lt;!--
+_syntax: setAnchorPoint(x, y)_
+_name: setAnchorPoint_
+_returns: void_
+_returns_description: _
+_parameters: int x, int y_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Sets an anchor point for the drawing. 
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ~ofxCvContourFinder()
+
+&lt;!--
+_syntax: ~ofxCvContourFinder()_
+_name: ~ofxCvContourFinder_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Destructor.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+##Variables
+
+
+
+###int _height
+
+&lt;!--
+_name: _height_
+_type: int_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int _width
+
+&lt;!--
+_name: _width_
+_type: int_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofPoint anchor
+
+&lt;!--
+_name: anchor_
+_type: ofPoint_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool bAnchorIsPct
+
+&lt;!--
+_name: bAnchorIsPct_
+_type: bool_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofxCvBlob blobs
+
+&lt;!--
+_name: blobs_
+_type: ofxCvBlob_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+The vector ofxCvBlob blobs returns each blob that was found in the image. These should, if all has gone well, correlate to the blobs in previous examples so that you can begin to perform tracking.
+
+~~~~{.cpp}
+for(int i = 0; i &lt; contourFinder.nBlobs; i++) {
+	ofxCvBlob blob = contourFinder.blobs.at(i);
+	// do something fun with blob
+}
+~~~~
+
+or
+
+~~~~{.cpp}
+vector&lt;ofxCvBlob>::iterator bit = contourFinder.blobs.begin();
+while( bit != contourFinder.blobs.end())
+	ofxCvBlob blob = *(bit);
+	// do something with blob
+	++bit;
+}
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###CvMemStorage * contour_storage
+
+&lt;!--
+_name: contour_storage_
+_type: CvMemStorage *_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###vector&lt; CvSeq * > cvSeqBlobs
+
+&lt;!--
+_name: cvSeqBlobs_
+_type: vector&lt; CvSeq * >_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofxCvGrayscaleImage inputCopy
+
+&lt;!--
+_name: inputCopy_
+_type: ofxCvGrayscaleImage_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###CvMoments * myMoments
+
+&lt;!--
+_name: myMoments_
+_type: CvMoments *_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int nBlobs
+
+&lt;!--
+_name: nBlobs_
+_type: int_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+This is an int that returns the number of blobs found by the contour finder.
+
+~~~~{.cpp}
+for (int i = 0; i &lt; contourFinder.nBlobs; i++){
+    contourFinder.blobs[i].draw(360,540);
+}
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###CvMemStorage * storage
+
+&lt;!--
+_name: storage_
+_type: CvMemStorage *_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+</textarea></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1586012716389/documentation/addons/ofxOpenCv/ofxCvContourFinder/payload.js"></script><script src="/_nuxt/5f71eaca0bd2f1a0f939.js" defer></script><script src="/_nuxt/35a90d914f539af1362f.js" defer></script><script src="/_nuxt/906a3ca0fb13ed3c6651.js" defer></script><script src="/_nuxt/b673915e8a08acf593e8.js" defer></script><script src="/_nuxt/bf355f21967a23c26c07.js" defer></script>
+  </body>
+</html>

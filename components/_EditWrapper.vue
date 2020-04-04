@@ -32,7 +32,7 @@
           span Save
         p.error {{errorMessage}}
       .actions( v-else-if="canEdit && page.static" )
-        nuxt-link.button(to="/ofDocs/contribute/")
+        nuxt-link.button(to="/ofdocs/contribute/")
           i.ico edit
           span Edit
     .rendered( v-show="!editMode" )

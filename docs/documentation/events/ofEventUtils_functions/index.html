@@ -1,0 +1,2196 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>ofEventUtils (functions) | documentation | ofDocs</title><meta data-n-head="ssr" data-hid="description" name="description" content="openFrameworks documentation and examples browser"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="openFrameworks documentation and examples browser" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="ofEventUtils (functions) | documentation | ofDocs" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="/files/images/ofw-logo.png" vmid="og:image"><link rel="preload" href="/_nuxt/5f71eaca0bd2f1a0f939.js" as="script"><link rel="preload" href="/_nuxt/906a3ca0fb13ed3c6651.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/b673915e8a08acf593e8.js" as="script"><link rel="preload" href="/_nuxt/46e8fcacdadb233d9fb6.css" as="style"><link rel="preload" href="/_nuxt/bf355f21967a23c26c07.js" as="script"><link rel="preload" href="/_nuxt/35a90d914f539af1362f.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/46e8fcacdadb233d9fb6.css">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app"><div id="menu"><div class="menu-inner"><div id="settings"></div><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><svg version="1.1" viewbox="0 0 110 58" width="110px" height="58px" enable-background="0 0 110 58" xml:space="preserve" class="logo"><g><path d="M58,29 C58,13 45,0 29,0 C13,0 0,13 0,29 C0,45 13,58 29,58 C45,58 58,45 58,29 Z"></path><rect x="59" y="0" width="25" height="58"></rect><rect x="85" y="26" width="15" height="15"></rect><path d="M85,0 L110,0 L85,25 L85,0 Z"></path></g></svg><div class="txt"><span class="docs f7 questrial">Docs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343							c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88							c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593							c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789							C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><!----></div><div id="lists" class="menu-inner mt1 mb2"><div class="inner"></div></div></div><div class="menu-bottom"><div class="inner"><button class="button"><!----><span><span class="ico">nights_stay</span></span></button></div></div></div><div id="document"><div id="renderer" class="main page"><div absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/events/ofEventUtils_functions.markdown" route="/documentation/events/ofEventUtils_functions.markdown" dir="../ofSite/documentation/events" ext="markdown" type="page" id="2184" parent="2172" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/" class="pink nuxt-link-active">documentation </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/events/" class="pink nuxt-link-active">events </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link selector"><span class="name">ofEventUtils (functions)</span><span class="chevron bottom"></span><select><option value="/documentation/events/ofBaseEvent">ofBaseEvent</option><option value="/documentation/events/ofCoreEvents">ofCoreEvents</option><option value="/documentation/events/ofDragInfo">ofDragInfo</option><option value="/documentation/events/ofEntryEventArgs">ofEntryEventArgs</option><option value="/documentation/events/ofEvent">ofEvent</option><option value="/documentation/events/ofEventArgs">ofEventArgs</option><option value="/documentation/events/ofEventAttendedException">ofEventAttendedException</option><option value="/documentation/events/ofEventListener">ofEventListener</option><option value="/documentation/events/ofEventListeners">ofEventListeners</option><option value="/documentation/events/ofEvents_functions">ofEvents (functions)</option><option value="/documentation/events/ofEventUtils_functions">ofEventUtils (functions)</option><option value="/documentation/events/ofFastEvent">ofFastEvent</option><option value="/documentation/events/ofKeyEventArgs">ofKeyEventArgs</option><option value="/documentation/events/ofMessage">ofMessage</option><option value="/documentation/events/ofMouseEventArgs">ofMouseEventArgs</option><option value="/documentation/events/ofResizeEventArgs">ofResizeEventArgs</option><option value="/documentation/events/ofTouchEventArgs">ofTouchEventArgs</option><option value="/documentation/events/ofWindowPosEventArgs">ofWindowPosEventArgs</option></select></span><!----></span></span></div></div></div><div class="editable-wrapper"><div class="header inner"><h1 class="page-title questrial"><span class="f7"><!----><span>ofEventUtils (functions)</span></span><span class="f3"></span></h1><div class="actions"><a href="/ofdocs/contribute/" class="button"><i class="ico">edit</i><span>Edit</span></a></div></div><div class="rendered"><div id="documentation-page" static="true"><div id="offset-page"><div id="doc-body" class="markdown"><div class="inner"><div id="description"><!----></div><div id="methods"><hr><section name="ofAddListener" id="ofAddListener" class="mb2"><div class="method mb2"><h3 class="f3 title">ofAddListener( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">ofAddListener</span><span class="token punctuation">(</span><code class="token boolean">EventType <span class="token operator">&</span>event<span class="token punctuation">,</span> <span class="token keyword">void</span> <span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">void</span> <span class="token operator">*</span><span class="token punctuation">,</span> ArgumentsType <span class="token operator">&</span><span class="token punctuation">)</span> listenerFunction<span class="token punctuation">,</span> <span class="token keyword">int</span> prio</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofAddListener" id="ofAddListener" class="mb2"><div class="method mb2"><h3 class="f3 title">ofAddListener( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">ofAddListener</span><span class="token punctuation">(</span><code class="token boolean">EventType <span class="token operator">&</span>event<span class="token punctuation">,</span> <span class="token keyword">bool</span> <span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">void</span> <span class="token operator">*</span><span class="token punctuation">,</span> ArgumentsType <span class="token operator">&</span><span class="token punctuation">)</span> listenerFunction<span class="token punctuation">,</span> <span class="token keyword">int</span> prio</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofAddListener" id="ofAddListener" class="mb2"><div class="method mb2"><h3 class="f3 title">ofAddListener( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">ofAddListener</span><span class="token punctuation">(</span><code class="token boolean">EventType <span class="token operator">&</span>event<span class="token punctuation">,</span> ListenerClass <span class="token operator">*</span>listener<span class="token punctuation">,</span> <span class="token keyword">bool</span> <span class="token punctuation">(</span>ListenerClass<span class="token operator">::</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">void</span> <span class="token operator">*</span><span class="token punctuation">,</span> ArgumentsType <span class="token operator">&</span><span class="token punctuation">)</span> listenerMethod<span class="token punctuation">,</span> <span class="token keyword">int</span> prio</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Allows you to add a listener method to an event, use it whenever you want a class to be notified about an event.</p>
+<p>This is a templated function so the types of the parameters are not predefined types but can be any type as long as the method is one of the listener class' and it has a particular signature.</p>
+<p>The signature of the listener method depends on the event type. Every event is defined as:</p>
+<pre><code class="language-{.cpp}">ofEvent<span class="token operator">&lt;</span>type</code></pre>
+</div></div><hr></section><section name="ofAddListener" id="ofAddListener" class="mb2"><div class="method mb2"><h3 class="f3 title">ofAddListener( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">ofAddListener</span><span class="token punctuation">(</span><code class="token boolean">EventType <span class="token operator">&</span>event<span class="token punctuation">,</span> ListenerClass <span class="token operator">*</span>listener<span class="token punctuation">,</span> <span class="token keyword">void</span> <span class="token punctuation">(</span>ListenerClass<span class="token operator">::</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">void</span> <span class="token operator">*</span><span class="token punctuation">,</span> ArgumentsType <span class="token operator">&</span><span class="token punctuation">)</span> listenerMethod<span class="token punctuation">,</span> <span class="token keyword">int</span> prio</code><span class="token punctuation">)</span></code><div class="short"><p>register any method of any class to an event.</p>
+<p>the method must provide one of the following
+signatures:
+void method(ArgumentsType & args)
+void method(const void * sender, ArgumentsType &args)
+ie:
+ofAddListener(addon.newIntEvent, this, &Class::method)</p>
+</div><div class="desc"><p>Allows you to add a listener method to an event, use it whenever you want a class to be notified about an event.</p>
+<p>This is a templated function so the types of the parameters are not predefined types but can be any type as long as the method is one of the listener class' and it has a particular signature.</p>
+<p>The signature of the listener method depends on the event type. Every event is defined as:</p>
+<pre><code class="language-{.cpp}">ofEvent<span class="token operator">&lt;</span>type</code></pre>
+</div></div><hr></section><section name="ofAddListener" id="ofAddListener" class="mb2"><div class="method mb2"><h3 class="f3 title">ofAddListener( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">ofAddListener</span><span class="token punctuation">(</span><code class="token boolean">EventType <span class="token operator">&</span>event<span class="token punctuation">,</span> ListenerClass <span class="token operator">*</span>listener<span class="token punctuation">,</span> <span class="token keyword">bool</span> <span class="token punctuation">(</span>ListenerClass<span class="token operator">::</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">(</span>ArgumentsType <span class="token operator">&</span><span class="token punctuation">)</span> listenerMethod<span class="token punctuation">,</span> <span class="token keyword">int</span> prio</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Allows you to add a listener method to an event, use it whenever you want a class to be notified about an event.</p>
+<p>This is a templated function so the types of the parameters are not predefined types but can be any type as long as the method is one of the listener class' and it has a particular signature.</p>
+<p>The signature of the listener method depends on the event type. Every event is defined as:</p>
+<pre><code class="language-{.cpp}">ofEvent<span class="token operator">&lt;</span>type</code></pre>
+</div></div><hr></section><section name="ofAddListener" id="ofAddListener" class="mb2"><div class="method mb2"><h3 class="f3 title">ofAddListener( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">ofAddListener</span><span class="token punctuation">(</span><code class="token boolean">EventType <span class="token operator">&</span>event<span class="token punctuation">,</span> ListenerClass <span class="token operator">*</span>listener<span class="token punctuation">,</span> <span class="token keyword">void</span> <span class="token punctuation">(</span>ListenerClass<span class="token operator">::</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">(</span>ArgumentsType <span class="token operator">&</span><span class="token punctuation">)</span> listenerMethod<span class="token punctuation">,</span> <span class="token keyword">int</span> prio</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Allows you to add a listener method to an event, use it whenever you want a class to be notified about an event.</p>
+<p>This is a templated function so the types of the parameters are not predefined types but can be any type as long as the method is one of the listener class' and it has a particular signature.</p>
+<p>The signature of the listener method depends on the event type. Every event is defined as:</p>
+<pre><code class="language-{.cpp}">ofEvent<span class="token operator">&lt;</span>type</code></pre>
+</div></div><hr></section><section name="ofAddListener" id="ofAddListener" class="mb2"><div class="method mb2"><h3 class="f3 title">ofAddListener( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">ofAddListener</span><span class="token punctuation">(</span><code class="token boolean">EventType <span class="token operator">&</span>event<span class="token punctuation">,</span> <span class="token keyword">void</span> <span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">(</span>ArgumentsType <span class="token operator">&</span><span class="token punctuation">)</span> listenerFunction<span class="token punctuation">,</span> <span class="token keyword">int</span> prio</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofAddListener" id="ofAddListener" class="mb2"><div class="method mb2"><h3 class="f3 title">ofAddListener( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">ofAddListener</span><span class="token punctuation">(</span><code class="token boolean">EventType <span class="token operator">&</span>event<span class="token punctuation">,</span> <span class="token keyword">bool</span> <span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">(</span>ArgumentsType <span class="token operator">&</span><span class="token punctuation">)</span> listenerFunction<span class="token punctuation">,</span> <span class="token keyword">int</span> prio</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofNotifyEvent" id="ofNotifyEvent" class="mb2"><div class="method mb2"><h3 class="f3 title">ofNotifyEvent( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">ofNotifyEvent</span><span class="token punctuation">(</span><code class="token boolean">EventType <span class="token operator">&</span>event<span class="token punctuation">,</span> <span class="token keyword">const</span> ArgumentsType <span class="token operator">&</span>args</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Notifies an event, what makes all it's registered method listeners to be called with the same argument.</p>
+<p>This is a templated function so the type of the parameters is not predefined and can be anything as long as the listener methods use the same type for the parameter.</p>
+<p>The arguments are passed to the listeners by reference so they can modify them.</p>
+<p>The listener methods are called in the same order they were registered using ofAddListener.</p>
+<p>With this version the listeners also receive a pointer to the notifying class in case the listener method specifies that parameter.</p>
+<p>For instance, borrowing from the examples/events/SimpleEventsExample, if we make a class that will broadcast an event:</p>
+<pre><code class="language-{.cpp}">
+<span class="token keyword">class</span> <span class="token class-name">SimpleEventNotifier</span> <span class="token punctuation">{</span>
+	ofEvent<span class="token operator">&lt;</span><span class="token keyword">float</span></code></pre>
+</div></div><hr></section><section name="ofNotifyEvent" id="ofNotifyEvent" class="mb2"><div class="method mb2"><h3 class="f3 title">ofNotifyEvent( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">ofNotifyEvent</span><span class="token punctuation">(</span><code class="token boolean">EventType <span class="token operator">&</span>event<span class="token punctuation">,</span> ArgumentsType <span class="token operator">&</span>args</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Notifies an event, what makes all it's registered method listeners to be called with the same argument.</p>
+<p>This is a templated function so the type of the parameters is not predefined and can be anything as long as the listener methods use the same type for the parameter.</p>
+<p>The arguments are passed to the listeners by reference so they can modify them.</p>
+<p>The listener methods are called in the same order they were registered using ofAddListener.</p>
+<p>With this version the listeners also receive a pointer to the notifying class in case the listener method specifies that parameter.</p>
+<p>For instance, borrowing from the examples/events/SimpleEventsExample, if we make a class that will broadcast an event:</p>
+<pre><code class="language-{.cpp}">
+<span class="token keyword">class</span> <span class="token class-name">SimpleEventNotifier</span> <span class="token punctuation">{</span>
+	ofEvent<span class="token operator">&lt;</span><span class="token keyword">float</span></code></pre>
+</div></div><hr></section><section name="ofNotifyEvent" id="ofNotifyEvent" class="mb2"><div class="method mb2"><h3 class="f3 title">ofNotifyEvent( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">ofNotifyEvent</span><span class="token punctuation">(</span><code class="token boolean">EventType <span class="token operator">&</span>event<span class="token punctuation">,</span> <span class="token keyword">const</span> ArgumentsType <span class="token operator">&</span>args<span class="token punctuation">,</span> SenderType <span class="token operator">*</span>sender</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Notifies an event, what makes all it's registered method listeners to be called with the same argument.</p>
+<p>This is a templated function so the type of the parameters is not predefined and can be anything as long as the listener methods use the same type for the parameter.</p>
+<p>The arguments are passed to the listeners by reference so they can modify them.</p>
+<p>The listener methods are called in the same order they were registered using ofAddListener.</p>
+<p>With this version the listeners also receive an event args object that can be used to send additional data to the listening class.</p>
+<p>For instance, borrowing from the examples/events/SimpleEventsExample, if we make a class that will broadcast an event:</p>
+<pre><code class="language-{.cpp}">
+<span class="token keyword">class</span> <span class="token class-name">SimpleEventNotifier</span> <span class="token punctuation">{</span>
+	ofEvent<span class="token operator">&lt;</span><span class="token keyword">float</span></code></pre>
+</div></div><hr></section><section name="ofNotifyEvent" id="ofNotifyEvent" class="mb2"><div class="method mb2"><h3 class="f3 title">ofNotifyEvent( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">ofNotifyEvent</span><span class="token punctuation">(</span><code class="token boolean">EventType <span class="token operator">&</span>event<span class="token punctuation">,</span> ArgumentsType <span class="token operator">&</span>args<span class="token punctuation">,</span> SenderType <span class="token operator">*</span>sender</code><span class="token punctuation">)</span></code><div class="short"><p>notifies an event so all the registered listeners
+get called</p>
+<p>ie:
+ofNotifyEvent(addon.newIntEvent, intArgument, this)</p>
+<p>or in case there's no sender:
+ofNotifyEvent(addon.newIntEvent, intArgument)</p>
+<p>@returns: true in case any listener attended the event</p>
+</div><div class="desc"><p>Notifies an event, what makes all it's registered method listeners to be called with the same argument.</p>
+<p>This is a templated function so the type of the parameters is not predefined and can be anything as long as the listener methods use the same type for the parameter.</p>
+<p>The arguments are passed to the listeners by reference so they can modify them.</p>
+<p>The listener methods are called in the same order they were registered using ofAddListener.</p>
+<p>For instance, borrowing from the examples/events/SimpleEventsExample, if we make a class that will broadcast an event:</p>
+<pre><code class="language-{.cpp}">
+<span class="token keyword">class</span> <span class="token class-name">SimpleEventNotifier</span> <span class="token punctuation">{</span>
+	ofEvent notify<span class="token punctuation">;</span>	<span class="token comment" spellcheck="true">// will send an event with no data</span>
+
+	<span class="token keyword">void</span> <span class="token function">sendEvent</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token function">ofNotifyEvent</span><span class="token punctuation">(</span>notify<span class="token punctuation">)</span><span class="token punctuation">;</span> 
+	<span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+</code></pre>
+<p>We can listen for that in our ofApp:</p>
+<pre><code class="language-{.cpp}">SimpleEventNotifier notifier<span class="token punctuation">;</span>
+<span class="token keyword">void</span> ofApp<span class="token operator">::</span><span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token function">ofAddListener</span><span class="token punctuation">(</span>notifier<span class="token punctuation">.</span>notify<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">,</span> <span class="token operator">&</span>ofApp<span class="token operator">::</span>haveBeenNotified<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">void</span> ofApp<span class="token operator">::</span><span class="token function">haveBeenNotified</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token function">ofLog</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token string">" event at "</span> <span class="token operator">&lt;&lt;</span> <span class="token function">ofGetElapsedTimef</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre>
+</div></div><hr></section><section name="ofRemoveListener" id="ofRemoveListener" class="mb2"><div class="method mb2"><h3 class="f3 title">ofRemoveListener( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">ofRemoveListener</span><span class="token punctuation">(</span><code class="token boolean">EventType <span class="token operator">&</span>event<span class="token punctuation">,</span> <span class="token keyword">void</span> <span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">void</span> <span class="token operator">*</span><span class="token punctuation">,</span> ArgumentsType <span class="token operator">&</span><span class="token punctuation">)</span> listenerFunction<span class="token punctuation">,</span> <span class="token keyword">int</span> prio</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofRemoveListener" id="ofRemoveListener" class="mb2"><div class="method mb2"><h3 class="f3 title">ofRemoveListener( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">ofRemoveListener</span><span class="token punctuation">(</span><code class="token boolean">EventType <span class="token operator">&</span>event<span class="token punctuation">,</span> <span class="token keyword">bool</span> <span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">void</span> <span class="token operator">*</span><span class="token punctuation">,</span> ArgumentsType <span class="token operator">&</span><span class="token punctuation">)</span> listenerFunction<span class="token punctuation">,</span> <span class="token keyword">int</span> prio</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofRemoveListener" id="ofRemoveListener" class="mb2"><div class="method mb2"><h3 class="f3 title">ofRemoveListener( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">ofRemoveListener</span><span class="token punctuation">(</span><code class="token boolean">EventType <span class="token operator">&</span>event<span class="token punctuation">,</span> ListenerClass <span class="token operator">*</span>listener<span class="token punctuation">,</span> <span class="token keyword">bool</span> <span class="token punctuation">(</span>ListenerClass<span class="token operator">::</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">void</span> <span class="token operator">*</span><span class="token punctuation">,</span> ArgumentsType <span class="token operator">&</span><span class="token punctuation">)</span> listenerMethod<span class="token punctuation">,</span> <span class="token keyword">int</span> prio</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Removes a listener method from an event. Use it whenever you want a class to stop being notified about an event after having registered it to the method with ofAddListener.</p>
+<p>Don't forget to call this before deleting any instance that is listening to an event, if not the event will try to notify a non existent instance and the application will crash.</p>
+<p>The syntax is just the same as that of ofAddListener.</p>
+</div></div><hr></section><section name="ofRemoveListener" id="ofRemoveListener" class="mb2"><div class="method mb2"><h3 class="f3 title">ofRemoveListener( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">ofRemoveListener</span><span class="token punctuation">(</span><code class="token boolean">EventType <span class="token operator">&</span>event<span class="token punctuation">,</span> ListenerClass <span class="token operator">*</span>listener<span class="token punctuation">,</span> <span class="token keyword">void</span> <span class="token punctuation">(</span>ListenerClass<span class="token operator">::</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">void</span> <span class="token operator">*</span><span class="token punctuation">,</span> ArgumentsType <span class="token operator">&</span><span class="token punctuation">)</span> listenerMethod<span class="token punctuation">,</span> <span class="token keyword">int</span> prio</code><span class="token punctuation">)</span></code><div class="short"><p>unregister any method of any class to an event.</p>
+<p>the method must provide one the following
+signatures:
+void method(ArgumentsType & args)
+void method(const void * sender, ArgumentsType &args)
+ie:
+ofAddListener(addon.newIntEvent, this, &Class::method)</p>
+</div><div class="desc"><p>Removes a listener method from an event. Use it whenever you want a class to stop being notified about an event after having registered it to the method with ofAddListener.</p>
+<p>Don't forget to call this before deleting any instance that is listening to an event, if not the event will try to notify a non existent instance and the application will crash.</p>
+<p>The syntax is just the same as that of ofAddListener.</p>
+</div></div><hr></section><section name="ofRemoveListener" id="ofRemoveListener" class="mb2"><div class="method mb2"><h3 class="f3 title">ofRemoveListener( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">ofRemoveListener</span><span class="token punctuation">(</span><code class="token boolean">EventType <span class="token operator">&</span>event<span class="token punctuation">,</span> ListenerClass <span class="token operator">*</span>listener<span class="token punctuation">,</span> <span class="token keyword">bool</span> <span class="token punctuation">(</span>ListenerClass<span class="token operator">::</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">(</span>ArgumentsType <span class="token operator">&</span><span class="token punctuation">)</span> listenerMethod<span class="token punctuation">,</span> <span class="token keyword">int</span> prio</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Removes a listener method from an event. Use it whenever you want a class to stop being notified about an event after having registered it to the method with ofAddListener.</p>
+<p>Don't forget to call this before deleting any instance that is listening to an event, if not the event will try to notify a non existent instance and the application will crash.</p>
+<p>The syntax is just the same as that of ofAddListener.</p>
+</div></div><hr></section><section name="ofRemoveListener" id="ofRemoveListener" class="mb2"><div class="method mb2"><h3 class="f3 title">ofRemoveListener( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">ofRemoveListener</span><span class="token punctuation">(</span><code class="token boolean">EventType <span class="token operator">&</span>event<span class="token punctuation">,</span> ListenerClass <span class="token operator">*</span>listener<span class="token punctuation">,</span> <span class="token keyword">void</span> <span class="token punctuation">(</span>ListenerClass<span class="token operator">::</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">(</span>ArgumentsType <span class="token operator">&</span><span class="token punctuation">)</span> listenerMethod<span class="token punctuation">,</span> <span class="token keyword">int</span> prio</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Removes a listener method from an event. Use it whenever you want a class to stop being notified about an event after having registered it to the method with ofAddListener.</p>
+<p>Don't forget to call this before deleting any instance that is listening to an event, if not the event will try to notify a non existent instance and the application will crash.</p>
+<p>The syntax is just the same as that of ofAddListener.</p>
+</div></div><hr></section><section name="ofRemoveListener" id="ofRemoveListener" class="mb2"><div class="method mb2"><h3 class="f3 title">ofRemoveListener( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">ofRemoveListener</span><span class="token punctuation">(</span><code class="token boolean">EventType <span class="token operator">&</span>event<span class="token punctuation">,</span> <span class="token keyword">void</span> <span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">(</span>ArgumentsType <span class="token operator">&</span><span class="token punctuation">)</span> listenerFunction<span class="token punctuation">,</span> <span class="token keyword">int</span> prio</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofRemoveListener" id="ofRemoveListener" class="mb2"><div class="method mb2"><h3 class="f3 title">ofRemoveListener( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">ofRemoveListener</span><span class="token punctuation">(</span><code class="token boolean">EventType <span class="token operator">&</span>event<span class="token punctuation">,</span> <span class="token keyword">bool</span> <span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">(</span>ArgumentsType <span class="token operator">&</span><span class="token punctuation">)</span> listenerFunction<span class="token punctuation">,</span> <span class="token keyword">int</span> prio</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section></div></div></div></div><div id="side-menu"><!----><div id="methods-list"><h4 class="f3">Methods</h4><div class="anchor"><code><a href="#ofAddListener"><span>ofAddListener</span><span>(8)</span></a></code></div><div class="anchor"><code><a href="#ofNotifyEvent" class="pink"><span>ofNotifyEvent</span><span>(4)</span></a></code></div><div class="anchor"><code><a href="#ofRemoveListener"><span>ofRemoveListener</span><span>(8)</span></a></code></div></div><div id="see-also" filename="ofEventUtils_functions.markdown" absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/events/ofEventUtils_functions.markdown" route="/documentation/events/ofEventUtils_functions.markdown" dir="../ofSite/documentation/events" ext="markdown" type="page" parent="2172" breadcrumbs="2172,1968" siblings="" translations="[object Object]" class="see-also"><h4 class="f3">See also</h4><div class="also"><a href="/documentation/events/ofEvent"><span class="origin">documentation</span><span class="name">ofEvent</span></a></div></div></div></div></div><textarea rows="0" class="markdown-editor" style="display:none">#functions
+
+
+&lt;!--
+_visible: True_
+_advanced: False_
+-->
+
+##Description
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofAddListener(&event, *, listenerFunction, prio)
+
+&lt;!--
+_syntax: ofAddListener(&event, *, listenerFunction, prio)_
+_name: ofAddListener_
+_returns: void_
+_returns_description: _
+_parameters: EventType &event, void (*)(const void *, ArgumentsType &) listenerFunction, int prio_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofAddListener(&event, *, listenerFunction, prio)
+
+&lt;!--
+_syntax: ofAddListener(&event, *, listenerFunction, prio)_
+_name: ofAddListener_
+_returns: void_
+_returns_description: _
+_parameters: EventType &event, bool (*)(const void *, ArgumentsType &) listenerFunction, int prio_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofAddListener(&event, *listener, *, listenerMethod, prio)
+
+&lt;!--
+_syntax: ofAddListener(&event, *listener, *, listenerMethod, prio)_
+_name: ofAddListener_
+_returns: void_
+_returns_description: _
+_parameters: EventType &event, ListenerClass *listener, bool (ListenerClass::*)(const void *, ArgumentsType &) listenerMethod, int prio_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Allows you to add a listener method to an event, use it whenever you want a class to be notified about an event.
+
+This is a templated function so the types of the parameters are not predefined types but can be any type as long as the method is one of the listener class' and it has a particular signature.
+
+The signature of the listener method depends on the event type. Every event is defined as:
+
+~~~~{.cpp}
+ofEvent&lt;type> event;
+~~~~
+
+where type is the type of the parameter that is going to be passed when the event is notified. The listener method can have one of this two signatures:
+
+~~~~{.cpp}
+void listenerMethod(type & parameter);
+~~~~
+
+~~~~{.cpp}
+void listenerMethod(const void * sender, type parameter);
+~~~~
+
+Where type must be the same as that of the event it listens to, and sender will be a pointer to the notifying class.
+
+For instance, borrowing from the examples/events/SimpleEventsExample, if we make a class that will broadcast an event:
+
+~~~~{.cpp}
+
+class SimpleEventNotifier {
+	ofEvent&lt;float> notify;	// will send an event with a float
+
+	void sendEvent() {
+		ofNotifyEvent(notify, ofGetElapsedTimef(), this); 
+	}
+
+};
+
+~~~~
+
+We can listen for that in our ofApp:
+
+~~~~{.cpp}
+SimpleEventNotifier notifier;
+void ofApp::setup() {
+	ofAddListener(notifier.notify, this, &ofApp::haveBeenNotified);
+}
+
+void ofApp::haveBeenNotified(float &f){
+    ofLog() &lt;&lt; " event at " &lt;&lt; f &lt;&lt; endl;
+}
+
+~~~~
+
+The general pattern is:
+
+A notifying class that will notify defines an ofEvent.
+A listening class that will listen for that ofEvent calls ofAddListener() using the name of the event, the "this" keyword to refer to itself, and a pointer to the method that you want called when the event occurs
+The notifying class calls ofNotifyEvent() when it's time to send the event.
+The listening class has its notification method called with the parameters of the ofEvent passed to it.
+
+This version of the method allows you to use the prio to set whether the event should be called before the application events (mouse and key events, for example) with OF_EVENT_ORDER_BEFORE_APP or after with OF_EVENT_ORDER_AFTER_APP.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofAddListener(&event, *listener, *, listenerMethod, prio)
+
+&lt;!--
+_syntax: ofAddListener(&event, *listener, *, listenerMethod, prio)_
+_name: ofAddListener_
+_returns: void_
+_returns_description: _
+_parameters: EventType &event, ListenerClass *listener, void (ListenerClass::*)(const void *, ArgumentsType &) listenerMethod, int prio_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+register any method of any class to an event.
+
+the method must provide one of the following
+signatures:
+    void method(ArgumentsType & args)
+    void method(const void * sender, ArgumentsType &args)
+ie:
+    ofAddListener(addon.newIntEvent, this, &Class::method)
+
+
+
+
+
+_description: _
+
+Allows you to add a listener method to an event, use it whenever you want a class to be notified about an event.
+
+This is a templated function so the types of the parameters are not predefined types but can be any type as long as the method is one of the listener class' and it has a particular signature.
+
+The signature of the listener method depends on the event type. Every event is defined as:
+
+~~~~{.cpp}
+ofEvent&lt;type> event;
+~~~~
+
+where type is the type of the parameter that is going to be passed when the event is notified. The listener method can have one of this two signatures:
+
+~~~~{.cpp}
+void listenerMethod(type & parameter);
+~~~~
+
+~~~~{.cpp}
+void listenerMethod(const void * sender, type parameter);
+~~~~
+
+Where type must be the same as that of the event it listens to, and sender will be a pointer to the notifying class.
+
+For instance, borrowing from the examples/events/SimpleEventsExample, if we make a class that will broadcast an event:
+
+~~~~{.cpp}
+
+class SimpleEventNotifier {
+	ofEvent&lt;float> notify;	// will send an event with a float
+
+	void sendEvent() {
+		ofNotifyEvent(notify, ofGetElapsedTimef(), this); 
+	}
+
+};
+
+~~~~
+
+We can listen for that in our ofApp:
+
+~~~~{.cpp}
+SimpleEventNotifier notifier;
+void ofApp::setup() {
+	ofAddListener(notifier.notify, this, &ofApp::haveBeenNotified);
+}
+
+void ofApp::haveBeenNotified(float &f){
+    ofLog() &lt;&lt; " event at " &lt;&lt; f &lt;&lt; endl;
+}
+
+~~~~
+
+The general pattern is:
+
+A notifying class that will notify defines an ofEvent.
+A listening class that will listen for that ofEvent calls ofAddListener() using the name of the event, the "this" keyword to refer to itself, and a pointer to the method that you want called when the event occurs
+The notifying class calls ofNotifyEvent() when it's time to send the event.
+The listening class has its notification method called with the parameters of the ofEvent passed to it.
+
+This version of the method allows you to use the prio to set whether the event should be called before the application events (mouse and key events, for example) with OF_EVENT_ORDER_BEFORE_APP or after with OF_EVENT_ORDER_AFTER_APP.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofAddListener(&event, *listener, listenerMethod, prio)
+
+&lt;!--
+_syntax: ofAddListener(&event, *listener, listenerMethod, prio)_
+_name: ofAddListener_
+_returns: void_
+_returns_description: _
+_parameters: ofEvent&lt; void > &event, ListenerClass *listener, bool (ListenerClass::*)() listenerMethod, int prio_
+_version_started: 0.06_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Allows you to add a listener method to an event, use it whenever you want a class to be notified about an event.
+
+This is a templated function so the types of the parameters are not predefined types but can be any type as long as the method is one of the listener class' and it has a particular signature.
+
+The signature of the listener method depends on the event type. Every event is defined as:
+
+~~~~{.cpp}
+ofEvent&lt;type> event;
+~~~~
+
+where type is the type of the parameter that is going to be passed when the event is notified. The listener method can have one of this two signatures:
+
+~~~~{.cpp}
+void listenerMethod(type & parameter);
+~~~~
+
+~~~~{.cpp}
+void listenerMethod(const void * sender, type parameter);
+~~~~
+
+Where type must be the same as that of the event it listens to, and sender will be a pointer to the notifying class.
+
+For instance, borrowing from the examples/events/SimpleEventsExample, if we make a class that will broadcast an event:
+
+~~~~{.cpp}
+
+class SimpleEventNotifier {
+	ofEvent&lt;float> notify;	// will send an event with a float
+
+	void sendEvent() {
+		ofNotifyEvent(notify, ofGetElapsedTimef(), this); 
+	}
+
+};
+
+~~~~
+
+We can listen for that in our ofApp:
+
+~~~~{.cpp}
+SimpleEventNotifier notifier;
+void ofApp::setup() {
+	ofAddListener(notifier.notify, this, &ofApp::haveBeenNotified);
+}
+
+void ofApp::haveBeenNotified(float &f){
+    ofLog() &lt;&lt; " event at " &lt;&lt; f &lt;&lt; endl;
+}
+
+~~~~
+
+The general pattern is:
+
+A notifying class that will notify defines an ofEvent.
+A listening class that will listen for that ofEvent calls ofAddListener() using the name of the event, the "this" keyword to refer to itself, and a pointer to the method that you want called when the event occurs
+The notifying class calls ofNotifyEvent() when it's time to send the event.
+The listening class has its notification method called with the parameters of the ofEvent passed to it.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofAddListener(&event, *listener, listenerMethod, prio)
+
+&lt;!--
+_syntax: ofAddListener(&event, *listener, listenerMethod, prio)_
+_name: ofAddListener_
+_returns: void_
+_returns_description: _
+_parameters: ofEvent&lt; void > &event, ListenerClass *listener, bool (ListenerClass::*)(const void *) listenerMethod, int prio_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Allows you to add a listener method to an event, use it whenever you want a class to be notified about an event.
+
+This is a templated function so the types of the parameters are not predefined types but can be any type as long as the method is one of the listener class' and it has a particular signature.
+
+The signature of the listener method depends on the event type. Every event is defined as:
+
+~~~~{.cpp}
+ofEvent&lt;type> event;
+~~~~
+
+where type is the type of the parameter that is going to be passed when the event is notified. The listener method can have one of this two signatures:
+
+~~~~{.cpp}
+void listenerMethod(type & parameter);
+~~~~
+
+~~~~{.cpp}
+void listenerMethod(const void * sender, type parameter);
+~~~~
+
+Where type must be the same as that of the event it listens to, and sender will be a pointer to the notifying class.
+
+For instance, borrowing from the examples/events/SimpleEventsExample, if we make a class that will broadcast an event:
+
+~~~~{.cpp}
+
+class SimpleEventNotifier {
+	ofEvent&lt;float> notify;	// will send an event with a float
+
+	void sendEvent() {
+		ofNotifyEvent(notify, ofGetElapsedTimef(), this); 
+	}
+
+};
+
+~~~~
+
+We can listen for that in our ofApp:
+
+~~~~{.cpp}
+SimpleEventNotifier notifier;
+void ofApp::setup() {
+	ofAddListener(notifier.notify, this, &ofApp::haveBeenNotified);
+}
+
+void ofApp::haveBeenNotified(float &f){
+    ofLog() &lt;&lt; " event at " &lt;&lt; f &lt;&lt; endl;
+}
+
+~~~~
+
+The general pattern is:
+
+A notifying class that will notify defines an ofEvent.
+A listening class that will listen for that ofEvent calls ofAddListener() using the name of the event, the "this" keyword to refer to itself, and a pointer to the method that you want called when the event occurs
+The notifying class calls ofNotifyEvent() when it's time to send the event.
+The listening class has its notification method called with the parameters of the ofEvent passed to it.
+
+Note that the event is a reference, which means it needs to a member of your class that will not go away in the lifetime of the object.
+
+This version of the method allows you to use the prio to set whether the event should be called before the application events (mouse and key events, for example) with OF_EVENT_ORDER_BEFORE_APP or after with OF_EVENT_ORDER_AFTER_APP.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofAddListener(&event, *listener, listenerMethod, prio)
+
+&lt;!--
+_syntax: ofAddListener(&event, *listener, listenerMethod, prio)_
+_name: ofAddListener_
+_returns: void_
+_returns_description: _
+_parameters: EventType &event, ListenerClass *listener, bool (ListenerClass::*)(ArgumentsType &) listenerMethod, int prio_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Allows you to add a listener method to an event, use it whenever you want a class to be notified about an event.
+
+This is a templated function so the types of the parameters are not predefined types but can be any type as long as the method is one of the listener class' and it has a particular signature.
+
+The signature of the listener method depends on the event type. Every event is defined as:
+
+~~~~{.cpp}
+ofEvent&lt;type> event;
+~~~~
+
+where type is the type of the parameter that is going to be passed when the event is notified. The listener method can have one of this two signatures:
+
+~~~~{.cpp}
+void listenerMethod(type & parameter);
+~~~~
+
+~~~~{.cpp}
+void listenerMethod(const void * sender, type parameter);
+~~~~
+
+Where type must be the same as that of the event it listens to, and sender will be a pointer to the notifying class.
+
+For instance, borrowing from the examples/events/SimpleEventsExample, if we make a class that will broadcast an event:
+
+~~~~{.cpp}
+
+class SimpleEventNotifier {
+	ofEvent&lt;float> notify;	// will send an event with a float
+
+	void sendEvent() {
+		ofNotifyEvent(notify, ofGetElapsedTimef(), this); 
+	}
+
+};
+
+~~~~
+
+We can listen for that in our ofApp:
+
+~~~~{.cpp}
+SimpleEventNotifier notifier;
+void ofApp::setup() {
+	ofAddListener(notifier.notify, this, &ofApp::haveBeenNotified);
+}
+
+void ofApp::haveBeenNotified(float &f){
+    ofLog() &lt;&lt; " event at " &lt;&lt; f &lt;&lt; endl;
+}
+
+~~~~
+
+The general pattern is:
+
+A notifying class that will notify defines an ofEvent.
+A listening class that will listen for that ofEvent calls ofAddListener() using the name of the event, the "this" keyword to refer to itself, and a pointer to the method that you want called when the event occurs
+The notifying class calls ofNotifyEvent() when it's time to send the event.
+The listening class has its notification method called with the parameters of the ofEvent passed to it.
+
+This version of the method allows you to use the prio to set whether the event should be called before the application events (mouse and key events, for example) with OF_EVENT_ORDER_BEFORE_APP or after with OF_EVENT_ORDER_AFTER_APP.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofAddListener(&event, *listener, listenerMethod, prio)
+
+&lt;!--
+_syntax: ofAddListener(&event, *listener, listenerMethod, prio)_
+_name: ofAddListener_
+_returns: void_
+_returns_description: _
+_parameters: ofEvent&lt; void > &event, ListenerClass *listener, void (ListenerClass::*)() listenerMethod, int prio_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Allows you to add a listener method to an event, use it whenever you want a class to be notified about an event.
+
+This is a templated function so the types of the parameters are not predefined types but can be any type as long as the method is one of the listener class' and it has a particular signature.
+
+The signature of the listener method depends on the event type. Every event is defined as:
+
+~~~~{.cpp}
+ofEvent&lt;type> event;
+~~~~
+
+where type is the type of the parameter that is going to be passed when the event is notified. The listener method can have one of this two signatures:
+
+~~~~{.cpp}
+void listenerMethod(type & parameter);
+~~~~
+
+~~~~{.cpp}
+void listenerMethod(const void * sender, type parameter);
+~~~~
+
+Where type must be the same as that of the event it listens to, and sender will be a pointer to the notifying class.
+
+For instance, borrowing from the examples/events/SimpleEventsExample, if we make a class that will broadcast an event:
+
+~~~~{.cpp}
+
+class SimpleEventNotifier {
+	ofEvent&lt;float> notify;	// will send an event with a float
+
+	void sendEvent() {
+		ofNotifyEvent(notify, ofGetElapsedTimef(), this); 
+	}
+
+};
+
+~~~~
+
+We can listen for that in our ofApp:
+
+~~~~{.cpp}
+SimpleEventNotifier notifier;
+void ofApp::setup() {
+	ofAddListener(notifier.notify, this, &ofApp::haveBeenNotified);
+}
+
+void ofApp::haveBeenNotified(float &f){
+    ofLog() &lt;&lt; " event at " &lt;&lt; f &lt;&lt; endl;
+}
+
+~~~~
+
+The general pattern is:
+
+A notifying class that will notify defines an ofEvent.
+A listening class that will listen for that ofEvent calls ofAddListener() using the name of the event, the "this" keyword to refer to itself, and a pointer to the method that you want called when the event occurs
+The notifying class calls ofNotifyEvent() when it's time to send the event.
+The listening class has its notification method called with the parameters of the ofEvent passed to it.
+
+This version of the method allows you to use the prio to set whether the event should be called before the application events (mouse and key events, for example) with OF_EVENT_ORDER_BEFORE_APP or after with OF_EVENT_ORDER_AFTER_APP.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofAddListener(&event, *listener, listenerMethod, prio)
+
+&lt;!--
+_syntax: ofAddListener(&event, *listener, listenerMethod, prio)_
+_name: ofAddListener_
+_returns: void_
+_returns_description: _
+_parameters: ofEvent&lt; void > &event, ListenerClass *listener, void (ListenerClass::*)(const void *) listenerMethod, int prio_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Allows you to add a listener method to an event, use it whenever you want a class to be notified about an event.
+
+This is a templated function so the types of the parameters are not predefined types but can be any type as long as the method is one of the listener class' and it has a particular signature.
+
+The signature of the listener method depends on the event type. Every event is defined as:
+
+~~~~{.cpp}
+ofEvent&lt;type> event;
+~~~~
+
+where type is the type of the parameter that is going to be passed when the event is notified. The listener method can have one of this two signatures:
+
+~~~~{.cpp}
+void listenerMethod(type & parameter);
+~~~~
+
+~~~~{.cpp}
+void listenerMethod(const void * sender, type parameter);
+~~~~
+
+Where type must be the same as that of the event it listens to, and sender will be a pointer to the notifying class.
+
+For instance, borrowing from the examples/events/SimpleEventsExample, if we make a class that will broadcast an event:
+
+~~~~{.cpp}
+
+class SimpleEventNotifier {
+	ofEvent&lt;float> notify;	// will send an event with a float
+
+	void sendEvent() {
+		ofNotifyEvent(notify, ofGetElapsedTimef(), this); 
+	}
+
+};
+
+~~~~
+
+We can listen for that in our ofApp:
+
+~~~~{.cpp}
+SimpleEventNotifier notifier;
+void ofApp::setup() {
+	ofAddListener(notifier.notify, this, &ofApp::haveBeenNotified);
+}
+
+void ofApp::haveBeenNotified(float &f){
+    ofLog() &lt;&lt; " event at " &lt;&lt; f &lt;&lt; endl;
+}
+
+~~~~
+
+The general pattern is:
+
+A notifying class that will notify defines an ofEvent.
+A listening class that will listen for that ofEvent calls ofAddListener() using the name of the event, the "this" keyword to refer to itself, and a pointer to the method that you want called when the event occurs
+The notifying class calls ofNotifyEvent() when it's time to send the event.
+The listening class has its notification method called with the parameters of the ofEvent passed to it.
+
+This version of the method allows you to use the prio to set whether the event should be called before the application events (mouse and key events, for example) with OF_EVENT_ORDER_BEFORE_APP or after with OF_EVENT_ORDER_AFTER_APP.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofAddListener(&event, *listener, listenerMethod, prio)
+
+&lt;!--
+_syntax: ofAddListener(&event, *listener, listenerMethod, prio)_
+_name: ofAddListener_
+_returns: void_
+_returns_description: _
+_parameters: EventType &event, ListenerClass *listener, void (ListenerClass::*)(ArgumentsType &) listenerMethod, int prio_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Allows you to add a listener method to an event, use it whenever you want a class to be notified about an event.
+
+This is a templated function so the types of the parameters are not predefined types but can be any type as long as the method is one of the listener class' and it has a particular signature.
+
+The signature of the listener method depends on the event type. Every event is defined as:
+
+~~~~{.cpp}
+ofEvent&lt;type> event;
+~~~~
+
+where type is the type of the parameter that is going to be passed when the event is notified. The listener method can have one of this two signatures:
+
+~~~~{.cpp}
+void listenerMethod(type & parameter);
+~~~~
+
+~~~~{.cpp}
+void listenerMethod(const void * sender, type parameter);
+~~~~
+
+Where type must be the same as that of the event it listens to, and sender will be a pointer to the notifying class.
+
+For instance, borrowing from the examples/events/SimpleEventsExample, if we make a class that will broadcast an event:
+
+~~~~{.cpp}
+
+class SimpleEventNotifier {
+	ofEvent&lt;float> notify;	// will send an event with a float
+
+	void sendEvent() {
+		ofNotifyEvent(notify, ofGetElapsedTimef(), this); 
+	}
+
+};
+
+~~~~
+
+We can listen for that in our ofApp:
+
+~~~~{.cpp}
+SimpleEventNotifier notifier;
+void ofApp::setup() {
+	ofAddListener(notifier.notify, this, &ofApp::haveBeenNotified);
+}
+
+void ofApp::haveBeenNotified(float &f){
+    ofLog() &lt;&lt; " event at " &lt;&lt; f &lt;&lt; endl;
+}
+
+~~~~
+
+The general pattern is:
+
+A notifying class that will notify defines an ofEvent.
+A listening class that will listen for that ofEvent calls ofAddListener() using the name of the event, the "this" keyword to refer to itself, and a pointer to the method that you want called when the event occurs
+The notifying class calls ofNotifyEvent() when it's time to send the event.
+The listening class has its notification method called with the parameters of the ofEvent passed to it.
+
+This version of the method allows you to use the prio to set whether the event should be called before the application events (mouse and key events, for example) with OF_EVENT_ORDER_BEFORE_APP or after with OF_EVENT_ORDER_AFTER_APP.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofAddListener(&event, listenerFunction, prio)
+
+&lt;!--
+_syntax: ofAddListener(&event, listenerFunction, prio)_
+_name: ofAddListener_
+_returns: void_
+_returns_description: _
+_parameters: EventType &event, void (*)(ArgumentsType &) listenerFunction, int prio_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofAddListener(&event, listenerFunction, prio)
+
+&lt;!--
+_syntax: ofAddListener(&event, listenerFunction, prio)_
+_name: ofAddListener_
+_returns: void_
+_returns_description: _
+_parameters: ofEvent&lt; void > &event, void (*)(const void *) listenerFunction, int prio_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofAddListener(&event, listenerFunction, prio)
+
+&lt;!--
+_syntax: ofAddListener(&event, listenerFunction, prio)_
+_name: ofAddListener_
+_returns: void_
+_returns_description: _
+_parameters: ofEvent&lt; void > &event, void (*)() listenerFunction, int prio_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofAddListener(&event, listenerFunction, prio)
+
+&lt;!--
+_syntax: ofAddListener(&event, listenerFunction, prio)_
+_name: ofAddListener_
+_returns: void_
+_returns_description: _
+_parameters: EventType &event, bool (*)(ArgumentsType &) listenerFunction, int prio_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofAddListener(&event, listenerFunction, prio)
+
+&lt;!--
+_syntax: ofAddListener(&event, listenerFunction, prio)_
+_name: ofAddListener_
+_returns: void_
+_returns_description: _
+_parameters: ofEvent&lt; void > &event, bool (*)(const void *) listenerFunction, int prio_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofAddListener(&event, listenerFunction, prio)
+
+&lt;!--
+_syntax: ofAddListener(&event, listenerFunction, prio)_
+_name: ofAddListener_
+_returns: void_
+_returns_description: _
+_parameters: ofEvent&lt; void > &event, bool (*)() listenerFunction, int prio_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool ofNotifyEvent(&event)
+
+&lt;!--
+_syntax: ofNotifyEvent(&event)_
+_name: ofNotifyEvent_
+_returns: bool_
+_returns_description: _
+_parameters: ofEvent&lt; void > &event_
+_version_started: 0.06_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Notifies an event, what makes all it's registered method listeners to be called with the same argument.
+
+This is a templated function so the type of the parameters is not predefined and can be anything as long as the listener methods use the same type for the parameter.
+
+The arguments are passed to the listeners by reference so they can modify them. 
+
+The listener methods are called in the same order they were registered using ofAddListener.
+
+For instance, borrowing from the examples/events/SimpleEventsExample, if we make a class that will broadcast an event:
+
+~~~~{.cpp}
+
+class SimpleEventNotifier {
+	ofEvent&lt;float> notify;	// will send an event with a float
+
+	void sendEvent() {
+		ofNotifyEvent(notify, ofGetElapsedTimef(), this); 
+	}
+
+};
+
+~~~~
+
+We can listen for that in our ofApp:
+
+~~~~{.cpp}
+SimpleEventNotifier notifier;
+void ofApp::setup() {
+	ofAddListener(notifier.notify, this, &ofApp::haveBeenNotified);
+}
+
+void ofApp::haveBeenNotified(float &f){
+    ofLog() &lt;&lt; " event at " &lt;&lt; f &lt;&lt; endl;
+}
+
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool ofNotifyEvent(&event, &args)
+
+&lt;!--
+_syntax: ofNotifyEvent(&event, &args)_
+_name: ofNotifyEvent_
+_returns: bool_
+_returns_description: _
+_parameters: EventType &event, const ArgumentsType &args_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Notifies an event, what makes all it's registered method listeners to be called with the same argument.
+
+This is a templated function so the type of the parameters is not predefined and can be anything as long as the listener methods use the same type for the parameter.
+
+The arguments are passed to the listeners by reference so they can modify them.
+
+The listener methods are called in the same order they were registered using ofAddListener.
+
+With this version the listeners also receive a pointer to the notifying class in case the listener method specifies that parameter.
+
+For instance, borrowing from the examples/events/SimpleEventsExample, if we make a class that will broadcast an event:
+
+~~~~{.cpp}
+
+class SimpleEventNotifier {
+	ofEvent&lt;float> notify;	// will send an event with a float
+
+	void sendEvent() {
+		ofNotifyEvent(notify, ofGetElapsedTimef(), this); 
+	}
+
+};
+
+~~~~
+
+We can listen for that in our ofApp:
+
+~~~~{.cpp}
+SimpleEventNotifier notifier;
+void ofApp::setup() {
+	ofAddListener(notifier.notify, this, &ofApp::haveBeenNotified);
+}
+
+void ofApp::haveBeenNotified(float &f){
+    ofLog() &lt;&lt; " event at " &lt;&lt; f &lt;&lt; endl;
+}
+
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool ofNotifyEvent(&event, &args)
+
+&lt;!--
+_syntax: ofNotifyEvent(&event, &args)_
+_name: ofNotifyEvent_
+_returns: bool_
+_returns_description: _
+_parameters: EventType &event, ArgumentsType &args_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Notifies an event, what makes all it's registered method listeners to be called with the same argument.
+
+This is a templated function so the type of the parameters is not predefined and can be anything as long as the listener methods use the same type for the parameter.
+
+The arguments are passed to the listeners by reference so they can modify them.
+
+The listener methods are called in the same order they were registered using ofAddListener.
+
+With this version the listeners also receive a pointer to the notifying class in case the listener method specifies that parameter.
+
+For instance, borrowing from the examples/events/SimpleEventsExample, if we make a class that will broadcast an event:
+
+~~~~{.cpp}
+
+class SimpleEventNotifier {
+	ofEvent&lt;float> notify;	// will send an event with a float
+
+	void sendEvent() {
+		ofNotifyEvent(notify, ofGetElapsedTimef(), this); 
+	}
+
+};
+
+~~~~
+
+We can listen for that in our ofApp:
+
+~~~~{.cpp}
+SimpleEventNotifier notifier;
+void ofApp::setup() {
+	ofAddListener(notifier.notify, this, &ofApp::haveBeenNotified);
+}
+
+void ofApp::haveBeenNotified(float &f){
+    ofLog() &lt;&lt; " event at " &lt;&lt; f &lt;&lt; endl;
+}
+
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool ofNotifyEvent(&event, &args, *sender)
+
+&lt;!--
+_syntax: ofNotifyEvent(&event, &args, *sender)_
+_name: ofNotifyEvent_
+_returns: bool_
+_returns_description: _
+_parameters: EventType &event, const ArgumentsType &args, SenderType *sender_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Notifies an event, what makes all it's registered method listeners to be called with the same argument.
+
+This is a templated function so the type of the parameters is not predefined and can be anything as long as the listener methods use the same type for the parameter.
+
+The arguments are passed to the listeners by reference so they can modify them.
+
+The listener methods are called in the same order they were registered using ofAddListener.
+
+With this version the listeners also receive an event args object that can be used to send additional data to the listening class.
+
+For instance, borrowing from the examples/events/SimpleEventsExample, if we make a class that will broadcast an event:
+
+~~~~{.cpp}
+
+class SimpleEventNotifier {
+	ofEvent&lt;float> notify;	// will send an event with a float
+
+	void sendEvent() {
+		ofNotifyEvent(notify, ofGetElapsedTimef()); 
+	}
+
+};
+
+~~~~
+
+We can listen for that in our ofApp:
+
+~~~~{.cpp}
+SimpleEventNotifier notifier;
+void ofApp::setup() {
+	ofAddListener(notifier.notify, this, &ofApp::haveBeenNotified);
+}
+
+void ofApp::haveBeenNotified(float &f){
+    ofLog() &lt;&lt; " event at " &lt;&lt; f &lt;&lt; endl;
+}
+
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool ofNotifyEvent(&event, &args, *sender)
+
+&lt;!--
+_syntax: ofNotifyEvent(&event, &args, *sender)_
+_name: ofNotifyEvent_
+_returns: bool_
+_returns_description: _
+_parameters: EventType &event, ArgumentsType &args, SenderType *sender_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+notifies an event so all the registered listeners
+get called
+
+ie:
+	ofNotifyEvent(addon.newIntEvent, intArgument, this)
+
+or in case there's no sender:
+	ofNotifyEvent(addon.newIntEvent, intArgument)
+
+@returns: true in case any listener attended the event
+
+
+
+
+
+_description: _
+
+Notifies an event, what makes all it's registered method listeners to be called with the same argument.
+
+This is a templated function so the type of the parameters is not predefined and can be anything as long as the listener methods use the same type for the parameter.
+
+The arguments are passed to the listeners by reference so they can modify them.
+
+The listener methods are called in the same order they were registered using ofAddListener.
+
+For instance, borrowing from the examples/events/SimpleEventsExample, if we make a class that will broadcast an event:
+
+~~~~{.cpp}
+
+class SimpleEventNotifier {
+	ofEvent notify;	// will send an event with no data
+
+	void sendEvent() {
+		ofNotifyEvent(notify); 
+	}
+
+};
+
+~~~~
+
+We can listen for that in our ofApp:
+
+~~~~{.cpp}
+SimpleEventNotifier notifier;
+void ofApp::setup() {
+	ofAddListener(notifier.notify, this, &ofApp::haveBeenNotified);
+}
+
+void ofApp::haveBeenNotified(){
+    ofLog() &lt;&lt; " event at " &lt;&lt; ofGetElapsedTimef() &lt;&lt; endl;
+}
+
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool ofNotifyEvent(&event, *sender)
+
+&lt;!--
+_syntax: ofNotifyEvent(&event, *sender)_
+_name: ofNotifyEvent_
+_returns: bool_
+_returns_description: _
+_parameters: ofEvent&lt; void > &event, SenderType *sender_
+_version_started: 0.06_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Notifies an event, what makes all it's registered method listeners to be called with the same argument.
+
+This is a templated function so the type of the parameters is not predefined and can be anything as long as the listener methods use the same type for the parameter.
+
+The arguments are passed to the listeners by reference so they can modify them.
+
+The listener methods are called in the same order they were registered using ofAddListener.
+
+With this version the listeners also receive a pointer to the notifying class in case the listener method specifies that parameter.
+
+For instance, borrowing from the examples/events/SimpleEventsExample, if we make a class that will broadcast an event:
+
+~~~~{.cpp}
+
+class SimpleEventNotifier {
+	ofEvent&lt;float> notify;	// will send an event with a float
+
+	void sendEvent() {
+		ofNotifyEvent(notify, ofGetElapsedTimef(), this); 
+	}
+
+};
+
+~~~~
+
+We can listen for that in our ofApp:
+
+~~~~{.cpp}
+SimpleEventNotifier notifier;
+void ofApp::setup() {
+	ofAddListener(notifier.notify, this, &ofApp::haveBeenNotified);
+}
+
+void ofApp::haveBeenNotified(float &f){
+    ofLog() &lt;&lt; " event at " &lt;&lt; f &lt;&lt; endl;
+}
+
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofRemoveListener(&event, *, listenerFunction, prio)
+
+&lt;!--
+_syntax: ofRemoveListener(&event, *, listenerFunction, prio)_
+_name: ofRemoveListener_
+_returns: void_
+_returns_description: _
+_parameters: EventType &event, void (*)(const void *, ArgumentsType &) listenerFunction, int prio_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofRemoveListener(&event, *, listenerFunction, prio)
+
+&lt;!--
+_syntax: ofRemoveListener(&event, *, listenerFunction, prio)_
+_name: ofRemoveListener_
+_returns: void_
+_returns_description: _
+_parameters: EventType &event, bool (*)(const void *, ArgumentsType &) listenerFunction, int prio_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofRemoveListener(&event, *listener, *, listenerMethod, prio)
+
+&lt;!--
+_syntax: ofRemoveListener(&event, *listener, *, listenerMethod, prio)_
+_name: ofRemoveListener_
+_returns: void_
+_returns_description: _
+_parameters: EventType &event, ListenerClass *listener, bool (ListenerClass::*)(const void *, ArgumentsType &) listenerMethod, int prio_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Removes a listener method from an event. Use it whenever you want a class to stop being notified about an event after having registered it to the method with ofAddListener.
+
+Don't forget to call this before deleting any instance that is listening to an event, if not the event will try to notify a non existent instance and the application will crash.
+
+The syntax is just the same as that of ofAddListener.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofRemoveListener(&event, *listener, *, listenerMethod, prio)
+
+&lt;!--
+_syntax: ofRemoveListener(&event, *listener, *, listenerMethod, prio)_
+_name: ofRemoveListener_
+_returns: void_
+_returns_description: _
+_parameters: EventType &event, ListenerClass *listener, void (ListenerClass::*)(const void *, ArgumentsType &) listenerMethod, int prio_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+unregister any method of any class to an event.
+
+the method must provide one the following
+signatures:
+    void method(ArgumentsType & args)
+    void method(const void * sender, ArgumentsType &args)
+ie:
+    ofAddListener(addon.newIntEvent, this, &Class::method)
+
+
+
+
+
+_description: _
+
+Removes a listener method from an event. Use it whenever you want a class to stop being notified about an event after having registered it to the method with ofAddListener.
+
+Don't forget to call this before deleting any instance that is listening to an event, if not the event will try to notify a non existent instance and the application will crash.
+
+The syntax is just the same as that of ofAddListener.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofRemoveListener(&event, *listener, listenerMethod, prio)
+
+&lt;!--
+_syntax: ofRemoveListener(&event, *listener, listenerMethod, prio)_
+_name: ofRemoveListener_
+_returns: void_
+_returns_description: _
+_parameters: ofEvent&lt; void > &event, ListenerClass *listener, bool (ListenerClass::*)() listenerMethod, int prio_
+_version_started: 0.06_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Removes a listener method from an event. Use it whenever you want a class to stop being notified about an event after having registered it to the method with ofAddListener.
+
+Don't forget to call this before deleting any instance that is listening to an event, if not the event will try to notify a non existent instance and the application will crash.
+
+The syntax is just the same as that of ofAddListener.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofRemoveListener(&event, *listener, listenerMethod, prio)
+
+&lt;!--
+_syntax: ofRemoveListener(&event, *listener, listenerMethod, prio)_
+_name: ofRemoveListener_
+_returns: void_
+_returns_description: _
+_parameters: ofEvent&lt; void > &event, ListenerClass *listener, bool (ListenerClass::*)(const void *) listenerMethod, int prio_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Removes a listener method from an event. Use it whenever you want a class to stop being notified about an event after having registered it to the method with ofAddListener.
+
+Don't forget to call this before deleting any instance that is listening to an event, if not the event will try to notify a non existent instance and the application will crash.
+
+The syntax is just the same as that of ofAddListener.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofRemoveListener(&event, *listener, listenerMethod, prio)
+
+&lt;!--
+_syntax: ofRemoveListener(&event, *listener, listenerMethod, prio)_
+_name: ofRemoveListener_
+_returns: void_
+_returns_description: _
+_parameters: EventType &event, ListenerClass *listener, bool (ListenerClass::*)(ArgumentsType &) listenerMethod, int prio_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Removes a listener method from an event. Use it whenever you want a class to stop being notified about an event after having registered it to the method with ofAddListener.
+
+Don't forget to call this before deleting any instance that is listening to an event, if not the event will try to notify a non existent instance and the application will crash.
+
+The syntax is just the same as that of ofAddListener.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofRemoveListener(&event, *listener, listenerMethod, prio)
+
+&lt;!--
+_syntax: ofRemoveListener(&event, *listener, listenerMethod, prio)_
+_name: ofRemoveListener_
+_returns: void_
+_returns_description: _
+_parameters: ofEvent&lt; void > &event, ListenerClass *listener, void (ListenerClass::*)() listenerMethod, int prio_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Removes a listener method from an event. Use it whenever you want a class to stop being notified about an event after having registered it to the method with ofAddListener.
+
+Don't forget to call this before deleting any instance that is listening to an event, if not the event will try to notify a non existent instance and the application will crash.
+
+The syntax is just the same as that of ofAddListener.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofRemoveListener(&event, *listener, listenerMethod, prio)
+
+&lt;!--
+_syntax: ofRemoveListener(&event, *listener, listenerMethod, prio)_
+_name: ofRemoveListener_
+_returns: void_
+_returns_description: _
+_parameters: ofEvent&lt; void > &event, ListenerClass *listener, void (ListenerClass::*)(const void *) listenerMethod, int prio_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Removes a listener method from an event. Use it whenever you want a class to stop being notified about an event after having registered it to the method with ofAddListener.
+
+Don't forget to call this before deleting any instance that is listening to an event, if not the event will try to notify a non existent instance and the application will crash.
+
+The syntax is just the same as that of ofAddListener.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofRemoveListener(&event, *listener, listenerMethod, prio)
+
+&lt;!--
+_syntax: ofRemoveListener(&event, *listener, listenerMethod, prio)_
+_name: ofRemoveListener_
+_returns: void_
+_returns_description: _
+_parameters: EventType &event, ListenerClass *listener, void (ListenerClass::*)(ArgumentsType &) listenerMethod, int prio_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Removes a listener method from an event. Use it whenever you want a class to stop being notified about an event after having registered it to the method with ofAddListener.
+
+Don't forget to call this before deleting any instance that is listening to an event, if not the event will try to notify a non existent instance and the application will crash.
+
+The syntax is just the same as that of ofAddListener.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofRemoveListener(&event, listenerFunction, prio)
+
+&lt;!--
+_syntax: ofRemoveListener(&event, listenerFunction, prio)_
+_name: ofRemoveListener_
+_returns: void_
+_returns_description: _
+_parameters: EventType &event, void (*)(ArgumentsType &) listenerFunction, int prio_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofRemoveListener(&event, listenerFunction, prio)
+
+&lt;!--
+_syntax: ofRemoveListener(&event, listenerFunction, prio)_
+_name: ofRemoveListener_
+_returns: void_
+_returns_description: _
+_parameters: ofEvent&lt; void > &event, void (*)(const void *) listenerFunction, int prio_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofRemoveListener(&event, listenerFunction, prio)
+
+&lt;!--
+_syntax: ofRemoveListener(&event, listenerFunction, prio)_
+_name: ofRemoveListener_
+_returns: void_
+_returns_description: _
+_parameters: ofEvent&lt; void > &event, void (*)() listenerFunction, int prio_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofRemoveListener(&event, listenerFunction, prio)
+
+&lt;!--
+_syntax: ofRemoveListener(&event, listenerFunction, prio)_
+_name: ofRemoveListener_
+_returns: void_
+_returns_description: _
+_parameters: EventType &event, bool (*)(ArgumentsType &) listenerFunction, int prio_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofRemoveListener(&event, listenerFunction, prio)
+
+&lt;!--
+_syntax: ofRemoveListener(&event, listenerFunction, prio)_
+_name: ofRemoveListener_
+_returns: void_
+_returns_description: _
+_parameters: ofEvent&lt; void > &event, bool (*)(const void *) listenerFunction, int prio_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void ofRemoveListener(&event, listenerFunction, prio)
+
+&lt;!--
+_syntax: ofRemoveListener(&event, listenerFunction, prio)_
+_name: ofRemoveListener_
+_returns: void_
+_returns_description: _
+_parameters: ofEvent&lt; void > &event, bool (*)() listenerFunction, int prio_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+</textarea></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1586012716389/documentation/events/ofEventUtils_functions/payload.js"></script><script src="/_nuxt/5f71eaca0bd2f1a0f939.js" defer></script><script src="/_nuxt/35a90d914f539af1362f.js" defer></script><script src="/_nuxt/906a3ca0fb13ed3c6651.js" defer></script><script src="/_nuxt/b673915e8a08acf593e8.js" defer></script><script src="/_nuxt/bf355f21967a23c26c07.js" defer></script>
+  </body>
+</html>

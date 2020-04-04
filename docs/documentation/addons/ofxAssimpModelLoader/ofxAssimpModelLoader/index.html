@@ -1,0 +1,3455 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>ofxAssimpModelLoader | documentation | ofDocs</title><meta data-n-head="ssr" data-hid="description" name="description" content="openFrameworks documentation and examples browser"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="openFrameworks documentation and examples browser" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="ofxAssimpModelLoader | documentation | ofDocs" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="/files/images/ofw-logo.png" vmid="og:image"><link rel="preload" href="/_nuxt/5f71eaca0bd2f1a0f939.js" as="script"><link rel="preload" href="/_nuxt/906a3ca0fb13ed3c6651.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/b673915e8a08acf593e8.js" as="script"><link rel="preload" href="/_nuxt/46e8fcacdadb233d9fb6.css" as="style"><link rel="preload" href="/_nuxt/bf355f21967a23c26c07.js" as="script"><link rel="preload" href="/_nuxt/35a90d914f539af1362f.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/46e8fcacdadb233d9fb6.css">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app"><div id="menu"><div class="menu-inner"><div id="settings"></div><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><svg version="1.1" viewbox="0 0 110 58" width="110px" height="58px" enable-background="0 0 110 58" xml:space="preserve" class="logo"><g><path d="M58,29 C58,13 45,0 29,0 C13,0 0,13 0,29 C0,45 13,58 29,58 C45,58 58,45 58,29 Z"></path><rect x="59" y="0" width="25" height="58"></rect><rect x="85" y="26" width="15" height="15"></rect><path d="M85,0 L110,0 L85,25 L85,0 Z"></path></g></svg><div class="txt"><span class="docs f7 questrial">Docs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343							c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88							c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593							c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789							C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><!----></div><div id="lists" class="menu-inner mt1 mb2"><div class="inner"></div></div></div><div class="menu-bottom"><div class="inner"><button class="button"><!----><span><span class="ico">nights_stay</span></span></button></div></div></div><div id="document"><div id="renderer" class="main page"><div absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/addons/ofxAssimpModelLoader/ofxAssimpModelLoader.markdown" route="/documentation/addons/ofxAssimpModelLoader/ofxAssimpModelLoader.markdown" dir="../ofSite/documentation/addons/ofxAssimpModelLoader" ext="markdown" type="page" id="2021" parent="2017" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/" class="pink nuxt-link-active">documentation </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/addons/" class="pink nuxt-link-active">addons </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/addons/ofxAssimpModelLoader/" class="pink nuxt-link-active">ofxAssimpModelLoader </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link selector"><span class="name">ofxAssimpModelLoader</span><span class="chevron bottom"></span><select><option value="/documentation/addons/ofxAssimpModelLoader/ofxAssimpAnimation">ofxAssimpAnimation</option><option value="/documentation/addons/ofxAssimpModelLoader/ofxAssimpMeshHelper">ofxAssimpMeshHelper</option><option value="/documentation/addons/ofxAssimpModelLoader/ofxAssimpModelLoader">ofxAssimpModelLoader</option><option value="/documentation/addons/ofxAssimpModelLoader/ofxAssimpTexture">ofxAssimpTexture</option></select></span><!----></span></span></div></div></div><div class="editable-wrapper"><div class="header inner"><h1 class="page-title questrial"><span class="f7"><!----><span>ofxAssimpModelLoader</span></span><span class="f3"></span></h1><div class="actions"><a href="/ofdocs/contribute/" class="button"><i class="ico">edit</i><span>Edit</span></a></div></div><div class="rendered"><div id="documentation-page" static="true"><div id="offset-page"><div id="doc-body" class="markdown"><div class="inner"><div id="description"><div class="full-description"><div class="html"><p>ofAssimpModelLoader addon permits loading to memory and processing 3D models in a convenient and unified format. This addon is mostly a wrapper of the "Open Asset Import Library" (assimp), in its version 2.0  (<a href="http://assimp.sourceforge.net/">http://assimp.sourceforge.net/</a>).</p>
+<p>For an example see <code>openFrameworks/examples/addons/assimpExample</code>.</p>
+<p>At least, these model formats are supported:</p>
+<ul>
+<li>3DS</li>
+<li>ASE</li>
+<li>DXF</li>
+<li>HMP</li>
+<li>MD2</li>
+<li>MD3</li>
+<li>MD5</li>
+<li>MDC</li>
+<li>MDL</li>
+<li>NFF</li>
+<li>PLY</li>
+<li>STL</li>
+<li>X</li>
+<li>LWO</li>
+<li>OBJ</li>
+<li>SMD</li>
+<li>Collada</li>
+<li>Ogre XML</li>
+<li>partly LWS</li>
+</ul>
+<p>In order to load a file to memory, you just need to declare a new variable of type ofAssimpModelLoader and use the function loadModel():</p>
+<pre><code class="language-{.cpp}">ofxAssimpModelLoader model<span class="token punctuation">;</span>
+model<span class="token punctuation">.</span><span class="token function">loadModel</span><span class="token punctuation">(</span><span class="token string">"file_name.3DS"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>You could draw it using:</p>
+<pre><code class="language-{.cpp}"><span class="token keyword">void</span> ofApp<span class="token operator">::</span><span class="token function">draw</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+   <span class="token function">ofBackground</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token function">ofSetColor</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+   model<span class="token punctuation">.</span><span class="token function">drawFaces</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>But probably you would not see the entire model. In the next snippet it appears centered:</p>
+<pre><code class="language-{.cpp}"><span class="token keyword">void</span> ofApp<span class="token operator">::</span><span class="token function">draw</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+   <span class="token function">ofBackground</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token function">ofSetColor</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+   model<span class="token punctuation">.</span><span class="token function">setPosition</span><span class="token punctuation">(</span><span class="token function">ofGetWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword">float</span><span class="token punctuation">)</span><span class="token function">ofGetHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">0.75</span> <span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   model<span class="token punctuation">.</span><span class="token function">drawFaces</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>There are other two ways to represent the model, by its points or by the wiring between the points. In the next snippet the three ways are represented:</p>
+<pre><code class="language-{.cpp}"><span class="token keyword">void</span> ofApp<span class="token operator">::</span><span class="token function">draw</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+   <span class="token function">ofBackground</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token function">ofSetColor</span><span class="token punctuation">(</span><span class="token number">255</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">,</span> <span class="token number">255</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+   model<span class="token punctuation">.</span><span class="token function">setPosition</span><span class="token punctuation">(</span><span class="token function">ofGetWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token number">2</span><span class="token operator">/</span><span class="token number">6</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword">float</span><span class="token punctuation">)</span><span class="token function">ofGetHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">0.75</span> <span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   model<span class="token punctuation">.</span><span class="token function">draw</span><span class="token punctuation">(</span>OF_MESH_FILL<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//same as model.drawFaces();</span>
+   model<span class="token punctuation">.</span><span class="token function">setPosition</span><span class="token punctuation">(</span><span class="token function">ofGetWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token number">3</span><span class="token operator">/</span><span class="token number">6</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword">float</span><span class="token punctuation">)</span><span class="token function">ofGetHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">0.75</span> <span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   model<span class="token punctuation">.</span><span class="token function">draw</span><span class="token punctuation">(</span>OF_MESH_POINTS<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// same as model.drawVertices();</span>
+   model<span class="token punctuation">.</span><span class="token function">setPosition</span><span class="token punctuation">(</span><span class="token function">ofGetWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token number">4</span><span class="token operator">/</span><span class="token number">6</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword">float</span><span class="token punctuation">)</span><span class="token function">ofGetHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">0.75</span> <span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   model<span class="token punctuation">.</span><span class="token function">draw</span><span class="token punctuation">(</span>OF_MESH_WIREFRAME<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// same as model.drawWireframe();</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>We can use model.setScale() to change the size and setRotation() to rotate the model. The next snippet, for instance, draws the model half it's size and if it was looking at you, now is showing it's back:</p>
+<pre><code class="language-{.cpp}">model<span class="token punctuation">.</span><span class="token function">setRotation</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">90</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+model<span class="token punctuation">.</span><span class="token function">setScale</span><span class="token punctuation">(</span><span class="token number">0.5</span><span class="token punctuation">,</span> <span class="token number">0.5</span><span class="token punctuation">,</span> <span class="token number">0.5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+model<span class="token punctuation">.</span><span class="token function">setPosition</span><span class="token punctuation">(</span><span class="token function">ofGetWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token number">2</span><span class="token operator">/</span><span class="token number">6</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token keyword">float</span><span class="token punctuation">)</span><span class="token function">ofGetHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">0.75</span> <span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+model<span class="token punctuation">.</span><span class="token function">drawFaces</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>You can accumulate setRotation() functions for rotating different degrees in different axis if you increment the value of the first variable:</p>
+<pre><code class="language-{.cpp}">model<span class="token punctuation">.</span><span class="token function">setRotation</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> actualXRotation<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+model<span class="token punctuation">.</span><span class="token function">setRotation</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> actualYRotation<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+model<span class="token punctuation">.</span><span class="token function">setRotation</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> actualZRotation<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h1></h1>
+</div></div></div><div id="methods"><hr><section name="calculateDimensions" id="calculateDimensions" class="mb2"><div class="method mb2"><h3 class="f3 title">calculateDimensions( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">calculateDimensions</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="clear" id="clear" class="mb2"><div class="method mb2"><h3 class="f3 title">clear( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">clear</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="createEmptyModel" id="createEmptyModel" class="mb2"><div class="method mb2"><h3 class="f3 title">createEmptyModel( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">createEmptyModel</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="createLightsFromAiModel" id="createLightsFromAiModel" class="mb2"><div class="method mb2"><h3 class="f3 title">createLightsFromAiModel( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">createLightsFromAiModel</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="disableColors" id="disableColors" class="mb2"><div class="method mb2"><h3 class="f3 title">disableColors( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">disableColors</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="disableMaterials" id="disableMaterials" class="mb2"><div class="method mb2"><h3 class="f3 title">disableMaterials( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">disableMaterials</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="disableNormals" id="disableNormals" class="mb2"><div class="method mb2"><h3 class="f3 title">disableNormals( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">disableNormals</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="disableTextures" id="disableTextures" class="mb2"><div class="method mb2"><h3 class="f3 title">disableTextures( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">disableTextures</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="draw" id="draw" class="mb2"><div class="method mb2"><h3 class="f3 title">draw( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">draw</span><span class="token punctuation">(</span><code class="token boolean">ofPolyRenderMode renderType</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="drawFaces" id="drawFaces" class="mb2"><div class="method mb2"><h3 class="f3 title">drawFaces( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">drawFaces</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="drawVertices" id="drawVertices" class="mb2"><div class="method mb2"><h3 class="f3 title">drawVertices( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">drawVertices</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="drawWireframe" id="drawWireframe" class="mb2"><div class="method mb2"><h3 class="f3 title">drawWireframe( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">drawWireframe</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="enableColors" id="enableColors" class="mb2"><div class="method mb2"><h3 class="f3 title">enableColors( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">enableColors</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="enableMaterials" id="enableMaterials" class="mb2"><div class="method mb2"><h3 class="f3 title">enableMaterials( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">enableMaterials</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="enableNormals" id="enableNormals" class="mb2"><div class="method mb2"><h3 class="f3 title">enableNormals( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">enableNormals</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="enableTextures" id="enableTextures" class="mb2"><div class="method mb2"><h3 class="f3 title">enableTextures( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">enableTextures</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getAnimation" id="getAnimation" class="mb2"><div class="method mb2"><h3 class="f3 title">getAnimation( <code class="pink">...</code> )</h3><code><span class="token keyword">ofxAssimpAnimation &  </span><span class="token function">getAnimation</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> animationIndex</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getAnimationCount" id="getAnimationCount" class="mb2"><div class="method mb2"><h3 class="f3 title">getAnimationCount( <!----> )</h3><code><span class="token keyword">unsigned int  </span><span class="token function">getAnimationCount</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getAssimpScene" id="getAssimpScene" class="mb2"><div class="method mb2"><h3 class="f3 title">getAssimpScene( <!----> )</h3><code><span class="token keyword">const aiScene *  </span><span class="token function">getAssimpScene</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getBoundingBoxForNode" id="getBoundingBoxForNode" class="mb2"><div class="method mb2"><h3 class="f3 title">getBoundingBoxForNode( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">getBoundingBoxForNode</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofxAssimpMeshHelper <span class="token operator">&</span>mesh<span class="token punctuation">,</span> aiVector3D <span class="token operator">*</span>min<span class="token punctuation">,</span> aiVector3D <span class="token operator">*</span>max</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getBoundingBoxWithMinVector" id="getBoundingBoxWithMinVector" class="mb2"><div class="method mb2"><h3 class="f3 title">getBoundingBoxWithMinVector( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">getBoundingBoxWithMinVector</span><span class="token punctuation">(</span><code class="token boolean">aiVector3D <span class="token operator">*</span>min<span class="token punctuation">,</span> aiVector3D <span class="token operator">*</span>max</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getCurrentAnimatedMesh" id="getCurrentAnimatedMesh" class="mb2"><div class="method mb2"><h3 class="f3 title">getCurrentAnimatedMesh( <code class="pink">...</code> )</h3><code><span class="token keyword">ofMesh  </span><span class="token function">getCurrentAnimatedMesh</span><span class="token punctuation">(</span><code class="token boolean">string name</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getCurrentAnimatedMesh" id="getCurrentAnimatedMesh" class="mb2"><div class="method mb2"><h3 class="f3 title">getCurrentAnimatedMesh( <code class="pink">...</code> )</h3><code><span class="token keyword">ofMesh  </span><span class="token function">getCurrentAnimatedMesh</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">unsigned</span> <span class="token keyword">int</span> num</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getMaterialForMesh" id="getMaterialForMesh" class="mb2"><div class="method mb2"><h3 class="f3 title">getMaterialForMesh( <code class="pink">...</code> )</h3><code><span class="token keyword">ofMaterial  </span><span class="token function">getMaterialForMesh</span><span class="token punctuation">(</span><code class="token boolean">string name</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getMaterialForMesh" id="getMaterialForMesh" class="mb2"><div class="method mb2"><h3 class="f3 title">getMaterialForMesh( <code class="pink">...</code> )</h3><code><span class="token keyword">ofMaterial  </span><span class="token function">getMaterialForMesh</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">unsigned</span> <span class="token keyword">int</span> num</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getMesh" id="getMesh" class="mb2"><div class="method mb2"><h3 class="f3 title">getMesh( <code class="pink">...</code> )</h3><code><span class="token keyword">ofMesh  </span><span class="token function">getMesh</span><span class="token punctuation">(</span><code class="token boolean">string name</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getMesh" id="getMesh" class="mb2"><div class="method mb2"><h3 class="f3 title">getMesh( <code class="pink">...</code> )</h3><code><span class="token keyword">ofMesh  </span><span class="token function">getMesh</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">unsigned</span> <span class="token keyword">int</span> num</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getMeshCount" id="getMeshCount" class="mb2"><div class="method mb2"><h3 class="f3 title">getMeshCount( <!----> )</h3><code><span class="token keyword">unsigned int  </span><span class="token function">getMeshCount</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getMeshHelper" id="getMeshHelper" class="mb2"><div class="method mb2"><h3 class="f3 title">getMeshHelper( <code class="pink">...</code> )</h3><code><span class="token keyword">ofxAssimpMeshHelper &  </span><span class="token function">getMeshHelper</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> meshIndex</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getMeshNames" id="getMeshNames" class="mb2"><div class="method mb2"><h3 class="f3 title">getMeshNames( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">getMeshNames</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getModelMatrix" id="getModelMatrix" class="mb2"><div class="method mb2"><h3 class="f3 title">getModelMatrix( <!----> )</h3><code><span class="token keyword">ofMatrix4x4  </span><span class="token function">getModelMatrix</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getNormalizedScale" id="getNormalizedScale" class="mb2"><div class="method mb2"><h3 class="f3 title">getNormalizedScale( <!----> )</h3><code><span class="token keyword">float  </span><span class="token function">getNormalizedScale</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getNumMeshes" id="getNumMeshes" class="mb2"><div class="method mb2"><h3 class="f3 title">getNumMeshes( <!----> )</h3><code><span class="token keyword">unsigned int  </span><span class="token function">getNumMeshes</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getNumRotations" id="getNumRotations" class="mb2"><div class="method mb2"><h3 class="f3 title">getNumRotations( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">getNumRotations</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getPosition" id="getPosition" class="mb2"><div class="method mb2"><h3 class="f3 title">getPosition( <!----> )</h3><code><span class="token keyword">ofPoint  </span><span class="token function">getPosition</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getRotationAngle" id="getRotationAngle" class="mb2"><div class="method mb2"><h3 class="f3 title">getRotationAngle( <code class="pink">...</code> )</h3><code><span class="token keyword">float  </span><span class="token function">getRotationAngle</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> which</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getRotationAxis" id="getRotationAxis" class="mb2"><div class="method mb2"><h3 class="f3 title">getRotationAxis( <code class="pink">...</code> )</h3><code><span class="token keyword">ofPoint  </span><span class="token function">getRotationAxis</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> which</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getScale" id="getScale" class="mb2"><div class="method mb2"><h3 class="f3 title">getScale( <!----> )</h3><code><span class="token keyword">ofPoint  </span><span class="token function">getScale</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getSceneCenter" id="getSceneCenter" class="mb2"><div class="method mb2"><h3 class="f3 title">getSceneCenter( <!----> )</h3><code><span class="token keyword">ofPoint  </span><span class="token function">getSceneCenter</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getSceneMax" id="getSceneMax" class="mb2"><div class="method mb2"><h3 class="f3 title">getSceneMax( <code class="pink">...</code> )</h3><code><span class="token keyword">ofPoint  </span><span class="token function">getSceneMax</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">bool</span> bScaled<span class="token operator">=</span><span class="token boolean">false</span></code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getSceneMin" id="getSceneMin" class="mb2"><div class="method mb2"><h3 class="f3 title">getSceneMin( <code class="pink">...</code> )</h3><code><span class="token keyword">ofPoint  </span><span class="token function">getSceneMin</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">bool</span> bScaled<span class="token operator">=</span><span class="token boolean">false</span></code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getTextureForMesh" id="getTextureForMesh" class="mb2"><div class="method mb2"><h3 class="f3 title">getTextureForMesh( <code class="pink">...</code> )</h3><code><span class="token keyword">ofTexture  </span><span class="token function">getTextureForMesh</span><span class="token punctuation">(</span><code class="token boolean">string name</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getTextureForMesh" id="getTextureForMesh" class="mb2"><div class="method mb2"><h3 class="f3 title">getTextureForMesh( <code class="pink">...</code> )</h3><code><span class="token keyword">ofTexture  </span><span class="token function">getTextureForMesh</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">unsigned</span> <span class="token keyword">int</span> num</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="hasAnimations" id="hasAnimations" class="mb2"><div class="method mb2"><h3 class="f3 title">hasAnimations( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">hasAnimations</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="hasMeshes" id="hasMeshes" class="mb2"><div class="method mb2"><h3 class="f3 title">hasMeshes( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">hasMeshes</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="initImportProperties" id="initImportProperties" class="mb2"><div class="method mb2"><h3 class="f3 title">initImportProperties( <code class="pink">...</code> )</h3><code><span class="token keyword">unsigned int  </span><span class="token function">initImportProperties</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">bool</span> optimize</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="loadGLResources" id="loadGLResources" class="mb2"><div class="method mb2"><h3 class="f3 title">loadGLResources( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">loadGLResources</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="loadModel" id="loadModel" class="mb2"><div class="method mb2"><h3 class="f3 title">loadModel( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">loadModel</span><span class="token punctuation">(</span><code class="token boolean">ofBuffer <span class="token operator">&</span>buffer<span class="token punctuation">,</span> <span class="token keyword">bool</span> optimize<span class="token operator">=</span><span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span>extension</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="loadModel" id="loadModel" class="mb2"><div class="method mb2"><h3 class="f3 title">loadModel( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">loadModel</span><span class="token punctuation">(</span><code class="token boolean">string modelName<span class="token punctuation">,</span> <span class="token keyword">bool</span> optimize<span class="token operator">=</span><span class="token boolean">false</span></code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofxAssimpModelLoader" id="ofxAssimpModelLoader" class="mb2"><div class="method mb2"><h3 class="f3 title">ofxAssimpModelLoader( <!----> )</h3><code><!----><span class="token function">ofxAssimpModelLoader</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="optimizeScene" id="optimizeScene" class="mb2"><div class="method mb2"><h3 class="f3 title">optimizeScene( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">optimizeScene</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="playAllAnimations" id="playAllAnimations" class="mb2"><div class="method mb2"><h3 class="f3 title">playAllAnimations( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">playAllAnimations</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="processScene" id="processScene" class="mb2"><div class="method mb2"><h3 class="f3 title">processScene( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">processScene</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="resetAllAnimations" id="resetAllAnimations" class="mb2"><div class="method mb2"><h3 class="f3 title">resetAllAnimations( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">resetAllAnimations</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setLoopStateForAllAnimations" id="setLoopStateForAllAnimations" class="mb2"><div class="method mb2"><h3 class="f3 title">setLoopStateForAllAnimations( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setLoopStateForAllAnimations</span><span class="token punctuation">(</span><code class="token boolean">ofLoopType state</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setNormalizationFactor" id="setNormalizationFactor" class="mb2"><div class="method mb2"><h3 class="f3 title">setNormalizationFactor( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setNormalizationFactor</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> factor</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setPausedForAllAnimations" id="setPausedForAllAnimations" class="mb2"><div class="method mb2"><h3 class="f3 title">setPausedForAllAnimations( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setPausedForAllAnimations</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">bool</span> pause</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setPosition" id="setPosition" class="mb2"><div class="method mb2"><h3 class="f3 title">setPosition( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setPosition</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> x<span class="token punctuation">,</span> <span class="token keyword">float</span> y<span class="token punctuation">,</span> <span class="token keyword">float</span> z</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setPositionForAllAnimations" id="setPositionForAllAnimations" class="mb2"><div class="method mb2"><h3 class="f3 title">setPositionForAllAnimations( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setPositionForAllAnimations</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> position</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setRotation" id="setRotation" class="mb2"><div class="method mb2"><h3 class="f3 title">setRotation( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setRotation</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> which<span class="token punctuation">,</span> <span class="token keyword">float</span> angle<span class="token punctuation">,</span> <span class="token keyword">float</span> rot_x<span class="token punctuation">,</span> <span class="token keyword">float</span> rot_y<span class="token punctuation">,</span> <span class="token keyword">float</span> r_z</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setScale" id="setScale" class="mb2"><div class="method mb2"><h3 class="f3 title">setScale( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setScale</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> x<span class="token punctuation">,</span> <span class="token keyword">float</span> y<span class="token punctuation">,</span> <span class="token keyword">float</span> z</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setScaleNormalization" id="setScaleNormalization" class="mb2"><div class="method mb2"><h3 class="f3 title">setScaleNormalization( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setScaleNormalization</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">bool</span> normalize</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="stopAllAnimations" id="stopAllAnimations" class="mb2"><div class="method mb2"><h3 class="f3 title">stopAllAnimations( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">stopAllAnimations</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="update" id="update" class="mb2"><div class="method mb2"><h3 class="f3 title">update( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">update</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="updateAnimations" id="updateAnimations" class="mb2"><div class="method mb2"><h3 class="f3 title">updateAnimations( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">updateAnimations</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="updateBones" id="updateBones" class="mb2"><div class="method mb2"><h3 class="f3 title">updateBones( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">updateBones</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="updateGLResources" id="updateGLResources" class="mb2"><div class="method mb2"><h3 class="f3 title">updateGLResources( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">updateGLResources</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="updateMeshes" id="updateMeshes" class="mb2"><div class="method mb2"><h3 class="f3 title">updateMeshes( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">updateMeshes</span><span class="token punctuation">(</span><code class="token boolean">aiNode <span class="token operator">*</span>node<span class="token punctuation">,</span> ofMatrix4x4 parentMatrix</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="updateModelMatrix" id="updateModelMatrix" class="mb2"><div class="method mb2"><h3 class="f3 title">updateModelMatrix( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">updateModelMatrix</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="~ofxAssimpModelLoader" id="~ofxAssimpModelLoader" class="mb2"><div class="method mb2"><h3 class="f3 title">~ofxAssimpModelLoader( <!----> )</h3><code><!----><span class="token function">~ofxAssimpModelLoader</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section></div></div></div></div><div id="side-menu"><div id="params"><h4 class="f3">Variables</h4><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>bUsingColors</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>bUsingMaterials</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>bUsingNormals</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>bUsingTextures</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">int </span><span>currentAnimation</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofFile </span><span>file</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofMatrix4x4 </span><span>modelMatrix</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofxAssimpMeshHelper </span><span>modelMeshes</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">float </span><span>normalizeFactor</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>normalizeScale</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">double </span><span>normalizedScale</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofPoint </span><span>pos</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofPoint </span><span>scale</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">constaiScene* </span><span>scene</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">aiVector3D </span><span>scene_center</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">aiVector3D </span><span>scene_max</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">aiVector3D </span><span>scene_min</span><span class="token comment"></span></div><div class="desc"></div></div></code></div><div id="methods-list"><h4 class="f3">Methods</h4><div class="anchor"><code><a href="#calculateDimensions"><span>calculateDimensions</span><!----></a></code></div><div class="anchor"><code><a href="#clear"><span>clear</span><!----></a></code></div><div class="anchor"><code><a href="#createEmptyModel"><span>createEmptyModel</span><!----></a></code></div><div class="anchor"><code><a href="#createLightsFromAiModel"><span>createLightsFromAiModel</span><!----></a></code></div><div class="anchor"><code><a href="#disableColors"><span>disableColors</span><!----></a></code></div><div class="anchor"><code><a href="#disableMaterials"><span>disableMaterials</span><!----></a></code></div><div class="anchor"><code><a href="#disableNormals"><span>disableNormals</span><!----></a></code></div><div class="anchor"><code><a href="#disableTextures"><span>disableTextures</span><!----></a></code></div><div class="anchor"><code><a href="#draw"><span>draw</span><!----></a></code></div><div class="anchor"><code><a href="#drawFaces"><span>drawFaces</span><!----></a></code></div><div class="anchor"><code><a href="#drawVertices"><span>drawVertices</span><!----></a></code></div><div class="anchor"><code><a href="#drawWireframe"><span>drawWireframe</span><!----></a></code></div><div class="anchor"><code><a href="#enableColors"><span>enableColors</span><!----></a></code></div><div class="anchor"><code><a href="#enableMaterials"><span>enableMaterials</span><!----></a></code></div><div class="anchor"><code><a href="#enableNormals"><span>enableNormals</span><!----></a></code></div><div class="anchor"><code><a href="#enableTextures"><span>enableTextures</span><!----></a></code></div><div class="anchor"><code><a href="#getAnimation"><span>getAnimation</span><!----></a></code></div><div class="anchor"><code><a href="#getAnimationCount"><span>getAnimationCount</span><!----></a></code></div><div class="anchor"><code><a href="#getAssimpScene"><span>getAssimpScene</span><!----></a></code></div><div class="anchor"><code><a href="#getBoundingBoxForNode"><span>getBoundingBoxForNode</span><!----></a></code></div><div class="anchor"><code><a href="#getBoundingBoxWithMinVector"><span>getBoundingBoxWithMinVector</span><!----></a></code></div><div class="anchor"><code><a href="#getCurrentAnimatedMesh"><span>getCurrentAnimatedMesh</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#getMaterialForMesh"><span>getMaterialForMesh</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#getMesh"><span>getMesh</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#getMeshCount"><span>getMeshCount</span><!----></a></code></div><div class="anchor"><code><a href="#getMeshHelper"><span>getMeshHelper</span><!----></a></code></div><div class="anchor"><code><a href="#getMeshNames"><span>getMeshNames</span><!----></a></code></div><div class="anchor"><code><a href="#getModelMatrix"><span>getModelMatrix</span><!----></a></code></div><div class="anchor"><code><a href="#getNormalizedScale"><span>getNormalizedScale</span><!----></a></code></div><div class="anchor"><code><a href="#getNumMeshes"><span>getNumMeshes</span><!----></a></code></div><div class="anchor"><code><a href="#getNumRotations"><span>getNumRotations</span><!----></a></code></div><div class="anchor"><code><a href="#getPosition"><span>getPosition</span><!----></a></code></div><div class="anchor"><code><a href="#getRotationAngle"><span>getRotationAngle</span><!----></a></code></div><div class="anchor"><code><a href="#getRotationAxis"><span>getRotationAxis</span><!----></a></code></div><div class="anchor"><code><a href="#getScale"><span>getScale</span><!----></a></code></div><div class="anchor"><code><a href="#getSceneCenter"><span>getSceneCenter</span><!----></a></code></div><div class="anchor"><code><a href="#getSceneMax"><span>getSceneMax</span><!----></a></code></div><div class="anchor"><code><a href="#getSceneMin"><span>getSceneMin</span><!----></a></code></div><div class="anchor"><code><a href="#getTextureForMesh"><span>getTextureForMesh</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#hasAnimations"><span>hasAnimations</span><!----></a></code></div><div class="anchor"><code><a href="#hasMeshes"><span>hasMeshes</span><!----></a></code></div><div class="anchor"><code><a href="#initImportProperties"><span>initImportProperties</span><!----></a></code></div><div class="anchor"><code><a href="#loadGLResources"><span>loadGLResources</span><!----></a></code></div><div class="anchor"><code><a href="#loadModel"><span>loadModel</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#ofxAssimpModelLoader"><span>ofxAssimpModelLoader</span><!----></a></code></div><div class="anchor"><code><a href="#optimizeScene"><span>optimizeScene</span><!----></a></code></div><div class="anchor"><code><a href="#playAllAnimations"><span>playAllAnimations</span><!----></a></code></div><div class="anchor"><code><a href="#processScene"><span>processScene</span><!----></a></code></div><div class="anchor"><code><a href="#resetAllAnimations"><span>resetAllAnimations</span><!----></a></code></div><div class="anchor"><code><a href="#setLoopStateForAllAnimations"><span>setLoopStateForAllAnimations</span><!----></a></code></div><div class="anchor"><code><a href="#setNormalizationFactor"><span>setNormalizationFactor</span><!----></a></code></div><div class="anchor"><code><a href="#setPausedForAllAnimations"><span>setPausedForAllAnimations</span><!----></a></code></div><div class="anchor"><code><a href="#setPosition"><span>setPosition</span><!----></a></code></div><div class="anchor"><code><a href="#setPositionForAllAnimations"><span>setPositionForAllAnimations</span><!----></a></code></div><div class="anchor"><code><a href="#setRotation"><span>setRotation</span><!----></a></code></div><div class="anchor"><code><a href="#setScale"><span>setScale</span><!----></a></code></div><div class="anchor"><code><a href="#setScaleNormalization"><span>setScaleNormalization</span><!----></a></code></div><div class="anchor"><code><a href="#stopAllAnimations"><span>stopAllAnimations</span><!----></a></code></div><div class="anchor"><code><a href="#update"><span>update</span><!----></a></code></div><div class="anchor"><code><a href="#updateAnimations"><span>updateAnimations</span><!----></a></code></div><div class="anchor"><code><a href="#updateBones"><span>updateBones</span><!----></a></code></div><div class="anchor"><code><a href="#updateGLResources"><span>updateGLResources</span><!----></a></code></div><div class="anchor"><code><a href="#updateMeshes"><span>updateMeshes</span><!----></a></code></div><div class="anchor"><code><a href="#updateModelMatrix"><span>updateModelMatrix</span><!----></a></code></div><div class="anchor"><code><a href="#~ofxAssimpModelLoader"><span>~ofxAssimpModelLoader</span><!----></a></code></div></div><div id="see-also" filename="ofxAssimpModelLoader.markdown" absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/addons/ofxAssimpModelLoader/ofxAssimpModelLoader.markdown" route="/documentation/addons/ofxAssimpModelLoader/ofxAssimpModelLoader.markdown" dir="../ofSite/documentation/addons/ofxAssimpModelLoader" ext="markdown" type="page" parent="2017" breadcrumbs="2017,1993,1968" siblings="" translations="[object Object]" class="see-also"><h4 class="f3">See also</h4><div class="also"><a href="/documentation/addons/ofxAssimpModelLoader/" class="nuxt-link-active"><span class="origin">documentation</span><span class="name">ofxAssimpModelLoader</span></a></div><div class="also"><a href="/addons/ofxAssimpModelLoader/src/ofxAssimpModelLoader_h"><span class="origin">addons</span><span class="name">ofxAssimpModelLoader.h</span></a></div><div class="also"><a href="/addons/ofxAssimpModelLoader/src/ofxAssimpModelLoader_cpp"><span class="origin">addons</span><span class="name">ofxAssimpModelLoader.cpp</span></a></div><div class="also"><a href="/addons/ofxAssimpModelLoader/"><span class="origin">addons</span><span class="name">ofxAssimpModelLoader</span></a></div></div></div></div></div><textarea rows="0" class="markdown-editor" style="display:none">#class ofxAssimpModelLoader
+
+
+&lt;!--
+_visible: True_
+_advanced: False_
+_istemplated: False_
+_extends: _
+-->
+
+##InlineDescription
+
+
+
+
+
+
+##Description
+
+ofAssimpModelLoader addon permits loading to memory and processing 3D models in a convenient and unified format. This addon is mostly a wrapper of the "Open Asset Import Library" (assimp), in its version 2.0  ([http://assimp.sourceforge.net/](http://assimp.sourceforge.net/)).
+
+For an example see `openFrameworks/examples/addons/assimpExample`.
+
+At least, these model formats are supported:
+
+- 3DS
+- ASE
+- DXF
+- HMP
+- MD2
+- MD3
+- MD5
+- MDC
+- MDL
+- NFF
+- PLY
+- STL
+- X
+- LWO
+- OBJ
+- SMD
+- Collada
+- Ogre XML
+- partly LWS 
+
+In order to load a file to memory, you just need to declare a new variable of type ofAssimpModelLoader and use the function loadModel():
+
+~~~~{.cpp}
+ofxAssimpModelLoader model;
+model.loadModel("file_name.3DS");
+~~~~
+
+You could draw it using:
+
+~~~~{.cpp}
+void ofApp::draw(){
+   ofBackground(50, 50, 50, 0);
+   ofSetColor(255, 255, 255, 255);
+
+   model.drawFaces();
+}
+~~~~
+
+But probably you would not see the entire model. In the next snippet it appears centered:
+
+~~~~{.cpp}
+void ofApp::draw(){
+   ofBackground(50, 50, 50, 0);
+   ofSetColor(255, 255, 255, 255);
+
+   model.setPosition(ofGetWidth()/2, (float)ofGetHeight() * 0.75 , 0);
+   model.drawFaces();
+}
+~~~~
+
+There are other two ways to represent the model, by its points or by the wiring between the points. In the next snippet the three ways are represented:
+
+~~~~{.cpp}
+void ofApp::draw(){
+   ofBackground(50, 50, 50, 0);
+   ofSetColor(255, 255, 255, 255);
+
+   model.setPosition(ofGetWidth()*2/6, (float)ofGetHeight() * 0.75 , 0);
+   model.draw(OF_MESH_FILL); //same as model.drawFaces();
+   model.setPosition(ofGetWidth()*3/6, (float)ofGetHeight() * 0.75 , 0);
+   model.draw(OF_MESH_POINTS); // same as model.drawVertices();
+   model.setPosition(ofGetWidth()*4/6, (float)ofGetHeight() * 0.75 , 0);
+   model.draw(OF_MESH_WIREFRAME); // same as model.drawWireframe();
+}
+~~~~
+
+We can use model.setScale() to change the size and setRotation() to rotate the model. The next snippet, for instance, draws the model half it's size and if it was looking at you, now is showing it's back:
+
+~~~~{.cpp}
+model.setRotation(0,90,0,1,0);
+model.setScale(0.5, 0.5, 0.5);
+model.setPosition(ofGetWidth()*2/6, (float)ofGetHeight() * 0.75 , 0);
+model.drawFaces();
+~~~~
+
+You can accumulate setRotation() functions for rotating different degrees in different axis if you increment the value of the first variable:
+
+~~~~{.cpp}
+model.setRotation(0, actualXRotation, 1, 0, 0);
+model.setRotation(1, actualYRotation, 0, 1, 0);
+model.setRotation(2, actualZRotation, 0, 0, 1);
+~~~~
+
+
+
+
+
+##Methods
+
+
+
+###void calculateDimensions()
+
+&lt;!--
+_syntax: calculateDimensions()_
+_name: calculateDimensions_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void clear()
+
+&lt;!--
+_syntax: clear()_
+_name: clear_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void createEmptyModel()
+
+&lt;!--
+_syntax: createEmptyModel()_
+_name: createEmptyModel_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void createLightsFromAiModel()
+
+&lt;!--
+_syntax: createLightsFromAiModel()_
+_name: createLightsFromAiModel_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void disableColors()
+
+&lt;!--
+_syntax: disableColors()_
+_name: disableColors_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void disableMaterials()
+
+&lt;!--
+_syntax: disableMaterials()_
+_name: disableMaterials_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void disableNormals()
+
+&lt;!--
+_syntax: disableNormals()_
+_name: disableNormals_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void disableTextures()
+
+&lt;!--
+_syntax: disableTextures()_
+_name: disableTextures_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void draw(renderType)
+
+&lt;!--
+_syntax: draw(renderType)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: ofPolyRenderMode renderType_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void drawFaces()
+
+&lt;!--
+_syntax: drawFaces()_
+_name: drawFaces_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void drawVertices()
+
+&lt;!--
+_syntax: drawVertices()_
+_name: drawVertices_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void drawWireframe()
+
+&lt;!--
+_syntax: drawWireframe()_
+_name: drawWireframe_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void enableColors()
+
+&lt;!--
+_syntax: enableColors()_
+_name: enableColors_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void enableMaterials()
+
+&lt;!--
+_syntax: enableMaterials()_
+_name: enableMaterials_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void enableNormals()
+
+&lt;!--
+_syntax: enableNormals()_
+_name: enableNormals_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void enableTextures()
+
+&lt;!--
+_syntax: enableTextures()_
+_name: enableTextures_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofxAssimpAnimation & getAnimation(animationIndex)
+
+&lt;!--
+_syntax: getAnimation(animationIndex)_
+_name: getAnimation_
+_returns: ofxAssimpAnimation &_
+_returns_description: _
+_parameters: int animationIndex_
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###unsigned int getAnimationCount()
+
+&lt;!--
+_syntax: getAnimationCount()_
+_name: getAnimationCount_
+_returns: unsigned int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###const aiScene * getAssimpScene()
+
+&lt;!--
+_syntax: getAssimpScene()_
+_name: getAssimpScene_
+_returns: const aiScene *_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void getBoundingBoxForNode(&mesh, *min, *max)
+
+&lt;!--
+_syntax: getBoundingBoxForNode(&mesh, *min, *max)_
+_name: getBoundingBoxForNode_
+_returns: void_
+_returns_description: _
+_parameters: const ofxAssimpMeshHelper &mesh, aiVector3D *min, aiVector3D *max_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void getBoundingBoxWithMinVector(*min, *max)
+
+&lt;!--
+_syntax: getBoundingBoxWithMinVector(*min, *max)_
+_name: getBoundingBoxWithMinVector_
+_returns: void_
+_returns_description: _
+_parameters: aiVector3D *min, aiVector3D *max_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofMesh getCurrentAnimatedMesh(name)
+
+&lt;!--
+_syntax: getCurrentAnimatedMesh(name)_
+_name: getCurrentAnimatedMesh_
+_returns: ofMesh_
+_returns_description: _
+_parameters: string name_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofMesh getCurrentAnimatedMesh(num)
+
+&lt;!--
+_syntax: getCurrentAnimatedMesh(num)_
+_name: getCurrentAnimatedMesh_
+_returns: ofMesh_
+_returns_description: _
+_parameters: unsigned int num_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofMaterial getMaterialForMesh(name)
+
+&lt;!--
+_syntax: getMaterialForMesh(name)_
+_name: getMaterialForMesh_
+_returns: ofMaterial_
+_returns_description: _
+_parameters: string name_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofMaterial getMaterialForMesh(num)
+
+&lt;!--
+_syntax: getMaterialForMesh(num)_
+_name: getMaterialForMesh_
+_returns: ofMaterial_
+_returns_description: _
+_parameters: unsigned int num_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofMesh getMesh(name)
+
+&lt;!--
+_syntax: getMesh(name)_
+_name: getMesh_
+_returns: ofMesh_
+_returns_description: _
+_parameters: string name_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofMesh getMesh(num)
+
+&lt;!--
+_syntax: getMesh(num)_
+_name: getMesh_
+_returns: ofMesh_
+_returns_description: _
+_parameters: unsigned int num_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###unsigned int getMeshCount()
+
+&lt;!--
+_syntax: getMeshCount()_
+_name: getMeshCount_
+_returns: unsigned int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofxAssimpMeshHelper & getMeshHelper(meshIndex)
+
+&lt;!--
+_syntax: getMeshHelper(meshIndex)_
+_name: getMeshHelper_
+_returns: ofxAssimpMeshHelper &_
+_returns_description: _
+_parameters: int meshIndex_
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int getMeshNames()
+
+&lt;!--
+_syntax: getMeshNames()_
+_name: getMeshNames_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofMatrix4x4 getModelMatrix()
+
+&lt;!--
+_syntax: getModelMatrix()_
+_name: getModelMatrix_
+_returns: ofMatrix4x4_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float getNormalizedScale()
+
+&lt;!--
+_syntax: getNormalizedScale()_
+_name: getNormalizedScale_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###unsigned int getNumMeshes()
+
+&lt;!--
+_syntax: getNumMeshes()_
+_name: getNumMeshes_
+_returns: unsigned int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int getNumRotations()
+
+&lt;!--
+_syntax: getNumRotations()_
+_name: getNumRotations_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofPoint getPosition()
+
+&lt;!--
+_syntax: getPosition()_
+_name: getPosition_
+_returns: ofPoint_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float getRotationAngle(which)
+
+&lt;!--
+_syntax: getRotationAngle(which)_
+_name: getRotationAngle_
+_returns: float_
+_returns_description: _
+_parameters: int which_
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofPoint getRotationAxis(which)
+
+&lt;!--
+_syntax: getRotationAxis(which)_
+_name: getRotationAxis_
+_returns: ofPoint_
+_returns_description: _
+_parameters: int which_
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofPoint getScale()
+
+&lt;!--
+_syntax: getScale()_
+_name: getScale_
+_returns: ofPoint_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofPoint getSceneCenter()
+
+&lt;!--
+_syntax: getSceneCenter()_
+_name: getSceneCenter_
+_returns: ofPoint_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofPoint getSceneMax(bScaled = false)
+
+&lt;!--
+_syntax: getSceneMax(bScaled = false)_
+_name: getSceneMax_
+_returns: ofPoint_
+_returns_description: _
+_parameters: bool bScaled=false_
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofPoint getSceneMin(bScaled = false)
+
+&lt;!--
+_syntax: getSceneMin(bScaled = false)_
+_name: getSceneMin_
+_returns: ofPoint_
+_returns_description: _
+_parameters: bool bScaled=false_
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofTexture getTextureForMesh(name)
+
+&lt;!--
+_syntax: getTextureForMesh(name)_
+_name: getTextureForMesh_
+_returns: ofTexture_
+_returns_description: _
+_parameters: string name_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofTexture getTextureForMesh(num)
+
+&lt;!--
+_syntax: getTextureForMesh(num)_
+_name: getTextureForMesh_
+_returns: ofTexture_
+_returns_description: _
+_parameters: unsigned int num_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool hasAnimations()
+
+&lt;!--
+_syntax: hasAnimations()_
+_name: hasAnimations_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool hasMeshes()
+
+&lt;!--
+_syntax: hasMeshes()_
+_name: hasMeshes_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###unsigned int initImportProperties(optimize)
+
+&lt;!--
+_syntax: initImportProperties(optimize)_
+_name: initImportProperties_
+_returns: unsigned int_
+_returns_description: _
+_parameters: bool optimize_
+_access: protected_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void loadGLResources()
+
+&lt;!--
+_syntax: loadGLResources()_
+_name: loadGLResources_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool loadModel(&buffer, optimize = false, *extension)
+
+&lt;!--
+_syntax: loadModel(&buffer, optimize = false, *extension)_
+_name: loadModel_
+_returns: bool_
+_returns_description: _
+_parameters: ofBuffer &buffer, bool optimize=false, const char *extension_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool loadModel(modelName, optimize = false)
+
+&lt;!--
+_syntax: loadModel(modelName, optimize = false)_
+_name: loadModel_
+_returns: bool_
+_returns_description: _
+_parameters: string modelName, bool optimize=false_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofxAssimpModelLoader()
+
+&lt;!--
+_syntax: ofxAssimpModelLoader()_
+_name: ofxAssimpModelLoader_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void optimizeScene()
+
+&lt;!--
+_syntax: optimizeScene()_
+_name: optimizeScene_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void playAllAnimations()
+
+&lt;!--
+_syntax: playAllAnimations()_
+_name: playAllAnimations_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool processScene()
+
+&lt;!--
+_syntax: processScene()_
+_name: processScene_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void resetAllAnimations()
+
+&lt;!--
+_syntax: resetAllAnimations()_
+_name: resetAllAnimations_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setLoopStateForAllAnimations(state)
+
+&lt;!--
+_syntax: setLoopStateForAllAnimations(state)_
+_name: setLoopStateForAllAnimations_
+_returns: void_
+_returns_description: _
+_parameters: ofLoopType state_
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setNormalizationFactor(factor)
+
+&lt;!--
+_syntax: setNormalizationFactor(factor)_
+_name: setNormalizationFactor_
+_returns: void_
+_returns_description: _
+_parameters: float factor_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setPausedForAllAnimations(pause)
+
+&lt;!--
+_syntax: setPausedForAllAnimations(pause)_
+_name: setPausedForAllAnimations_
+_returns: void_
+_returns_description: _
+_parameters: bool pause_
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setPosition(x, y, z)
+
+&lt;!--
+_syntax: setPosition(x, y, z)_
+_name: setPosition_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float z_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setPositionForAllAnimations(position)
+
+&lt;!--
+_syntax: setPositionForAllAnimations(position)_
+_name: setPositionForAllAnimations_
+_returns: void_
+_returns_description: _
+_parameters: float position_
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setRotation(which, angle, rot_x, rot_y, r_z)
+
+&lt;!--
+_syntax: setRotation(which, angle, rot_x, rot_y, r_z)_
+_name: setRotation_
+_returns: void_
+_returns_description: _
+_parameters: int which, float angle, float rot_x, float rot_y, float r_z_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setScale(x, y, z)
+
+&lt;!--
+_syntax: setScale(x, y, z)_
+_name: setScale_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float z_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setScaleNormalization(normalize)
+
+&lt;!--
+_syntax: setScaleNormalization(normalize)_
+_name: setScaleNormalization_
+_returns: void_
+_returns_description: _
+_parameters: bool normalize_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void stopAllAnimations()
+
+&lt;!--
+_syntax: stopAllAnimations()_
+_name: stopAllAnimations_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void update()
+
+&lt;!--
+_syntax: update()_
+_name: update_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void updateAnimations()
+
+&lt;!--
+_syntax: updateAnimations()_
+_name: updateAnimations_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void updateBones()
+
+&lt;!--
+_syntax: updateBones()_
+_name: updateBones_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void updateGLResources()
+
+&lt;!--
+_syntax: updateGLResources()_
+_name: updateGLResources_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void updateMeshes(*node, parentMatrix)
+
+&lt;!--
+_syntax: updateMeshes(*node, parentMatrix)_
+_name: updateMeshes_
+_returns: void_
+_returns_description: _
+_parameters: aiNode *node, ofMatrix4x4 parentMatrix_
+_access: protected_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void updateModelMatrix()
+
+&lt;!--
+_syntax: updateModelMatrix()_
+_name: updateModelMatrix_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ~ofxAssimpModelLoader()
+
+&lt;!--
+_syntax: ~ofxAssimpModelLoader()_
+_name: ~ofxAssimpModelLoader_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+##Variables
+
+
+
+###vector&lt;  ofxAssimpAnimation >  animations
+
+&lt;!--
+_name: animations_
+_type: vector&lt;  ofxAssimpAnimation > _
+_access: protected_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool bUsingColors
+
+&lt;!--
+_name: bUsingColors_
+_type: bool_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool bUsingMaterials
+
+&lt;!--
+_name: bUsingMaterials_
+_type: bool_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool bUsingNormals
+
+&lt;!--
+_name: bUsingNormals_
+_type: bool_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool bUsingTextures
+
+&lt;!--
+_name: bUsingTextures_
+_type: bool_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int currentAnimation
+
+&lt;!--
+_name: currentAnimation_
+_type: int_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofFile  file
+
+&lt;!--
+_name: file_
+_type: ofFile _
+_access: protected_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###vector&lt; ofLight > lights
+
+&lt;!--
+_name: lights_
+_type: vector&lt; ofLight >_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofMatrix4x4  modelMatrix
+
+&lt;!--
+_name: modelMatrix_
+_type: ofMatrix4x4 _
+_access: protected_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofxAssimpMeshHelper modelMeshes
+
+&lt;!--
+_name: modelMeshes_
+_type: ofxAssimpMeshHelper_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float normalizeFactor
+
+&lt;!--
+_name: normalizeFactor_
+_type: float_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool normalizeScale
+
+&lt;!--
+_name: normalizeScale_
+_type: bool_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###double normalizedScale
+
+&lt;!--
+_name: normalizedScale_
+_type: double_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofPoint pos
+
+&lt;!--
+_name: pos_
+_type: ofPoint_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###vector&lt; float > rotAngle
+
+&lt;!--
+_name: rotAngle_
+_type: vector&lt; float >_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###vector&lt; ofPoint > rotAxis
+
+&lt;!--
+_name: rotAxis_
+_type: vector&lt; ofPoint >_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofPoint scale
+
+&lt;!--
+_name: scale_
+_type: ofPoint_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###const aiScene * scene
+
+&lt;!--
+_name: scene_
+_type: const aiScene *_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###aiVector3D scene_center
+
+&lt;!--
+_name: scene_center_
+_type: aiVector3D_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###aiVector3D scene_max
+
+&lt;!--
+_name: scene_max_
+_type: aiVector3D_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###aiVector3D scene_min
+
+&lt;!--
+_name: scene_min_
+_type: aiVector3D_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###shared_ptr&lt; aiPropertyStore > store
+
+&lt;!--
+_name: store_
+_type: shared_ptr&lt; aiPropertyStore >_
+_access: protected_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###vector&lt;  ofxAssimpTexture * >  textures
+
+&lt;!--
+_name: textures_
+_type: vector&lt;  ofxAssimpTexture * > _
+_access: protected_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+</textarea></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1586012716389/documentation/addons/ofxAssimpModelLoader/ofxAssimpModelLoader/payload.js"></script><script src="/_nuxt/5f71eaca0bd2f1a0f939.js" defer></script><script src="/_nuxt/35a90d914f539af1362f.js" defer></script><script src="/_nuxt/906a3ca0fb13ed3c6651.js" defer></script><script src="/_nuxt/b673915e8a08acf593e8.js" defer></script><script src="/_nuxt/bf355f21967a23c26c07.js" defer></script>
+  </body>
+</html>

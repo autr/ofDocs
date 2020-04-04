@@ -91,6 +91,9 @@ export default {
       return "";
     },
   },
+  mounted() {
+    this.$store.state.id = this.page.entry.id;
+  },
   created() {
 
   },
@@ -100,12 +103,10 @@ export default {
       return {page: payload};
     } else {
       let p = route.path.toLowerCase();
-      // if (p.indexOf('/ofDocs' === -1)) p = '/ofDocs' + p;
       const path = p + '?as=json';
       console.log('🚜  [Page.vue] api:', path);
       try {
         const page = await $axios.$get( path );
-        store.state.id = page.entry.id;
         return { page: page };
       } catch(err) {
         console.error('❌  [Page.vue] api:', err.response.statusText, path);
