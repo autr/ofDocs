@@ -1,0 +1,1206 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>ofSoundPlayer | documentation | ofDocs</title><meta data-n-head="ssr" data-hid="description" name="description" content="openFrameworks documentation and examples browser"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="openFrameworks documentation and examples browser" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="ofSoundPlayer | documentation | ofDocs" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="/files/images/ofw-logo.png" vmid="og:image"><link rel="preload" href="/_nuxt/5f71eaca0bd2f1a0f939.js" as="script"><link rel="preload" href="/_nuxt/906a3ca0fb13ed3c6651.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/b673915e8a08acf593e8.js" as="script"><link rel="preload" href="/_nuxt/46e8fcacdadb233d9fb6.css" as="style"><link rel="preload" href="/_nuxt/bf355f21967a23c26c07.js" as="script"><link rel="preload" href="/_nuxt/35a90d914f539af1362f.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/46e8fcacdadb233d9fb6.css">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app"><div id="menu"><div class="menu-inner"><div id="settings"></div><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><svg version="1.1" viewbox="0 0 110 58" width="110px" height="58px" enable-background="0 0 110 58" xml:space="preserve" class="logo"><g><path d="M58,29 C58,13 45,0 29,0 C13,0 0,13 0,29 C0,45 13,58 29,58 C45,58 58,45 58,29 Z"></path><rect x="59" y="0" width="25" height="58"></rect><rect x="85" y="26" width="15" height="15"></rect><path d="M85,0 L110,0 L85,25 L85,0 Z"></path></g></svg><div class="txt"><span class="docs f7 questrial">Docs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343							c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88							c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593							c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789							C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><!----></div><div id="lists" class="menu-inner mt1 mb2"><div class="inner"></div></div></div><div class="menu-bottom"><div class="inner"><button class="button"><!----><span><span class="ico">nights_stay</span></span></button></div></div></div><div id="document"><div id="renderer" class="main page"><div absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/sound/ofSoundPlayer.markdown" route="/documentation/sound/ofSoundPlayer.markdown" dir="../ofSite/documentation/sound" ext="markdown" type="page" id="2400" parent="2389" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/" class="pink nuxt-link-active">documentation </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/sound/" class="pink nuxt-link-active">sound </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link selector"><span class="name">ofSoundPlayer</span><span class="chevron bottom"></span><select><option value="/documentation/sound/ofFmodSoundPlayer_functions">ofFmodSoundPlayer (functions)</option><option value="/documentation/sound/ofFmodSoundPlayer">ofFmodSoundPlayer</option><option value="/documentation/sound/ofOpenALSoundPlayer_functions">ofOpenALSoundPlayer (functions)</option><option value="/documentation/sound/ofOpenALSoundPlayer">ofOpenALSoundPlayer</option><option value="/documentation/sound/ofPASoundStream">ofPASoundStream</option><option value="/documentation/sound/ofRtAudioSoundStream">ofRtAudioSoundStream</option><option value="/documentation/sound/ofSoundBuffer">ofSoundBuffer</option><option value="/documentation/sound/ofSoundDevice">ofSoundDevice</option><option value="/documentation/sound/ofSoundPlayer_functions">ofSoundPlayer (functions)</option><option value="/documentation/sound/ofSoundPlayer">ofSoundPlayer</option><option value="/documentation/sound/ofSoundStream_functions">ofSoundStream (functions)</option><option value="/documentation/sound/ofSoundStream">ofSoundStream</option><option value="/documentation/sound/ofSoundStreamSettings">ofSoundStreamSettings</option><option value="/documentation/sound/ofSoundUtils_functions">ofSoundUtils (functions)</option><option value="/documentation/sound/ofxiPhoneSoundStream">ofxiPhoneSoundStream</option></select></span><!----></span></span></div></div></div><div class="editable-wrapper"><div class="header inner"><h1 class="page-title questrial"><span class="f7"><!----><span>ofSoundPlayer</span></span><span class="f3"></span></h1><div class="actions"><a href="/ofdocs/contribute/" class="button"><i class="ico">edit</i><span>Edit</span></a></div></div><div class="rendered"><div id="documentation-page" static="true"><div id="offset-page"><div id="doc-body" class="markdown"><div class="inner"><div id="description"><div class="full-description"><div class="html"><p>The ofSoundPlayer class wraps one of several underlying audio utility libraries, depending on your OS and your configuration that can be Fmod, Quicktime, or OpenAL. The ofSoundPlayer is primarily to allow you to load sound files and control and manipulate their playback and properties, if you want more low level access to sound data and to your sound card then you should take a look at the ofSoundStream class.</p>
+<h1></h1>
+</div></div></div><div id="methods"><hr><section name="getPan" id="getPan" class="mb2"><div class="method mb2"><h3 class="f3 title">getPan( <!----> )</h3><code><span class="token keyword">float  </span><span class="token function">getPan</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Gets stereo pan.
+\return stereo pan in the range -1 to 1.</p>
+</div><div class="desc"><p>Returns the pan position of the sound. -1.0 - 1.0 range.
+0.0 is center pan, -1.0 is full left pan and 1.0 is full right pan. Default is
+0.0</p>
+<p>Example:</p>
+<pre><code class="language-{.cpp}">    
+    ofSoundPlayer mySound<span class="token punctuation">;</span>    
+    mySound<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token string">"beat.mp3"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    
+    mySound<span class="token punctuation">.</span><span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>    
+    mySound<span class="token punctuation">.</span><span class="token function">getPan</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//Returns 0.0     </span>
+    mySound<span class="token punctuation">.</span><span class="token function">setPan</span><span class="token punctuation">(</span><span class="token number">1.0f</span><span class="token punctuation">)</span><span class="token punctuation">;</span>     
+    mySound<span class="token punctuation">.</span><span class="token function">getPan</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//Returns 1.0</span>
+</code></pre>
+</div></div><hr></section><section name="getPosition" id="getPosition" class="mb2"><div class="method mb2"><h3 class="f3 title">getPosition( <!----> )</h3><code><span class="token keyword">float  </span><span class="token function">getPosition</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Gets position of the playhead.
+\return playhead position as a float between 0 and 1.</p>
+</div><div class="desc"><p>Returns the current position of the playhead as a float between 0.0 and 1.0. 0.0 is the beginning of the sound file and 1.0 is the end.</p>
+<p>Example:</p>
+<pre><code class="language-{.cpp}">    ofSoundPlayer mySound<span class="token punctuation">;</span>  
+    mySound<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token string">"beat.mp3"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   
+    mySound<span class="token punctuation">.</span><span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   
+    mySound<span class="token punctuation">.</span><span class="token function">getPosition</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Returns the current position as a percent 0.0-1.0</span>
+</code></pre>
+</div></div><hr></section><section name="getPositionMS" id="getPositionMS" class="mb2"><div class="method mb2"><h3 class="f3 title">getPositionMS( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">getPositionMS</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Gets position of the playhead.
+\return playhead position in milliseconds.</p>
+</div><div class="desc"><p>This returns the position of the playhead in terms of milliseconds (i.e. 5000 for 5 seconds into the sound).</p>
+</div></div><hr></section><section name="getSpeed" id="getSpeed" class="mb2"><div class="method mb2"><h3 class="f3 title">getSpeed( <!----> )</h3><code><span class="token keyword">float  </span><span class="token function">getSpeed</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Gets playback speed.
+\return playback speed (see ofSoundPlayer::setSpeed()).</p>
+</div><div class="desc"><p>Returns the speed of the sound playback in relation to its normal speed.
+So 2.0 would mean the sound is playing twice as fast. 0.5 would mean half as fast.</p>
+<p>Example:</p>
+<pre><code class="language-{.cpp}">    
+    ofSoundPlayer mySound<span class="token punctuation">;</span>    
+    mySound<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token string">"beat.mp3"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   
+    mySound<span class="token punctuation">.</span><span class="token function">getSpeed</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Returns 1.0   </span>
+    mySound<span class="token punctuation">.</span><span class="token function">setSpeed</span><span class="token punctuation">(</span><span class="token number">2.0f</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   
+    mySound<span class="token punctuation">.</span><span class="token function">getSpeed</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Returns 2.0f</span>
+</code></pre>
+</div></div><hr></section><section name="getVolume" id="getVolume" class="mb2"><div class="method mb2"><h3 class="f3 title">getVolume( <!----> )</h3><code><span class="token keyword">float  </span><span class="token function">getVolume</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Gets current volume.
+\return current volume in the range 0 to 1.</p>
+</div><div class="desc"><p>Returns the current volume of the sound player, as set by <code>setVolume()</code>. 0.0 is silent and 1.0 is full volume.</p>
+</div></div><hr></section><section name="isLoaded" id="isLoaded" class="mb2"><div class="method mb2"><h3 class="f3 title">isLoaded( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">isLoaded</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Queries the player to see if its file was loaded successfully.
+\return whether or not the player is ready to begin playback.</p>
+</div><div class="desc"><p>Returns whether or not a sound has been successfully loaded into the sound player.</p>
+</div></div><hr></section><section name="isPlaying" id="isPlaying" class="mb2"><div class="method mb2"><h3 class="f3 title">isPlaying( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">isPlaying</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Gets current playback state.
+\return true if the player is currently playing a file.</p>
+</div><div class="desc"></div></div><hr></section><section name="load" id="load" class="mb2"><div class="method mb2"><h3 class="f3 title">load( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">load</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> filesystem<span class="token operator">::</span>path <span class="token operator">&</span>fileName<span class="token punctuation">,</span> <span class="token keyword">bool</span> stream<span class="token operator">=</span><span class="token boolean">false</span></code><span class="token punctuation">)</span></code><div class="short"><p>Tells the sound player which file to play.</p>
+<p>Codec support varies by platform but wav, aif, and mp3 are safe.</p>
+<p><strong>Parameters:</strong></p>
+<p>fileName Path to the sound file, relative to your app's data folder.</p>
+<p>stream set "true" to enable streaming from disk (for large files).</p>
+</div><div class="desc"></div></div><hr></section><section name="ofSoundPlayer" id="ofSoundPlayer" class="mb2"><div class="method mb2"><h3 class="f3 title">ofSoundPlayer( <!----> )</h3><code><!----><span class="token function">ofSoundPlayer</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Creates the ofSoundPlayer instance and initializes the underlying properties in the underlying engine.</p>
+</div></div><hr></section><section name="play" id="play" class="mb2"><div class="method mb2"><h3 class="f3 title">play( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">play</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Starts playback.</p>
+</div><div class="desc"><p>Plays the sound. If setMultiPlay() has been set to true each play() command will spawn a new copy of the sound on a new channel, letting the existing sounds continue until they are finished. If setMultiPlay() is set to false it will restart the playback of the song.</p>
+<p>Examples:</p>
+<p>Normal Playback:</p>
+<pre><code class="language-{.cpp}">ofSoundPlayer mySound<span class="token punctuation">;</span>
+mySound<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token string">"beat.mp3"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+mySound<span class="token punctuation">.</span><span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Plays sound</span>
+mySound<span class="token punctuation">.</span><span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Restarts and plays sound</span>
+</code></pre>
+<p>Multiplay:</p>
+<pre><code class="language-{.cpp}">ofSoundPlayer mySound<span class="token punctuation">;</span>
+mySound<span class="token punctuation">.</span><span class="token function">setMultiPlay</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+mySound<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token string">"beat.mp3"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+mySound<span class="token punctuation">.</span><span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Plays sound</span>
+mySound<span class="token punctuation">.</span><span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Adds new copy of sound to channel and plays over currently playing sound</span>
+</code></pre>
+</div></div><hr></section><section name="setLoop" id="setLoop" class="mb2"><div class="method mb2"><h3 class="f3 title">setLoop( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setLoop</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">bool</span> loop</code><span class="token punctuation">)</span></code><div class="short"><p>Sets whether to loop once the end of the file is reached.</p>
+<p><strong>Parameters:</strong></p>
+<p>loop "true" to loop, default is false.</p>
+</div><div class="desc"><p>Loops the sound if set to true. Does not loop the sound if set to false. Default is false.</p>
+<p>Example:</p>
+<pre><code class="language-{.cpp}">ofSoundPlayer mySound<span class="token punctuation">;</span>
+mySound<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token string">"beat.mp3"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+mySound<span class="token punctuation">.</span><span class="token function">setLoop</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Sound will loop</span>
+mySound<span class="token punctuation">.</span><span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+</div></div><hr></section><section name="setMultiPlay" id="setMultiPlay" class="mb2"><div class="method mb2"><h3 class="f3 title">setMultiPlay( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setMultiPlay</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">bool</span> multiplay</code><span class="token punctuation">)</span></code><div class="short"><p>Enables playing multiple simultaneous copies of the sound.</p>
+<p><strong>Parameters:</strong></p>
+<p>multiplay "true" to enable, default is false.</p>
+</div><div class="desc"><p>Allows a sound to be played multiple times at once. When set to true the play() function will start playing the sound on a new channel, letting the old channels continue until they are done playing. When set to false the play() function will stop the channel before playing the sound.</p>
+<p>Example:</p>
+<pre><code class="language-{.cpp}">ofSoundPlayer mySound<span class="token punctuation">;</span>
+mySound<span class="token punctuation">.</span><span class="token function">setMultiPlay</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+mySound<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token string">"beat.mp3"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+mySound<span class="token punctuation">.</span><span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Plays sound</span>
+mySound<span class="token punctuation">.</span><span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Adds new copy of sound to channel and plays over currently playing sound</span>
+</code></pre>
+</div></div><hr></section><section name="setPan" id="setPan" class="mb2"><div class="method mb2"><h3 class="f3 title">setPan( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setPan</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> pan</code><span class="token punctuation">)</span></code><div class="short"><p>Sets stereo pan.</p>
+<p><strong>Parameters:</strong></p>
+<p>pan range is -1 to 1 (-1 is full left, 1 is full right).</p>
+</div><div class="desc"><p>Sets the pan position (pct) of the sound. -1.0 - 1.0 range. 0.0 is center pan, -1.0 is full left pan and 1.0 is full right pan.</p>
+<p>Example:</p>
+<pre><code class="language-{.cpp}">ofSoundPlayer mySound<span class="token punctuation">;</span>
+mySound<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token string">"beat.mp3"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+mySound<span class="token punctuation">.</span><span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+mySound<span class="token punctuation">.</span><span class="token function">setPan</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1.0f</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Pans to the left</span>
+mySound<span class="token punctuation">.</span><span class="token function">setPan</span><span class="token punctuation">(</span><span class="token number">1.0f</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Pans to the right</span>
+mySound<span class="token punctuation">.</span><span class="token function">setPan</span><span class="token punctuation">(</span><span class="token number">0.0f</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Back to center</span>
+</code></pre>
+</div></div><hr></section><section name="setPaused" id="setPaused" class="mb2"><div class="method mb2"><h3 class="f3 title">setPaused( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setPaused</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">bool</span> paused</code><span class="token punctuation">)</span></code><div class="short"><p>Enables pause / resume.</p>
+<p><strong>Parameters:</strong></p>
+<p>paused "true" to pause, "false" to resume.</p>
+</div><div class="desc"><p>Pauses and un-pauses the playback of the sound.</p>
+<p>Example</p>
+<pre><code class="language-{.cpp}">ofSoundPlayer mySound<span class="token punctuation">;</span>
+mySound<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token string">"beat.mp3"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+mySound<span class="token punctuation">.</span><span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+mySound<span class="token punctuation">.</span><span class="token function">setPaused</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Sound is paused</span>
+mySound<span class="token punctuation">.</span><span class="token function">setPaused</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Sound is unpaused, playback continues</span>
+</code></pre>
+</div></div><hr></section><section name="setPosition" id="setPosition" class="mb2"><div class="method mb2"><h3 class="f3 title">setPosition( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setPosition</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> percent</code><span class="token punctuation">)</span></code><div class="short"><p>Sets position of the playhead within the file (aka "seeking").</p>
+<p><strong>Parameters:</strong></p>
+<p>percent range is 0 (beginning of file) to 1 (end of file).</p>
+</div><div class="desc"><p>Sets the playback-head to the position (pct) specified. 0.0 - 1.0 range. 0.0 is the beginning of the sound file and 1.0 is the end.</p>
+<p>Example:</p>
+<pre><code class="language-{.cpp}">ofSoundPlayer mySound<span class="token punctuation">;</span>
+mySound<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token string">"beat.mp3"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+mySound<span class="token punctuation">.</span><span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+mySound<span class="token punctuation">.</span><span class="token function">setPosition</span><span class="token punctuation">(</span><span class="token number">0.5f</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Moves the playhead to halfway through the sound</span>
+mySound<span class="token punctuation">.</span><span class="token function">setPosition</span><span class="token punctuation">(</span><span class="token number">0.0f</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Moves the playhead back to the beginning of the sound</span>
+</code></pre>
+</div></div><hr></section><section name="setPositionMS" id="setPositionMS" class="mb2"><div class="method mb2"><h3 class="f3 title">setPositionMS( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setPositionMS</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> ms</code><span class="token punctuation">)</span></code><div class="short"><p>Sets position of the playhead within the file (aka "seeking").</p>
+<p><strong>Parameters:</strong></p>
+<p>ms number of milliseconds from the start of the file.</p>
+</div><div class="desc"><p>This sets the position of the playhead in milliseconds.</p>
+</div></div><hr></section><section name="setSpeed" id="setSpeed" class="mb2"><div class="method mb2"><h3 class="f3 title">setSpeed( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setSpeed</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> speed</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Sets the playback speed of the sound. 1.0 is normal speed. 2.0 is double the normal speed etc.</p>
+<p>Example:</p>
+<pre><code class="language-{.cpp}">ofSoundPlayer mySound<span class="token punctuation">;</span>
+mySound<span class="token punctuation">.</span><span class="token function">loadSound</span><span class="token punctuation">(</span><span class="token string">"beat.mp3"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+mySound<span class="token punctuation">.</span><span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+mySound<span class="token punctuation">.</span><span class="token function">setSpeed</span><span class="token punctuation">(</span><span class="token number">2.0f</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Chipmunk Voice</span>
+mySound<span class="token punctuation">.</span><span class="token function">setSpeed</span><span class="token punctuation">(</span><span class="token number">0.2f</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Isaac Hayes on Muscle Relaxers</span>
+mySound<span class="token punctuation">.</span><span class="token function">setSpeed</span><span class="token punctuation">(</span><span class="token number">1.0f</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Normal again</span>
+</code></pre>
+</div></div><hr></section><section name="setVolume" id="setVolume" class="mb2"><div class="method mb2"><h3 class="f3 title">setVolume( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setVolume</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> vol</code><span class="token punctuation">)</span></code><div class="short"><p>Sets playback volume.</p>
+<p><strong>Parameters:</strong></p>
+<p>vol range is 0 to 1.</p>
+</div><div class="desc"><p>Sets the volume of the sound. 0.0 - 1.0 range. 0.0 is silent and 1.0 is full volume.</p>
+<p>Example:</p>
+<pre><code class="language-{.cpp}">ofSoundPlayer mySound<span class="token punctuation">;</span>
+mySound<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token string">"beat.mp3"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+mySound<span class="token punctuation">.</span><span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+mySound<span class="token punctuation">.</span><span class="token function">setVolume</span><span class="token punctuation">(</span><span class="token number">0.1f</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Sets volume at 10% of maximum</span>
+</code></pre>
+</div></div><hr></section><section name="stop" id="stop" class="mb2"><div class="method mb2"><h3 class="f3 title">stop( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">stop</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Stops playback.</p>
+</div><div class="desc"><p>Stops the sound currently playing.</p>
+<p>Example:</p>
+<pre><code class="language-{.cpp}">ofSoundPlayer mySound<span class="token punctuation">;</span>
+mySound<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token string">"beat.mp3"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+mySound<span class="token punctuation">.</span><span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Begins playback of sound</span>
+mySound<span class="token punctuation">.</span><span class="token function">stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Ends playback, stops audio</span>
+</code></pre>
+</div></div><hr></section><section name="unload" id="unload" class="mb2"><div class="method mb2"><h3 class="f3 title">unload( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">unload</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Stops and unloads the current sound.</p>
+</div><div class="desc"></div></div><hr></section></div></div></div></div><div id="side-menu"><div id="params"><h4 class="f3">Variables</h4><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofPtr </span><span>player</span><span class="token comment"></span></div><div class="desc"></div></div></code></div><div id="methods-list"><h4 class="f3">Methods</h4><div class="anchor"><code><a href="#getPan" class="pink"><span>getPan</span><!----></a></code></div><div class="anchor"><code><a href="#getPosition" class="pink"><span>getPosition</span><!----></a></code></div><div class="anchor"><code><a href="#getPositionMS" class="pink"><span>getPositionMS</span><!----></a></code></div><div class="anchor"><code><a href="#getSpeed" class="pink"><span>getSpeed</span><!----></a></code></div><div class="anchor"><code><a href="#getVolume" class="pink"><span>getVolume</span><!----></a></code></div><div class="anchor"><code><a href="#isLoaded" class="pink"><span>isLoaded</span><!----></a></code></div><div class="anchor"><code><a href="#isPlaying" class="pink"><span>isPlaying</span><!----></a></code></div><div class="anchor"><code><a href="#load" class="pink"><span>load</span><!----></a></code></div><div class="anchor"><code><a href="#ofSoundPlayer" class="pink"><span>ofSoundPlayer</span><!----></a></code></div><div class="anchor"><code><a href="#play" class="pink"><span>play</span><!----></a></code></div><div class="anchor"><code><a href="#setLoop" class="pink"><span>setLoop</span><!----></a></code></div><div class="anchor"><code><a href="#setMultiPlay" class="pink"><span>setMultiPlay</span><!----></a></code></div><div class="anchor"><code><a href="#setPan" class="pink"><span>setPan</span><!----></a></code></div><div class="anchor"><code><a href="#setPaused" class="pink"><span>setPaused</span><!----></a></code></div><div class="anchor"><code><a href="#setPosition" class="pink"><span>setPosition</span><!----></a></code></div><div class="anchor"><code><a href="#setPositionMS" class="pink"><span>setPositionMS</span><!----></a></code></div><div class="anchor"><code><a href="#setSpeed" class="pink"><span>setSpeed</span><!----></a></code></div><div class="anchor"><code><a href="#setVolume" class="pink"><span>setVolume</span><!----></a></code></div><div class="anchor"><code><a href="#stop" class="pink"><span>stop</span><!----></a></code></div><div class="anchor"><code><a href="#unload" class="pink"><span>unload</span><!----></a></code></div></div><div id="see-also" filename="ofSoundPlayer.markdown" absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/sound/ofSoundPlayer.markdown" route="/documentation/sound/ofSoundPlayer.markdown" dir="../ofSite/documentation/sound" ext="markdown" type="page" parent="2389" breadcrumbs="2389,1968" siblings="" translations="[object Object]" class="see-also"><h4 class="f3">See also</h4><div class="also"><a href="/documentation/sound/ofSoundPlayer_functions"><span class="origin">documentation</span><span class="name">ofSoundPlayer (functions)</span></a></div><div class="also"><a href="/openframeworks/sound/ofSoundPlayer_h"><span class="origin">openframeworks</span><span class="name">ofSoundPlayer.h</span></a></div><div class="also"><a href="/openframeworks/sound/ofSoundPlayer_cpp"><span class="origin">openframeworks</span><span class="name">ofSoundPlayer.cpp</span></a></div></div></div></div></div><textarea rows="0" class="markdown-editor" style="display:none">#class ofSoundPlayer
+
+
+&lt;!--
+_visible: True_
+_advanced: False_
+_istemplated: False_
+_extends: ofBaseSoundPlayer_
+-->
+
+##InlineDescription
+
+
+Plays sound files.
+
+ofSoundPlayer handles simple playback of sound files, with controls for
+volume, pan, speed, seeking and multiplay.  This is a common cross-platform
+sound player interface which is inherited by each of the platform-specific
+sound player implementations.
+
+
+
+
+
+##Description
+
+The ofSoundPlayer class wraps one of several underlying audio utility libraries, depending on your OS and your configuration that can be Fmod, Quicktime, or OpenAL. The ofSoundPlayer is primarily to allow you to load sound files and control and manipulate their playback and properties, if you want more low level access to sound data and to your sound card then you should take a look at the ofSoundStream class. 
+
+
+
+
+
+##Methods
+
+
+
+###float getPan()
+
+&lt;!--
+_syntax: getPan()_
+_name: getPan_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Gets stereo pan.
+\return stereo pan in the range -1 to 1.
+
+
+
+
+
+_description: _
+
+Returns the pan position of the sound. -1.0 - 1.0 range.
+0.0 is center pan, -1.0 is full left pan and 1.0 is full right pan. Default is
+0.0
+  
+Example:
+~~~~{.cpp}
+    
+    ofSoundPlayer mySound;    
+    mySound.load("beat.mp3");    
+    mySound.play();    
+    mySound.getPan();//Returns 0.0     
+    mySound.setPan(1.0f);     
+    mySound.getPan();//Returns 1.0
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###shared_ptr&lt; ofBaseSoundPlayer > getPlayer()
+
+&lt;!--
+_syntax: getPlayer()_
+_name: getPlayer_
+_returns: shared_ptr&lt; ofBaseSoundPlayer >_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+ofSoundPlayer actually wraps a dynamic instance of a specific sound player for a specific engine, that is, it contains an interface to the sound engine being used to load and playback sounds. This allows you access to the pointer that contains the specific interface.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float getPosition()
+
+&lt;!--
+_syntax: getPosition()_
+_name: getPosition_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Gets position of the playhead.
+\return playhead position as a float between 0 and 1.
+
+
+
+
+
+_description: _
+
+Returns the current position of the playhead as a float between 0.0 and 1.0. 0.0 is the beginning of the sound file and 1.0 is the end.
+  
+Example:
+~~~~{.cpp}    
+    ofSoundPlayer mySound;  
+    mySound.load("beat.mp3");   
+    mySound.play();   
+    mySound.getPosition(); //Returns the current position as a percent 0.0-1.0
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int getPositionMS()
+
+&lt;!--
+_syntax: getPositionMS()_
+_name: getPositionMS_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Gets position of the playhead.
+\return playhead position in milliseconds.
+
+
+
+
+
+_description: _
+
+This returns the position of the playhead in terms of milliseconds (i.e. 5000 for 5 seconds into the sound).
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float getSpeed()
+
+&lt;!--
+_syntax: getSpeed()_
+_name: getSpeed_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Gets playback speed.
+\return playback speed (see ofSoundPlayer::setSpeed()).
+
+
+
+
+
+_description: _
+
+Returns the speed of the sound playback in relation to its normal speed.
+So 2.0 would mean the sound is playing twice as fast. 0.5 would mean half as fast. 
+
+Example:
+~~~~{.cpp}
+    
+    ofSoundPlayer mySound;    
+    mySound.load("beat.mp3");   
+    mySound.getSpeed(); //Returns 1.0   
+    mySound.setSpeed(2.0f);   
+    mySound.getSpeed(); //Returns 2.0f
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float getVolume()
+
+&lt;!--
+_syntax: getVolume()_
+_name: getVolume_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Gets current volume.
+\return current volume in the range 0 to 1.
+
+
+
+
+
+_description: _
+
+Returns the current volume of the sound player, as set by `setVolume()`. 0.0 is silent and 1.0 is full volume.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool isLoaded()
+
+&lt;!--
+_syntax: isLoaded()_
+_name: isLoaded_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Queries the player to see if its file was loaded successfully.
+\return whether or not the player is ready to begin playback.
+
+
+
+
+
+_description: _
+
+Returns whether or not a sound has been successfully loaded into the sound player. 
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool isPlaying()
+
+&lt;!--
+_syntax: isPlaying()_
+_name: isPlaying_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Gets current playback state.
+\return true if the player is currently playing a file.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool load(&fileName, stream = false)
+
+&lt;!--
+_syntax: load(&fileName, stream = false)_
+_name: load_
+_returns: bool_
+_returns_description: _
+_parameters: const filesystem::path &fileName, bool stream=false_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Tells the sound player which file to play.
+
+Codec support varies by platform but wav, aif, and mp3 are safe.
+
+
+**Parameters:**
+
+fileName Path to the sound file, relative to your app's data folder.
+
+stream set "true" to enable streaming from disk (for large files).
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofSoundPlayer()
+
+&lt;!--
+_syntax: ofSoundPlayer()_
+_name: ofSoundPlayer_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Creates the ofSoundPlayer instance and initializes the underlying properties in the underlying engine.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void play()
+
+&lt;!--
+_syntax: play()_
+_name: play_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Starts playback.
+
+
+
+
+
+_description: _
+
+Plays the sound. If setMultiPlay() has been set to true each play() command will spawn a new copy of the sound on a new channel, letting the existing sounds continue until they are finished. If setMultiPlay() is set to false it will restart the playback of the song.
+
+Examples:
+
+Normal Playback:
+~~~~{.cpp}
+ofSoundPlayer mySound;
+mySound.load("beat.mp3");
+mySound.play(); //Plays sound
+mySound.play(); //Restarts and plays sound
+~~~~
+
+Multiplay:
+~~~~{.cpp}
+ofSoundPlayer mySound;
+mySound.setMultiPlay(true);
+mySound.load("beat.mp3");
+mySound.play(); //Plays sound
+mySound.play(); //Adds new copy of sound to channel and plays over currently playing sound
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setLoop(loop)
+
+&lt;!--
+_syntax: setLoop(loop)_
+_name: setLoop_
+_returns: void_
+_returns_description: _
+_parameters: bool loop_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Sets whether to loop once the end of the file is reached.
+
+**Parameters:**
+
+loop "true" to loop, default is false.
+
+
+
+
+
+_description: _
+
+Loops the sound if set to true. Does not loop the sound if set to false. Default is false.
+
+Example:
+~~~~{.cpp}
+ofSoundPlayer mySound;
+mySound.load("beat.mp3");
+mySound.setLoop(true); //Sound will loop
+mySound.play();
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setMultiPlay(multiplay)
+
+&lt;!--
+_syntax: setMultiPlay(multiplay)_
+_name: setMultiPlay_
+_returns: void_
+_returns_description: _
+_parameters: bool multiplay_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Enables playing multiple simultaneous copies of the sound.
+
+**Parameters:**
+
+multiplay "true" to enable, default is false.
+
+
+
+
+
+_description: _
+
+Allows a sound to be played multiple times at once. When set to true the play() function will start playing the sound on a new channel, letting the old channels continue until they are done playing. When set to false the play() function will stop the channel before playing the sound.
+
+Example:
+
+~~~~{.cpp}
+ofSoundPlayer mySound;
+mySound.setMultiPlay(true);
+mySound.load("beat.mp3");
+mySound.play(); //Plays sound
+mySound.play(); //Adds new copy of sound to channel and plays over currently playing sound
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setPan(pan)
+
+&lt;!--
+_syntax: setPan(pan)_
+_name: setPan_
+_returns: void_
+_returns_description: _
+_parameters: float pan_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Sets stereo pan.
+
+**Parameters:**
+
+pan range is -1 to 1 (-1 is full left, 1 is full right).
+
+
+
+
+
+_description: _
+
+Sets the pan position (pct) of the sound. -1.0 - 1.0 range. 0.0 is center pan, -1.0 is full left pan and 1.0 is full right pan. 
+
+Example:
+~~~~{.cpp}
+ofSoundPlayer mySound;
+mySound.load("beat.mp3");
+mySound.play();
+mySound.setPan(-1.0f); //Pans to the left
+mySound.setPan(1.0f); //Pans to the right
+mySound.setPan(0.0f); //Back to center
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setPaused(paused)
+
+&lt;!--
+_syntax: setPaused(paused)_
+_name: setPaused_
+_returns: void_
+_returns_description: _
+_parameters: bool paused_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Enables pause / resume.
+
+**Parameters:**
+
+paused "true" to pause, "false" to resume.
+
+
+
+
+
+_description: _
+
+Pauses and un-pauses the playback of the sound.
+
+Example
+~~~~{.cpp}
+ofSoundPlayer mySound;
+mySound.load("beat.mp3");
+mySound.play();
+mySound.setPaused(true); //Sound is paused
+mySound.setPaused(false); //Sound is unpaused, playback continues
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setPlayer(newPlayer)
+
+&lt;!--
+_syntax: setPlayer(newPlayer)_
+_name: setPlayer_
+_returns: void_
+_returns_description: _
+_parameters: shared_ptr&lt; ofBaseSoundPlayer > newPlayer_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+ofSoundPlayer actually wraps a dynamic instance of a sound player, that is, it contains an interface to the sound engine being used to load and playback sounds. If you want to set the interface that your system uses, you can pass an ofPtr to an ofSoundPlayer into the ofSoundPlayer and have the ofSoundPlayer manipulate that one instead.
+
+~~~~{.cpp}
+ofPtr&lt;ofBaseSoundPlayer> soundPtr(new ofOpenALSoundPlayer());
+player.setPlayer(soundPtr);
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setPosition(percent)
+
+&lt;!--
+_syntax: setPosition(percent)_
+_name: setPosition_
+_returns: void_
+_returns_description: _
+_parameters: float percent_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Sets position of the playhead within the file (aka "seeking").
+
+**Parameters:**
+
+percent range is 0 (beginning of file) to 1 (end of file).
+
+
+
+
+
+_description: _
+
+Sets the playback-head to the position (pct) specified. 0.0 - 1.0 range. 0.0 is the beginning of the sound file and 1.0 is the end.
+
+Example:
+~~~~{.cpp}
+ofSoundPlayer mySound;
+mySound.load("beat.mp3");
+mySound.play();
+mySound.setPosition(0.5f); //Moves the playhead to halfway through the sound
+mySound.setPosition(0.0f); //Moves the playhead back to the beginning of the sound
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setPositionMS(ms)
+
+&lt;!--
+_syntax: setPositionMS(ms)_
+_name: setPositionMS_
+_returns: void_
+_returns_description: _
+_parameters: int ms_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Sets position of the playhead within the file (aka "seeking").
+
+**Parameters:**
+
+ms number of milliseconds from the start of the file.
+
+
+
+
+
+_description: _
+
+This sets the position of the playhead in milliseconds.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setSpeed(speed)
+
+&lt;!--
+_syntax: setSpeed(speed)_
+_name: setSpeed_
+_returns: void_
+_returns_description: _
+_parameters: float speed_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Sets playback speed.
+
+**Parameters:**
+
+speed set > 1 for faster playback, &lt; 1 for slower playback.
+
+
+
+
+
+_description: _
+
+Sets the playback speed of the sound. 1.0 is normal speed. 2.0 is double the normal speed etc. 
+
+Example:
+~~~~{.cpp}
+ofSoundPlayer mySound;
+mySound.loadSound("beat.mp3");
+mySound.play();
+mySound.setSpeed(2.0f); //Chipmunk Voice
+mySound.setSpeed(0.2f); //Isaac Hayes on Muscle Relaxers
+mySound.setSpeed(1.0f); //Normal again
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setVolume(vol)
+
+&lt;!--
+_syntax: setVolume(vol)_
+_name: setVolume_
+_returns: void_
+_returns_description: _
+_parameters: float vol_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Sets playback volume.
+
+**Parameters:**
+
+vol range is 0 to 1.
+
+
+
+
+
+_description: _
+
+Sets the volume of the sound. 0.0 - 1.0 range. 0.0 is silent and 1.0 is full volume. 
+
+Example:
+~~~~{.cpp}
+ofSoundPlayer mySound;
+mySound.load("beat.mp3");
+mySound.play();
+mySound.setVolume(0.1f); //Sets volume at 10% of maximum
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void stop()
+
+&lt;!--
+_syntax: stop()_
+_name: stop_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Stops playback.
+
+
+
+
+
+_description: _
+
+Stops the sound currently playing. 
+
+Example:
+~~~~{.cpp}
+ofSoundPlayer mySound;
+mySound.load("beat.mp3");
+mySound.play(); //Begins playback of sound
+mySound.stop(); //Ends playback, stops audio
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void unload()
+
+&lt;!--
+_syntax: unload()_
+_name: unload_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Stops and unloads the current sound.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+##Variables
+
+
+
+###ofPtr player
+
+&lt;!--
+_name: player_
+_type: ofPtr_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+</textarea></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1586012716389/documentation/sound/ofSoundPlayer/payload.js"></script><script src="/_nuxt/5f71eaca0bd2f1a0f939.js" defer></script><script src="/_nuxt/35a90d914f539af1362f.js" defer></script><script src="/_nuxt/906a3ca0fb13ed3c6651.js" defer></script><script src="/_nuxt/b673915e8a08acf593e8.js" defer></script><script src="/_nuxt/bf355f21967a23c26c07.js" defer></script>
+  </body>
+</html>

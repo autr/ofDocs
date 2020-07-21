@@ -1,0 +1,4079 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>ofShader | documentation | ofDocs</title><meta data-n-head="ssr" data-hid="description" name="description" content="openFrameworks documentation and examples browser"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="openFrameworks documentation and examples browser" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="ofShader | documentation | ofDocs" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="/files/images/ofw-logo.png" vmid="og:image"><link rel="preload" href="/_nuxt/5f71eaca0bd2f1a0f939.js" as="script"><link rel="preload" href="/_nuxt/906a3ca0fb13ed3c6651.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/b673915e8a08acf593e8.js" as="script"><link rel="preload" href="/_nuxt/46e8fcacdadb233d9fb6.css" as="style"><link rel="preload" href="/_nuxt/bf355f21967a23c26c07.js" as="script"><link rel="preload" href="/_nuxt/35a90d914f539af1362f.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/46e8fcacdadb233d9fb6.css">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app"><div id="menu"><div class="menu-inner"><div id="settings"></div><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><svg version="1.1" viewbox="0 0 110 58" width="110px" height="58px" enable-background="0 0 110 58" xml:space="preserve" class="logo"><g><path d="M58,29 C58,13 45,0 29,0 C13,0 0,13 0,29 C0,45 13,58 29,58 C45,58 58,45 58,29 Z"></path><rect x="59" y="0" width="25" height="58"></rect><rect x="85" y="26" width="15" height="15"></rect><path d="M85,0 L110,0 L85,25 L85,0 Z"></path></g></svg><div class="txt"><span class="docs f7 questrial">Docs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343							c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88							c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593							c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789							C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><!----></div><div id="lists" class="menu-inner mt1 mb2"><div class="inner"></div></div></div><div class="menu-bottom"><div class="inner"><button class="button"><!----><span><span class="ico">nights_stay</span></span></button></div></div></div><div id="document"><div id="renderer" class="main page"><div absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/gl/ofShader.markdown" route="/documentation/gl/ofShader.markdown" dir="../ofSite/documentation/gl" ext="markdown" type="page" id="2218" parent="2192" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/" class="pink nuxt-link-active">documentation </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/gl/" class="pink nuxt-link-active">gl </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link selector"><span class="name">ofShader</span><span class="chevron bottom"></span><select><option value="/documentation/gl/ofBufferObject">ofBufferObject</option><option value="/documentation/gl/ofFbo::Settings">ofFbo::Settings</option><option value="/documentation/gl/ofFbo">ofFbo</option><option value="/documentation/gl/ofFboSettings">ofFboSettings</option><option value="/documentation/gl/ofGLProgrammableRenderer">ofGLProgrammableRenderer</option><option value="/documentation/gl/ofGLRenderer">ofGLRenderer</option><option value="/documentation/gl/ofGLUtils_functions">ofGLUtils (functions)</option><option value="/documentation/gl/ofLight_functions">ofLight (functions)</option><option value="/documentation/gl/ofLight::Data">ofLight::Data</option><option value="/documentation/gl/ofLight">ofLight</option><option value="/documentation/gl/ofMaterial::Data">ofMaterial::Data</option><option value="/documentation/gl/ofMaterial::Shaders">ofMaterial::Shaders</option><option value="/documentation/gl/ofMaterial">ofMaterial</option><option value="/documentation/gl/ofMaterialSettings">ofMaterialSettings</option><option value="/documentation/gl/ofShader::Shader">ofShader::Shader</option><option value="/documentation/gl/ofShader::Source">ofShader::Source</option><option value="/documentation/gl/ofShader::TransformFeedbackBaseBinding">ofShader::TransformFeedbackBaseBinding</option><option value="/documentation/gl/ofShader::TransformFeedbackRangeBinding">ofShader::TransformFeedbackRangeBinding</option><option value="/documentation/gl/ofShader::TransformFeedbackSettings">ofShader::TransformFeedbackSettings</option><option value="/documentation/gl/ofShader">ofShader</option><option value="/documentation/gl/ofShaderSettings">ofShaderSettings</option><option value="/documentation/gl/ofTexture_functions">ofTexture (functions)</option><option value="/documentation/gl/ofTexture">ofTexture</option><option value="/documentation/gl/ofTextureData">ofTextureData</option><option value="/documentation/gl/ofVbo::VertexAttribute">ofVbo::VertexAttribute</option><option value="/documentation/gl/ofVbo">ofVbo</option><option value="/documentation/gl/ofVboMesh">ofVboMesh</option></select></span><!----></span></span></div></div></div><div class="editable-wrapper"><div class="header inner"><h1 class="page-title questrial"><span class="f7"><!----><span>ofShader</span></span><span class="f3"></span></h1><div class="actions"><a href="/ofdocs/contribute/" class="button"><i class="ico">edit</i><span>Edit</span></a></div></div><div class="rendered"><div id="documentation-page" static="true"><div id="offset-page"><div id="doc-body" class="markdown"><div class="inner"><div id="description"><div class="full-description"><div class="html"><p>Graphics Language Shading Language (GLSL) can be used in oF by using the ofShader object. Shading happens in two distinct steps: the vertex shader creates values for each vertex in the model, and the fragment shader creates values for each pixel in the rendered object. To define a shader, create a .frag file for the fragment shader and a .vert file for the vertex shader.
+A vertex shader has attributes about a location in space or vertex, which means not only the actual coordinates of that location but also its color, how any textures should be mapped onto it, and how the vertices are modified in the operation. A vertex shader can change the positions of each vertex, the number of lighting computations per vertex, and the color that will be applied to each vertex.
+A geometry shader can generate new graphics primitives like points, lines, and triangles, from those primitives that were sent to the graphics card from the CPU. This means that you could get a point and turn it into a triangle or even a bunch of triangles, or get a line and turn it into a rectangle, or do real-time extrusion. They are very powerful and can be quite tricky to get right, but they're becoming more popular.
+The fragment shader is somewhat misleadingly named because what it really allows you to do is to change values assigned to each pixel. The vertex shader operates on the vertices, and the fragment shader operates on the pixels. By the time the fragment shader gets information passed into it by the graphics card, the color of a particular pixel has already been computed and in the fragment shader can be combined with an element like a lighting effecting, a fog effect, or a blur among many other options. The usual end result of this stage per fragment is a color value and a depth for the fragment.</p>
+<h1></h1>
+</div></div></div><div id="methods"><hr><section name="begin" id="begin" class="mb2"><div class="method mb2"><h3 class="f3 title">begin( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">begin</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>After you call begin() everything that you draw, vertexes and textures, in your of application have the effects of the shader applied to them.</p>
+</div></div><hr></section><section name="beginTransformFeedback" id="beginTransformFeedback" class="mb2"><div class="method mb2"><h3 class="f3 title">beginTransformFeedback( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">beginTransformFeedback</span><span class="token punctuation">(</span><code class="token boolean">GLenum mode</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="beginTransformFeedback" id="beginTransformFeedback" class="mb2"><div class="method mb2"><h3 class="f3 title">beginTransformFeedback( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">beginTransformFeedback</span><span class="token punctuation">(</span><code class="token boolean">GLenum mode<span class="token punctuation">,</span> <span class="token keyword">const</span> ofShader<span class="token operator">::</span>TransformFeedbackRangeBinding <span class="token operator">&</span>binding</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="beginTransformFeedback" id="beginTransformFeedback" class="mb2"><div class="method mb2"><h3 class="f3 title">beginTransformFeedback( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">beginTransformFeedback</span><span class="token punctuation">(</span><code class="token boolean">GLenum mode<span class="token punctuation">,</span> <span class="token keyword">const</span> ofShader<span class="token operator">::</span>TransformFeedbackBaseBinding <span class="token operator">&</span>binding</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="bindAttribute" id="bindAttribute" class="mb2"><div class="method mb2"><h3 class="f3 title">bindAttribute( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">bindAttribute</span><span class="token punctuation">(</span><code class="token boolean">GLuint location<span class="token punctuation">,</span> <span class="token keyword">const</span> string <span class="token operator">&</span>name</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p><code>bindAttribute</code> is used for faster access to attributes. The idea is to set attributes by location (an integer) instead of querying attribute locations multiple times by name. This method is used internally by OF in <code>ofShader::bindDefaults()</code> to set the default locations of the <code>position</code>, <code>color</code>, <code>normal</code> and <code>texcoord</code> attributes.</p>
+</div></div><hr></section><section name="bindDefaults" id="bindDefaults" class="mb2"><div class="method mb2"><h3 class="f3 title">bindDefaults( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">bindDefaults</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Binds default uniforms and attributes, only useful for fixed pipeline simulation under programmable renderer.
+Has to be called before linkProgram().</p>
+<p>See setupShaderFromSource() example.</p>
+</div></div><hr></section><section name="bindUniformBlock" id="bindUniformBlock" class="mb2"><div class="method mb2"><h3 class="f3 title">bindUniformBlock( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">bindUniformBlock</span><span class="token punctuation">(</span><code class="token boolean">GLuint bindind<span class="token punctuation">,</span> <span class="token keyword">const</span> string <span class="token operator">&</span>name</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="checkAndCreateProgram" id="checkAndCreateProgram" class="mb2"><div class="method mb2"><h3 class="f3 title">checkAndCreateProgram( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">checkAndCreateProgram</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="checkProgramInfoLog" id="checkProgramInfoLog" class="mb2"><div class="method mb2"><h3 class="f3 title">checkProgramInfoLog( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">checkProgramInfoLog</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="checkProgramLinkStatus" id="checkProgramLinkStatus" class="mb2"><div class="method mb2"><h3 class="f3 title">checkProgramLinkStatus( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">checkProgramLinkStatus</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="checkShaderInfoLog" id="checkShaderInfoLog" class="mb2"><div class="method mb2"><h3 class="f3 title">checkShaderInfoLog( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">checkShaderInfoLog</span><span class="token punctuation">(</span><code class="token boolean">GLuint shader<span class="token punctuation">,</span> GLenum type<span class="token punctuation">,</span> ofLogLevel logLevel</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="dispatchCompute" id="dispatchCompute" class="mb2"><div class="method mb2"><h3 class="f3 title">dispatchCompute( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">dispatchCompute</span><span class="token punctuation">(</span><code class="token boolean">GLuint x<span class="token punctuation">,</span> GLuint y<span class="token punctuation">,</span> GLuint z</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="end" id="end" class="mb2"><div class="method mb2"><h3 class="f3 title">end( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">end</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>After you call end() any drawing, vertexes and textures, do not have the effect of the shader applied to them.</p>
+</div></div><hr></section><section name="endTransformFeedback" id="endTransformFeedback" class="mb2"><div class="method mb2"><h3 class="f3 title">endTransformFeedback( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">endTransformFeedback</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofShader<span class="token operator">::</span>TransformFeedbackRangeBinding <span class="token operator">&</span>binding</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="endTransformFeedback" id="endTransformFeedback" class="mb2"><div class="method mb2"><h3 class="f3 title">endTransformFeedback( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">endTransformFeedback</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofShader<span class="token operator">::</span>TransformFeedbackBaseBinding <span class="token operator">&</span>binding</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="endTransformFeedback" id="endTransformFeedback" class="mb2"><div class="method mb2"><h3 class="f3 title">endTransformFeedback( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">endTransformFeedback</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getAttributeLocation" id="getAttributeLocation" class="mb2"><div class="method mb2"><h3 class="f3 title">getAttributeLocation( <code class="pink">...</code> )</h3><code><span class="token keyword">GLint  </span><span class="token function">getAttributeLocation</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getGeometryMaxOutputCount" id="getGeometryMaxOutputCount" class="mb2"><div class="method mb2"><h3 class="f3 title">getGeometryMaxOutputCount( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">getGeometryMaxOutputCount</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>returns maximum number of supported vertices for your graphics card</p>
+</div></div><hr></section><section name="getProgram" id="getProgram" class="mb2"><div class="method mb2"><h3 class="f3 title">getProgram( <!----> )</h3><code><span class="token keyword">GLuint  </span><span class="token function">getProgram</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>This returns the GLuint for the actual shader object that is active on the graphics card. This is more of an advanced usage method, but can be helpful if you need to do something that the ofShader doesn't support currently. This is all the shaders: vertex, geom, and frag.</p>
+</div></div><hr></section><section name="getShader" id="getShader" class="mb2"><div class="method mb2"><h3 class="f3 title">getShader( <code class="pink">...</code> )</h3><code><span class="token keyword">GLuint  </span><span class="token function">getShader</span><span class="token punctuation">(</span><code class="token boolean">GLenum type</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>This returns the GLuint for the actual shader object that is active on the graphics card. This is more of an advanced usage method, but can be helpful if you need to do something that the ofShader doesn't support currently. This returns only one of the shaders. You can pass GL_VERTEX_SHADER, GL_GEOMETRY_SHADER_EXT, GL_FRAGMENT_SHADER</p>
+</div></div><hr></section><section name="getShaderSource" id="getShaderSource" class="mb2"><div class="method mb2"><h3 class="f3 title">getShaderSource( <code class="pink">...</code> )</h3><code><span class="token keyword">string  </span><span class="token function">getShaderSource</span><span class="token punctuation">(</span><code class="token boolean">GLenum type</code><span class="token punctuation">)</span></code><div class="short"><p>@brief returns the shader source as it was passed to the GLSL compiler</p>
+<p><strong>Parameters:</strong></p>
+<p>type (GL_VERTEX_SHADER | GL_FRAGMENT_SHADER | GL_GEOMETRY_SHADER_EXT) the shader source you'd like to inspect.</p>
+</div><div class="desc"></div></div><hr></section><section name="getUniformBlockBinding" id="getUniformBlockBinding" class="mb2"><div class="method mb2"><h3 class="f3 title">getUniformBlockBinding( <code class="pink">...</code> )</h3><code><span class="token keyword">GLint  </span><span class="token function">getUniformBlockBinding</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getUniformBlockIndex" id="getUniformBlockIndex" class="mb2"><div class="method mb2"><h3 class="f3 title">getUniformBlockIndex( <code class="pink">...</code> )</h3><code><span class="token keyword">GLint  </span><span class="token function">getUniformBlockIndex</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getUniformLocation" id="getUniformLocation" class="mb2"><div class="method mb2"><h3 class="f3 title">getUniformLocation( <code class="pink">...</code> )</h3><code><span class="token keyword">GLint  </span><span class="token function">getUniformLocation</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="isLoaded" id="isLoaded" class="mb2"><div class="method mb2"><h3 class="f3 title">isLoaded( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">isLoaded</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="linkProgram" id="linkProgram" class="mb2"><div class="method mb2"><h3 class="f3 title">linkProgram( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">linkProgram</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Links program with all compiled shaders. This is more of an advanced use method, as this is done automatically for you.</p>
+</div></div><hr></section><section name="load" id="load" class="mb2"><div class="method mb2"><h3 class="f3 title">load( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">load</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> filesystem<span class="token operator">::</span>path <span class="token operator">&</span>shaderName</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>This assumes that your vertex and fragment shaders have the same name, i.e. "dof.vert" and "dof.frag" and loads them using just the name of the shader:</p>
+<pre><code class="language-{.cpp}">shader<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token string">"dof"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// assumes the shaders are in /data</span>
+</code></pre>
+</div></div><hr></section><section name="load" id="load" class="mb2"><div class="method mb2"><h3 class="f3 title">load( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">load</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> filesystem<span class="token operator">::</span>path <span class="token operator">&</span>vertName<span class="token punctuation">,</span> <span class="token keyword">const</span> filesystem<span class="token operator">::</span>path <span class="token operator">&</span>fragName<span class="token punctuation">,</span> <span class="token keyword">const</span> filesystem<span class="token operator">::</span>path <span class="token operator">&</span>geomName</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Here you can load shaders with whatever names you choose. The geometry shader is optional, but the vertex and fragment shaders aren't.</p>
+<pre><code class="language-{.cpp}">shader<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token string">"dof.vert"</span><span class="token punctuation">,</span> <span class="token string">"dof.frag"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// assumes the shaders are in /data</span>
+</code></pre>
+</div></div><hr></section><section name="loadCompute" id="loadCompute" class="mb2"><div class="method mb2"><h3 class="f3 title">loadCompute( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">loadCompute</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> filesystem<span class="token operator">::</span>path <span class="token operator">&</span>shaderName</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="nameForType" id="nameForType" class="mb2"><div class="method mb2"><h3 class="f3 title">nameForType( <code class="pink">...</code> )</h3><code><span class="token keyword">string  </span><span class="token function">nameForType</span><span class="token punctuation">(</span><code class="token boolean">GLenum type</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofShader" id="ofShader" class="mb2"><div class="method mb2"><h3 class="f3 title">ofShader( <code class="pink">...</code> )</h3><code><!----><span class="token function">ofShader</span><span class="token punctuation">(</span><code class="token boolean">ofShader <span class="token operator">&&</span>shader</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofShader" id="ofShader" class="mb2"><div class="method mb2"><h3 class="f3 title">ofShader( <code class="pink">...</code> )</h3><code><!----><span class="token function">ofShader</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofShader <span class="token operator">&</span>shader</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofShader" id="ofShader" class="mb2"><div class="method mb2"><h3 class="f3 title">ofShader( <!----> )</h3><code><!----><span class="token function">ofShader</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="operator!=" id="operator!=" class="mb2"><div class="method mb2"><h3 class="f3 title">operator!=( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">operator!=</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofShader <span class="token operator">&</span>other</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="operator=" id="operator=" class="mb2"><div class="method mb2"><h3 class="f3 title">operator=( <code class="pink">...</code> )</h3><code><span class="token keyword">ofShader &  </span><span class="token function">operator=</span><span class="token punctuation">(</span><code class="token boolean">ofShader <span class="token operator">&&</span>shader</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="operator=" id="operator=" class="mb2"><div class="method mb2"><h3 class="f3 title">operator=( <code class="pink">...</code> )</h3><code><span class="token keyword">ofShader &  </span><span class="token function">operator=</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofShader <span class="token operator">&</span>shader</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="operator==" id="operator==" class="mb2"><div class="method mb2"><h3 class="f3 title">operator==( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">operator==</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofShader <span class="token operator">&</span>other</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="parseForIncludes" id="parseForIncludes" class="mb2"><div class="method mb2"><h3 class="f3 title">parseForIncludes( <code class="pink">...</code> )</h3><code><span class="token keyword">string  </span><span class="token function">parseForIncludes</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>source<span class="token punctuation">,</span> <span class="token keyword">const</span> filesystem<span class="token operator">::</span>path <span class="token operator">&</span>sourceDirectoryPath</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="printActiveAttributes" id="printActiveAttributes" class="mb2"><div class="method mb2"><h3 class="f3 title">printActiveAttributes( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">printActiveAttributes</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>This prints out all the active attributes to the console.</p>
+</div></div><hr></section><section name="printActiveUniformBlocks" id="printActiveUniformBlocks" class="mb2"><div class="method mb2"><h3 class="f3 title">printActiveUniformBlocks( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">printActiveUniformBlocks</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="printActiveUniforms" id="printActiveUniforms" class="mb2"><div class="method mb2"><h3 class="f3 title">printActiveUniforms( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">printActiveUniforms</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>This prints out all the active uniforms to the console.</p>
+</div></div><hr></section><section name="setAttribute1d" id="setAttribute1d" class="mb2"><div class="method mb2"><h3 class="f3 title">setAttribute1d( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setAttribute1d</span><span class="token punctuation">(</span><code class="token boolean">GLint location<span class="token punctuation">,</span> <span class="token keyword">double</span> v1</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Set one double attribute on the shader.
+Attributes are different than uniforms in that you can pass an attribute to each vertex or fragment that is being shaded.</p>
+</div></div><hr></section><section name="setAttribute1f" id="setAttribute1f" class="mb2"><div class="method mb2"><h3 class="f3 title">setAttribute1f( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setAttribute1f</span><span class="token punctuation">(</span><code class="token boolean">GLint location<span class="token punctuation">,</span> <span class="token keyword">float</span> v1</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Set one float attributes on the shader.
+Attributes are different than uniforms in that you can pass an attribute to each vertex or fragment that is being shaded.</p>
+</div></div><hr></section><section name="setAttribute1fv" id="setAttribute1fv" class="mb2"><div class="method mb2"><h3 class="f3 title">setAttribute1fv( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setAttribute1fv</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">float</span> <span class="token operator">*</span>v<span class="token punctuation">,</span> GLsizei stride</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setAttribute1s" id="setAttribute1s" class="mb2"><div class="method mb2"><h3 class="f3 title">setAttribute1s( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setAttribute1s</span><span class="token punctuation">(</span><code class="token boolean">GLint location<span class="token punctuation">,</span> <span class="token keyword">short</span> v1</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Set a short attribute, a short int, on the shader.
+Attributes are different than uniforms in that you can pass an attribute to each vertex or fragment that is being shaded.</p>
+</div></div><hr></section><section name="setAttribute2d" id="setAttribute2d" class="mb2"><div class="method mb2"><h3 class="f3 title">setAttribute2d( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setAttribute2d</span><span class="token punctuation">(</span><code class="token boolean">GLint location<span class="token punctuation">,</span> <span class="token keyword">double</span> v1<span class="token punctuation">,</span> <span class="token keyword">double</span> v2</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Set two double attribute on the shader.
+Attributes are different than uniforms in that you can pass an attribute to each vertex or fragment that is being shaded.</p>
+</div></div><hr></section><section name="setAttribute2f" id="setAttribute2f" class="mb2"><div class="method mb2"><h3 class="f3 title">setAttribute2f( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setAttribute2f</span><span class="token punctuation">(</span><code class="token boolean">GLint location<span class="token punctuation">,</span> <span class="token keyword">float</span> v1<span class="token punctuation">,</span> <span class="token keyword">float</span> v2</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Set two float attributes on the shader.
+Attributes are different than uniforms in that you can pass an attribute to each vertex or fragment that is being shaded.</p>
+</div></div><hr></section><section name="setAttribute2fv" id="setAttribute2fv" class="mb2"><div class="method mb2"><h3 class="f3 title">setAttribute2fv( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setAttribute2fv</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">float</span> <span class="token operator">*</span>v<span class="token punctuation">,</span> GLsizei stride</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setAttribute2s" id="setAttribute2s" class="mb2"><div class="method mb2"><h3 class="f3 title">setAttribute2s( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setAttribute2s</span><span class="token punctuation">(</span><code class="token boolean">GLint location<span class="token punctuation">,</span> <span class="token keyword">short</span> v1<span class="token punctuation">,</span> <span class="token keyword">short</span> v2</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Set two short attributes, a short int, on the shader.
+Attributes are different than uniforms in that you can pass an attribute to each vertex or fragment that is being shaded.</p>
+</div></div><hr></section><section name="setAttribute3d" id="setAttribute3d" class="mb2"><div class="method mb2"><h3 class="f3 title">setAttribute3d( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setAttribute3d</span><span class="token punctuation">(</span><code class="token boolean">GLint location<span class="token punctuation">,</span> <span class="token keyword">double</span> v1<span class="token punctuation">,</span> <span class="token keyword">double</span> v2<span class="token punctuation">,</span> <span class="token keyword">double</span> v3</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Set three double attribute on the shader.
+Attributes are different than uniforms in that you can pass an attribute to each vertex or fragment that is being shaded.</p>
+</div></div><hr></section><section name="setAttribute3f" id="setAttribute3f" class="mb2"><div class="method mb2"><h3 class="f3 title">setAttribute3f( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setAttribute3f</span><span class="token punctuation">(</span><code class="token boolean">GLint location<span class="token punctuation">,</span> <span class="token keyword">float</span> v1<span class="token punctuation">,</span> <span class="token keyword">float</span> v2<span class="token punctuation">,</span> <span class="token keyword">float</span> v3</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Set three float attributes on the shader.
+Attributes are different than uniforms in that you can pass an attribute to each vertex or fragment that is being shaded.</p>
+</div></div><hr></section><section name="setAttribute3fv" id="setAttribute3fv" class="mb2"><div class="method mb2"><h3 class="f3 title">setAttribute3fv( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setAttribute3fv</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">float</span> <span class="token operator">*</span>v<span class="token punctuation">,</span> GLsizei stride</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setAttribute3s" id="setAttribute3s" class="mb2"><div class="method mb2"><h3 class="f3 title">setAttribute3s( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setAttribute3s</span><span class="token punctuation">(</span><code class="token boolean">GLint location<span class="token punctuation">,</span> <span class="token keyword">short</span> v1<span class="token punctuation">,</span> <span class="token keyword">short</span> v2<span class="token punctuation">,</span> <span class="token keyword">short</span> v3</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Set three short attributes, a short int, on the shader.
+Attributes are different than uniforms in that you can pass an attribute to each vertex or fragment that is being shaded.</p>
+</div></div><hr></section><section name="setAttribute4d" id="setAttribute4d" class="mb2"><div class="method mb2"><h3 class="f3 title">setAttribute4d( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setAttribute4d</span><span class="token punctuation">(</span><code class="token boolean">GLint location<span class="token punctuation">,</span> <span class="token keyword">double</span> v1<span class="token punctuation">,</span> <span class="token keyword">double</span> v2<span class="token punctuation">,</span> <span class="token keyword">double</span> v3<span class="token punctuation">,</span> <span class="token keyword">double</span> v4</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Set four double attribute on the shader.
+Attributes are different than uniforms in that you can pass an attribute to each vertex or fragment that is being shaded.</p>
+</div></div><hr></section><section name="setAttribute4f" id="setAttribute4f" class="mb2"><div class="method mb2"><h3 class="f3 title">setAttribute4f( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setAttribute4f</span><span class="token punctuation">(</span><code class="token boolean">GLint location<span class="token punctuation">,</span> <span class="token keyword">float</span> v1<span class="token punctuation">,</span> <span class="token keyword">float</span> v2<span class="token punctuation">,</span> <span class="token keyword">float</span> v3<span class="token punctuation">,</span> <span class="token keyword">float</span> v4</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Set four float attributes on the shader.
+Attributes are different than uniforms in that you can pass an attribute to each vertex or fragment that is being shaded.</p>
+</div></div><hr></section><section name="setAttribute4fv" id="setAttribute4fv" class="mb2"><div class="method mb2"><h3 class="f3 title">setAttribute4fv( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setAttribute4fv</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">float</span> <span class="token operator">*</span>v<span class="token punctuation">,</span> GLsizei stride</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setAttribute4s" id="setAttribute4s" class="mb2"><div class="method mb2"><h3 class="f3 title">setAttribute4s( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setAttribute4s</span><span class="token punctuation">(</span><code class="token boolean">GLint location<span class="token punctuation">,</span> <span class="token keyword">short</span> v1<span class="token punctuation">,</span> <span class="token keyword">short</span> v2<span class="token punctuation">,</span> <span class="token keyword">short</span> v3<span class="token punctuation">,</span> <span class="token keyword">short</span> v4</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Set four short attributes, a short int, on the shader.
+Attributes are different than uniforms in that you can pass an attribute to each vertex or fragment that is being shaded.</p>
+</div></div><hr></section><section name="setConstantTemp" id="setConstantTemp" class="mb2"><div class="method mb2"><h3 class="f3 title">setConstantTemp( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setConstantTemp</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">const</span> string <span class="token operator">&</span>type<span class="token punctuation">,</span> T value</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setDefineConstantTemp" id="setDefineConstantTemp" class="mb2"><div class="method mb2"><h3 class="f3 title">setDefineConstantTemp( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setDefineConstantTemp</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> T value</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setGeometryInputType" id="setGeometryInputType" class="mb2"><div class="method mb2"><h3 class="f3 title">setGeometryInputType( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setGeometryInputType</span><span class="token punctuation">(</span><code class="token boolean">GLenum type</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>You have to call this before linking the program with geometry shaders.
+Possible types are GL_POINTS, GL_LINES, GL_LINES_ADJACENCY_EXT, GL_TRIANGLES, GL_TRIANGLES_ADJACENCY_EXT</p>
+</div></div><hr></section><section name="setGeometryOutputCount" id="setGeometryOutputCount" class="mb2"><div class="method mb2"><h3 class="f3 title">setGeometryOutputCount( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setGeometryOutputCount</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> count</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>You have to call this before linking the program with geometry shaders to set the number of output vertices, For quads, this should be 4, for points 1. Triangle strips can use up to the maximum number. You can check the maximum number supported on your graphics cards with getGeometryMaxOutputCount()</p>
+</div></div><hr></section><section name="setGeometryOutputType" id="setGeometryOutputType" class="mb2"><div class="method mb2"><h3 class="f3 title">setGeometryOutputType( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setGeometryOutputType</span><span class="token punctuation">(</span><code class="token boolean">GLenum type</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>You have to call this before linking the program with geometry shaders.
+type: GL_POINTS, GL_LINE_STRIP or GL_TRIANGLE_STRIP</p>
+</div></div><hr></section><section name="setUniform1f" id="setUniform1f" class="mb2"><div class="method mb2"><h3 class="f3 title">setUniform1f( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUniform1f</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">float</span> v1</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>set a float uniform on the shader</p>
+</div></div><hr></section><section name="setUniform1fv" id="setUniform1fv" class="mb2"><div class="method mb2"><h3 class="f3 title">setUniform1fv( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUniform1fv</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">float</span> <span class="token operator">*</span>v<span class="token punctuation">,</span> <span class="token keyword">int</span> count<span class="token operator">=</span><span class="token number">1</span></code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setUniform1i" id="setUniform1i" class="mb2"><div class="method mb2"><h3 class="f3 title">setUniform1i( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUniform1i</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">int</span> v1</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setUniform1iv" id="setUniform1iv" class="mb2"><div class="method mb2"><h3 class="f3 title">setUniform1iv( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUniform1iv</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">int</span> <span class="token operator">*</span>v<span class="token punctuation">,</span> <span class="token keyword">int</span> count<span class="token operator">=</span><span class="token number">1</span></code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setUniform2f" id="setUniform2f" class="mb2"><div class="method mb2"><h3 class="f3 title">setUniform2f( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUniform2f</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">const</span> glm<span class="token operator">::</span>vec2 <span class="token operator">&</span>v</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setUniform2f" id="setUniform2f" class="mb2"><div class="method mb2"><h3 class="f3 title">setUniform2f( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUniform2f</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">float</span> v1<span class="token punctuation">,</span> <span class="token keyword">float</span> v2</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setUniform2fv" id="setUniform2fv" class="mb2"><div class="method mb2"><h3 class="f3 title">setUniform2fv( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUniform2fv</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">float</span> <span class="token operator">*</span>v<span class="token punctuation">,</span> <span class="token keyword">int</span> count<span class="token operator">=</span><span class="token number">1</span></code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>This allows you to set multiple vec2 uniforms.</p>
+<pre><code class="language-{.cpp}">vec2 v<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre>
+</div></div><hr></section><section name="setUniform2i" id="setUniform2i" class="mb2"><div class="method mb2"><h3 class="f3 title">setUniform2i( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUniform2i</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">int</span> v1<span class="token punctuation">,</span> <span class="token keyword">int</span> v2</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setUniform2iv" id="setUniform2iv" class="mb2"><div class="method mb2"><h3 class="f3 title">setUniform2iv( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUniform2iv</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">int</span> <span class="token operator">*</span>v<span class="token punctuation">,</span> <span class="token keyword">int</span> count<span class="token operator">=</span><span class="token number">1</span></code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>set an array of uniform values on the shader using int[2] value. On the shader this looks like:</p>
+<pre><code class="language-{.cpp}">ivec2 iv<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre>
+</div></div><hr></section><section name="setUniform3f" id="setUniform3f" class="mb2"><div class="method mb2"><h3 class="f3 title">setUniform3f( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUniform3f</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">const</span> glm<span class="token operator">::</span>vec3 <span class="token operator">&</span>v</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setUniform3f" id="setUniform3f" class="mb2"><div class="method mb2"><h3 class="f3 title">setUniform3f( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUniform3f</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">float</span> v1<span class="token punctuation">,</span> <span class="token keyword">float</span> v2<span class="token punctuation">,</span> <span class="token keyword">float</span> v3</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>set a vec3 uniform on the shader</p>
+</div></div><hr></section><section name="setUniform3fv" id="setUniform3fv" class="mb2"><div class="method mb2"><h3 class="f3 title">setUniform3fv( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUniform3fv</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">float</span> <span class="token operator">*</span>v<span class="token punctuation">,</span> <span class="token keyword">int</span> count<span class="token operator">=</span><span class="token number">1</span></code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>This allows you to set multiple vec3 uniforms.</p>
+<pre><code class="language-{.cpp}">vec3 v<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre>
+</div></div><hr></section><section name="setUniform3i" id="setUniform3i" class="mb2"><div class="method mb2"><h3 class="f3 title">setUniform3i( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUniform3i</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">int</span> v1<span class="token punctuation">,</span> <span class="token keyword">int</span> v2<span class="token punctuation">,</span> <span class="token keyword">int</span> v3</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><pre><code class="language-{.cpp}">uniform ivec3 texture<span class="token punctuation">;</span>
+</code></pre>
+</div></div><hr></section><section name="setUniform3iv" id="setUniform3iv" class="mb2"><div class="method mb2"><h3 class="f3 title">setUniform3iv( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUniform3iv</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">int</span> <span class="token operator">*</span>v<span class="token punctuation">,</span> <span class="token keyword">int</span> count<span class="token operator">=</span><span class="token number">1</span></code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>set an array of uniform values on the shader using int[2] value. On the shader this looks like:</p>
+<pre><code class="language-{.cpp}">ivec3 iv<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre>
+</div></div><hr></section><section name="setUniform4f" id="setUniform4f" class="mb2"><div class="method mb2"><h3 class="f3 title">setUniform4f( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUniform4f</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">const</span> glm<span class="token operator">::</span>vec4 <span class="token operator">&</span>v</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setUniform4f" id="setUniform4f" class="mb2"><div class="method mb2"><h3 class="f3 title">setUniform4f( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUniform4f</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">const</span> ofFloatColor <span class="token operator">&</span>v</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setUniform4f" id="setUniform4f" class="mb2"><div class="method mb2"><h3 class="f3 title">setUniform4f( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUniform4f</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">float</span> v1<span class="token punctuation">,</span> <span class="token keyword">float</span> v2<span class="token punctuation">,</span> <span class="token keyword">float</span> v3<span class="token punctuation">,</span> <span class="token keyword">float</span> v4</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>set a vec4 uniform on the shader</p>
+<pre><code class="language-{.cpp}">vec4 fv<span class="token punctuation">;</span>
+</code></pre>
+</div></div><hr></section><section name="setUniform4fv" id="setUniform4fv" class="mb2"><div class="method mb2"><h3 class="f3 title">setUniform4fv( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUniform4fv</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">float</span> <span class="token operator">*</span>v<span class="token punctuation">,</span> <span class="token keyword">int</span> count<span class="token operator">=</span><span class="token number">1</span></code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>This allows you to set multiple vec4 uniforms.</p>
+<pre><code class="language-{.cpp}">vec4 v<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre>
+</div></div><hr></section><section name="setUniform4i" id="setUniform4i" class="mb2"><div class="method mb2"><h3 class="f3 title">setUniform4i( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUniform4i</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">int</span> v1<span class="token punctuation">,</span> <span class="token keyword">int</span> v2<span class="token punctuation">,</span> <span class="token keyword">int</span> v3<span class="token punctuation">,</span> <span class="token keyword">int</span> v4</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setUniform4iv" id="setUniform4iv" class="mb2"><div class="method mb2"><h3 class="f3 title">setUniform4iv( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUniform4iv</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">int</span> <span class="token operator">*</span>v<span class="token punctuation">,</span> <span class="token keyword">int</span> count<span class="token operator">=</span><span class="token number">1</span></code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>set an array of uniform values on the shader using int[2] value. On the shader this looks like:</p>
+<pre><code class="language-{.cpp}">ivec4 iv<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre>
+</div></div><hr></section><section name="setUniformMatrix3f" id="setUniformMatrix3f" class="mb2"><div class="method mb2"><h3 class="f3 title">setUniformMatrix3f( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUniformMatrix3f</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">const</span> glm<span class="token operator">::</span>mat3 <span class="token operator">&</span>m<span class="token punctuation">,</span> <span class="token keyword">int</span> count<span class="token operator">=</span><span class="token number">1</span></code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setUniformMatrix4f" id="setUniformMatrix4f" class="mb2"><div class="method mb2"><h3 class="f3 title">setUniformMatrix4f( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUniformMatrix4f</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">const</span> glm<span class="token operator">::</span>mat4 <span class="token operator">&</span>m<span class="token punctuation">,</span> <span class="token keyword">int</span> count<span class="token operator">=</span><span class="token number">1</span></code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setUniformTexture" id="setUniformTexture" class="mb2"><div class="method mb2"><h3 class="f3 title">setUniformTexture( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUniformTexture</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">const</span> ofBaseHasTexture <span class="token operator">&</span>img<span class="token punctuation">,</span> <span class="token keyword">int</span> textureLocation</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>set a texture reference
+On your shader it should look like this:</p>
+<pre><code class="language-{.cpp}">uniform sampler2DRect texture<span class="token punctuation">;</span>
+</code></pre>
+</div></div><hr></section><section name="setUniformTexture" id="setUniformTexture" class="mb2"><div class="method mb2"><h3 class="f3 title">setUniformTexture( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUniformTexture</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">const</span> ofTexture <span class="token operator">&</span>img<span class="token punctuation">,</span> <span class="token keyword">int</span> textureLocation</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setUniformTexture" id="setUniformTexture" class="mb2"><div class="method mb2"><h3 class="f3 title">setUniformTexture( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUniformTexture</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>name<span class="token punctuation">,</span> <span class="token keyword">int</span> textureTarget<span class="token punctuation">,</span> GLint textureID<span class="token punctuation">,</span> <span class="token keyword">int</span> textureLocation</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setUniforms" id="setUniforms" class="mb2"><div class="method mb2"><h3 class="f3 title">setUniforms( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUniforms</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofParameterGroup <span class="token operator">&</span>parameters</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setup" id="setup" class="mb2"><div class="method mb2"><h3 class="f3 title">setup( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">setup</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofShaderSettings <span class="token operator">&</span>settings</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setup" id="setup" class="mb2"><div class="method mb2"><h3 class="f3 title">setup( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">setup</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofShader<span class="token operator">::</span>TransformFeedbackSettings <span class="token operator">&</span>settings</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setupShaderFromFile" id="setupShaderFromFile" class="mb2"><div class="method mb2"><h3 class="f3 title">setupShaderFromFile( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">setupShaderFromFile</span><span class="token punctuation">(</span><code class="token boolean">GLenum type<span class="token punctuation">,</span> <span class="token keyword">const</span> filesystem<span class="token operator">::</span>path <span class="token operator">&</span>filename</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>This are more of advanced use function and doesn't need.</p>
+</div></div><hr></section><section name="setupShaderFromSource" id="setupShaderFromSource" class="mb2"><div class="method mb2"><h3 class="f3 title">setupShaderFromSource( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">setupShaderFromSource</span><span class="token punctuation">(</span><code class="token boolean">ofShader<span class="token operator">::</span>Source <span class="token operator">&&</span>source</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setupShaderFromSource" id="setupShaderFromSource" class="mb2"><div class="method mb2"><h3 class="f3 title">setupShaderFromSource( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">setupShaderFromSource</span><span class="token punctuation">(</span><code class="token boolean">GLenum type<span class="token punctuation">,</span> string source<span class="token punctuation">,</span> string sourceDirectoryPath</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>This method create and compile a shader from source.
+Working with OpenGL 3 or OpenGL ES 2.0, remember to call bindDefaults() before linkProgram()</p>
+<p>Example of a simple shader to display a texture, using the ofGLProgrammableRenderer:</p>
+<pre><code class="language-{.cpp}">stringstream vertexSrc<span class="token punctuation">;</span>
+vertexSrc <span class="token operator">&lt;&lt;</span> <span class="token string">"#version 150\n"</span><span class="token punctuation">;</span>
+vertexSrc <span class="token operator">&lt;&lt;</span> <span class="token string">"uniform mat4 modelViewProjectionMatrix;\n"</span><span class="token punctuation">;</span>
+vertexSrc  <span class="token operator">&lt;&lt;</span> <span class="token string">"in vec4 position;\n"</span><span class="token punctuation">;</span>
+vertexSrc  <span class="token operator">&lt;&lt;</span> <span class="token string">"in vec2 texcoord;\n"</span><span class="token punctuation">;</span>
+vertexSrc  <span class="token operator">&lt;&lt;</span> <span class="token string">"out vec2 texCoordVarying;\n"</span><span class="token punctuation">;</span>
+vertexSrc  <span class="token operator">&lt;&lt;</span> <span class="token string">"void main(void){\n"</span><span class="token punctuation">;</span>
+vertexSrc  <span class="token operator">&lt;&lt;</span> <span class="token string">"\tgl_Position=modelViewProjectionMatrix*position;\n"</span><span class="token punctuation">;</span>
+vertexSrc  <span class="token operator">&lt;&lt;</span> <span class="token string">"\ttexCoordVarying = texcoord;\n"</span><span class="token punctuation">;</span>
+vertexSrc  <span class="token operator">&lt;&lt;</span> <span class="token string">"}\n"</span><span class="token punctuation">;</span>
+
+stringstream fragmentSrc<span class="token punctuation">;</span>
+fragmentSrc <span class="token operator">&lt;&lt;</span> <span class="token string">"#version 150\n"</span><span class="token punctuation">;</span>
+fragmentSrc <span class="token operator">&lt;&lt;</span> <span class="token string">"uniform sampler2DRect tex0;\n"</span><span class="token punctuation">;</span>
+fragmentSrc <span class="token operator">&lt;&lt;</span> <span class="token string">"in vec2 texCoordVarying;\n"</span><span class="token punctuation">;</span>
+fragmentSrc <span class="token operator">&lt;&lt;</span> <span class="token string">"out vec4 outputColor;\n"</span><span class="token punctuation">;</span>
+fragmentSrc <span class="token operator">&lt;&lt;</span> <span class="token string">"uniform vec2 direction;\n"</span><span class="token punctuation">;</span>
+fragmentSrc <span class="token operator">&lt;&lt;</span> <span class="token string">"void main(void) {\n"</span><span class="token punctuation">;</span>
+fragmentSrc <span class="token operator">&lt;&lt;</span> <span class="token string">"\toutputColor = texture(tex0, texCoordVarying);\n"</span><span class="token punctuation">;</span>
+fragmentSrc <span class="token operator">&lt;&lt;</span> <span class="token string">"}\n"</span><span class="token punctuation">;</span>
+
+shader<span class="token punctuation">.</span><span class="token function">setupShaderFromSource</span><span class="token punctuation">(</span> GL_VERTEX_SHADER<span class="token punctuation">,</span> vertexSrc<span class="token punctuation">.</span><span class="token function">str</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+shader<span class="token punctuation">.</span><span class="token function">setupShaderFromSource</span><span class="token punctuation">(</span> GL_FRAGMENT_SHADER<span class="token punctuation">,</span> fragmentSrc<span class="token punctuation">.</span><span class="token function">str</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+shader<span class="token punctuation">.</span><span class="token function">bindDefaults</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+shader<span class="token punctuation">.</span><span class="token function">linkProgram</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+</div></div><hr></section><section name="sourceFromFile" id="sourceFromFile" class="mb2"><div class="method mb2"><h3 class="f3 title">sourceFromFile( <code class="pink">...</code> )</h3><code><span class="token keyword">ofShader::Source  </span><span class="token function">sourceFromFile</span><span class="token punctuation">(</span><code class="token boolean">GLenum type<span class="token punctuation">,</span> <span class="token keyword">const</span> filesystem<span class="token operator">::</span>path <span class="token operator">&</span>filename</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="unload" id="unload" class="mb2"><div class="method mb2"><h3 class="f3 title">unload( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">unload</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>This unload the shader, which means that it will not be active on the graphics card any longer.</p>
+</div></div><hr></section><section name="~ofShader" id="~ofShader" class="mb2"><div class="method mb2"><h3 class="f3 title">~ofShader( <!----> )</h3><code><!----><span class="token function">~ofShader</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section></div></div></div></div><div id="side-menu"><div id="params"><h4 class="f3">Variables</h4><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>bLoaded</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">GLuint </span><span>program</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">int </span><span>uniformBlocksCache</span><span class="token comment"></span></div><div class="desc"></div></div></code></div><div id="methods-list"><h4 class="f3">Methods</h4><div class="anchor"><code><a href="#begin" class="pink"><span>begin</span><!----></a></code></div><div class="anchor"><code><a href="#beginTransformFeedback"><span>beginTransformFeedback</span><span>(3)</span></a></code></div><div class="anchor"><code><a href="#bindAttribute" class="pink"><span>bindAttribute</span><!----></a></code></div><div class="anchor"><code><a href="#bindDefaults" class="pink"><span>bindDefaults</span><!----></a></code></div><div class="anchor"><code><a href="#bindUniformBlock"><span>bindUniformBlock</span><!----></a></code></div><div class="anchor"><code><a href="#checkAndCreateProgram"><span>checkAndCreateProgram</span><!----></a></code></div><div class="anchor"><code><a href="#checkProgramInfoLog"><span>checkProgramInfoLog</span><!----></a></code></div><div class="anchor"><code><a href="#checkProgramLinkStatus"><span>checkProgramLinkStatus</span><!----></a></code></div><div class="anchor"><code><a href="#checkShaderInfoLog"><span>checkShaderInfoLog</span><!----></a></code></div><div class="anchor"><code><a href="#dispatchCompute"><span>dispatchCompute</span><!----></a></code></div><div class="anchor"><code><a href="#end" class="pink"><span>end</span><!----></a></code></div><div class="anchor"><code><a href="#endTransformFeedback"><span>endTransformFeedback</span><span>(3)</span></a></code></div><div class="anchor"><code><a href="#getAttributeLocation"><span>getAttributeLocation</span><!----></a></code></div><div class="anchor"><code><a href="#getGeometryMaxOutputCount" class="pink"><span>getGeometryMaxOutputCount</span><!----></a></code></div><div class="anchor"><code><a href="#getProgram" class="pink"><span>getProgram</span><!----></a></code></div><div class="anchor"><code><a href="#getShader" class="pink"><span>getShader</span><!----></a></code></div><div class="anchor"><code><a href="#getShaderSource" class="pink"><span>getShaderSource</span><!----></a></code></div><div class="anchor"><code><a href="#getUniformBlockBinding"><span>getUniformBlockBinding</span><!----></a></code></div><div class="anchor"><code><a href="#getUniformBlockIndex"><span>getUniformBlockIndex</span><!----></a></code></div><div class="anchor"><code><a href="#getUniformLocation"><span>getUniformLocation</span><!----></a></code></div><div class="anchor"><code><a href="#isLoaded"><span>isLoaded</span><!----></a></code></div><div class="anchor"><code><a href="#linkProgram" class="pink"><span>linkProgram</span><!----></a></code></div><div class="anchor"><code><a href="#load" class="pink"><span>load</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#loadCompute"><span>loadCompute</span><!----></a></code></div><div class="anchor"><code><a href="#nameForType"><span>nameForType</span><!----></a></code></div><div class="anchor"><code><a href="#ofShader"><span>ofShader</span><span>(3)</span></a></code></div><div class="anchor"><code><a href="#operator!="><span>operator!=</span><!----></a></code></div><div class="anchor"><code><a href="#operator="><span>operator=</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#operator=="><span>operator==</span><!----></a></code></div><div class="anchor"><code><a href="#parseForIncludes"><span>parseForIncludes</span><!----></a></code></div><div class="anchor"><code><a href="#printActiveAttributes" class="pink"><span>printActiveAttributes</span><!----></a></code></div><div class="anchor"><code><a href="#printActiveUniformBlocks"><span>printActiveUniformBlocks</span><!----></a></code></div><div class="anchor"><code><a href="#printActiveUniforms" class="pink"><span>printActiveUniforms</span><!----></a></code></div><div class="anchor"><code><a href="#setAttribute1d" class="pink"><span>setAttribute1d</span><!----></a></code></div><div class="anchor"><code><a href="#setAttribute1f" class="pink"><span>setAttribute1f</span><!----></a></code></div><div class="anchor"><code><a href="#setAttribute1fv"><span>setAttribute1fv</span><!----></a></code></div><div class="anchor"><code><a href="#setAttribute1s" class="pink"><span>setAttribute1s</span><!----></a></code></div><div class="anchor"><code><a href="#setAttribute2d" class="pink"><span>setAttribute2d</span><!----></a></code></div><div class="anchor"><code><a href="#setAttribute2f" class="pink"><span>setAttribute2f</span><!----></a></code></div><div class="anchor"><code><a href="#setAttribute2fv"><span>setAttribute2fv</span><!----></a></code></div><div class="anchor"><code><a href="#setAttribute2s" class="pink"><span>setAttribute2s</span><!----></a></code></div><div class="anchor"><code><a href="#setAttribute3d" class="pink"><span>setAttribute3d</span><!----></a></code></div><div class="anchor"><code><a href="#setAttribute3f" class="pink"><span>setAttribute3f</span><!----></a></code></div><div class="anchor"><code><a href="#setAttribute3fv"><span>setAttribute3fv</span><!----></a></code></div><div class="anchor"><code><a href="#setAttribute3s" class="pink"><span>setAttribute3s</span><!----></a></code></div><div class="anchor"><code><a href="#setAttribute4d" class="pink"><span>setAttribute4d</span><!----></a></code></div><div class="anchor"><code><a href="#setAttribute4f" class="pink"><span>setAttribute4f</span><!----></a></code></div><div class="anchor"><code><a href="#setAttribute4fv"><span>setAttribute4fv</span><!----></a></code></div><div class="anchor"><code><a href="#setAttribute4s" class="pink"><span>setAttribute4s</span><!----></a></code></div><div class="anchor"><code><a href="#setConstantTemp"><span>setConstantTemp</span><!----></a></code></div><div class="anchor"><code><a href="#setDefineConstantTemp"><span>setDefineConstantTemp</span><!----></a></code></div><div class="anchor"><code><a href="#setGeometryInputType" class="pink"><span>setGeometryInputType</span><!----></a></code></div><div class="anchor"><code><a href="#setGeometryOutputCount" class="pink"><span>setGeometryOutputCount</span><!----></a></code></div><div class="anchor"><code><a href="#setGeometryOutputType" class="pink"><span>setGeometryOutputType</span><!----></a></code></div><div class="anchor"><code><a href="#setUniform1f" class="pink"><span>setUniform1f</span><!----></a></code></div><div class="anchor"><code><a href="#setUniform1fv"><span>setUniform1fv</span><!----></a></code></div><div class="anchor"><code><a href="#setUniform1i"><span>setUniform1i</span><!----></a></code></div><div class="anchor"><code><a href="#setUniform1iv"><span>setUniform1iv</span><!----></a></code></div><div class="anchor"><code><a href="#setUniform2f"><span>setUniform2f</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#setUniform2fv" class="pink"><span>setUniform2fv</span><!----></a></code></div><div class="anchor"><code><a href="#setUniform2i"><span>setUniform2i</span><!----></a></code></div><div class="anchor"><code><a href="#setUniform2iv" class="pink"><span>setUniform2iv</span><!----></a></code></div><div class="anchor"><code><a href="#setUniform3f"><span>setUniform3f</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#setUniform3fv" class="pink"><span>setUniform3fv</span><!----></a></code></div><div class="anchor"><code><a href="#setUniform3i" class="pink"><span>setUniform3i</span><!----></a></code></div><div class="anchor"><code><a href="#setUniform3iv" class="pink"><span>setUniform3iv</span><!----></a></code></div><div class="anchor"><code><a href="#setUniform4f"><span>setUniform4f</span><span>(3)</span></a></code></div><div class="anchor"><code><a href="#setUniform4fv" class="pink"><span>setUniform4fv</span><!----></a></code></div><div class="anchor"><code><a href="#setUniform4i"><span>setUniform4i</span><!----></a></code></div><div class="anchor"><code><a href="#setUniform4iv" class="pink"><span>setUniform4iv</span><!----></a></code></div><div class="anchor"><code><a href="#setUniformMatrix3f"><span>setUniformMatrix3f</span><!----></a></code></div><div class="anchor"><code><a href="#setUniformMatrix4f"><span>setUniformMatrix4f</span><!----></a></code></div><div class="anchor"><code><a href="#setUniformTexture" class="pink"><span>setUniformTexture</span><span>(3)</span></a></code></div><div class="anchor"><code><a href="#setUniforms"><span>setUniforms</span><!----></a></code></div><div class="anchor"><code><a href="#setup"><span>setup</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#setupShaderFromFile" class="pink"><span>setupShaderFromFile</span><!----></a></code></div><div class="anchor"><code><a href="#setupShaderFromSource"><span>setupShaderFromSource</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#sourceFromFile"><span>sourceFromFile</span><!----></a></code></div><div class="anchor"><code><a href="#unload" class="pink"><span>unload</span><!----></a></code></div><div class="anchor"><code><a href="#~ofShader"><span>~ofShader</span><!----></a></code></div></div><div id="see-also" filename="ofShader.markdown" absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/gl/ofShader.markdown" route="/documentation/gl/ofShader.markdown" dir="../ofSite/documentation/gl" ext="markdown" type="page" parent="2192" breadcrumbs="2192,1968" siblings="" translations="[object Object]" class="see-also"><h4 class="f3">See also</h4><div class="also"><a href="/documentation/gl/ofShaderSettings"><span class="origin">documentation</span><span class="name">ofShaderSettings</span></a></div><div class="also"><a href="/documentation/gl/ofShader::TransformFeedbackSettings"><span class="origin">documentation</span><span class="name">ofShader::TransformFeedbackSettings</span></a></div><div class="also"><a href="/documentation/gl/ofShader::TransformFeedbackRangeBinding"><span class="origin">documentation</span><span class="name">ofShader::TransformFeedbackRangeBinding</span></a></div><div class="also"><a href="/documentation/gl/ofShader::TransformFeedbackBaseBinding"><span class="origin">documentation</span><span class="name">ofShader::TransformFeedbackBaseBinding</span></a></div><div class="also"><a href="/documentation/gl/ofShader::Source"><span class="origin">documentation</span><span class="name">ofShader::Source</span></a></div><div class="also"><a href="/documentation/gl/ofShader::Shader"><span class="origin">documentation</span><span class="name">ofShader::Shader</span></a></div><div class="also"><a href="/openframeworks/gl/ofShader_h"><span class="origin">openframeworks</span><span class="name">ofShader.h</span></a></div><div class="also"><a href="/openframeworks/gl/ofShader_cpp"><span class="origin">openframeworks</span><span class="name">ofShader.cpp</span></a></div></div></div></div></div><textarea rows="0" class="markdown-editor" style="display:none">#class ofShader
+
+
+&lt;!--
+_visible: True_
+_advanced: False_
+_istemplated: False_
+_extends: _
+-->
+
+##InlineDescription
+
+
+
+
+
+
+##Description
+
+Graphics Language Shading Language (GLSL) can be used in oF by using the ofShader object. Shading happens in two distinct steps: the vertex shader creates values for each vertex in the model, and the fragment shader creates values for each pixel in the rendered object. To define a shader, create a .frag file for the fragment shader and a .vert file for the vertex shader.
+A vertex shader has attributes about a location in space or vertex, which means not only the actual coordinates of that location but also its color, how any textures should be mapped onto it, and how the vertices are modified in the operation. A vertex shader can change the positions of each vertex, the number of lighting computations per vertex, and the color that will be applied to each vertex.
+A geometry shader can generate new graphics primitives like points, lines, and triangles, from those primitives that were sent to the graphics card from the CPU. This means that you could get a point and turn it into a triangle or even a bunch of triangles, or get a line and turn it into a rectangle, or do real-time extrusion. They are very powerful and can be quite tricky to get right, but they're becoming more popular.
+The fragment shader is somewhat misleadingly named because what it really allows you to do is to change values assigned to each pixel. The vertex shader operates on the vertices, and the fragment shader operates on the pixels. By the time the fragment shader gets information passed into it by the graphics card, the color of a particular pixel has already been computed and in the fragment shader can be combined with an element like a lighting effecting, a fog effect, or a blur among many other options. The usual end result of this stage per fragment is a color value and a depth for the fragment.
+
+
+
+
+
+##Methods
+
+
+
+###void begin()
+
+&lt;!--
+_syntax: begin()_
+_name: begin_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+After you call begin() everything that you draw, vertexes and textures, in your of application have the effects of the shader applied to them.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void beginTransformFeedback(mode)
+
+&lt;!--
+_syntax: beginTransformFeedback(mode)_
+_name: beginTransformFeedback_
+_returns: void_
+_returns_description: _
+_parameters: GLenum mode_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void beginTransformFeedback(mode, &binding)
+
+&lt;!--
+_syntax: beginTransformFeedback(mode, &binding)_
+_name: beginTransformFeedback_
+_returns: void_
+_returns_description: _
+_parameters: GLenum mode, const ofShader::TransformFeedbackRangeBinding &binding_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void beginTransformFeedback(mode, &binding)
+
+&lt;!--
+_syntax: beginTransformFeedback(mode, &binding)_
+_name: beginTransformFeedback_
+_returns: void_
+_returns_description: _
+_parameters: GLenum mode, const vector&lt; TransformFeedbackRangeBinding > &binding_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void beginTransformFeedback(mode, &binding)
+
+&lt;!--
+_syntax: beginTransformFeedback(mode, &binding)_
+_name: beginTransformFeedback_
+_returns: void_
+_returns_description: _
+_parameters: GLenum mode, const ofShader::TransformFeedbackBaseBinding &binding_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void beginTransformFeedback(mode, &binding)
+
+&lt;!--
+_syntax: beginTransformFeedback(mode, &binding)_
+_name: beginTransformFeedback_
+_returns: void_
+_returns_description: _
+_parameters: GLenum mode, const vector&lt; TransformFeedbackBaseBinding > &binding_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void bindAttribute(location, &name)
+
+&lt;!--
+_syntax: bindAttribute(location, &name)_
+_name: bindAttribute_
+_returns: void_
+_returns_description: _
+_parameters: GLuint location, const string &name_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+`bindAttribute` is used for faster access to attributes. The idea is to set attributes by location (an integer) instead of querying attribute locations multiple times by name. This method is used internally by OF in `ofShader::bindDefaults()` to set the default locations of the `position`, `color`, `normal` and `texcoord` attributes.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool bindDefaults()
+
+&lt;!--
+_syntax: bindDefaults()_
+_name: bindDefaults_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Binds default uniforms and attributes, only useful for fixed pipeline simulation under programmable renderer.
+Has to be called before linkProgram().
+
+See setupShaderFromSource() example.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void bindUniformBlock(bindind, &name)
+
+&lt;!--
+_syntax: bindUniformBlock(bindind, &name)_
+_name: bindUniformBlock_
+_returns: void_
+_returns_description: _
+_parameters: GLuint bindind, const string &name_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void checkAndCreateProgram()
+
+&lt;!--
+_syntax: checkAndCreateProgram()_
+_name: checkAndCreateProgram_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void checkProgramInfoLog()
+
+&lt;!--
+_syntax: checkProgramInfoLog()_
+_name: checkProgramInfoLog_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool checkProgramLinkStatus()
+
+&lt;!--
+_syntax: checkProgramLinkStatus()_
+_name: checkProgramLinkStatus_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: private_
+_version_started: 0071_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void checkShaderInfoLog(shader, type, logLevel)
+
+&lt;!--
+_syntax: checkShaderInfoLog(shader, type, logLevel)_
+_name: checkShaderInfoLog_
+_returns: void_
+_returns_description: _
+_parameters: GLuint shader, GLenum type, ofLogLevel logLevel_
+_access: private_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void dispatchCompute(x, y, z)
+
+&lt;!--
+_syntax: dispatchCompute(x, y, z)_
+_name: dispatchCompute_
+_returns: void_
+_returns_description: _
+_parameters: GLuint x, GLuint y, GLuint z_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void end()
+
+&lt;!--
+_syntax: end()_
+_name: end_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+After you call end() any drawing, vertexes and textures, do not have the effect of the shader applied to them.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void endTransformFeedback(&binding)
+
+&lt;!--
+_syntax: endTransformFeedback(&binding)_
+_name: endTransformFeedback_
+_returns: void_
+_returns_description: _
+_parameters: const ofShader::TransformFeedbackRangeBinding &binding_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void endTransformFeedback(&binding)
+
+&lt;!--
+_syntax: endTransformFeedback(&binding)_
+_name: endTransformFeedback_
+_returns: void_
+_returns_description: _
+_parameters: const vector&lt; TransformFeedbackRangeBinding > &binding_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void endTransformFeedback(&binding)
+
+&lt;!--
+_syntax: endTransformFeedback(&binding)_
+_name: endTransformFeedback_
+_returns: void_
+_returns_description: _
+_parameters: const ofShader::TransformFeedbackBaseBinding &binding_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void endTransformFeedback(&binding)
+
+&lt;!--
+_syntax: endTransformFeedback(&binding)_
+_name: endTransformFeedback_
+_returns: void_
+_returns_description: _
+_parameters: const vector&lt; TransformFeedbackBaseBinding > &binding_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void endTransformFeedback()
+
+&lt;!--
+_syntax: endTransformFeedback()_
+_name: endTransformFeedback_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###GLint getAttributeLocation(&name)
+
+&lt;!--
+_syntax: getAttributeLocation(&name)_
+_name: getAttributeLocation_
+_returns: GLint_
+_returns_description: _
+_parameters: const string &name_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int getGeometryMaxOutputCount()
+
+&lt;!--
+_syntax: getGeometryMaxOutputCount()_
+_name: getGeometryMaxOutputCount_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+returns maximum number of supported vertices for your graphics card
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###GLuint getProgram()
+
+&lt;!--
+_syntax: getProgram()_
+_name: getProgram_
+_returns: GLuint_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+This returns the GLuint for the actual shader object that is active on the graphics card. This is more of an advanced usage method, but can be helpful if you need to do something that the ofShader doesn't support currently. This is all the shaders: vertex, geom, and frag.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###GLuint getShader(type)
+
+&lt;!--
+_syntax: getShader(type)_
+_name: getShader_
+_returns: GLuint_
+_returns_description: _
+_parameters: GLenum type_
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+This returns the GLuint for the actual shader object that is active on the graphics card. This is more of an advanced usage method, but can be helpful if you need to do something that the ofShader doesn't support currently. This returns only one of the shaders. You can pass GL_VERTEX_SHADER, GL_GEOMETRY_SHADER_EXT, GL_FRAGMENT_SHADER
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###string getShaderSource(type)
+
+&lt;!--
+_syntax: getShaderSource(type)_
+_name: getShaderSource_
+_returns: string_
+_returns_description: _
+_parameters: GLenum type_
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+@brief returns the shader source as it was passed to the GLSL compiler
+
+**Parameters:**
+
+type (GL_VERTEX_SHADER | GL_FRAGMENT_SHADER | GL_GEOMETRY_SHADER_EXT) the shader source you'd like to inspect.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###GLint getUniformBlockBinding(&name)
+
+&lt;!--
+_syntax: getUniformBlockBinding(&name)_
+_name: getUniformBlockBinding_
+_returns: GLint_
+_returns_description: _
+_parameters: const string &name_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###GLint getUniformBlockIndex(&name)
+
+&lt;!--
+_syntax: getUniformBlockIndex(&name)_
+_name: getUniformBlockIndex_
+_returns: GLint_
+_returns_description: _
+_parameters: const string &name_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###GLint getUniformLocation(&name)
+
+&lt;!--
+_syntax: getUniformLocation(&name)_
+_name: getUniformLocation_
+_returns: GLint_
+_returns_description: _
+_parameters: const string &name_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool isLoaded()
+
+&lt;!--
+_syntax: isLoaded()_
+_name: isLoaded_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool linkProgram()
+
+&lt;!--
+_syntax: linkProgram()_
+_name: linkProgram_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Links program with all compiled shaders. This is more of an advanced use method, as this is done automatically for you.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool load(&shaderName)
+
+&lt;!--
+_syntax: load(&shaderName)_
+_name: load_
+_returns: bool_
+_returns_description: _
+_parameters: const filesystem::path &shaderName_
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+This assumes that your vertex and fragment shaders have the same name, i.e. "dof.vert" and "dof.frag" and loads them using just the name of the shader:
+
+~~~~{.cpp}
+shader.load("dof"); // assumes the shaders are in /data
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool load(&vertName, &fragName, &geomName)
+
+&lt;!--
+_syntax: load(&vertName, &fragName, &geomName)_
+_name: load_
+_returns: bool_
+_returns_description: _
+_parameters: const filesystem::path &vertName, const filesystem::path &fragName, const filesystem::path &geomName_
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Here you can load shaders with whatever names you choose. The geometry shader is optional, but the vertex and fragment shaders aren't.
+
+~~~~{.cpp}
+shader.load("dof.vert", "dof.frag"); // assumes the shaders are in /data
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool loadCompute(&shaderName)
+
+&lt;!--
+_syntax: loadCompute(&shaderName)_
+_name: loadCompute_
+_returns: bool_
+_returns_description: _
+_parameters: const filesystem::path &shaderName_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###string nameForType(type)
+
+&lt;!--
+_syntax: nameForType(type)_
+_name: nameForType_
+_returns: string_
+_returns_description: _
+_parameters: GLenum type_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: True_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofShader(&&shader)
+
+&lt;!--
+_syntax: ofShader(&&shader)_
+_name: ofShader_
+_returns: _
+_returns_description: _
+_parameters: ofShader &&shader_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofShader(&shader)
+
+&lt;!--
+_syntax: ofShader(&shader)_
+_name: ofShader_
+_returns: _
+_returns_description: _
+_parameters: const ofShader &shader_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofShader()
+
+&lt;!--
+_syntax: ofShader()_
+_name: ofShader_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool operator!=(&other)
+
+&lt;!--
+_syntax: operator!=(&other)_
+_name: operator!=_
+_returns: bool_
+_returns_description: _
+_parameters: const ofShader &other_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofShader & operator=(&&shader)
+
+&lt;!--
+_syntax: operator=(&&shader)_
+_name: operator=_
+_returns: ofShader &_
+_returns_description: _
+_parameters: ofShader &&shader_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofShader & operator=(&shader)
+
+&lt;!--
+_syntax: operator=(&shader)_
+_name: operator=_
+_returns: ofShader &_
+_returns_description: _
+_parameters: const ofShader &shader_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool operator==(&other)
+
+&lt;!--
+_syntax: operator==(&other)_
+_name: operator==_
+_returns: bool_
+_returns_description: _
+_parameters: const ofShader &other_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###string parseForIncludes(&source, &included, level = 0, &sourceDirectoryPath)
+
+&lt;!--
+_syntax: parseForIncludes(&source, &included, level = 0, &sourceDirectoryPath)_
+_name: parseForIncludes_
+_returns: string_
+_returns_description: _
+_parameters: const string &source, vector&lt; string > &included, int level=0, const filesystem::path &sourceDirectoryPath_
+_access: private_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: True_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###string parseForIncludes(&source, &sourceDirectoryPath)
+
+&lt;!--
+_syntax: parseForIncludes(&source, &sourceDirectoryPath)_
+_name: parseForIncludes_
+_returns: string_
+_returns_description: _
+_parameters: const string &source, const filesystem::path &sourceDirectoryPath_
+_access: private_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: True_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+@brief			Mimics the #include behaviour of the c preprocessor
+@description	Includes files specified using the
+					'#pragma include &lt;filepath>' directive.
+@note			Include paths are always specified _relative to the including file's current path_
+	@note			Recursive #pragma include statements are possible
+@note			Includes will be processed up to 32 levels deep
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void printActiveAttributes()
+
+&lt;!--
+_syntax: printActiveAttributes()_
+_name: printActiveAttributes_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+This prints out all the active attributes to the console.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void printActiveUniformBlocks()
+
+&lt;!--
+_syntax: printActiveUniformBlocks()_
+_name: printActiveUniformBlocks_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void printActiveUniforms()
+
+&lt;!--
+_syntax: printActiveUniforms()_
+_name: printActiveUniforms_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+This prints out all the active uniforms to the console.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setAttribute1d(location, v1)
+
+&lt;!--
+_syntax: setAttribute1d(location, v1)_
+_name: setAttribute1d_
+_returns: void_
+_returns_description: _
+_parameters: GLint location, double v1_
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Set one double attribute on the shader.
+Attributes are different than uniforms in that you can pass an attribute to each vertex or fragment that is being shaded.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setAttribute1f(location, v1)
+
+&lt;!--
+_syntax: setAttribute1f(location, v1)_
+_name: setAttribute1f_
+_returns: void_
+_returns_description: _
+_parameters: GLint location, float v1_
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Set one float attributes on the shader.
+Attributes are different than uniforms in that you can pass an attribute to each vertex or fragment that is being shaded.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setAttribute1fv(&name, *v, stride)
+
+&lt;!--
+_syntax: setAttribute1fv(&name, *v, stride)_
+_name: setAttribute1fv_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, const float *v, GLsizei stride_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setAttribute1s(location, v1)
+
+&lt;!--
+_syntax: setAttribute1s(location, v1)_
+_name: setAttribute1s_
+_returns: void_
+_returns_description: _
+_parameters: GLint location, short v1_
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Set a short attribute, a short int, on the shader.
+Attributes are different than uniforms in that you can pass an attribute to each vertex or fragment that is being shaded.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setAttribute2d(location, v1, v2)
+
+&lt;!--
+_syntax: setAttribute2d(location, v1, v2)_
+_name: setAttribute2d_
+_returns: void_
+_returns_description: _
+_parameters: GLint location, double v1, double v2_
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Set two double attribute on the shader.
+Attributes are different than uniforms in that you can pass an attribute to each vertex or fragment that is being shaded.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setAttribute2f(location, v1, v2)
+
+&lt;!--
+_syntax: setAttribute2f(location, v1, v2)_
+_name: setAttribute2f_
+_returns: void_
+_returns_description: _
+_parameters: GLint location, float v1, float v2_
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Set two float attributes on the shader.
+Attributes are different than uniforms in that you can pass an attribute to each vertex or fragment that is being shaded.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setAttribute2fv(&name, *v, stride)
+
+&lt;!--
+_syntax: setAttribute2fv(&name, *v, stride)_
+_name: setAttribute2fv_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, const float *v, GLsizei stride_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setAttribute2s(location, v1, v2)
+
+&lt;!--
+_syntax: setAttribute2s(location, v1, v2)_
+_name: setAttribute2s_
+_returns: void_
+_returns_description: _
+_parameters: GLint location, short v1, short v2_
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Set two short attributes, a short int, on the shader.
+Attributes are different than uniforms in that you can pass an attribute to each vertex or fragment that is being shaded.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setAttribute3d(location, v1, v2, v3)
+
+&lt;!--
+_syntax: setAttribute3d(location, v1, v2, v3)_
+_name: setAttribute3d_
+_returns: void_
+_returns_description: _
+_parameters: GLint location, double v1, double v2, double v3_
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Set three double attribute on the shader.
+Attributes are different than uniforms in that you can pass an attribute to each vertex or fragment that is being shaded.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setAttribute3f(location, v1, v2, v3)
+
+&lt;!--
+_syntax: setAttribute3f(location, v1, v2, v3)_
+_name: setAttribute3f_
+_returns: void_
+_returns_description: _
+_parameters: GLint location, float v1, float v2, float v3_
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Set three float attributes on the shader.
+Attributes are different than uniforms in that you can pass an attribute to each vertex or fragment that is being shaded.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setAttribute3fv(&name, *v, stride)
+
+&lt;!--
+_syntax: setAttribute3fv(&name, *v, stride)_
+_name: setAttribute3fv_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, const float *v, GLsizei stride_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setAttribute3s(location, v1, v2, v3)
+
+&lt;!--
+_syntax: setAttribute3s(location, v1, v2, v3)_
+_name: setAttribute3s_
+_returns: void_
+_returns_description: _
+_parameters: GLint location, short v1, short v2, short v3_
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Set three short attributes, a short int, on the shader.
+Attributes are different than uniforms in that you can pass an attribute to each vertex or fragment that is being shaded.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setAttribute4d(location, v1, v2, v3, v4)
+
+&lt;!--
+_syntax: setAttribute4d(location, v1, v2, v3, v4)_
+_name: setAttribute4d_
+_returns: void_
+_returns_description: _
+_parameters: GLint location, double v1, double v2, double v3, double v4_
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Set four double attribute on the shader.
+Attributes are different than uniforms in that you can pass an attribute to each vertex or fragment that is being shaded.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setAttribute4f(location, v1, v2, v3, v4)
+
+&lt;!--
+_syntax: setAttribute4f(location, v1, v2, v3, v4)_
+_name: setAttribute4f_
+_returns: void_
+_returns_description: _
+_parameters: GLint location, float v1, float v2, float v3, float v4_
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Set four float attributes on the shader.
+Attributes are different than uniforms in that you can pass an attribute to each vertex or fragment that is being shaded.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setAttribute4fv(&name, *v, stride)
+
+&lt;!--
+_syntax: setAttribute4fv(&name, *v, stride)_
+_name: setAttribute4fv_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, const float *v, GLsizei stride_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setAttribute4s(location, v1, v2, v3, v4)
+
+&lt;!--
+_syntax: setAttribute4s(location, v1, v2, v3, v4)_
+_name: setAttribute4s_
+_returns: void_
+_returns_description: _
+_parameters: GLint location, short v1, short v2, short v3, short v4_
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Set four short attributes, a short int, on the shader.
+Attributes are different than uniforms in that you can pass an attribute to each vertex or fragment that is being shaded.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setConstantTemp(&name, &type, value)
+
+&lt;!--
+_syntax: setConstantTemp(&name, &type, value)_
+_name: setConstantTemp_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, const string &type, T value_
+_access: private_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setDefineConstantTemp(&name, value)
+
+&lt;!--
+_syntax: setDefineConstantTemp(&name, value)_
+_name: setDefineConstantTemp_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, T value_
+_access: private_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setGeometryInputType(type)
+
+&lt;!--
+_syntax: setGeometryInputType(type)_
+_name: setGeometryInputType_
+_returns: void_
+_returns_description: _
+_parameters: GLenum type_
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+You have to call this before linking the program with geometry shaders.
+Possible types are GL_POINTS, GL_LINES, GL_LINES_ADJACENCY_EXT, GL_TRIANGLES, GL_TRIANGLES_ADJACENCY_EXT
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setGeometryOutputCount(count)
+
+&lt;!--
+_syntax: setGeometryOutputCount(count)_
+_name: setGeometryOutputCount_
+_returns: void_
+_returns_description: _
+_parameters: int count_
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+You have to call this before linking the program with geometry shaders to set the number of output vertices, For quads, this should be 4, for points 1. Triangle strips can use up to the maximum number. You can check the maximum number supported on your graphics cards with getGeometryMaxOutputCount()
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setGeometryOutputType(type)
+
+&lt;!--
+_syntax: setGeometryOutputType(type)_
+_name: setGeometryOutputType_
+_returns: void_
+_returns_description: _
+_parameters: GLenum type_
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+You have to call this before linking the program with geometry shaders.
+type: GL_POINTS, GL_LINE_STRIP or GL_TRIANGLE_STRIP
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUniform1f(&name, v1)
+
+&lt;!--
+_syntax: setUniform1f(&name, v1)_
+_name: setUniform1f_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, float v1_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+set a float uniform on the shader
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUniform1fv(&name, *v, count = 1)
+
+&lt;!--
+_syntax: setUniform1fv(&name, *v, count = 1)_
+_name: setUniform1fv_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, const float *v, int count=1_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUniform1i(&name, v1)
+
+&lt;!--
+_syntax: setUniform1i(&name, v1)_
+_name: setUniform1i_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, int v1_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUniform1iv(&name, *v, count = 1)
+
+&lt;!--
+_syntax: setUniform1iv(&name, *v, count = 1)_
+_name: setUniform1iv_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, const int *v, int count=1_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUniform2f(&name, &v)
+
+&lt;!--
+_syntax: setUniform2f(&name, &v)_
+_name: setUniform2f_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, const glm::vec2 &v_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUniform2f(&name, v1, v2)
+
+&lt;!--
+_syntax: setUniform2f(&name, v1, v2)_
+_name: setUniform2f_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, float v1, float v2_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUniform2fv(&name, *v, count = 1)
+
+&lt;!--
+_syntax: setUniform2fv(&name, *v, count = 1)_
+_name: setUniform2fv_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, const float *v, int count=1_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+This allows you to set multiple vec2 uniforms.
+~~~~{.cpp}
+vec2 v[2];
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUniform2i(&name, v1, v2)
+
+&lt;!--
+_syntax: setUniform2i(&name, v1, v2)_
+_name: setUniform2i_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, int v1, int v2_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUniform2iv(&name, *v, count = 1)
+
+&lt;!--
+_syntax: setUniform2iv(&name, *v, count = 1)_
+_name: setUniform2iv_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, const int *v, int count=1_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+set an array of uniform values on the shader using int[2] value. On the shader this looks like:
+~~~~{.cpp}
+ivec2 iv[2];
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUniform3f(&name, &v)
+
+&lt;!--
+_syntax: setUniform3f(&name, &v)_
+_name: setUniform3f_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, const glm::vec3 &v_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUniform3f(&name, v1, v2, v3)
+
+&lt;!--
+_syntax: setUniform3f(&name, v1, v2, v3)_
+_name: setUniform3f_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, float v1, float v2, float v3_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+set a vec3 uniform on the shader
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUniform3fv(&name, *v, count = 1)
+
+&lt;!--
+_syntax: setUniform3fv(&name, *v, count = 1)_
+_name: setUniform3fv_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, const float *v, int count=1_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+This allows you to set multiple vec3 uniforms.
+~~~~{.cpp}
+vec3 v[2];
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUniform3i(&name, v1, v2, v3)
+
+&lt;!--
+_syntax: setUniform3i(&name, v1, v2, v3)_
+_name: setUniform3i_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, int v1, int v2, int v3_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+~~~~{.cpp}
+uniform ivec3 texture;
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUniform3iv(&name, *v, count = 1)
+
+&lt;!--
+_syntax: setUniform3iv(&name, *v, count = 1)_
+_name: setUniform3iv_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, const int *v, int count=1_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+set an array of uniform values on the shader using int[2] value. On the shader this looks like:
+~~~~{.cpp}
+ivec3 iv[2];
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUniform4f(&name, &v)
+
+&lt;!--
+_syntax: setUniform4f(&name, &v)_
+_name: setUniform4f_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, const glm::vec4 &v_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUniform4f(&name, &v)
+
+&lt;!--
+_syntax: setUniform4f(&name, &v)_
+_name: setUniform4f_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, const ofFloatColor &v_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUniform4f(&name, v1, v2, v3, v4)
+
+&lt;!--
+_syntax: setUniform4f(&name, v1, v2, v3, v4)_
+_name: setUniform4f_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, float v1, float v2, float v3, float v4_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+set a vec4 uniform on the shader
+~~~~{.cpp}
+vec4 fv;
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUniform4fv(&name, *v, count = 1)
+
+&lt;!--
+_syntax: setUniform4fv(&name, *v, count = 1)_
+_name: setUniform4fv_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, const float *v, int count=1_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+This allows you to set multiple vec4 uniforms.
+~~~~{.cpp}
+vec4 v[2];
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUniform4i(&name, v1, v2, v3, v4)
+
+&lt;!--
+_syntax: setUniform4i(&name, v1, v2, v3, v4)_
+_name: setUniform4i_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, int v1, int v2, int v3, int v4_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUniform4iv(&name, *v, count = 1)
+
+&lt;!--
+_syntax: setUniform4iv(&name, *v, count = 1)_
+_name: setUniform4iv_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, const int *v, int count=1_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+set an array of uniform values on the shader using int[2] value. On the shader this looks like:
+~~~~{.cpp}
+ivec4 iv[2];
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUniformMatrix3f(&name, &m, count = 1)
+
+&lt;!--
+_syntax: setUniformMatrix3f(&name, &m, count = 1)_
+_name: setUniformMatrix3f_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, const glm::mat3 &m, int count=1_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUniformMatrix4f(&name, &m, count = 1)
+
+&lt;!--
+_syntax: setUniformMatrix4f(&name, &m, count = 1)_
+_name: setUniformMatrix4f_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, const glm::mat4 &m, int count=1_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUniformTexture(&name, &img, textureLocation)
+
+&lt;!--
+_syntax: setUniformTexture(&name, &img, textureLocation)_
+_name: setUniformTexture_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, const ofBaseHasTexture &img, int textureLocation_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+set a texture reference
+On your shader it should look like this:
+~~~~{.cpp}
+uniform sampler2DRect texture;
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUniformTexture(&name, &img, textureLocation)
+
+&lt;!--
+_syntax: setUniformTexture(&name, &img, textureLocation)_
+_name: setUniformTexture_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, const ofTexture &img, int textureLocation_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUniformTexture(&name, textureTarget, textureID, textureLocation)
+
+&lt;!--
+_syntax: setUniformTexture(&name, textureTarget, textureID, textureLocation)_
+_name: setUniformTexture_
+_returns: void_
+_returns_description: _
+_parameters: const string &name, int textureTarget, GLint textureID, int textureLocation_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUniforms(&ampparameters)
+
+&lt;!--
+_syntax: setUniforms(&ampparameters)_
+_name: setUniforms_
+_returns: void_
+_returns_description: _
+_parameters: const ofParameterGroup &ampparameters_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool setup(&settings)
+
+&lt;!--
+_syntax: setup(&settings)_
+_name: setup_
+_returns: bool_
+_returns_description: _
+_parameters: const ofShaderSettings &settings_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool setup(&settings)
+
+&lt;!--
+_syntax: setup(&settings)_
+_name: setup_
+_returns: bool_
+_returns_description: _
+_parameters: const ofShader::TransformFeedbackSettings &settings_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool setupShaderFromFile(type, &filename)
+
+&lt;!--
+_syntax: setupShaderFromFile(type, &filename)_
+_name: setupShaderFromFile_
+_returns: bool_
+_returns_description: _
+_parameters: GLenum type, const filesystem::path &filename_
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+This are more of advanced use function and doesn't need.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool setupShaderFromSource(&&source)
+
+&lt;!--
+_syntax: setupShaderFromSource(&&source)_
+_name: setupShaderFromSource_
+_returns: bool_
+_returns_description: _
+_parameters: ofShader::Source &&source_
+_access: private_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool setupShaderFromSource(type, source, sourceDirectoryPath)
+
+&lt;!--
+_syntax: setupShaderFromSource(type, source, sourceDirectoryPath)_
+_name: setupShaderFromSource_
+_returns: bool_
+_returns_description: _
+_parameters: GLenum type, string source, string sourceDirectoryPath_
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+This method create and compile a shader from source.
+Working with OpenGL 3 or OpenGL ES 2.0, remember to call bindDefaults() before linkProgram()
+
+Example of a simple shader to display a texture, using the ofGLProgrammableRenderer:
+~~~~{.cpp}
+stringstream vertexSrc;
+vertexSrc &lt;&lt; "#version 150\n";
+vertexSrc &lt;&lt; "uniform mat4 modelViewProjectionMatrix;\n";
+vertexSrc  &lt;&lt; "in vec4 position;\n";
+vertexSrc  &lt;&lt; "in vec2 texcoord;\n";
+vertexSrc  &lt;&lt; "out vec2 texCoordVarying;\n";
+vertexSrc  &lt;&lt; "void main(void){\n";
+vertexSrc  &lt;&lt; "\tgl_Position=modelViewProjectionMatrix*position;\n";
+vertexSrc  &lt;&lt; "\ttexCoordVarying = texcoord;\n";
+vertexSrc  &lt;&lt; "}\n";
+
+stringstream fragmentSrc;
+fragmentSrc &lt;&lt; "#version 150\n";
+fragmentSrc &lt;&lt; "uniform sampler2DRect tex0;\n";
+fragmentSrc &lt;&lt; "in vec2 texCoordVarying;\n";
+fragmentSrc &lt;&lt; "out vec4 outputColor;\n";
+fragmentSrc &lt;&lt; "uniform vec2 direction;\n";
+fragmentSrc &lt;&lt; "void main(void) {\n";
+fragmentSrc &lt;&lt; "\toutputColor = texture(tex0, texCoordVarying);\n";
+fragmentSrc &lt;&lt; "}\n";
+
+shader.setupShaderFromSource( GL_VERTEX_SHADER, vertexSrc.str() );
+shader.setupShaderFromSource( GL_FRAGMENT_SHADER, fragmentSrc.str() );
+shader.bindDefaults();
+shader.linkProgram();
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofShader::Source sourceFromFile(type, &filename)
+
+&lt;!--
+_syntax: sourceFromFile(type, &filename)_
+_name: sourceFromFile_
+_returns: ofShader::Source_
+_returns_description: _
+_parameters: GLenum type, const filesystem::path &filename_
+_access: private_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void unload()
+
+&lt;!--
+_syntax: unload()_
+_name: unload_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+This unload the shader, which means that it will not be active on the graphics card any longer.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ~ofShader()
+
+&lt;!--
+_syntax: ~ofShader()_
+_name: ~ofShader_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: _
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+##Variables
+
+
+
+###unordered_map&lt; string, GLint > attributesBindingsCache
+
+&lt;!--
+_name: attributesBindingsCache_
+_type: unordered_map&lt; string, GLint >_
+_access: private_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool bLoaded
+
+&lt;!--
+_name: bLoaded_
+_type: bool_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###GLuint program
+
+&lt;!--
+_name: program_
+_type: GLuint_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###map&lt; GLenum, GLuint > shaders
+
+&lt;!--
+_name: shaders_
+_type: map&lt; GLenum, GLuint >_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int uniformBlocksCache
+
+&lt;!--
+_name: uniformBlocksCache_
+_type: int_
+_access: private_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###unordered_map&lt; string, GLint > uniformsCache
+
+&lt;!--
+_name: uniformsCache_
+_type: unordered_map&lt; string, GLint >_
+_access: private_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+</textarea></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1586012716389/documentation/gl/ofShader/payload.js"></script><script src="/_nuxt/5f71eaca0bd2f1a0f939.js" defer></script><script src="/_nuxt/35a90d914f539af1362f.js" defer></script><script src="/_nuxt/906a3ca0fb13ed3c6651.js" defer></script><script src="/_nuxt/b673915e8a08acf593e8.js" defer></script><script src="/_nuxt/bf355f21967a23c26c07.js" defer></script>
+  </body>
+</html>

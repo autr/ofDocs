@@ -1,0 +1,4021 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>ofNode | documentation | ofDocs</title><meta data-n-head="ssr" data-hid="description" name="description" content="openFrameworks documentation and examples browser"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="openFrameworks documentation and examples browser" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="ofNode | documentation | ofDocs" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="/files/images/ofw-logo.png" vmid="og:image"><link rel="preload" href="/_nuxt/5f71eaca0bd2f1a0f939.js" as="script"><link rel="preload" href="/_nuxt/906a3ca0fb13ed3c6651.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/b673915e8a08acf593e8.js" as="script"><link rel="preload" href="/_nuxt/46e8fcacdadb233d9fb6.css" as="style"><link rel="preload" href="/_nuxt/bf355f21967a23c26c07.js" as="script"><link rel="preload" href="/_nuxt/35a90d914f539af1362f.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/46e8fcacdadb233d9fb6.css">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app"><div id="menu"><div class="menu-inner"><div id="settings"></div><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><svg version="1.1" viewbox="0 0 110 58" width="110px" height="58px" enable-background="0 0 110 58" xml:space="preserve" class="logo"><g><path d="M58,29 C58,13 45,0 29,0 C13,0 0,13 0,29 C0,45 13,58 29,58 C45,58 58,45 58,29 Z"></path><rect x="59" y="0" width="25" height="58"></rect><rect x="85" y="26" width="15" height="15"></rect><path d="M85,0 L110,0 L85,25 L85,0 Z"></path></g></svg><div class="txt"><span class="docs f7 questrial">Docs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343							c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88							c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593							c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789							C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><!----></div><div id="lists" class="menu-inner mt1 mb2"><div class="inner"></div></div></div><div class="menu-bottom"><div class="inner"><button class="button"><!----><span><span class="ico">nights_stay</span></span></button></div></div></div><div id="document"><div id="renderer" class="main page"><div absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/3d/ofNode.markdown" route="/documentation/3d/ofNode.markdown" dir="../ofSite/documentation/3d" ext="markdown" type="page" id="1988" parent="1967" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/" class="pink nuxt-link-active">documentation </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/3d/" class="pink nuxt-link-active">3d </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link selector"><span class="name">ofNode</span><span class="chevron bottom"></span><select><option value="/documentation/3d/of3dGraphics_functions">of3dGraphics (functions)</option><option value="/documentation/3d/of3dGraphics">of3dGraphics</option><option value="/documentation/3d/of3dPrimitive">of3dPrimitive</option><option value="/documentation/3d/of3dUtils_functions">of3dUtils (functions)</option><option value="/documentation/3d/ofBoxPrimitive">ofBoxPrimitive</option><option value="/documentation/3d/ofCamera">ofCamera</option><option value="/documentation/3d/ofConePrimitive">ofConePrimitive</option><option value="/documentation/3d/ofCylinderPrimitive">ofCylinderPrimitive</option><option value="/documentation/3d/ofEasyCam">ofEasyCam</option><option value="/documentation/3d/ofIcoSpherePrimitive">ofIcoSpherePrimitive</option><option value="/documentation/3d/ofMesh_">ofMesh</option><option value="/documentation/3d/ofMeshFace_">ofMeshFace</option><option value="/documentation/3d/ofNode">ofNode</option><option value="/documentation/3d/ofPlanePrimitive">ofPlanePrimitive</option><option value="/documentation/3d/ofSpherePrimitive">ofSpherePrimitive</option></select></span><!----></span></span></div></div></div><div class="editable-wrapper"><div class="header inner"><h1 class="page-title questrial"><span class="f7"><!----><span>ofNode</span></span><span class="f3"></span></h1><div class="actions"><a href="/ofdocs/contribute/" class="button"><i class="ico">edit</i><span>Edit</span></a></div></div><div class="rendered"><div id="documentation-page" static="true"><div id="offset-page"><div id="doc-body" class="markdown"><div class="inner"><div id="description"><div class="full-description"><div class="html"><p>The ofNode is the base of all things 3d. It lets you represent a location and orientation in 3d space and also allows you to add children or parents so that sets of nodes can move together. This is handy for representing complex 3d models that are linked together, the same way that your hand is linked to your wrist (hopefully), which is linked to your elbow (hopefully), and so on. Nodes are the base of the ofPrimitives, ofCamera, and ofEasyCamera, among other things.</p>
+<p>To get the current position, check out: getX(), getY(), getZ(). To get the axis of the node call getXAxis() (or the y and z variants for those other axes). Another really useful feature of the ofNode is that you can get the <a href="http://en.wikipedia.org/wiki/Euler_angles">Eulerian angles</a> of each node: getPitch(), getHeading(), getRoll(). The global transformation matrix of the ofNode is also available using the getGlobalTransformMatrix(), very handy for figuring out things in relation to the OpenGL representation of your OF world. getGlobalOrientation() also is handy, returning a ofQuaternion that you can use to find out whether your node is upside down in relation to the rest of your OF world (really an OpenGL context, but let's not get into that quite yet).</p>
+<h1></h1>
+</div></div></div><div id="methods"><hr><section name="addListener" id="addListener" class="mb2"><div class="method mb2"><h3 class="f3 title">addListener( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">addListener</span><span class="token punctuation">(</span><code class="token boolean">ofNode <span class="token operator">&</span>node</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="boom" id="boom" class="mb2"><div class="method mb2"><h3 class="f3 title">boom( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">boom</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> amount</code><span class="token punctuation">)</span></code><div class="short"><p>Move node up+down relative to current position (in local y axis).</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired relative position change along local y axis as float.</p>
+</div><div class="desc"><p>Move up+down (in local y axis).</p>
+</div></div><hr></section><section name="clearParent" id="clearParent" class="mb2"><div class="method mb2"><h3 class="f3 title">clearParent( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">clearParent</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">bool</span> bMaintainGlobalTransform<span class="token operator">=</span><span class="token boolean">false</span></code><span class="token punctuation">)</span></code><div class="short"><p>Remove parent node linking.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Boolean if maintain child's global transformations (default = false).</p>
+</div><div class="desc"></div></div><hr></section><section name="createMatrix" id="createMatrix" class="mb2"><div class="method mb2"><h3 class="f3 title">createMatrix( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">createMatrix</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>}</p>
+</div><div class="desc"></div></div><hr></section><section name="customDraw" id="customDraw" class="mb2"><div class="method mb2"><h3 class="f3 title">customDraw( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">customDraw</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>If you extend ofNode and wish to change the way it draws, extend this.
+\note Try to not use global functions for rendering and instead use the passed
+renderer.</p>
+</div><div class="desc"><p>If you extend ofNode and wish to change the way it draws, extend this.</p>
+</div></div><hr></section><section name="customDraw" id="customDraw" class="mb2"><div class="method mb2"><h3 class="f3 title">customDraw( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">customDraw</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofBaseRenderer <span class="token operator">*</span>renderer</code><span class="token punctuation">)</span></code><div class="short"><p>If you extend ofNode and wish to change the way it draws, extend this.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 A pointer to the renderer you want to draw to.
+\note Try to not use global functions for rendering and instead use the passed
+renderer.</p>
+</div><div class="desc"></div></div><hr></section><section name="dolly" id="dolly" class="mb2"><div class="method mb2"><h3 class="f3 title">dolly( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">dolly</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> amount</code><span class="token punctuation">)</span></code><div class="short"><p>Move node backward+forward relative to current position (in local z axis).</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired relative position change along local z axis as float.</p>
+</div><div class="desc"><p>Move forward+backward (in local z axis)</p>
+</div></div><hr></section><section name="draw" id="draw" class="mb2"><div class="method mb2"><h3 class="f3 title">draw( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">draw</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Draw the node as a white cube with xyz axes.
+\note do NOT override this.
+It transforms the node to its position+orientation+scale
+and calls the virtual 'customDraw' method above which you CAN override.</p>
+</div><div class="desc"><p>Draw function. do NOT override this transforms the node to its position+orientation+scale and calls the virtual 'customDraw' method above which you CAN override.</p>
+</div></div><hr></section><section name="getGlobalOrientation" id="getGlobalOrientation" class="mb2"><div class="method mb2"><h3 class="f3 title">getGlobalOrientation( <!----> )</h3><code><span class="token keyword">glm::quat  </span><span class="token function">getGlobalOrientation</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Get the global orientation of the node as a quaternion.</p>
+<p><strong>Returns</strong>: An quaternion of the global orientations(useful for complex rotations)</p>
+</div><div class="desc"></div></div><hr></section><section name="getGlobalPosition" id="getGlobalPosition" class="mb2"><div class="method mb2"><h3 class="f3 title">getGlobalPosition( <!----> )</h3><code><span class="token keyword">glm::vec3  </span><span class="token function">getGlobalPosition</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Get node's global position as a 3D vector.</p>
+<p><strong>Returns</strong>: A 3D vector with the global coordinates.</p>
+</div><div class="desc"></div></div><hr></section><section name="getGlobalScale" id="getGlobalScale" class="mb2"><div class="method mb2"><h3 class="f3 title">getGlobalScale( <!----> )</h3><code><span class="token keyword">glm::vec3  </span><span class="token function">getGlobalScale</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Get global scale of node in xyz axes where 1 is default.</p>
+<p><strong>Returns</strong>: The global scale in the xyz axes where 1 = 100% of size.</p>
+</div><div class="desc"></div></div><hr></section><section name="getGlobalTransformMatrix" id="getGlobalTransformMatrix" class="mb2"><div class="method mb2"><h3 class="f3 title">getGlobalTransformMatrix( <!----> )</h3><code><span class="token keyword">glm::mat4  </span><span class="token function">getGlobalTransformMatrix</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Get node's global transformations (position, orientation, scale).</p>
+<p><strong>Returns</strong>: A refrence to mat4 containing node's global transformations.</p>
+<p><strong>See also</strong>: https://open.gl/transformations</p>
+</div><div class="desc"></div></div><hr></section><section name="getHeadingDeg" id="getHeadingDeg" class="mb2"><div class="method mb2"><h3 class="f3 title">getHeadingDeg( <!----> )</h3><code><span class="token keyword">float  </span><span class="token function">getHeadingDeg</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Get heading of node, aka the rotation along local y axis.</p>
+<p><strong>Returns</strong>: The rotation around the local y axis in degrees, as a float.</p>
+</div><div class="desc"></div></div><hr></section><section name="getHeadingRad" id="getHeadingRad" class="mb2"><div class="method mb2"><h3 class="f3 title">getHeadingRad( <!----> )</h3><code><span class="token keyword">float  </span><span class="token function">getHeadingRad</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Get heading of node, aka the rotation along local y axis.</p>
+<p><strong>Returns</strong>: The rotation around the local y axis in degrees, as a float.</p>
+</div><div class="desc"></div></div><hr></section><section name="getLocalTransformMatrix" id="getLocalTransformMatrix" class="mb2"><div class="method mb2"><h3 class="f3 title">getLocalTransformMatrix( <!----> )</h3><code><span class="token keyword">const glm::mat4 &  </span><span class="token function">getLocalTransformMatrix</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Get node's local transformations (position, orientation, scale).</p>
+<p><strong>Returns</strong>: A refrence to mat4 containing node's local transformations.</p>
+<p><strong>See also</strong>: https://open.gl/transformations</p>
+</div><div class="desc"></div></div><hr></section><section name="getLookAtDir" id="getLookAtDir" class="mb2"><div class="method mb2"><h3 class="f3 title">getLookAtDir( <!----> )</h3><code><span class="token keyword">glm::vec3  </span><span class="token function">getLookAtDir</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Get direction the node looks at aka local -z axis, as 3d vector.</p>
+<p><strong>Returns</strong>: A normalized 3D vector of the node's local -z axis direction.</p>
+</div><div class="desc"><p>Get -z axis.</p>
+</div></div><hr></section><section name="getOrientationEulerDeg" id="getOrientationEulerDeg" class="mb2"><div class="method mb2"><h3 class="f3 title">getOrientationEulerDeg( <!----> )</h3><code><span class="token keyword">glm::vec3  </span><span class="token function">getOrientationEulerDeg</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Get local orientation of node in degrees around x, y, and z axes.</p>
+<p><strong>Returns</strong>: The local x, y and z axes orientation in degrees, as a 3D vector.</p>
+</div><div class="desc"></div></div><hr></section><section name="getOrientationEulerRad" id="getOrientationEulerRad" class="mb2"><div class="method mb2"><h3 class="f3 title">getOrientationEulerRad( <!----> )</h3><code><span class="token keyword">glm::vec3  </span><span class="token function">getOrientationEulerRad</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Get local orientation of node in degrees around x, y, and z axes.</p>
+<p><strong>Returns</strong>: The local x, y and z axes orientation in degrees, as a 3D vector.</p>
+</div><div class="desc"></div></div><hr></section><section name="getOrientationQuat" id="getOrientationQuat" class="mb2"><div class="method mb2"><h3 class="f3 title">getOrientationQuat( <!----> )</h3><code><span class="token keyword">glm::quat  </span><span class="token function">getOrientationQuat</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Get the local orientation of the node as a quaternion.</p>
+<p><strong>Returns</strong>: A quaternion of local orientation (useful for complex rotations)</p>
+</div><div class="desc"></div></div><hr></section><section name="getParent" id="getParent" class="mb2"><div class="method mb2"><h3 class="f3 title">getParent( <!----> )</h3><code><span class="token keyword">ofNode *  </span><span class="token function">getParent</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Get the parent node of this node.</p>
+<p><strong>Returns</strong>: Pointer to parent ofNode.</p>
+</div><div class="desc"></div></div><hr></section><section name="getPitchDeg" id="getPitchDeg" class="mb2"><div class="method mb2"><h3 class="f3 title">getPitchDeg( <!----> )</h3><code><span class="token keyword">float  </span><span class="token function">getPitchDeg</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Get pitch of node, aka the rotation along local x axis.</p>
+<p><strong>Returns</strong>: The rotation around the local x axis in degrees, as a float.</p>
+</div><div class="desc"></div></div><hr></section><section name="getPitchRad" id="getPitchRad" class="mb2"><div class="method mb2"><h3 class="f3 title">getPitchRad( <!----> )</h3><code><span class="token keyword">float  </span><span class="token function">getPitchRad</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Get pitch of node, aka the rotation along local x axis.</p>
+<p><strong>Returns</strong>: The rotation around the local x axis in degrees, as a float.</p>
+</div><div class="desc"></div></div><hr></section><section name="getPosition" id="getPosition" class="mb2"><div class="method mb2"><h3 class="f3 title">getPosition( <!----> )</h3><code><span class="token keyword">glm::vec3  </span><span class="token function">getPosition</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Get node's local position as a 3D vector.</p>
+<p><strong>Returns</strong>: A 3D vector with the local coordinates.</p>
+</div><div class="desc"></div></div><hr></section><section name="getRollDeg" id="getRollDeg" class="mb2"><div class="method mb2"><h3 class="f3 title">getRollDeg( <!----> )</h3><code><span class="token keyword">float  </span><span class="token function">getRollDeg</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Get roll of node, aka the rotation along local z axis.</p>
+<p><strong>Returns</strong>: The rotation around the local z axis in degrees, as a float.</p>
+</div><div class="desc"></div></div><hr></section><section name="getRollRad" id="getRollRad" class="mb2"><div class="method mb2"><h3 class="f3 title">getRollRad( <!----> )</h3><code><span class="token keyword">float  </span><span class="token function">getRollRad</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Get roll of node, aka the rotation along local z axis.</p>
+<p><strong>Returns</strong>: The rotation around the local z axis in degrees, as a float.</p>
+</div><div class="desc"></div></div><hr></section><section name="getScale" id="getScale" class="mb2"><div class="method mb2"><h3 class="f3 title">getScale( <!----> )</h3><code><span class="token keyword">glm::vec3  </span><span class="token function">getScale</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Get local scale of node in xyz axes where 1 is default.</p>
+<p><strong>Returns</strong>: The local scale in the xyz axes where 1 = 100% of size.</p>
+</div><div class="desc"></div></div><hr></section><section name="getSideDir" id="getSideDir" class="mb2"><div class="method mb2"><h3 class="f3 title">getSideDir( <!----> )</h3><code><span class="token keyword">glm::vec3  </span><span class="token function">getSideDir</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Get direction of node's side aka local x axis, as 3d vector.</p>
+<p><strong>Returns</strong>: A normalized 3D vector of the node's local x axis direction.</p>
+</div><div class="desc"></div></div><hr></section><section name="getUpDir" id="getUpDir" class="mb2"><div class="method mb2"><h3 class="f3 title">getUpDir( <!----> )</h3><code><span class="token keyword">glm::vec3  </span><span class="token function">getUpDir</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Get direction of node's top aka local y axis, as 3d vector.</p>
+<p><strong>Returns</strong>: A normalized 3D vector of the node's local y axis direction.</p>
+</div><div class="desc"><p>Get y axis.</p>
+</div></div><hr></section><section name="getX" id="getX" class="mb2"><div class="method mb2"><h3 class="f3 title">getX( <!----> )</h3><code><span class="token keyword">float  </span><span class="token function">getX</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Get node's local x position.</p>
+<p><strong>Returns</strong>: Local x coordinate as a float.</p>
+</div><div class="desc"><p>Get x coodinate.</p>
+</div></div><hr></section><section name="getXAxis" id="getXAxis" class="mb2"><div class="method mb2"><h3 class="f3 title">getXAxis( <!----> )</h3><code><span class="token keyword">glm::vec3  </span><span class="token function">getXAxis</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Get the node's local x axis as 3d vector.</p>
+<p><strong>Returns</strong>: A normalized 3D vector of the node's local x axis direction.</p>
+</div><div class="desc"><p>Get x axis.</p>
+</div></div><hr></section><section name="getY" id="getY" class="mb2"><div class="method mb2"><h3 class="f3 title">getY( <!----> )</h3><code><span class="token keyword">float  </span><span class="token function">getY</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Get node's local y position.</p>
+<p><strong>Returns</strong>: Local y coordinate as a float.</p>
+</div><div class="desc"><p>Get y coordinate.</p>
+</div></div><hr></section><section name="getYAxis" id="getYAxis" class="mb2"><div class="method mb2"><h3 class="f3 title">getYAxis( <!----> )</h3><code><span class="token keyword">glm::vec3  </span><span class="token function">getYAxis</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Get the node's local y axis as 3d vector.</p>
+<p><strong>Returns</strong>: A normalized 3D vector of the node's local y axis direction.</p>
+</div><div class="desc"><p>Get y axis.</p>
+</div></div><hr></section><section name="getZ" id="getZ" class="mb2"><div class="method mb2"><h3 class="f3 title">getZ( <!----> )</h3><code><span class="token keyword">float  </span><span class="token function">getZ</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Get node's local z position.</p>
+<p><strong>Returns</strong>: Local z coordinate as a float.</p>
+</div><div class="desc"><p>Get z coordinate.</p>
+</div></div><hr></section><section name="getZAxis" id="getZAxis" class="mb2"><div class="method mb2"><h3 class="f3 title">getZAxis( <!----> )</h3><code><span class="token keyword">glm::vec3  </span><span class="token function">getZAxis</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Get the node's local z axis as 3d vector.</p>
+<p><strong>Returns</strong>: A normalized 3D vector of the node's local z axis direction.</p>
+</div><div class="desc"><p>Get z axis.</p>
+</div></div><hr></section><section name="lookAt" id="lookAt" class="mb2"><div class="method mb2"><h3 class="f3 title">lookAt( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">lookAt</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofNode <span class="token operator">&</span>lookAtNode</code><span class="token punctuation">)</span></code><div class="short"><p>Orient node to look at another node (-z axis pointing at other node).</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 A reference to the node to look at.
+\note This version calculates the up vector automatically to try to keep
+it relatively consistant with the original angle.</p>
+</div><div class="desc"></div></div><hr></section><section name="lookAt" id="lookAt" class="mb2"><div class="method mb2"><h3 class="f3 title">lookAt( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">lookAt</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofNode <span class="token operator">&</span>lookAtNode<span class="token punctuation">,</span> <span class="token keyword">const</span> glm<span class="token operator">::</span>vec3 <span class="token operator">&</span>upVector</code><span class="token punctuation">)</span></code><div class="short"><p>Orient node to look at another node (-z axis pointing at other node).</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 A reference to the node to look at.</p>
+<p>param1 The desired up axis as a ref to cartesian 3D vector.</p>
+</div><div class="desc"><p>Orient node to look at node (-z axis pointing to node).</p>
+</div></div><hr></section><section name="lookAt" id="lookAt" class="mb2"><div class="method mb2"><h3 class="f3 title">lookAt( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">lookAt</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> glm<span class="token operator">::</span>vec3 <span class="token operator">&</span>lookAtPosition</code><span class="token punctuation">)</span></code><div class="short"><p>Orient node to look at point (-z axis pointing to global position).</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 XYZ coordinates of point to look at as ref to 3D vector.
+\note This version calculates the up vector automatically to try to keep
+it relatively consistant with the original angle.</p>
+</div><div class="desc"></div></div><hr></section><section name="lookAt" id="lookAt" class="mb2"><div class="method mb2"><h3 class="f3 title">lookAt( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">lookAt</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> glm<span class="token operator">::</span>vec3 <span class="token operator">&</span>lookAtPosition<span class="token punctuation">,</span> glm<span class="token operator">::</span>vec3 upVector</code><span class="token punctuation">)</span></code><div class="short"><p>Orient node to look at point (-z axis pointing to global position).</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 XYZ coordinates of point to look at as ref to 3D vector.</p>
+<p>param1 The desired up axis as a cartesian 3D vector.</p>
+</div><div class="desc"><p>Orient node to look at position (-z axis pointing to position).</p>
+</div></div><hr></section><section name="move" id="move" class="mb2"><div class="method mb2"><h3 class="f3 title">move( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">move</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> glm<span class="token operator">::</span>vec3 <span class="token operator">&</span>offset</code><span class="token punctuation">)</span></code><div class="short"><p>Move node by relative amount with xyz as ref to 3D vector.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired relative position change along all axes as ref to 3D vector.</p>
+</div><div class="desc"><p>Move by arbitrary amount.</p>
+</div></div><hr></section><section name="move" id="move" class="mb2"><div class="method mb2"><h3 class="f3 title">move( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">move</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> x<span class="token punctuation">,</span> <span class="token keyword">float</span> y<span class="token punctuation">,</span> <span class="token keyword">float</span> z</code><span class="token punctuation">)</span></code><div class="short"><p>Move node by relative amount with xyz coordinates.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired relative position change along x axis as a float.</p>
+<p>param1 Desired relative position change along y axis as a float.</p>
+<p>param2 Desired relative position change along z axis as a float.</p>
+</div><div class="desc"><p>Move by arbitrary amount.</p>
+</div></div><hr></section><section name="ofNode" id="ofNode" class="mb2"><div class="method mb2"><h3 class="f3 title">ofNode( <code class="pink">...</code> )</h3><code><!----><span class="token function">ofNode</span><span class="token punctuation">(</span><code class="token boolean">ofNode <span class="token operator">&&</span>node</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofNode" id="ofNode" class="mb2"><div class="method mb2"><h3 class="f3 title">ofNode( <code class="pink">...</code> )</h3><code><!----><span class="token function">ofNode</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofNode <span class="token operator">&</span>node</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofNode" id="ofNode" class="mb2"><div class="method mb2"><h3 class="f3 title">ofNode( <!----> )</h3><code><!----><span class="token function">ofNode</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>\cond INTERNAL</p>
+</div><div class="desc"></div></div><hr></section><section name="onOrientationChanged" id="onOrientationChanged" class="mb2"><div class="method mb2"><h3 class="f3 title">onOrientationChanged( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">onOrientationChanged</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>classes extending ofNode can override this methods to get notified when the orientation changed.</p>
+</div><div class="desc"><p>Classes extending ofNode can override these methods to get notified when the orientation changed.</p>
+</div></div><hr></section><section name="onParentOrientationChanged" id="onParentOrientationChanged" class="mb2"><div class="method mb2"><h3 class="f3 title">onParentOrientationChanged( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">onParentOrientationChanged</span><span class="token punctuation">(</span><code class="token boolean">glm<span class="token operator">::</span>quat <span class="token operator">&</span>orientation</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="onParentPositionChanged" id="onParentPositionChanged" class="mb2"><div class="method mb2"><h3 class="f3 title">onParentPositionChanged( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">onParentPositionChanged</span><span class="token punctuation">(</span><code class="token boolean">glm<span class="token operator">::</span>vec3 <span class="token operator">&</span>position</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="onParentScaleChanged" id="onParentScaleChanged" class="mb2"><div class="method mb2"><h3 class="f3 title">onParentScaleChanged( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">onParentScaleChanged</span><span class="token punctuation">(</span><code class="token boolean">glm<span class="token operator">::</span>vec3 <span class="token operator">&</span>scale</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="onPositionChanged" id="onPositionChanged" class="mb2"><div class="method mb2"><h3 class="f3 title">onPositionChanged( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">onPositionChanged</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>classes extending ofNode can override this method to get
+notified when the position changed.</p>
+</div><div class="desc"><p>Classes extending ofNode can override these methods to get notified when the position changed.</p>
+</div></div><hr></section><section name="onScaleChanged" id="onScaleChanged" class="mb2"><div class="method mb2"><h3 class="f3 title">onScaleChanged( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">onScaleChanged</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>classes extending ofNode can override this methods to get notified when the scale changed.</p>
+</div><div class="desc"><p>Classes extending ofNode can override these methods to get notified when the scale changed.</p>
+</div></div><hr></section><section name="operator=" id="operator=" class="mb2"><div class="method mb2"><h3 class="f3 title">operator=( <code class="pink">...</code> )</h3><code><span class="token keyword">ofNode &  </span><span class="token function">operator=</span><span class="token punctuation">(</span><code class="token boolean">ofNode <span class="token operator">&&</span>node</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="operator=" id="operator=" class="mb2"><div class="method mb2"><h3 class="f3 title">operator=( <code class="pink">...</code> )</h3><code><span class="token keyword">ofNode &  </span><span class="token function">operator=</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofNode <span class="token operator">&</span>node</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="orbitDeg" id="orbitDeg" class="mb2"><div class="method mb2"><h3 class="f3 title">orbitDeg( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">orbitDeg</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> longitude<span class="token punctuation">,</span> <span class="token keyword">float</span> latitude<span class="token punctuation">,</span> <span class="token keyword">float</span> radius<span class="token punctuation">,</span> ofNode <span class="token operator">&</span>centerNode</code><span class="token punctuation">)</span></code><div class="short"><p>Orbit node around another node at a specific radius.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 The longitudinal position of the node in degrees as float.</p>
+<p>param1 The latitudinal position of the node in degrees as float.</p>
+<p>param2 The desired radius from the other node in degrees as float.</p>
+<p>param3 A reference to the node to rotate around.</p>
+</div><div class="desc"></div></div><hr></section><section name="orbitDeg" id="orbitDeg" class="mb2"><div class="method mb2"><h3 class="f3 title">orbitDeg( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">orbitDeg</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> longitude<span class="token punctuation">,</span> <span class="token keyword">float</span> latitude<span class="token punctuation">,</span> <span class="token keyword">float</span> radius<span class="token punctuation">,</span> <span class="token keyword">const</span> glm<span class="token operator">::</span>vec3 <span class="token operator">&</span>centerPoint</code><span class="token punctuation">)</span></code><div class="short"><p>Orbit node around a global position at a specific radius.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 The longitudinal position of the node in degrees as float.</p>
+<p>param1 The latitudinal position of the node in degrees as float.</p>
+<p>param2 The desired radius from the position in degrees as float.</p>
+<p>param3 The global position to orbit around as ref to 3D vector. Default = (0, 0, 0).</p>
+</div><div class="desc"></div></div><hr></section><section name="orbitRad" id="orbitRad" class="mb2"><div class="method mb2"><h3 class="f3 title">orbitRad( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">orbitRad</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> longitude<span class="token punctuation">,</span> <span class="token keyword">float</span> latitude<span class="token punctuation">,</span> <span class="token keyword">float</span> radius<span class="token punctuation">,</span> ofNode <span class="token operator">&</span>centerNode</code><span class="token punctuation">)</span></code><div class="short"><p>Orbit node around another node at a specific radius.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 The longitudinal position of the node in radians as float.</p>
+<p>param1 The latitudinal position of the node in radians as float.</p>
+<p>param2 The desired radius from the other node in radians as float.</p>
+<p>param3 A reference to the node to rotate around.</p>
+</div><div class="desc"></div></div><hr></section><section name="orbitRad" id="orbitRad" class="mb2"><div class="method mb2"><h3 class="f3 title">orbitRad( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">orbitRad</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> longitude<span class="token punctuation">,</span> <span class="token keyword">float</span> latitude<span class="token punctuation">,</span> <span class="token keyword">float</span> radius<span class="token punctuation">,</span> <span class="token keyword">const</span> glm<span class="token operator">::</span>vec3 <span class="token operator">&</span>centerPoint</code><span class="token punctuation">)</span></code><div class="short"><p>Orbit node around a global position at a specific radius.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 The longitudinal position of the node in radians as float.</p>
+<p>param1 The latitudinal position of the node in radians as float.</p>
+<p>param2 The desired radius from the position in radians as float.</p>
+<p>param3 The global position to orbit around as ref to 3D vector. Default = (0, 0, 0).</p>
+</div><div class="desc"></div></div><hr></section><section name="panDeg" id="panDeg" class="mb2"><div class="method mb2"><h3 class="f3 title">panDeg( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">panDeg</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> degrees</code><span class="token punctuation">)</span></code><div class="short"><p>Rotate left+right relative to current orientation (around local y axis).</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired relative rotation change along local y axis in degrees as float.</p>
+</div><div class="desc"></div></div><hr></section><section name="panRad" id="panRad" class="mb2"><div class="method mb2"><h3 class="f3 title">panRad( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">panRad</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> radians</code><span class="token punctuation">)</span></code><div class="short"><p>Rotate left+right relative to current orientation (around local y axis).</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired relative rotation change along local y axis in radians as float.</p>
+</div><div class="desc"></div></div><hr></section><section name="removeListener" id="removeListener" class="mb2"><div class="method mb2"><h3 class="f3 title">removeListener( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">removeListener</span><span class="token punctuation">(</span><code class="token boolean">ofNode <span class="token operator">&</span>node</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="resetTransform" id="resetTransform" class="mb2"><div class="method mb2"><h3 class="f3 title">resetTransform( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">resetTransform</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Reset this node's transformations, position, rotation and scale.</p>
+</div><div class="desc"></div></div><hr></section><section name="restoreTransformGL" id="restoreTransformGL" class="mb2"><div class="method mb2"><h3 class="f3 title">restoreTransformGL( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">restoreTransformGL</span><span class="token punctuation">(</span><code class="token boolean">ofBaseRenderer <span class="token operator">*</span>renderer</code><span class="token punctuation">)</span></code><div class="short"><p>Restore opengl renderer's previous modelview transform matrix.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 A pointer to the renderer you want to restore transformation to;</p>
+</div><div class="desc"></div></div><hr></section><section name="rollDeg" id="rollDeg" class="mb2"><div class="method mb2"><h3 class="f3 title">rollDeg( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">rollDeg</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> degrees</code><span class="token punctuation">)</span></code><div class="short"><p>Roll left+right relative to current orientation (around local z axis).</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired relative rotation change along local z axis in degrees as float.</p>
+</div><div class="desc"></div></div><hr></section><section name="rollRad" id="rollRad" class="mb2"><div class="method mb2"><h3 class="f3 title">rollRad( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">rollRad</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> radians</code><span class="token punctuation">)</span></code><div class="short"><p>Roll left+right relative to current orientation (around local z axis).</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired relative rotation change along local z axis in radians as float.</p>
+</div><div class="desc"></div></div><hr></section><section name="rotate" id="rotate" class="mb2"><div class="method mb2"><h3 class="f3 title">rotate( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">rotate</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> glm<span class="token operator">::</span>quat <span class="token operator">&</span>q</code><span class="token punctuation">)</span></code><div class="short"><p>Rotate relative to current orientation by quaternion.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired relative rotation change as a ref to quaternion.</p>
+</div><div class="desc"><p>Rotate around arbitrary axis by angle.</p>
+</div></div><hr></section><section name="rotateAround" id="rotateAround" class="mb2"><div class="method mb2"><h3 class="f3 title">rotateAround( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">rotateAround</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> glm<span class="token operator">::</span>quat <span class="token operator">&</span>q<span class="token punctuation">,</span> <span class="token keyword">const</span> glm<span class="token operator">::</span>vec3 <span class="token operator">&</span>point</code><span class="token punctuation">)</span></code><div class="short"><p>Rotate relative to current orientation by quaternion around point.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired relative rotation change as a ref to quaternion.</p>
+<p>param1 Point to rotate around in local xyz coordinates as ref to 3D vector.</p>
+</div><div class="desc"><p>Rotate around arbitrary axis by angle around point.</p>
+</div></div><hr></section><section name="rotateAroundDeg" id="rotateAroundDeg" class="mb2"><div class="method mb2"><h3 class="f3 title">rotateAroundDeg( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">rotateAroundDeg</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> degrees<span class="token punctuation">,</span> <span class="token keyword">const</span> glm<span class="token operator">::</span>vec3 <span class="token operator">&</span>axis<span class="token punctuation">,</span> <span class="token keyword">const</span> glm<span class="token operator">::</span>vec3 <span class="token operator">&</span>point</code><span class="token punctuation">)</span></code><div class="short"><p>Rotate relative to current orientation around arbitrary axis around point.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired relative angle change in degrees as float.</p>
+<p>param1 The arbitrary axis to rotate around as ref to cartesian 3D vector.</p>
+<p>param2 Point to rotate around in local xyz coordinates as ref to 3D vector.</p>
+</div><div class="desc"></div></div><hr></section><section name="rotateAroundRad" id="rotateAroundRad" class="mb2"><div class="method mb2"><h3 class="f3 title">rotateAroundRad( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">rotateAroundRad</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> radians<span class="token punctuation">,</span> <span class="token keyword">const</span> glm<span class="token operator">::</span>vec3 <span class="token operator">&</span>axis<span class="token punctuation">,</span> <span class="token keyword">const</span> glm<span class="token operator">::</span>vec3 <span class="token operator">&</span>point</code><span class="token punctuation">)</span></code><div class="short"><p>Rotate relative to current orientation around arbitrary axis around point.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired relative angle change in degrees as float.</p>
+<p>param1 The arbitrary axis to rotate around as ref to cartesian 3D vector.</p>
+<p>param2 Point to rotate around in local xyz coordinates as ref to 3D vector.</p>
+</div><div class="desc"></div></div><hr></section><section name="rotateDeg" id="rotateDeg" class="mb2"><div class="method mb2"><h3 class="f3 title">rotateDeg( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">rotateDeg</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> degrees<span class="token punctuation">,</span> <span class="token keyword">const</span> glm<span class="token operator">::</span>vec3 <span class="token operator">&</span>v</code><span class="token punctuation">)</span></code><div class="short"><p>Rotate relative to current orientation around arbitrary axis.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired relative angle change in degrees as float.</p>
+<p>param1 Desired axis to rotate around as a ref to cartesian 3D Vector.</p>
+</div><div class="desc"></div></div><hr></section><section name="rotateDeg" id="rotateDeg" class="mb2"><div class="method mb2"><h3 class="f3 title">rotateDeg( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">rotateDeg</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> degrees<span class="token punctuation">,</span> <span class="token keyword">float</span> vx<span class="token punctuation">,</span> <span class="token keyword">float</span> vy<span class="token punctuation">,</span> <span class="token keyword">float</span> vz</code><span class="token punctuation">)</span></code><div class="short"><p>Rotate relative to current orientation around arbitrary axis.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired relative angle change in degrees as float.</p>
+<p>param1 X angle of the axis to rotate around in degrees as float.</p>
+<p>param2 Y angle of the axis to rotate around in degrees as float.</p>
+<p>param3 Z angle of the axis to rotate around in degrees as float.</p>
+</div><div class="desc"></div></div><hr></section><section name="rotateRad" id="rotateRad" class="mb2"><div class="method mb2"><h3 class="f3 title">rotateRad( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">rotateRad</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> radians<span class="token punctuation">,</span> <span class="token keyword">const</span> glm<span class="token operator">::</span>vec3 <span class="token operator">&</span>v</code><span class="token punctuation">)</span></code><div class="short"><p>Rotate relative to current orientation around arbitrary axis.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired relative angle change in radians as float.</p>
+<p>param1 Desired axis to rotate around as a ref to cartesian 3D Vector.</p>
+</div><div class="desc"></div></div><hr></section><section name="rotateRad" id="rotateRad" class="mb2"><div class="method mb2"><h3 class="f3 title">rotateRad( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">rotateRad</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> radians<span class="token punctuation">,</span> <span class="token keyword">float</span> vx<span class="token punctuation">,</span> <span class="token keyword">float</span> vy<span class="token punctuation">,</span> <span class="token keyword">float</span> vz</code><span class="token punctuation">)</span></code><div class="short"><p>Rotate relative to current orientation around arbitrary axis.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired relative angle change in radians as float.</p>
+<p>param1 X angle of the axis to rotate around in degrees as float.</p>
+<p>param2 Y angle of the axis to rotate around in degrees as float.</p>
+<p>param3 Z angle of the axis to rotate around in degrees as float.</p>
+</div><div class="desc"></div></div><hr></section><section name="setGlobalOrientation" id="setGlobalOrientation" class="mb2"><div class="method mb2"><h3 class="f3 title">setGlobalOrientation( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setGlobalOrientation</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> glm<span class="token operator">::</span>quat <span class="token operator">&</span>q</code><span class="token punctuation">)</span></code><div class="short"><p>Set global orientation with a quaternion.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired global orientation as ref to an glm::quat.</p>
+</div><div class="desc"></div></div><hr></section><section name="setGlobalPosition" id="setGlobalPosition" class="mb2"><div class="method mb2"><h3 class="f3 title">setGlobalPosition( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setGlobalPosition</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> glm<span class="token operator">::</span>vec3 <span class="token operator">&</span>p</code><span class="token punctuation">)</span></code><div class="short"><p>Set the global position of the node using a 3D vector of coordinates.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired global xyz coordinates as ref to 3D vector.</p>
+</div><div class="desc"></div></div><hr></section><section name="setGlobalPosition" id="setGlobalPosition" class="mb2"><div class="method mb2"><h3 class="f3 title">setGlobalPosition( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setGlobalPosition</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> px<span class="token punctuation">,</span> <span class="token keyword">float</span> py<span class="token punctuation">,</span> <span class="token keyword">float</span> pz</code><span class="token punctuation">)</span></code><div class="short"><p>Set the global position of the node using xyz coordinates.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired global x coordinate as a float.</p>
+<p>param1 Desired global y coordinate as a float.</p>
+<p>param2 Desired global z coordinate as a float.</p>
+</div><div class="desc"></div></div><hr></section><section name="setOrientation" id="setOrientation" class="mb2"><div class="method mb2"><h3 class="f3 title">setOrientation( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setOrientation</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> glm<span class="token operator">::</span>vec3 <span class="token operator">&</span>eulerAngles</code><span class="token punctuation">)</span></code><div class="short"><p>Set local orientation with xyz euler angles.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired local xyz angles in degrees, as ref to 3D vector.
+\note Using euler angles can cause gimbal lock.</p>
+<p><strong>See also</strong>: https://en.wikipedia.org/wiki/Gimbal_lock</p>
+</div><div class="desc"></div></div><hr></section><section name="setOrientation" id="setOrientation" class="mb2"><div class="method mb2"><h3 class="f3 title">setOrientation( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setOrientation</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> glm<span class="token operator">::</span>quat <span class="token operator">&</span>q</code><span class="token punctuation">)</span></code><div class="short"><p>Set local orientation with a quaternion.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired local orientation as ref to an glm::quat.</p>
+</div><div class="desc"></div></div><hr></section><section name="setParent" id="setParent" class="mb2"><div class="method mb2"><h3 class="f3 title">setParent( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setParent</span><span class="token punctuation">(</span><code class="token boolean">ofNode <span class="token operator">&</span>parent<span class="token punctuation">,</span> <span class="token keyword">bool</span> bMaintainGlobalTransform<span class="token operator">=</span><span class="token boolean">false</span></code><span class="token punctuation">)</span></code><div class="short"><p>Set parent for the node. The node will inherit transformations from parent.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Reference to the ofNode which becomes the parent node.</p>
+<p>param1 Boolean if maintain child's global transformations (default = false).</p>
+</div><div class="desc"><p>Set parent to link nodes transformations are inherited from parent node set to NULL if not needed (default).</p>
+</div></div><hr></section><section name="setPosition" id="setPosition" class="mb2"><div class="method mb2"><h3 class="f3 title">setPosition( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setPosition</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> glm<span class="token operator">::</span>vec3 <span class="token operator">&</span>p</code><span class="token punctuation">)</span></code><div class="short"><p>Set the local position of the node using a 3D vector of coordinates.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired local xyz coordinates as ref to 3D vector.</p>
+</div><div class="desc"></div></div><hr></section><section name="setPosition" id="setPosition" class="mb2"><div class="method mb2"><h3 class="f3 title">setPosition( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setPosition</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> px<span class="token punctuation">,</span> <span class="token keyword">float</span> py<span class="token punctuation">,</span> <span class="token keyword">float</span> pz</code><span class="token punctuation">)</span></code><div class="short"><p>Set the local position of the node using xyz coordinates.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired local x coordinate as a float.</p>
+<p>param1 Desired local y coordinate as a float.</p>
+<p>param2 Desired local z coordinate as a float.</p>
+</div><div class="desc"></div></div><hr></section><section name="setScale" id="setScale" class="mb2"><div class="method mb2"><h3 class="f3 title">setScale( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setScale</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> glm<span class="token operator">::</span>vec3 <span class="token operator">&</span>s</code><span class="token punctuation">)</span></code><div class="short"><p>Set local scale for xyz axes individually with a 3D vector.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired local scale for all axes as ref to 3D vector where 1 = 100%.</p>
+</div><div class="desc"></div></div><hr></section><section name="setScale" id="setScale" class="mb2"><div class="method mb2"><h3 class="f3 title">setScale( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setScale</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> s</code><span class="token punctuation">)</span></code><div class="short"><p>Set local uniform scale (x, y, and z are equally scaled).</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired scale for all axes as a float where 1 = 100%.</p>
+</div><div class="desc"></div></div><hr></section><section name="setScale" id="setScale" class="mb2"><div class="method mb2"><h3 class="f3 title">setScale( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setScale</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> sx<span class="token punctuation">,</span> <span class="token keyword">float</span> sy<span class="token punctuation">,</span> <span class="token keyword">float</span> sz</code><span class="token punctuation">)</span></code><div class="short"><p>Set local scale for xyz axes individually.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired local scale for x axis as a float where 1 = 100%.</p>
+<p>param1 Desired local scale for y axis as a float where 1 = 100%.</p>
+<p>param2 Desired local scale for z axis as a float where 1 = 100%.</p>
+</div><div class="desc"></div></div><hr></section><section name="tiltDeg" id="tiltDeg" class="mb2"><div class="method mb2"><h3 class="f3 title">tiltDeg( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">tiltDeg</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> degrees</code><span class="token punctuation">)</span></code><div class="short"><p>Tilt up+down relative to current orientation (around local x axis).</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired relative rotation change along local x axis in degrees as float.</p>
+</div><div class="desc"></div></div><hr></section><section name="tiltRad" id="tiltRad" class="mb2"><div class="method mb2"><h3 class="f3 title">tiltRad( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">tiltRad</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> radians</code><span class="token punctuation">)</span></code><div class="short"><p>Tilt up+down relative to current orientation (around local x axis).</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired relative rotation change along local x axis in radians as float.</p>
+</div><div class="desc"></div></div><hr></section><section name="transformGL" id="transformGL" class="mb2"><div class="method mb2"><h3 class="f3 title">transformGL( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">transformGL</span><span class="token punctuation">(</span><code class="token boolean">ofBaseRenderer <span class="token operator">*</span>renderer</code><span class="token punctuation">)</span></code><div class="short"><p>Set opengl renderer's modelview matrix to this nodes transform.</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 A pointer to the renderer you want to set to this node's transform;
+\note If you want to draw something at the position+orientation+scale of this node,
+call ofNode::transform(); write your draw code, and ofNode::restoreTransform();
+OR A simpler way is to extend ofNode and override ofNode::customDraw();</p>
+</div><div class="desc"><p>Set opengl's modelview matrix to this nodes transform.
+If you want to draw something at the position+orientation+scale of this node...
+...call ofNode::transform(); write your draw code, and ofNode::restoreTransform();
+OR A simpler way is to extend ofNode and override ofNode::customDraw().</p>
+</div></div><hr></section><section name="truck" id="truck" class="mb2"><div class="method mb2"><h3 class="f3 title">truck( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">truck</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> amount</code><span class="token punctuation">)</span></code><div class="short"><p>Move node left+right relative to current position (in local x axis).</p>
+<p><strong>Parameters:</strong></p>
+<p>param0 Desired relative position change along local x axis as float.</p>
+</div><div class="desc"><p>move sideways (in local x axis)</p>
+</div></div><hr></section><section name="updateAxis" id="updateAxis" class="mb2"><div class="method mb2"><h3 class="f3 title">updateAxis( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">updateAxis</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="~ofNode" id="~ofNode" class="mb2"><div class="method mb2"><h3 class="f3 title">~ofNode( <!----> )</h3><code><!----><span class="token function">~ofNode</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section></div></div></div></div><div id="side-menu"><div id="params"><h4 class="f3">Variables</h4><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofVec3f </span><span>axis</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">int </span><span>children</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>legacyCustomDrawOverrided</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofMatrix4x4 </span><span>localTransformMatrix</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofQuaternion </span><span>orientation</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofNode </span><span>parent</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofVec3f </span><span>position</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofVec3f </span><span>scale</span><span class="token comment"></span></div><div class="desc"></div></div></code></div><div id="methods-list"><h4 class="f3">Methods</h4><div class="anchor"><code><a href="#addListener"><span>addListener</span><!----></a></code></div><div class="anchor"><code><a href="#boom" class="pink"><span>boom</span><!----></a></code></div><div class="anchor"><code><a href="#clearParent" class="pink"><span>clearParent</span><!----></a></code></div><div class="anchor"><code><a href="#createMatrix" class="pink"><span>createMatrix</span><!----></a></code></div><div class="anchor"><code><a href="#customDraw" class="pink"><span>customDraw</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#dolly" class="pink"><span>dolly</span><!----></a></code></div><div class="anchor"><code><a href="#draw" class="pink"><span>draw</span><!----></a></code></div><div class="anchor"><code><a href="#getGlobalOrientation" class="pink"><span>getGlobalOrientation</span><!----></a></code></div><div class="anchor"><code><a href="#getGlobalPosition" class="pink"><span>getGlobalPosition</span><!----></a></code></div><div class="anchor"><code><a href="#getGlobalScale" class="pink"><span>getGlobalScale</span><!----></a></code></div><div class="anchor"><code><a href="#getGlobalTransformMatrix" class="pink"><span>getGlobalTransformMatrix</span><!----></a></code></div><div class="anchor"><code><a href="#getHeadingDeg" class="pink"><span>getHeadingDeg</span><!----></a></code></div><div class="anchor"><code><a href="#getHeadingRad" class="pink"><span>getHeadingRad</span><!----></a></code></div><div class="anchor"><code><a href="#getLocalTransformMatrix" class="pink"><span>getLocalTransformMatrix</span><!----></a></code></div><div class="anchor"><code><a href="#getLookAtDir" class="pink"><span>getLookAtDir</span><!----></a></code></div><div class="anchor"><code><a href="#getOrientationEulerDeg" class="pink"><span>getOrientationEulerDeg</span><!----></a></code></div><div class="anchor"><code><a href="#getOrientationEulerRad" class="pink"><span>getOrientationEulerRad</span><!----></a></code></div><div class="anchor"><code><a href="#getOrientationQuat" class="pink"><span>getOrientationQuat</span><!----></a></code></div><div class="anchor"><code><a href="#getParent" class="pink"><span>getParent</span><!----></a></code></div><div class="anchor"><code><a href="#getPitchDeg" class="pink"><span>getPitchDeg</span><!----></a></code></div><div class="anchor"><code><a href="#getPitchRad" class="pink"><span>getPitchRad</span><!----></a></code></div><div class="anchor"><code><a href="#getPosition" class="pink"><span>getPosition</span><!----></a></code></div><div class="anchor"><code><a href="#getRollDeg" class="pink"><span>getRollDeg</span><!----></a></code></div><div class="anchor"><code><a href="#getRollRad" class="pink"><span>getRollRad</span><!----></a></code></div><div class="anchor"><code><a href="#getScale" class="pink"><span>getScale</span><!----></a></code></div><div class="anchor"><code><a href="#getSideDir" class="pink"><span>getSideDir</span><!----></a></code></div><div class="anchor"><code><a href="#getUpDir" class="pink"><span>getUpDir</span><!----></a></code></div><div class="anchor"><code><a href="#getX" class="pink"><span>getX</span><!----></a></code></div><div class="anchor"><code><a href="#getXAxis" class="pink"><span>getXAxis</span><!----></a></code></div><div class="anchor"><code><a href="#getY" class="pink"><span>getY</span><!----></a></code></div><div class="anchor"><code><a href="#getYAxis" class="pink"><span>getYAxis</span><!----></a></code></div><div class="anchor"><code><a href="#getZ" class="pink"><span>getZ</span><!----></a></code></div><div class="anchor"><code><a href="#getZAxis" class="pink"><span>getZAxis</span><!----></a></code></div><div class="anchor"><code><a href="#lookAt" class="pink"><span>lookAt</span><span>(4)</span></a></code></div><div class="anchor"><code><a href="#move" class="pink"><span>move</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#ofNode"><span>ofNode</span><span>(3)</span></a></code></div><div class="anchor"><code><a href="#onOrientationChanged" class="pink"><span>onOrientationChanged</span><!----></a></code></div><div class="anchor"><code><a href="#onParentOrientationChanged"><span>onParentOrientationChanged</span><!----></a></code></div><div class="anchor"><code><a href="#onParentPositionChanged"><span>onParentPositionChanged</span><!----></a></code></div><div class="anchor"><code><a href="#onParentScaleChanged"><span>onParentScaleChanged</span><!----></a></code></div><div class="anchor"><code><a href="#onPositionChanged" class="pink"><span>onPositionChanged</span><!----></a></code></div><div class="anchor"><code><a href="#onScaleChanged" class="pink"><span>onScaleChanged</span><!----></a></code></div><div class="anchor"><code><a href="#operator="><span>operator=</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#orbitDeg" class="pink"><span>orbitDeg</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#orbitRad" class="pink"><span>orbitRad</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#panDeg" class="pink"><span>panDeg</span><!----></a></code></div><div class="anchor"><code><a href="#panRad" class="pink"><span>panRad</span><!----></a></code></div><div class="anchor"><code><a href="#removeListener"><span>removeListener</span><!----></a></code></div><div class="anchor"><code><a href="#resetTransform" class="pink"><span>resetTransform</span><!----></a></code></div><div class="anchor"><code><a href="#restoreTransformGL" class="pink"><span>restoreTransformGL</span><!----></a></code></div><div class="anchor"><code><a href="#rollDeg" class="pink"><span>rollDeg</span><!----></a></code></div><div class="anchor"><code><a href="#rollRad" class="pink"><span>rollRad</span><!----></a></code></div><div class="anchor"><code><a href="#rotate" class="pink"><span>rotate</span><!----></a></code></div><div class="anchor"><code><a href="#rotateAround" class="pink"><span>rotateAround</span><!----></a></code></div><div class="anchor"><code><a href="#rotateAroundDeg" class="pink"><span>rotateAroundDeg</span><!----></a></code></div><div class="anchor"><code><a href="#rotateAroundRad" class="pink"><span>rotateAroundRad</span><!----></a></code></div><div class="anchor"><code><a href="#rotateDeg" class="pink"><span>rotateDeg</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#rotateRad" class="pink"><span>rotateRad</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#setGlobalOrientation" class="pink"><span>setGlobalOrientation</span><!----></a></code></div><div class="anchor"><code><a href="#setGlobalPosition" class="pink"><span>setGlobalPosition</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#setOrientation" class="pink"><span>setOrientation</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#setParent" class="pink"><span>setParent</span><!----></a></code></div><div class="anchor"><code><a href="#setPosition" class="pink"><span>setPosition</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#setScale" class="pink"><span>setScale</span><span>(3)</span></a></code></div><div class="anchor"><code><a href="#tiltDeg" class="pink"><span>tiltDeg</span><!----></a></code></div><div class="anchor"><code><a href="#tiltRad" class="pink"><span>tiltRad</span><!----></a></code></div><div class="anchor"><code><a href="#transformGL" class="pink"><span>transformGL</span><!----></a></code></div><div class="anchor"><code><a href="#truck" class="pink"><span>truck</span><!----></a></code></div><div class="anchor"><code><a href="#updateAxis"><span>updateAxis</span><!----></a></code></div><div class="anchor"><code><a href="#~ofNode"><span>~ofNode</span><!----></a></code></div></div><div id="see-also" filename="ofNode.markdown" absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/3d/ofNode.markdown" route="/documentation/3d/ofNode.markdown" dir="../ofSite/documentation/3d" ext="markdown" type="page" parent="1967" breadcrumbs="1967,1968" siblings="" translations="[object Object]" class="see-also"><h4 class="f3">See also</h4><div class="also"><a href="/examples/3d/ofNodeExample/"><span class="origin">examples</span><span class="name">ofNodeExample</span></a></div><div class="also"><a href="/openframeworks/3d/ofNode_h"><span class="origin">openframeworks</span><span class="name">ofNode.h</span></a></div><div class="also"><a href="/openframeworks/3d/ofNode_cpp"><span class="origin">openframeworks</span><span class="name">ofNode.cpp</span></a></div></div></div></div></div><textarea rows="0" class="markdown-editor" style="display:none">#class ofNode
+
+
+&lt;!--
+_visible: True_
+_advanced: False_
+_istemplated: False_
+_extends: _
+-->
+
+##InlineDescription
+
+A generic 3d object in space with transformation (position, rotation, scale).
+
+
+
+
+
+##Description
+
+The ofNode is the base of all things 3d. It lets you represent a location and orientation in 3d space and also allows you to add children or parents so that sets of nodes can move together. This is handy for representing complex 3d models that are linked together, the same way that your hand is linked to your wrist (hopefully), which is linked to your elbow (hopefully), and so on. Nodes are the base of the ofPrimitives, ofCamera, and ofEasyCamera, among other things.
+
+To get the current position, check out: getX(), getY(), getZ(). To get the axis of the node call getXAxis() (or the y and z variants for those other axes). Another really useful feature of the ofNode is that you can get the [Eulerian angles](http://en.wikipedia.org/wiki/Euler_angles) of each node: getPitch(), getHeading(), getRoll(). The global transformation matrix of the ofNode is also available using the getGlobalTransformMatrix(), very handy for figuring out things in relation to the OpenGL representation of your OF world. getGlobalOrientation() also is handy, returning a ofQuaternion that you can use to find out whether your node is upside down in relation to the rest of your OF world (really an OpenGL context, but let's not get into that quite yet).
+
+
+
+
+
+##Methods
+
+
+
+###void addListener(&node)
+
+&lt;!--
+_syntax: addListener(&node)_
+_name: addListener_
+_returns: void_
+_returns_description: _
+_parameters: ofNode &node_
+_access: private_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void boom(amount)
+
+&lt;!--
+_syntax: boom(amount)_
+_name: boom_
+_returns: void_
+_returns_description: _
+_parameters: float amount_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Move node up+down relative to current position (in local y axis).
+
+**Parameters:**
+
+param0 Desired relative position change along local y axis as float.
+
+
+
+
+
+_description: _
+
+Move up+down (in local y axis).
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void clearParent(bMaintainGlobalTransform = false)
+
+&lt;!--
+_syntax: clearParent(bMaintainGlobalTransform = false)_
+_name: clearParent_
+_returns: void_
+_returns_description: _
+_parameters: bool bMaintainGlobalTransform=false_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Remove parent node linking.
+
+**Parameters:**
+
+param0 Boolean if maintain child's global transformations (default = false).
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void createMatrix()
+
+&lt;!--
+_syntax: createMatrix()_
+_name: createMatrix_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+\}
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void customDraw()
+
+&lt;!--
+_syntax: customDraw()_
+_name: customDraw_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+If you extend ofNode and wish to change the way it draws, extend this.
+\note Try to not use global functions for rendering and instead use the passed
+renderer.
+
+
+
+
+
+_description: _
+
+If you extend ofNode and wish to change the way it draws, extend this.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void customDraw(*renderer)
+
+&lt;!--
+_syntax: customDraw(*renderer)_
+_name: customDraw_
+_returns: void_
+_returns_description: _
+_parameters: const ofBaseRenderer *renderer_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+If you extend ofNode and wish to change the way it draws, extend this.
+
+**Parameters:**
+
+param0 A pointer to the renderer you want to draw to.
+\note Try to not use global functions for rendering and instead use the passed
+renderer.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void dolly(amount)
+
+&lt;!--
+_syntax: dolly(amount)_
+_name: dolly_
+_returns: void_
+_returns_description: _
+_parameters: float amount_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Move node backward+forward relative to current position (in local z axis).
+
+**Parameters:**
+
+param0 Desired relative position change along local z axis as float.
+
+
+
+
+
+_description: _
+
+Move forward+backward (in local z axis)
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void draw()
+
+&lt;!--
+_syntax: draw()_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Draw the node as a white cube with xyz axes.
+\note do NOT override this.
+It transforms the node to its position+orientation+scale
+and calls the virtual 'customDraw' method above which you CAN override.
+
+
+
+
+
+_description: _
+
+Draw function. do NOT override this transforms the node to its position+orientation+scale and calls the virtual 'customDraw' method above which you CAN override.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###glm::quat getGlobalOrientation()
+
+&lt;!--
+_syntax: getGlobalOrientation()_
+_name: getGlobalOrientation_
+_returns: glm::quat_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get the global orientation of the node as a quaternion.
+
+**Returns**: An quaternion of the global orientations(useful for complex rotations)
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###glm::vec3 getGlobalPosition()
+
+&lt;!--
+_syntax: getGlobalPosition()_
+_name: getGlobalPosition_
+_returns: glm::vec3_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get node's global position as a 3D vector.
+
+**Returns**: A 3D vector with the global coordinates.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###glm::vec3 getGlobalScale()
+
+&lt;!--
+_syntax: getGlobalScale()_
+_name: getGlobalScale_
+_returns: glm::vec3_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get global scale of node in xyz axes where 1 is default.
+
+**Returns**: The global scale in the xyz axes where 1 = 100% of size.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###glm::mat4 getGlobalTransformMatrix()
+
+&lt;!--
+_syntax: getGlobalTransformMatrix()_
+_name: getGlobalTransformMatrix_
+_returns: glm::mat4_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get node's global transformations (position, orientation, scale).
+
+**Returns**: A refrence to mat4 containing node's global transformations.
+
+**See also**: https://open.gl/transformations
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float getHeadingDeg()
+
+&lt;!--
+_syntax: getHeadingDeg()_
+_name: getHeadingDeg_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get heading of node, aka the rotation along local y axis.
+
+**Returns**: The rotation around the local y axis in degrees, as a float.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float getHeadingRad()
+
+&lt;!--
+_syntax: getHeadingRad()_
+_name: getHeadingRad_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get heading of node, aka the rotation along local y axis.
+
+**Returns**: The rotation around the local y axis in degrees, as a float.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###const glm::mat4 & getLocalTransformMatrix()
+
+&lt;!--
+_syntax: getLocalTransformMatrix()_
+_name: getLocalTransformMatrix_
+_returns: const glm::mat4 &_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get node's local transformations (position, orientation, scale).
+
+**Returns**: A refrence to mat4 containing node's local transformations.
+
+**See also**: https://open.gl/transformations
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###glm::vec3 getLookAtDir()
+
+&lt;!--
+_syntax: getLookAtDir()_
+_name: getLookAtDir_
+_returns: glm::vec3_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get direction the node looks at aka local -z axis, as 3d vector.
+
+**Returns**: A normalized 3D vector of the node's local -z axis direction.
+
+
+
+
+
+_description: _
+
+Get -z axis.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###glm::vec3 getOrientationEulerDeg()
+
+&lt;!--
+_syntax: getOrientationEulerDeg()_
+_name: getOrientationEulerDeg_
+_returns: glm::vec3_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get local orientation of node in degrees around x, y, and z axes.
+
+**Returns**: The local x, y and z axes orientation in degrees, as a 3D vector.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###glm::vec3 getOrientationEulerRad()
+
+&lt;!--
+_syntax: getOrientationEulerRad()_
+_name: getOrientationEulerRad_
+_returns: glm::vec3_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get local orientation of node in degrees around x, y, and z axes.
+
+**Returns**: The local x, y and z axes orientation in degrees, as a 3D vector.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###glm::quat getOrientationQuat()
+
+&lt;!--
+_syntax: getOrientationQuat()_
+_name: getOrientationQuat_
+_returns: glm::quat_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get the local orientation of the node as a quaternion.
+
+**Returns**: A quaternion of local orientation (useful for complex rotations)
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofNode * getParent()
+
+&lt;!--
+_syntax: getParent()_
+_name: getParent_
+_returns: ofNode *_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get the parent node of this node.
+
+**Returns**: Pointer to parent ofNode.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float getPitchDeg()
+
+&lt;!--
+_syntax: getPitchDeg()_
+_name: getPitchDeg_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get pitch of node, aka the rotation along local x axis.
+
+**Returns**: The rotation around the local x axis in degrees, as a float.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float getPitchRad()
+
+&lt;!--
+_syntax: getPitchRad()_
+_name: getPitchRad_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get pitch of node, aka the rotation along local x axis.
+
+**Returns**: The rotation around the local x axis in degrees, as a float.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###glm::vec3 getPosition()
+
+&lt;!--
+_syntax: getPosition()_
+_name: getPosition_
+_returns: glm::vec3_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get node's local position as a 3D vector.
+
+**Returns**: A 3D vector with the local coordinates.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float getRollDeg()
+
+&lt;!--
+_syntax: getRollDeg()_
+_name: getRollDeg_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get roll of node, aka the rotation along local z axis.
+
+**Returns**: The rotation around the local z axis in degrees, as a float.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float getRollRad()
+
+&lt;!--
+_syntax: getRollRad()_
+_name: getRollRad_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get roll of node, aka the rotation along local z axis.
+
+**Returns**: The rotation around the local z axis in degrees, as a float.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###glm::vec3 getScale()
+
+&lt;!--
+_syntax: getScale()_
+_name: getScale_
+_returns: glm::vec3_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get local scale of node in xyz axes where 1 is default.
+
+**Returns**: The local scale in the xyz axes where 1 = 100% of size.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###glm::vec3 getSideDir()
+
+&lt;!--
+_syntax: getSideDir()_
+_name: getSideDir_
+_returns: glm::vec3_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get direction of node's side aka local x axis, as 3d vector.
+
+**Returns**: A normalized 3D vector of the node's local x axis direction.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###glm::vec3 getUpDir()
+
+&lt;!--
+_syntax: getUpDir()_
+_name: getUpDir_
+_returns: glm::vec3_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get direction of node's top aka local y axis, as 3d vector.
+
+**Returns**: A normalized 3D vector of the node's local y axis direction.
+
+
+
+
+
+_description: _
+
+Get y axis.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float getX()
+
+&lt;!--
+_syntax: getX()_
+_name: getX_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get node's local x position.
+
+**Returns**: Local x coordinate as a float.
+
+
+
+
+
+_description: _
+
+Get x coodinate.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###glm::vec3 getXAxis()
+
+&lt;!--
+_syntax: getXAxis()_
+_name: getXAxis_
+_returns: glm::vec3_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get the node's local x axis as 3d vector.
+
+**Returns**: A normalized 3D vector of the node's local x axis direction.
+
+
+
+
+
+_description: _
+
+Get x axis.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float getY()
+
+&lt;!--
+_syntax: getY()_
+_name: getY_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get node's local y position.
+
+**Returns**: Local y coordinate as a float.
+
+
+
+
+
+_description: _
+
+Get y coordinate.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###glm::vec3 getYAxis()
+
+&lt;!--
+_syntax: getYAxis()_
+_name: getYAxis_
+_returns: glm::vec3_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get the node's local y axis as 3d vector.
+
+**Returns**: A normalized 3D vector of the node's local y axis direction.
+
+
+
+
+
+_description: _
+
+Get y axis.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float getZ()
+
+&lt;!--
+_syntax: getZ()_
+_name: getZ_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get node's local z position.
+
+**Returns**: Local z coordinate as a float.
+
+
+
+
+
+_description: _
+
+Get z coordinate.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###glm::vec3 getZAxis()
+
+&lt;!--
+_syntax: getZAxis()_
+_name: getZAxis_
+_returns: glm::vec3_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get the node's local z axis as 3d vector.
+
+**Returns**: A normalized 3D vector of the node's local z axis direction.
+
+
+
+
+
+_description: _
+
+Get z axis.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void lookAt(&lookAtNode)
+
+&lt;!--
+_syntax: lookAt(&lookAtNode)_
+_name: lookAt_
+_returns: void_
+_returns_description: _
+_parameters: const ofNode &lookAtNode_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Orient node to look at another node (-z axis pointing at other node).
+
+**Parameters:**
+
+param0 A reference to the node to look at.
+\note This version calculates the up vector automatically to try to keep
+	  it relatively consistant with the original angle.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void lookAt(&lookAtNode, &upVector)
+
+&lt;!--
+_syntax: lookAt(&lookAtNode, &upVector)_
+_name: lookAt_
+_returns: void_
+_returns_description: _
+_parameters: const ofNode &lookAtNode, const glm::vec3 &upVector_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Orient node to look at another node (-z axis pointing at other node).
+
+**Parameters:**
+
+param0 A reference to the node to look at.
+
+param1 The desired up axis as a ref to cartesian 3D vector.
+
+
+
+
+
+_description: _
+
+Orient node to look at node (-z axis pointing to node).
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void lookAt(&lookAtPosition)
+
+&lt;!--
+_syntax: lookAt(&lookAtPosition)_
+_name: lookAt_
+_returns: void_
+_returns_description: _
+_parameters: const glm::vec3 &lookAtPosition_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Orient node to look at point (-z axis pointing to global position).
+
+**Parameters:**
+
+param0 XYZ coordinates of point to look at as ref to 3D vector.
+\note This version calculates the up vector automatically to try to keep
+	  it relatively consistant with the original angle.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void lookAt(&lookAtPosition, upVector)
+
+&lt;!--
+_syntax: lookAt(&lookAtPosition, upVector)_
+_name: lookAt_
+_returns: void_
+_returns_description: _
+_parameters: const glm::vec3 &lookAtPosition, glm::vec3 upVector_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Orient node to look at point (-z axis pointing to global position).
+
+**Parameters:**
+
+param0 XYZ coordinates of point to look at as ref to 3D vector.
+
+param1 The desired up axis as a cartesian 3D vector.
+
+
+
+
+
+_description: _
+
+Orient node to look at position (-z axis pointing to position).
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void move(&offset)
+
+&lt;!--
+_syntax: move(&offset)_
+_name: move_
+_returns: void_
+_returns_description: _
+_parameters: const glm::vec3 &offset_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Move node by relative amount with xyz as ref to 3D vector.
+
+**Parameters:**
+
+param0 Desired relative position change along all axes as ref to 3D vector.
+
+
+
+
+
+_description: _
+
+Move by arbitrary amount.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void move(x, y, z)
+
+&lt;!--
+_syntax: move(x, y, z)_
+_name: move_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float z_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Move node by relative amount with xyz coordinates.
+
+**Parameters:**
+
+param0 Desired relative position change along x axis as a float.
+
+param1 Desired relative position change along y axis as a float.
+
+param2 Desired relative position change along z axis as a float.
+
+
+
+
+
+_description: _
+
+Move by arbitrary amount.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofNode(&&node)
+
+&lt;!--
+_syntax: ofNode(&&node)_
+_name: ofNode_
+_returns: _
+_returns_description: _
+_parameters: ofNode &&node_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofNode(&node)
+
+&lt;!--
+_syntax: ofNode(&node)_
+_name: ofNode_
+_returns: _
+_returns_description: _
+_parameters: const ofNode &node_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofNode()
+
+&lt;!--
+_syntax: ofNode()_
+_name: ofNode_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+\cond INTERNAL
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void onOrientationChanged()
+
+&lt;!--
+_syntax: onOrientationChanged()_
+_name: onOrientationChanged_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+classes extending ofNode can override this methods to get notified when the orientation changed.
+
+
+
+
+
+_description: _
+
+Classes extending ofNode can override these methods to get notified when the orientation changed.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void onParentOrientationChanged(&orientation)
+
+&lt;!--
+_syntax: onParentOrientationChanged(&orientation)_
+_name: onParentOrientationChanged_
+_returns: void_
+_returns_description: _
+_parameters: glm::quat &orientation_
+_access: private_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void onParentPositionChanged(&position)
+
+&lt;!--
+_syntax: onParentPositionChanged(&position)_
+_name: onParentPositionChanged_
+_returns: void_
+_returns_description: _
+_parameters: glm::vec3 &position_
+_access: private_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void onParentScaleChanged(&scale)
+
+&lt;!--
+_syntax: onParentScaleChanged(&scale)_
+_name: onParentScaleChanged_
+_returns: void_
+_returns_description: _
+_parameters: glm::vec3 &scale_
+_access: private_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void onPositionChanged()
+
+&lt;!--
+_syntax: onPositionChanged()_
+_name: onPositionChanged_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+classes extending ofNode can override this method to get
+notified when the position changed.
+
+
+
+
+
+_description: _
+
+Classes extending ofNode can override these methods to get notified when the position changed.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void onScaleChanged()
+
+&lt;!--
+_syntax: onScaleChanged()_
+_name: onScaleChanged_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+classes extending ofNode can override this methods to get notified when the scale changed.
+
+
+
+
+
+_description: _
+
+Classes extending ofNode can override these methods to get notified when the scale changed.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofNode & operator=(&&node)
+
+&lt;!--
+_syntax: operator=(&&node)_
+_name: operator=_
+_returns: ofNode &_
+_returns_description: _
+_parameters: ofNode &&node_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofNode & operator=(&node)
+
+&lt;!--
+_syntax: operator=(&node)_
+_name: operator=_
+_returns: ofNode &_
+_returns_description: _
+_parameters: const ofNode &node_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void orbitDeg(longitude, latitude, radius, &ampcenterNode)
+
+&lt;!--
+_syntax: orbitDeg(longitude, latitude, radius, &ampcenterNode)_
+_name: orbitDeg_
+_returns: void_
+_returns_description: _
+_parameters: float longitude, float latitude, float radius, ofNode &ampcenterNode_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Orbit node around another node at a specific radius.
+
+**Parameters:**
+
+param0 The longitudinal position of the node in degrees as float.
+
+param1 The latitudinal position of the node in degrees as float.
+
+param2 The desired radius from the other node in degrees as float.
+
+param3 A reference to the node to rotate around.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void orbitDeg(longitude, latitude, radius, &ampcenterPoint)
+
+&lt;!--
+_syntax: orbitDeg(longitude, latitude, radius, &ampcenterPoint)_
+_name: orbitDeg_
+_returns: void_
+_returns_description: _
+_parameters: float longitude, float latitude, float radius, const glm::vec3 &ampcenterPoint_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Orbit node around a global position at a specific radius.
+
+**Parameters:**
+
+param0 The longitudinal position of the node in degrees as float.
+
+param1 The latitudinal position of the node in degrees as float.
+
+param2 The desired radius from the position in degrees as float.
+
+param3 The global position to orbit around as ref to 3D vector. Default = (0, 0, 0).
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void orbitRad(longitude, latitude, radius, &ampcenterNode)
+
+&lt;!--
+_syntax: orbitRad(longitude, latitude, radius, &ampcenterNode)_
+_name: orbitRad_
+_returns: void_
+_returns_description: _
+_parameters: float longitude, float latitude, float radius, ofNode &ampcenterNode_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Orbit node around another node at a specific radius.
+
+**Parameters:**
+
+param0 The longitudinal position of the node in radians as float.
+
+param1 The latitudinal position of the node in radians as float.
+
+param2 The desired radius from the other node in radians as float.
+
+param3 A reference to the node to rotate around.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void orbitRad(longitude, latitude, radius, &ampcenterPoint)
+
+&lt;!--
+_syntax: orbitRad(longitude, latitude, radius, &ampcenterPoint)_
+_name: orbitRad_
+_returns: void_
+_returns_description: _
+_parameters: float longitude, float latitude, float radius, const glm::vec3 &ampcenterPoint_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Orbit node around a global position at a specific radius.
+
+**Parameters:**
+
+param0 The longitudinal position of the node in radians as float.
+
+param1 The latitudinal position of the node in radians as float.
+
+param2 The desired radius from the position in radians as float.
+
+param3 The global position to orbit around as ref to 3D vector. Default = (0, 0, 0).
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void panDeg(degrees)
+
+&lt;!--
+_syntax: panDeg(degrees)_
+_name: panDeg_
+_returns: void_
+_returns_description: _
+_parameters: float degrees_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Rotate left+right relative to current orientation (around local y axis).
+
+**Parameters:**
+
+param0 Desired relative rotation change along local y axis in degrees as float.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void panRad(radians)
+
+&lt;!--
+_syntax: panRad(radians)_
+_name: panRad_
+_returns: void_
+_returns_description: _
+_parameters: float radians_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Rotate left+right relative to current orientation (around local y axis).
+
+**Parameters:**
+
+param0 Desired relative rotation change along local y axis in radians as float.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void removeListener(&node)
+
+&lt;!--
+_syntax: removeListener(&node)_
+_name: removeListener_
+_returns: void_
+_returns_description: _
+_parameters: ofNode &node_
+_access: private_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void resetTransform()
+
+&lt;!--
+_syntax: resetTransform()_
+_name: resetTransform_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Reset this node's transformations, position, rotation and scale.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void restoreTransformGL(*renderer)
+
+&lt;!--
+_syntax: restoreTransformGL(*renderer)_
+_name: restoreTransformGL_
+_returns: void_
+_returns_description: _
+_parameters: ofBaseRenderer *renderer_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Restore opengl renderer's previous modelview transform matrix.
+
+**Parameters:**
+
+param0 A pointer to the renderer you want to restore transformation to;
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void rollDeg(degrees)
+
+&lt;!--
+_syntax: rollDeg(degrees)_
+_name: rollDeg_
+_returns: void_
+_returns_description: _
+_parameters: float degrees_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Roll left+right relative to current orientation (around local z axis).
+
+**Parameters:**
+
+param0 Desired relative rotation change along local z axis in degrees as float.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void rollRad(radians)
+
+&lt;!--
+_syntax: rollRad(radians)_
+_name: rollRad_
+_returns: void_
+_returns_description: _
+_parameters: float radians_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Roll left+right relative to current orientation (around local z axis).
+
+**Parameters:**
+
+param0 Desired relative rotation change along local z axis in radians as float.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void rotate(&q)
+
+&lt;!--
+_syntax: rotate(&q)_
+_name: rotate_
+_returns: void_
+_returns_description: _
+_parameters: const glm::quat &q_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Rotate relative to current orientation by quaternion.
+
+**Parameters:**
+
+param0 Desired relative rotation change as a ref to quaternion.
+
+
+
+
+
+_description: _
+
+Rotate around arbitrary axis by angle.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void rotateAround(&q, &point)
+
+&lt;!--
+_syntax: rotateAround(&q, &point)_
+_name: rotateAround_
+_returns: void_
+_returns_description: _
+_parameters: const glm::quat &q, const glm::vec3 &point_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Rotate relative to current orientation by quaternion around point.
+
+**Parameters:**
+
+param0 Desired relative rotation change as a ref to quaternion.
+
+param1 Point to rotate around in local xyz coordinates as ref to 3D vector.
+
+
+
+
+
+_description: _
+
+Rotate around arbitrary axis by angle around point.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void rotateAroundDeg(degrees, &axis, &point)
+
+&lt;!--
+_syntax: rotateAroundDeg(degrees, &axis, &point)_
+_name: rotateAroundDeg_
+_returns: void_
+_returns_description: _
+_parameters: float degrees, const glm::vec3 &axis, const glm::vec3 &point_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Rotate relative to current orientation around arbitrary axis around point.
+
+**Parameters:**
+
+param0 Desired relative angle change in degrees as float.
+
+param1 The arbitrary axis to rotate around as ref to cartesian 3D vector.
+
+param2 Point to rotate around in local xyz coordinates as ref to 3D vector.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void rotateAroundRad(radians, &axis, &point)
+
+&lt;!--
+_syntax: rotateAroundRad(radians, &axis, &point)_
+_name: rotateAroundRad_
+_returns: void_
+_returns_description: _
+_parameters: float radians, const glm::vec3 &axis, const glm::vec3 &point_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Rotate relative to current orientation around arbitrary axis around point.
+
+**Parameters:**
+
+param0 Desired relative angle change in degrees as float.
+
+param1 The arbitrary axis to rotate around as ref to cartesian 3D vector.
+
+param2 Point to rotate around in local xyz coordinates as ref to 3D vector.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void rotateDeg(degrees, &v)
+
+&lt;!--
+_syntax: rotateDeg(degrees, &v)_
+_name: rotateDeg_
+_returns: void_
+_returns_description: _
+_parameters: float degrees, const glm::vec3 &v_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Rotate relative to current orientation around arbitrary axis.
+
+**Parameters:**
+
+param0 Desired relative angle change in degrees as float.
+
+param1 Desired axis to rotate around as a ref to cartesian 3D Vector.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void rotateDeg(degrees, vx, vy, vz)
+
+&lt;!--
+_syntax: rotateDeg(degrees, vx, vy, vz)_
+_name: rotateDeg_
+_returns: void_
+_returns_description: _
+_parameters: float degrees, float vx, float vy, float vz_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Rotate relative to current orientation around arbitrary axis.
+
+**Parameters:**
+
+param0 Desired relative angle change in degrees as float.
+
+param1 X angle of the axis to rotate around in degrees as float.
+
+param2 Y angle of the axis to rotate around in degrees as float.
+
+param3 Z angle of the axis to rotate around in degrees as float.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void rotateRad(radians, &v)
+
+&lt;!--
+_syntax: rotateRad(radians, &v)_
+_name: rotateRad_
+_returns: void_
+_returns_description: _
+_parameters: float radians, const glm::vec3 &v_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Rotate relative to current orientation around arbitrary axis.
+
+**Parameters:**
+
+param0 Desired relative angle change in radians as float.
+
+param1 Desired axis to rotate around as a ref to cartesian 3D Vector.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void rotateRad(radians, vx, vy, vz)
+
+&lt;!--
+_syntax: rotateRad(radians, vx, vy, vz)_
+_name: rotateRad_
+_returns: void_
+_returns_description: _
+_parameters: float radians, float vx, float vy, float vz_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Rotate relative to current orientation around arbitrary axis.
+
+**Parameters:**
+
+param0 Desired relative angle change in radians as float.
+
+param1 X angle of the axis to rotate around in degrees as float.
+
+param2 Y angle of the axis to rotate around in degrees as float.
+
+param3 Z angle of the axis to rotate around in degrees as float.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setGlobalOrientation(&q)
+
+&lt;!--
+_syntax: setGlobalOrientation(&q)_
+_name: setGlobalOrientation_
+_returns: void_
+_returns_description: _
+_parameters: const glm::quat &q_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Set global orientation with a quaternion.
+
+**Parameters:**
+
+param0 Desired global orientation as ref to an glm::quat.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setGlobalPosition(&p)
+
+&lt;!--
+_syntax: setGlobalPosition(&p)_
+_name: setGlobalPosition_
+_returns: void_
+_returns_description: _
+_parameters: const glm::vec3 &p_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Set the global position of the node using a 3D vector of coordinates.
+
+**Parameters:**
+
+param0 Desired global xyz coordinates as ref to 3D vector.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setGlobalPosition(px, py, pz)
+
+&lt;!--
+_syntax: setGlobalPosition(px, py, pz)_
+_name: setGlobalPosition_
+_returns: void_
+_returns_description: _
+_parameters: float px, float py, float pz_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Set the global position of the node using xyz coordinates.
+
+**Parameters:**
+
+param0 Desired global x coordinate as a float.
+
+param1 Desired global y coordinate as a float.
+
+param2 Desired global z coordinate as a float.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setOrientation(&eulerAngles)
+
+&lt;!--
+_syntax: setOrientation(&eulerAngles)_
+_name: setOrientation_
+_returns: void_
+_returns_description: _
+_parameters: const glm::vec3 &eulerAngles_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Set local orientation with xyz euler angles.
+
+**Parameters:**
+
+param0 Desired local xyz angles in degrees, as ref to 3D vector.
+\note Using euler angles can cause gimbal lock.
+
+**See also**: https://en.wikipedia.org/wiki/Gimbal_lock
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setOrientation(&q)
+
+&lt;!--
+_syntax: setOrientation(&q)_
+_name: setOrientation_
+_returns: void_
+_returns_description: _
+_parameters: const glm::quat &q_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Set local orientation with a quaternion.
+
+**Parameters:**
+
+param0 Desired local orientation as ref to an glm::quat.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setParent(&parent, bMaintainGlobalTransform = false)
+
+&lt;!--
+_syntax: setParent(&parent, bMaintainGlobalTransform = false)_
+_name: setParent_
+_returns: void_
+_returns_description: _
+_parameters: ofNode &parent, bool bMaintainGlobalTransform=false_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Set parent for the node. The node will inherit transformations from parent.
+
+**Parameters:**
+
+param0 Reference to the ofNode which becomes the parent node.
+
+param1 Boolean if maintain child's global transformations (default = false).
+
+
+
+
+
+_description: _
+
+Set parent to link nodes transformations are inherited from parent node set to NULL if not needed (default).
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setPosition(&p)
+
+&lt;!--
+_syntax: setPosition(&p)_
+_name: setPosition_
+_returns: void_
+_returns_description: _
+_parameters: const glm::vec3 &p_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Set the local position of the node using a 3D vector of coordinates.
+
+**Parameters:**
+
+param0 Desired local xyz coordinates as ref to 3D vector.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setPosition(px, py, pz)
+
+&lt;!--
+_syntax: setPosition(px, py, pz)_
+_name: setPosition_
+_returns: void_
+_returns_description: _
+_parameters: float px, float py, float pz_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Set the local position of the node using xyz coordinates.
+
+**Parameters:**
+
+param0 Desired local x coordinate as a float.
+
+param1 Desired local y coordinate as a float.
+
+param2 Desired local z coordinate as a float.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setScale(&s)
+
+&lt;!--
+_syntax: setScale(&s)_
+_name: setScale_
+_returns: void_
+_returns_description: _
+_parameters: const glm::vec3 &s_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Set local scale for xyz axes individually with a 3D vector.
+
+**Parameters:**
+
+param0 Desired local scale for all axes as ref to 3D vector where 1 = 100%.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setScale(s)
+
+&lt;!--
+_syntax: setScale(s)_
+_name: setScale_
+_returns: void_
+_returns_description: _
+_parameters: float s_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Set local uniform scale (x, y, and z are equally scaled).
+
+**Parameters:**
+
+param0 Desired scale for all axes as a float where 1 = 100%.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setScale(sx, sy, sz)
+
+&lt;!--
+_syntax: setScale(sx, sy, sz)_
+_name: setScale_
+_returns: void_
+_returns_description: _
+_parameters: float sx, float sy, float sz_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Set local scale for xyz axes individually.
+
+**Parameters:**
+
+param0 Desired local scale for x axis as a float where 1 = 100%.
+
+param1 Desired local scale for y axis as a float where 1 = 100%.
+
+param2 Desired local scale for z axis as a float where 1 = 100%.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void tiltDeg(degrees)
+
+&lt;!--
+_syntax: tiltDeg(degrees)_
+_name: tiltDeg_
+_returns: void_
+_returns_description: _
+_parameters: float degrees_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Tilt up+down relative to current orientation (around local x axis).
+
+**Parameters:**
+
+param0 Desired relative rotation change along local x axis in degrees as float.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void tiltRad(radians)
+
+&lt;!--
+_syntax: tiltRad(radians)_
+_name: tiltRad_
+_returns: void_
+_returns_description: _
+_parameters: float radians_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Tilt up+down relative to current orientation (around local x axis).
+
+**Parameters:**
+
+param0 Desired relative rotation change along local x axis in radians as float.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void transformGL(*renderer)
+
+&lt;!--
+_syntax: transformGL(*renderer)_
+_name: transformGL_
+_returns: void_
+_returns_description: _
+_parameters: ofBaseRenderer *renderer_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Set opengl renderer's modelview matrix to this nodes transform.
+
+**Parameters:**
+
+param0 A pointer to the renderer you want to set to this node's transform;
+\note If you want to draw something at the position+orientation+scale of this node,
+call ofNode::transform(); write your draw code, and ofNode::restoreTransform();
+OR A simpler way is to extend ofNode and override ofNode::customDraw();
+
+
+
+
+
+_description: _
+
+Set opengl's modelview matrix to this nodes transform.
+If you want to draw something at the position+orientation+scale of this node...
+...call ofNode::transform(); write your draw code, and ofNode::restoreTransform();
+OR A simpler way is to extend ofNode and override ofNode::customDraw().
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void truck(amount)
+
+&lt;!--
+_syntax: truck(amount)_
+_name: truck_
+_returns: void_
+_returns_description: _
+_parameters: float amount_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Move node left+right relative to current position (in local x axis).
+
+**Parameters:**
+
+param0 Desired relative position change along local x axis as float.
+
+
+
+
+
+_description: _
+
+move sideways (in local x axis)
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void updateAxis()
+
+&lt;!--
+_syntax: updateAxis()_
+_name: updateAxis_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ~ofNode()
+
+&lt;!--
+_syntax: ~ofNode()_
+_name: ~ofNode_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+##Variables
+
+
+
+###ofVec3f axis
+
+&lt;!--
+_name: axis_
+_type: ofVec3f_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int children
+
+&lt;!--
+_name: children_
+_type: int_
+_access: private_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool legacyCustomDrawOverrided
+
+&lt;!--
+_name: legacyCustomDrawOverrided_
+_type: bool_
+_access: private_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofMatrix4x4 localTransformMatrix
+
+&lt;!--
+_name: localTransformMatrix_
+_type: ofMatrix4x4_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofQuaternion orientation
+
+&lt;!--
+_name: orientation_
+_type: ofQuaternion_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofNode parent
+
+&lt;!--
+_name: parent_
+_type: ofNode_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofVec3f position
+
+&lt;!--
+_name: position_
+_type: ofVec3f_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofVec3f scale
+
+&lt;!--
+_name: scale_
+_type: ofVec3f_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+</textarea></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1586012716389/documentation/3d/ofNode/payload.js"></script><script src="/_nuxt/5f71eaca0bd2f1a0f939.js" defer></script><script src="/_nuxt/35a90d914f539af1362f.js" defer></script><script src="/_nuxt/906a3ca0fb13ed3c6651.js" defer></script><script src="/_nuxt/b673915e8a08acf593e8.js" defer></script><script src="/_nuxt/bf355f21967a23c26c07.js" defer></script>
+  </body>
+</html>

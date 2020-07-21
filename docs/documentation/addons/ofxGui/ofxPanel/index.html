@@ -1,0 +1,664 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>ofxPanel | documentation | ofDocs</title><meta data-n-head="ssr" data-hid="description" name="description" content="openFrameworks documentation and examples browser"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="openFrameworks documentation and examples browser" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="ofxPanel | documentation | ofDocs" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="/files/images/ofw-logo.png" vmid="og:image"><link rel="preload" href="/_nuxt/5f71eaca0bd2f1a0f939.js" as="script"><link rel="preload" href="/_nuxt/906a3ca0fb13ed3c6651.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/b673915e8a08acf593e8.js" as="script"><link rel="preload" href="/_nuxt/46e8fcacdadb233d9fb6.css" as="style"><link rel="preload" href="/_nuxt/bf355f21967a23c26c07.js" as="script"><link rel="preload" href="/_nuxt/35a90d914f539af1362f.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/46e8fcacdadb233d9fb6.css">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app"><div id="menu"><div class="menu-inner"><div id="settings"></div><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><svg version="1.1" viewbox="0 0 110 58" width="110px" height="58px" enable-background="0 0 110 58" xml:space="preserve" class="logo"><g><path d="M58,29 C58,13 45,0 29,0 C13,0 0,13 0,29 C0,45 13,58 29,58 C45,58 58,45 58,29 Z"></path><rect x="59" y="0" width="25" height="58"></rect><rect x="85" y="26" width="15" height="15"></rect><path d="M85,0 L110,0 L85,25 L85,0 Z"></path></g></svg><div class="txt"><span class="docs f7 questrial">Docs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343							c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88							c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593							c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789							C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><!----></div><div id="lists" class="menu-inner mt1 mb2"><div class="inner"></div></div></div><div class="menu-bottom"><div class="inner"><button class="button"><!----><span><span class="ico">nights_stay</span></span></button></div></div></div><div id="document"><div id="renderer" class="main page"><div absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/addons/ofxGui/ofxPanel.markdown" route="/documentation/addons/ofxGui/ofxPanel.markdown" dir="../ofSite/documentation/addons/ofxGui" ext="markdown" type="page" id="2041" parent="2031" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/" class="pink nuxt-link-active">documentation </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/addons/" class="pink nuxt-link-active">addons </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/addons/ofxGui/" class="pink nuxt-link-active">ofxGui </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link selector"><span class="name">ofxPanel</span><span class="chevron bottom"></span><select><option value="/documentation/addons/ofxGui/ofxBaseGui">ofxBaseGui</option><option value="/documentation/addons/ofxGui/ofxButton">ofxButton</option><option value="/documentation/addons/ofxGui/ofxColorPicker_">ofxColorPicker</option><option value="/documentation/addons/ofxGui/ofxColorSlider_">ofxColorSlider</option><option value="/documentation/addons/ofxGui/ofxGui_functions">ofxGui (functions)</option><option value="/documentation/addons/ofxGui/ofxGuiGroup">ofxGuiGroup</option><option value="/documentation/addons/ofxGui/ofxInputField">ofxInputField</option><option value="/documentation/addons/ofxGui/ofxLabel">ofxLabel</option><option value="/documentation/addons/ofxGui/ofxPanel">ofxPanel</option><option value="/documentation/addons/ofxGui/ofxSlider">ofxSlider</option><option value="/documentation/addons/ofxGui/ofxToggle">ofxToggle</option><option value="/documentation/addons/ofxGui/ofxVecSlider_">ofxVecSlider</option></select></span><!----></span></span></div></div></div><div class="editable-wrapper"><div class="header inner"><h1 class="page-title questrial"><span class="f7"><!----><span>ofxPanel</span></span><span class="f3"></span></h1><div class="actions"><a href="/ofdocs/contribute/" class="button"><i class="ico">edit</i><span>Edit</span></a></div></div><div class="rendered"><div id="documentation-page" static="true"><div id="offset-page"><div id="doc-body" class="markdown"><div class="inner"><div id="description"><div class="full-description"><div class="html"><h1></h1>
+</div></div></div><div id="methods"><hr><section name="generateDraw" id="generateDraw" class="mb2"><div class="method mb2"><h3 class="f3 title">generateDraw( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">generateDraw</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="loadIcons" id="loadIcons" class="mb2"><div class="method mb2"><h3 class="f3 title">loadIcons( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">loadIcons</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="mouseReleased" id="mouseReleased" class="mb2"><div class="method mb2"><h3 class="f3 title">mouseReleased( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">mouseReleased</span><span class="token punctuation">(</span><code class="token boolean">ofMouseEventArgs <span class="token operator">&</span>args</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofxPanel" id="ofxPanel" class="mb2"><div class="method mb2"><h3 class="f3 title">ofxPanel( <code class="pink">...</code> )</h3><code><!----><span class="token function">ofxPanel</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofParameterGroup <span class="token operator">&</span>parameters<span class="token punctuation">,</span> <span class="token keyword">const</span> string <span class="token operator">&</span>filename<span class="token punctuation">,</span> <span class="token keyword">float</span> x<span class="token punctuation">,</span> <span class="token keyword">float</span> y</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofxPanel" id="ofxPanel" class="mb2"><div class="method mb2"><h3 class="f3 title">ofxPanel( <!----> )</h3><code><!----><span class="token function">ofxPanel</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="render" id="render" class="mb2"><div class="method mb2"><h3 class="f3 title">render( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">render</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setValue" id="setValue" class="mb2"><div class="method mb2"><h3 class="f3 title">setValue( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">setValue</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> mx<span class="token punctuation">,</span> <span class="token keyword">float</span> my<span class="token punctuation">,</span> <span class="token keyword">bool</span> bCheck</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setup" id="setup" class="mb2"><div class="method mb2"><h3 class="f3 title">setup( <code class="pink">...</code> )</h3><code><span class="token keyword">ofxPanel *  </span><span class="token function">setup</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>collectionName<span class="token punctuation">,</span> <span class="token keyword">const</span> string <span class="token operator">&</span>filename<span class="token punctuation">,</span> <span class="token keyword">float</span> x<span class="token punctuation">,</span> <span class="token keyword">float</span> y</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>collectionName is a title that will appear at the top of the panel.</p>
+<p>Filename is the name of the xml file that will be used to read and write the panel settings. The default is "settings.xml" and this will be written to the root of your data folder. This file gets written when you click on the save icon in the top-right corner of the panel.</p>
+<p>x and y positions define where on-screen the panel will be drawn. Default is 10 pixels down and to the right of the top-right corner of your app.</p>
+</div></div><hr></section><section name="setup" id="setup" class="mb2"><div class="method mb2"><h3 class="f3 title">setup( <code class="pink">...</code> )</h3><code><span class="token keyword">ofxPanel *  </span><span class="token function">setup</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofParameterGroup <span class="token operator">&</span>parameters<span class="token punctuation">,</span> <span class="token keyword">const</span> string <span class="token operator">&</span>filename<span class="token punctuation">,</span> <span class="token keyword">float</span> x<span class="token punctuation">,</span> <span class="token keyword">float</span> y</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="~ofxPanel" id="~ofxPanel" class="mb2"><div class="method mb2"><h3 class="f3 title">~ofxPanel( <!----> )</h3><code><!----><span class="token function">~ofxPanel</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section></div></div></div></div><div id="side-menu"><div id="params"><h4 class="f3">Variables</h4><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>bGrabbed</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofPoint </span><span>grabPt</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofRectangle </span><span>loadBox</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofImage </span><span>loadIcon</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofRectangle </span><span>saveBox</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofImage </span><span>saveIcon</span><span class="token comment"></span></div><div class="desc"></div></div></code></div><div id="methods-list"><h4 class="f3">Methods</h4><div class="anchor"><code><a href="#generateDraw"><span>generateDraw</span><!----></a></code></div><div class="anchor"><code><a href="#loadIcons"><span>loadIcons</span><!----></a></code></div><div class="anchor"><code><a href="#mouseReleased"><span>mouseReleased</span><!----></a></code></div><div class="anchor"><code><a href="#ofxPanel"><span>ofxPanel</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#render"><span>render</span><!----></a></code></div><div class="anchor"><code><a href="#setValue"><span>setValue</span><!----></a></code></div><div class="anchor"><code><a href="#setup" class="pink"><span>setup</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#~ofxPanel"><span>~ofxPanel</span><!----></a></code></div></div><div id="see-also" filename="ofxPanel.markdown" absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/addons/ofxGui/ofxPanel.markdown" route="/documentation/addons/ofxGui/ofxPanel.markdown" dir="../ofSite/documentation/addons/ofxGui" ext="markdown" type="page" parent="2031" breadcrumbs="2031,1993,1968" siblings="" translations="[object Object]" class="see-also"><h4 class="f3">See also</h4><div class="also"><a href="/addons/ofxGui/src/ofxPanel_h"><span class="origin">addons</span><span class="name">ofxPanel.h</span></a></div><div class="also"><a href="/addons/ofxGui/src/ofxPanel_cpp"><span class="origin">addons</span><span class="name">ofxPanel.cpp</span></a></div></div></div></div></div><textarea rows="0" class="markdown-editor" style="display:none">#class ofxPanel
+
+
+&lt;!--
+_visible: True_
+_advanced: False_
+_istemplated: False_
+_extends: ofxGuiGroup_
+-->
+
+##InlineDescription
+
+
+
+
+
+
+##Description
+
+
+
+
+
+##Methods
+
+
+
+###void generateDraw()
+
+&lt;!--
+_syntax: generateDraw()_
+_name: generateDraw_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void loadIcons()
+
+&lt;!--
+_syntax: loadIcons()_
+_name: loadIcons_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool mouseReleased(&args)
+
+&lt;!--
+_syntax: mouseReleased(&args)_
+_name: mouseReleased_
+_returns: bool_
+_returns_description: _
+_parameters: ofMouseEventArgs &args_
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofxPanel(&ampparameters, &filename, x, y)
+
+&lt;!--
+_syntax: ofxPanel(&ampparameters, &filename, x, y)_
+_name: ofxPanel_
+_returns: _
+_returns_description: _
+_parameters: const ofParameterGroup &ampparameters, const string &filename, float x, float y_
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofxPanel()
+
+&lt;!--
+_syntax: ofxPanel()_
+_name: ofxPanel_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void render()
+
+&lt;!--
+_syntax: render()_
+_name: render_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool setValue(mx, my, bCheck)
+
+&lt;!--
+_syntax: setValue(mx, my, bCheck)_
+_name: setValue_
+_returns: bool_
+_returns_description: _
+_parameters: float mx, float my, bool bCheck_
+_access: protected_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofxPanel * setup(&collectionName, &filename, x, y)
+
+&lt;!--
+_syntax: setup(&collectionName, &filename, x, y)_
+_name: setup_
+_returns: ofxPanel *_
+_returns_description: _
+_parameters: const string &collectionName, const string &filename, float x, float y_
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+collectionName is a title that will appear at the top of the panel.
+
+Filename is the name of the xml file that will be used to read and write the panel settings. The default is "settings.xml" and this will be written to the root of your data folder. This file gets written when you click on the save icon in the top-right corner of the panel.
+
+x and y positions define where on-screen the panel will be drawn. Default is 10 pixels down and to the right of the top-right corner of your app.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofxPanel * setup(&ampparameters, &filename, x, y)
+
+&lt;!--
+_syntax: setup(&ampparameters, &filename, x, y)_
+_name: setup_
+_returns: ofxPanel *_
+_returns_description: _
+_parameters: const ofParameterGroup &ampparameters, const string &filename, float x, float y_
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ~ofxPanel()
+
+&lt;!--
+_syntax: ~ofxPanel()_
+_name: ~ofxPanel_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+##Variables
+
+
+
+###bool  bGrabbed
+
+&lt;!--
+_name: bGrabbed_
+_type: bool _
+_access: private_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofPoint  grabPt
+
+&lt;!--
+_name: grabPt_
+_type: ofPoint _
+_access: private_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofRectangle  loadBox
+
+&lt;!--
+_name: loadBox_
+_type: ofRectangle _
+_access: private_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofImage  loadIcon
+
+&lt;!--
+_name: loadIcon_
+_type: ofImage _
+_access: private_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofEvent&lt; void >  loadPressedE
+
+&lt;!--
+_name: loadPressedE_
+_type: ofEvent&lt; void > _
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofRectangle  saveBox
+
+&lt;!--
+_name: saveBox_
+_type: ofRectangle _
+_access: private_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofImage  saveIcon
+
+&lt;!--
+_name: saveIcon_
+_type: ofImage _
+_access: private_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofEvent&lt; void >  savePressedE
+
+&lt;!--
+_name: savePressedE_
+_type: ofEvent&lt; void > _
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+</textarea></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1586012716389/documentation/addons/ofxGui/ofxPanel/payload.js"></script><script src="/_nuxt/5f71eaca0bd2f1a0f939.js" defer></script><script src="/_nuxt/35a90d914f539af1362f.js" defer></script><script src="/_nuxt/906a3ca0fb13ed3c6651.js" defer></script><script src="/_nuxt/b673915e8a08acf593e8.js" defer></script><script src="/_nuxt/bf355f21967a23c26c07.js" defer></script>
+  </body>
+</html>

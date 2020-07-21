@@ -1,0 +1,295 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>ofAppEGLWindow.h | openframeworks | ofDocs</title><meta data-n-head="ssr" data-hid="description" name="description" content="openFrameworks documentation and examples browser"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="openFrameworks documentation and examples browser" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="ofAppEGLWindow.h | openframeworks | ofDocs" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="/files/images/ofw-logo.png" vmid="og:image"><link rel="preload" href="/_nuxt/5f71eaca0bd2f1a0f939.js" as="script"><link rel="preload" href="/_nuxt/906a3ca0fb13ed3c6651.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/b673915e8a08acf593e8.js" as="script"><link rel="preload" href="/_nuxt/46e8fcacdadb233d9fb6.css" as="style"><link rel="preload" href="/_nuxt/bf355f21967a23c26c07.js" as="script"><link rel="preload" href="/_nuxt/35a90d914f539af1362f.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/46e8fcacdadb233d9fb6.css">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app"><div id="menu"><div class="menu-inner"><div id="settings"></div><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><svg version="1.1" viewbox="0 0 110 58" width="110px" height="58px" enable-background="0 0 110 58" xml:space="preserve" class="logo"><g><path d="M58,29 C58,13 45,0 29,0 C13,0 0,13 0,29 C0,45 13,58 29,58 C45,58 58,45 58,29 Z"></path><rect x="59" y="0" width="25" height="58"></rect><rect x="85" y="26" width="15" height="15"></rect><path d="M85,0 L110,0 L85,25 L85,0 Z"></path></g></svg><div class="txt"><span class="docs f7 questrial">Docs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343							c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88							c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593							c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789							C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><!----></div><div id="lists" class="menu-inner mt1 mb2"><div class="inner"></div></div></div><div class="menu-bottom"><div class="inner"><button class="button"><!----><span><span class="ico">nights_stay</span></span></button></div></div></div><div id="document"><div id="renderer" class="main source"><div absolute="/Users/Gilbert/Code/openFrameworks/libs/openFrameworks/app/ofAppEGLWindow.h" route="/openframeworks/app/ofAppEGLWindow.h" dir="../libs/openFrameworks/app" ext="h" type="source" id="179" parent="176" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/openframeworks/" class="pink nuxt-link-active">openframeworks </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/openframeworks/app/" class="pink nuxt-link-active">app </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link selector"><span class="name">ofAppEGLWindow.h</span><span class="chevron bottom"></span><select><option value="/openframeworks/app/ofAppBaseWindow_h">ofAppBaseWindow.h</option><option value="/openframeworks/app/ofAppEGLWindow_cpp">ofAppEGLWindow.cpp</option><option value="/openframeworks/app/ofAppEGLWindow_h">ofAppEGLWindow.h</option><option value="/openframeworks/app/ofAppGLFWWindow_cpp">ofAppGLFWWindow.cpp</option><option value="/openframeworks/app/ofAppGLFWWindow_h">ofAppGLFWWindow.h</option><option value="/openframeworks/app/ofAppGlutWindow_cpp">ofAppGlutWindow.cpp</option><option value="/openframeworks/app/ofAppGlutWindow_h">ofAppGlutWindow.h</option><option value="/openframeworks/app/ofAppNoWindow_cpp">ofAppNoWindow.cpp</option><option value="/openframeworks/app/ofAppNoWindow_h">ofAppNoWindow.h</option><option value="/openframeworks/app/ofAppRunner_cpp">ofAppRunner.cpp</option><option value="/openframeworks/app/ofAppRunner_h">ofAppRunner.h</option><option value="/openframeworks/app/ofBaseApp_cpp">ofBaseApp.cpp</option><option value="/openframeworks/app/ofBaseApp_h">ofBaseApp.h</option><option value="/openframeworks/app/ofIcon_h">ofIcon.h</option><option value="/openframeworks/app/ofMainLoop_cpp">ofMainLoop.cpp</option><option value="/openframeworks/app/ofMainLoop_h">ofMainLoop.h</option><option value="/openframeworks/app/ofWindowSettings_h">ofWindowSettings.h</option></select></span><!----></span></span></div></div></div><div id="code-page" static="true"><div id="side-menu"><div id="code-sources"><h4 class="f3 dropdown-toggle">Sources</h4><div class="srcsiblings dropdown-area"><a href="/openframeworks/app/ofAppBaseWindow_h" class="block"><span class="src">src </span><span class="name">ofAppBaseWindow.h </span></a><a href="/openframeworks/app/ofAppEGLWindow_cpp" class="block"><span class="src">src </span><span class="name">ofAppEGLWindow.cpp </span></a><a href="/openframeworks/app/ofAppEGLWindow_h" class="block nuxt-link-exact-active nuxt-link-active current"><span class="src">src </span><span class="name">ofAppEGLWindow.h </span></a><a href="/openframeworks/app/ofAppGLFWWindow_cpp" class="block"><span class="src">src </span><span class="name">ofAppGLFWWindow.cpp </span></a><a href="/openframeworks/app/ofAppGLFWWindow_h" class="block"><span class="src">src </span><span class="name">ofAppGLFWWindow.h </span></a><a href="/openframeworks/app/ofAppGlutWindow_cpp" class="block"><span class="src">src </span><span class="name">ofAppGlutWindow.cpp </span></a><a href="/openframeworks/app/ofAppGlutWindow_h" class="block"><span class="src">src </span><span class="name">ofAppGlutWindow.h </span></a><a href="/openframeworks/app/ofAppNoWindow_cpp" class="block"><span class="src">src </span><span class="name">ofAppNoWindow.cpp </span></a><a href="/openframeworks/app/ofAppNoWindow_h" class="block"><span class="src">src </span><span class="name">ofAppNoWindow.h </span></a><a href="/openframeworks/app/ofAppRunner_cpp" class="block"><span class="src">src </span><span class="name">ofAppRunner.cpp </span></a><a href="/openframeworks/app/ofAppRunner_h" class="block"><span class="src">src </span><span class="name">ofAppRunner.h </span></a><a href="/openframeworks/app/ofBaseApp_cpp" class="block"><span class="src">src </span><span class="name">ofBaseApp.cpp </span></a><a href="/openframeworks/app/ofBaseApp_h" class="block"><span class="src">src </span><span class="name">ofBaseApp.h </span></a><a href="/openframeworks/app/ofIcon_h" class="block"><span class="src">src </span><span class="name">ofIcon.h </span></a><a href="/openframeworks/app/ofMainLoop_cpp" class="block"><span class="src">src </span><span class="name">ofMainLoop.cpp </span></a><a href="/openframeworks/app/ofMainLoop_h" class="block"><span class="src">src </span><span class="name">ofMainLoop.h </span></a><a href="/openframeworks/app/ofWindowSettings_h" class="block"><span class="src">src </span><span class="name">ofWindowSettings.h </span></a></div></div><div id="comments" class="dropdown-area"><h4 class="f3 dropdown-toggle">Comments</h4><div class="dropdown-area"></div></div><div filename="app" absolute="/Users/Gilbert/Code/openFrameworks/libs/openFrameworks/app" dir="../libs/openFrameworks" route="/openframeworks/app/" ext="" type="folder" id="176" children="177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193" icon="web" parent="164" breadcrumbs="164" class="see-also"><h4 class="f3">See also</h4><div class="also"><a href="/documentation/application/"><span class="origin">documentation</span><span class="name">application</span></a></div></div></div><div id="code-render"><div class="inner"><pre><code><span class="token macro property">#<span class="token directive keyword">pragma</span> once</span>
+
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"ofConstants.h"</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"ofAppBaseWindow.h"</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"ofThread.h"</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"ofImage.h"</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"ofEvents.h"</span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">"ofRectangle.h"</span></span>
+
+
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;queue></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;map></span></span>
+<span class="token macro property">#<span class="token directive keyword">include</span> <span class="token string">&lt;X11/Xlib.h></span></span>
+
+<span class="token keyword">enum</span> ofAppEGLWindowType <span class="token punctuation">{</span>
+	OF_APP_WINDOW_AUTO<span class="token punctuation">,</span>
+	OF_APP_WINDOW_NATIVE<span class="token punctuation">,</span>
+	OF_APP_WINDOW_X11
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">typedef</span> <span class="token keyword">struct</span> _XIM <span class="token operator">*</span> XIM<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">struct</span> _XIC <span class="token operator">*</span> XIC<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">unsigned</span> <span class="token keyword">long</span> Window<span class="token punctuation">;</span>
+<span class="token keyword">struct</span> _XDisplay<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">struct</span> _XDisplay Display<span class="token punctuation">;</span>
+
+<span class="token keyword">typedef</span> <span class="token keyword">unsigned</span> <span class="token keyword">int</span> EGLBoolean<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> int32_t EGLint<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">void</span> <span class="token operator">*</span>EGLDisplay<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">void</span> <span class="token operator">*</span>EGLConfig<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">void</span> <span class="token operator">*</span>EGLSurface<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> <span class="token keyword">void</span> <span class="token operator">*</span>EGLContext<span class="token punctuation">;</span>
+
+<span class="token keyword">typedef</span> std<span class="token operator">::</span>map<span class="token operator">&lt;</span>EGLint<span class="token punctuation">,</span>EGLint<span class="token operator">></span> ofEGLAttributeList<span class="token punctuation">;</span>
+<span class="token keyword">typedef</span> std<span class="token operator">::</span>map<span class="token operator">&lt;</span>EGLint<span class="token punctuation">,</span>EGLint<span class="token operator">></span><span class="token operator">::</span>iterator ofEGLAttributeListIterator<span class="token punctuation">;</span>
+
+<span class="token keyword">struct</span> ofAppEGLWindowSettings<span class="token operator">:</span> <span class="token keyword">public</span> ofGLESWindowSettings <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+	ofAppEGLWindowType eglWindowPreference<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">///&lt; what window type is preferred?</span>
+	EGLint eglWindowOpacity<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">///&lt; 0-255 window alpha value</span>
+
+	ofEGLAttributeList frameBufferAttributes<span class="token punctuation">;</span>
+	<span class="token comment" spellcheck="true">// surface creation</span>
+	ofEGLAttributeList windowSurfaceAttributes<span class="token punctuation">;</span>
+
+	ofColor initialClearColor<span class="token punctuation">;</span>
+
+	<span class="token keyword">int</span> screenNum<span class="token punctuation">;</span>
+	<span class="token keyword">int</span> layer<span class="token punctuation">;</span>
+
+	<span class="token function">ofAppEGLWindowSettings</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token function">ofAppEGLWindowSettings</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofGLESWindowSettings <span class="token operator">&</span> settings<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">ofAppEGLWindow</span> <span class="token operator">:</span> <span class="token keyword">public</span> ofAppBaseGLESWindow<span class="token punctuation">,</span> <span class="token keyword">public</span> ofThread <span class="token punctuation">{</span>
+<span class="token keyword">public</span><span class="token operator">:</span>
+
+	<span class="token comment" spellcheck="true">/// ofAppEGLWindow::Settings is currently deprecated in favor of</span>
+	<span class="token comment" spellcheck="true">/// the ofAppEGLWindowSettings struct</span>
+	<span class="token keyword">typedef</span> ofAppEGLWindowSettings Settings<span class="token punctuation">;</span>
+
+	<span class="token function">ofAppEGLWindow</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">virtual</span> <span class="token operator">~</span><span class="token function">ofAppEGLWindow</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">loop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+	<span class="token keyword">static</span> <span class="token keyword">bool</span> <span class="token function">doesLoop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+	<span class="token keyword">static</span> <span class="token keyword">bool</span> <span class="token function">allowsMultiWindow</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+	<span class="token keyword">static</span> <span class="token keyword">bool</span> <span class="token function">needsPolling</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span> <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span> <span class="token punctuation">}</span>
+	<span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">pollEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">using</span> ofAppBaseGLESWindow<span class="token operator">::</span>setup<span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofAppEGLWindowSettings <span class="token operator">&</span> settings<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofGLESWindowSettings <span class="token operator">&</span> settings<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">void</span> <span class="token function">update</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">draw</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">makeCurrent</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">swapBuffers</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">startRender</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">finishRender</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	ofCoreEvents <span class="token operator">&</span> <span class="token function">events</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	std<span class="token operator">::</span>shared_ptr<span class="token operator">&lt;</span>ofBaseRenderer<span class="token operator">></span> <span class="token operator">&</span> <span class="token function">renderer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">void</span> <span class="token function">setThreadTimeout</span><span class="token punctuation">(</span><span class="token keyword">long</span> timeOut<span class="token punctuation">)</span><span class="token punctuation">{</span> threadTimeout <span class="token operator">=</span> timeOut<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+	<span class="token keyword">virtual</span> <span class="token keyword">void</span> <span class="token function">hideCursor</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">virtual</span> <span class="token keyword">void</span> <span class="token function">showCursor</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">virtual</span> <span class="token keyword">void</span> <span class="token function">setWindowPosition</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">virtual</span> <span class="token keyword">void</span> <span class="token function">setWindowShape</span><span class="token punctuation">(</span><span class="token keyword">int</span> w<span class="token punctuation">,</span> <span class="token keyword">int</span> h<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">virtual</span> glm<span class="token operator">::</span>vec2 <span class="token function">getWindowPosition</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">virtual</span> glm<span class="token operator">::</span>vec2 <span class="token function">getWindowSize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">virtual</span> glm<span class="token operator">::</span>vec2 <span class="token function">getScreenSize</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">virtual</span> <span class="token keyword">void</span> <span class="token function">setOrientation</span><span class="token punctuation">(</span>ofOrientation orientation<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">virtual</span> ofOrientation <span class="token function">getOrientation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">virtual</span> <span class="token keyword">bool</span> <span class="token function">doesHWOrientation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token comment" spellcheck="true">//this is used by ofGetWidth and now determines the window width based on orientation</span>
+	<span class="token keyword">virtual</span> <span class="token keyword">int</span>	<span class="token function">getWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">virtual</span> <span class="token keyword">int</span>	<span class="token function">getHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">virtual</span> <span class="token keyword">void</span> <span class="token function">setWindowTitle</span><span class="token punctuation">(</span>std<span class="token operator">::</span>string title<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// TODO const correct</span>
+
+	<span class="token keyword">virtual</span> ofWindowMode <span class="token function">getWindowMode</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">virtual</span> <span class="token keyword">void</span> <span class="token function">setFullscreen</span><span class="token punctuation">(</span><span class="token keyword">bool</span> fullscreen<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">virtual</span> <span class="token keyword">void</span> <span class="token function">toggleFullscreen</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">virtual</span> <span class="token keyword">void</span> <span class="token function">enableSetupScreen</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">virtual</span> <span class="token keyword">void</span> <span class="token function">disableSetupScreen</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">virtual</span> <span class="token keyword">void</span> <span class="token function">setVerticalSync</span><span class="token punctuation">(</span><span class="token keyword">bool</span> enabled<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	EGLDisplay <span class="token function">getEglDisplay</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+	EGLSurface <span class="token function">getEglSurface</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+	EGLContext <span class="token function">getEglContext</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+<span class="token macro property">#<span class="token directive keyword">ifndef</span> TARGET_RASPBERRY_PI_LEGACY</span>
+	Display<span class="token operator">*</span> <span class="token function">getX11Display</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	Window <span class="token function">getX11Window</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+
+	EGLConfig <span class="token function">getEglConfig</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+	EGLint <span class="token function">getEglVersionMajor</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+	EGLint <span class="token function">getEglVersionMinor</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">const</span><span class="token punctuation">;</span>
+
+
+<span class="token keyword">protected</span><span class="token operator">:</span>
+	<span class="token keyword">void</span> <span class="token function">setWindowRect</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofRectangle<span class="token operator">&</span> requestedWindowRect<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token comment" spellcheck="true">//	bool create</span>
+
+	<span class="token keyword">virtual</span> <span class="token keyword">void</span> <span class="token function">setupPeripherals</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">virtual</span> ofRectangle <span class="token function">getScreenRect</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">int</span> <span class="token function">getWindowWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">int</span> <span class="token function">getWindowHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	ofWindowMode windowMode<span class="token punctuation">;</span>
+	<span class="token keyword">bool</span> bNewScreenMode<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">///&lt; \brief This indicates if a (new) window rectangle has to be adjusted.</span>
+	<span class="token keyword">int</span>	buttonInUse<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">///&lt; \brief Mouse button currently in use.</span>
+	<span class="token keyword">bool</span> bEnableSetupScreen<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">///&lt; \brief This indicates the need/intent to draw a setup screen.</span>
+	<span class="token keyword">bool</span> bShowCursor<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">///&lt; \brief Indicate the visibility of the (mouse) cursor.</span>
+
+	std<span class="token operator">::</span>string eglDisplayString<span class="token punctuation">;</span>
+	<span class="token keyword">int</span> nFramesSinceWindowResized<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">///&lt; \brief The number of frames passed/shown since the window got resized.</span>
+	ofOrientation orientation<span class="token punctuation">;</span>
+
+
+	<span class="token keyword">void</span> <span class="token function">threadedFunction</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	std<span class="token operator">::</span>queue<span class="token operator">&lt;</span>ofMouseEventArgs<span class="token operator">></span> mouseEvents<span class="token punctuation">;</span>
+	std<span class="token operator">::</span>queue<span class="token operator">&lt;</span>ofKeyEventArgs<span class="token operator">></span>   keyEvents<span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">checkEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	ofImage mouseCursor<span class="token punctuation">;</span>
+
+	<span class="token comment" spellcheck="true">// TODO: getters and setters?  OR automatically set based on</span>
+	<span class="token comment" spellcheck="true">// OS or screen size?  Should be changed when screen is resized?</span>
+	<span class="token keyword">float</span> mouseScaleX<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">///&lt; \brief Amount by which to mouse movements along the X axis.</span>
+	<span class="token keyword">float</span> mouseScaleY<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">///&lt; \brief Amount by which to mouse movements along the Y axis.</span>
+
+
+	<span class="token comment" spellcheck="true">// float getMouseScaleX() const;</span>
+	<span class="token comment" spellcheck="true">// void setMouseScaleX(float x);</span>
+	<span class="token comment" spellcheck="true">// float getMouseScaleY() const;</span>
+	<span class="token comment" spellcheck="true">// void setMouseScaleY(float y);</span>
+
+	<span class="token comment" spellcheck="true">// For absolute input devices that send ABS_X and ABS_Y events, we want to store</span>
+	<span class="token comment" spellcheck="true">// information about the min and max axis values.</span>
+	<span class="token keyword">int</span> mouseAbsXMin<span class="token punctuation">;</span>
+	<span class="token keyword">int</span> mouseAbsXMax<span class="token punctuation">;</span>
+	<span class="token keyword">int</span> mouseAbsYMin<span class="token punctuation">;</span>
+	<span class="token keyword">int</span> mouseAbsYMax<span class="token punctuation">;</span>
+
+	<span class="token keyword">bool</span> <span class="token function">hasMouse</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> mouseDetected<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+	<span class="token keyword">bool</span> <span class="token function">hasKeyboard</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token keyword">return</span> keyboardDetected<span class="token punctuation">;</span> <span class="token punctuation">}</span>
+
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token comment" spellcheck="true">// EGL</span>
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+
+	<span class="token keyword">bool</span> <span class="token function">createSurface</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">bool</span> <span class="token function">destroySurface</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token comment" spellcheck="true">// bool resizeSurface();</span>
+
+	EGLDisplay eglDisplay<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// EGL display connection</span>
+	EGLSurface eglSurface<span class="token punctuation">;</span>
+	EGLContext eglContext<span class="token punctuation">;</span>
+
+	EGLConfig eglConfig<span class="token punctuation">;</span>
+
+	EGLint eglVersionMajor<span class="token punctuation">;</span>
+	EGLint eglVersionMinor<span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token comment" spellcheck="true">// PLATFORM SPECIFIC WINDOWING</span>
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token comment" spellcheck="true">// WINDOWING</span>
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+	<span class="token comment" spellcheck="true">// EGL window</span>
+	ofRectangle nonFullscreenWindowRect<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// the rectangle describing the non-fullscreen window</span>
+	ofRectangle currentWindowRect<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// the rectangle describing the current device</span>
+
+	<span class="token keyword">bool</span> <span class="token function">createWindow</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofRectangle<span class="token operator">&</span> requestedWindowRect<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">bool</span> <span class="token function">destroyWindow</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">bool</span> isUsingX11<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">///&lt; \brief Indicate the use of the X Window System.</span>
+
+	<span class="token keyword">bool</span> isWindowInited<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">///&lt; \brief Indicate that the window is (properly) initialized.</span>
+	<span class="token keyword">bool</span> isSurfaceInited<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">///&lt; \brief Indicate that the surface is (properly) initialized.</span>
+
+	<span class="token keyword">void</span> <span class="token function">initNative</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">exitNative</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	EGLNativeWindowType <span class="token function">getNativeWindow</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	EGLNativeDisplayType <span class="token function">getNativeDisplay</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token macro property">#<span class="token directive keyword">ifdef</span> TARGET_RASPBERRY_PI_LEGACY</span>
+	<span class="token keyword">void</span> <span class="token function">initRPiNative</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">exitRPiNative</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	EGL_DISPMANX_WINDOW_T dispman_native_window<span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// rpi</span>
+
+	DISPMANX_UPDATE_HANDLE_T dispman_update<span class="token punctuation">;</span>
+	DISPMANX_ELEMENT_HANDLE_T dispman_element<span class="token punctuation">;</span>
+	DISPMANX_DISPLAY_HANDLE_T dispman_display<span class="token punctuation">;</span>
+
+	DISPMANX_CLAMP_T  dispman_clamp<span class="token punctuation">;</span>
+	DISPMANX_TRANSFORM_T dispman_transform<span class="token punctuation">;</span>
+	VC_DISPMANX_ALPHA_T	dispman_alpha<span class="token punctuation">;</span>
+
+	<span class="token keyword">bool</span> <span class="token function">createRPiNativeWindow</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofRectangle<span class="token operator">&</span> requestedWindowRect<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token macro property">#<span class="token directive keyword">else</span></span>
+	<span class="token comment" spellcheck="true">// if you are not raspberry pi, you will not be able to</span>
+	<span class="token comment" spellcheck="true">// create a window without using x11.</span>
+<span class="token macro property">#<span class="token directive keyword">endif</span></span>
+
+	Display<span class="token operator">*</span> x11Display<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">///&lt; \brief Indicate which X11 display is in use (currently).</span>
+	Screen<span class="token operator">*</span> x11Screen<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">///&lt; \brief Indicate which X11 screen is in use (currently).</span>
+	Window x11Window<span class="token punctuation">;</span>
+	<span class="token keyword">long</span> x11ScreenNum<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">///&lt; \brief The number of the X11 screen is in use (currently).</span>
+	<span class="token keyword">bool</span> <span class="token function">createX11NativeWindow</span><span class="token punctuation">(</span><span class="token keyword">const</span> ofRectangle<span class="token operator">&</span> requestedWindowRect<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+<span class="token comment" spellcheck="true">// EVENTS</span>
+<span class="token comment" spellcheck="true">//------------------------------------------------------------</span>
+	<span class="token keyword">void</span> <span class="token function">setupNativeEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">destroyNativeEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">void</span> <span class="token function">setupNativeUDev</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">destroyNativeUDev</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">void</span> <span class="token function">setupNativeInput</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">destroyNativeInput</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">void</span> <span class="token function">readNativeUDevEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">readNativeInputEvents</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">void</span> <span class="token function">processInput</span><span class="token punctuation">(</span><span class="token keyword">int</span> fd<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span> node<span class="token punctuation">)</span><span class="token punctuation">;</span>	
+	<span class="token keyword">void</span> <span class="token function">addInput</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span> node<span class="token punctuation">,</span> <span class="token keyword">bool</span> isMouse<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">removeInput</span><span class="token punctuation">(</span><span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span> node<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">void</span> <span class="token function">printInput</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">handleX11Event</span><span class="token punctuation">(</span><span class="token keyword">const</span> XEvent<span class="token operator">&</span> event<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">private</span><span class="token operator">:</span>
+	ofAppEGLWindowSettings settings<span class="token punctuation">;</span>
+	<span class="token keyword">int</span> glesVersion<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">///&lt; \brief Indicate the version of OpenGL for Embedded Systems.</span>
+	<span class="token keyword">bool</span> keyboardDetected<span class="token punctuation">;</span>
+	<span class="token keyword">bool</span> mouseDetected<span class="token punctuation">;</span>
+	<span class="token keyword">long</span> threadTimeout<span class="token punctuation">;</span>
+	ofCoreEvents coreEvents<span class="token punctuation">;</span>
+	std<span class="token operator">::</span>shared_ptr<span class="token operator">&lt;</span>ofBaseRenderer<span class="token operator">></span> currentRenderer<span class="token punctuation">;</span>
+	<span class="token keyword">static</span> ofAppEGLWindow <span class="token operator">*</span> instance<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div></div></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1586012716389/openframeworks/app/ofAppEGLWindow_h/payload.js"></script><script src="/_nuxt/5f71eaca0bd2f1a0f939.js" defer></script><script src="/_nuxt/35a90d914f539af1362f.js" defer></script><script src="/_nuxt/906a3ca0fb13ed3c6651.js" defer></script><script src="/_nuxt/b673915e8a08acf593e8.js" defer></script><script src="/_nuxt/bf355f21967a23c26c07.js" defer></script>
+  </body>
+</html>

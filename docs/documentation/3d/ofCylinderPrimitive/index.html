@@ -1,0 +1,1372 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>ofCylinderPrimitive | documentation | ofDocs</title><meta data-n-head="ssr" data-hid="description" name="description" content="openFrameworks documentation and examples browser"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="openFrameworks documentation and examples browser" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="ofCylinderPrimitive | documentation | ofDocs" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="/files/images/ofw-logo.png" vmid="og:image"><link rel="preload" href="/_nuxt/5f71eaca0bd2f1a0f939.js" as="script"><link rel="preload" href="/_nuxt/906a3ca0fb13ed3c6651.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/b673915e8a08acf593e8.js" as="script"><link rel="preload" href="/_nuxt/46e8fcacdadb233d9fb6.css" as="style"><link rel="preload" href="/_nuxt/bf355f21967a23c26c07.js" as="script"><link rel="preload" href="/_nuxt/35a90d914f539af1362f.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/46e8fcacdadb233d9fb6.css">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app"><div id="menu"><div class="menu-inner"><div id="settings"></div><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><svg version="1.1" viewbox="0 0 110 58" width="110px" height="58px" enable-background="0 0 110 58" xml:space="preserve" class="logo"><g><path d="M58,29 C58,13 45,0 29,0 C13,0 0,13 0,29 C0,45 13,58 29,58 C45,58 58,45 58,29 Z"></path><rect x="59" y="0" width="25" height="58"></rect><rect x="85" y="26" width="15" height="15"></rect><path d="M85,0 L110,0 L85,25 L85,0 Z"></path></g></svg><div class="txt"><span class="docs f7 questrial">Docs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343							c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88							c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593							c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789							C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><!----></div><div id="lists" class="menu-inner mt1 mb2"><div class="inner"></div></div></div><div class="menu-bottom"><div class="inner"><button class="button"><!----><span><span class="ico">nights_stay</span></span></button></div></div></div><div id="document"><div id="renderer" class="main page"><div absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/3d/ofCylinderPrimitive.markdown" route="/documentation/3d/ofCylinderPrimitive.markdown" dir="../ofSite/documentation/3d" ext="markdown" type="page" id="1983" parent="1967" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/" class="pink nuxt-link-active">documentation </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/3d/" class="pink nuxt-link-active">3d </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link selector"><span class="name">ofCylinderPrimitive</span><span class="chevron bottom"></span><select><option value="/documentation/3d/of3dGraphics_functions">of3dGraphics (functions)</option><option value="/documentation/3d/of3dGraphics">of3dGraphics</option><option value="/documentation/3d/of3dPrimitive">of3dPrimitive</option><option value="/documentation/3d/of3dUtils_functions">of3dUtils (functions)</option><option value="/documentation/3d/ofBoxPrimitive">ofBoxPrimitive</option><option value="/documentation/3d/ofCamera">ofCamera</option><option value="/documentation/3d/ofConePrimitive">ofConePrimitive</option><option value="/documentation/3d/ofCylinderPrimitive">ofCylinderPrimitive</option><option value="/documentation/3d/ofEasyCam">ofEasyCam</option><option value="/documentation/3d/ofIcoSpherePrimitive">ofIcoSpherePrimitive</option><option value="/documentation/3d/ofMesh_">ofMesh</option><option value="/documentation/3d/ofMeshFace_">ofMeshFace</option><option value="/documentation/3d/ofNode">ofNode</option><option value="/documentation/3d/ofPlanePrimitive">ofPlanePrimitive</option><option value="/documentation/3d/ofSpherePrimitive">ofSpherePrimitive</option></select></span><!----></span></span></div></div></div><div class="editable-wrapper"><div class="header inner"><h1 class="page-title questrial"><span class="f7"><!----><span>ofCylinderPrimitive</span></span><span class="f3"></span></h1><div class="actions"><a href="/ofdocs/contribute/" class="button"><i class="ico">edit</i><span>Edit</span></a></div></div><div class="rendered"><div id="documentation-page" static="true"><div id="offset-page"><div id="doc-body" class="markdown"><div class="inner"><div id="description"><div class="full-description"><div class="html"><p>The ofCylinderPrimitive allows you to create an cylinder mesh.</p>
+<p>Like all primitives it allows you to set the size, for the cylinder a radius and height, draw it, set positions, etc, as a simple example:</p>
+<pre><code class="language-{.cpp}">
+<span class="token keyword">void</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+
+	cylinder<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span> cylinderRadius<span class="token punctuation">,</span> cylinderHeight <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">void</span> <span class="token function">draw</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+
+	cylinder<span class="token punctuation">.</span><span class="token function">setPosition</span><span class="token punctuation">(</span><span class="token function">ofGetWidth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token punctuation">.</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token function">ofGetHeight</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token punctuation">.</span><span class="token number">75</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	cylinder<span class="token punctuation">.</span><span class="token function">rotate</span><span class="token punctuation">(</span>spinX<span class="token punctuation">,</span> <span class="token number">1.0</span><span class="token punctuation">,</span> <span class="token number">0.0</span><span class="token punctuation">,</span> <span class="token number">0.0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	cylinder<span class="token punctuation">.</span><span class="token function">rotate</span><span class="token punctuation">(</span>spinY<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1.0</span><span class="token punctuation">,</span> <span class="token number">0.0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token comment" spellcheck="true">// get all the faces from the icoSphere, handy when you want to copy</span>
+	<span class="token comment" spellcheck="true">// individual vertices or tweak them a little ;)</span>
+	vector<span class="token operator">&lt;</span>ofMeshFace</code></pre>
+</div></div></div><div id="methods"><hr><section name="getBottomCapIndices" id="getBottomCapIndices" class="mb2"><div class="method mb2"><h3 class="f3 title">getBottomCapIndices( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">getBottomCapIndices</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getBottomCapMesh" id="getBottomCapMesh" class="mb2"><div class="method mb2"><h3 class="f3 title">getBottomCapMesh( <!----> )</h3><code><span class="token keyword">ofMesh  </span><span class="token function">getBottomCapMesh</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getCapped" id="getCapped" class="mb2"><div class="method mb2"><h3 class="f3 title">getCapped( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">getCapped</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getCylinderIndices" id="getCylinderIndices" class="mb2"><div class="method mb2"><h3 class="f3 title">getCylinderIndices( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">getCylinderIndices</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getCylinderMesh" id="getCylinderMesh" class="mb2"><div class="method mb2"><h3 class="f3 title">getCylinderMesh( <!----> )</h3><code><span class="token keyword">ofMesh  </span><span class="token function">getCylinderMesh</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getHeight" id="getHeight" class="mb2"><div class="method mb2"><h3 class="f3 title">getHeight( <!----> )</h3><code><span class="token keyword">float  </span><span class="token function">getHeight</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getRadius" id="getRadius" class="mb2"><div class="method mb2"><h3 class="f3 title">getRadius( <!----> )</h3><code><span class="token keyword">float  </span><span class="token function">getRadius</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getResolution" id="getResolution" class="mb2"><div class="method mb2"><h3 class="f3 title">getResolution( <!----> )</h3><code><span class="token keyword">glm::vec3  </span><span class="token function">getResolution</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getResolutionCap" id="getResolutionCap" class="mb2"><div class="method mb2"><h3 class="f3 title">getResolutionCap( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">getResolutionCap</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getResolutionHeight" id="getResolutionHeight" class="mb2"><div class="method mb2"><h3 class="f3 title">getResolutionHeight( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">getResolutionHeight</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getResolutionRadius" id="getResolutionRadius" class="mb2"><div class="method mb2"><h3 class="f3 title">getResolutionRadius( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">getResolutionRadius</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getTopCapIndices" id="getTopCapIndices" class="mb2"><div class="method mb2"><h3 class="f3 title">getTopCapIndices( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">getTopCapIndices</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getTopCapMesh" id="getTopCapMesh" class="mb2"><div class="method mb2"><h3 class="f3 title">getTopCapMesh( <!----> )</h3><code><span class="token keyword">ofMesh  </span><span class="token function">getTopCapMesh</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofCylinderPrimitive" id="ofCylinderPrimitive" class="mb2"><div class="method mb2"><h3 class="f3 title">ofCylinderPrimitive( <!----> )</h3><code><!----><span class="token function">ofCylinderPrimitive</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofCylinderPrimitive" id="ofCylinderPrimitive" class="mb2"><div class="method mb2"><h3 class="f3 title">ofCylinderPrimitive( <code class="pink">...</code> )</h3><code><!----><span class="token function">ofCylinderPrimitive</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> radius<span class="token punctuation">,</span> <span class="token keyword">float</span> height<span class="token punctuation">,</span> <span class="token keyword">int</span> radiusSegments<span class="token punctuation">,</span> <span class="token keyword">int</span> heightSegments<span class="token punctuation">,</span> <span class="token keyword">int</span> capSegments<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token keyword">bool</span> bCapped<span class="token operator">=</span><span class="token boolean">true</span><span class="token punctuation">,</span> ofPrimitiveMode mode<span class="token operator">=</span>OF_PRIMITIVE_TRIANGLE_STRIP</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="set" id="set" class="mb2"><div class="method mb2"><h3 class="f3 title">set( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">set</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> radius<span class="token punctuation">,</span> <span class="token keyword">float</span> height<span class="token punctuation">,</span> <span class="token keyword">bool</span> bCapped<span class="token operator">=</span><span class="token boolean">true</span></code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="set" id="set" class="mb2"><div class="method mb2"><h3 class="f3 title">set( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">set</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> radius<span class="token punctuation">,</span> <span class="token keyword">float</span> height<span class="token punctuation">,</span> <span class="token keyword">int</span> radiusSegments<span class="token punctuation">,</span> <span class="token keyword">int</span> heightSegments<span class="token punctuation">,</span> <span class="token keyword">int</span> capSegments<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token keyword">bool</span> bCapped<span class="token operator">=</span><span class="token boolean">true</span><span class="token punctuation">,</span> ofPrimitiveMode mode<span class="token operator">=</span>OF_PRIMITIVE_TRIANGLE_STRIP</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setBottomCapColor" id="setBottomCapColor" class="mb2"><div class="method mb2"><h3 class="f3 title">setBottomCapColor( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setBottomCapColor</span><span class="token punctuation">(</span><code class="token boolean">ofColor color</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setCapped" id="setCapped" class="mb2"><div class="method mb2"><h3 class="f3 title">setCapped( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setCapped</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">bool</span> bCapped</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setCylinderColor" id="setCylinderColor" class="mb2"><div class="method mb2"><h3 class="f3 title">setCylinderColor( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setCylinderColor</span><span class="token punctuation">(</span><code class="token boolean">ofColor color</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setHeight" id="setHeight" class="mb2"><div class="method mb2"><h3 class="f3 title">setHeight( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setHeight</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> height</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setMode" id="setMode" class="mb2"><div class="method mb2"><h3 class="f3 title">setMode( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setMode</span><span class="token punctuation">(</span><code class="token boolean">ofPrimitiveMode mode</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setRadius" id="setRadius" class="mb2"><div class="method mb2"><h3 class="f3 title">setRadius( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setRadius</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> radius</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setResolution" id="setResolution" class="mb2"><div class="method mb2"><h3 class="f3 title">setResolution( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setResolution</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> radiusSegments<span class="token punctuation">,</span> <span class="token keyword">int</span> heightSegments<span class="token punctuation">,</span> <span class="token keyword">int</span> capSegments<span class="token operator">=</span><span class="token number">2</span></code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setResolutionCap" id="setResolutionCap" class="mb2"><div class="method mb2"><h3 class="f3 title">setResolutionCap( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setResolutionCap</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> capRes</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setResolutionHeight" id="setResolutionHeight" class="mb2"><div class="method mb2"><h3 class="f3 title">setResolutionHeight( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setResolutionHeight</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> heightRes</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setResolutionRadius" id="setResolutionRadius" class="mb2"><div class="method mb2"><h3 class="f3 title">setResolutionRadius( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setResolutionRadius</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> radiusRes</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setTopCapColor" id="setTopCapColor" class="mb2"><div class="method mb2"><h3 class="f3 title">setTopCapColor( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setTopCapColor</span><span class="token punctuation">(</span><code class="token boolean">ofColor color</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="~ofCylinderPrimitive" id="~ofCylinderPrimitive" class="mb2"><div class="method mb2"><h3 class="f3 title">~ofCylinderPrimitive( <!----> )</h3><code><!----><span class="token function">~ofCylinderPrimitive</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section></div></div></div></div><div id="side-menu"><div id="params"><h4 class="f3">Variables</h4><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>bCapped</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">float </span><span>height</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">float </span><span>radius</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofVec3f </span><span>resolution</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">int </span><span>strides</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">int </span><span>vertices</span><span class="token comment"></span></div><div class="desc"></div></div></code></div><div id="methods-list"><h4 class="f3">Methods</h4><div class="anchor"><code><a href="#getBottomCapIndices"><span>getBottomCapIndices</span><!----></a></code></div><div class="anchor"><code><a href="#getBottomCapMesh"><span>getBottomCapMesh</span><!----></a></code></div><div class="anchor"><code><a href="#getCapped"><span>getCapped</span><!----></a></code></div><div class="anchor"><code><a href="#getCylinderIndices"><span>getCylinderIndices</span><!----></a></code></div><div class="anchor"><code><a href="#getCylinderMesh"><span>getCylinderMesh</span><!----></a></code></div><div class="anchor"><code><a href="#getHeight"><span>getHeight</span><!----></a></code></div><div class="anchor"><code><a href="#getRadius"><span>getRadius</span><!----></a></code></div><div class="anchor"><code><a href="#getResolution"><span>getResolution</span><!----></a></code></div><div class="anchor"><code><a href="#getResolutionCap"><span>getResolutionCap</span><!----></a></code></div><div class="anchor"><code><a href="#getResolutionHeight"><span>getResolutionHeight</span><!----></a></code></div><div class="anchor"><code><a href="#getResolutionRadius"><span>getResolutionRadius</span><!----></a></code></div><div class="anchor"><code><a href="#getTopCapIndices"><span>getTopCapIndices</span><!----></a></code></div><div class="anchor"><code><a href="#getTopCapMesh"><span>getTopCapMesh</span><!----></a></code></div><div class="anchor"><code><a href="#ofCylinderPrimitive"><span>ofCylinderPrimitive</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#set"><span>set</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#setBottomCapColor"><span>setBottomCapColor</span><!----></a></code></div><div class="anchor"><code><a href="#setCapped"><span>setCapped</span><!----></a></code></div><div class="anchor"><code><a href="#setCylinderColor"><span>setCylinderColor</span><!----></a></code></div><div class="anchor"><code><a href="#setHeight"><span>setHeight</span><!----></a></code></div><div class="anchor"><code><a href="#setMode"><span>setMode</span><!----></a></code></div><div class="anchor"><code><a href="#setRadius"><span>setRadius</span><!----></a></code></div><div class="anchor"><code><a href="#setResolution"><span>setResolution</span><!----></a></code></div><div class="anchor"><code><a href="#setResolutionCap"><span>setResolutionCap</span><!----></a></code></div><div class="anchor"><code><a href="#setResolutionHeight"><span>setResolutionHeight</span><!----></a></code></div><div class="anchor"><code><a href="#setResolutionRadius"><span>setResolutionRadius</span><!----></a></code></div><div class="anchor"><code><a href="#setTopCapColor"><span>setTopCapColor</span><!----></a></code></div><div class="anchor"><code><a href="#~ofCylinderPrimitive"><span>~ofCylinderPrimitive</span><!----></a></code></div></div><!----></div></div></div><textarea rows="0" class="markdown-editor" style="display:none">#class ofCylinderPrimitive
+
+
+&lt;!--
+_visible: True_
+_advanced: False_
+_istemplated: False_
+_extends: of3dPrimitive_
+-->
+
+##InlineDescription
+
+The ofCylinderPrimitive allows you to create an cylinder mesh.
+
+Like all primitives it allows you to set the size, for the cylinder
+a radius and height, draw it, set positions, etc, as a simple example:
+
+~~~~{.cpp}
+
+void setup()
+{
+
+    cylinder.set( cylinderRadius, cylinderHeight );
+}
+
+void draw()
+{
+
+    cylinder.setPosition(ofGetWidth()*.2, ofGetHeight()*.75, 0);
+    cylinder.rotate(spinX, 1.0, 0.0, 0.0);
+    cylinder.rotate(spinY, 0, 1.0, 0.0);
+
+    // get all the faces from the icoSphere, handy when you want to copy
+    // individual vertices or tweak them a little ;)
+    vector&lt;ofMeshFace> triangles = cylinder.getMesh().getUniqueFaces();
+
+    // now draw
+    cylinder.draw();
+}
+~~~~
+
+To draw a texture over any primitive, simply bind the ofTexture instance
+and then draw your primitive:
+
+~~~~{.cpp}
+
+texture.getTextureReference().bind();
+// now draw
+cylinder.draw();
+
+~~~~
+
+
+
+
+
+##Description
+
+The ofCylinderPrimitive allows you to create an cylinder mesh.
+
+Like all primitives it allows you to set the size, for the cylinder a radius and height, draw it, set positions, etc, as a simple example:
+
+~~~~{.cpp}
+
+void setup()
+{
+
+	cylinder.set( cylinderRadius, cylinderHeight );
+}
+
+void draw()
+{
+
+	cylinder.setPosition(ofGetWidth()*.2, ofGetHeight()*.75, 0);
+	cylinder.rotate(spinX, 1.0, 0.0, 0.0);
+	cylinder.rotate(spinY, 0, 1.0, 0.0);
+
+	// get all the faces from the icoSphere, handy when you want to copy
+	// individual vertices or tweak them a little ;)
+	vector&lt;ofMeshFace> triangles = cylinder.getMesh().getUniqueFaces();
+
+	// now draw
+	cylinder.draw();
+}
+~~~~
+
+To draw a texture over any primitive, simply bind the ofTexture instance and then draw your primitive:
+
+~~~~{.cpp}
+
+texture.getTextureReference().bind();
+// now draw
+cylinder.draw();
+
+~~~~
+
+
+
+
+
+##Methods
+
+
+
+###int getBottomCapIndices()
+
+&lt;!--
+_syntax: getBottomCapIndices()_
+_name: getBottomCapIndices_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofMesh getBottomCapMesh()
+
+&lt;!--
+_syntax: getBottomCapMesh()_
+_name: getBottomCapMesh_
+_returns: ofMesh_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool getCapped()
+
+&lt;!--
+_syntax: getCapped()_
+_name: getCapped_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int getCylinderIndices()
+
+&lt;!--
+_syntax: getCylinderIndices()_
+_name: getCylinderIndices_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofMesh getCylinderMesh()
+
+&lt;!--
+_syntax: getCylinderMesh()_
+_name: getCylinderMesh_
+_returns: ofMesh_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float getHeight()
+
+&lt;!--
+_syntax: getHeight()_
+_name: getHeight_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float getRadius()
+
+&lt;!--
+_syntax: getRadius()_
+_name: getRadius_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###glm::vec3 getResolution()
+
+&lt;!--
+_syntax: getResolution()_
+_name: getResolution_
+_returns: glm::vec3_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int getResolutionCap()
+
+&lt;!--
+_syntax: getResolutionCap()_
+_name: getResolutionCap_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int getResolutionHeight()
+
+&lt;!--
+_syntax: getResolutionHeight()_
+_name: getResolutionHeight_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int getResolutionRadius()
+
+&lt;!--
+_syntax: getResolutionRadius()_
+_name: getResolutionRadius_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int getTopCapIndices()
+
+&lt;!--
+_syntax: getTopCapIndices()_
+_name: getTopCapIndices_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofMesh getTopCapMesh()
+
+&lt;!--
+_syntax: getTopCapMesh()_
+_name: getTopCapMesh_
+_returns: ofMesh_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofCylinderPrimitive()
+
+&lt;!--
+_syntax: ofCylinderPrimitive()_
+_name: ofCylinderPrimitive_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofCylinderPrimitive(radius, height, radiusSegments, heightSegments, capSegments = 2, bCapped = true, mode = OF_PRIMITIVE_TRIANGLE_STRIP)
+
+&lt;!--
+_syntax: ofCylinderPrimitive(radius, height, radiusSegments, heightSegments, capSegments = 2, bCapped = true, mode = OF_PRIMITIVE_TRIANGLE_STRIP)_
+_name: ofCylinderPrimitive_
+_returns: _
+_returns_description: _
+_parameters: float radius, float height, int radiusSegments, int heightSegments, int capSegments=2, bool bCapped=true, ofPrimitiveMode mode=OF_PRIMITIVE_TRIANGLE_STRIP_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void set(radius, height, bCapped = true)
+
+&lt;!--
+_syntax: set(radius, height, bCapped = true)_
+_name: set_
+_returns: void_
+_returns_description: _
+_parameters: float radius, float height, bool bCapped=true_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void set(radius, height, radiusSegments, heightSegments, capSegments = 2, bCapped = true, mode = OF_PRIMITIVE_TRIANGLE_STRIP)
+
+&lt;!--
+_syntax: set(radius, height, radiusSegments, heightSegments, capSegments = 2, bCapped = true, mode = OF_PRIMITIVE_TRIANGLE_STRIP)_
+_name: set_
+_returns: void_
+_returns_description: _
+_parameters: float radius, float height, int radiusSegments, int heightSegments, int capSegments=2, bool bCapped=true, ofPrimitiveMode mode=OF_PRIMITIVE_TRIANGLE_STRIP_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setBottomCapColor(color)
+
+&lt;!--
+_syntax: setBottomCapColor(color)_
+_name: setBottomCapColor_
+_returns: void_
+_returns_description: _
+_parameters: ofColor color_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setCapped(bCapped)
+
+&lt;!--
+_syntax: setCapped(bCapped)_
+_name: setCapped_
+_returns: void_
+_returns_description: _
+_parameters: bool bCapped_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setCylinderColor(color)
+
+&lt;!--
+_syntax: setCylinderColor(color)_
+_name: setCylinderColor_
+_returns: void_
+_returns_description: _
+_parameters: ofColor color_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setHeight(height)
+
+&lt;!--
+_syntax: setHeight(height)_
+_name: setHeight_
+_returns: void_
+_returns_description: _
+_parameters: float height_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setMode(mode)
+
+&lt;!--
+_syntax: setMode(mode)_
+_name: setMode_
+_returns: void_
+_returns_description: _
+_parameters: ofPrimitiveMode mode_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setRadius(radius)
+
+&lt;!--
+_syntax: setRadius(radius)_
+_name: setRadius_
+_returns: void_
+_returns_description: _
+_parameters: float radius_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setResolution(radiusSegments, heightSegments, capSegments = 2)
+
+&lt;!--
+_syntax: setResolution(radiusSegments, heightSegments, capSegments = 2)_
+_name: setResolution_
+_returns: void_
+_returns_description: _
+_parameters: int radiusSegments, int heightSegments, int capSegments=2_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setResolutionCap(capRes)
+
+&lt;!--
+_syntax: setResolutionCap(capRes)_
+_name: setResolutionCap_
+_returns: void_
+_returns_description: _
+_parameters: int capRes_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setResolutionHeight(heightRes)
+
+&lt;!--
+_syntax: setResolutionHeight(heightRes)_
+_name: setResolutionHeight_
+_returns: void_
+_returns_description: _
+_parameters: int heightRes_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setResolutionRadius(radiusRes)
+
+&lt;!--
+_syntax: setResolutionRadius(radiusRes)_
+_name: setResolutionRadius_
+_returns: void_
+_returns_description: _
+_parameters: int radiusRes_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setTopCapColor(color)
+
+&lt;!--
+_syntax: setTopCapColor(color)_
+_name: setTopCapColor_
+_returns: void_
+_returns_description: _
+_parameters: ofColor color_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ~ofCylinderPrimitive()
+
+&lt;!--
+_syntax: ~ofCylinderPrimitive()_
+_name: ~ofCylinderPrimitive_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+##Variables
+
+
+
+###bool bCapped
+
+&lt;!--
+_name: bCapped_
+_type: bool_
+_access: protected_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float height
+
+&lt;!--
+_name: height_
+_type: float_
+_access: protected_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float radius
+
+&lt;!--
+_name: radius_
+_type: float_
+_access: protected_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofVec3f resolution
+
+&lt;!--
+_name: resolution_
+_type: ofVec3f_
+_access: protected_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int strides
+
+&lt;!--
+_name: strides_
+_type: int_
+_access: protected_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int vertices
+
+&lt;!--
+_name: vertices_
+_type: int_
+_access: protected_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+</textarea></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1586012716389/documentation/3d/ofCylinderPrimitive/payload.js"></script><script src="/_nuxt/5f71eaca0bd2f1a0f939.js" defer></script><script src="/_nuxt/35a90d914f539af1362f.js" defer></script><script src="/_nuxt/906a3ca0fb13ed3c6651.js" defer></script><script src="/_nuxt/b673915e8a08acf593e8.js" defer></script><script src="/_nuxt/bf355f21967a23c26c07.js" defer></script>
+  </body>
+</html>

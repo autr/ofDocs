@@ -1,0 +1,1238 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>ofBufferObject | documentation | ofDocs</title><meta data-n-head="ssr" data-hid="description" name="description" content="openFrameworks documentation and examples browser"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="openFrameworks documentation and examples browser" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="ofBufferObject | documentation | ofDocs" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="/files/images/ofw-logo.png" vmid="og:image"><link rel="preload" href="/_nuxt/5f71eaca0bd2f1a0f939.js" as="script"><link rel="preload" href="/_nuxt/906a3ca0fb13ed3c6651.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/b673915e8a08acf593e8.js" as="script"><link rel="preload" href="/_nuxt/46e8fcacdadb233d9fb6.css" as="style"><link rel="preload" href="/_nuxt/bf355f21967a23c26c07.js" as="script"><link rel="preload" href="/_nuxt/35a90d914f539af1362f.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/46e8fcacdadb233d9fb6.css">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app"><div id="menu"><div class="menu-inner"><div id="settings"></div><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><svg version="1.1" viewbox="0 0 110 58" width="110px" height="58px" enable-background="0 0 110 58" xml:space="preserve" class="logo"><g><path d="M58,29 C58,13 45,0 29,0 C13,0 0,13 0,29 C0,45 13,58 29,58 C45,58 58,45 58,29 Z"></path><rect x="59" y="0" width="25" height="58"></rect><rect x="85" y="26" width="15" height="15"></rect><path d="M85,0 L110,0 L85,25 L85,0 Z"></path></g></svg><div class="txt"><span class="docs f7 questrial">Docs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343							c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88							c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593							c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789							C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><!----></div><div id="lists" class="menu-inner mt1 mb2"><div class="inner"></div></div></div><div class="menu-bottom"><div class="inner"><button class="button"><!----><span><span class="ico">nights_stay</span></span></button></div></div></div><div id="document"><div id="renderer" class="main page"><div absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/gl/ofBufferObject.markdown" route="/documentation/gl/ofBufferObject.markdown" dir="../ofSite/documentation/gl" ext="markdown" type="page" id="2199" parent="2192" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/" class="pink nuxt-link-active">documentation </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/gl/" class="pink nuxt-link-active">gl </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link selector"><span class="name">ofBufferObject</span><span class="chevron bottom"></span><select><option value="/documentation/gl/ofBufferObject">ofBufferObject</option><option value="/documentation/gl/ofFbo::Settings">ofFbo::Settings</option><option value="/documentation/gl/ofFbo">ofFbo</option><option value="/documentation/gl/ofFboSettings">ofFboSettings</option><option value="/documentation/gl/ofGLProgrammableRenderer">ofGLProgrammableRenderer</option><option value="/documentation/gl/ofGLRenderer">ofGLRenderer</option><option value="/documentation/gl/ofGLUtils_functions">ofGLUtils (functions)</option><option value="/documentation/gl/ofLight_functions">ofLight (functions)</option><option value="/documentation/gl/ofLight::Data">ofLight::Data</option><option value="/documentation/gl/ofLight">ofLight</option><option value="/documentation/gl/ofMaterial::Data">ofMaterial::Data</option><option value="/documentation/gl/ofMaterial::Shaders">ofMaterial::Shaders</option><option value="/documentation/gl/ofMaterial">ofMaterial</option><option value="/documentation/gl/ofMaterialSettings">ofMaterialSettings</option><option value="/documentation/gl/ofShader::Shader">ofShader::Shader</option><option value="/documentation/gl/ofShader::Source">ofShader::Source</option><option value="/documentation/gl/ofShader::TransformFeedbackBaseBinding">ofShader::TransformFeedbackBaseBinding</option><option value="/documentation/gl/ofShader::TransformFeedbackRangeBinding">ofShader::TransformFeedbackRangeBinding</option><option value="/documentation/gl/ofShader::TransformFeedbackSettings">ofShader::TransformFeedbackSettings</option><option value="/documentation/gl/ofShader">ofShader</option><option value="/documentation/gl/ofShaderSettings">ofShaderSettings</option><option value="/documentation/gl/ofTexture_functions">ofTexture (functions)</option><option value="/documentation/gl/ofTexture">ofTexture</option><option value="/documentation/gl/ofTextureData">ofTextureData</option><option value="/documentation/gl/ofVbo::VertexAttribute">ofVbo::VertexAttribute</option><option value="/documentation/gl/ofVbo">ofVbo</option><option value="/documentation/gl/ofVboMesh">ofVboMesh</option></select></span><!----></span></span></div></div></div><div class="editable-wrapper"><div class="header inner"><h1 class="page-title questrial"><span class="f7"><!----><span>ofBufferObject</span></span><span class="f3"></span></h1><div class="actions"><a href="/ofdocs/contribute/" class="button"><i class="ico">edit</i><span>Edit</span></a></div></div><div class="rendered"><div id="documentation-page" static="true"><div id="offset-page"><div id="doc-body" class="markdown"><div class="inner"><div id="description"><div class="full-description"><div class="html"><h1></h1>
+</div></div></div><div id="methods"><hr><section name="allocate" id="allocate" class="mb2"><div class="method mb2"><h3 class="f3 title">allocate( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">allocate</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>creates a buffer without allocating any memory yet
+glGenBuffers, allocates a GL buffer</p>
+</div><div class="desc"></div></div><hr></section><section name="allocate" id="allocate" class="mb2"><div class="method mb2"><h3 class="f3 title">allocate( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">allocate</span><span class="token punctuation">(</span><code class="token boolean">GLsizeiptr bytes<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">void</span> <span class="token operator">*</span>data<span class="token punctuation">,</span> GLenum usage</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="allocate" id="allocate" class="mb2"><div class="method mb2"><h3 class="f3 title">allocate( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">allocate</span><span class="token punctuation">(</span><code class="token boolean">GLsizeiptr bytes<span class="token punctuation">,</span> GLenum usage</code><span class="token punctuation">)</span></code><div class="short"><p>creates a buffer and allocates the required number of bytes
+glGenBuffers + glNamedBufferData: https://www.opengl.org/sdk/docs/man4/html/glBufferData.xhtml
+before GL 4.5 emulates glNamedBufferData by binding to last known target
+for this buffer uploading data to that target and unbinding again</p>
+</div><div class="desc"></div></div><hr></section><section name="bind" id="bind" class="mb2"><div class="method mb2"><h3 class="f3 title">bind( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">bind</span><span class="token punctuation">(</span><code class="token boolean">GLenum target</code><span class="token punctuation">)</span></code><div class="short"><p>glBindBuffer: https://www.opengl.org/sdk/docs/man4/html/glBindBuffer.xhtml</p>
+</div><div class="desc"></div></div><hr></section><section name="bindBase" id="bindBase" class="mb2"><div class="method mb2"><h3 class="f3 title">bindBase( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">bindBase</span><span class="token punctuation">(</span><code class="token boolean">GLenum target<span class="token punctuation">,</span> GLuint index</code><span class="token punctuation">)</span></code><div class="short"><p>glBindBufferBase: https://www.opengl.org/sdk/docs/man4/html/glBindBufferBase.xhtml</p>
+</div><div class="desc"></div></div><hr></section><section name="bindRange" id="bindRange" class="mb2"><div class="method mb2"><h3 class="f3 title">bindRange( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">bindRange</span><span class="token punctuation">(</span><code class="token boolean">GLenum target<span class="token punctuation">,</span> GLuint index<span class="token punctuation">,</span> GLintptr offset<span class="token punctuation">,</span> GLsizeiptr size</code><span class="token punctuation">)</span></code><div class="short"><p>glBindBufferRange: https://www.opengl.org/sdk/docs/man4/html/glBindBufferRange.xhtml</p>
+</div><div class="desc"></div></div><hr></section><section name="copyTo" id="copyTo" class="mb2"><div class="method mb2"><h3 class="f3 title">copyTo( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">copyTo</span><span class="token punctuation">(</span><code class="token boolean">ofBufferObject <span class="token operator">&</span>dstBuffer</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="copyTo" id="copyTo" class="mb2"><div class="method mb2"><h3 class="f3 title">copyTo( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">copyTo</span><span class="token punctuation">(</span><code class="token boolean">ofBufferObject <span class="token operator">&</span>dstBuffer<span class="token punctuation">,</span> <span class="token keyword">int</span> readOffset<span class="token punctuation">,</span> <span class="token keyword">int</span> writeOffset<span class="token punctuation">,</span> size_t size</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getId" id="getId" class="mb2"><div class="method mb2"><h3 class="f3 title">getId( <!----> )</h3><code><span class="token keyword">GLuint  </span><span class="token function">getId</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>returns the id of the buffer if it's allocated or 0 otherwise</p>
+</div><div class="desc"></div></div><hr></section><section name="invalidate" id="invalidate" class="mb2"><div class="method mb2"><h3 class="f3 title">invalidate( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">invalidate</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="isAllocated" id="isAllocated" class="mb2"><div class="method mb2"><h3 class="f3 title">isAllocated( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">isAllocated</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>true if allocate was called before</p>
+</div><div class="desc"></div></div><hr></section><section name="map" id="map" class="mb2"><div class="method mb2"><h3 class="f3 title">map( <code class="pink">...</code> )</h3><code><span class="token keyword">void *  </span><span class="token function">map</span><span class="token punctuation">(</span><code class="token boolean">GLenum access</code><span class="token punctuation">)</span></code><div class="short"><p>glMapNamedBuffer: https://www.opengl.org/sdk/docs/man4/html/glMapBuffer.xhtml
+before GL 4.5 emulates glMapNamedBuffer by binding to last known target
+for this buffer and mapping that target</p>
+</div><div class="desc"></div></div><hr></section><section name="map" id="map" class="mb2"><div class="method mb2"><h3 class="f3 title">map( <code class="pink">...</code> )</h3><code><span class="token keyword">T *  </span><span class="token function">map</span><span class="token punctuation">(</span><code class="token boolean">GLenum access</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="mapRange" id="mapRange" class="mb2"><div class="method mb2"><h3 class="f3 title">mapRange( <code class="pink">...</code> )</h3><code><span class="token keyword">void *  </span><span class="token function">mapRange</span><span class="token punctuation">(</span><code class="token boolean">GLintptr offset<span class="token punctuation">,</span> GLsizeiptr length<span class="token punctuation">,</span> GLenum access</code><span class="token punctuation">)</span></code><div class="short"><p>glMapNamedBufferRange: https://www.opengl.org/sdk/docs/man4/html/glMapBufferRange.xhtml
+before GL 4.5 emulates glMapNamedBufferRange by binding to last known target
+for this buffer and mapping that target</p>
+</div><div class="desc"></div></div><hr></section><section name="mapRange" id="mapRange" class="mb2"><div class="method mb2"><h3 class="f3 title">mapRange( <code class="pink">...</code> )</h3><code><span class="token keyword">T *  </span><span class="token function">mapRange</span><span class="token punctuation">(</span><code class="token boolean">GLintptr offset<span class="token punctuation">,</span> GLsizeiptr length<span class="token punctuation">,</span> GLenum access</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofBufferObject" id="ofBufferObject" class="mb2"><div class="method mb2"><h3 class="f3 title">ofBufferObject( <!----> )</h3><code><!----><span class="token function">ofBufferObject</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setData" id="setData" class="mb2"><div class="method mb2"><h3 class="f3 title">setData( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setData</span><span class="token punctuation">(</span><code class="token boolean">GLsizeiptr bytes<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">void</span> <span class="token operator">*</span>data<span class="token punctuation">,</span> GLenum usage</code><span class="token punctuation">)</span></code><div class="short"><p>glNamedBufferData: https://www.opengl.org/sdk/docs/man4/html/glBufferData.xhtml
+before GL 4.5 emulates glNamedBufferData by binding to last known target
+for this buffer uploading data to that target and unbinding again</p>
+</div><div class="desc"></div></div><hr></section><section name="size" id="size" class="mb2"><div class="method mb2"><h3 class="f3 title">size( <!----> )</h3><code><span class="token keyword">GLsizeiptr  </span><span class="token function">size</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="unbind" id="unbind" class="mb2"><div class="method mb2"><h3 class="f3 title">unbind( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">unbind</span><span class="token punctuation">(</span><code class="token boolean">GLenum target</code><span class="token punctuation">)</span></code><div class="short"><p>binds the passed target to buffer 0</p>
+</div><div class="desc"></div></div><hr></section><section name="unbindBase" id="unbindBase" class="mb2"><div class="method mb2"><h3 class="f3 title">unbindBase( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">unbindBase</span><span class="token punctuation">(</span><code class="token boolean">GLenum target<span class="token punctuation">,</span> GLuint index</code><span class="token punctuation">)</span></code><div class="short"><p>binds the given target and index to buffer 0</p>
+</div><div class="desc"></div></div><hr></section><section name="unbindRange" id="unbindRange" class="mb2"><div class="method mb2"><h3 class="f3 title">unbindRange( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">unbindRange</span><span class="token punctuation">(</span><code class="token boolean">GLenum target<span class="token punctuation">,</span> GLuint index</code><span class="token punctuation">)</span></code><div class="short"><p>binds the given target and index to 0</p>
+</div><div class="desc"></div></div><hr></section><section name="unmap" id="unmap" class="mb2"><div class="method mb2"><h3 class="f3 title">unmap( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">unmap</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>glUnmapNamedBuffer: https://www.opengl.org/sdk/docs/man4/html/glUnmapBuffer.xhtml
+before GL 4.5 emulates glUnmapNamedBuffer by unmapping and unbinding
+the last known target for this buffer</p>
+</div><div class="desc"></div></div><hr></section><section name="unmapRange" id="unmapRange" class="mb2"><div class="method mb2"><h3 class="f3 title">unmapRange( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">unmapRange</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>same as unmap, just to make the api more clear</p>
+</div><div class="desc"></div></div><hr></section><section name="updateData" id="updateData" class="mb2"><div class="method mb2"><h3 class="f3 title">updateData( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">updateData</span><span class="token punctuation">(</span><code class="token boolean">GLsizeiptr bytes<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">void</span> <span class="token operator">*</span>data</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="updateData" id="updateData" class="mb2"><div class="method mb2"><h3 class="f3 title">updateData( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">updateData</span><span class="token punctuation">(</span><code class="token boolean">GLintptr offset<span class="token punctuation">,</span> GLsizeiptr bytes<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">void</span> <span class="token operator">*</span>data</code><span class="token punctuation">)</span></code><div class="short"><p>glNamedBufferSubData: https://www.opengl.org/sdk/docs/man4/html/glBufferSubData.xhtml
+before GL 4.5 emulates glNamedBufferSubData by binding to last known target
+for this buffer uploading data to that target and unbinding again</p>
+</div><div class="desc"></div></div><hr></section></div></div></div></div><div id="side-menu"><!----><div id="methods-list"><h4 class="f3">Methods</h4><div class="anchor"><code><a href="#allocate" class="pink"><span>allocate</span><span>(3)</span></a></code></div><div class="anchor"><code><a href="#bind" class="pink"><span>bind</span><!----></a></code></div><div class="anchor"><code><a href="#bindBase" class="pink"><span>bindBase</span><!----></a></code></div><div class="anchor"><code><a href="#bindRange" class="pink"><span>bindRange</span><!----></a></code></div><div class="anchor"><code><a href="#copyTo"><span>copyTo</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#getId" class="pink"><span>getId</span><!----></a></code></div><div class="anchor"><code><a href="#invalidate"><span>invalidate</span><!----></a></code></div><div class="anchor"><code><a href="#isAllocated" class="pink"><span>isAllocated</span><!----></a></code></div><div class="anchor"><code><a href="#map" class="pink"><span>map</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#mapRange" class="pink"><span>mapRange</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#ofBufferObject"><span>ofBufferObject</span><!----></a></code></div><div class="anchor"><code><a href="#setData" class="pink"><span>setData</span><!----></a></code></div><div class="anchor"><code><a href="#size"><span>size</span><!----></a></code></div><div class="anchor"><code><a href="#unbind" class="pink"><span>unbind</span><!----></a></code></div><div class="anchor"><code><a href="#unbindBase" class="pink"><span>unbindBase</span><!----></a></code></div><div class="anchor"><code><a href="#unbindRange" class="pink"><span>unbindRange</span><!----></a></code></div><div class="anchor"><code><a href="#unmap" class="pink"><span>unmap</span><!----></a></code></div><div class="anchor"><code><a href="#unmapRange" class="pink"><span>unmapRange</span><!----></a></code></div><div class="anchor"><code><a href="#updateData"><span>updateData</span><span>(2)</span></a></code></div></div><div id="see-also" filename="ofBufferObject.markdown" absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/gl/ofBufferObject.markdown" route="/documentation/gl/ofBufferObject.markdown" dir="../ofSite/documentation/gl" ext="markdown" type="page" parent="2192" breadcrumbs="2192,1968" siblings="" translations="[object Object]" class="see-also"><h4 class="f3">See also</h4><div class="also"><a href="/documentation/utils/ofBuffer"><span class="origin">documentation</span><span class="name">ofBuffer</span></a></div><div class="also"><a href="/openframeworks/gl/ofBufferObject_h"><span class="origin">openframeworks</span><span class="name">ofBufferObject.h</span></a></div><div class="also"><a href="/openframeworks/gl/ofBufferObject_cpp"><span class="origin">openframeworks</span><span class="name">ofBufferObject.cpp</span></a></div></div></div></div></div><textarea rows="0" class="markdown-editor" style="display:none">#class ofBufferObject
+
+
+&lt;!--
+_visible: True_
+_advanced: False_
+_istemplated: False_
+_extends: _
+-->
+
+##InlineDescription
+
+
+
+
+
+
+##Description
+
+
+
+
+
+##Methods
+
+
+
+###void allocate(&data, usage)
+
+&lt;!--
+_syntax: allocate(&data, usage)_
+_name: allocate_
+_returns: void_
+_returns_description: _
+_parameters: const vector&lt; T > &data, GLenum usage_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void allocate(&data, usage)
+
+&lt;!--
+_syntax: allocate(&data, usage)_
+_name: allocate_
+_returns: void_
+_returns_description: _
+_parameters: const ofPixels_&lt; T > &data, GLenum usage_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void allocate()
+
+&lt;!--
+_syntax: allocate()_
+_name: allocate_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+creates a buffer without allocating any memory yet
+glGenBuffers, allocates a GL buffer
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void allocate(bytes, *data, usage)
+
+&lt;!--
+_syntax: allocate(bytes, *data, usage)_
+_name: allocate_
+_returns: void_
+_returns_description: _
+_parameters: GLsizeiptr bytes, const void *data, GLenum usage_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void allocate(bytes, usage)
+
+&lt;!--
+_syntax: allocate(bytes, usage)_
+_name: allocate_
+_returns: void_
+_returns_description: _
+_parameters: GLsizeiptr bytes, GLenum usage_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+creates a buffer and allocates the required number of bytes
+glGenBuffers + glNamedBufferData: https://www.opengl.org/sdk/docs/man4/html/glBufferData.xhtml
+before GL 4.5 emulates glNamedBufferData by binding to last known target
+for this buffer uploading data to that target and unbinding again
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void bind(target)
+
+&lt;!--
+_syntax: bind(target)_
+_name: bind_
+_returns: void_
+_returns_description: _
+_parameters: GLenum target_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+glBindBuffer: https://www.opengl.org/sdk/docs/man4/html/glBindBuffer.xhtml
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void bindBase(target, index)
+
+&lt;!--
+_syntax: bindBase(target, index)_
+_name: bindBase_
+_returns: void_
+_returns_description: _
+_parameters: GLenum target, GLuint index_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+glBindBufferBase: https://www.opengl.org/sdk/docs/man4/html/glBindBufferBase.xhtml
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void bindRange(target, index, offset, size)
+
+&lt;!--
+_syntax: bindRange(target, index, offset, size)_
+_name: bindRange_
+_returns: void_
+_returns_description: _
+_parameters: GLenum target, GLuint index, GLintptr offset, GLsizeiptr size_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+glBindBufferRange: https://www.opengl.org/sdk/docs/man4/html/glBindBufferRange.xhtml
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void copyTo(&dstBuffer)
+
+&lt;!--
+_syntax: copyTo(&dstBuffer)_
+_name: copyTo_
+_returns: void_
+_returns_description: _
+_parameters: ofBufferObject &dstBuffer_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void copyTo(&dstBuffer, readOffset, writeOffset, size)
+
+&lt;!--
+_syntax: copyTo(&dstBuffer, readOffset, writeOffset, size)_
+_name: copyTo_
+_returns: void_
+_returns_description: _
+_parameters: ofBufferObject &dstBuffer, int readOffset, int writeOffset, size_t size_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###GLuint getId()
+
+&lt;!--
+_syntax: getId()_
+_name: getId_
+_returns: GLuint_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+returns the id of the buffer if it's allocated or 0 otherwise
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void invalidate()
+
+&lt;!--
+_syntax: invalidate()_
+_name: invalidate_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool isAllocated()
+
+&lt;!--
+_syntax: isAllocated()_
+_name: isAllocated_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+true if allocate was called before
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void * map(access)
+
+&lt;!--
+_syntax: map(access)_
+_name: map_
+_returns: void *_
+_returns_description: _
+_parameters: GLenum access_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+glMapNamedBuffer: https://www.opengl.org/sdk/docs/man4/html/glMapBuffer.xhtml
+before GL 4.5 emulates glMapNamedBuffer by binding to last known target
+for this buffer and mapping that target
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###T * map(access)
+
+&lt;!--
+_syntax: map(access)_
+_name: map_
+_returns: T *_
+_returns_description: _
+_parameters: GLenum access_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+typed version of map, returns an array of T when used like:
+buffer.map&lt;Type>(access)
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void * mapRange(offset, length, access)
+
+&lt;!--
+_syntax: mapRange(offset, length, access)_
+_name: mapRange_
+_returns: void *_
+_returns_description: _
+_parameters: GLintptr offset, GLsizeiptr length, GLenum access_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+glMapNamedBufferRange: https://www.opengl.org/sdk/docs/man4/html/glMapBufferRange.xhtml
+before GL 4.5 emulates glMapNamedBufferRange by binding to last known target
+for this buffer and mapping that target
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###T * mapRange(offset, length, access)
+
+&lt;!--
+_syntax: mapRange(offset, length, access)_
+_name: mapRange_
+_returns: T *_
+_returns_description: _
+_parameters: GLintptr offset, GLsizeiptr length, GLenum access_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+typed version of mapRange, returns an array of T when used like:
+buffer.mapRange&lt;Type>(access)
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofBufferObject()
+
+&lt;!--
+_syntax: ofBufferObject()_
+_name: ofBufferObject_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setData(&data, usage)
+
+&lt;!--
+_syntax: setData(&data, usage)_
+_name: setData_
+_returns: void_
+_returns_description: _
+_parameters: const vector&lt; T > &data, GLenum usage_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+typed version of setData, same functionality but guesses the size from the size
+of the passed vector and size of the type
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setData(&data, usage)
+
+&lt;!--
+_syntax: setData(&data, usage)_
+_name: setData_
+_returns: void_
+_returns_description: _
+_parameters: const ofPixels_&lt; T > &data, GLenum usage_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setData(bytes, *data, usage)
+
+&lt;!--
+_syntax: setData(bytes, *data, usage)_
+_name: setData_
+_returns: void_
+_returns_description: _
+_parameters: GLsizeiptr bytes, const void *data, GLenum usage_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+glNamedBufferData: https://www.opengl.org/sdk/docs/man4/html/glBufferData.xhtml
+before GL 4.5 emulates glNamedBufferData by binding to last known target
+for this buffer uploading data to that target and unbinding again
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###GLsizeiptr size()
+
+&lt;!--
+_syntax: size()_
+_name: size_
+_returns: GLsizeiptr_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void unbind(target)
+
+&lt;!--
+_syntax: unbind(target)_
+_name: unbind_
+_returns: void_
+_returns_description: _
+_parameters: GLenum target_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+binds the passed target to buffer 0
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void unbindBase(target, index)
+
+&lt;!--
+_syntax: unbindBase(target, index)_
+_name: unbindBase_
+_returns: void_
+_returns_description: _
+_parameters: GLenum target, GLuint index_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+binds the given target and index to buffer 0
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void unbindRange(target, index)
+
+&lt;!--
+_syntax: unbindRange(target, index)_
+_name: unbindRange_
+_returns: void_
+_returns_description: _
+_parameters: GLenum target, GLuint index_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+binds the given target and index to 0
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void unmap()
+
+&lt;!--
+_syntax: unmap()_
+_name: unmap_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+glUnmapNamedBuffer: https://www.opengl.org/sdk/docs/man4/html/glUnmapBuffer.xhtml
+before GL 4.5 emulates glUnmapNamedBuffer by unmapping and unbinding
+the last known target for this buffer
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void unmapRange()
+
+&lt;!--
+_syntax: unmapRange()_
+_name: unmapRange_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+same as unmap, just to make the api more clear
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void updateData(&data)
+
+&lt;!--
+_syntax: updateData(&data)_
+_name: updateData_
+_returns: void_
+_returns_description: _
+_parameters: const vector&lt; T > &data_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+typed version of updateData, same functionality but guesses the size from the size
+of the passed vector and size of the type
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void updateData(bytes, *data)
+
+&lt;!--
+_syntax: updateData(bytes, *data)_
+_name: updateData_
+_returns: void_
+_returns_description: _
+_parameters: GLsizeiptr bytes, const void *data_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void updateData(offset, &data)
+
+&lt;!--
+_syntax: updateData(offset, &data)_
+_name: updateData_
+_returns: void_
+_returns_description: _
+_parameters: GLintptr offset, const vector&lt; T > &data_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+typed version of updateData, same functionality but guesses the size from the size
+of the passed vector and size of the type
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void updateData(offset, bytes, *data)
+
+&lt;!--
+_syntax: updateData(offset, bytes, *data)_
+_name: updateData_
+_returns: void_
+_returns_description: _
+_parameters: GLintptr offset, GLsizeiptr bytes, const void *data_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+glNamedBufferSubData: https://www.opengl.org/sdk/docs/man4/html/glBufferSubData.xhtml
+before GL 4.5 emulates glNamedBufferSubData by binding to last known target
+for this buffer uploading data to that target and unbinding again
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+##Variables
+
+
+
+###shared_ptr&lt; ofBufferObject::Data > data
+
+&lt;!--
+_name: data_
+_type: shared_ptr&lt; ofBufferObject::Data >_
+_access: private_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+</textarea></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1586012716389/documentation/gl/ofBufferObject/payload.js"></script><script src="/_nuxt/5f71eaca0bd2f1a0f939.js" defer></script><script src="/_nuxt/35a90d914f539af1362f.js" defer></script><script src="/_nuxt/906a3ca0fb13ed3c6651.js" defer></script><script src="/_nuxt/b673915e8a08acf593e8.js" defer></script><script src="/_nuxt/bf355f21967a23c26c07.js" defer></script>
+  </body>
+</html>

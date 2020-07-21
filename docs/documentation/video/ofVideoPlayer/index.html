@@ -1,0 +1,2476 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>ofVideoPlayer | documentation | ofDocs</title><meta data-n-head="ssr" data-hid="description" name="description" content="openFrameworks documentation and examples browser"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="openFrameworks documentation and examples browser" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="ofVideoPlayer | documentation | ofDocs" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="/files/images/ofw-logo.png" vmid="og:image"><link rel="preload" href="/_nuxt/5f71eaca0bd2f1a0f939.js" as="script"><link rel="preload" href="/_nuxt/906a3ca0fb13ed3c6651.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/b673915e8a08acf593e8.js" as="script"><link rel="preload" href="/_nuxt/46e8fcacdadb233d9fb6.css" as="style"><link rel="preload" href="/_nuxt/bf355f21967a23c26c07.js" as="script"><link rel="preload" href="/_nuxt/35a90d914f539af1362f.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/46e8fcacdadb233d9fb6.css">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app"><div id="menu"><div class="menu-inner"><div id="settings"></div><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><svg version="1.1" viewbox="0 0 110 58" width="110px" height="58px" enable-background="0 0 110 58" xml:space="preserve" class="logo"><g><path d="M58,29 C58,13 45,0 29,0 C13,0 0,13 0,29 C0,45 13,58 29,58 C45,58 58,45 58,29 Z"></path><rect x="59" y="0" width="25" height="58"></rect><rect x="85" y="26" width="15" height="15"></rect><path d="M85,0 L110,0 L85,25 L85,0 Z"></path></g></svg><div class="txt"><span class="docs f7 questrial">Docs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343							c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88							c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593							c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789							C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><!----></div><div id="lists" class="menu-inner mt1 mb2"><div class="inner"></div></div></div><div class="menu-bottom"><div class="inner"><button class="button"><!----><span><span class="ico">nights_stay</span></span></button></div></div></div><div id="document"><div id="renderer" class="main page"><div absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/video/ofVideoPlayer.markdown" route="/documentation/video/ofVideoPlayer.markdown" dir="../ofSite/documentation/video" ext="markdown" type="page" id="2512" parent="2488" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/" class="pink nuxt-link-active">documentation </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/video/" class="pink nuxt-link-active">video </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link selector"><span class="name">ofVideoPlayer</span><span class="chevron bottom"></span><select><option value="/documentation/video/ofAVFoundationPlayer">ofAVFoundationPlayer</option><option value="/documentation/video/ofDirectShowGrabber">ofDirectShowGrabber</option><option value="/documentation/video/ofDirectShowPlayer">ofDirectShowPlayer</option><option value="/documentation/video/ofGstAppSink">ofGstAppSink</option><option value="/documentation/video/ofGstCamData">ofGstCamData</option><option value="/documentation/video/ofGstDevice">ofGstDevice</option><option value="/documentation/video/ofGstFramerate">ofGstFramerate</option><option value="/documentation/video/ofGstUtils::ofGstMainLoopThread">ofGstUtils::ofGstMainLoopThread</option><option value="/documentation/video/ofGstUtils">ofGstUtils</option><option value="/documentation/video/ofGstVideoFormat">ofGstVideoFormat</option><option value="/documentation/video/ofGstVideoGrabber">ofGstVideoGrabber</option><option value="/documentation/video/ofGstVideoPlayer">ofGstVideoPlayer</option><option value="/documentation/video/ofGstVideoUtils">ofGstVideoUtils</option><option value="/documentation/video/ofiPhoneVideoGrabber">ofiPhoneVideoGrabber</option><option value="/documentation/video/ofiPhoneVideoPlayer">ofiPhoneVideoPlayer</option><option value="/documentation/video/ofQTKitGrabber">ofQTKitGrabber</option><option value="/documentation/video/ofQTKitPlayer">ofQTKitPlayer</option><option value="/documentation/video/ofQuickTimeGrabber">ofQuickTimeGrabber</option><option value="/documentation/video/ofQuickTimePlayer">ofQuickTimePlayer</option><option value="/documentation/video/ofVideoDevice">ofVideoDevice</option><option value="/documentation/video/ofVideoFormat">ofVideoFormat</option><option value="/documentation/video/ofVideoGrabber">ofVideoGrabber</option><option value="/documentation/video/ofVideoPlayer">ofVideoPlayer</option><option value="/documentation/video/ofVideoSavedEventArgs">ofVideoSavedEventArgs</option></select></span><!----></span></span></div></div></div><div class="editable-wrapper"><div class="header inner"><h1 class="page-title questrial"><span class="f7"><!----><span>ofVideoPlayer</span></span><span class="f3"></span></h1><div class="actions"><a href="/ofdocs/contribute/" class="button"><i class="ico">edit</i><span>Edit</span></a></div></div><div class="rendered"><div id="documentation-page" static="true"><div id="offset-page"><div id="doc-body" class="markdown"><div class="inner"><div id="description"><div class="full-description"><div class="html"><p>The ofVideoPlayer class loads in a movie file via quicktime in windows and OSX or gstreamer in linux, and offers various controls to play the movie, control the properties of the movie, and to access the pixels of a given frame.</p>
+<p>Example:</p>
+<pre><code class="language-{.cpp}">ofVideoPlayer myPlayer<span class="token punctuation">;</span>
+myPlayer<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token string">"movies/fingers.mov"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>You need to call play() for your video to begin playing:</p>
+<pre><code class="language-{.cpp}">myPlayer<span class="token punctuation">.</span><span class="token function">play</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>and update to ensure that you're grabbing new frames from the file as the video library decodes them and serves them up as textures:</p>
+<pre><code class="language-{.cpp}">
+<span class="token keyword">void</span> myApp<span class="token operator">::</span><span class="token function">update</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    myPlayer<span class="token punctuation">.</span><span class="token function">update</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// get all the new frames</span>
+<span class="token punctuation">}</span>
+
+</code></pre>
+<p>Just like the ofImage, the ofVideoPlayer can be drawn:</p>
+<pre><code class="language-{.cpp}">
+myPlayer<span class="token punctuation">.</span><span class="token function">draw</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// draw at 20, 20 from the current transform matrix</span>
+
+</code></pre>
+<p>or you can just get the pixels from the player, as we do in the videoGrabberExample in the examples:</p>
+<pre><code class="language-{.cpp}">
+<span class="token keyword">if</span> <span class="token punctuation">(</span>vidGrabber<span class="token punctuation">.</span><span class="token function">isFrameNew</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	<span class="token keyword">int</span> totalPixels <span class="token operator">=</span> camWidth<span class="token operator">*</span>camHeight<span class="token operator">*</span><span class="token number">3</span><span class="token punctuation">;</span>
+	<span class="token keyword">unsigned</span> <span class="token keyword">char</span> <span class="token operator">*</span> pixels <span class="token operator">=</span> vidGrabber<span class="token punctuation">.</span><span class="token function">getPixels</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> totalPixels<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		videoInverted<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">255</span> <span class="token operator">-</span> pixels<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	texture<span class="token punctuation">.</span><span class="token function">loadData</span><span class="token punctuation">(</span>videoInverted<span class="token punctuation">,</span> camWidth<span class="token punctuation">,</span>camHeight<span class="token punctuation">,</span> GL_RGB<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre>
+<h1></h1>
+</div></div></div><div id="methods"><hr><section name="bind" id="bind" class="mb2"><div class="method mb2"><h3 class="f3 title">bind( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">bind</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Binds the video texture to the current rendering context.</p>
+<p>For advanced users who need to manually manage texture drawing
+without calling draw(). Only binds the texture if one exists.</p>
+<p><strong>See also</strong>: ofTexture::bind()</p>
+<p><strong>See also</strong>: http://www.opengl.org/sdk/docs/man4/html/glBindTexture.xhtml</p>
+</div><div class="desc"></div></div><hr></section><section name="close" id="close" class="mb2"><div class="method mb2"><h3 class="f3 title">close( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">close</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Closes the movie file releases its resources.</p>
+<p>This is an alias for closeMovie().</p>
+<p><strong>See also</strong>: closeMovie()</p>
+</div><div class="desc"></div></div><hr></section><section name="closeMovie" id="closeMovie" class="mb2"><div class="method mb2"><h3 class="f3 title">closeMovie( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">closeMovie</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Closes the movie file and releases its resources.</p>
+<p>This is an alias for close().</p>
+<p><strong>See also</strong>: close()</p>
+</div><div class="desc"><p>Example:</p>
+<pre><code class="language-{.cpp}">ofVideoPlayer myPlayer<span class="token punctuation">;</span>
+myPlayer<span class="token punctuation">.</span><span class="token function">loadMovie</span><span class="token punctuation">(</span><span class="token string">"myMovie.mov"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Loads video resources</span>
+myPlayer<span class="token punctuation">.</span><span class="token function">closeMovie</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//Unloads video resources</span>
+</code></pre>
+</div></div><hr></section><section name="draw" id="draw" class="mb2"><div class="method mb2"><h3 class="f3 title">draw( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">draw</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> x<span class="token punctuation">,</span> <span class="token keyword">float</span> y</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Draws the texture of the movie player class as the position (x,y) with the internal width and height of the loaded movie.</p>
+</div></div><hr></section><section name="draw" id="draw" class="mb2"><div class="method mb2"><h3 class="f3 title">draw( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">draw</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> x<span class="token punctuation">,</span> <span class="token keyword">float</span> y<span class="token punctuation">,</span> <span class="token keyword">float</span> w<span class="token punctuation">,</span> <span class="token keyword">float</span> h</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Draws the texture of the movie player class at the position (x,y) with the given width (w) and height (h).</p>
+</div></div><hr></section><section name="firstFrame" id="firstFrame" class="mb2"><div class="method mb2"><h3 class="f3 title">firstFrame( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">firstFrame</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getCurrentFrame" id="getCurrentFrame" class="mb2"><div class="method mb2"><h3 class="f3 title">getCurrentFrame( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">getCurrentFrame</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getDuration" id="getDuration" class="mb2"><div class="method mb2"><h3 class="f3 title">getDuration( <!----> )</h3><code><span class="token keyword">float  </span><span class="token function">getDuration</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getHeight" id="getHeight" class="mb2"><div class="method mb2"><h3 class="f3 title">getHeight( <!----> )</h3><code><span class="token keyword">float  </span><span class="token function">getHeight</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getIsMovieDone" id="getIsMovieDone" class="mb2"><div class="method mb2"><h3 class="f3 title">getIsMovieDone( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">getIsMovieDone</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getLoopState" id="getLoopState" class="mb2"><div class="method mb2"><h3 class="f3 title">getLoopState( <!----> )</h3><code><span class="token keyword">ofLoopType  </span><span class="token function">getLoopState</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getMoviePath" id="getMoviePath" class="mb2"><div class="method mb2"><h3 class="f3 title">getMoviePath( <!----> )</h3><code><span class="token keyword">string  </span><span class="token function">getMoviePath</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Get the path to the loaded video file.</p>
+<p>If no video file is loaded this returns an empty string.</p>
+<p><strong>Returns</strong>: A path to the loaded video or an empty string if not loaded.</p>
+</div><div class="desc"></div></div><hr></section><section name="getPixelFormat" id="getPixelFormat" class="mb2"><div class="method mb2"><h3 class="f3 title">getPixelFormat( <!----> )</h3><code><span class="token keyword">ofPixelFormat  </span><span class="token function">getPixelFormat</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getPixels" id="getPixels" class="mb2"><div class="method mb2"><h3 class="f3 title">getPixels( <!----> )</h3><code><span class="token keyword">ofPixels &  </span><span class="token function">getPixels</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>For example, to get the red, green, and blue of the pixel at (100,20):</p>
+<pre><code class="language-{.cpp}"><span class="token keyword">unsigned</span> <span class="token keyword">char</span> <span class="token operator">*</span> pixels <span class="token operator">=</span> myMovie<span class="token punctuation">.</span><span class="token function">getPixels</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> nChannels <span class="token operator">=</span> movie<span class="token punctuation">.</span><span class="token function">getPixelsRef</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getNumChannels</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> widthOfLine <span class="token operator">=</span> myMovie<span class="token punctuation">.</span>width<span class="token punctuation">;</span>  <span class="token comment" spellcheck="true">// how long is a line of pixels</span>
+<span class="token keyword">int</span> red 	<span class="token operator">=</span> pixels<span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">20</span> <span class="token operator">*</span> widthOfLine <span class="token operator">+</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token operator">*</span> nChannels    <span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> green 	<span class="token operator">=</span> pixels<span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">20</span> <span class="token operator">*</span> widthOfLine <span class="token operator">+</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token operator">*</span> nChannels <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">int</span> blue 	<span class="token operator">=</span> pixels<span class="token punctuation">[</span><span class="token punctuation">(</span><span class="token number">20</span> <span class="token operator">*</span> widthOfLine <span class="token operator">+</span> <span class="token number">100</span><span class="token punctuation">)</span> <span class="token operator">*</span> nChannels <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre>
+</div></div><hr></section><section name="getPixels" id="getPixels" class="mb2"><div class="method mb2"><h3 class="f3 title">getPixels( <!----> )</h3><code><span class="token keyword">const ofPixels &  </span><span class="token function">getPixels</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getPosition" id="getPosition" class="mb2"><div class="method mb2"><h3 class="f3 title">getPosition( <!----> )</h3><code><span class="token keyword">float  </span><span class="token function">getPosition</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getSpeed" id="getSpeed" class="mb2"><div class="method mb2"><h3 class="f3 title">getSpeed( <!----> )</h3><code><span class="token keyword">float  </span><span class="token function">getSpeed</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getTexture" id="getTexture" class="mb2"><div class="method mb2"><h3 class="f3 title">getTexture( <!----> )</h3><code><span class="token keyword">ofTexture &  </span><span class="token function">getTexture</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getTexture" id="getTexture" class="mb2"><div class="method mb2"><h3 class="f3 title">getTexture( <!----> )</h3><code><span class="token keyword">const ofTexture &  </span><span class="token function">getTexture</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getTexturePlanes" id="getTexturePlanes" class="mb2"><div class="method mb2"><h3 class="f3 title">getTexturePlanes( <!----> )</h3><code><span class="token keyword">int &  </span><span class="token function">getTexturePlanes</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getTexturePlanes" id="getTexturePlanes" class="mb2"><div class="method mb2"><h3 class="f3 title">getTexturePlanes( <!----> )</h3><code><span class="token keyword">const int &  </span><span class="token function">getTexturePlanes</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getTotalNumFrames" id="getTotalNumFrames" class="mb2"><div class="method mb2"><h3 class="f3 title">getTotalNumFrames( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">getTotalNumFrames</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getWidth" id="getWidth" class="mb2"><div class="method mb2"><h3 class="f3 title">getWidth( <!----> )</h3><code><span class="token keyword">float  </span><span class="token function">getWidth</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="initDefaultPlayer" id="initDefaultPlayer" class="mb2"><div class="method mb2"><h3 class="f3 title">initDefaultPlayer( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">initDefaultPlayer</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Initialize the default player implementations.</p>
+</div><div class="desc"></div></div><hr></section><section name="isFrameNew" id="isFrameNew" class="mb2"><div class="method mb2"><h3 class="f3 title">isFrameNew( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">isFrameNew</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>This gets whether there are new pixels in your movies player. This is a way to poll the library that's actually reading your video file to see whether there's something new: For example, if the pixels are new, you could then process them.</p>
+<pre><code class="language-{.cpp}">
+<span class="token keyword">if</span> <span class="token punctuation">(</span>myMovie<span class="token punctuation">.</span><span class="token function">isFrameNew</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+	ofPixels p <span class="token operator">=</span> myPlayer<span class="token punctuation">.</span><span class="token function">getPixelsRef</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token comment" spellcheck="true">// walk over each pixel and make something fun</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</div></div><hr></section><section name="isInitialized" id="isInitialized" class="mb2"><div class="method mb2"><h3 class="f3 title">isInitialized( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">isInitialized</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="isLoaded" id="isLoaded" class="mb2"><div class="method mb2"><h3 class="f3 title">isLoaded( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">isLoaded</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Whether the resources that you've tried to load into your ofVideoPlayer have been loaded yet.</p>
+</div></div><hr></section><section name="isPaused" id="isPaused" class="mb2"><div class="method mb2"><h3 class="f3 title">isPaused( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">isPaused</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Whether the the ofVideoPlayer is currently paused.</p>
+</div></div><hr></section><section name="isPlaying" id="isPlaying" class="mb2"><div class="method mb2"><h3 class="f3 title">isPlaying( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">isPlaying</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Whether the the ofVideoPlayer is currently playing.</p>
+</div></div><hr></section><section name="isUsingTexture" id="isUsingTexture" class="mb2"><div class="method mb2"><h3 class="f3 title">isUsingTexture( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">isUsingTexture</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="load" id="load" class="mb2"><div class="method mb2"><h3 class="f3 title">load( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">load</span><span class="token punctuation">(</span><code class="token boolean">string name</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="loadAsync" id="loadAsync" class="mb2"><div class="method mb2"><h3 class="f3 title">loadAsync( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">loadAsync</span><span class="token punctuation">(</span><code class="token boolean">string name</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="nextFrame" id="nextFrame" class="mb2"><div class="method mb2"><h3 class="f3 title">nextFrame( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">nextFrame</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofVideoPlayer" id="ofVideoPlayer" class="mb2"><div class="method mb2"><h3 class="f3 title">ofVideoPlayer( <!----> )</h3><code><!----><span class="token function">ofVideoPlayer</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Constructor.</p>
+</div></div><hr></section><section name="play" id="play" class="mb2"><div class="method mb2"><h3 class="f3 title">play( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">play</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="previousFrame" id="previousFrame" class="mb2"><div class="method mb2"><h3 class="f3 title">previousFrame( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">previousFrame</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="resetAnchor" id="resetAnchor" class="mb2"><div class="method mb2"><h3 class="f3 title">resetAnchor( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">resetAnchor</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Resets the ancher point of this ofVideoPlayer, if one has been set.</p>
+</div></div><hr></section><section name="setAnchorPercent" id="setAnchorPercent" class="mb2"><div class="method mb2"><h3 class="f3 title">setAnchorPercent( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setAnchorPercent</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> xPct<span class="token punctuation">,</span> <span class="token keyword">float</span> yPct</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Sets an anchor percentage for this ofVideoPlayer instance</p>
+</div></div><hr></section><section name="setAnchorPoint" id="setAnchorPoint" class="mb2"><div class="method mb2"><h3 class="f3 title">setAnchorPoint( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setAnchorPoint</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> x<span class="token punctuation">,</span> <span class="token keyword">float</span> y</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Sets anchor points for this ofVideoPlayer instance.</p>
+</div></div><hr></section><section name="setFrame" id="setFrame" class="mb2"><div class="method mb2"><h3 class="f3 title">setFrame( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setFrame</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> frame</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setLoopState" id="setLoopState" class="mb2"><div class="method mb2"><h3 class="f3 title">setLoopState( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setLoopState</span><span class="token punctuation">(</span><code class="token boolean">ofLoopType state</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><pre><code class="language-{.cpp}">
+OF_LOOP_NONE <span class="token operator">-</span> don't loop<span class="token punctuation">,</span> the movie will stop when it gets to the last <span class="token function">frame</span> <span class="token punctuation">(</span><span class="token operator">or</span> first frame<span class="token punctuation">,</span> <span class="token keyword">if</span> playing backwards<span class="token punctuation">)</span>
+OF_LOOP_NORMAL <span class="token operator">-</span> loop <span class="token function">normally</span> <span class="token punctuation">(</span>the last frame loops to the first frame<span class="token punctuation">)</span>
+OF_LOOP_PALINDROME <span class="token operator">-</span> loop back <span class="token operator">and</span> forth<span class="token punctuation">.</span> Movie will play forward until it gets to the last frame<span class="token punctuation">,</span> then plays backwards until it gets to the first frame<span class="token punctuation">,</span> <span class="token operator">and</span> so on<span class="token punctuation">.</span>
+</code></pre>
+</div></div><hr></section><section name="setPaused" id="setPaused" class="mb2"><div class="method mb2"><h3 class="f3 title">setPaused( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setPaused</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">bool</span> bPause</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setPixelFormat" id="setPixelFormat" class="mb2"><div class="method mb2"><h3 class="f3 title">setPixelFormat( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">setPixelFormat</span><span class="token punctuation">(</span><code class="token boolean">ofPixelFormat pixelFormat</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>OSX: Choose from OF_PIXELS_RGB or OF_PIXELS_RGBA</p>
+</div></div><hr></section><section name="setPosition" id="setPosition" class="mb2"><div class="method mb2"><h3 class="f3 title">setPosition( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setPosition</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> pct</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Sets the position of the playhead to a given percentage through the movie. This can be used to scrub through a movie.</p>
+</div></div><hr></section><section name="setSpeed" id="setSpeed" class="mb2"><div class="method mb2"><h3 class="f3 title">setSpeed( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setSpeed</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> speed</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setUseTexture" id="setUseTexture" class="mb2"><div class="method mb2"><h3 class="f3 title">setUseTexture( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUseTexture</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">bool</span> bUse</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"><p>Set the usage of texture inside this object. Typically, you will want to draw the movie on screen, and so it will be necessary to use a texture, but there may be cases where it helps to not use a texture in order to save memory or for better performance. To disable the internal use of the texture, you can load the movie like this:</p>
+<pre><code class="language-{.cpp}">
+myMovie<span class="token punctuation">.</span><span class="token function">setUseTexture</span><span class="token punctuation">(</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+myMovie<span class="token punctuation">.</span><span class="token function">loadMovie</span><span class="token punctuation">(</span><span class="token string">"blah.mov"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+</div></div><hr></section><section name="setVolume" id="setVolume" class="mb2"><div class="method mb2"><h3 class="f3 title">setVolume( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setVolume</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> volume</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="stop" id="stop" class="mb2"><div class="method mb2"><h3 class="f3 title">stop( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">stop</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="unbind" id="unbind" class="mb2"><div class="method mb2"><h3 class="f3 title">unbind( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">unbind</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Unbinds the video texture from the current rendering context.</p>
+<p>For advanced users who need to manually manage texture drawing
+without calling draw(). Only binds the texture if one exists.</p>
+<p><strong>See also</strong>: ofTexture::unbind()</p>
+</div><div class="desc"></div></div><hr></section><section name="update" id="update" class="mb2"><div class="method mb2"><h3 class="f3 title">update( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">update</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>Update the video player's internal state to continue playback.</p>
+<p>If normal video playback is desired, this method is usually called
+once per animation frame inside of ofApp::update().</p>
+</div><div class="desc"></div></div><hr></section></div></div></div></div><div id="side-menu"><div id="params"><h4 class="f3">Variables</h4><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>bUseTexture</span><span class="token comment">True if the video player is using a texture.
+</span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofPixelFormat </span><span>internalPixelFormat</span><span class="token comment">The internal pixel format.
+</span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">string </span><span>moviePath</span><span class="token comment">The stored path to the video's path.
+</span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofPtr </span><span>player</span><span class="token comment">A pointer to the internal video player implementation.
+</span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofTexture* </span><span>playerTex</span><span class="token comment">A pointer to the internal player's texture if available.
+Video players that implement ofBaseVideoPlayer::getTexturePtr()
+can provide a pointer to an internal texture. When possible,
+ofVideoPlayer will use the internal texture to avoid extra pixel
+copies.
+</span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofTexture </span><span>tex</span><span class="token comment">A collection of texture planes used by the video player.
+</span></div><div class="desc"></div></div></code></div><div id="methods-list"><h4 class="f3">Methods</h4><div class="anchor"><code><a href="#bind" class="pink"><span>bind</span><!----></a></code></div><div class="anchor"><code><a href="#close" class="pink"><span>close</span><!----></a></code></div><div class="anchor"><code><a href="#closeMovie" class="pink"><span>closeMovie</span><!----></a></code></div><div class="anchor"><code><a href="#draw" class="pink"><span>draw</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#firstFrame"><span>firstFrame</span><!----></a></code></div><div class="anchor"><code><a href="#getCurrentFrame"><span>getCurrentFrame</span><!----></a></code></div><div class="anchor"><code><a href="#getDuration"><span>getDuration</span><!----></a></code></div><div class="anchor"><code><a href="#getHeight"><span>getHeight</span><!----></a></code></div><div class="anchor"><code><a href="#getIsMovieDone"><span>getIsMovieDone</span><!----></a></code></div><div class="anchor"><code><a href="#getLoopState"><span>getLoopState</span><!----></a></code></div><div class="anchor"><code><a href="#getMoviePath" class="pink"><span>getMoviePath</span><!----></a></code></div><div class="anchor"><code><a href="#getPixelFormat"><span>getPixelFormat</span><!----></a></code></div><div class="anchor"><code><a href="#getPixels" class="pink"><span>getPixels</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#getPosition"><span>getPosition</span><!----></a></code></div><div class="anchor"><code><a href="#getSpeed"><span>getSpeed</span><!----></a></code></div><div class="anchor"><code><a href="#getTexture"><span>getTexture</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#getTexturePlanes"><span>getTexturePlanes</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#getTotalNumFrames"><span>getTotalNumFrames</span><!----></a></code></div><div class="anchor"><code><a href="#getWidth"><span>getWidth</span><!----></a></code></div><div class="anchor"><code><a href="#initDefaultPlayer" class="pink"><span>initDefaultPlayer</span><!----></a></code></div><div class="anchor"><code><a href="#isFrameNew" class="pink"><span>isFrameNew</span><!----></a></code></div><div class="anchor"><code><a href="#isInitialized"><span>isInitialized</span><!----></a></code></div><div class="anchor"><code><a href="#isLoaded" class="pink"><span>isLoaded</span><!----></a></code></div><div class="anchor"><code><a href="#isPaused" class="pink"><span>isPaused</span><!----></a></code></div><div class="anchor"><code><a href="#isPlaying" class="pink"><span>isPlaying</span><!----></a></code></div><div class="anchor"><code><a href="#isUsingTexture"><span>isUsingTexture</span><!----></a></code></div><div class="anchor"><code><a href="#load"><span>load</span><!----></a></code></div><div class="anchor"><code><a href="#loadAsync"><span>loadAsync</span><!----></a></code></div><div class="anchor"><code><a href="#nextFrame"><span>nextFrame</span><!----></a></code></div><div class="anchor"><code><a href="#ofVideoPlayer" class="pink"><span>ofVideoPlayer</span><!----></a></code></div><div class="anchor"><code><a href="#play"><span>play</span><!----></a></code></div><div class="anchor"><code><a href="#previousFrame"><span>previousFrame</span><!----></a></code></div><div class="anchor"><code><a href="#resetAnchor" class="pink"><span>resetAnchor</span><!----></a></code></div><div class="anchor"><code><a href="#setAnchorPercent" class="pink"><span>setAnchorPercent</span><!----></a></code></div><div class="anchor"><code><a href="#setAnchorPoint" class="pink"><span>setAnchorPoint</span><!----></a></code></div><div class="anchor"><code><a href="#setFrame"><span>setFrame</span><!----></a></code></div><div class="anchor"><code><a href="#setLoopState" class="pink"><span>setLoopState</span><!----></a></code></div><div class="anchor"><code><a href="#setPaused"><span>setPaused</span><!----></a></code></div><div class="anchor"><code><a href="#setPixelFormat" class="pink"><span>setPixelFormat</span><!----></a></code></div><div class="anchor"><code><a href="#setPosition" class="pink"><span>setPosition</span><!----></a></code></div><div class="anchor"><code><a href="#setSpeed"><span>setSpeed</span><!----></a></code></div><div class="anchor"><code><a href="#setUseTexture" class="pink"><span>setUseTexture</span><!----></a></code></div><div class="anchor"><code><a href="#setVolume"><span>setVolume</span><!----></a></code></div><div class="anchor"><code><a href="#stop"><span>stop</span><!----></a></code></div><div class="anchor"><code><a href="#unbind" class="pink"><span>unbind</span><!----></a></code></div><div class="anchor"><code><a href="#update" class="pink"><span>update</span><!----></a></code></div></div><div id="see-also" filename="ofVideoPlayer.markdown" absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/video/ofVideoPlayer.markdown" route="/documentation/video/ofVideoPlayer.markdown" dir="../ofSite/documentation/video" ext="markdown" type="page" parent="2488" breadcrumbs="2488,1968" siblings="" translations="[object Object]" class="see-also"><h4 class="f3">See also</h4><div class="also"><a href="/openframeworks/video/ofVideoPlayer_h"><span class="origin">openframeworks</span><span class="name">ofVideoPlayer.h</span></a></div><div class="also"><a href="/openframeworks/video/ofVideoPlayer_cpp"><span class="origin">openframeworks</span><span class="name">ofVideoPlayer.cpp</span></a></div></div></div></div></div><textarea rows="0" class="markdown-editor" style="display:none">#class ofVideoPlayer
+
+
+&lt;!--
+_visible: True_
+_advanced: False_
+_istemplated: False_
+_extends: ofBaseVideoPlayer, ofBaseVideoDraws_
+-->
+
+##InlineDescription
+
+
+
+
+
+
+##Description
+
+The ofVideoPlayer class loads in a movie file via quicktime in windows and OSX or gstreamer in linux, and offers various controls to play the movie, control the properties of the movie, and to access the pixels of a given frame.
+
+Example:
+
+~~~~{.cpp}
+ofVideoPlayer myPlayer;
+myPlayer.load("movies/fingers.mov");
+~~~~
+
+You need to call play() for your video to begin playing:
+
+~~~~{.cpp}
+myPlayer.play();
+~~~~
+
+and update to ensure that you're grabbing new frames from the file as the video library decodes them and serves them up as textures:
+
+~~~~{.cpp}
+
+void myApp::update(){
+    myPlayer.update(); // get all the new frames
+}
+
+~~~~
+
+Just like the ofImage, the ofVideoPlayer can be drawn:
+
+~~~~{.cpp}
+
+myPlayer.draw(20,20); // draw at 20, 20 from the current transform matrix
+
+~~~~
+
+or you can just get the pixels from the player, as we do in the videoGrabberExample in the examples:
+
+~~~~{.cpp}
+
+if (vidGrabber.isFrameNew()){
+	int totalPixels = camWidth*camHeight*3;
+	unsigned char * pixels = vidGrabber.getPixels();
+	for (int i = 0; i &lt; totalPixels; i++){
+		videoInverted[i] = 255 - pixels[i];
+	}
+	texture.loadData(videoInverted, camWidth,camHeight, GL_RGB);
+}
+
+~~~~
+
+
+
+
+
+##Methods
+
+
+
+###void bind()
+
+&lt;!--
+_syntax: bind()_
+_name: bind_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Binds the video texture to the current rendering context.
+
+For advanced users who need to manually manage texture drawing
+without calling draw(). Only binds the texture if one exists.
+
+
+**See also**: ofTexture::bind()
+
+**See also**: http://www.opengl.org/sdk/docs/man4/html/glBindTexture.xhtml
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void close()
+
+&lt;!--
+_syntax: close()_
+_name: close_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Closes the movie file releases its resources.
+
+This is an alias for closeMovie().
+
+
+**See also**: closeMovie()
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void closeMovie()
+
+&lt;!--
+_syntax: closeMovie()_
+_name: closeMovie_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Closes the movie file and releases its resources.
+
+This is an alias for close().
+
+
+**See also**: close()
+
+
+
+
+
+_description: _
+
+Example:
+
+~~~~{.cpp}
+ofVideoPlayer myPlayer;
+myPlayer.loadMovie("myMovie.mov"); //Loads video resources
+myPlayer.closeMovie(); //Unloads video resources
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void draw(x, y)
+
+&lt;!--
+_syntax: draw(x, y)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Draws the texture of the movie player class as the position (x,y) with the internal width and height of the loaded movie. 
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void draw(x, y, w, h)
+
+&lt;!--
+_syntax: draw(x, y, w, h)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y, float w, float h_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Draws the texture of the movie player class at the position (x,y) with the given width (w) and height (h). 
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void firstFrame()
+
+&lt;!--
+_syntax: firstFrame()_
+_name: firstFrame_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int getCurrentFrame()
+
+&lt;!--
+_syntax: getCurrentFrame()_
+_name: getCurrentFrame_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float getDuration()
+
+&lt;!--
+_syntax: getDuration()_
+_name: getDuration_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float getHeight()
+
+&lt;!--
+_syntax: getHeight()_
+_name: getHeight_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool getIsMovieDone()
+
+&lt;!--
+_syntax: getIsMovieDone()_
+_name: getIsMovieDone_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofLoopType getLoopState()
+
+&lt;!--
+_syntax: getLoopState()_
+_name: getLoopState_
+_returns: ofLoopType_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###string getMoviePath()
+
+&lt;!--
+_syntax: getMoviePath()_
+_name: getMoviePath_
+_returns: string_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get the path to the loaded video file.
+
+If no video file is loaded this returns an empty string.
+
+
+**Returns**: A path to the loaded video or an empty string if not loaded.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofPixelFormat getPixelFormat()
+
+&lt;!--
+_syntax: getPixelFormat()_
+_name: getPixelFormat_
+_returns: ofPixelFormat_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofPixels & getPixels()
+
+&lt;!--
+_syntax: getPixels()_
+_name: getPixels_
+_returns: ofPixels &_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+For example, to get the red, green, and blue of the pixel at (100,20):
+
+~~~~{.cpp}
+unsigned char * pixels = myMovie.getPixels();
+int nChannels = movie.getPixelsRef().getNumChannels();
+int widthOfLine = myMovie.width;  // how long is a line of pixels
+int red 	= pixels[(20 * widthOfLine + 100) * nChannels    ];
+int green 	= pixels[(20 * widthOfLine + 100) * nChannels + 1];
+int blue 	= pixels[(20 * widthOfLine + 100) * nChannels + 2];
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###const ofPixels & getPixels()
+
+&lt;!--
+_syntax: getPixels()_
+_name: getPixels_
+_returns: const ofPixels &_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###shared_ptr&lt; ofBaseVideoPlayer > getPlayer()
+
+&lt;!--
+_syntax: getPlayer()_
+_name: getPlayer_
+_returns: shared_ptr&lt; ofBaseVideoPlayer >_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get a pointer to the internal video player implementation.
+
+This returns a pointer to the ofBaseVideoPlayer interface. For
+implementation-specfic features, this can be cast to the subtype
+using dynamic_cast&lt;MyVideoPlayerImplementation>(getPlayer()) or the
+templated getPlayer&lt;MyVideoPlayerImplementation>() method.
+
+
+**Returns**: A pointer to the internal video player implementation.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###const shared_ptr&lt; ofBaseVideoPlayer > getPlayer()
+
+&lt;!--
+_syntax: getPlayer()_
+_name: getPlayer_
+_returns: const shared_ptr&lt; ofBaseVideoPlayer >_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get a const pointer to the internal video player implementation.
+
+This returns a pointer to the ofBaseVideoPlayer interface. For
+implementation-specfic features, this can be cast to the subtype
+using dynamic_pointer_cast&lt;MyVideoPlayerImplementation>(getPlayer())
+or the templated getPlayer&lt;MyVideoPlayerImplementation>() method.
+
+
+**Returns**: A const pointer to the internal video player implementation.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###shared_ptr&lt; PlayerType > getPlayer()
+
+&lt;!--
+_syntax: getPlayer()_
+_name: getPlayer_
+_returns: shared_ptr&lt; PlayerType >_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get a pointer to the internal video player implementation.
+
+Calling getPlayer&lt;MyVideoPlayerImplementation>() is equivalent to
+dynamic_pointer_cast&lt;MyVideoPlayerImplementation>(getPlayer()).
+
+
+**Returns**: A pointer to the internal video player implementation or
+			 nullptr if the cast fails.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###const shared_ptr&lt; PlayerType > getPlayer()
+
+&lt;!--
+_syntax: getPlayer()_
+_name: getPlayer_
+_returns: const shared_ptr&lt; PlayerType >_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Get a const pointer to the internal video player implementation.
+
+Calling getPlayer&lt;MyVideoPlayerImplementation>() is equivalent to
+dynamic_pointer_cast&lt;MyVideoPlayerImplementation>(getPlayer()).
+
+
+**Returns**: A const pointer to the internal video player implementation
+			 or nullptr if the cast fails.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float getPosition()
+
+&lt;!--
+_syntax: getPosition()_
+_name: getPosition_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float getSpeed()
+
+&lt;!--
+_syntax: getSpeed()_
+_name: getSpeed_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofTexture & getTexture()
+
+&lt;!--
+_syntax: getTexture()_
+_name: getTexture_
+_returns: ofTexture &_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###const ofTexture & getTexture()
+
+&lt;!--
+_syntax: getTexture()_
+_name: getTexture_
+_returns: const ofTexture &_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int & getTexturePlanes()
+
+&lt;!--
+_syntax: getTexturePlanes()_
+_name: getTexturePlanes_
+_returns: int &_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###const int & getTexturePlanes()
+
+&lt;!--
+_syntax: getTexturePlanes()_
+_name: getTexturePlanes_
+_returns: const int &_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int getTotalNumFrames()
+
+&lt;!--
+_syntax: getTotalNumFrames()_
+_name: getTotalNumFrames_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###float getWidth()
+
+&lt;!--
+_syntax: getWidth()_
+_name: getWidth_
+_returns: float_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void initDefaultPlayer()
+
+&lt;!--
+_syntax: initDefaultPlayer()_
+_name: initDefaultPlayer_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: private_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Initialize the default player implementations.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool isFrameNew()
+
+&lt;!--
+_syntax: isFrameNew()_
+_name: isFrameNew_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+This gets whether there are new pixels in your movies player. This is a way to poll the library that's actually reading your video file to see whether there's something new: For example, if the pixels are new, you could then process them.
+
+~~~~{.cpp}
+
+if (myMovie.isFrameNew()){
+	ofPixels p = myPlayer.getPixelsRef();
+	// walk over each pixel and make something fun
+}
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool isInitialized()
+
+&lt;!--
+_syntax: isInitialized()_
+_name: isInitialized_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool isLoaded()
+
+&lt;!--
+_syntax: isLoaded()_
+_name: isLoaded_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Whether the resources that you've tried to load into your ofVideoPlayer have been loaded yet.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool isPaused()
+
+&lt;!--
+_syntax: isPaused()_
+_name: isPaused_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Whether the the ofVideoPlayer is currently paused.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool isPlaying()
+
+&lt;!--
+_syntax: isPlaying()_
+_name: isPlaying_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Whether the the ofVideoPlayer is currently playing.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool isUsingTexture()
+
+&lt;!--
+_syntax: isUsingTexture()_
+_name: isUsingTexture_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool load(name)
+
+&lt;!--
+_syntax: load(name)_
+_name: load_
+_returns: bool_
+_returns_description: _
+_parameters: string name_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void loadAsync(name)
+
+&lt;!--
+_syntax: loadAsync(name)_
+_name: loadAsync_
+_returns: void_
+_returns_description: _
+_parameters: string name_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void nextFrame()
+
+&lt;!--
+_syntax: nextFrame()_
+_name: nextFrame_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofVideoPlayer()
+
+&lt;!--
+_syntax: ofVideoPlayer()_
+_name: ofVideoPlayer_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Constructor.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void play()
+
+&lt;!--
+_syntax: play()_
+_name: play_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void previousFrame()
+
+&lt;!--
+_syntax: previousFrame()_
+_name: previousFrame_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void resetAnchor()
+
+&lt;!--
+_syntax: resetAnchor()_
+_name: resetAnchor_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: True_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Resets the ancher point of this ofVideoPlayer, if one has been set.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setAnchorPercent(xPct, yPct)
+
+&lt;!--
+_syntax: setAnchorPercent(xPct, yPct)_
+_name: setAnchorPercent_
+_returns: void_
+_returns_description: _
+_parameters: float xPct, float yPct_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: True_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Sets an anchor percentage for this ofVideoPlayer instance
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setAnchorPoint(x, y)
+
+&lt;!--
+_syntax: setAnchorPoint(x, y)_
+_name: setAnchorPoint_
+_returns: void_
+_returns_description: _
+_parameters: float x, float y_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Sets anchor points for this ofVideoPlayer instance.
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setFrame(frame)
+
+&lt;!--
+_syntax: setFrame(frame)_
+_name: setFrame_
+_returns: void_
+_returns_description: _
+_parameters: int frame_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setLoopState(state)
+
+&lt;!--
+_syntax: setLoopState(state)_
+_name: setLoopState_
+_returns: void_
+_returns_description: _
+_parameters: ofLoopType state_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+~~~~{.cpp}
+
+OF_LOOP_NONE - don't loop, the movie will stop when it gets to the last frame (or first frame, if playing backwards)
+OF_LOOP_NORMAL - loop normally (the last frame loops to the first frame)
+OF_LOOP_PALINDROME - loop back and forth. Movie will play forward until it gets to the last frame, then plays backwards until it gets to the first frame, and so on.
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setPaused(bPause)
+
+&lt;!--
+_syntax: setPaused(bPause)_
+_name: setPaused_
+_returns: void_
+_returns_description: _
+_parameters: bool bPause_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool setPixelFormat(pixelFormat)
+
+&lt;!--
+_syntax: setPixelFormat(pixelFormat)_
+_name: setPixelFormat_
+_returns: bool_
+_returns_description: _
+_parameters: ofPixelFormat pixelFormat_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+OSX: Choose from OF_PIXELS_RGB or OF_PIXELS_RGBA
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setPlayer(newPlayer)
+
+&lt;!--
+_syntax: setPlayer(newPlayer)_
+_name: setPlayer_
+_returns: void_
+_returns_description: _
+_parameters: shared_ptr&lt; ofBaseVideoPlayer > newPlayer_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Set the internal video player implementation.
+
+Advanced users may find it useful to set a custom internal video
+player implementation. The custom video player must implment the
+ofBaseVideoPlayer interface.
+
+
+**Parameters:**
+
+newPlayer Shared pointer to the new video player that extends
+from ofBaseVideoPlayer.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setPosition(pct)
+
+&lt;!--
+_syntax: setPosition(pct)_
+_name: setPosition_
+_returns: void_
+_returns_description: _
+_parameters: float pct_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Sets the position of the playhead to a given percentage through the movie. This can be used to scrub through a movie. 
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setSpeed(speed)
+
+&lt;!--
+_syntax: setSpeed(speed)_
+_name: setSpeed_
+_returns: void_
+_returns_description: _
+_parameters: float speed_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUseTexture(bUse)
+
+&lt;!--
+_syntax: setUseTexture(bUse)_
+_name: setUseTexture_
+_returns: void_
+_returns_description: _
+_parameters: bool bUse_
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+Set the usage of texture inside this object. Typically, you will want to draw the movie on screen, and so it will be necessary to use a texture, but there may be cases where it helps to not use a texture in order to save memory or for better performance. To disable the internal use of the texture, you can load the movie like this:
+~~~~{.cpp}
+
+myMovie.setUseTexture(false);
+myMovie.loadMovie("blah.mov");
+~~~~
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setVolume(volume)
+
+&lt;!--
+_syntax: setVolume(volume)_
+_name: setVolume_
+_returns: void_
+_returns_description: _
+_parameters: float volume_
+_access: public_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void stop()
+
+&lt;!--
+_syntax: stop()_
+_name: stop_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void unbind()
+
+&lt;!--
+_syntax: unbind()_
+_name: unbind_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Unbinds the video texture from the current rendering context.
+
+For advanced users who need to manually manage texture drawing
+without calling draw(). Only binds the texture if one exists.
+
+
+**See also**: ofTexture::unbind()
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void update()
+
+&lt;!--
+_syntax: update()_
+_name: update_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+Update the video player's internal state to continue playback.
+
+If normal video playback is desired, this method is usually called
+once per animation frame inside of ofApp::update().
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+##Variables
+
+
+
+###bool bUseTexture
+
+&lt;!--
+_name: bUseTexture_
+_type: bool_
+_access: private_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+True if the video player is using a texture.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofPixelFormat internalPixelFormat
+
+&lt;!--
+_name: internalPixelFormat_
+_type: ofPixelFormat_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+The internal pixel format.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###string moviePath
+
+&lt;!--
+_name: moviePath_
+_type: string_
+_access: private_
+_version_started: 0072_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+The stored path to the video's path.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofPtr player
+
+&lt;!--
+_name: player_
+_type: ofPtr_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+A pointer to the internal video player implementation.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofTexture *  playerTex
+
+&lt;!--
+_name: playerTex_
+_type: ofTexture * _
+_access: private_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+A pointer to the internal player's texture if available.
+
+Video players that implement ofBaseVideoPlayer::getTexturePtr()
+can provide a pointer to an internal texture. When possible,
+ofVideoPlayer will use the internal texture to avoid extra pixel
+copies.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofTexture tex
+
+&lt;!--
+_name: tex_
+_type: ofTexture_
+_access: private_
+_version_started: 006_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+A collection of texture planes used by the video player.
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+</textarea></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1586012716389/documentation/video/ofVideoPlayer/payload.js"></script><script src="/_nuxt/5f71eaca0bd2f1a0f939.js" defer></script><script src="/_nuxt/35a90d914f539af1362f.js" defer></script><script src="/_nuxt/906a3ca0fb13ed3c6651.js" defer></script><script src="/_nuxt/b673915e8a08acf593e8.js" defer></script><script src="/_nuxt/bf355f21967a23c26c07.js" defer></script>
+  </body>
+</html>

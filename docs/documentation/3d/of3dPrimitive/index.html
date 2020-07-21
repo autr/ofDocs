@@ -1,0 +1,1394 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>of3dPrimitive | documentation | ofDocs</title><meta data-n-head="ssr" data-hid="description" name="description" content="openFrameworks documentation and examples browser"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="openFrameworks documentation and examples browser" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="of3dPrimitive | documentation | ofDocs" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="/files/images/ofw-logo.png" vmid="og:image"><link rel="preload" href="/_nuxt/5f71eaca0bd2f1a0f939.js" as="script"><link rel="preload" href="/_nuxt/906a3ca0fb13ed3c6651.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/b673915e8a08acf593e8.js" as="script"><link rel="preload" href="/_nuxt/46e8fcacdadb233d9fb6.css" as="style"><link rel="preload" href="/_nuxt/bf355f21967a23c26c07.js" as="script"><link rel="preload" href="/_nuxt/35a90d914f539af1362f.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/46e8fcacdadb233d9fb6.css">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app"><div id="menu"><div class="menu-inner"><div id="settings"></div><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><svg version="1.1" viewbox="0 0 110 58" width="110px" height="58px" enable-background="0 0 110 58" xml:space="preserve" class="logo"><g><path d="M58,29 C58,13 45,0 29,0 C13,0 0,13 0,29 C0,45 13,58 29,58 C45,58 58,45 58,29 Z"></path><rect x="59" y="0" width="25" height="58"></rect><rect x="85" y="26" width="15" height="15"></rect><path d="M85,0 L110,0 L85,25 L85,0 Z"></path></g></svg><div class="txt"><span class="docs f7 questrial">Docs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343							c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88							c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593							c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789							C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><!----></div><div id="lists" class="menu-inner mt1 mb2"><div class="inner"></div></div></div><div class="menu-bottom"><div class="inner"><button class="button"><!----><span><span class="ico">nights_stay</span></span></button></div></div></div><div id="document"><div id="renderer" class="main page"><div absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/3d/of3dPrimitive.markdown" route="/documentation/3d/of3dPrimitive.markdown" dir="../ofSite/documentation/3d" ext="markdown" type="page" id="1978" parent="1967" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/" class="pink nuxt-link-active">documentation </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/3d/" class="pink nuxt-link-active">3d </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link selector"><span class="name">of3dPrimitive</span><span class="chevron bottom"></span><select><option value="/documentation/3d/of3dGraphics_functions">of3dGraphics (functions)</option><option value="/documentation/3d/of3dGraphics">of3dGraphics</option><option value="/documentation/3d/of3dPrimitive">of3dPrimitive</option><option value="/documentation/3d/of3dUtils_functions">of3dUtils (functions)</option><option value="/documentation/3d/ofBoxPrimitive">ofBoxPrimitive</option><option value="/documentation/3d/ofCamera">ofCamera</option><option value="/documentation/3d/ofConePrimitive">ofConePrimitive</option><option value="/documentation/3d/ofCylinderPrimitive">ofCylinderPrimitive</option><option value="/documentation/3d/ofEasyCam">ofEasyCam</option><option value="/documentation/3d/ofIcoSpherePrimitive">ofIcoSpherePrimitive</option><option value="/documentation/3d/ofMesh_">ofMesh</option><option value="/documentation/3d/ofMeshFace_">ofMeshFace</option><option value="/documentation/3d/ofNode">ofNode</option><option value="/documentation/3d/ofPlanePrimitive">ofPlanePrimitive</option><option value="/documentation/3d/ofSpherePrimitive">ofSpherePrimitive</option></select></span><!----></span></span></div></div></div><div class="editable-wrapper"><div class="header inner"><h1 class="page-title questrial"><span class="f7"><!----><span>of3dPrimitive</span></span><span class="f3"></span></h1><div class="actions"><a href="/ofdocs/contribute/" class="button"><i class="ico">edit</i><span>Edit</span></a></div></div><div class="rendered"><div id="documentation-page" static="true"><div id="offset-page"><div id="doc-body" class="markdown"><div class="inner"><div id="description"><div class="full-description"><div class="html"><h1></h1>
+</div></div></div><div id="methods"><hr><section name="disableColors" id="disableColors" class="mb2"><div class="method mb2"><h3 class="f3 title">disableColors( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">disableColors</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="disableNormals" id="disableNormals" class="mb2"><div class="method mb2"><h3 class="f3 title">disableNormals( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">disableNormals</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="disableTextures" id="disableTextures" class="mb2"><div class="method mb2"><h3 class="f3 title">disableTextures( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">disableTextures</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="draw" id="draw" class="mb2"><div class="method mb2"><h3 class="f3 title">draw( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">draw</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="draw" id="draw" class="mb2"><div class="method mb2"><h3 class="f3 title">draw( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">draw</span><span class="token punctuation">(</span><code class="token boolean">ofPolyRenderMode renderType</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="drawAxes" id="drawAxes" class="mb2"><div class="method mb2"><h3 class="f3 title">drawAxes( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">drawAxes</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> a_size</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="drawFaces" id="drawFaces" class="mb2"><div class="method mb2"><h3 class="f3 title">drawFaces( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">drawFaces</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="drawNormals" id="drawNormals" class="mb2"><div class="method mb2"><h3 class="f3 title">drawNormals( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">drawNormals</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> length<span class="token punctuation">,</span> <span class="token keyword">bool</span> bFaceNormals<span class="token operator">=</span><span class="token boolean">false</span></code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="drawVertices" id="drawVertices" class="mb2"><div class="method mb2"><h3 class="f3 title">drawVertices( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">drawVertices</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="drawWireframe" id="drawWireframe" class="mb2"><div class="method mb2"><h3 class="f3 title">drawWireframe( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">drawWireframe</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="enableColors" id="enableColors" class="mb2"><div class="method mb2"><h3 class="f3 title">enableColors( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">enableColors</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="enableNormals" id="enableNormals" class="mb2"><div class="method mb2"><h3 class="f3 title">enableNormals( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">enableNormals</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="enableTextures" id="enableTextures" class="mb2"><div class="method mb2"><h3 class="f3 title">enableTextures( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">enableTextures</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getIndices" id="getIndices" class="mb2"><div class="method mb2"><h3 class="f3 title">getIndices( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">getIndices</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getMesh" id="getMesh" class="mb2"><div class="method mb2"><h3 class="f3 title">getMesh( <!----> )</h3><code><span class="token keyword">ofMesh &  </span><span class="token function">getMesh</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getMesh" id="getMesh" class="mb2"><div class="method mb2"><h3 class="f3 title">getMesh( <!----> )</h3><code><span class="token keyword">const ofMesh &  </span><span class="token function">getMesh</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getMeshPtr" id="getMeshPtr" class="mb2"><div class="method mb2"><h3 class="f3 title">getMeshPtr( <!----> )</h3><code><span class="token keyword">ofMesh *  </span><span class="token function">getMeshPtr</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getMeshPtr" id="getMeshPtr" class="mb2"><div class="method mb2"><h3 class="f3 title">getMeshPtr( <!----> )</h3><code><span class="token keyword">const ofMesh *  </span><span class="token function">getMeshPtr</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getTexCoords" id="getTexCoords" class="mb2"><div class="method mb2"><h3 class="f3 title">getTexCoords( <!----> )</h3><code><span class="token keyword">glm::vec4 &  </span><span class="token function">getTexCoords</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getTexCoords" id="getTexCoords" class="mb2"><div class="method mb2"><h3 class="f3 title">getTexCoords( <!----> )</h3><code><span class="token keyword">const glm::vec4 &  </span><span class="token function">getTexCoords</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getTexCoordsPtr" id="getTexCoordsPtr" class="mb2"><div class="method mb2"><h3 class="f3 title">getTexCoordsPtr( <!----> )</h3><code><span class="token keyword">glm::vec4 *  </span><span class="token function">getTexCoordsPtr</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="getTexCoordsPtr" id="getTexCoordsPtr" class="mb2"><div class="method mb2"><h3 class="f3 title">getTexCoordsPtr( <!----> )</h3><code><span class="token keyword">const glm::vec4 *  </span><span class="token function">getTexCoordsPtr</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="hasNormalsEnabled" id="hasNormalsEnabled" class="mb2"><div class="method mb2"><h3 class="f3 title">hasNormalsEnabled( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">hasNormalsEnabled</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="hasScaling" id="hasScaling" class="mb2"><div class="method mb2"><h3 class="f3 title">hasScaling( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">hasScaling</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="isUsingVbo" id="isUsingVbo" class="mb2"><div class="method mb2"><h3 class="f3 title">isUsingVbo( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">isUsingVbo</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="mapTexCoords" id="mapTexCoords" class="mb2"><div class="method mb2"><h3 class="f3 title">mapTexCoords( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">mapTexCoords</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">float</span> u1<span class="token punctuation">,</span> <span class="token keyword">float</span> v1<span class="token punctuation">,</span> <span class="token keyword">float</span> u2<span class="token punctuation">,</span> <span class="token keyword">float</span> v2</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="mapTexCoordsFromTexture" id="mapTexCoordsFromTexture" class="mb2"><div class="method mb2"><h3 class="f3 title">mapTexCoordsFromTexture( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">mapTexCoordsFromTexture</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofTexture <span class="token operator">&</span>inTexture</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="normalizeAndApplySavedTexCoords" id="normalizeAndApplySavedTexCoords" class="mb2"><div class="method mb2"><h3 class="f3 title">normalizeAndApplySavedTexCoords( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">normalizeAndApplySavedTexCoords</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="of3dPrimitive" id="of3dPrimitive" class="mb2"><div class="method mb2"><h3 class="f3 title">of3dPrimitive( <code class="pink">...</code> )</h3><code><!----><span class="token function">of3dPrimitive</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofMesh <span class="token operator">&</span>mesh</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="of3dPrimitive" id="of3dPrimitive" class="mb2"><div class="method mb2"><h3 class="f3 title">of3dPrimitive( <code class="pink">...</code> )</h3><code><!----><span class="token function">of3dPrimitive</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> of3dPrimitive <span class="token operator">&</span>mom</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="of3dPrimitive" id="of3dPrimitive" class="mb2"><div class="method mb2"><h3 class="f3 title">of3dPrimitive( <!----> )</h3><code><!----><span class="token function">of3dPrimitive</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="operator=" id="operator=" class="mb2"><div class="method mb2"><h3 class="f3 title">operator=( <code class="pink">...</code> )</h3><code><span class="token keyword">of3dPrimitive &  </span><span class="token function">operator=</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> of3dPrimitive <span class="token operator">&</span>mom</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="setUseVbo" id="setUseVbo" class="mb2"><div class="method mb2"><h3 class="f3 title">setUseVbo( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">setUseVbo</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">bool</span> useVbo</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="~of3dPrimitive" id="~of3dPrimitive" class="mb2"><div class="method mb2"><h3 class="f3 title">~of3dPrimitive( <!----> )</h3><code><!----><span class="token function">~of3dPrimitive</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section></div></div></div></div><div id="side-menu"><div id="params"><h4 class="f3">Variables</h4><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofPtr </span><span>mesh</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofMesh </span><span>normalsMesh</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofVec4f </span><span>texCoords</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>usingVbo</span><span class="token comment"></span></div><div class="desc"></div></div></code></div><div id="methods-list"><h4 class="f3">Methods</h4><div class="anchor"><code><a href="#disableColors"><span>disableColors</span><!----></a></code></div><div class="anchor"><code><a href="#disableNormals"><span>disableNormals</span><!----></a></code></div><div class="anchor"><code><a href="#disableTextures"><span>disableTextures</span><!----></a></code></div><div class="anchor"><code><a href="#draw"><span>draw</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#drawAxes"><span>drawAxes</span><!----></a></code></div><div class="anchor"><code><a href="#drawFaces"><span>drawFaces</span><!----></a></code></div><div class="anchor"><code><a href="#drawNormals"><span>drawNormals</span><!----></a></code></div><div class="anchor"><code><a href="#drawVertices"><span>drawVertices</span><!----></a></code></div><div class="anchor"><code><a href="#drawWireframe"><span>drawWireframe</span><!----></a></code></div><div class="anchor"><code><a href="#enableColors"><span>enableColors</span><!----></a></code></div><div class="anchor"><code><a href="#enableNormals"><span>enableNormals</span><!----></a></code></div><div class="anchor"><code><a href="#enableTextures"><span>enableTextures</span><!----></a></code></div><div class="anchor"><code><a href="#getIndices"><span>getIndices</span><!----></a></code></div><div class="anchor"><code><a href="#getMesh"><span>getMesh</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#getMeshPtr"><span>getMeshPtr</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#getTexCoords"><span>getTexCoords</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#getTexCoordsPtr"><span>getTexCoordsPtr</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#hasNormalsEnabled"><span>hasNormalsEnabled</span><!----></a></code></div><div class="anchor"><code><a href="#hasScaling"><span>hasScaling</span><!----></a></code></div><div class="anchor"><code><a href="#isUsingVbo"><span>isUsingVbo</span><!----></a></code></div><div class="anchor"><code><a href="#mapTexCoords"><span>mapTexCoords</span><!----></a></code></div><div class="anchor"><code><a href="#mapTexCoordsFromTexture"><span>mapTexCoordsFromTexture</span><!----></a></code></div><div class="anchor"><code><a href="#normalizeAndApplySavedTexCoords"><span>normalizeAndApplySavedTexCoords</span><!----></a></code></div><div class="anchor"><code><a href="#of3dPrimitive"><span>of3dPrimitive</span><span>(3)</span></a></code></div><div class="anchor"><code><a href="#operator="><span>operator=</span><!----></a></code></div><div class="anchor"><code><a href="#setUseVbo"><span>setUseVbo</span><!----></a></code></div><div class="anchor"><code><a href="#~of3dPrimitive"><span>~of3dPrimitive</span><!----></a></code></div></div><div id="see-also" filename="of3dPrimitive.markdown" absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/3d/of3dPrimitive.markdown" route="/documentation/3d/of3dPrimitive.markdown" dir="../ofSite/documentation/3d" ext="markdown" type="page" parent="1967" breadcrumbs="1967,1968" siblings="" translations="[object Object]" class="see-also"><h4 class="f3">See also</h4><div class="also"><a href="/documentation/3d/" class="nuxt-link-active"><span class="origin">documentation</span><span class="name">3d</span></a></div><div class="also"><a href="/examples/3d/"><span class="origin">examples</span><span class="name">3d</span></a></div><div class="also"><a href="/openframeworks/3d/of3dPrimitives_h"><span class="origin">openframeworks</span><span class="name">of3dPrimitives.h</span></a></div><div class="also"><a href="/openframeworks/3d/of3dPrimitives_cpp"><span class="origin">openframeworks</span><span class="name">of3dPrimitives.cpp</span></a></div><div class="also"><a href="/openframeworks/3d/"><span class="origin">openframeworks</span><span class="name">3d</span></a></div></div></div></div></div><textarea rows="0" class="markdown-editor" style="display:none">#class of3dPrimitive
+
+
+&lt;!--
+_visible: True_
+_advanced: False_
+_istemplated: False_
+_extends: ofNode_
+-->
+
+##InlineDescription
+
+A class representing a 3d primitive.
+
+
+
+
+
+##Description
+
+
+
+
+
+##Methods
+
+
+
+###void disableColors()
+
+&lt;!--
+_syntax: disableColors()_
+_name: disableColors_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void disableNormals()
+
+&lt;!--
+_syntax: disableNormals()_
+_name: disableNormals_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void disableTextures()
+
+&lt;!--
+_syntax: disableTextures()_
+_name: disableTextures_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void draw()
+
+&lt;!--
+_syntax: draw()_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void draw(renderType)
+
+&lt;!--
+_syntax: draw(renderType)_
+_name: draw_
+_returns: void_
+_returns_description: _
+_parameters: ofPolyRenderMode renderType_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void drawAxes(a_size)
+
+&lt;!--
+_syntax: drawAxes(a_size)_
+_name: drawAxes_
+_returns: void_
+_returns_description: _
+_parameters: float a_size_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void drawFaces()
+
+&lt;!--
+_syntax: drawFaces()_
+_name: drawFaces_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void drawNormals(length, bFaceNormals = false)
+
+&lt;!--
+_syntax: drawNormals(length, bFaceNormals = false)_
+_name: drawNormals_
+_returns: void_
+_returns_description: _
+_parameters: float length, bool bFaceNormals=false_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void drawVertices()
+
+&lt;!--
+_syntax: drawVertices()_
+_name: drawVertices_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void drawWireframe()
+
+&lt;!--
+_syntax: drawWireframe()_
+_name: drawWireframe_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void enableColors()
+
+&lt;!--
+_syntax: enableColors()_
+_name: enableColors_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void enableNormals()
+
+&lt;!--
+_syntax: enableNormals()_
+_name: enableNormals_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void enableTextures()
+
+&lt;!--
+_syntax: enableTextures()_
+_name: enableTextures_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int getIndices()
+
+&lt;!--
+_syntax: getIndices()_
+_name: getIndices_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofMesh & getMesh()
+
+&lt;!--
+_syntax: getMesh()_
+_name: getMesh_
+_returns: ofMesh &_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###const ofMesh & getMesh()
+
+&lt;!--
+_syntax: getMesh()_
+_name: getMesh_
+_returns: const ofMesh &_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofMesh * getMeshPtr()
+
+&lt;!--
+_syntax: getMeshPtr()_
+_name: getMeshPtr_
+_returns: ofMesh *_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###const ofMesh * getMeshPtr()
+
+&lt;!--
+_syntax: getMeshPtr()_
+_name: getMeshPtr_
+_returns: const ofMesh *_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###glm::vec4 & getTexCoords()
+
+&lt;!--
+_syntax: getTexCoords()_
+_name: getTexCoords_
+_returns: glm::vec4 &_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###const glm::vec4 & getTexCoords()
+
+&lt;!--
+_syntax: getTexCoords()_
+_name: getTexCoords_
+_returns: const glm::vec4 &_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###glm::vec4 * getTexCoordsPtr()
+
+&lt;!--
+_syntax: getTexCoordsPtr()_
+_name: getTexCoordsPtr_
+_returns: glm::vec4 *_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###const glm::vec4 * getTexCoordsPtr()
+
+&lt;!--
+_syntax: getTexCoordsPtr()_
+_name: getTexCoordsPtr_
+_returns: const glm::vec4 *_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool hasNormalsEnabled()
+
+&lt;!--
+_syntax: hasNormalsEnabled()_
+_name: hasNormalsEnabled_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool hasScaling()
+
+&lt;!--
+_syntax: hasScaling()_
+_name: hasScaling_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool isUsingVbo()
+
+&lt;!--
+_syntax: isUsingVbo()_
+_name: isUsingVbo_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void mapTexCoords(u1, v1, u2, v2)
+
+&lt;!--
+_syntax: mapTexCoords(u1, v1, u2, v2)_
+_name: mapTexCoords_
+_returns: void_
+_returns_description: _
+_parameters: float u1, float v1, float u2, float v2_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void mapTexCoordsFromTexture(&inTexture)
+
+&lt;!--
+_syntax: mapTexCoordsFromTexture(&inTexture)_
+_name: mapTexCoordsFromTexture_
+_returns: void_
+_returns_description: _
+_parameters: const ofTexture &inTexture_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void normalizeAndApplySavedTexCoords()
+
+&lt;!--
+_syntax: normalizeAndApplySavedTexCoords()_
+_name: normalizeAndApplySavedTexCoords_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: protected_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### of3dPrimitive(&mesh)
+
+&lt;!--
+_syntax: of3dPrimitive(&mesh)_
+_name: of3dPrimitive_
+_returns: _
+_returns_description: _
+_parameters: const ofMesh &mesh_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### of3dPrimitive(&mom)
+
+&lt;!--
+_syntax: of3dPrimitive(&mom)_
+_name: of3dPrimitive_
+_returns: _
+_returns_description: _
+_parameters: const of3dPrimitive &mom_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### of3dPrimitive()
+
+&lt;!--
+_syntax: of3dPrimitive()_
+_name: of3dPrimitive_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###of3dPrimitive & operator=(&mom)
+
+&lt;!--
+_syntax: operator=(&mom)_
+_name: operator=_
+_returns: of3dPrimitive &_
+_returns_description: _
+_parameters: const of3dPrimitive &mom_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void setUseVbo(useVbo)
+
+&lt;!--
+_syntax: setUseVbo(useVbo)_
+_name: setUseVbo_
+_returns: void_
+_returns_description: _
+_parameters: bool useVbo_
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ~of3dPrimitive()
+
+&lt;!--
+_syntax: ~of3dPrimitive()_
+_name: ~of3dPrimitive_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+##Variables
+
+
+
+###ofPtr mesh
+
+&lt;!--
+_name: mesh_
+_type: ofPtr_
+_access: protected_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofMesh normalsMesh
+
+&lt;!--
+_name: normalsMesh_
+_type: ofMesh_
+_access: protected_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofVec4f texCoords
+
+&lt;!--
+_name: texCoords_
+_type: ofVec4f_
+_access: protected_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool usingVbo
+
+&lt;!--
+_name: usingVbo_
+_type: bool_
+_access: protected_
+_version_started: 0073_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+</textarea></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1586012716389/documentation/3d/of3dPrimitive/payload.js"></script><script src="/_nuxt/5f71eaca0bd2f1a0f939.js" defer></script><script src="/_nuxt/35a90d914f539af1362f.js" defer></script><script src="/_nuxt/906a3ca0fb13ed3c6651.js" defer></script><script src="/_nuxt/b673915e8a08acf593e8.js" defer></script><script src="/_nuxt/bf355f21967a23c26c07.js" defer></script>
+  </body>
+</html>

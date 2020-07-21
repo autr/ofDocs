@@ -1,0 +1,774 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>ofxOscSender | documentation | ofDocs</title><meta data-n-head="ssr" data-hid="description" name="description" content="openFrameworks documentation and examples browser"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="openFrameworks documentation and examples browser" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="ofxOscSender | documentation | ofDocs" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="/files/images/ofw-logo.png" vmid="og:image"><link rel="preload" href="/_nuxt/5f71eaca0bd2f1a0f939.js" as="script"><link rel="preload" href="/_nuxt/906a3ca0fb13ed3c6651.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/b673915e8a08acf593e8.js" as="script"><link rel="preload" href="/_nuxt/46e8fcacdadb233d9fb6.css" as="style"><link rel="preload" href="/_nuxt/bf355f21967a23c26c07.js" as="script"><link rel="preload" href="/_nuxt/35a90d914f539af1362f.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/46e8fcacdadb233d9fb6.css">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app"><div id="menu"><div class="menu-inner"><div id="settings"></div><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><svg version="1.1" viewbox="0 0 110 58" width="110px" height="58px" enable-background="0 0 110 58" xml:space="preserve" class="logo"><g><path d="M58,29 C58,13 45,0 29,0 C13,0 0,13 0,29 C0,45 13,58 29,58 C45,58 58,45 58,29 Z"></path><rect x="59" y="0" width="25" height="58"></rect><rect x="85" y="26" width="15" height="15"></rect><path d="M85,0 L110,0 L85,25 L85,0 Z"></path></g></svg><div class="txt"><span class="docs f7 questrial">Docs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343							c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88							c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593							c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789							C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><!----></div><div id="lists" class="menu-inner mt1 mb2"><div class="inner"></div></div></div><div class="menu-bottom"><div class="inner"><button class="button"><!----><span><span class="ico">nights_stay</span></span></button></div></div></div><div id="document"><div id="renderer" class="main page"><div absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/addons/ofxOsc/ofxOscSender.markdown" route="/documentation/addons/ofxOsc/ofxOscSender.markdown" dir="../ofSite/documentation/addons/ofxOsc" ext="markdown" type="page" id="2132" parent="2109" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/" class="pink nuxt-link-active">documentation </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/addons/" class="pink nuxt-link-active">addons </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/addons/ofxOsc/" class="pink nuxt-link-active">ofxOsc </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link selector"><span class="name">ofxOscSender</span><span class="chevron bottom"></span><select><option value="/documentation/addons/ofxOsc/ofxOscArg">ofxOscArg</option><option value="/documentation/addons/ofxOsc/ofxOscArgBlob">ofxOscArgBlob</option><option value="/documentation/addons/ofxOsc/ofxOscArgBool">ofxOscArgBool</option><option value="/documentation/addons/ofxOsc/ofxOscArgChar">ofxOscArgChar</option><option value="/documentation/addons/ofxOsc/ofxOscArgDouble">ofxOscArgDouble</option><option value="/documentation/addons/ofxOsc/ofxOscArgFloat">ofxOscArgFloat</option><option value="/documentation/addons/ofxOsc/ofxOscArgInt">ofxOscArgInt</option><option value="/documentation/addons/ofxOsc/ofxOscArgInt32">ofxOscArgInt32</option><option value="/documentation/addons/ofxOsc/ofxOscArgInt64">ofxOscArgInt64</option><option value="/documentation/addons/ofxOsc/ofxOscArgMidiMessage">ofxOscArgMidiMessage</option><option value="/documentation/addons/ofxOsc/ofxOscArgNone">ofxOscArgNone</option><option value="/documentation/addons/ofxOsc/ofxOscArgRgbaColor">ofxOscArgRgbaColor</option><option value="/documentation/addons/ofxOsc/ofxOscArgString">ofxOscArgString</option><option value="/documentation/addons/ofxOsc/ofxOscArgSymbol">ofxOscArgSymbol</option><option value="/documentation/addons/ofxOsc/ofxOscArgTimetag">ofxOscArgTimetag</option><option value="/documentation/addons/ofxOsc/ofxOscArgTrigger">ofxOscArgTrigger</option><option value="/documentation/addons/ofxOsc/ofxOscBundle">ofxOscBundle</option><option value="/documentation/addons/ofxOsc/ofxOscMessage">ofxOscMessage</option><option value="/documentation/addons/ofxOsc/ofxOscParameterSync">ofxOscParameterSync</option><option value="/documentation/addons/ofxOsc/ofxOscReceiver">ofxOscReceiver</option><option value="/documentation/addons/ofxOsc/ofxOscReceiverSettings">ofxOscReceiverSettings</option><option value="/documentation/addons/ofxOsc/ofxOscSender">ofxOscSender</option><option value="/documentation/addons/ofxOsc/ofxOscSenderSettings">ofxOscSenderSettings</option></select></span><!----></span></span></div></div></div><div class="editable-wrapper"><div class="header inner"><h1 class="page-title questrial"><span class="f7"><!----><span>ofxOscSender</span></span><span class="f3"></span></h1><div class="actions"><a href="/ofdocs/contribute/" class="button"><i class="ico">edit</i><span>Edit</span></a></div></div><div class="rendered"><div id="documentation-page" static="true"><div id="offset-page"><div id="doc-body" class="markdown"><div class="inner"><div id="description"><div class="full-description"><div class="html"><h1></h1>
+</div></div></div><div id="methods"><hr><section name="appendBundle" id="appendBundle" class="mb2"><div class="method mb2"><h3 class="f3 title">appendBundle( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">appendBundle</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofxOscBundle <span class="token operator">&</span>bundle<span class="token punctuation">,</span> <span class="token keyword">int</span> <span class="token operator">&</span>p</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="appendMessage" id="appendMessage" class="mb2"><div class="method mb2"><h3 class="f3 title">appendMessage( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">appendMessage</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofxOscMessage <span class="token operator">&</span>message<span class="token punctuation">,</span> <span class="token keyword">int</span> <span class="token operator">&</span>p</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="appendParameter" id="appendParameter" class="mb2"><div class="method mb2"><h3 class="f3 title">appendParameter( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">appendParameter</span><span class="token punctuation">(</span><code class="token boolean">ofxOscBundle <span class="token operator">&</span>bundle<span class="token punctuation">,</span> <span class="token keyword">const</span> ofAbstractParameter <span class="token operator">&</span>parameter<span class="token punctuation">,</span> <span class="token keyword">const</span> string <span class="token operator">&</span>address</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="appendParameter" id="appendParameter" class="mb2"><div class="method mb2"><h3 class="f3 title">appendParameter( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">appendParameter</span><span class="token punctuation">(</span><code class="token boolean">ofxOscMessage <span class="token operator">&</span>msg<span class="token punctuation">,</span> <span class="token keyword">const</span> ofAbstractParameter <span class="token operator">&</span>parameter<span class="token punctuation">,</span> <span class="token keyword">const</span> string <span class="token operator">&</span>address</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="clear" id="clear" class="mb2"><div class="method mb2"><h3 class="f3 title">clear( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">clear</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>clear the sender, does not clear host or port values</p>
+</div><div class="desc"></div></div><hr></section><section name="copy" id="copy" class="mb2"><div class="method mb2"><h3 class="f3 title">copy( <code class="pink">...</code> )</h3><code><span class="token keyword">ofxOscSender &  </span><span class="token function">copy</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofxOscSender <span class="token operator">&</span>other</code><span class="token punctuation">)</span></code><div class="short"><p>for operator= and copy constructor</p>
+</div><div class="desc"></div></div><hr></section><section name="getHost" id="getHost" class="mb2"><div class="method mb2"><h3 class="f3 title">getHost( <!----> )</h3><code><span class="token keyword">string  </span><span class="token function">getHost</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>\return current host name/ip</p>
+</div><div class="desc"></div></div><hr></section><section name="getPort" id="getPort" class="mb2"><div class="method mb2"><h3 class="f3 title">getPort( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">getPort</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>\return current port</p>
+</div><div class="desc"></div></div><hr></section><section name="getSettings" id="getSettings" class="mb2"><div class="method mb2"><h3 class="f3 title">getSettings( <!----> )</h3><code><span class="token keyword">const ofxOscSenderSettings &  </span><span class="token function">getSettings</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"><p>\return the current sender settings</p>
+</div><div class="desc"></div></div><hr></section><section name="ofxOscSender" id="ofxOscSender" class="mb2"><div class="method mb2"><h3 class="f3 title">ofxOscSender( <!----> )</h3><code><!----><span class="token function">ofxOscSender</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofxOscSender" id="ofxOscSender" class="mb2"><div class="method mb2"><h3 class="f3 title">ofxOscSender( <code class="pink">...</code> )</h3><code><!----><span class="token function">ofxOscSender</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofxOscSender <span class="token operator">&</span>mom</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="operator=" id="operator=" class="mb2"><div class="method mb2"><h3 class="f3 title">operator=( <code class="pink">...</code> )</h3><code><span class="token keyword">ofxOscSender &  </span><span class="token function">operator=</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofxOscSender <span class="token operator">&</span>mom</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="sendBundle" id="sendBundle" class="mb2"><div class="method mb2"><h3 class="f3 title">sendBundle( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">sendBundle</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofxOscBundle <span class="token operator">&</span>bundle</code><span class="token punctuation">)</span></code><div class="short"><p>send the given bundle</p>
+</div><div class="desc"></div></div><hr></section><section name="sendMessage" id="sendMessage" class="mb2"><div class="method mb2"><h3 class="f3 title">sendMessage( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">sendMessage</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofxOscMessage <span class="token operator">&</span>message<span class="token punctuation">,</span> <span class="token keyword">bool</span> wrapInBundle<span class="token operator">=</span><span class="token boolean">true</span></code><span class="token punctuation">)</span></code><div class="short"><p>send the given message
+if wrapInBundle is true (default), message sent in a timetagged bundle</p>
+</div><div class="desc"></div></div><hr></section><section name="sendParameter" id="sendParameter" class="mb2"><div class="method mb2"><h3 class="f3 title">sendParameter( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">sendParameter</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofAbstractParameter <span class="token operator">&</span>parameter</code><span class="token punctuation">)</span></code><div class="short"><p>create & send a message with data from an ofParameter</p>
+</div><div class="desc"></div></div><hr></section><section name="setup" id="setup" class="mb2"><div class="method mb2"><h3 class="f3 title">setup( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">setup</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> string <span class="token operator">&</span>host<span class="token punctuation">,</span> <span class="token keyword">int</span> port</code><span class="token punctuation">)</span></code><div class="short"><p>set up the sender with the destination host name/ip and port
+\return true on success</p>
+</div><div class="desc"></div></div><hr></section><section name="setup" id="setup" class="mb2"><div class="method mb2"><h3 class="f3 title">setup( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">setup</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofxOscSenderSettings <span class="token operator">&</span>settings</code><span class="token punctuation">)</span></code><div class="short"><p>set up the sender with the given settings</p>
+<p>Returns: true on success</p>
+</div><div class="desc"></div></div><hr></section><section name="~ofxOscSender" id="~ofxOscSender" class="mb2"><div class="method mb2"><h3 class="f3 title">~ofxOscSender( <!----> )</h3><code><!----><span class="token function">~ofxOscSender</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section></div></div></div></div><div id="side-menu"><div id="params"><h4 class="f3">Variables</h4><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">int </span><span>sendSocket</span><span class="token comment">&lt; sender socket
+</span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">ofxOscSenderSettings </span><span>settings</span><span class="token comment">&lt; current settings
+</span></div><div class="desc"></div></div></code></div><div id="methods-list"><h4 class="f3">Methods</h4><div class="anchor"><code><a href="#appendBundle"><span>appendBundle</span><!----></a></code></div><div class="anchor"><code><a href="#appendMessage"><span>appendMessage</span><!----></a></code></div><div class="anchor"><code><a href="#appendParameter"><span>appendParameter</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#clear" class="pink"><span>clear</span><!----></a></code></div><div class="anchor"><code><a href="#copy" class="pink"><span>copy</span><!----></a></code></div><div class="anchor"><code><a href="#getHost" class="pink"><span>getHost</span><!----></a></code></div><div class="anchor"><code><a href="#getPort" class="pink"><span>getPort</span><!----></a></code></div><div class="anchor"><code><a href="#getSettings" class="pink"><span>getSettings</span><!----></a></code></div><div class="anchor"><code><a href="#ofxOscSender"><span>ofxOscSender</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#operator="><span>operator=</span><!----></a></code></div><div class="anchor"><code><a href="#sendBundle" class="pink"><span>sendBundle</span><!----></a></code></div><div class="anchor"><code><a href="#sendMessage" class="pink"><span>sendMessage</span><!----></a></code></div><div class="anchor"><code><a href="#sendParameter" class="pink"><span>sendParameter</span><!----></a></code></div><div class="anchor"><code><a href="#setup" class="pink"><span>setup</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#~ofxOscSender"><span>~ofxOscSender</span><!----></a></code></div></div><div id="see-also" filename="ofxOscSender.markdown" absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/addons/ofxOsc/ofxOscSender.markdown" route="/documentation/addons/ofxOsc/ofxOscSender.markdown" dir="../ofSite/documentation/addons/ofxOsc" ext="markdown" type="page" parent="2109" breadcrumbs="2109,1993,1968" siblings="" translations="[object Object]" class="see-also"><h4 class="f3">See also</h4><div class="also"><a href="/documentation/addons/ofxOsc/ofxOscSenderSettings"><span class="origin">documentation</span><span class="name">ofxOscSenderSettings</span></a></div><div class="also"><a href="/documentation/addons/ofxOsc/" class="nuxt-link-active"><span class="origin">documentation</span><span class="name">ofxOsc</span></a></div><div class="also"><a href="/addons/ofxOsc/src/ofxOscSender_h"><span class="origin">addons</span><span class="name">ofxOscSender.h</span></a></div><div class="also"><a href="/addons/ofxOsc/src/ofxOscSender_cpp"><span class="origin">addons</span><span class="name">ofxOscSender.cpp</span></a></div><div class="also"><a href="/addons/ofxOsc/"><span class="origin">addons</span><span class="name">ofxOsc</span></a></div></div></div></div></div><textarea rows="0" class="markdown-editor" style="display:none">#class ofxOscSender
+
+
+&lt;!--
+_visible: True_
+_advanced: False_
+_istemplated: False_
+_extends: _
+-->
+
+##InlineDescription
+
+
+OSC message sender which sends to a specific host & port
+
+
+
+
+
+##Description
+
+
+
+
+
+##Methods
+
+
+
+###void appendBundle(&bundle, &p)
+
+&lt;!--
+_syntax: appendBundle(&bundle, &p)_
+_name: appendBundle_
+_returns: void_
+_returns_description: _
+_parameters: const ofxOscBundle &bundle, int &p_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void appendMessage(&message, &p)
+
+&lt;!--
+_syntax: appendMessage(&message, &p)_
+_name: appendMessage_
+_returns: void_
+_returns_description: _
+_parameters: const ofxOscMessage &message, int &p_
+_access: private_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void appendParameter(&bundle, &ampparameter, &address)
+
+&lt;!--
+_syntax: appendParameter(&bundle, &ampparameter, &address)_
+_name: appendParameter_
+_returns: void_
+_returns_description: _
+_parameters: ofxOscBundle &bundle, const ofAbstractParameter &ampparameter, const string &address_
+_access: private_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void appendParameter(&msg, &ampparameter, &address)
+
+&lt;!--
+_syntax: appendParameter(&msg, &ampparameter, &address)_
+_name: appendParameter_
+_returns: void_
+_returns_description: _
+_parameters: ofxOscMessage &msg, const ofAbstractParameter &ampparameter, const string &address_
+_access: private_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void clear()
+
+&lt;!--
+_syntax: clear()_
+_name: clear_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+clear the sender, does not clear host or port values
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofxOscSender & copy(&other)
+
+&lt;!--
+_syntax: copy(&other)_
+_name: copy_
+_returns: ofxOscSender &_
+_returns_description: _
+_parameters: const ofxOscSender &other_
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+for operator= and copy constructor
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###string getHost()
+
+&lt;!--
+_syntax: getHost()_
+_name: getHost_
+_returns: string_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+\return current host name/ip
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int getPort()
+
+&lt;!--
+_syntax: getPort()_
+_name: getPort_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+\return current port
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###const ofxOscSenderSettings & getSettings()
+
+&lt;!--
+_syntax: getSettings()_
+_name: getSettings_
+_returns: const ofxOscSenderSettings &_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+\return the current sender settings
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofxOscSender()
+
+&lt;!--
+_syntax: ofxOscSender()_
+_name: ofxOscSender_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofxOscSender(&mom)
+
+&lt;!--
+_syntax: ofxOscSender(&mom)_
+_name: ofxOscSender_
+_returns: _
+_returns_description: _
+_parameters: const ofxOscSender &mom_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofxOscSender & operator=(&mom)
+
+&lt;!--
+_syntax: operator=(&mom)_
+_name: operator=_
+_returns: ofxOscSender &_
+_returns_description: _
+_parameters: const ofxOscSender &mom_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void sendBundle(&bundle)
+
+&lt;!--
+_syntax: sendBundle(&bundle)_
+_name: sendBundle_
+_returns: void_
+_returns_description: _
+_parameters: const ofxOscBundle &bundle_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+send the given bundle
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void sendMessage(&message, wrapInBundle = true)
+
+&lt;!--
+_syntax: sendMessage(&message, wrapInBundle = true)_
+_name: sendMessage_
+_returns: void_
+_returns_description: _
+_parameters: const ofxOscMessage &message, bool wrapInBundle=true_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+send the given message
+if wrapInBundle is true (default), message sent in a timetagged bundle
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void sendParameter(&ampparameter)
+
+&lt;!--
+_syntax: sendParameter(&ampparameter)_
+_name: sendParameter_
+_returns: void_
+_returns_description: _
+_parameters: const ofAbstractParameter &ampparameter_
+_access: public_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+create & send a message with data from an ofParameter
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool setup(&host, port)
+
+&lt;!--
+_syntax: setup(&host, port)_
+_name: setup_
+_returns: bool_
+_returns_description: _
+_parameters: const string &host, int port_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+set up the sender with the destination host name/ip and port
+\return true on success
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool setup(&settings)
+
+&lt;!--
+_syntax: setup(&settings)_
+_name: setup_
+_returns: bool_
+_returns_description: _
+_parameters: const ofxOscSenderSettings &settings_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+set up the sender with the given settings
+
+Returns: true on success
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ~ofxOscSender()
+
+&lt;!--
+_syntax: ~ofxOscSender()_
+_name: ~ofxOscSender_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+##Variables
+
+
+
+###int sendSocket
+
+&lt;!--
+_name: sendSocket_
+_type: int_
+_access: private_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+&lt; sender socket
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofxOscSenderSettings settings
+
+&lt;!--
+_name: settings_
+_type: ofxOscSenderSettings_
+_access: private_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+&lt; current settings
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+</textarea></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1586012716389/documentation/addons/ofxOsc/ofxOscSender/payload.js"></script><script src="/_nuxt/5f71eaca0bd2f1a0f939.js" defer></script><script src="/_nuxt/35a90d914f539af1362f.js" defer></script><script src="/_nuxt/906a3ca0fb13ed3c6651.js" defer></script><script src="/_nuxt/b673915e8a08acf593e8.js" defer></script><script src="/_nuxt/bf355f21967a23c26c07.js" defer></script>
+  </body>
+</html>

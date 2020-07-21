@@ -1,0 +1,1730 @@
+<!doctype html>
+<html data-n-head-ssr>
+  <head>
+    <title>ofxTCPManager | documentation | ofDocs</title><meta data-n-head="ssr" data-hid="description" name="description" content="openFrameworks documentation and examples browser"><meta data-n-head="ssr" data-hid="keyword" name="keyword" content=""><meta data-n-head="ssr" property="og:description" content="openFrameworks documentation and examples browser" vmid="og:description"><meta data-n-head="ssr" property="og:title" content="ofxTCPManager | documentation | ofDocs" vmid="og:title"><meta data-n-head="ssr" property="og:image" content="/files/images/ofw-logo.png" vmid="og:image"><link rel="preload" href="/_nuxt/5f71eaca0bd2f1a0f939.js" as="script"><link rel="preload" href="/_nuxt/906a3ca0fb13ed3c6651.js" as="script"><link rel="preload" href="/_nuxt/fe12c0cb7395fa1032f4.css" as="style"><link rel="preload" href="/_nuxt/b673915e8a08acf593e8.js" as="script"><link rel="preload" href="/_nuxt/46e8fcacdadb233d9fb6.css" as="style"><link rel="preload" href="/_nuxt/bf355f21967a23c26c07.js" as="script"><link rel="preload" href="/_nuxt/35a90d914f539af1362f.js" as="script"><link rel="stylesheet" href="/_nuxt/fe12c0cb7395fa1032f4.css"><link rel="stylesheet" href="/_nuxt/46e8fcacdadb233d9fb6.css">
+  </head>
+  <body>
+    <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div id="app"><div id="menu"><div class="menu-inner"><div id="settings"></div><h1 class="of"><div class="inner"><span><a href="/" class="nuxt-link-active"><svg version="1.1" viewbox="0 0 110 58" width="110px" height="58px" enable-background="0 0 110 58" xml:space="preserve" class="logo"><g><path d="M58,29 C58,13 45,0 29,0 C13,0 0,13 0,29 C0,45 13,58 29,58 C45,58 58,45 58,29 Z"></path><rect x="59" y="0" width="25" height="58"></rect><rect x="85" y="26" width="15" height="15"></rect><path d="M85,0 L110,0 L85,25 L85,0 Z"></path></g></svg><div class="txt"><span class="docs f7 questrial">Docs </span><span class="version">0.11.0</span></div></a></span></div></h1><div id="search"><div class="inner"><div class="field text"><div class="field-inner"><svg viewbox="0 0 36 36" enable-background="new 0 0 36 36" xml:space="preserve"><path d="M35.525,31.228l-8.88-8.882c1.444-2.238,2.298-4.895,2.298-7.752c0-7.909-6.438-14.343-14.346-14.343							c-7.911,0-14.343,6.434-14.343,14.343c0,7.911,6.433,14.344,14.343,14.344c2.856,0,5.513-0.849,7.752-2.294l8.88,8.88							c0.295,0.297,0.782,0.297,1.076,0l3.22-3.221C35.824,32.008,35.824,31.523,35.525,31.228z M4.81,14.593							c0-5.396,4.391-9.788,9.788-9.788c5.398,0,9.787,4.392,9.787,9.788c0,5.398-4.389,9.789-9.787,9.789							C9.2,24.382,4.81,19.991,4.81,14.593z"></path></svg><!----><div class="text-wrapper"><input id="search_field" name="search_field" placeholder="Search (Alt+F)" autocomplete="off" tabindex="0"></div><!----><!----></div></div></div><!----></div><div id="lists" class="menu-inner mt1 mb2"><div class="inner"></div></div></div><div class="menu-bottom"><div class="inner"><button class="button"><!----><span><span class="ico">nights_stay</span></span></button></div></div></div><div id="document"><div id="renderer" class="main page"><div absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/addons/ofxNetwork/ofxTCPManager.markdown" route="/documentation/addons/ofxNetwork/ofxTCPManager.markdown" dir="../ofSite/documentation/addons/ofxNetwork" ext="markdown" type="page" id="2079" parent="2074" siblings="" translations="[object Object]" class="doc-header"><div class="doc-header-inner"><div class="inner"><span class="breadcrumbs"><span class="crumb"><a href="/" class="pink nuxt-link-active">ofDocs</a><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/" class="pink nuxt-link-active">documentation </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/addons/" class="pink nuxt-link-active">addons </a><!----><span class="chevron right"></span></span><span class="crumb"><a href="/documentation/addons/ofxNetwork/" class="pink nuxt-link-active">ofxNetwork </a><!----><span class="chevron right"></span></span><span class="crumb"><!----><span class="link selector"><span class="name">ofxTCPManager</span><span class="chevron bottom"></span><select><option value="/documentation/addons/ofxNetwork/InetAddr">InetAddr</option><option value="/documentation/addons/ofxNetwork/ofxNetworkUtils_functions">ofxNetworkUtils (functions)</option><option value="/documentation/addons/ofxNetwork/ofxTCPClient">ofxTCPClient</option><option value="/documentation/addons/ofxNetwork/ofxTCPManager">ofxTCPManager</option><option value="/documentation/addons/ofxNetwork/ofxTCPServer">ofxTCPServer</option><option value="/documentation/addons/ofxNetwork/ofxTCPSettings">ofxTCPSettings</option><option value="/documentation/addons/ofxNetwork/ofxUDPManager">ofxUDPManager</option><option value="/documentation/addons/ofxNetwork/ofxUDPSettings">ofxUDPSettings</option></select></span><!----></span></span></div></div></div><div class="editable-wrapper"><div class="header inner"><h1 class="page-title questrial"><span class="f7"><!----><span>ofxTCPManager</span></span><span class="f3"></span></h1><div class="actions"><a href="/ofdocs/contribute/" class="button"><i class="ico">edit</i><span>Edit</span></a></div></div><div class="rendered"><div id="documentation-page" static="true"><div id="offset-page"><div id="doc-body" class="markdown"><div class="inner"><div id="description"><div class="full-description"><div class="html"><h1></h1>
+</div></div></div><div id="methods"><hr><section name="Accept" id="Accept" class="mb2"><div class="method mb2"><h3 class="f3 title">Accept( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">Accept</span><span class="token punctuation">(</span><code class="token boolean">ofxTCPManager <span class="token operator">&</span>sock</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="Bind" id="Bind" class="mb2"><div class="method mb2"><h3 class="f3 title">Bind( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">Bind</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">unsigned</span> <span class="token keyword">short</span> usPort</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="CheckHost" id="CheckHost" class="mb2"><div class="method mb2"><h3 class="f3 title">CheckHost( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">CheckHost</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span>pAddrStr</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="CheckIsConnected" id="CheckIsConnected" class="mb2"><div class="method mb2"><h3 class="f3 title">CheckIsConnected( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">CheckIsConnected</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="CleanUp" id="CleanUp" class="mb2"><div class="method mb2"><h3 class="f3 title">CleanUp( <!----> )</h3><code><span class="token keyword">void  </span><span class="token function">CleanUp</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="Close" id="Close" class="mb2"><div class="method mb2"><h3 class="f3 title">Close( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">Close</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="Connect" id="Connect" class="mb2"><div class="method mb2"><h3 class="f3 title">Connect( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">Connect</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span>pAddrStr<span class="token punctuation">,</span> <span class="token keyword">unsigned</span> <span class="token keyword">short</span> usPort</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="Create" id="Create" class="mb2"><div class="method mb2"><h3 class="f3 title">Create( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">Create</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="GetInetAddr" id="GetInetAddr" class="mb2"><div class="method mb2"><h3 class="f3 title">GetInetAddr( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">GetInetAddr</span><span class="token punctuation">(</span><code class="token boolean">LPINETADDR pInetAddr</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="GetMaxConnections" id="GetMaxConnections" class="mb2"><div class="method mb2"><h3 class="f3 title">GetMaxConnections( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">GetMaxConnections</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="GetReceiveBufferSize" id="GetReceiveBufferSize" class="mb2"><div class="method mb2"><h3 class="f3 title">GetReceiveBufferSize( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">GetReceiveBufferSize</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="GetRemoteAddr" id="GetRemoteAddr" class="mb2"><div class="method mb2"><h3 class="f3 title">GetRemoteAddr( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">GetRemoteAddr</span><span class="token punctuation">(</span><code class="token boolean">LPINETADDR pIntAddr</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="GetSendBufferSize" id="GetSendBufferSize" class="mb2"><div class="method mb2"><h3 class="f3 title">GetSendBufferSize( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">GetSendBufferSize</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="GetTimeoutAccept" id="GetTimeoutAccept" class="mb2"><div class="method mb2"><h3 class="f3 title">GetTimeoutAccept( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">GetTimeoutAccept</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="GetTimeoutConnect" id="GetTimeoutConnect" class="mb2"><div class="method mb2"><h3 class="f3 title">GetTimeoutConnect( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">GetTimeoutConnect</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="GetTimeoutReceive" id="GetTimeoutReceive" class="mb2"><div class="method mb2"><h3 class="f3 title">GetTimeoutReceive( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">GetTimeoutReceive</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="GetTimeoutSend" id="GetTimeoutSend" class="mb2"><div class="method mb2"><h3 class="f3 title">GetTimeoutSend( <!----> )</h3><code><span class="token keyword">int  </span><span class="token function">GetTimeoutSend</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="IsNonBlocking" id="IsNonBlocking" class="mb2"><div class="method mb2"><h3 class="f3 title">IsNonBlocking( <!----> )</h3><code><span class="token keyword">bool  </span><span class="token function">IsNonBlocking</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="Listen" id="Listen" class="mb2"><div class="method mb2"><h3 class="f3 title">Listen( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">Listen</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> iMaxConnections</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="PeekReceive" id="PeekReceive" class="mb2"><div class="method mb2"><h3 class="f3 title">PeekReceive( <code class="pink">...</code> )</h3><code><span class="token keyword">int  </span><span class="token function">PeekReceive</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">char</span> <span class="token operator">*</span>pBuff<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">int</span> iSize</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="Receive" id="Receive" class="mb2"><div class="method mb2"><h3 class="f3 title">Receive( <code class="pink">...</code> )</h3><code><span class="token keyword">int  </span><span class="token function">Receive</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">char</span> <span class="token operator">*</span>pBuff<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">int</span> iSize</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ReceiveAll" id="ReceiveAll" class="mb2"><div class="method mb2"><h3 class="f3 title">ReceiveAll( <code class="pink">...</code> )</h3><code><span class="token keyword">int  </span><span class="token function">ReceiveAll</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">char</span> <span class="token operator">*</span>pBuff<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">int</span> iSize</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="Send" id="Send" class="mb2"><div class="method mb2"><h3 class="f3 title">Send( <code class="pink">...</code> )</h3><code><span class="token keyword">int  </span><span class="token function">Send</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span>pBuff<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">int</span> iSize</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="SendAll" id="SendAll" class="mb2"><div class="method mb2"><h3 class="f3 title">SendAll( <code class="pink">...</code> )</h3><code><span class="token keyword">int  </span><span class="token function">SendAll</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span>pBuff<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">int</span> iSize</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="SetNonBlocking" id="SetNonBlocking" class="mb2"><div class="method mb2"><h3 class="f3 title">SetNonBlocking( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">SetNonBlocking</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">bool</span> useNonBlocking</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="SetReceiveBufferSize" id="SetReceiveBufferSize" class="mb2"><div class="method mb2"><h3 class="f3 title">SetReceiveBufferSize( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">SetReceiveBufferSize</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> sizeInByte</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="SetSendBufferSize" id="SetSendBufferSize" class="mb2"><div class="method mb2"><h3 class="f3 title">SetSendBufferSize( <code class="pink">...</code> )</h3><code><span class="token keyword">bool  </span><span class="token function">SetSendBufferSize</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> sizeInByte</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="SetTimeoutAccept" id="SetTimeoutAccept" class="mb2"><div class="method mb2"><h3 class="f3 title">SetTimeoutAccept( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">SetTimeoutAccept</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> timeoutInSeconds</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="SetTimeoutConnect" id="SetTimeoutConnect" class="mb2"><div class="method mb2"><h3 class="f3 title">SetTimeoutConnect( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">SetTimeoutConnect</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> timeoutInSeconds</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="SetTimeoutReceive" id="SetTimeoutReceive" class="mb2"><div class="method mb2"><h3 class="f3 title">SetTimeoutReceive( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">SetTimeoutReceive</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> timeoutInSeconds</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="SetTimeoutSend" id="SetTimeoutSend" class="mb2"><div class="method mb2"><h3 class="f3 title">SetTimeoutSend( <code class="pink">...</code> )</h3><code><span class="token keyword">void  </span><span class="token function">SetTimeoutSend</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">int</span> timeoutInSeconds</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="WaitReceive" id="WaitReceive" class="mb2"><div class="method mb2"><h3 class="f3 title">WaitReceive( <code class="pink">...</code> )</h3><code><span class="token keyword">int  </span><span class="token function">WaitReceive</span><span class="token punctuation">(</span><code class="token boolean">time_t timeoutSeconds<span class="token punctuation">,</span> time_t timeoutMillis</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="WaitSend" id="WaitSend" class="mb2"><div class="method mb2"><h3 class="f3 title">WaitSend( <code class="pink">...</code> )</h3><code><span class="token keyword">int  </span><span class="token function">WaitSend</span><span class="token punctuation">(</span><code class="token boolean">time_t timeoutSeconds<span class="token punctuation">,</span> time_t timeoutMillis</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="Write" id="Write" class="mb2"><div class="method mb2"><h3 class="f3 title">Write( <code class="pink">...</code> )</h3><code><span class="token keyword">int  </span><span class="token function">Write</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> <span class="token keyword">char</span> <span class="token operator">*</span>pBuff<span class="token punctuation">,</span> <span class="token keyword">const</span> <span class="token keyword">int</span> iSize</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofxTCPManager" id="ofxTCPManager" class="mb2"><div class="method mb2"><h3 class="f3 title">ofxTCPManager( <code class="pink">...</code> )</h3><code><!----><span class="token function">ofxTCPManager</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofxTCPManager <span class="token operator">&</span>mom</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="ofxTCPManager" id="ofxTCPManager" class="mb2"><div class="method mb2"><h3 class="f3 title">ofxTCPManager( <!----> )</h3><code><!----><span class="token function">ofxTCPManager</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="operator=" id="operator=" class="mb2"><div class="method mb2"><h3 class="f3 title">operator=( <code class="pink">...</code> )</h3><code><span class="token keyword">ofxTCPManager &  </span><span class="token function">operator=</span><span class="token punctuation">(</span><code class="token boolean"><span class="token keyword">const</span> ofxTCPManager <span class="token operator">&</span>mom</code><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section><section name="~ofxTCPManager" id="~ofxTCPManager" class="mb2"><div class="method mb2"><h3 class="f3 title">~ofxTCPManager( <!----> )</h3><code><!----><span class="token function">~ofxTCPManager</span><span class="token punctuation">(</span><!----><span class="token punctuation">)</span></code><div class="short"></div><div class="desc"></div></div><hr></section></div></div></div></div><div id="side-menu"><div id="params"><h4 class="f3">Variables</h4><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>m_bWinsockInit</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>m_closing</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">unsignedlong </span><span>m_dwTimeoutAccept</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">unsignedlong </span><span>m_dwTimeoutConnect</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">unsignedlong </span><span>m_dwTimeoutReceive</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">unsignedlong </span><span>m_dwTimeoutSend</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">int </span><span>m_hSocket</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">int </span><span>m_iListenPort</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">int </span><span>m_iMaxConnections</span><span class="token comment"></span></div><div class="desc"></div></div></code><code><div class="functions"></div><div class="variable"><div class="title"><span class="token keyword">bool </span><span>nonBlocking</span><span class="token comment"></span></div><div class="desc"></div></div></code></div><div id="methods-list"><h4 class="f3">Methods</h4><div class="anchor"><code><a href="#Accept"><span>Accept</span><!----></a></code></div><div class="anchor"><code><a href="#Bind"><span>Bind</span><!----></a></code></div><div class="anchor"><code><a href="#CheckHost"><span>CheckHost</span><!----></a></code></div><div class="anchor"><code><a href="#CheckIsConnected"><span>CheckIsConnected</span><!----></a></code></div><div class="anchor"><code><a href="#CleanUp"><span>CleanUp</span><!----></a></code></div><div class="anchor"><code><a href="#Close"><span>Close</span><!----></a></code></div><div class="anchor"><code><a href="#Connect"><span>Connect</span><!----></a></code></div><div class="anchor"><code><a href="#Create"><span>Create</span><!----></a></code></div><div class="anchor"><code><a href="#GetInetAddr"><span>GetInetAddr</span><!----></a></code></div><div class="anchor"><code><a href="#GetMaxConnections"><span>GetMaxConnections</span><!----></a></code></div><div class="anchor"><code><a href="#GetReceiveBufferSize"><span>GetReceiveBufferSize</span><!----></a></code></div><div class="anchor"><code><a href="#GetRemoteAddr"><span>GetRemoteAddr</span><!----></a></code></div><div class="anchor"><code><a href="#GetSendBufferSize"><span>GetSendBufferSize</span><!----></a></code></div><div class="anchor"><code><a href="#GetTimeoutAccept"><span>GetTimeoutAccept</span><!----></a></code></div><div class="anchor"><code><a href="#GetTimeoutConnect"><span>GetTimeoutConnect</span><!----></a></code></div><div class="anchor"><code><a href="#GetTimeoutReceive"><span>GetTimeoutReceive</span><!----></a></code></div><div class="anchor"><code><a href="#GetTimeoutSend"><span>GetTimeoutSend</span><!----></a></code></div><div class="anchor"><code><a href="#IsNonBlocking"><span>IsNonBlocking</span><!----></a></code></div><div class="anchor"><code><a href="#Listen"><span>Listen</span><!----></a></code></div><div class="anchor"><code><a href="#PeekReceive"><span>PeekReceive</span><!----></a></code></div><div class="anchor"><code><a href="#Receive"><span>Receive</span><!----></a></code></div><div class="anchor"><code><a href="#ReceiveAll"><span>ReceiveAll</span><!----></a></code></div><div class="anchor"><code><a href="#Send"><span>Send</span><!----></a></code></div><div class="anchor"><code><a href="#SendAll"><span>SendAll</span><!----></a></code></div><div class="anchor"><code><a href="#SetNonBlocking"><span>SetNonBlocking</span><!----></a></code></div><div class="anchor"><code><a href="#SetReceiveBufferSize"><span>SetReceiveBufferSize</span><!----></a></code></div><div class="anchor"><code><a href="#SetSendBufferSize"><span>SetSendBufferSize</span><!----></a></code></div><div class="anchor"><code><a href="#SetTimeoutAccept"><span>SetTimeoutAccept</span><!----></a></code></div><div class="anchor"><code><a href="#SetTimeoutConnect"><span>SetTimeoutConnect</span><!----></a></code></div><div class="anchor"><code><a href="#SetTimeoutReceive"><span>SetTimeoutReceive</span><!----></a></code></div><div class="anchor"><code><a href="#SetTimeoutSend"><span>SetTimeoutSend</span><!----></a></code></div><div class="anchor"><code><a href="#WaitReceive"><span>WaitReceive</span><!----></a></code></div><div class="anchor"><code><a href="#WaitSend"><span>WaitSend</span><!----></a></code></div><div class="anchor"><code><a href="#Write"><span>Write</span><!----></a></code></div><div class="anchor"><code><a href="#ofxTCPManager"><span>ofxTCPManager</span><span>(2)</span></a></code></div><div class="anchor"><code><a href="#operator="><span>operator=</span><!----></a></code></div><div class="anchor"><code><a href="#~ofxTCPManager"><span>~ofxTCPManager</span><!----></a></code></div></div><div id="see-also" filename="ofxTCPManager.markdown" absolute="/Users/Gilbert/Code/openFrameworks/ofSite/documentation/addons/ofxNetwork/ofxTCPManager.markdown" route="/documentation/addons/ofxNetwork/ofxTCPManager.markdown" dir="../ofSite/documentation/addons/ofxNetwork" ext="markdown" type="page" parent="2074" breadcrumbs="2074,1993,1968" siblings="" translations="[object Object]" class="see-also"><h4 class="f3">See also</h4><div class="also"><a href="/addons/ofxNetwork/src/ofxTCPManager_h"><span class="origin">addons</span><span class="name">ofxTCPManager.h</span></a></div><div class="also"><a href="/addons/ofxNetwork/src/ofxTCPManager_cpp"><span class="origin">addons</span><span class="name">ofxTCPManager.cpp</span></a></div></div></div></div></div><textarea rows="0" class="markdown-editor" style="display:none">#class ofxTCPManager
+
+
+&lt;!--
+_visible: True_
+_advanced: True_
+_istemplated: False_
+_extends: _
+-->
+
+##InlineDescription
+
+Implementation of a TCP socket.
+
+
+
+
+
+##Description
+
+
+
+
+
+##Methods
+
+
+
+###bool Accept(&sock)
+
+&lt;!--
+_syntax: Accept(&sock)_
+_name: Accept_
+_returns: bool_
+_returns_description: _
+_parameters: ofxTCPManager &sock_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool Bind(usPort)
+
+&lt;!--
+_syntax: Bind(usPort)_
+_name: Bind_
+_returns: bool_
+_returns_description: _
+_parameters: unsigned short usPort_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool CheckHost(*pAddrStr)
+
+&lt;!--
+_syntax: CheckHost(*pAddrStr)_
+_name: CheckHost_
+_returns: bool_
+_returns_description: _
+_parameters: const char *pAddrStr_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool CheckIsConnected()
+
+&lt;!--
+_syntax: CheckIsConnected()_
+_name: CheckIsConnected_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void CleanUp()
+
+&lt;!--
+_syntax: CleanUp()_
+_name: CleanUp_
+_returns: void_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool Close()
+
+&lt;!--
+_syntax: Close()_
+_name: Close_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool Connect(*pAddrStr, usPort)
+
+&lt;!--
+_syntax: Connect(*pAddrStr, usPort)_
+_name: Connect_
+_returns: bool_
+_returns_description: _
+_parameters: const char *pAddrStr, unsigned short usPort_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool Create()
+
+&lt;!--
+_syntax: Create()_
+_name: Create_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool GetInetAddr(pInetAddr)
+
+&lt;!--
+_syntax: GetInetAddr(pInetAddr)_
+_name: GetInetAddr_
+_returns: bool_
+_returns_description: _
+_parameters: LPINETADDR pInetAddr_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int GetMaxConnections()
+
+&lt;!--
+_syntax: GetMaxConnections()_
+_name: GetMaxConnections_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int GetReceiveBufferSize()
+
+&lt;!--
+_syntax: GetReceiveBufferSize()_
+_name: GetReceiveBufferSize_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool GetRemoteAddr(pIntAddr)
+
+&lt;!--
+_syntax: GetRemoteAddr(pIntAddr)_
+_name: GetRemoteAddr_
+_returns: bool_
+_returns_description: _
+_parameters: LPINETADDR pIntAddr_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int GetSendBufferSize()
+
+&lt;!--
+_syntax: GetSendBufferSize()_
+_name: GetSendBufferSize_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int GetTimeoutAccept()
+
+&lt;!--
+_syntax: GetTimeoutAccept()_
+_name: GetTimeoutAccept_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int GetTimeoutConnect()
+
+&lt;!--
+_syntax: GetTimeoutConnect()_
+_name: GetTimeoutConnect_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int GetTimeoutReceive()
+
+&lt;!--
+_syntax: GetTimeoutReceive()_
+_name: GetTimeoutReceive_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int GetTimeoutSend()
+
+&lt;!--
+_syntax: GetTimeoutSend()_
+_name: GetTimeoutSend_
+_returns: int_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool IsNonBlocking()
+
+&lt;!--
+_syntax: IsNonBlocking()_
+_name: IsNonBlocking_
+_returns: bool_
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool Listen(iMaxConnections)
+
+&lt;!--
+_syntax: Listen(iMaxConnections)_
+_name: Listen_
+_returns: bool_
+_returns_description: _
+_parameters: int iMaxConnections_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int PeekReceive(*pBuff, iSize)
+
+&lt;!--
+_syntax: PeekReceive(*pBuff, iSize)_
+_name: PeekReceive_
+_returns: int_
+_returns_description: _
+_parameters: char *pBuff, const int iSize_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int Receive(*pBuff, iSize)
+
+&lt;!--
+_syntax: Receive(*pBuff, iSize)_
+_name: Receive_
+_returns: int_
+_returns_description: _
+_parameters: char *pBuff, const int iSize_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int ReceiveAll(*pBuff, iSize)
+
+&lt;!--
+_syntax: ReceiveAll(*pBuff, iSize)_
+_name: ReceiveAll_
+_returns: int_
+_returns_description: _
+_parameters: char *pBuff, const int iSize_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int Send(*pBuff, iSize)
+
+&lt;!--
+_syntax: Send(*pBuff, iSize)_
+_name: Send_
+_returns: int_
+_returns_description: _
+_parameters: const char *pBuff, const int iSize_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int SendAll(*pBuff, iSize)
+
+&lt;!--
+_syntax: SendAll(*pBuff, iSize)_
+_name: SendAll_
+_returns: int_
+_returns_description: _
+_parameters: const char *pBuff, const int iSize_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool SetNonBlocking(useNonBlocking)
+
+&lt;!--
+_syntax: SetNonBlocking(useNonBlocking)_
+_name: SetNonBlocking_
+_returns: bool_
+_returns_description: _
+_parameters: bool useNonBlocking_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool SetReceiveBufferSize(sizeInByte)
+
+&lt;!--
+_syntax: SetReceiveBufferSize(sizeInByte)_
+_name: SetReceiveBufferSize_
+_returns: bool_
+_returns_description: _
+_parameters: int sizeInByte_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool SetSendBufferSize(sizeInByte)
+
+&lt;!--
+_syntax: SetSendBufferSize(sizeInByte)_
+_name: SetSendBufferSize_
+_returns: bool_
+_returns_description: _
+_parameters: int sizeInByte_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void SetTimeoutAccept(timeoutInSeconds)
+
+&lt;!--
+_syntax: SetTimeoutAccept(timeoutInSeconds)_
+_name: SetTimeoutAccept_
+_returns: void_
+_returns_description: _
+_parameters: int timeoutInSeconds_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void SetTimeoutConnect(timeoutInSeconds)
+
+&lt;!--
+_syntax: SetTimeoutConnect(timeoutInSeconds)_
+_name: SetTimeoutConnect_
+_returns: void_
+_returns_description: _
+_parameters: int timeoutInSeconds_
+_access: public_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void SetTimeoutReceive(timeoutInSeconds)
+
+&lt;!--
+_syntax: SetTimeoutReceive(timeoutInSeconds)_
+_name: SetTimeoutReceive_
+_returns: void_
+_returns_description: _
+_parameters: int timeoutInSeconds_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###void SetTimeoutSend(timeoutInSeconds)
+
+&lt;!--
+_syntax: SetTimeoutSend(timeoutInSeconds)_
+_name: SetTimeoutSend_
+_returns: void_
+_returns_description: _
+_parameters: int timeoutInSeconds_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int WaitReceive(timeoutSeconds, timeoutMillis)
+
+&lt;!--
+_syntax: WaitReceive(timeoutSeconds, timeoutMillis)_
+_name: WaitReceive_
+_returns: int_
+_returns_description: _
+_parameters: time_t timeoutSeconds, time_t timeoutMillis_
+_access: private_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int WaitSend(timeoutSeconds, timeoutMillis)
+
+&lt;!--
+_syntax: WaitSend(timeoutSeconds, timeoutMillis)_
+_name: WaitSend_
+_returns: int_
+_returns_description: _
+_parameters: time_t timeoutSeconds, time_t timeoutMillis_
+_access: private_
+_version_started: 0.10.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int Write(*pBuff, iSize)
+
+&lt;!--
+_syntax: Write(*pBuff, iSize)_
+_name: Write_
+_returns: int_
+_returns_description: _
+_parameters: const char *pBuff, const int iSize_
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofxTCPManager(&mom)
+
+&lt;!--
+_syntax: ofxTCPManager(&mom)_
+_name: ofxTCPManager_
+_returns: _
+_returns_description: _
+_parameters: const ofxTCPManager &mom_
+_access: private_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ofxTCPManager()
+
+&lt;!--
+_syntax: ofxTCPManager()_
+_name: ofxTCPManager_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###ofxTCPManager & operator=(&mom)
+
+&lt;!--
+_syntax: operator=(&mom)_
+_name: operator=_
+_returns: ofxTCPManager &_
+_returns_description: _
+_parameters: const ofxTCPManager &mom_
+_access: private_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+### ~ofxTCPManager()
+
+&lt;!--
+_syntax: ~ofxTCPManager()_
+_name: ~ofxTCPManager_
+_returns: _
+_returns_description: _
+_parameters: _
+_access: public_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_constant: False_
+_static: False_
+_visible: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+##Variables
+
+
+
+###bool m_bWinsockInit
+
+&lt;!--
+_name: m_bWinsockInit_
+_type: bool_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool  m_closing
+
+&lt;!--
+_name: m_closing_
+_type: bool _
+_access: private_
+_version_started: 0.8.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###unsigned long m_dwTimeoutAccept
+
+&lt;!--
+_name: m_dwTimeoutAccept_
+_type: unsigned long_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###unsigned long m_dwTimeoutConnect
+
+&lt;!--
+_name: m_dwTimeoutConnect_
+_type: unsigned long_
+_access: private_
+_version_started: 0.9.0_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: False_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###unsigned long m_dwTimeoutReceive
+
+&lt;!--
+_name: m_dwTimeoutReceive_
+_type: unsigned long_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###unsigned long m_dwTimeoutSend
+
+&lt;!--
+_name: m_dwTimeoutSend_
+_type: unsigned long_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int m_hSocket
+
+&lt;!--
+_name: m_hSocket_
+_type: int_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int m_iListenPort
+
+&lt;!--
+_name: m_iListenPort_
+_type: int_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###int m_iMaxConnections
+
+&lt;!--
+_name: m_iMaxConnections_
+_type: int_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+###bool nonBlocking
+
+&lt;!--
+_name: nonBlocking_
+_type: bool_
+_access: protected_
+_version_started: 007_
+_version_deprecated: _
+_summary: _
+_visible: True_
+_constant: True_
+_advanced: False_
+-->
+
+_inlined_description: _
+
+
+
+
+
+
+
+_description: _
+
+
+
+
+
+
+
+&lt;!----------------------------------------------------------------------------->
+
+</textarea></div></div></div></div></div></div><script defer src="/_nuxt/payloads/1586012716389/documentation/addons/ofxNetwork/ofxTCPManager/payload.js"></script><script src="/_nuxt/5f71eaca0bd2f1a0f939.js" defer></script><script src="/_nuxt/35a90d914f539af1362f.js" defer></script><script src="/_nuxt/906a3ca0fb13ed3c6651.js" defer></script><script src="/_nuxt/b673915e8a08acf593e8.js" defer></script><script src="/_nuxt/bf355f21967a23c26c07.js" defer></script>
+  </body>
+</html>
